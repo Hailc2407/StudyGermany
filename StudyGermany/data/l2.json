@@ -1,0 +1,984 @@
+{
+  "id": "l2",
+  "no": 2,
+  "title": "Meine Familie",
+  "vi": "Hỏi thăm, gia đình, nơi ở, số 0–20, các nước nói tiếng Đức",
+  "book": "Kursbuch tr. 22–33 · Arbeitsbuch tr. 19–29 · Lernwortschatz L2",
+  "audio": ["KB 1/27-47", "AB 13-24"],
+  "sets": [
+    {
+      "id": "a", "title": "Hỏi thăm và truyện ảnh", "session": "1",
+      "items": [
+        { "id": "wie-gehts", "de": "Wie geht's?", "kind": "phrase", "vi": "Bạn khỏe không? / Dạo này thế nào?", "syl": "wie GEHT's", "note": "geht's = geht es. Chữ h trong „geht“ không đọc, chỉ kéo dài nguyên âm: „gêt“.", "ex": ["Hallo, Tim! Wie geht's?", "Chào Tim! Dạo này thế nào?"] },
+        { "id": "wie-geht-es-dir", "de": "Wie geht es dir?", "kind": "phrase", "vi": "Bạn khỏe không? (thân mật, du)", "note": "dir là dạng của du đứng sau „geht es“." },
+        { "id": "wie-geht-es-ihnen", "de": "Wie geht es Ihnen?", "kind": "phrase", "vi": "Ông/bà khỏe không? (lịch sự, Sie)", "note": "Ihnen là dạng của Sie, luôn viết hoa chữ I." },
+        { "id": "super", "de": "super", "kind": "word", "vi": "tuyệt vời", "syl": "SU·per", "en": "super", "note": "s đứng trước nguyên âm đọc rung như „z“: „zu-pa“.", "ex": ["Danke, super!", "Cảm ơn, tuyệt lắm!"] },
+        { "id": "sehr", "de": "sehr", "kind": "word", "vi": "rất", "en": "≈ very", "note": "h không đọc, kéo dài âm e; r cuối từ nhẹ như „a“: „zê-a“.", "ex": ["Das ist sehr gut!", "Cái đó rất tốt!"] },
+        { "id": "gut", "de": "gut", "kind": "word", "vi": "tốt", "en": "≈ good", "ex": ["Danke, gut.", "Cảm ơn, tôi khỏe."] },
+        { "id": "na-ja", "de": "na ja", "kind": "phrase", "vi": "ừm, thôi thì…; cũng tạm", "note": "Hay đứng trước „es geht“ khi bạn không thật sự vui.", "ex": ["Na ja, es geht.", "Ừm, tạm được thôi."] },
+        { "id": "es-geht", "de": "Es geht.", "kind": "phrase", "vi": "Tạm được. / Bình thường thôi." },
+        { "id": "nicht-so-gut", "de": "Nicht so gut.", "kind": "phrase", "vi": "Không tốt lắm.", "ex": ["Ach, nicht so gut.", "Ôi, không tốt lắm."] },
+        { "id": "ach", "de": "ach", "kind": "word", "vi": "ôi, ồ, than ôi", "note": "ch sau a đọc „kh“ (như trong Nacht, auch)." },
+        { "id": "so", "de": "so", "kind": "word", "vi": "như vậy, đến thế", "en": "so", "ex": ["Nicht so gut.", "Không tốt lắm."] },
+        { "id": "und-dir", "de": "Und dir?", "kind": "phrase", "vi": "Còn bạn thì sao? (thân mật)" },
+        { "id": "und-ihnen", "de": "Und Ihnen?", "kind": "phrase", "vi": "Còn ông/bà thì sao? (lịch sự)" },
+        { "id": "auch", "de": "auch", "kind": "word", "vi": "cũng", "en": "≈ also", "ex": ["Ich lerne auch Deutsch.", "Mình cũng học tiếng Đức."] },
+        { "id": "lernen", "de": "lernen", "kind": "verb", "forms": "ich lerne · du lernst · er/sie lernt", "vi": "học", "syl": "LER·nen", "en": "≈ to learn", "note": "lernen = học một môn, một kỹ năng, một ngôn ngữ.", "ex": ["Ich lerne Deutsch.", "Tôi học tiếng Đức."] },
+        { "id": "haben", "de": "haben", "kind": "verb", "forms": "ich habe · du hast · er/sie hat", "vi": "có", "syl": "HA·ben", "en": "≈ to have", "note": "Bất quy tắc: du hast, er/sie hat (bỏ chữ b). Sẽ chia đủ ở Buổi 3.", "ex": ["Wir haben Pause.", "Chúng tôi nghỉ giải lao."] },
+        { "id": "pause", "de": "Pause", "art": "die", "pl": "Pausen", "kind": "noun", "vi": "giờ nghỉ, giải lao", "syl": "PAU·se", "en": "≈ pause", "ex": ["Jetzt ist Pause!", "Bây giờ là giờ nghỉ!"] },
+        { "id": "lehrer", "de": "Lehrer", "art": "der", "pl": "Lehrer", "kind": "noun", "vi": "thầy giáo, giáo viên (nam)", "syl": "LEH·rer", "ex": ["Herr Becker ist Lehrer.", "Ông Becker là giáo viên."] },
+        { "id": "lehrerin", "de": "Lehrerin", "art": "die", "pl": "Lehrerinnen", "kind": "noun", "vi": "cô giáo, giáo viên (nữ)", "syl": "LEH·re·rin", "note": "Thêm -in vào tên nghề nam là ra dạng nữ: Lehrer → Lehrerin.", "ex": ["Frau Lange ist Lehrerin.", "Bà Lange là cô giáo."] },
+        { "id": "park", "de": "Park", "art": "der", "pl": "Parks", "kind": "noun", "vi": "công viên", "en": "park", "ex": ["Der Park ist super!", "Công viên tuyệt quá!"] }
+      ]
+    },
+    {
+      "id": "b", "title": "Gia đình", "session": "2",
+      "items": [
+        { "id": "familie", "de": "Familie", "art": "die", "pl": "Familien", "kind": "noun", "vi": "gia đình", "syl": "fa·MI·li·e", "en": "family", "note": "Cuối từ đọc tách „-li-ê“: fa-MI-li-ê.", "ex": ["Das ist meine Familie.", "Đây là gia đình của tôi."] },
+        { "id": "eltern", "de": "Eltern", "art": "die", "plOnly": true, "kind": "noun", "vi": "bố mẹ, cha mẹ", "syl": "EL·tern", "note": "Chỉ có số nhiều: die Eltern = bố và mẹ.", "ex": ["Das sind meine Eltern.", "Đây là bố mẹ tôi."] },
+        { "id": "vater", "de": "Vater", "art": "der", "pl": "Väter", "kind": "noun", "vi": "bố, cha", "syl": "VA·ter", "en": "≈ father", "note": "a dài; số nhiều có ä: Väter.", "ex": ["Mein Vater ist Lehrer.", "Bố tôi là giáo viên."] },
+        { "id": "mutter", "de": "Mutter", "art": "die", "pl": "Mütter", "kind": "noun", "vi": "mẹ", "syl": "MUT·ter", "en": "≈ mother", "note": "u ngắn (hai chữ t); số nhiều có ü: Mütter.", "ex": ["Meine Mutter heißt Anna.", "Mẹ tôi tên là Anna."] },
+        { "id": "grosseltern", "de": "Großeltern", "art": "die", "plOnly": true, "kind": "noun", "vi": "ông bà", "syl": "GROSS·el·tern", "note": "Groß- = to, lớn. Chỉ có số nhiều.", "ex": ["Das sind meine Großeltern.", "Đây là ông bà của tôi."] },
+        { "id": "opa", "de": "Opa", "art": "der", "pl": "Opas", "kind": "noun", "vi": "ông (cách gọi thân mật)", "syl": "O·pa", "ex": ["Das ist mein Opa.", "Đây là ông của tôi."] },
+        { "id": "grossvater", "de": "Großvater", "art": "der", "pl": "Großväter", "kind": "noun", "vi": "ông (nội/ngoại)", "syl": "GROSS·va·ter", "note": "Tiếng Đức không phân biệt ông nội và ông ngoại." },
+        { "id": "oma", "de": "Oma", "art": "die", "pl": "Omas", "kind": "noun", "vi": "bà (cách gọi thân mật)", "syl": "O·ma", "ex": ["Das ist meine Oma.", "Đây là bà của tôi."] },
+        { "id": "grossmutter", "de": "Großmutter", "art": "die", "pl": "Großmütter", "kind": "noun", "vi": "bà (nội/ngoại)", "syl": "GROSS·mut·ter" },
+        { "id": "bruder", "de": "Bruder", "art": "der", "pl": "Brüder", "kind": "noun", "vi": "anh trai hoặc em trai", "syl": "BRU·der", "en": "≈ brother", "note": "Không phân biệt anh hay em. u dài; số nhiều có ü: Brüder.", "ex": ["Das ist mein Bruder.", "Đây là anh (em) trai tôi."] },
+        { "id": "schwester", "de": "Schwester", "art": "die", "pl": "Schwestern", "kind": "noun", "vi": "chị gái hoặc em gái", "syl": "SCHWES·ter", "en": "≈ sister", "note": "schw đọc „shv“.", "ex": ["Das ist meine Schwester.", "Đây là chị (em) gái tôi."] },
+        { "id": "geschwister", "de": "Geschwister", "art": "die", "plOnly": true, "kind": "noun", "vi": "anh chị em ruột", "syl": "ge·SCHWIS·ter", "note": "Từ chung cho cả anh, chị, em. Chỉ có số nhiều.", "ex": ["Das sind meine Geschwister.", "Đây là anh chị em của tôi."] },
+        { "id": "sohn", "de": "Sohn", "art": "der", "pl": "Söhne", "kind": "noun", "vi": "con trai", "en": "≈ son", "note": "o dài (có h); số nhiều có ö: Söhne.", "ex": ["Das ist mein Sohn.", "Đây là con trai tôi."] },
+        { "id": "tochter", "de": "Tochter", "art": "die", "pl": "Töchter", "kind": "noun", "vi": "con gái", "syl": "TOCH·ter", "en": "≈ daughter", "note": "ch sau o đọc „kh“, o ngắn; số nhiều có ö: Töchter.", "ex": ["Das ist meine Tochter.", "Đây là con gái tôi."] },
+        { "id": "kind", "de": "Kind", "art": "das", "pl": "Kinder", "kind": "noun", "vi": "đứa trẻ; con (cái)", "en": "≈ kid, child", "note": "Dùng cho cả con trai và con gái. d cuối đọc „t“.", "ex": ["Das ist mein Kind.", "Đây là con tôi."] },
+        { "id": "enkel", "de": "Enkel", "art": "der", "pl": "Enkel", "kind": "noun", "vi": "cháu trai (của ông bà)", "syl": "EN·kel" },
+        { "id": "enkelin", "de": "Enkelin", "art": "die", "pl": "Enkelinnen", "kind": "noun", "vi": "cháu gái (của ông bà)", "syl": "EN·ke·lin" },
+        { "id": "mann", "de": "Mann", "art": "der", "pl": "Männer", "kind": "noun", "vi": "chồng; người đàn ông", "en": "≈ man", "note": "mein Mann = chồng tôi · meine Frau = vợ tôi.", "ex": ["Das ist mein Mann.", "Đây là chồng tôi."] },
+        { "id": "ehemann", "de": "Ehemann", "art": "der", "pl": "Ehemänner", "kind": "noun", "vi": "chồng (cách nói trang trọng)", "syl": "E·he·mann" },
+        { "id": "ehefrau", "de": "Ehefrau", "art": "die", "pl": "Ehefrauen", "kind": "noun", "vi": "vợ (cách nói trang trọng)", "syl": "E·he·frau", "note": "Ehe = hôn nhân. Dùng trong giấy tờ; nói chuyện thường ngày thì: mein Mann, meine Frau." },
+        { "id": "mein", "de": "mein / meine", "say": "mein, meine", "ans": "mein", "kind": "word", "vi": "của tôi", "en": "≈ my, mine", "note": "mein + Bruder, Kind (der/das) · meine + Tochter, Kinder (die, số nhiều).", "ex": ["Das ist mein Vater.", "Đây là bố tôi."] },
+        { "id": "dein", "de": "dein / deine", "say": "dein, deine", "ans": "dein", "kind": "word", "vi": "của bạn (du)", "note": "Đi với du, cùng quy tắc với mein: dein Bruder · deine Mutter.", "ex": ["Ist das deine Schwester?", "Đây là chị (em) gái của bạn à?"] },
+        { "id": "ihr-art", "de": "Ihr / Ihre", "say": "Ihr, Ihre", "ans": "Ihr", "kind": "word", "vi": "của ông/bà (Sie)", "note": "Đi với Sie, luôn viết hoa: Ihr Sohn · Ihre Tochter.", "ex": ["Ist das Ihr Sohn?", "Đây là con trai của ông à?"] },
+        { "id": "liste", "de": "Liste", "art": "die", "pl": "Listen", "kind": "noun", "vi": "danh sách", "syl": "LIS·te", "en": "≈ list", "ex": ["Machen Sie eine Liste.", "Hãy lập một danh sách."] },
+        { "id": "falsch", "de": "falsch", "kind": "word", "vi": "sai", "en": "≈ false", "ex": ["Nein, falsch!", "Không, sai rồi!"] },
+        { "id": "genau", "de": "genau", "kind": "word", "vi": "đúng thế, chính xác", "syl": "ge·NAU", "ex": ["Ja, genau!", "Vâng, đúng thế!"] },
+        { "id": "das-sind", "de": "Das sind …", "kind": "phrase", "vi": "Đây là … (nhiều người/vật)", "note": "Số ít: Das ist … · Số nhiều: Das sind …", "ex": ["Das sind meine Eltern.", "Đây là bố mẹ tôi."] }
+      ]
+    },
+    {
+      "id": "c", "title": "er, sie, wir, ihr và nơi ở", "session": "3",
+      "items": [
+        { "id": "er", "de": "er", "kind": "word", "vi": "anh ấy, ông ấy, nó (giống đực)", "en": "≈ he", "ex": ["Das ist Tim. Er kommt aus Kanada.", "Đây là Tim. Anh ấy đến từ Canada."] },
+        { "id": "sie-sg", "de": "sie", "kind": "word", "vi": "cô ấy, bà ấy (một người nữ)", "en": "≈ she", "note": "Động từ đuôi -t: sie kommt. Đừng nhầm với sie (họ) và Sie (ông/bà).", "ex": ["Das ist Lara. Sie kommt aus Polen.", "Đây là Lara. Cô ấy đến từ Ba Lan."] },
+        { "id": "sie-pl", "de": "sie", "kind": "word", "vi": "họ, bọn họ (nhiều người)", "en": "≈ they", "note": "Động từ đuôi -en: sie kommen.", "ex": ["Das sind Tim und Lara. Sie wohnen in München.", "Đây là Tim và Lara. Họ ở München."] },
+        { "id": "wir", "de": "wir", "kind": "word", "vi": "chúng tôi, chúng ta", "en": "≈ we", "note": "w đọc „v“: „vía“.", "ex": ["Wir kommen aus Vietnam.", "Chúng tôi đến từ Việt Nam."] },
+        { "id": "ihr-pron", "de": "ihr", "kind": "word", "vi": "các bạn (nói với nhiều người, thân mật)", "en": "you (số nhiều)", "note": "ihr = số nhiều của du. Động từ đuôi -t: ihr kommt. Không nhầm với Ihr (của ông/bà).", "ex": ["Woher kommt ihr?", "Các bạn đến từ đâu?"] },
+        { "id": "leben", "de": "leben", "kind": "verb", "forms": "ich lebe · du lebst · er/sie lebt", "vi": "sống", "syl": "LE·ben", "en": "≈ to live", "ex": ["Meine Eltern leben in Hanoi.", "Bố mẹ tôi sống ở Hà Nội."] },
+        { "id": "wohnen", "de": "wohnen", "kind": "verb", "forms": "ich wohne · du wohnst · er/sie wohnt", "vi": "ở, cư trú", "syl": "WOH·nen", "note": "wohnen thiên về nơi ở cụ thể: Ich wohne in Köln. h không đọc.", "ex": ["Ich wohne in Berlin.", "Tôi ở Berlin."] },
+        { "id": "in", "de": "in", "kind": "word", "vi": "ở, trong (nơi chốn)", "en": "in", "ex": ["Er lebt in München.", "Anh ấy sống ở München."] },
+        { "id": "wo", "de": "wo", "kind": "word", "vi": "ở đâu", "en": "≈ where", "note": "wo = ở đâu · woher = từ đâu · wer = ai.", "ex": ["Wo wohnst du?", "Bạn ở đâu?"] },
+        { "id": "jetzt", "de": "jetzt", "kind": "word", "vi": "bây giờ", "note": "j = y, tz = ts: „yétst“.", "ex": ["Jetzt wohne ich in Köln.", "Bây giờ tôi ở Köln."] },
+        { "id": "zusammen", "de": "zusammen", "kind": "word", "vi": "cùng nhau", "syl": "zu·SAM·men", "note": "z = ts: „tsu-zam-mơn“.", "ex": ["Wir wohnen zusammen.", "Chúng tôi sống cùng nhau."] },
+        { "id": "geschieden", "de": "geschieden", "kind": "word", "vi": "đã ly hôn", "syl": "ge·SCHIE·den", "ex": ["Meine Eltern sind geschieden.", "Bố mẹ tôi đã ly hôn."] },
+        { "id": "hier", "de": "hier", "kind": "word", "vi": "ở đây", "en": "≈ here", "note": "ie = i dài; r cuối nhẹ.", "ex": ["Ich wohne hier.", "Tôi ở đây."] },
+        { "id": "aber", "de": "aber", "kind": "word", "vi": "nhưng", "syl": "A·ber", "ex": ["Ich komme aus Hanoi, aber ich wohne in Berlin.", "Tôi đến từ Hà Nội, nhưng tôi ở Berlin."] },
+        { "id": "schon", "de": "schon", "kind": "word", "vi": "đã, rồi", "note": "Hay đi với lange: schon lange = đã lâu rồi.", "ex": ["Ich wohne schon lange hier.", "Tôi sống ở đây đã lâu."] },
+        { "id": "lange", "de": "lange", "kind": "word", "vi": "lâu (về thời gian)", "syl": "LAN·ge", "note": "ng đọc như „ng“ trong „sing“, không đọc rõ chữ g." },
+        { "id": "zurzeit", "de": "zurzeit", "kind": "word", "vi": "hiện nay, lúc này", "syl": "zur·ZEIT", "ex": ["Zurzeit lebe ich in Köln.", "Hiện nay tôi sống ở Köln."] }
+      ]
+    },
+    {
+      "id": "n", "title": "Số từ 0 đến 20", "session": "4",
+      "items": [
+        { "id": "n0", "de": "null", "kind": "num", "vi": "0 · không", "en": "≈ null" },
+        { "id": "n1", "de": "eins", "kind": "num", "vi": "1 · một", "en": "≈ one", "note": "Khi đếm hoặc đọc số điện thoại: eins. Trước danh từ là ein / eine (ein Kind)." },
+        { "id": "n2", "de": "zwei", "kind": "num", "vi": "2 · hai", "en": "≈ two", "note": "zw = „tsv“." },
+        { "id": "n3", "de": "drei", "kind": "num", "vi": "3 · ba", "en": "≈ three" },
+        { "id": "n4", "de": "vier", "kind": "num", "vi": "4 · bốn", "en": "≈ four", "note": "v đọc „f“: „fia“." },
+        { "id": "n5", "de": "fünf", "kind": "num", "vi": "5 · năm", "en": "≈ five", "note": "ü: môi tròn, nói „i“." },
+        { "id": "n6", "de": "sechs", "kind": "num", "vi": "6 · sáu", "en": "≈ six", "note": "chs đọc „ks“: „zeks“." },
+        { "id": "n7", "de": "sieben", "kind": "num", "vi": "7 · bảy", "syl": "SIE·ben", "en": "≈ seven", "note": "s đọc „z“, ie = i dài: „zí-bn“." },
+        { "id": "n8", "de": "acht", "kind": "num", "vi": "8 · tám", "en": "≈ eight", "note": "ch sau a đọc „kh“." },
+        { "id": "n9", "de": "neun", "kind": "num", "vi": "9 · chín", "en": "≈ nine", "note": "eu = „oi“: „noin“." },
+        { "id": "n10", "de": "zehn", "kind": "num", "vi": "10 · mười", "en": "≈ ten", "note": "z = ts; h không đọc." },
+        { "id": "n11", "de": "elf", "kind": "num", "vi": "11 · mười một", "en": "≈ eleven", "note": "Dạng riêng — phải học thuộc." },
+        { "id": "n12", "de": "zwölf", "kind": "num", "vi": "12 · mười hai", "en": "≈ twelve", "note": "Dạng riêng. ö: môi tròn, nói „ê“." },
+        { "id": "n13", "de": "dreizehn", "kind": "num", "vi": "13 · mười ba", "syl": "DREI·zehn", "en": "≈ thirteen", "note": "drei + zehn." },
+        { "id": "n14", "de": "vierzehn", "kind": "num", "vi": "14 · mười bốn", "syl": "VIER·zehn", "en": "≈ fourteen" },
+        { "id": "n15", "de": "fünfzehn", "kind": "num", "vi": "15 · mười lăm", "syl": "FÜNF·zehn", "en": "≈ fifteen" },
+        { "id": "n16", "de": "sechzehn", "kind": "num", "vi": "16 · mười sáu", "syl": "SECH·zehn", "en": "≈ sixteen", "note": "Bỏ chữ s: sech-zehn (không phải sechs-zehn)." },
+        { "id": "n17", "de": "siebzehn", "kind": "num", "vi": "17 · mười bảy", "syl": "SIEB·zehn", "en": "≈ seventeen", "note": "Bỏ đuôi -en: sieb-zehn (không phải sieben-zehn)." },
+        { "id": "n18", "de": "achtzehn", "kind": "num", "vi": "18 · mười tám", "syl": "ACHT·zehn", "en": "≈ eighteen" },
+        { "id": "n19", "de": "neunzehn", "kind": "num", "vi": "19 · mười chín", "syl": "NEUN·zehn", "en": "≈ nineteen" },
+        { "id": "n20", "de": "zwanzig", "kind": "num", "vi": "20 · hai mươi", "syl": "ZWAN·zig", "en": "≈ twenty", "note": "-zig cuối từ đọc „-tsích“." }
+      ]
+    },
+    {
+      "id": "d", "title": "Thông tin cá nhân", "session": "4",
+      "items": [
+        { "id": "zahl", "de": "Zahl", "art": "die", "pl": "Zahlen", "kind": "noun", "vi": "con số, chữ số", "note": "z đọc „ts“: „tsal“; a dài (có h)." },
+        { "id": "nummer", "de": "Nummer", "art": "die", "pl": "Nummern", "kind": "noun", "vi": "số (thứ tự, điện thoại…)", "syl": "NUM·mer", "en": "≈ number" },
+        { "id": "telefonnummer", "de": "Telefonnummer", "art": "die", "pl": "Telefonnummern", "kind": "noun", "vi": "số điện thoại", "syl": "te·le·FON·num·mer", "ex": ["Wie ist deine Telefonnummer?", "Số điện thoại của bạn là gì?"] },
+        { "id": "geboren", "de": "geboren", "kind": "word", "vi": "được sinh ra", "syl": "ge·BO·ren", "note": "Wo sind Sie geboren? = Ông/bà sinh ra ở đâu?", "ex": ["Wo bist du geboren? – In Hanoi.", "Bạn sinh ở đâu? – Ở Hà Nội."] },
+        { "id": "geburtsort", "de": "Geburtsort", "art": "der", "pl": "Geburtsorte", "kind": "noun", "vi": "nơi sinh", "syl": "ge·BURTS·ort" },
+        { "id": "wohnort", "de": "Wohnort", "art": "der", "pl": "Wohnorte", "kind": "noun", "vi": "nơi ở hiện tại", "syl": "WOHN·ort" },
+        { "id": "familienstand", "de": "Familienstand", "art": "der", "kind": "noun", "vi": "tình trạng hôn nhân", "syl": "fa·MI·li·en·stand", "note": "Chỉ có số ít. st ở đầu „stand“ đọc „scht“." },
+        { "id": "verheiratet", "de": "verheiratet", "kind": "word", "vi": "đã kết hôn", "syl": "ver·HEI·ra·tet", "ex": ["Sind Sie verheiratet?", "Ông/bà đã kết hôn chưa?"] },
+        { "id": "ledig", "de": "ledig", "kind": "word", "vi": "độc thân", "syl": "LE·dig", "note": "-ig cuối từ đọc „-ích“.", "ex": ["Ich bin ledig.", "Tôi độc thân."] },
+        { "id": "verwitwet", "de": "verwitwet", "kind": "word", "vi": "góa (chồng/vợ đã mất)", "syl": "ver·WIT·wet" },
+        { "id": "alt", "de": "alt", "kind": "word", "vi": "già; … tuổi", "en": "≈ old", "ex": ["Mein Sohn ist zehn Jahre alt.", "Con trai tôi mười tuổi."] },
+        { "id": "jahr", "de": "Jahr", "art": "das", "pl": "Jahre", "kind": "noun", "vi": "năm; tuổi", "en": "≈ year", "note": "h không đọc: „ya-a“. Nói tuổi: Ich bin zwanzig Jahre alt.", "ex": ["Ich bin zwanzig Jahre alt.", "Tôi hai mươi tuổi."] },
+        { "id": "alter", "de": "Alter", "art": "das", "pl": "Alter", "kind": "noun", "vi": "tuổi (số tuổi)", "syl": "AL·ter", "ex": ["Alter: neunzehn.", "Tuổi: mười chín."] },
+        { "id": "wie-alt", "de": "Wie alt bist du?", "kind": "phrase", "vi": "Bạn bao nhiêu tuổi?" },
+        { "id": "wie-alt-sind-sie", "de": "Wie alt sind Sie?", "kind": "phrase", "vi": "Ông/bà bao nhiêu tuổi? (lịch sự)" },
+        { "id": "wo-geboren", "de": "Wo sind Sie geboren?", "kind": "phrase", "vi": "Ông/bà sinh ra ở đâu?" },
+        { "id": "haben-sie-kinder", "de": "Haben Sie Kinder?", "kind": "phrase", "vi": "Ông/bà có con không?", "ex": ["Ja, ich habe zwei Kinder.", "Có, tôi có hai con."] },
+        { "id": "keine-kinder", "de": "Ich habe keine Kinder.", "kind": "phrase", "vi": "Tôi không có con.", "note": "keine = không có. Sẽ học kỹ ở Lektion sau." }
+      ]
+    },
+    {
+      "id": "e", "title": "Đức – Áo – Thụy Sĩ và nghề nghiệp", "session": "5",
+      "items": [
+        { "id": "hauptstadt", "de": "Hauptstadt", "art": "die", "pl": "Hauptstädte", "kind": "noun", "vi": "thủ đô", "syl": "HAUPT·stadt", "note": "Haupt- = chính + Stadt = thành phố. st trong „-stadt“ đọc „scht“.", "ex": ["Berlin ist die Hauptstadt von Deutschland.", "Berlin là thủ đô của Đức."] },
+        { "id": "liegen", "de": "liegen", "kind": "verb", "forms": "ich liege · du liegst · er/sie liegt", "vi": "nằm (ở), tọa lạc", "syl": "LIE·gen", "note": "Dùng cho địa điểm: Hamburg liegt in Deutschland. Số nhiều: Hamburg und Kiel liegen …", "ex": ["Hanoi liegt in Vietnam.", "Hà Nội nằm ở Việt Nam."] },
+        { "id": "norden", "de": "Norden", "art": "der", "kind": "noun", "vi": "phía bắc", "syl": "NOR·den", "en": "≈ north" },
+        { "id": "sueden", "de": "Süden", "art": "der", "kind": "noun", "vi": "phía nam", "syl": "SÜ·den", "en": "≈ south" },
+        { "id": "osten", "de": "Osten", "art": "der", "kind": "noun", "vi": "phía đông", "syl": "OS·ten", "en": "≈ east" },
+        { "id": "westen", "de": "Westen", "art": "der", "kind": "noun", "vi": "phía tây", "syl": "WES·ten", "en": "≈ west" },
+        { "id": "norddeutschland", "de": "Norddeutschland", "kind": "place", "vi": "miền Bắc nước Đức", "syl": "NORD·deutsch·land", "ex": ["Hamburg liegt in Norddeutschland.", "Hamburg nằm ở miền Bắc nước Đức."] },
+        { "id": "sueddeutschland", "de": "Süddeutschland", "kind": "place", "vi": "miền Nam nước Đức", "syl": "SÜD·deutsch·land", "ex": ["München liegt in Süddeutschland.", "München nằm ở miền Nam nước Đức."] },
+        { "id": "kennen", "de": "kennen", "kind": "verb", "forms": "ich kenne · du kennst · er/sie kennt", "vi": "biết, quen (người, nơi chốn)", "syl": "KEN·nen", "note": "kennen = quen/biết ai, nơi nào; wissen = biết một thông tin.", "ex": ["Kennst du Berlin?", "Bạn có biết Berlin không?"] },
+        { "id": "also", "de": "also", "kind": "word", "vi": "vậy thì, tức là", "syl": "AL·so", "ex": ["Also, das ist meine Familie.", "Vậy đây là gia đình của tôi."] },
+        { "id": "arzt", "de": "Arzt", "art": "der", "pl": "Ärzte", "kind": "noun", "vi": "bác sĩ (nam)", "note": "rzt đọc „rtst“.", "ex": ["Mein Vater ist Arzt.", "Bố tôi là bác sĩ."] },
+        { "id": "aerztin", "de": "Ärztin", "art": "die", "pl": "Ärztinnen", "kind": "noun", "vi": "bác sĩ (nữ)", "syl": "ÄRZT·in", "ex": ["Meine Mutter ist Ärztin.", "Mẹ tôi là bác sĩ."] },
+        { "id": "polizei", "de": "Polizei", "art": "die", "kind": "noun", "vi": "cảnh sát", "syl": "po·li·ZEI", "en": "≈ police", "note": "Chỉ có số ít. Er ist bei der Polizei = anh ấy làm ở cảnh sát." },
+        { "id": "partner", "de": "Partner", "art": "der", "pl": "Partner", "kind": "noun", "vi": "bạn đời; đối tác (nam)", "syl": "PART·ner", "en": "partner" },
+        { "id": "partnerin", "de": "Partnerin", "art": "die", "pl": "Partnerinnen", "kind": "noun", "vi": "bạn đời; đối tác (nữ)", "syl": "PART·ne·rin" }
+      ]
+    },
+    {
+      "id": "e2", "title": "Thêm: thành phố và vài nước nữa", "session": "5", "bonus": true,
+      "items": [
+        { "id": "hamburg", "de": "Hamburg", "kind": "place", "vi": "thành phố cảng lớn ở miền Bắc nước Đức", "aus": "aus Hamburg" },
+        { "id": "berlin", "de": "Berlin", "kind": "place", "vi": "thủ đô nước Đức", "aus": "aus Berlin" },
+        { "id": "muenchen", "de": "München", "kind": "place", "vi": "thành phố lớn ở miền Nam nước Đức", "en": "Munich", "aus": "aus München" },
+        { "id": "koeln", "de": "Köln", "kind": "place", "vi": "thành phố lớn bên sông Rhein", "en": "Cologne", "aus": "aus Köln" },
+        { "id": "stuttgart", "de": "Stuttgart", "kind": "place", "vi": "thành phố ở miền Tây Nam nước Đức", "note": "st ở đầu từ đọc „scht“.", "aus": "aus Stuttgart" },
+        { "id": "kiel", "de": "Kiel", "kind": "place", "vi": "thành phố cảng ở miền Bắc nước Đức", "aus": "aus Kiel" },
+        { "id": "wien", "de": "Wien", "kind": "place", "vi": "thủ đô nước Áo", "en": "Vienna", "note": "Đọc „Vin“. Đừng nhầm với Wein (rượu vang).", "aus": "aus Wien" },
+        { "id": "salzburg", "de": "Salzburg", "kind": "place", "vi": "thành phố ở Áo, quê hương của Mozart", "aus": "aus Salzburg" },
+        { "id": "graz", "de": "Graz", "kind": "place", "vi": "thành phố lớn thứ hai của Áo", "aus": "aus Graz" },
+        { "id": "linz", "de": "Linz", "kind": "place", "vi": "thành phố ở Áo, bên sông Donau", "aus": "aus Linz" },
+        { "id": "innsbruck", "de": "Innsbruck", "kind": "place", "vi": "thành phố trong dãy Alpen, Áo", "aus": "aus Innsbruck" },
+        { "id": "zuerich", "de": "Zürich", "kind": "place", "vi": "thành phố lớn nhất Thụy Sĩ", "en": "Zurich", "aus": "aus Zürich" },
+        { "id": "bern", "de": "Bern", "kind": "place", "vi": "thủ đô Thụy Sĩ", "aus": "aus Bern" },
+        { "id": "basel", "de": "Basel", "kind": "place", "vi": "thành phố ở Thụy Sĩ, gần biên giới Đức và Pháp", "aus": "aus Basel" },
+        { "id": "genf", "de": "Genf", "kind": "place", "vi": "thành phố ở phía tây Thụy Sĩ", "en": "Geneva", "aus": "aus Genf" },
+        { "id": "kanada", "de": "Kanada", "kind": "place", "vi": "Canada", "syl": "KA·na·da", "aus": "aus Kanada" },
+        { "id": "ungarn", "de": "Ungarn", "kind": "place", "vi": "Hungary", "syl": "UN·garn", "aus": "aus Ungarn" },
+        { "id": "daenemark", "de": "Dänemark", "kind": "place", "vi": "Đan Mạch", "syl": "DÄ·ne·mark", "aus": "aus Dänemark" },
+        { "id": "england", "de": "England", "kind": "place", "vi": "nước Anh", "syl": "ENG·land", "aus": "aus England" }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1", "no": 1, "minutes": 45, "set": "a",
+      "title": "Wie geht's?",
+      "vi": "Hỏi thăm sức khỏe và truyện ảnh tập 2",
+      "book": "Kursbuch tr. 22–24 · Arbeitsbuch tr. 19 · Lernwortschatz L2 (phần đầu)",
+      "goals": [
+        "Hỏi và trả lời „Wie geht's?“ với bạn bè (du) và với người lớn (Sie).",
+        "Nói được mình khỏe đến mức nào: <i>super / sehr gut / gut / na ja, es geht / nicht so gut</i>.",
+        "Chọn đúng <i>dir</i> (du) và <i>Ihnen</i> (Sie) sau „Wie geht es …?“.",
+        "Nghe hiểu ý chính tập 2 của truyện ảnh (Tim và Lara).",
+        "Biết nguyên âm nào dài, nguyên âm nào ngắn; chữ h không đọc."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: hỏi thăm và truyện ảnh", "minutes": 10,
+          "blocks": [
+            { "type": "words", "set": "a" },
+            { "type": "listenPick", "set": "a", "n": 8, "title": "Nghe và chọn nghĩa" }
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (3)", "minutes": 8,
+          "blocks": [
+            { "type": "rules", "items": [
+              { "t": "h sau nguyên âm: không đọc", "vi": "Chữ <b>h</b> đứng sau một nguyên âm <b>không được đọc</b>; nó chỉ báo hiệu nguyên âm đó <b>dài</b>.", "ex": ["geht|(Wie) geht's", "sehr|rất", "Jahr|năm", "wohnen|ở", "Zahl|con số"] },
+              { "t": "Nguyên âm dài", "vi": "Nguyên âm đứng trước <b>một</b> phụ âm (hoặc trước h) thường đọc <b>dài</b>.", "ex": ["gut|tốt", "Vater|bố", "Bruder|anh/em trai", "Opa|ông", "Name|tên"] },
+              { "t": "Nguyên âm ngắn", "vi": "Nguyên âm đứng trước <b>hai phụ âm</b> thường đọc <b>ngắn</b> và dứt khoát. Hai chữ cái giống nhau (tt, mm, nn…) là dấu hiệu của âm ngắn.", "ex": ["Mutter|mẹ", "Kind|con", "Park|công viên", "Eltern|bố mẹ", "kommen|đến"] }
+            ] },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng", "items": [
+              { "say": "Mutter", "opts": ["Mutter", "Muter"] },
+              { "say": "Vater", "opts": ["Vater", "Vatter"] },
+              { "say": "Jahr", "opts": ["Jahr", "Jar"] },
+              { "say": "geht", "opts": ["geht", "get"] },
+              { "say": "sehr", "opts": ["sehr", "ser"] },
+              { "say": "Kind", "opts": ["Kind", "Kint"] }
+            ] }
+          ]
+        },
+        {
+          "id": "truyen", "title": "Truyện ảnh, tập 2: „Pause ist super.“", "minutes": 8,
+          "blocks": [
+            { "type": "book", "title": "Làm trong sách", "kb": "22–23", "tracks": "KB 1/27-34", "steps": [
+              "Mở Kursbuch trang 22–23. Nhìn các bức ảnh: hai người trẻ đang nói chuyện ở công viên. Bạn đoán họ là ai, đang làm gì?",
+              "Nghe cả câu chuyện (track 27–34). Chưa cần hiểu hết — chỉ cần nghe ra tên người, tên nước, tên thành phố.",
+              "Bài 1a — <i>Was meinen Sie? Was ist richtig? Kreuzen Sie an.</i> = Theo bạn câu nào đúng? Đánh dấu ✗. Bài 1b — nghe lại để kiểm tra.",
+              "Bài 2 — <i>Hören Sie noch einmal und ordnen Sie zu.</i> = Nghe lại (track 28–29) và ghi nước, thành phố của Tim và của Lara.",
+              "Bài 3 (trang 23, nói về gia đình) để dành cho Buổi 2, khi bạn đã học từ vựng gia đình."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L2</i>, trang 1." },
+            { "type": "choice", "title": "Bạn hiểu truyện chưa?", "items": [
+              { "q": "Tim kommt aus …", "opts": ["Kanada", "Polen", "Österreich"], "a": 0 },
+              { "q": "Lara kommt aus …", "opts": ["Polen", "Kanada", "der Schweiz"], "a": 0 },
+              { "q": "Hai người trong truyện đang làm gì?", "opts": ["Họ nghỉ giải lao (Pause) ở công viên.", "Họ ăn tối ở nhà hàng.", "Họ học trong lớp."], "a": 0 },
+              { "q": "Bố của Lara sống ở đâu?", "opts": ["Poznań", "München", "Ottawa"], "a": 0, "why": "Bố mẹ Lara đã ly hôn (geschieden); bố cô ấy sống ở Poznań." }
+            ] }
+          ]
+        },
+        {
+          "id": "hoi-tham", "title": "Wie geht's? — hỏi thăm", "minutes": 12,
+          "blocks": [
+            { "type": "table", "title": "Từ vui đến buồn", "head": ["", "Tiếng Đức", "Nghĩa"], "say": 1, "rows": [
+              ["😄", "Super!", "Tuyệt vời!"],
+              ["🙂", "Sehr gut. / Gut.", "Rất tốt. / Tốt."],
+              ["😐", "Na ja, es geht.", "Ừm, tạm được."],
+              ["😕", "Ach, nicht so gut.", "Ôi, không tốt lắm."]
+            ], "vi": "Người Đức thường nói thêm <b>Danke</b> (cảm ơn) rồi hỏi lại: <b>Und dir?</b> / <b>Und Ihnen?</b>" },
+            { "type": "table", "title": "du hay Sie?", "head": ["", "Hỏi", "Hỏi lại"], "say": 1, "rows": [
+              ["<b>du</b> (bạn bè)", "Wie geht's? · Wie geht es <b class='v2'>dir</b>?", "Und <b class='v2'>dir</b>?"],
+              ["<b>Sie</b> (lịch sự)", "Wie geht's? · Wie geht es <b class='v2'>Ihnen</b>?", "Und <b class='v2'>Ihnen</b>?"]
+            ], "vi": "„Wie geht's?“ nói với ai cũng được. Khi nói đủ câu: du → <b>dir</b>, Sie → <b>Ihnen</b> (luôn viết hoa). Bạn chưa cần biết vì sao — chỉ cần thuộc cặp <b>du–dir</b> và <b>Sie–Ihnen</b>." },
+            { "type": "choice", "title": "dir hay Ihnen?", "items": [
+              { "q": "Bạn hỏi cô giáo (Frau Lange): „Wie geht es ___?“", "opts": ["Ihnen", "dir"], "a": 0, "why": "Cô giáo → Sie → Ihnen." },
+              { "q": "Bạn hỏi bạn thân: „Wie geht es ___?“", "opts": ["dir", "Ihnen"], "a": 0, "why": "Bạn thân → du → dir." },
+              { "q": "Bạn đáp lại ông Becker: „Danke, gut. Und ___?“", "opts": ["Ihnen", "dir"], "a": 0, "why": "Herr Becker → Sie → Ihnen." },
+              { "q": "Bạn đáp lại bạn cùng lớp: „Auch gut, danke. Und ___?“", "opts": ["dir", "Ihnen"], "a": 0, "why": "Bạn cùng lớp → du → dir." },
+              { "q": "Nhân viên ngân hàng hỏi bạn: „Guten Tag! Wie geht es ___?“", "opts": ["Ihnen", "dir"], "a": 0, "why": "Người lạ, công việc → Sie → Ihnen." },
+              { "q": "Em họ 8 tuổi hỏi bạn: „Hallo! Wie geht es ___?“", "opts": ["dir", "Ihnen"], "a": 0, "why": "Trẻ em → du → dir." }
+            ] },
+            { "type": "choice", "title": "Bạn đáp thế nào?", "items": [
+              { "q": "Bạn rất vui. Bạn nói:", "opts": ["Super, danke!", "Ach, nicht so gut.", "Na ja, es geht."], "a": 0 },
+              { "q": "Hôm nay bạn mệt và buồn. Bạn nói:", "opts": ["Ach, nicht so gut.", "Super, danke!", "Sehr gut, danke."], "a": 0 },
+              { "q": "Bạn thấy bình thường, không tốt không tệ:", "opts": ["Na ja, es geht.", "Super!", "Sehr gut!"], "a": 0 },
+              { "q": "Ai đó hỏi „Wie geht's?“. Câu trả lời đầy đủ và lịch sự nhất:", "opts": ["Danke, gut. Und Ihnen?", "Gut.", "Und Ihnen?"], "a": 0, "why": "Cảm ơn + trả lời + hỏi lại: đúng kiểu người Đức." }
+            ] },
+            { "type": "order", "title": "Xếp lại hội thoại", "items": [
+              { "chunks": ["Hallo, Tim! Wie geht's?", "Hallo, Lara! Danke, gut. Und dir?", "Auch gut, danke!"], "vi": "Hai bạn trẻ chào nhau:" },
+              { "chunks": ["Guten Morgen, Frau Lange. Wie geht es Ihnen?", "Guten Morgen, Herr Becker. Danke, sehr gut. Und Ihnen?", "Na ja, es geht."], "vi": "Hai đồng nghiệp chào nhau buổi sáng:" },
+              { "chunks": ["Hallo, Mia! Wie geht es dir?", "Ach, nicht so gut. Und dir?", "Super, danke!"], "vi": "Một người không khỏe:" }
+            ] },
+            { "type": "fix", "title": "Tìm lỗi sai", "items": [
+              { "s": "Wie geht es du?", "err": "du", "fix": ["dir"], "why": "Sau „geht es“: du → dir." },
+              { "ctx": "Bạn nói với ông Becker:", "s": "Guten Tag, Herr Becker. Wie geht es dir?", "err": "dir", "fix": ["Ihnen"], "why": "Herr Becker → Sie → Ihnen." },
+              { "ctx": "Bạn thân hỏi: „Wie geht es dir?“ Bạn trả lời:", "s": "Danke, gut. Und du?", "err": "du", "fix": ["dir"], "why": "Hỏi lại: Und dir?" },
+              { "s": "Wie geht es dir? – Danke, super!", "err": null },
+              { "s": "Du lernt Deutsch.", "err": "lernt", "fix": ["lernst"], "why": "du → đuôi -st: du lernst." },
+              { "s": "Ich lerne auch Deutsch.", "err": null }
+            ] },
+            { "type": "conj", "title": "Chia lernen và haben (ich, du, Sie)", "persons": ["ich", "du", "Sie"], "verbs": [
+              { "inf": "lernen", "vi": "học", "forms": ["lerne", "lernst", "lernen"], "stem": "lern" },
+              { "inf": "haben", "vi": "có", "forms": ["habe", "hast", "haben"], "stem": "hab" }
+            ], "vi": "Quy tắc quen thuộc: ich -<b>e</b> · du -<b>st</b> · Sie -<b>en</b>. <i>haben</i> hơi khác: du <b>hast</b> (bỏ chữ b)." }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần A", "minutes": 4,
+          "blocks": [
+            { "type": "book", "kb": "24", "tracks": "KB 1/35-37", "steps": [
+              "A1 — <i>Wie geht's? Hören Sie und ordnen Sie zu.</i> = Nghe (track 35) và ghép mỗi câu trả lời với khuôn mặt tương ứng.",
+              "A2a — <i>Ordnen Sie die Gespräche und schreiben Sie.</i> = Xếp các câu thành 2 hội thoại, viết ra, rồi nghe (track 36–37) để đối chiếu.",
+              "A2b — Đóng vai hai hội thoại với tên của bạn: tự nói cả hai vai, thật to.",
+              "A3 — Nhìn 4 tranh: ở tiệc, ở giảng đường, ở cuộc họp, ở cửa hàng. Chọn du hay Sie rồi viết và nói hội thoại."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L2</i>, trang 2–3." }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 6,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Buổi sáng ở văn phòng (lịch sự)", "lines": [
+              { "who": "Frau Lange", "v": "f", "de": "Guten Morgen, Herr Becker! Wie geht es Ihnen?", "vi": "Chào buổi sáng, ông Becker! Ông khỏe không?" },
+              { "who": "Herr Becker", "v": "m", "de": "Guten Morgen, Frau Lange. Danke, sehr gut. Und Ihnen?", "vi": "Chào buổi sáng, bà Lange. Cảm ơn, rất khỏe. Còn bà?" },
+              { "who": "Frau Lange", "v": "f", "de": "Na ja, es geht.", "vi": "Ừm, tạm được." },
+              { "who": "Herr Becker", "v": "m", "de": "Oh, das tut mir leid.", "vi": "Ồ, tôi rất tiếc." }
+            ] },
+            { "type": "dialog", "title": "2 · Hai người bạn (thân mật)", "lines": [
+              { "who": "Mia", "v": "f", "de": "Hallo, Tom! Wie geht es dir?", "vi": "Chào Tom! Bạn khỏe không?" },
+              { "who": "Tom", "v": "m", "de": "Na ja, es geht. Und dir?", "vi": "Ừm, tạm được. Còn bạn?" },
+              { "who": "Mia", "v": "f", "de": "Sehr gut, danke! Wir haben Pause. Du auch?", "vi": "Rất khỏe, cảm ơn! Tụi mình nghỉ giải lao. Bạn cũng vậy à?" },
+              { "who": "Tom", "v": "m", "de": "Ja, ich habe auch Pause.", "vi": "Ừ, mình cũng nghỉ giải lao." },
+              { "who": "Mia", "v": "f", "de": "Super!", "vi": "Tuyệt!" }
+            ] },
+            { "type": "dialog", "title": "3 · Trong giờ nghỉ", "lines": [
+              { "who": "Lena", "v": "f", "de": "Hallo, Jan! Lernst du auch Deutsch?", "vi": "Chào Jan! Cậu cũng học tiếng Đức à?" },
+              { "who": "Jan", "v": "m", "de": "Ja, ich lerne Deutsch. Die Lehrerin ist super!", "vi": "Ừ, mình học tiếng Đức. Cô giáo tuyệt lắm!" },
+              { "who": "Lena", "v": "f", "de": "Ja, genau! Und jetzt haben wir Pause.", "vi": "Ừ, đúng thế! Và bây giờ tụi mình nghỉ giải lao." },
+              { "who": "Jan", "v": "m", "de": "Super!", "vi": "Tuyệt!" }
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 5,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá", "items": [
+              "Tôi hỏi thăm được bằng „Wie geht's?“ và „Wie geht es dir / Ihnen?“.",
+              "Tôi nói được mình khỏe đến mức nào: super, sehr gut, gut, es geht, nicht so gut.",
+              "Tôi chọn đúng <i>dir</i> (du) và <i>Ihnen</i> (Sie).",
+              "Tôi hiểu ý chính truyện ảnh tập 2: ai, từ đâu, đang làm gì."
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 19, bài 1–4 (bài 2 có audio AB track 13–14).", "tracks": "AB 13-14" },
+              "Ngày mai: vào <a href='#/review'>Ôn tập</a> ôn các từ của buổi này.",
+              "Tuỳ chọn: đọc lại trang 24 (phần A) trong Kursbuch và đóng vai hai hội thoại A2 với tên của bạn."
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2", "no": 2, "minutes": 50, "set": "b",
+      "title": "Das ist mein Bruder.",
+      "vi": "Gia đình và mein / meine",
+      "book": "Kursbuch tr. 23, 25, 30 · Arbeitsbuch tr. 20–21",
+      "goals": [
+        "Gọi tên các thành viên gia đình, kèm der / die / das.",
+        "Giới thiệu gia đình: <i>Das ist mein Vater. Das sind meine Eltern.</i>",
+        "Chọn đúng <i>mein / meine</i>, <i>dein / deine</i>, <i>Ihr / Ihre</i>.",
+        "Nói về người khác: <i>Das ist Lenas Opa.</i> (tên + s).",
+        "Đọc đúng ä, ö, ü trong số nhiều và đuôi -er."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: gia đình", "minutes": 10,
+          "blocks": [
+            { "type": "words", "set": "b" },
+            { "type": "listenPick", "set": "b", "n": 8, "title": "Nghe và chọn nghĩa" }
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (4)", "minutes": 7,
+          "blocks": [
+            { "type": "rules", "items": [
+              { "t": "ä, ö, ü trong số nhiều", "vi": "Nhiều danh từ gia đình thêm dấu hai chấm (Umlaut) ở số nhiều: <b>Vater → Väter</b>, <b>Mutter → Mütter</b>. Bấm nghe và so sánh số ít với số nhiều.", "ex": ["Vater|bố", "Väter|các ông bố", "Mutter|mẹ", "Mütter|các bà mẹ"] },
+              { "t": "ö: môi tròn, nói „ê“", "vi": "Làm môi tròn như nói „ô“ rồi phát âm „ê“.", "ex": ["Sohn|con trai", "Söhne|các con trai", "Tochter|con gái", "Töchter|các con gái"] },
+              { "t": "ü: môi tròn, nói „i“", "vi": "Môi tròn như nói „u“ nhưng đặt lưỡi như khi nói „i“.", "ex": ["Bruder|anh/em trai", "Brüder|các anh em trai", "Großmutter|bà", "Großmütter|các bà"] },
+              { "t": "r cuối từ → „a“ nhẹ", "vi": "Chữ <b>r</b> ở cuối từ và đuôi <b>-er</b> đọc nhẹ như âm „a“ ngắn — <b>không rung lưỡi</b>.", "ex": ["Vater|bố", "Mutter|mẹ", "Bruder|anh/em trai", "Schwester|chị/em gái", "Lehrer|giáo viên", "Eltern|bố mẹ"] },
+              { "t": "schw → shv", "vi": "<b>sch</b> + <b>w</b>: đọc „sh“ rồi „v“.", "ex": ["Schwester|chị/em gái", "Geschwister|anh chị em", "Schweiz|Thụy Sĩ"] },
+              { "t": "ß hay ss?", "vi": "<b>ß</b> đứng sau nguyên âm dài hoặc nguyên âm đôi (Groß-, heißen, Straße). Sau nguyên âm ngắn thì viết <b>ss</b> (muss, Tschüss).", "ex": ["Großeltern|ông bà", "Großvater|ông", "heißen|tên là", "Tschüss|tạm biệt"] }
+            ] },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng", "items": [
+              { "say": "Väter", "opts": ["Väter", "Vater"] },
+              { "say": "Mütter", "opts": ["Mütter", "Mutter"] },
+              { "say": "Brüder", "opts": ["Brüder", "Bruder"] },
+              { "say": "Töchter", "opts": ["Töchter", "Tochter"] },
+              { "say": "Söhne", "opts": ["Söhne", "Sohne"] },
+              { "say": "Schwester", "opts": ["Schwester", "Swester"] }
+            ] }
+          ]
+        },
+        {
+          "id": "cay", "title": "Cây gia đình của Lena", "minutes": 8,
+          "blocks": [
+            { "type": "tip", "title": "Tên + s", "html": "<p><b>Lenas Opa</b> = ông của Lena · <b>Peters Frau</b> = vợ của Peter. Thêm <b>-s</b> vào sau tên, không dùng dấu nháy (’). Cách này dùng khi giới thiệu người khác: <i>Das ist Lenas Bruder.</i></p>" },
+            { "type": "tree", "title": "Bấm vào từng người để nghe", "rows": [
+              { "label": "die Großeltern (ông bà)", "people": [
+                { "art": "der", "rel": "Opa", "name": "Karl", "say": "Das ist Lenas Opa Karl." },
+                { "art": "die", "rel": "Oma", "name": "Ruth", "say": "Das ist Lenas Oma Ruth." } ] },
+              { "label": "die Eltern (bố mẹ)", "people": [
+                { "art": "der", "rel": "Vater", "name": "Peter", "say": "Das ist Lenas Vater Peter." },
+                { "art": "die", "rel": "Mutter", "name": "Anna", "say": "Das ist Lenas Mutter Anna." } ] },
+              { "label": "die Kinder (con cái)", "people": [
+                { "art": "der", "rel": "Bruder", "name": "Max", "say": "Das ist Lenas Bruder Max." },
+                { "rel": "Lena", "name": "(ich)", "say": "Ich heiße Lena." },
+                { "art": "die", "rel": "Schwester", "name": "Sophie", "say": "Das ist Lenas Schwester Sophie." } ] }
+            ] },
+            { "type": "choice", "title": "Ai là ai?", "items": [
+              { "q": "Peter ist Lenas …", "opts": ["Vater", "Bruder", "Opa"], "a": 0 },
+              { "q": "Anna ist Lenas …", "opts": ["Mutter", "Schwester", "Oma"], "a": 0 },
+              { "q": "Max ist Lenas …", "opts": ["Bruder", "Sohn", "Vater"], "a": 0 },
+              { "q": "Karl und Ruth sind Lenas …", "opts": ["Großeltern", "Eltern", "Geschwister"], "a": 0 },
+              { "q": "Peter und Anna sind Lenas …", "opts": ["Eltern", "Großeltern", "Kinder"], "a": 0 },
+              { "q": "Max und Sophie sind Lenas …", "opts": ["Geschwister", "Eltern", "Großeltern"], "a": 0 },
+              { "q": "Lena ist Peters …", "opts": ["Tochter", "Sohn", "Enkelin"], "a": 0 },
+              { "q": "Lena ist Karls …", "opts": ["Enkelin", "Tochter", "Schwester"], "a": 0 }
+            ] }
+          ]
+        },
+        {
+          "id": "ngu-phap", "title": "Ngữ pháp: mein / dein / Ihr", "minutes": 15,
+          "blocks": [
+            { "type": "table", "title": "mein, dein, Ihr + danh từ", "head": ["", "der (nam)", "das (trung)", "die (nữ)", "số nhiều"], "rows": [
+              ["<b>ich</b> → mein", "mein Bruder", "mein Kind", "mein<b class='v2'>e</b> Tochter", "mein<b class='v2'>e</b> Kinder"],
+              ["<b>du</b> → dein", "dein Bruder", "dein Kind", "dein<b class='v2'>e</b> Tochter", "dein<b class='v2'>e</b> Kinder"],
+              ["<b>Sie</b> → Ihr", "Ihr Bruder", "Ihr Kind", "Ihr<b class='v2'>e</b> Tochter", "Ihr<b class='v2'>e</b> Kinder"]
+            ], "vi": "Quy tắc đơn giản: <b>der</b>-Wort và <b>das</b>-Wort (số ít) → <b>không</b> thêm đuôi (mein Bruder, mein Kind). <b>die</b>-Wort và <b>số nhiều</b> → thêm <b class='v2'>-e</b> (meine Tochter, meine Kinder, meine Eltern). Ba dạng: <b>mein</b> (của tôi) · <b>dein</b> (của bạn, du) · <b>Ihr</b> (của ông/bà, Sie)." },
+            { "type": "sort", "title": "mein hay meine?", "cats": ["mein · dein · Ihr<br><span class='muted small'>(der / das, số ít)</span>", "meine · deine · Ihre<br><span class='muted small'>(die, số nhiều)</span>"], "items": [
+              { "t": "<span class='g-der'>der</span> Vater", "c": 0 },
+              { "t": "<span class='g-die'>die</span> Mutter", "c": 1 },
+              { "t": "<span class='g-der'>der</span> Bruder", "c": 0 },
+              { "t": "<span class='g-die'>die</span> Schwester", "c": 1 },
+              { "t": "<span class='g-das'>das</span> Kind", "c": 0 },
+              { "t": "<span class='g-pl'>die</span> Eltern", "c": 1, "why": "Eltern là số nhiều → meine Eltern." },
+              { "t": "<span class='g-der'>der</span> Opa", "c": 0 },
+              { "t": "<span class='g-die'>die</span> Oma", "c": 1 },
+              { "t": "<span class='g-der'>der</span> Sohn", "c": 0 },
+              { "t": "<span class='g-die'>die</span> Tochter", "c": 1 },
+              { "t": "<span class='g-pl'>die</span> Großeltern", "c": 1, "why": "Großeltern là số nhiều → meine Großeltern." },
+              { "t": "<span class='g-pl'>die</span> Geschwister", "c": 1, "why": "Geschwister là số nhiều → meine Geschwister." },
+              { "t": "<span class='g-der'>der</span> Mann", "c": 0 },
+              { "t": "<span class='g-die'>die</span> Familie", "c": 1 },
+              { "t": "<span class='g-pl'>die</span> Kinder", "c": 1, "why": "Kinder là số nhiều của das Kind → meine Kinder." },
+              { "t": "<span class='g-der'>der</span> Enkel", "c": 0 }
+            ] },
+            { "type": "gaps", "title": "Chọn đúng dạng", "items": [
+              { "q": "Das ist ___ Vater. <span class='muted'>(ich)</span>", "a": ["mein"], "opts": ["mein", "meine"] },
+              { "q": "Das ist ___ Mutter. <span class='muted'>(ich)</span>", "a": ["meine"], "opts": ["mein", "meine"] },
+              { "q": "Das sind ___ Eltern. <span class='muted'>(ich)</span>", "a": ["meine"], "opts": ["mein", "meine"] },
+              { "q": "Ist das ___ Bruder? <span class='muted'>(du)</span>", "a": ["dein"], "opts": ["dein", "deine"] },
+              { "q": "Ist das ___ Schwester? <span class='muted'>(du)</span>", "a": ["deine"], "opts": ["dein", "deine"] },
+              { "q": "Frau Lange, ist das ___ Sohn? <span class='muted'>(Sie)</span>", "a": ["Ihr"], "opts": ["Ihr", "Ihre"] },
+              { "q": "Herr Becker, ist das ___ Tochter? <span class='muted'>(Sie)</span>", "a": ["Ihre"], "opts": ["Ihr", "Ihre"] },
+              { "q": "Das ist ___ Familie. <span class='muted'>(ich)</span>", "a": ["meine"], "opts": ["mein", "meine"] },
+              { "q": "Wer ist das? Ist das ___ Kind? <span class='muted'>(du)</span>", "a": ["dein"], "opts": ["dein", "deine"] }
+            ] },
+            { "type": "fix", "title": "Tìm lỗi sai", "items": [
+              { "s": "Das ist mein Tochter.", "err": "mein", "fix": ["meine"], "why": "Tochter là die-Wort → meine Tochter." },
+              { "s": "Das ist meine Bruder.", "err": "meine", "fix": ["mein"], "why": "Bruder là der-Wort → mein Bruder." },
+              { "s": "Das sind mein Eltern.", "err": "mein", "fix": ["meine"], "why": "Eltern là số nhiều → meine Eltern." },
+              { "s": "Ist das dein Mutter?", "err": "dein", "fix": ["deine"], "why": "die Mutter → deine Mutter." },
+              { "ctx": "Bạn hỏi bà Lange (Sie):", "s": "Frau Lange, ist das dein Sohn?", "err": "dein", "fix": ["Ihr"], "why": "Nói với Sie → Ihr (viết hoa)." },
+              { "s": "Das ist meine Familie.", "err": null }
+            ] },
+            { "type": "order", "title": "Xếp câu", "vi": "Động từ (ô màu cam) ở <b>vị trí 2</b>. Riêng câu hỏi <b>có / không</b> thì động từ ở <b>vị trí 1</b>: <i>Ist das deine Schwester?</i>", "items": [
+              { "chunks": ["Das", "ist", "mein Bruder."], "v": 1, "vi": "Đây là anh trai tôi." },
+              { "chunks": ["Das", "sind", "meine Eltern."], "v": 1, "vi": "Đây là bố mẹ tôi." },
+              { "chunks": ["Wer", "ist", "das?"], "v": 1, "vi": "Đó là ai?" },
+              { "chunks": ["Das", "ist", "Lenas Opa."], "v": 1, "vi": "Đây là ông của Lena." },
+              { "chunks": ["Ist", "das", "deine Schwester?"], "v": 0, "vi": "Đây có phải chị (em) gái của bạn không?" }
+            ] }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: bài 3 và phần B", "minutes": 4,
+          "blocks": [
+            { "type": "book", "title": "Truyện ảnh: gia đình của Lara", "kb": "23", "tracks": "KB 1/30-32", "steps": [
+              "Bài 3a — <i>Hören Sie noch einmal und ordnen Sie zu.</i> = Nghe lại (track 30–32) và ghép các từ (Eltern, Großeltern, Bruder…) với 3 bức ảnh gia đình.",
+              "Bài 3b — <i>Was ist richtig? Hören Sie und kreuzen Sie an.</i> = Nghe và đánh dấu câu đúng."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L2</i>, trang 1." },
+            { "type": "book", "title": "Phần B", "kb": "25", "tracks": "KB 1/38-39", "steps": [
+              "B1a — <i>Hören Sie und ordnen Sie zu.</i> Nghe (track 38) và ghép: ai là vợ, con trai, con gái, cháu của Walter. B1b — đánh dấu câu đúng.",
+              "B2a — <i>Familienfotos.</i> Điền Dein / mein / meine / Ihre vào chỗ trống rồi nghe (track 39) để kiểm tra.",
+              "B2b, B3 — Đóng vai hội thoại, rồi chơi trò đoán (Rätsel) với tên người trong gia đình bạn.",
+              "Đọc thêm bảng Possessivartikel ở trang tổng kết ngữ pháp (Kursbuch tr. 30)."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L2</i>, trang 4–6." }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 6,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Xem ảnh gia đình (thân mật)", "lines": [
+              { "who": "Jonas", "v": "m", "de": "Wer ist das, Mai?", "vi": "Đó là ai vậy, Mai?" },
+              { "who": "Mai", "v": "f", "de": "Das ist meine Familie. Das sind meine Eltern.", "vi": "Đây là gia đình mình. Đây là bố mẹ mình." },
+              { "who": "Jonas", "v": "m", "de": "Und wer ist das?", "vi": "Còn đây là ai?" },
+              { "who": "Mai", "v": "f", "de": "Das ist mein Bruder.", "vi": "Đây là anh (em) trai mình." },
+              { "who": "Jonas", "v": "m", "de": "Und das? Ist das deine Schwester?", "vi": "Còn đây? Đây là chị (em) gái bạn à?" },
+              { "who": "Mai", "v": "f", "de": "Nein, das ist meine Oma.", "vi": "Không, đây là bà mình." },
+              { "who": "Jonas", "v": "m", "de": "Deine Familie ist super!", "vi": "Gia đình bạn tuyệt quá!" }
+            ] },
+            { "type": "dialog", "title": "2 · Ở văn phòng (lịch sự)", "lines": [
+              { "who": "Herr Becker", "v": "m", "de": "Frau Lange, ist das Ihr Sohn?", "vi": "Bà Lange, đây là con trai bà à?" },
+              { "who": "Frau Lange", "v": "f", "de": "Ja, das ist mein Sohn Max. Und das ist meine Tochter Lea.", "vi": "Vâng, đây là con trai tôi, Max. Và đây là con gái tôi, Lea." },
+              { "who": "Herr Becker", "v": "m", "de": "Und wer ist das? Ihr Mann?", "vi": "Còn đây là ai? Chồng bà à?" },
+              { "who": "Frau Lange", "v": "f", "de": "Nein, das ist mein Vater.", "vi": "Không, đây là bố tôi." },
+              { "who": "Herr Becker", "v": "m", "de": "Ach so! Ihre Familie ist super!", "vi": "À ra vậy! Gia đình bà tuyệt quá!" }
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá", "items": [
+              "Tôi gọi đúng tên các thành viên gia đình, kèm der / die / das.",
+              "Tôi giới thiệu được: <i>Das ist mein Vater.</i> · <i>Das sind meine Eltern.</i>",
+              "Tôi chọn đúng <i>mein / meine</i>, <i>dein / deine</i>, <i>Ihr / Ihre</i>.",
+              "Tôi nói được „Lenas Opa“ (tên + s)."
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 20–21, bài 5–14 (bài 9 có audio AB track 15).", "tracks": "AB 15" },
+              "Ngày mai: vào <a href='#/review'>Ôn tập</a>.",
+              "Tuỳ chọn: vẽ cây gia đình của bạn và giới thiệu thành 4–5 câu: <i>Das ist mein Vater. Er heißt …</i> (nói to hoặc ghi âm)."
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3", "no": 3, "minutes": 55, "set": "c",
+      "title": "Er lebt in Poznań.",
+      "vi": "er / sie / wir / ihr và nơi ở",
+      "book": "Kursbuch tr. 26, 30 · Arbeitsbuch tr. 22–24",
+      "goals": [
+        "Nói về người khác: <i>Das ist Tim. Er kommt aus Kanada. Sie lebt in Berlin.</i>",
+        "Dùng đúng <i>er, sie</i> (một người), <i>wir, ihr, sie</i> (nhiều người).",
+        "Chia leben, wohnen, kommen, sprechen, sein, haben với 6 ngôi.",
+        "Nói nơi ở: <i>Ich wohne in Köln. Jetzt lebt er in Berlin.</i>",
+        "Đặt đúng động từ ở vị trí 2, kể cả khi câu mở đầu bằng <i>Jetzt</i>."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: nơi ở và đại từ", "minutes": 8,
+          "blocks": [
+            { "type": "words", "set": "c" },
+            { "type": "listenPick", "set": "c", "n": 8, "title": "Nghe và chọn nghĩa" }
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (5)", "minutes": 5,
+          "blocks": [
+            { "type": "rules", "items": [
+              { "t": "z và tz → ts", "vi": "<b>z</b> và <b>tz</b> đều đọc „ts“: <i>zusammen</i> = „tsu-za-mơn“.", "ex": ["zusammen|cùng nhau", "jetzt|bây giờ", "Zürich|Zürich", "Zahl|con số"] },
+              { "t": "ng → một âm mũi", "vi": "<b>ng</b> là một âm mũi duy nhất như „ng“ trong „ngang“ — không đọc thêm chữ g.", "ex": ["lange|lâu", "Entschuldigung|xin lỗi", "jung|trẻ"] },
+              { "t": "-en cuối từ rất nhẹ", "vi": "Đuôi <b>-en</b> đọc nhẹ, gần như „ơn“ hoặc chỉ còn âm „n“: <i>wohnen</i> ≈ „vô-nơn“, <i>leben</i> ≈ „lê-bn“.", "ex": ["wohnen|ở", "leben|sống", "kommen|đến", "sprechen|nói"] }
+            ] },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng", "items": [
+              { "say": "wohnen", "opts": ["wohnen", "wonen"] },
+              { "say": "zusammen", "opts": ["zusammen", "susammen"] },
+              { "say": "wir", "opts": ["wir", "vir"] },
+              { "say": "hier", "opts": ["hier", "hir"] },
+              { "say": "lange", "opts": ["lange", "Lage"] },
+              { "say": "Zahl", "opts": ["Zahl", "Saal"] }
+            ] }
+          ]
+        },
+        {
+          "id": "dai-tu", "title": "Đại từ: er, sie, wir, ihr", "minutes": 8,
+          "blocks": [
+            { "type": "table", "title": "Ai làm chủ ngữ?", "head": ["", "Số ít", "Số nhiều"], "rows": [
+              ["<b>Tôi · chúng tôi</b>", "ich", "wir"],
+              ["<b>Bạn · các bạn</b> <span class='muted small'>(thân mật)</span>", "du", "ihr"],
+              ["<b>Anh ấy · cô ấy · họ</b>", "er (anh ấy) · sie (cô ấy)", "sie (họ)"],
+              ["<b>Ông/bà · quý vị</b> <span class='muted small'>(lịch sự)</span>", "Sie", "Sie"]
+            ], "vi": "⚠ Ba chữ <b>sie / sie / Sie</b> trông gần giống nhau. <b>sie</b> + -t = <i>cô ấy</i> (sie kommt) · <b>sie</b> + -en = <i>họ</i> (sie kommen) · <b>Sie</b> viết hoa = <i>ông/bà</i>. Nhìn đuôi động từ và chữ hoa để phân biệt." },
+            { "type": "gaps", "title": "Chọn đại từ", "items": [
+              { "q": "Das ist Tim. ___ kommt aus Kanada.", "a": ["Er"], "opts": ["Er", "Sie", "Wir", "Ihr"] },
+              { "q": "Das ist Lara. ___ kommt aus Polen.", "a": ["Sie"], "opts": ["Er", "Sie", "Wir", "Ihr"] },
+              { "q": "Das sind Tim und Lara. ___ wohnen in München.", "a": ["Sie"], "opts": ["Er", "Sie", "Wir", "Ihr"] },
+              { "q": "Mai und ich: ___ kommen aus Vietnam.", "a": ["Wir"], "opts": ["Er", "Sie", "Wir", "Ihr"] },
+              { "q": "Hallo, Tim und Lara! Woher kommt ___?", "a": ["ihr"], "opts": ["er", "sie", "wir", "ihr"] },
+              { "q": "Mein Vater ist Lehrer. ___ lebt in Hanoi.", "a": ["Er"], "opts": ["Er", "Sie", "Wir", "Ihr"] },
+              { "q": "Meine Mutter ist Ärztin. ___ wohnt in Hamburg.", "a": ["Sie"], "opts": ["Er", "Sie", "Wir", "Ihr"] },
+              { "q": "Wo wohnt ihr? – ___ wohnen in Köln.", "a": ["Wir"], "opts": ["Er", "Sie", "Wir", "Ihr"] }
+            ] }
+          ]
+        },
+        {
+          "id": "chia", "title": "Chia động từ với 6 ngôi", "minutes": 14,
+          "blocks": [
+            { "type": "table", "title": "Đuôi động từ — thuộc cả bảng", "head": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "rows": [
+              ["-<b class='v2'>e</b>", "-<b class='v2'>st</b>", "-<b class='v2'>t</b>", "-<b class='v2'>en</b>", "-<b class='v2'>t</b>", "-<b class='v2'>en</b>"]
+            ], "vi": "Mẹo: <b>wir</b> và <b>sie/Sie</b> luôn giống dạng nguyên mẫu (wir wohnen · sie wohnen · Sie wohnen). <b>er/sie</b> và <b>ihr</b> cùng đuôi -t (er wohnt · ihr wohnt)." },
+            { "type": "conj", "title": "Động từ có quy tắc: wohnen, leben, kommen", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [
+              { "inf": "wohnen", "vi": "ở", "forms": ["wohne", "wohnst", "wohnt", "wohnen", "wohnt", "wohnen"], "stem": "wohn" },
+              { "inf": "leben", "vi": "sống", "forms": ["lebe", "lebst", "lebt", "leben", "lebt", "leben"], "stem": "leb" },
+              { "inf": "kommen", "vi": "đến", "forms": ["komme", "kommst", "kommt", "kommen", "kommt", "kommen"], "stem": "komm" }
+            ] },
+            { "type": "conj", "title": "Ba động từ cần học thuộc: sprechen, sein, haben", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [
+              { "inf": "sprechen", "vi": "nói", "forms": ["spreche", "sprichst", "spricht", "sprechen", "sprecht", "sprechen"], "stem": "sprech" },
+              { "inf": "sein", "vi": "là", "forms": ["bin", "bist", "ist", "sind", "seid", "sind"] },
+              { "inf": "haben", "vi": "có", "forms": ["habe", "hast", "hat", "haben", "habt", "haben"], "stem": "hab" }
+            ], "vi": "<i>sprechen</i> đổi <b>e → i</b> ở du và er/sie. <i>sein</i> hoàn toàn bất quy tắc. <i>haben</i>: du <b>hast</b>, er/sie <b>hat</b> (bỏ b). Học động từ đổi nguyên âm theo cụm ba dạng: <b>ich spreche · du sprichst · er/sie spricht</b>." },
+            { "type": "gaps", "title": "Điền động từ", "items": [
+              { "q": "Tim ___ aus Kanada. <span class='muted'>(kommen)</span>", "a": ["kommt"] },
+              { "q": "Lara und Tim ___ in München. <span class='muted'>(wohnen)</span>", "a": ["wohnen"] },
+              { "q": "Wir ___ aus Vietnam. <span class='muted'>(kommen)</span>", "a": ["kommen"] },
+              { "q": "Woher ___ ihr? <span class='muted'>(kommen)</span>", "a": ["kommt"] },
+              { "q": "Meine Mutter ___ gut Deutsch. <span class='muted'>(sprechen)</span>", "a": ["spricht"] },
+              { "q": "Ihr ___ Deutsch und Englisch. <span class='muted'>(sprechen)</span>", "a": ["sprecht"] },
+              { "q": "Er ___ Lehrer. <span class='muted'>(sein)</span>", "a": ["ist"] },
+              { "q": "Wir ___ Pause. <span class='muted'>(haben)</span>", "a": ["haben"] },
+              { "q": "Wo ___ ihr? <span class='muted'>(wohnen)</span>", "a": ["wohnt"] },
+              { "q": "Meine Eltern ___ nicht zusammen. <span class='muted'>(leben)</span>", "a": ["leben"] }
+            ] },
+            { "type": "fix", "title": "Tìm lỗi sai", "items": [
+              { "s": "Er kommen aus Kanada.", "err": "kommen", "fix": ["kommt"], "why": "er → đuôi -t." },
+              { "s": "Wir kommt aus Vietnam.", "err": "kommt", "fix": ["kommen"], "why": "wir → đuôi -en." },
+              { "s": "Ihr kommen aus Deutschland?", "err": "kommen", "fix": ["kommt"], "why": "ihr → đuôi -t." },
+              { "s": "Meine Mutter sprecht Deutsch.", "err": "sprecht", "fix": ["spricht"], "why": "er/sie của sprechen đổi e → i: sie spricht." },
+              { "s": "Tim und Lara lebt in München.", "err": "lebt", "fix": ["leben"], "why": "Hai người (sie = họ) → đuôi -en." },
+              { "s": "Sie wohnt in Köln.", "err": null }
+            ] }
+          ]
+        },
+        {
+          "id": "vi-tri", "title": "Vị trí 2 và „Jetzt …“", "minutes": 8,
+          "blocks": [
+            { "type": "table", "title": "Vị trí 1 có thể là „Jetzt“", "head": ["Vị trí 1", "Vị trí 2", "…"], "rows": [
+              ["Er", "<b class='v2'>lebt</b>", "jetzt in Berlin."],
+              ["Jetzt", "<b class='v2'>lebt</b>", "er in Berlin."],
+              ["Zurzeit", "<b class='v2'>wohne</b>", "ich in Köln."]
+            ], "vi": "Khi đặt <b>Jetzt</b> (hoặc <b>Zurzeit</b>) lên đầu câu, <b>động từ vẫn ở vị trí 2</b> và chủ ngữ đứng sau động từ: <i>Jetzt lebt er in Berlin</i> (không phải <s>Jetzt er lebt</s>)." },
+            { "type": "order", "title": "Xếp câu", "items": [
+              { "chunks": ["Er", "kommt", "aus Kanada."], "v": 1, "vi": "Anh ấy đến từ Canada." },
+              { "chunks": ["Sie", "wohnen", "in München."], "v": 1, "vi": "Họ ở München." },
+              { "chunks": ["Jetzt", "lebt", "er", "in Berlin."], "v": 1, "vi": "Bây giờ anh ấy sống ở Berlin." },
+              { "chunks": ["Wir", "kommen", "aus Vietnam."], "v": 1, "vi": "Chúng tôi đến từ Việt Nam." },
+              { "chunks": ["Zurzeit", "wohne", "ich", "in Köln."], "v": 1, "vi": "Hiện nay tôi ở Köln." },
+              { "chunks": ["Woher", "kommt", "ihr?"], "v": 1, "vi": "Các bạn đến từ đâu?" }
+            ] },
+            { "type": "gaps", "title": "Viết về một người", "task": "Đọc thông tin rồi điền câu, như bài C2 trong sách: <i>Das ist … Er/Sie kommt aus … Jetzt lebt er/sie in …</i>", "items": [
+              { "q": "<b>Mai</b> · Vietnam (Hanoi) → jetzt Köln.<br>Das ist Mai. ___ kommt aus Vietnam, aus Hanoi. Jetzt ___ ___ in Köln.", "a": [["Sie"], ["lebt", "wohnt"], ["sie"]], "size": 6 },
+              { "q": "<b>Marco und Lisa</b> · Italien (Rom) → jetzt Hamburg.<br>Das sind Marco und Lisa. ___ kommen aus Italien, aus Rom. Jetzt ___ ___ in Hamburg.", "a": [["Sie"], ["leben", "wohnen"], ["sie"]], "size": 6 },
+              { "q": "<b>Herr Ito</b> · Japan (Osaka) → jetzt Berlin.<br>Das ist Herr Ito. ___ kommt aus Japan, aus Osaka. Jetzt ___ ___ in Berlin.", "a": [["Er"], ["lebt", "wohnt"], ["er"]], "size": 6 }
+            ] }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần C", "minutes": 4,
+          "blocks": [
+            { "type": "book", "kb": "26", "tracks": "KB 1/40-41", "steps": [
+              "C1a — <i>Hören Sie und ordnen Sie zu.</i> Nghe 3 đoạn giới thiệu (track 40) và điền các động từ (ist, kommt, lebt, wohnen…) vào chỗ trống.",
+              "C1b — <i>Ergänzen Sie die Tabelle.</i> Điền er / sie / wir vào bảng (đối chiếu với bảng chia động từ ở trên).",
+              "C2 — <i>Das ist/sind …</i> Đọc thông tin về từng người rồi viết câu: <i>Das ist … Er kommt aus … Jetzt lebt er in …</i>",
+              "C3 — <i>Im Zug.</i> Nghe (track 41): ai nói câu nào? Rồi tự hỏi–đáp với <i>ihr / wir</i> (nói to cả hai vai)."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L2</i>, trang 7–8." }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 6,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Trên tàu (ihr, wir)", "lines": [
+              { "who": "Jana", "v": "f", "de": "Hallo! Wer seid ihr?", "vi": "Chào! Các bạn là ai?" },
+              { "who": "Leo", "v": "m", "de": "Wir sind Leo und Pia.", "vi": "Bọn mình là Leo và Pia." },
+              { "who": "Jana", "v": "f", "de": "Woher kommt ihr?", "vi": "Các bạn đến từ đâu?" },
+              { "who": "Pia", "v": "f", "de": "Wir kommen aus Österreich. Und du?", "vi": "Bọn mình đến từ Áo. Còn bạn?" },
+              { "who": "Jana", "v": "f", "de": "Ich komme aus Polen, aber ich wohne jetzt hier.", "vi": "Mình đến từ Ba Lan, nhưng bây giờ mình ở đây." }
+            ] },
+            { "type": "dialog", "title": "2 · Giới thiệu bạn (er, sie)", "lines": [
+              { "who": "Anna", "v": "f", "de": "Paul, das ist Lena. Sie kommt aus Polen.", "vi": "Paul, đây là Lena. Cô ấy đến từ Ba Lan." },
+              { "who": "Paul", "v": "m", "de": "Hallo, Lena! Wohnst du schon lange hier?", "vi": "Chào Lena! Bạn ở đây lâu chưa?" },
+              { "who": "Lena", "v": "f", "de": "Nein, nicht so lange. Zurzeit wohne ich in Berlin.", "vi": "Chưa, chưa lâu. Hiện nay mình ở Berlin." },
+              { "who": "Paul", "v": "m", "de": "Und deine Eltern? Wo leben sie?", "vi": "Còn bố mẹ bạn? Họ sống ở đâu?" },
+              { "who": "Lena", "v": "f", "de": "Sie leben in Lublin. Aber mein Bruder wohnt auch hier.", "vi": "Họ sống ở Lublin. Nhưng anh (em) trai mình cũng ở đây." }
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 3,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá", "items": [
+              "Tôi dùng đúng <i>er, sie</i> (một người), <i>wir, ihr, sie</i> (nhiều người).",
+              "Tôi chia được leben, wohnen, kommen, sprechen, sein, haben với 6 ngôi.",
+              "Tôi nói được ai đó sống ở đâu: <i>Er lebt in … · Sie wohnen in …</i>",
+              "Tôi đặt đúng động từ ở vị trí 2, kể cả khi câu mở đầu bằng <i>Jetzt</i>."
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              "Arbeitsbuch tr. 22–24, bài 15–22.",
+              "Ngày mai: vào <a href='#/review'>Ôn tập</a>.",
+              "Tuỳ chọn: viết 4 câu về một người trong gia đình bạn: <i>Das ist mein Bruder. Er heißt … Er lebt in …</i>"
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4", "no": 4, "minutes": 55, "set": "d",
+      "title": "Zahlen und Personalien",
+      "vi": "Số 0–20, số điện thoại, tuổi, thông tin cá nhân",
+      "book": "Kursbuch tr. 27, 31 · Arbeitsbuch tr. 25–26",
+      "goals": [
+        "Đếm, nghe và viết số từ 0 đến 20 (null … zwanzig).",
+        "Đọc và nghe số điện thoại từng số một.",
+        "Hỏi–đáp tuổi, nơi sinh, nơi ở, số điện thoại, tình trạng hôn nhân, con cái.",
+        "Đặt câu hỏi Có/Không (động từ đứng đầu) và dùng <i>haben</i> đúng ngôi.",
+        "Điền một biểu mẫu cá nhân (Formular) và tự giới thiệu đầy đủ hơn."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: số và thông tin cá nhân", "minutes": 8,
+          "blocks": [
+            { "type": "words", "set": "n", "title": "Số từ 0 đến 20" },
+            { "type": "words", "set": "d", "title": "Thông tin cá nhân" },
+            { "type": "listenPick", "set": "d", "n": 6, "title": "Nghe và chọn nghĩa" }
+          ]
+        },
+        {
+          "id": "so", "title": "Số từ 0 đến 20", "minutes": 14,
+          "blocks": [
+            { "type": "numbers", "title": "Bảng số — bấm từng ô để nghe" },
+            { "type": "tip", "title": "Quy luật", "html": "<ul><li><b>13–19</b> = số + <b>zehn</b>: drei + zehn = dreizehn, vier + zehn = vierzehn…</li><li>Hai số có dạng riêng: <b>elf</b> (11) và <b>zwölf</b> (12).</li><li>Hai số bị rút gọn: <b>sechs → sechzehn</b> (bỏ s) · <b>sieben → siebzehn</b> (bỏ -en).</li><li><b>20</b> = zwan<b>zig</b>.</li></ul>" },
+            { "type": "numHear", "title": "Nghe số, chọn chữ số", "n": 8 },
+            { "type": "numWrite", "title": "Gõ số bằng chữ", "task": "Thấy chữ số, gõ tên số bằng tiếng Đức (ví dụ 7 → sieben). Cần ä ö ü thì bấm nút phía trên ô gõ, hoặc gõ ae oe ue.", "n": 8 },
+            { "type": "numWrite", "mode": "read", "title": "Đọc số bằng chữ, gõ chữ số", "n": 8 },
+            { "type": "numHear", "mode": "phone", "title": "Nghe ba số liền nhau (như số điện thoại)", "task": "Số điện thoại tiếng Đức thường đọc từng số một hoặc từng cặp. Ở đây bạn nghe ba số liền nhau và chọn dãy số đúng.", "n": 5 },
+            { "type": "book", "kb": "27", "tracks": "KB 1/42-43", "steps": [
+              "D1 — <i>Hören Sie und sprechen Sie nach.</i> Nghe (track 42) và đọc theo từng số, từ 0 đến 20.",
+              "D2 — <i>Welche Telefonnummer hören Sie? Kreuzen Sie an.</i> Nghe (track 43) và đánh dấu số điện thoại bạn nghe được."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L2</i>, trang 9–10." }
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (6)", "minutes": 4,
+          "blocks": [
+            { "type": "rules", "items": [
+              { "t": "z → ts", "vi": "<b>z</b> luôn đọc „ts“.", "ex": ["zwei|2", "zehn|10", "zwölf|12", "zwanzig|20", "Zahl|con số"] },
+              { "t": "v → f (trong từ gốc Đức)", "vi": "Trong từ gốc Đức, <b>v</b> đọc như <b>f</b>.", "ex": ["vier|4", "vierzehn|14", "Vater|bố", "von|từ", "Vorname|tên"] },
+              { "t": "chs → ks · ch → „xì“", "vi": "<b>sechs</b> đọc „zeks“ (chs = ks). Còn <b>sechzehn</b> đọc „zéch-tsên“: ch như „xì“ nhẹ. Sau a, o, u thì ch đọc „kh“.", "ex": ["sechs|6", "sechzehn|16", "acht|8", "achtzehn|18"] },
+              { "t": "-ig cuối từ → „-ích“", "vi": "Đuôi <b>-ig</b> đọc „-ích“.", "ex": ["zwanzig|20", "ledig|độc thân"] },
+              { "t": "ü, ö trong số", "vi": "<b>fünf</b> có ü, <b>zwölf</b> có ö — môi tròn như bài trước.", "ex": ["fünf|5", "fünfzehn|15", "zwölf|12", "Zürich|Zürich"] },
+              { "t": "s trước nguyên âm → z", "vi": "<b>s</b> đứng trước nguyên âm đọc rung như „z“.", "ex": ["sieben|7", "siebzehn|17", "sechs|6"] }
+            ] },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng", "items": [
+              { "say": "zwei", "opts": ["zwei", "swei"] },
+              { "say": "vier", "opts": ["vier", "fier"] },
+              { "say": "fünf", "opts": ["fünf", "finf"] },
+              { "say": "zwölf", "opts": ["zwölf", "zwelf"] },
+              { "say": "zehn", "opts": ["zehn", "sehen"] },
+              { "say": "sieben", "opts": ["sieben", "zieben"] }
+            ] }
+          ]
+        },
+        {
+          "id": "personalien", "title": "Hỏi–đáp về thông tin cá nhân", "minutes": 12,
+          "blocks": [
+            { "type": "table", "title": "Câu hỏi và câu trả lời hay gặp", "head": ["Hỏi", "Trả lời"], "rows": [
+              ["<span class='say-inline' data-say='Wie alt bist du?'>Wie alt bist du?</span>", "<span class='say-inline' data-say='Ich bin zwanzig Jahre alt.'>Ich bin zwanzig (Jahre alt).</span>"],
+              ["<span class='say-inline' data-say='Wie alt sind deine Kinder?'>Wie alt sind deine Kinder?</span>", "<span class='say-inline' data-say='Sieben und zehn.'>Sieben und zehn.</span>"],
+              ["<span class='say-inline' data-say='Wo sind Sie geboren?'>Wo sind Sie geboren?</span>", "<span class='say-inline' data-say='In Hanoi. Das liegt in Vietnam.'>In Hanoi. Das liegt in Vietnam.</span>"],
+              ["<span class='say-inline' data-say='Wo wohnen Sie?'>Wo wohnen Sie?</span>", "<span class='say-inline' data-say='Ich wohne in Berlin.'>Ich wohne in Berlin.</span>"],
+              ["<span class='say-inline' data-say='Wie ist Ihre Telefonnummer?'>Wie ist Ihre Telefonnummer?</span>", "<span class='say-inline' data-say='Sieben, acht, drei, zwei, null, eins.'>Sieben, acht, drei, zwei, null, eins.</span>"],
+              ["<span class='say-inline' data-say='Sind Sie verheiratet?'>Sind Sie verheiratet?</span>", "<span class='say-inline' data-say='Nein, ich bin ledig.'>Nein, ich bin ledig. (geschieden / verwitwet)</span>"],
+              ["<span class='say-inline' data-say='Haben Sie Kinder?'>Haben Sie Kinder?</span>", "<span class='say-inline' data-say='Ja, zwei.'>Ja, zwei. / Nein.</span>"]
+            ] },
+            { "type": "tip", "title": "Hỏi Có/Không: động từ đứng đầu", "html": "<p>Câu hỏi <b>có / không</b> không có từ hỏi và <b>động từ đứng ở vị trí 1</b>: <i>Sind Sie verheiratet? · Haben Sie Kinder? · Wohnst du in Berlin?</i></p><p>Câu hỏi có từ <b>W-</b> thì động từ vẫn ở vị trí 2: <i>Wo wohnen Sie? · Wie alt ist dein Kind?</i></p><p>Giọng: câu hỏi Có/Không thường <b>lên giọng ↗</b> ở cuối, câu hỏi W- <b>xuống giọng ↘</b>.</p>" },
+            { "type": "order", "title": "Xếp câu hỏi", "items": [
+              { "chunks": ["Sind", "Sie", "verheiratet?"], "v": 0, "vi": "Ông/bà đã kết hôn chưa?" },
+              { "chunks": ["Haben", "Sie", "Kinder?"], "v": 0, "vi": "Ông/bà có con không?" },
+              { "chunks": ["Wo", "wohnen", "Sie?"], "v": 1, "vi": "Ông/bà ở đâu?" },
+              { "chunks": ["Wie alt", "ist", "dein Kind?"], "v": 1, "vi": "Con bạn mấy tuổi?" },
+              { "chunks": ["Wo", "bist", "du", "geboren?"], "v": 1, "vi": "Bạn sinh ở đâu?" }
+            ] },
+            { "type": "choice", "title": "Câu trả lời này cho câu hỏi nào?", "items": [
+              { "q": "„In Hanoi.“", "opts": ["Wo sind Sie geboren?", "Wie alt sind Sie?", "Sind Sie verheiratet?"], "a": 0 },
+              { "q": "„Nein, ich bin geschieden.“", "opts": ["Sind Sie verheiratet?", "Haben Sie Kinder?", "Wo wohnen Sie?"], "a": 0 },
+              { "q": "„Ja, zwei.“", "opts": ["Haben Sie Kinder?", "Wie ist Ihre Telefonnummer?", "Wo sind Sie geboren?"], "a": 0 },
+              { "q": "„Ich bin neunzehn.“", "opts": ["Wie alt sind Sie?", "Wo wohnen Sie?", "Wie heißen Sie?"], "a": 0 },
+              { "q": "„Ich wohne in Berlin.“", "opts": ["Wo wohnen Sie?", "Woher kommen Sie?", "Wie heißen Sie?"], "a": 0 }
+            ] },
+            { "type": "gaps", "title": "Điền haben", "items": [
+              { "q": "Ich ___ zwei Kinder.", "a": ["habe"] },
+              { "q": "___ du Geschwister?", "a": ["Hast"] },
+              { "q": "Meine Schwester ___ ein Kind.", "a": ["hat"] },
+              { "q": "Wir ___ drei Kinder.", "a": ["haben"] },
+              { "q": "___ ihr Pause?", "a": ["Habt"] },
+              { "q": "Herr Becker ___ keine Kinder.", "a": ["hat"] }
+            ] }
+          ]
+        },
+        {
+          "id": "formular", "title": "Điền biểu mẫu", "minutes": 9,
+          "blocks": [
+            { "type": "book", "kb": "27", "tracks": "KB 1/44", "steps": [
+              "D3 — <i>Hören Sie und lesen Sie das Gespräch. Ergänzen Sie das Formular.</i> Nghe (track 44), đọc hội thoại và điền biểu mẫu (Familienname, Vorname, Heimatland, Geburtsort…).",
+              "D4 — <i>Partnerinterview.</i> Nếu không có bạn học: tự phỏng vấn mình, nói to cả câu hỏi và câu trả lời (hoặc dùng khối „Das bin ich!“ bên dưới).",
+              "Arbeitsbuch bài 28 (<i>Ein Formular</i>) luyện đúng kiểu bài này."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L2</i>, trang 9–11." },
+            { "type": "form", "title": "Đọc hồ sơ, điền biểu mẫu", "cards": [
+              { "html": "<div class='vcard'><b>Hồ sơ 1</b><span>Ich heiße Elena Petrova.</span><span>Ich komme aus Russland, aus Omsk.</span><span>Ich wohne in Berlin.</span><span>Meine Telefonnummer ist 830417.</span><span>Ich bin ledig und habe ein Kind.</span></div>",
+                "fields": [["Familienname", ["Petrova"]], ["Vorname", ["Elena"]], ["Heimatland", ["Russland"]], ["Stadt (Heimat)", ["Omsk"]], ["Wohnort", ["Berlin"]], ["Telefonnummer", ["830417"]], ["Familienstand", ["ledig"]], ["Kinder", ["1", "ein", "eins"]]] },
+              { "html": "<div class='vcard'><b>Hồ sơ 2</b><span>Ich bin Omar Haddad.</span><span>Ich bin in Kairo geboren, aber ich lebe schon lange in Wien.</span><span>Meine Telefonnummer ist 140215.</span><span>Ich bin verheiratet und habe zwei Kinder.</span></div>",
+                "fields": [["Familienname", ["Haddad"]], ["Vorname", ["Omar"]], ["Geburtsort", ["Kairo"]], ["Wohnort", ["Wien"]], ["Telefonnummer", ["140215"]], ["Familienstand", ["verheiratet"]], ["Kinder", ["2", "zwei"]]] }
+            ] }
+          ]
+        },
+        {
+          "id": "das-bin-ich", "title": "Das bin ich! (2) — tự giới thiệu", "minutes": 5,
+          "blocks": [
+            { "type": "profile", "ext": true, "title": "Bài giới thiệu của bạn", "task": "Điền thông tin của bạn. Web ghép thành bài nói tiếng Đức — nghe, nói theo, rồi ghi âm. Thông tin chỉ lưu trên máy này." }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 3,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá", "items": [
+              "Tôi đếm được từ 0 đến 20 và nghe hiểu số.",
+              "Tôi đọc được số điện thoại từng số một.",
+              "Tôi hỏi–đáp được tuổi, nơi sinh, nơi ở, số điện thoại, tình trạng hôn nhân, con cái.",
+              "Tôi chia được <i>haben</i> và đặt được câu hỏi Có/Không (động từ ở đầu).",
+              "Tôi điền được một biểu mẫu cá nhân."
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 25–26, bài 23–30 (bài 23 có audio AB track 16).", "tracks": "AB 16" },
+              "Ngày mai: vào <a href='#/review'>Ôn tập</a> ôn số 0–20.",
+              "Tuỳ chọn: tập đọc số điện thoại của bạn bằng tiếng Đức, từng số một (ví dụ: null, eins, sieben …)."
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5", "no": 5, "minutes": 55, "set": "e",
+      "title": "Deutschsprachige Länder",
+      "vi": "Đức – Áo – Thụy Sĩ, đọc hiểu và kiểm tra cuối Lektion 2",
+      "book": "Kursbuch tr. 28–29, 31–33 · Arbeitsbuch tr. 27–29",
+      "goals": [
+        "Biết một thành phố nằm ở nước nào; nói được thủ đô của ba nước.",
+        "Dùng <i>liegt in</i>, <i>die Hauptstadt von / der</i> và <i>Nord- / Süddeutschland</i>.",
+        "Đọc một đoạn giới thiệu gia đình và trả lời câu hỏi.",
+        "Làm bài kiểm tra cuối Lektion 2."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: địa lý và nghề nghiệp", "minutes": 8,
+          "blocks": [
+            { "type": "words", "set": "e" },
+            { "type": "listenPick", "set": "e", "n": 6, "title": "Nghe và chọn nghĩa" },
+            { "type": "words", "set": "e2", "title": "Thêm: thành phố và vài nước nữa (tuỳ chọn)", "collapsed": true }
+          ]
+        },
+        {
+          "id": "ban-do", "title": "Đức – Áo – Thụy Sĩ", "minutes": 10,
+          "blocks": [
+            { "type": "table", "title": "Các nước nói tiếng Đức", "head": ["Nước", "Thủ đô", "Ngôn ngữ"], "rows": [
+              ["<span class='g-pl'>(das)</span> Deutschland · <b>D</b>", "Berlin", "Deutsch"],
+              ["<span class='g-pl'>(das)</span> Österreich · <b>A</b>", "Wien", "Deutsch"],
+              ["<span class='g-die'>die</span> Schweiz · <b>CH</b>", "Bern", "Deutsch, Französisch, Italienisch, Rätoromanisch"],
+              ["Liechtenstein · <b>FL</b>", "Vaduz", "Deutsch"]
+            ], "vi": "Chữ viết tắt D · A · CH · FL là ký hiệu nước trên xe, trước mã bưu chính (bạn đã gặp ở Lektion 1). Thụy Sĩ có bốn ngôn ngữ chính thức." },
+            { "type": "tip", "title": "Bốn phương", "html": "<p><b>der Norden</b> (bắc) · <b>der Süden</b> (nam) · <b>der Osten</b> (đông) · <b>der Westen</b> (tây).</p><p>Hamburg và Kiel nằm ở <b>Nord</b>deutschland; München nằm ở <b>Süd</b>deutschland.</p>" },
+            { "type": "sort", "title": "Thành phố này thuộc nước nào?", "cats": ["Deutschland (D)", "Österreich (A)", "die Schweiz (CH)"], "items": [
+              { "t": "Hamburg", "c": 0 }, { "t": "Berlin", "c": 0 }, { "t": "München", "c": 0 }, { "t": "Köln", "c": 0 }, { "t": "Stuttgart", "c": 0 }, { "t": "Kiel", "c": 0 },
+              { "t": "Wien", "c": 1 }, { "t": "Salzburg", "c": 1 }, { "t": "Graz", "c": 1 }, { "t": "Linz", "c": 1 }, { "t": "Innsbruck", "c": 1 },
+              { "t": "Zürich", "c": 2 }, { "t": "Bern", "c": 2 }, { "t": "Basel", "c": 2 }, { "t": "Genf", "c": 2 }
+            ] },
+            { "type": "choice", "title": "Thủ đô và vị trí", "items": [
+              { "q": "Berlin ist die Hauptstadt von …", "opts": ["Deutschland", "Österreich", "der Schweiz"], "a": 0 },
+              { "q": "Wien ist die Hauptstadt von …", "opts": ["Österreich", "Deutschland", "der Schweiz"], "a": 0 },
+              { "q": "Bern ist die Hauptstadt …", "opts": ["der Schweiz", "von Deutschland", "von Österreich"], "a": 0 },
+              { "q": "Hamburg liegt in …", "opts": ["Norddeutschland", "Süddeutschland", "Österreich"], "a": 0 },
+              { "q": "München liegt in …", "opts": ["Süddeutschland", "Norddeutschland", "der Schweiz"], "a": 0 },
+              { "q": "Salzburg liegt in …", "opts": ["Österreich", "der Schweiz", "Deutschland"], "a": 0 },
+              { "q": "Zürich liegt in …", "opts": ["der Schweiz", "Österreich", "Deutschland"], "a": 0 }
+            ] }
+          ]
+        },
+        {
+          "id": "liegt", "title": "Ngữ pháp nhỏ: liegt in, Hauptstadt von", "minutes": 8,
+          "blocks": [
+            { "type": "table", "title": "Mẫu câu về địa điểm", "head": ["Mẫu", "Ví dụ"], "say": 1, "rows": [
+              ["<b>… liegt in</b> + nước", "Hamburg liegt in Deutschland."],
+              ["<b>… ist die Hauptstadt von</b> + nước", "Berlin ist die Hauptstadt von Deutschland."],
+              ["<b>… ist die Hauptstadt der</b> Schweiz", "Bern ist die Hauptstadt der Schweiz."],
+              ["<b>… liegt in Nord- / Süddeutschland</b>", "München liegt in Süddeutschland."],
+              ["Số nhiều: <b>liegen</b>", "Hamburg und Kiel liegen in Norddeutschland."]
+            ], "vi": "„die Schweiz“ có mạo từ nên nói <b>in der Schweiz</b> và <b>die Hauptstadt der Schweiz</b>. Deutschland, Österreich không có mạo từ: <i>in Deutschland</i>, <i>von Österreich</i>. Lý do bạn sẽ học ở Lektion sau — bây giờ cứ thuộc như cụm cố định." },
+            { "type": "gaps", "title": "Điền vào chỗ trống", "bank": ["liegt", "liegen", "ist", "sind", "von", "der", "in", "Süd", "Nord"], "items": [
+              { "q": "Hamburg ___ in Norddeutschland.", "a": ["liegt", "ist"] },
+              { "q": "Hamburg und Kiel ___ in Norddeutschland.", "a": ["liegen", "sind"] },
+              { "q": "Berlin ist die Hauptstadt ___ Deutschland.", "a": ["von"] },
+              { "q": "Bern ist die Hauptstadt ___ Schweiz.", "a": ["der"] },
+              { "q": "München liegt in ___deutschland.", "a": ["Süd"] },
+              { "q": "Kiel liegt in ___deutschland.", "a": ["Nord"] },
+              { "q": "Wien liegt ___ Österreich.", "a": ["in"] },
+              { "q": "Zürich liegt in ___ Schweiz.", "a": ["der"] }
+            ] }
+          ]
+        },
+        {
+          "id": "doc-hieu", "title": "Đọc hiểu: gia đình Schneider", "minutes": 10,
+          "blocks": [
+            { "type": "dialog", "title": "Bốn người tự giới thiệu", "lines": [
+              { "who": "Anna", "v": "f", "de": "Hallo! Ich bin Anna Schneider. Ich bin Ärztin und wohne in Hamburg. Ich bin verheiratet und habe zwei Kinder.", "vi": "Chào! Tôi là Anna Schneider. Tôi là bác sĩ và ở Hamburg. Tôi đã kết hôn và có hai con." },
+              { "who": "Peter", "v": "m", "de": "Guten Tag! Ich bin Peter, Annas Mann. Ich komme aus Österreich, aus Linz. Zurzeit lebe ich in Hamburg. Ich bin Lehrer.", "vi": "Xin chào! Tôi là Peter, chồng của Anna. Tôi đến từ Áo, từ Linz. Hiện nay tôi sống ở Hamburg. Tôi là giáo viên." },
+              { "who": "Mia", "v": "f", "de": "Hallo! Ich bin Mia und sechzehn Jahre alt. Peter und Anna sind meine Eltern. Mein Bruder heißt Ben. Er ist zehn Jahre alt.", "vi": "Chào! Mình là Mia, mười sáu tuổi. Peter và Anna là bố mẹ mình. Em trai mình tên là Ben. Em ấy mười tuổi." },
+              { "who": "Ruth", "v": "f", "de": "Ich bin Ruth, Annas Mutter. Ich komme aus Berlin, aber ich wohne schon lange hier in Hamburg. Mia ist meine Enkelin und Ben ist mein Enkel.", "vi": "Tôi là Ruth, mẹ của Anna. Tôi đến từ Berlin, nhưng tôi sống ở Hamburg đã lâu. Mia là cháu gái và Ben là cháu trai của tôi." }
+            ] },
+            { "type": "choice", "title": "Bạn hiểu bài đọc chưa?", "items": [
+              { "q": "Anna Schneider ist …", "opts": ["Ärztin", "Lehrerin", "bei der Polizei"], "a": 0 },
+              { "q": "Peter kommt aus …", "opts": ["Österreich", "Deutschland", "der Schweiz"], "a": 0 },
+              { "q": "Wo lebt Peter zurzeit?", "opts": ["in Hamburg", "in Linz", "in Berlin"], "a": 0 },
+              { "q": "Wie alt ist Ben?", "opts": ["zehn", "sechzehn", "zwölf"], "a": 0 },
+              { "q": "Wer ist Ruth?", "opts": ["Annas Mutter", "Peters Mutter", "Mias Schwester"], "a": 0 },
+              { "q": "Wie viele Kinder haben Anna und Peter?", "opts": ["zwei", "eins", "drei"], "a": 0 },
+              { "q": "Ruth wohnt schon lange in …", "opts": ["Hamburg", "Berlin", "Linz"], "a": 0 }
+            ] }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần E", "minutes": 3,
+          "blocks": [
+            { "type": "book", "kb": "28–29", "steps": [
+              "E1 — <i>Suchen Sie die Städte auf der Landkarte.</i> Tìm các thành phố trên bản đồ (trang 28) rồi chọn nước đúng: D, A hay CH.",
+              "E2 — Đọc 7 đoạn tự giới thiệu của một gia đình (trang 29), ghép với ảnh rồi trả lời câu hỏi. Bạn vừa luyện đúng kiểu bài này ở phần đọc hiểu phía trên."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L2</i>, trang 12." }
+          ]
+        },
+        {
+          "id": "kiem-tra", "title": "Kiểm tra cuối Lektion 2", "minutes": 12,
+          "blocks": [
+            { "type": "test", "id": "l2", "title": "Bài kiểm tra", "items": [
+              { "k": "mc", "q": "Frau Lange hỏi bạn: „Wie geht es Ihnen?“ Câu trả lời lịch sự và đúng:", "opts": ["Danke, sehr gut. Und Ihnen?", "Danke, sehr gut. Und dir?", "Ich geht sehr gut.", "Sie sind gut."], "a": 0, "why": "Người lớn → Sie → Und Ihnen?" },
+              { "k": "mc", "q": "Bạn hỏi bạn thân:", "opts": ["Wie geht es dir?", "Wie geht es Ihnen?", "Wie geht es du?", "Wie bist du?"], "a": 0 },
+              { "k": "mc", "q": "Das ist ___ Mutter.", "opts": ["meine", "mein"], "a": 0, "keep": true },
+              { "k": "mc", "q": "Das ist ___ Bruder.", "opts": ["mein", "meine"], "a": 0, "keep": true },
+              { "k": "mc", "q": "Frau Lange, ist das ___ Sohn?", "opts": ["Ihr", "dein", "Ihre", "deine"], "a": 0 },
+              { "k": "type", "q": "Das sind ___ Eltern. <span class='muted'>(mein-)</span>", "a": ["meine"] },
+              { "k": "type", "q": "Tim kommt aus Kanada. ___ lebt jetzt in München.", "a": ["Er"] },
+              { "k": "type", "q": "Lara und Tim wohnen in München. ___ lernen Deutsch.", "a": ["Sie"] },
+              { "k": "type", "q": "Wir ___ aus Vietnam. <span class='muted'>(kommen)</span>", "a": ["kommen"] },
+              { "k": "type", "q": "Ihr ___ gut Deutsch! <span class='muted'>(sprechen)</span>", "a": ["sprecht"] },
+              { "k": "type", "q": "Du ___ Pause. <span class='muted'>(haben)</span>", "a": ["hast"] },
+              { "k": "type", "q": "Mein Vater ___ in Hanoi. <span class='muted'>(leben)</span>", "a": ["lebt"] },
+              { "k": "mc", "q": "Câu nào đúng?", "opts": ["Jetzt lebt er in Berlin.", "Jetzt er lebt in Berlin.", "Er jetzt lebt in Berlin.", "Lebt jetzt er in Berlin."], "a": 0, "why": "Động từ ở vị trí 2." },
+              { "k": "listen", "q": "Nghe và gõ chữ số:", "say": "dreizehn", "a": ["13"] },
+              { "k": "listen", "q": "Nghe và gõ chữ số:", "say": "sechzehn", "a": ["16"] },
+              { "k": "listen", "q": "Nghe và gõ dãy số (không cần dấu cách):", "say": "sieben, acht, drei, zwei", "a": ["7832", "7 8 3 2"] },
+              { "k": "type", "q": "17 = ___ <span class='muted'>(gõ bằng chữ)</span>", "a": ["siebzehn"] },
+              { "k": "listenmc", "q": "Nghe rồi chọn nghĩa:", "say": "Wie alt bist du?", "opts": ["Bạn bao nhiêu tuổi?", "Bạn ở đâu?", "Bạn tên là gì?", "Bạn đến từ đâu?"], "a": 0 },
+              { "k": "mc", "q": "„Meine Eltern sind geschieden“ nghĩa là:", "opts": ["Bố mẹ tôi đã ly hôn.", "Bố mẹ tôi đã kết hôn.", "Bố mẹ tôi sống ở Đức.", "Bố mẹ tôi độc thân."], "a": 0 },
+              { "k": "mc", "q": "Hamburg liegt in …", "opts": ["Norddeutschland", "Süddeutschland", "Österreich", "der Schweiz"], "a": 0 },
+              { "k": "mc", "q": "Wien ist die Hauptstadt von …", "opts": ["Österreich", "Deutschland", "der Schweiz", "Italien"], "a": 0 },
+              { "k": "mc", "q": "___ Kind", "opts": ["der", "die", "das"], "a": 2, "keep": true },
+              { "k": "mc", "q": "___ Tochter", "opts": ["der", "die", "das"], "a": 1, "keep": true }
+            ] },
+            { "type": "book", "title": "Bài kiểm tra của sách", "steps": [
+              "Arbeitsbuch tr. 28: <i>Test Lektion 2</i>.",
+              "Bài kiểm tra trong bộ giáo án: <i>Kopiervorlagen/L02/Lektionstest.pdf</i> — làm ra giấy. Đáp án nằm trong <i>Lösungen zu den Tests.pdf</i>."
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá cả Lektion 2", "items": [
+              "Tôi hỏi thăm và nói mình khỏe thế nào (phần A).",
+              "Tôi giới thiệu được gia đình mình (phần B).",
+              "Tôi nói được nơi mình và người khác sống (phần C).",
+              "Tôi đếm đến 20, trả lời câu hỏi về bản thân và điền biểu mẫu (phần D).",
+              "Tôi hiểu thông tin đơn giản về người và địa điểm (phần E)."
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 27, bài 31–32 (bài 31 có audio AB track 17–20).", "tracks": "AB 17-20" },
+              "Arbeitsbuch tr. 28: Test Lektion 2.",
+              { "t": "<i>Fokus Beruf</i> (Arbeitsbuch tr. 29): nghe các hội thoại ở nơi làm việc để xem khi nào dùng du, khi nào dùng Sie.", "tracks": "AB 21-24" },
+              { "t": "Audio-Training (Kursbuch tr. 31): nghe và trả lời theo băng.", "tracks": "KB 1/45-47" },
+              "Kursbuch tr. 32, <i>Zwischendurch mal …</i>: đọc „Meine Familie und ich“ và chơi trò Kettenspiel (tự nói 3 câu về bản thân).",
+              "Kursbuch tr. 33, <i>Projekt: Kurs-Kontaktliste</i>: tự điền phiếu thông tin về bạn (tên, số điện thoại, email, ngôn ngữ).",
+              "Kursbuch tr. 30–31: đọc lại trang tổng kết ngữ pháp và mẫu câu.",
+              "Từ mai: vào <a href='#/review'>Ôn tập</a> mỗi ngày — Lektion 2 có hơn 100 từ mới."
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    }
+  ]
+}

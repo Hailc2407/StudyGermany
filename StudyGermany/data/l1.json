@@ -1,0 +1,742 @@
+{
+  "id": "l1",
+  "no": 1,
+  "title": "Guten Tag. Mein Name ist …",
+  "vi": "Chào hỏi, tên, quê quán, đánh vần",
+  "book": "Kursbuch tr. 10–21 · Arbeitsbuch tr. 10–18 · Lernwortschatz L1",
+  "audio": ["KB 1/1-26", "AB 1-12"],
+  "sets": [
+    {
+      "id": "a", "title": "Chào hỏi", "session": "1",
+      "items": [
+        { "id": "guten-morgen", "de": "Guten Morgen!", "kind": "phrase", "vi": "Chào buổi sáng!", "syl": "GU·ten MOR·gen", "en": "≈ good morning", "note": "Dùng buổi sáng, đến khoảng 10–11 giờ.", "ex": ["Guten Morgen, Frau Lange!", "Chào buổi sáng, bà Lange!"] },
+        { "id": "guten-tag", "de": "Guten Tag!", "kind": "phrase", "vi": "Xin chào! (ban ngày, lịch sự)", "syl": "GU·ten TAG", "en": "≈ good day", "note": "Câu chào lịch sự hay dùng nhất, khoảng 11–18 giờ. g cuối từ đọc như k: Tag → „Tak“.", "ex": ["Guten Tag, Herr Becker!", "Xin chào ông Becker!"] },
+        { "id": "guten-abend", "de": "Guten Abend!", "kind": "phrase", "vi": "Chào buổi tối!", "syl": "GU·ten A·bend", "en": "≈ good evening", "note": "Từ khoảng 18 giờ. d cuối từ đọc như t: Abend → „Abent“.", "ex": ["Guten Abend, meine Damen und Herren!", "Chào buổi tối, thưa quý bà và quý ông!"] },
+        { "id": "gute-nacht", "de": "Gute Nacht!", "kind": "phrase", "vi": "Chúc ngủ ngon!", "syl": "GU·te NACHT", "en": "≈ good night", "note": "Chỉ nói khi chia tay lúc khuya hoặc trước khi đi ngủ — không dùng để chào khi gặp.", "ex": ["Gute Nacht, Mama!", "Mẹ ngủ ngon nhé!"] },
+        { "id": "hallo", "de": "Hallo!", "kind": "phrase", "vi": "Chào! (thân mật)", "syl": "HAL·lo", "en": "≈ hello", "note": "Dùng mọi lúc trong ngày với bạn bè, người quen.", "ex": ["Hallo, Tom!", "Chào Tom!"] },
+        { "id": "tschuess", "de": "Tschüs!", "kind": "phrase", "vi": "Tạm biệt! (thân mật)", "en": "≈ bye", "note": "Cũng viết là Tschüss. Dùng với bạn bè, người quen.", "ex": ["Tschüs, Anna!", "Tạm biệt Anna!"] },
+        { "id": "auf-wiedersehen", "de": "Auf Wiedersehen!", "kind": "phrase", "vi": "Tạm biệt! (lịch sự)", "syl": "auf WIE·der·se·hen", "en": "≈ goodbye", "note": "Nghĩa đen là „hẹn gặp lại“. Dùng với người lạ, ở cửa hàng, cơ quan.", "ex": ["Auf Wiedersehen, Herr Becker!", "Chào tạm biệt ông Becker!"] },
+        { "id": "bis-spaeter", "de": "Bis später!", "kind": "phrase", "vi": "Lát nữa gặp lại nhé!", "syl": "bis SPÄ·ter", "en": "≈ see you later", "note": "sp ở đầu từ đọc là „schp“: später → „schpäter“.", "ex": ["Tschüs, bis später!", "Tạm biệt, lát gặp nhé!"] },
+        { "id": "willkommen", "de": "Herzlich willkommen!", "kind": "phrase", "vi": "Nhiệt liệt chào mừng!", "syl": "HERZ·lich will·KOM·men", "en": "≈ welcome", "note": "willkommen = chào mừng; herzlich = nồng nhiệt (có thể bỏ).", "ex": ["Herzlich willkommen in Berlin!", "Chào mừng bạn đến Berlin!"] },
+        { "id": "danke", "de": "danke", "kind": "word", "vi": "cảm ơn", "syl": "DAN·ke", "en": "≈ thanks", "ex": ["Danke, Frau Lange!", "Cảm ơn bà Lange!"] },
+        { "id": "frau", "de": "Frau", "art": "die", "pl": "Frauen", "kind": "noun", "vi": "bà, cô (+ họ); người phụ nữ", "en": "Mrs., Ms.; woman", "note": "Frau + HỌ: Frau Lange. Dùng cho mọi phụ nữ trưởng thành.", "ex": ["Guten Tag, Frau Lange!", "Xin chào bà Lange!"] },
+        { "id": "herr", "de": "Herr", "art": "der", "pl": "Herren", "kind": "noun", "vi": "ông, anh (+ họ); quý ông", "en": "Mr.", "note": "Herr + HỌ: Herr Becker.", "ex": ["Guten Abend, Herr Becker!", "Chào buổi tối, ông Becker!"] },
+        { "id": "dame", "de": "Dame", "art": "die", "pl": "Damen", "kind": "noun", "vi": "quý bà", "syl": "DA·me", "en": "≈ lady (dame)", "note": "Hay gặp trong: meine Damen und Herren = thưa quý bà và quý ông.", "ex": ["Meine Damen und Herren, herzlich willkommen!", "Thưa quý bà và quý ông, nhiệt liệt chào mừng!"] },
+        { "id": "foto", "de": "Foto", "art": "das", "pl": "Fotos", "kind": "noun", "vi": "bức ảnh", "syl": "FO·to", "en": "photo", "ex": ["Das Foto ist super!", "Bức ảnh tuyệt quá!"] }
+      ]
+    },
+    {
+      "id": "b", "title": "Tên và giới thiệu", "session": "2",
+      "items": [
+        { "id": "ich", "de": "ich", "kind": "word", "vi": "tôi, mình", "en": "I", "note": "ch sau i đọc mềm như tiếng „xì“ nhẹ — không đọc thành „ích“.", "ex": ["Ich bin Mai.", "Mình là Mai."] },
+        { "id": "du", "de": "du", "kind": "word", "vi": "bạn, em, cậu (thân mật)", "en": "you (thân mật)", "ex": ["Und du?", "Còn bạn?"] },
+        { "id": "sie-hoeflich", "de": "Sie", "kind": "word", "vi": "ông, bà, anh, chị (lịch sự)", "en": "you (lịch sự)", "note": "Luôn viết hoa chữ S. Động từ đi với Sie có đuôi -en.", "ex": ["Und Sie?", "Còn ông/bà thì sao?"] },
+        { "id": "heissen", "de": "heißen", "kind": "verb", "forms": "ich heiße · du heißt · Sie heißen", "vi": "tên là", "syl": "HEI·ßen", "en": "to be called", "ex": ["Ich heiße Linh.", "Tôi tên là Linh."] },
+        { "id": "sein", "de": "sein", "kind": "verb", "forms": "ich bin · du bist · Sie sind", "vi": "là; thì; ở", "en": "to be", "note": "Động từ bất quy tắc — phải học thuộc.", "ex": ["Ich bin Minh.", "Tôi là Minh."] },
+        { "id": "name", "de": "Name", "art": "der", "pl": "Namen", "kind": "noun", "vi": "tên", "syl": "NA·me", "en": "name", "note": "Đuôi -e nhưng lại là der — nhớ màu xanh dương!", "ex": ["Mein Name ist Lan.", "Tên tôi là Lan."] },
+        { "id": "wie", "de": "wie", "kind": "word", "vi": "như thế nào; (hỏi tên) gì", "en": "how", "ex": ["Wie heißt du?", "Bạn tên là gì?"] },
+        { "id": "wer", "de": "wer", "kind": "word", "vi": "ai", "en": "who ⚠ không phải where", "ex": ["Wer ist das?", "Đó là ai?"] },
+        { "id": "wie-heissen-sie", "de": "Wie heißen Sie?", "kind": "phrase", "vi": "Ông/bà/anh/chị tên là gì? (lịch sự)" },
+        { "id": "wie-heisst-du", "de": "Wie heißt du?", "kind": "phrase", "vi": "Bạn tên là gì? (thân mật)" },
+        { "id": "ich-heisse", "de": "Ich heiße …", "kind": "phrase", "vi": "Tôi tên là …" },
+        { "id": "mein-name-ist", "de": "Mein Name ist …", "kind": "phrase", "vi": "Tên tôi là …" },
+        { "id": "wer-ist-das", "de": "Wer ist das?", "kind": "phrase", "vi": "Đây/Đó là ai?" },
+        { "id": "das-ist", "de": "Das ist …", "kind": "phrase", "vi": "Đây là … (khi giới thiệu)", "ex": ["Das ist Herr Becker.", "Đây là ông Becker."] },
+        { "id": "entschuldigung", "de": "Entschuldigung", "art": "die", "pl": "Entschuldigungen", "kind": "noun", "vi": "Xin lỗi! (để hỏi, gọi ai); lời xin lỗi", "syl": "ent·SCHUL·di·gung", "en": "≈ excuse me", "note": "Danh từ đuôi -ung luôn là die.", "ex": ["Entschuldigung, wie heißen Sie?", "Xin lỗi, ông tên là gì ạ?"] },
+        { "id": "freut-mich", "de": "Freut mich!", "kind": "phrase", "vi": "Rất vui được gặp!", "en": "≈ pleased to meet you", "note": "eu đọc là „oi“: freut → „froit“." },
+        { "id": "ja", "de": "ja", "kind": "word", "vi": "vâng, có, đúng", "en": "yes", "note": "j đọc như y trong tiếng Anh „yes“." },
+        { "id": "nein", "de": "nein", "kind": "word", "vi": "không", "en": "no", "note": "ei đọc là „ai“: nein → „nain“." },
+        { "id": "ja-stimmt", "de": "Ja, stimmt.", "kind": "phrase", "vi": "Vâng, đúng rồi." },
+        { "id": "ich-weiss-es-nicht", "de": "Ich weiß es nicht.", "kind": "phrase", "vi": "Tôi không biết.", "note": "weiß là dạng của động từ wissen (biết)." }
+      ]
+    },
+    {
+      "id": "c", "title": "Quê quán và ngôn ngữ", "session": "3",
+      "items": [
+        { "id": "woher", "de": "woher", "kind": "word", "vi": "từ đâu", "syl": "wo·HER", "en": "where … from (wo = where)", "ex": ["Woher kommst du?", "Bạn đến từ đâu?"] },
+        { "id": "kommen", "de": "kommen", "kind": "verb", "forms": "ich komme · du kommst · Sie kommen", "vi": "đến", "syl": "KOM·men", "en": "≈ to come", "ex": ["Ich komme aus Vietnam.", "Tôi đến từ Việt Nam."] },
+        { "id": "aus", "de": "aus", "kind": "word", "vi": "từ (một nơi nào đó)", "en": "≈ out of, from", "ex": ["Ich komme aus Hanoi.", "Tôi đến từ Hà Nội."] },
+        { "id": "woher-kommen-sie", "de": "Woher kommen Sie?", "kind": "phrase", "vi": "Ông/bà/anh/chị đến từ đâu?" },
+        { "id": "woher-kommst-du", "de": "Woher kommst du?", "kind": "phrase", "vi": "Bạn đến từ đâu?" },
+        { "id": "ich-komme-aus", "de": "Ich komme aus …", "kind": "phrase", "vi": "Tôi đến từ …" },
+        { "id": "sprechen", "de": "sprechen", "kind": "verb", "forms": "ich spreche · du sprichst · Sie sprechen", "vi": "nói", "syl": "SPRE·chen", "en": "≈ to speak", "note": "Ngôi du đổi e → i: du sprichst.", "ex": ["Ich spreche Vietnamesisch.", "Tôi nói tiếng Việt."] },
+        { "id": "sprache", "de": "Sprache", "art": "die", "pl": "Sprachen", "kind": "noun", "vi": "ngôn ngữ, tiếng", "syl": "SPRA·che", "en": "≈ speech, language" },
+        { "id": "was", "de": "was", "kind": "word", "vi": "cái gì", "en": "what", "ex": ["Was sprechen Sie?", "Ông/bà nói tiếng gì?"] },
+        { "id": "was-sprechen-sie", "de": "Was sprechen Sie?", "kind": "phrase", "vi": "Ông/bà nói tiếng gì?" },
+        { "id": "ich-spreche", "de": "Ich spreche …", "kind": "phrase", "vi": "Tôi nói tiếng …" },
+        { "id": "und", "de": "und", "kind": "word", "vi": "và", "en": "and", "note": "d cuối đọc như t: „unt“.", "ex": ["Ich spreche Vietnamesisch und Englisch.", "Tôi nói tiếng Việt và tiếng Anh."] },
+        { "id": "ein-bisschen", "de": "ein bisschen", "kind": "phrase", "vi": "một chút", "syl": "ein BISS·chen", "en": "a bit", "ex": ["Ich spreche ein bisschen Deutsch.", "Tôi nói được một chút tiếng Đức."] },
+        { "id": "nur", "de": "nur", "kind": "word", "vi": "chỉ", "en": "only", "ex": ["Nein, nur ein bisschen.", "Không, chỉ một chút thôi."] },
+        { "id": "aha", "de": "aha", "kind": "word", "vi": "à, ra vậy", "syl": "a·HA" },
+        { "id": "firma", "de": "Firma", "art": "die", "pl": "Firmen", "kind": "noun", "vi": "công ty", "syl": "FIR·ma", "en": "≈ firm", "ex": ["Ich bin von der Firma Sonntag.", "Tôi đến từ công ty Sonntag."] },
+        { "id": "von", "de": "von", "kind": "word", "vi": "từ; của", "en": "≈ from, of", "note": "v thường đọc như f: von → „fon“." },
+        { "id": "deutschland", "de": "Deutschland", "kind": "place", "vi": "nước Đức", "syl": "DEUTSCH·land", "en": "Germany", "aus": "aus Deutschland" },
+        { "id": "oesterreich", "de": "Österreich", "kind": "place", "vi": "nước Áo", "syl": "ÖS·ter·reich", "en": "Austria", "aus": "aus Österreich" },
+        { "id": "schweiz", "de": "Schweiz", "art": "die", "kind": "place", "vi": "Thụy Sĩ", "en": "Switzerland", "aus": "aus der Schweiz", "note": "Có mạo từ: die Schweiz → aus der Schweiz." },
+        { "id": "vietnam", "de": "Vietnam", "kind": "place", "vi": "Việt Nam", "syl": "vi·et·NAM", "aus": "aus Vietnam", "note": "Tên nước ngoài nên v ở đây đọc là v." },
+        { "id": "deutsch", "de": "Deutsch", "kind": "lang", "vi": "tiếng Đức", "en": "German ⚠ không phải Dutch (tiếng Hà Lan)", "note": "Tên ngôn ngữ luôn viết hoa: Ich spreche Deutsch." },
+        { "id": "englisch", "de": "Englisch", "kind": "lang", "vi": "tiếng Anh", "syl": "ENG·lisch", "en": "English" },
+        { "id": "vietnamesisch", "de": "Vietnamesisch", "kind": "lang", "vi": "tiếng Việt", "syl": "vi·et·na·ME·sisch" }
+      ]
+    },
+    {
+      "id": "c2", "title": "Thêm: nước và tiếng khác", "session": "3", "bonus": true,
+      "items": [
+        { "id": "polen", "de": "Polen", "kind": "place", "vi": "Ba Lan", "syl": "PO·len", "aus": "aus Polen" },
+        { "id": "polnisch", "de": "Polnisch", "kind": "lang", "vi": "tiếng Ba Lan", "syl": "POL·nisch" },
+        { "id": "spanien", "de": "Spanien", "kind": "place", "vi": "Tây Ban Nha", "syl": "SPA·ni·en", "aus": "aus Spanien" },
+        { "id": "spanisch", "de": "Spanisch", "kind": "lang", "vi": "tiếng Tây Ban Nha", "syl": "SPA·nisch" },
+        { "id": "italien", "de": "Italien", "kind": "place", "vi": "nước Ý", "syl": "i·TA·li·en", "aus": "aus Italien" },
+        { "id": "italienisch", "de": "Italienisch", "kind": "lang", "vi": "tiếng Ý", "syl": "i·ta·li·E·nisch" },
+        { "id": "frankreich", "de": "Frankreich", "kind": "place", "vi": "nước Pháp", "syl": "FRANK·reich", "aus": "aus Frankreich" },
+        { "id": "franzoesisch", "de": "Französisch", "kind": "lang", "vi": "tiếng Pháp", "syl": "fran·ZÖ·sisch" },
+        { "id": "china", "de": "China", "kind": "place", "vi": "Trung Quốc", "syl": "CHI·na", "aus": "aus China" },
+        { "id": "chinesisch", "de": "Chinesisch", "kind": "lang", "vi": "tiếng Trung", "syl": "chi·NE·sisch" },
+        { "id": "japan", "de": "Japan", "kind": "place", "vi": "Nhật Bản", "syl": "JA·pan", "aus": "aus Japan" },
+        { "id": "japanisch", "de": "Japanisch", "kind": "lang", "vi": "tiếng Nhật", "syl": "ja·PA·nisch" },
+        { "id": "suedkorea", "de": "Südkorea", "kind": "place", "vi": "Hàn Quốc", "aus": "aus Südkorea" },
+        { "id": "koreanisch", "de": "Koreanisch", "kind": "lang", "vi": "tiếng Hàn", "syl": "ko·re·A·nisch" },
+        { "id": "tuerkei", "de": "Türkei", "art": "die", "kind": "place", "vi": "Thổ Nhĩ Kỳ", "syl": "tür·KEI", "aus": "aus der Türkei", "note": "Có mạo từ: die Türkei → aus der Türkei." },
+        { "id": "tuerkisch", "de": "Türkisch", "kind": "lang", "vi": "tiếng Thổ Nhĩ Kỳ", "syl": "TÜR·kisch" },
+        { "id": "russland", "de": "Russland", "kind": "place", "vi": "nước Nga", "syl": "RUSS·land", "aus": "aus Russland" },
+        { "id": "russisch", "de": "Russisch", "kind": "lang", "vi": "tiếng Nga", "syl": "RUS·sisch" },
+        { "id": "usa", "de": "USA", "art": "die", "plOnly": true, "kind": "place", "vi": "nước Mỹ", "aus": "aus den USA", "note": "Số nhiều: die USA → aus den USA." },
+        { "id": "arabisch", "de": "Arabisch", "kind": "lang", "vi": "tiếng Ả Rập", "syl": "a·RA·bisch" }
+      ]
+    },
+    {
+      "id": "d", "title": "Chữ cái, điện thoại, địa chỉ", "session": "4",
+      "items": [
+        { "id": "buchstabe", "de": "Buchstabe", "art": "der", "pl": "Buchstaben", "kind": "noun", "vi": "chữ cái", "syl": "BUCH·sta·be", "en": "letter (Buch = book)", "note": "Đuôi -e nhưng là der." },
+        { "id": "alphabet", "de": "Alphabet", "art": "das", "kind": "noun", "vi": "bảng chữ cái", "syl": "al·pha·BET", "en": "alphabet" },
+        { "id": "buchstabieren", "de": "buchstabieren", "kind": "verb", "forms": "ich buchstabiere · du buchstabierst · Sie buchstabieren", "vi": "đánh vần", "syl": "buch·sta·BIE·ren", "ex": ["Buchstabieren Sie, bitte.", "Làm ơn đánh vần."] },
+        { "id": "wie-bitte", "de": "Wie bitte?", "kind": "phrase", "vi": "Xin lỗi, gì cơ ạ? (khi chưa nghe rõ)", "syl": "wie BIT·te", "en": "≈ pardon?" },
+        { "id": "bitte", "de": "bitte", "kind": "word", "vi": "làm ơn; xin mời", "syl": "BIT·te", "en": "please", "ex": ["Einen Moment, bitte.", "Xin đợi một chút."] },
+        { "id": "ich-buchstabiere", "de": "Ich buchstabiere: …", "kind": "phrase", "vi": "Tôi đánh vần: …", "ex": ["Ich buchstabiere: P – H – A – M.", "Tôi đánh vần: P – H – A – M."], "exSay": "Ich buchstabiere: Peh, Ha, A, Emm." },
+        { "id": "vielen-dank", "de": "Vielen Dank!", "kind": "phrase", "vi": "Cảm ơn nhiều!", "syl": "VIE·len DANK", "note": "v đọc như f: vielen → „fiilen“." },
+        { "id": "moment", "de": "Moment", "art": "der", "pl": "Momente", "kind": "noun", "vi": "lát, khoảnh khắc", "syl": "mo·MENT", "en": "moment", "ex": ["Einen Moment, bitte.", "Xin đợi một chút."] },
+        { "id": "tut-mir-leid", "de": "Tut mir leid.", "kind": "phrase", "vi": "Tôi rất tiếc. / Xin lỗi.", "en": "≈ I'm sorry" },
+        { "id": "nicht", "de": "nicht", "kind": "word", "vi": "không (phủ định)", "en": "not", "ex": ["Frau Roth ist nicht da.", "Bà Roth không có ở đây."] },
+        { "id": "ist-da", "de": "Ist … da?", "kind": "phrase", "vi": "… có ở đó không?", "note": "da sein = có mặt, ở đây.", "ex": ["Ist Herr Krause da, bitte?", "Thầy Krause có ở đó không ạ?"] },
+        { "id": "auf-wiederhoeren", "de": "Auf Wiederhören!", "kind": "phrase", "vi": "Tạm biệt! (khi nói điện thoại)", "syl": "auf WIE·der·hö·ren", "note": "hören = nghe → „hẹn nghe lại“. Chỉ dùng qua điện thoại." },
+        { "id": "adresse", "de": "Adresse", "art": "die", "pl": "Adressen", "kind": "noun", "vi": "địa chỉ", "syl": "a·DRES·se", "en": "address ⚠ tiếng Đức chỉ có một chữ d" },
+        { "id": "visitenkarte", "de": "Visitenkarte", "art": "die", "pl": "Visitenkarten", "kind": "noun", "vi": "danh thiếp", "syl": "vi·SI·ten·kar·te" },
+        { "id": "vorname", "de": "Vorname", "art": "der", "pl": "Vornamen", "kind": "noun", "vi": "tên (tên gọi)", "syl": "VOR·na·me", "en": "first name", "note": "Nguyễn Văn An → Vorname: An (hoặc Van An)." },
+        { "id": "familienname", "de": "Familienname", "art": "der", "pl": "Familiennamen", "kind": "noun", "vi": "họ", "syl": "fa·MI·li·en·na·me", "en": "family name", "note": "Còn gọi là Nachname. Nguyễn Văn An → Familienname: Nguyen." },
+        { "id": "strasse", "de": "Straße", "art": "die", "pl": "Straßen", "kind": "noun", "vi": "đường, phố", "syl": "STRA·ße", "en": "≈ street", "note": "Ở Thụy Sĩ viết Strasse (không dùng ß)." },
+        { "id": "hausnummer", "de": "Hausnummer", "art": "die", "pl": "Hausnummern", "kind": "noun", "vi": "số nhà", "syl": "HAUS·num·mer", "en": "house number" },
+        { "id": "postleitzahl", "de": "Postleitzahl", "art": "die", "pl": "Postleitzahlen", "kind": "noun", "vi": "mã bưu chính", "syl": "POST·leit·zahl", "note": "Viết tắt: PLZ. Ở Đức có 5 chữ số, ví dụ 80331 München." },
+        { "id": "stadt", "de": "Stadt", "art": "die", "pl": "Städte", "kind": "noun", "vi": "thành phố", "en": "≈ city", "note": "st ở đầu đọc „scht“, dt đọc như t: „Schtatt“." },
+        { "id": "land", "de": "Land", "art": "das", "pl": "Länder", "kind": "noun", "vi": "đất nước; vùng quê", "en": "land, country" },
+        { "id": "telefon", "de": "Telefon", "art": "das", "pl": "Telefone", "kind": "noun", "vi": "điện thoại", "syl": "te·le·FON", "en": "telephone" },
+        { "id": "e-mail", "de": "E-Mail", "art": "die", "pl": "E-Mails", "kind": "noun", "vi": "email, thư điện tử", "syl": "E·mail", "en": "e-mail" },
+        { "id": "formular", "de": "Formular", "art": "das", "pl": "Formulare", "kind": "noun", "vi": "tờ khai, mẫu đơn", "syl": "for·mu·LAR", "en": "form" }
+      ]
+    },
+    {
+      "id": "k", "title": "Lệnh trong sách", "session": "1", "bonus": true,
+      "items": [
+        { "id": "k-hoeren", "de": "Hören Sie.", "kind": "phrase", "vi": "Hãy nghe." },
+        { "id": "k-lesen", "de": "Lesen Sie.", "kind": "phrase", "vi": "Hãy đọc." },
+        { "id": "k-sprechen", "de": "Sprechen Sie.", "kind": "phrase", "vi": "Hãy nói." },
+        { "id": "k-schreiben", "de": "Schreiben Sie.", "kind": "phrase", "vi": "Hãy viết." },
+        { "id": "k-ansehen", "de": "Sehen Sie die Fotos an.", "kind": "phrase", "vi": "Hãy xem các bức ảnh.", "note": "ansehen = xem; phần „an“ tách ra đứng cuối câu." },
+        { "id": "k-zuordnen", "de": "Ordnen Sie zu.", "kind": "phrase", "vi": "Hãy xếp/ghép cho đúng.", "note": "zuordnen = sắp xếp cho khớp." },
+        { "id": "k-ergaenzen", "de": "Ergänzen Sie.", "kind": "phrase", "vi": "Hãy điền vào chỗ trống." },
+        { "id": "k-ankreuzen", "de": "Kreuzen Sie an.", "kind": "phrase", "vi": "Hãy đánh dấu ✗.", "note": "ankreuzen = đánh dấu chéo." },
+        { "id": "k-markieren", "de": "Markieren Sie.", "kind": "phrase", "vi": "Hãy đánh dấu, gạch chân." },
+        { "id": "k-verbinden", "de": "Verbinden Sie.", "kind": "phrase", "vi": "Hãy nối." },
+        { "id": "k-nachsprechen", "de": "Hören Sie und sprechen Sie nach.", "kind": "phrase", "vi": "Nghe và nói theo." },
+        { "id": "k-noch-einmal", "de": "noch einmal", "kind": "phrase", "vi": "thêm một lần nữa" },
+        { "id": "k-fragen", "de": "Fragen Sie.", "kind": "phrase", "vi": "Hãy hỏi." },
+        { "id": "k-antworten", "de": "Antworten Sie.", "kind": "phrase", "vi": "Hãy trả lời." },
+        { "id": "k-spielen", "de": "Spielen Sie die Gespräche.", "kind": "phrase", "vi": "Hãy đóng vai các đoạn hội thoại." },
+        { "id": "k-vergleichen", "de": "Vergleichen Sie.", "kind": "phrase", "vi": "Hãy so sánh, đối chiếu." },
+        { "id": "k-richtig", "de": "Was ist richtig?", "kind": "phrase", "vi": "Cái nào đúng?" },
+        { "id": "k-raten", "de": "Raten Sie.", "kind": "phrase", "vi": "Hãy đoán." },
+        { "id": "k-gespraech", "de": "Gespräch", "art": "das", "pl": "Gespräche", "kind": "noun", "vi": "cuộc hội thoại", "syl": "ge·SPRÄCH" },
+        { "id": "k-frage", "de": "Frage", "art": "die", "pl": "Fragen", "kind": "noun", "vi": "câu hỏi", "syl": "FRA·ge" },
+        { "id": "k-antwort", "de": "Antwort", "art": "die", "pl": "Antworten", "kind": "noun", "vi": "câu trả lời", "syl": "ANT·wort" },
+        { "id": "k-wort", "de": "Wort", "art": "das", "pl": "Wörter", "kind": "noun", "vi": "từ" },
+        { "id": "k-kurs", "de": "Kurs", "art": "der", "pl": "Kurse", "kind": "noun", "vi": "khoá học, lớp học" },
+        { "id": "k-lektion", "de": "Lektion", "art": "die", "pl": "Lektionen", "kind": "noun", "vi": "bài học", "syl": "lek·TION" },
+        { "id": "k-bild", "de": "Bild", "art": "das", "pl": "Bilder", "kind": "noun", "vi": "bức tranh, hình" }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1", "no": 1, "minutes": 45, "set": "a",
+      "title": "Hallo! Guten Tag!",
+      "vi": "Chào hỏi và tạm biệt",
+      "book": "Kursbuch tr. 10–12 · Arbeitsbuch tr. 10",
+      "goals": [
+        "Chào khi gặp và khi chia tay, đúng với giờ trong ngày.",
+        "Biết khi nào nói <i>Hallo / Tschüs</i> (thân mật), khi nào nói <i>Guten Tag / Auf Wiedersehen</i> (lịch sự).",
+        "Đọc đúng các chữ: w, ie, au, sch, ü, sp/st, ch và g/d ở cuối từ.",
+        "Nghe hiểu ý chính tập 1 của truyện ảnh."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: chào hỏi", "minutes": 10,
+          "blocks": [
+            { "type": "tip", "title": "Cách học từ trên trang này", "html": "<ul><li>Bấm 🔊 để nghe, 🐢 để nghe chậm. Nghe rồi nói to theo 2–3 lần.</li><li>Màu của danh từ: <span class='g-der'>der</span> xanh dương · <span class='g-die'>die</span> đỏ · <span class='g-das'>das</span> xanh lá. Luôn học danh từ <b>kèm</b> der/die/das.</li><li>Dòng nhỏ như <b>GU·ten TAG</b>: phần in HOA là âm tiết được nhấn mạnh.</li><li>≈ là từ gần giống tiếng Anh; ⚠ là bẫy dễ nhầm.</li></ul>" },
+            { "type": "words", "set": "a" },
+            { "type": "listenPick", "set": "a", "n": 8, "title": "Nghe và chọn nghĩa" }
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (1)", "minutes": 8,
+          "blocks": [
+            { "type": "text", "html": "<p>Tiếng Đức đọc gần như đúng như viết. Thuộc vài quy tắc là bạn đọc được cả những từ chưa gặp. Bấm vào từng ví dụ để nghe.</p>" },
+            { "type": "rules", "items": [
+              { "t": "w → v", "vi": "Chữ <b>w</b> đọc như <b>v</b> tiếng Việt.", "ex": ["wie|thế nào", "wer|ai", "was|cái gì", "willkommen|chào mừng"] },
+              { "t": "ie → i dài", "vi": "<b>ie</b> là một âm <b>i</b> kéo dài, không đọc „i-e“.", "ex": ["Sie|ông/bà", "die", "wie|thế nào", "Wiedersehen"] },
+              { "t": "au → ao", "vi": "<b>au</b> đọc gần như „ao“.", "ex": ["Frau|bà, cô", "auf", "aus|từ", "Haus|ngôi nhà"] },
+              { "t": "sch → s uốn lưỡi", "vi": "<b>sch</b> đọc như <i>sh</i> trong tiếng Anh <i>she</i>; <b>tsch</b> như <i>ch</i> trong <i>chair</i>.", "ex": ["Tschüs|tạm biệt", "Deutsch|tiếng Đức", "Englisch|tiếng Anh", "schön|đẹp"] },
+              { "t": "ü", "vi": "Môi tròn như khi nói „u“, nhưng lưỡi đặt như khi nói „i“. Tiếng Việt không có âm này — nghe nhiều lần rồi bắt chước.", "ex": ["Tschüs|tạm biệt", "Tür|cửa", "grün|xanh lá", "über|về, trên"] },
+              { "t": "sp, st ở đầu từ → schp, scht", "vi": "Ở đầu từ (hoặc đầu một phần của từ ghép), <b>sp</b> đọc „schp“, <b>st</b> đọc „scht“.", "ex": ["später|lát nữa", "sprechen|nói", "Straße|đường phố", "Stadt|thành phố"] },
+              { "t": "ch sau a, o, u, au → kh", "vi": "Sau <b>a, o, u, au</b>, chữ <b>ch</b> đọc gần giống „kh“ tiếng Việt.", "ex": ["Nacht|đêm", "acht|tám", "Buch|quyển sách", "auch|cũng"] },
+              { "t": "g, d, b ở cuối từ → k, t, p", "vi": "Ở cuối từ, <b>g</b> đọc như k, <b>d</b> như t, <b>b</b> như p. Nhớ đọc rõ âm cuối!", "ex": ["Tag|ngày", "Abend|buổi tối", "und|và", "gelb|màu vàng"] }
+            ] },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng", "items": [
+              { "say": "Sie", "opts": ["Sie", "sei"] },
+              { "say": "Wein", "opts": ["Wein", "Wien"] },
+              { "say": "Frau", "opts": ["Frau", "Fro"] },
+              { "say": "Mütter", "opts": ["Mütter", "Mutter"] },
+              { "say": "Biene", "opts": ["Biene", "Beine"] },
+              { "say": "acht", "opts": ["acht", "Akt"] },
+              { "say": "Wiedersehen", "opts": ["Wiedersehen", "Weidersehen"] }
+            ] },
+            { "type": "tip", "title": "Mẹo cho người Việt: đọc rõ âm cuối", "html": "Tiếng Việt hay „nuốt“ phụ âm cuối, còn tiếng Đức đọc rõ: <i>Tag</i> → „Ta<b>k</b>“, <i>Abend</i> → „Aben<b>t</b>“, <i>Nacht</i> → „Na<b>kht</b>“. Còn đuôi <i>-en</i> thì đọc rất nhẹ: <i>Guten</i> ≈ „Gu-tn“." }
+          ]
+        },
+        {
+          "id": "truyen", "title": "Truyện ảnh, tập 1: „Das bin ich.“", "minutes": 10,
+          "blocks": [
+            { "type": "book", "title": "Làm trong sách", "kb": "10–11", "tracks": "KB 1/1-8", "steps": [
+              "Mở Kursbuch trang 10–11. Nhìn 8 bức ảnh và đoán: có mấy người? Họ đang làm gì?",
+              "Nghe cả câu chuyện một lần (track 1–8). Chưa cần hiểu hết — chỉ cần nhận ra tên người và câu chào.",
+              "Bài 1 — <i>Sehen Sie die Fotos an und hören Sie. Wer ist das? Verbinden Sie.</i> = Xem ảnh và nghe. Đây là ai? Hãy nối câu nói với ảnh.",
+              "Bài 2 để dành đến Buổi 3, khi bạn đã học <i>kommen</i> và <i>sprechen</i>."
+            ], "key": "Đáp án bài 1: giáo án <i>Unterrichtsplan L1</i>, trang 1." },
+            { "type": "words", "set": "k", "compact": true, "title": "Hiểu lệnh trong sách", "task": "Sách ra đề bằng tiếng Đức. Đây là những lệnh hay gặp nhất — lướt qua một lượt, khi gặp lại thì tra ở đây." },
+            { "type": "choice", "title": "Bạn hiểu truyện chưa?", "items": [
+              { "q": "Cô bé trong truyện tên là gì?", "opts": ["Lili", "Lara", "Sofia"], "a": 0 },
+              { "q": "Họ của Lara là gì?", "opts": ["Nowak", "Baumann", "Becker"], "a": 0 },
+              { "q": "Hai người nào có cùng họ Baumann?", "opts": ["Walter và Sofia", "Lara và Lili", "Lara và Walter"], "a": 0 },
+              { "q": "Mọi người dùng điện thoại để làm gì?", "opts": ["Quay video tự giới thiệu", "Gọi taxi", "Nghe nhạc"], "a": 0 }
+            ] }
+          ]
+        },
+        {
+          "id": "chao", "title": "Chào theo giờ trong ngày", "minutes": 10,
+          "blocks": [
+            { "type": "table", "title": "Chào khi gặp và khi chia tay", "head": ["", "Khi gặp 👋", "Khi chia tay 🚶"], "rows": [
+              ["<b>Lịch sự</b><br><span class='muted small'>người lạ, công việc</span>", "Guten Morgen! <span class='muted small'>(sáng)</span><br>Guten Tag! <span class='muted small'>(~11–18 giờ)</span><br>Guten Abend! <span class='muted small'>(từ ~18 giờ)</span>", "Auf Wiedersehen!<br>Gute Nacht! <span class='muted small'>(khuya, đi ngủ)</span>"],
+              ["<b>Thân mật</b><br><span class='muted small'>bạn bè, gia đình</span>", "Hallo!", "Tschüs!<br>Bis später!"]
+            ], "vi": "<b>Gute Nacht</b> chỉ dùng khi chia tay lúc khuya hoặc đi ngủ — không dùng để chào khi gặp. Mốc giờ chỉ là tương đối; người Đức còn hay nói tắt <i>Morgen!</i> hoặc <i>Tag!</i>" },
+            { "type": "book", "kb": "12", "tracks": "KB 1/9-10", "steps": [
+              "A1 — <i>Wer sagt was? Hören Sie und ordnen Sie zu.</i> = Ai nói gì? Nghe (track 9) và viết câu chào dưới mỗi ảnh.",
+              "A2a — <i>Hören Sie und ordnen Sie zu.</i> Nghe 4 đoạn hội thoại (track 10), ghi chữ cái của tranh vào ô.",
+              "A2b — <i>Ergänzen Sie aus a.</i> = Điền các câu chào ở phần a vào hai nhóm: chào khi gặp (A) và khi chia tay (B).",
+              "A3 — Nhìn các đồng hồ cuối trang và nói to câu chào hợp với giờ đó."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L1</i>, trang 2–3." },
+            { "type": "sort", "title": "Chào khi gặp hay khi chia tay?", "cats": ["Khi gặp 👋", "Khi chia tay 🚶"], "items": [
+              { "t": "Guten Morgen!", "c": 0 }, { "t": "Hallo!", "c": 0 }, { "t": "Guten Abend!", "c": 0 }, { "t": "Herzlich willkommen!", "c": 0 }, { "t": "Guten Tag!", "c": 0 },
+              { "t": "Tschüs!", "c": 1 }, { "t": "Auf Wiedersehen!", "c": 1 }, { "t": "Bis später!", "c": 1 },
+              { "t": "Gute Nacht!", "c": 1, "why": "Gute Nacht chỉ nói khi chia tay lúc khuya hoặc đi ngủ." }
+            ] },
+            { "type": "sort", "title": "Lịch sự hay thân mật?", "cats": ["Lịch sự", "Thân mật"], "items": [
+              { "t": "Guten Tag, Herr Becker!", "c": 0 }, { "t": "Hallo, Tom!", "c": 1 }, { "t": "Auf Wiedersehen, Frau Lange!", "c": 0 },
+              { "t": "Tschüs, Anna!", "c": 1 }, { "t": "Bis später, Mia!", "c": 1 }, { "t": "Guten Abend, meine Damen und Herren!", "c": 0 }
+            ] },
+            { "type": "timeGreet", "title": "Mấy giờ rồi? Chào sao cho đúng", "n": 8 },
+            { "type": "tip", "title": "Chào kiểu vùng miền (chỉ cần nghe hiểu)", "html": "Miền Bắc nước Đức: <b>Moin!</b> · Miền Nam nước Đức và nước Áo: <b>Grüß Gott!</b>, <b>Servus!</b> · Thụy Sĩ: <b>Grüezi!</b> Sách có thêm phần này ở trang 21 (<i>Zwischendurch mal …</i>, track 26)." }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 7,
+          "blocks": [
+            { "type": "tip", "title": "Cách luyện", "html": "<ol><li>Bấm <b>▶ Nghe cả bài</b>, bấm <b>Ẩn chữ</b> nếu muốn luyện nghe trước.</li><li>Nghe lại từng câu; bấm <b>VI</b> để xem nghĩa.</li><li>Bấm <b>🗣 Nói theo</b>: máy đọc từng câu rồi dừng cho bạn nhắc lại.</li><li>Bấm <b>● Ghi âm</b>, đọc cả bài, rồi nghe lại giọng mình so với giọng mẫu.</li></ol>" },
+            { "type": "dialog", "title": "1 · Sáng ở văn phòng", "lines": [
+              { "who": "Frau Lange", "v": "f", "de": "Guten Morgen, Herr Becker!", "vi": "Chào buổi sáng, ông Becker!" },
+              { "who": "Herr Becker", "v": "m", "de": "Oh, guten Morgen, Frau Lange!", "vi": "Ồ, chào buổi sáng, bà Lange!" },
+              { "scene": "Buổi chiều, lúc ra về" },
+              { "who": "Herr Becker", "v": "m", "de": "Auf Wiedersehen, Frau Lange!", "vi": "Tạm biệt bà Lange!" },
+              { "who": "Frau Lange", "v": "f", "de": "Auf Wiedersehen, Herr Becker!", "vi": "Tạm biệt ông Becker!" }
+            ] },
+            { "type": "dialog", "title": "2 · Hai người bạn", "lines": [
+              { "who": "Mia", "v": "f", "de": "Hallo, Tom!", "vi": "Chào Tom!" },
+              { "who": "Tom", "v": "m", "de": "Hallo, Mia!", "vi": "Chào Mia!" },
+              { "who": "Mia", "v": "f", "de": "Tschüs, bis später!", "vi": "Tạm biệt, lát gặp nhé!" },
+              { "who": "Tom", "v": "m", "de": "Tschüs!", "vi": "Tạm biệt!" }
+            ] },
+            { "type": "dialog", "title": "3 · Buổi tối", "lines": [
+              { "who": "MC", "v": "m", "de": "Guten Abend, meine Damen und Herren! Herzlich willkommen!", "vi": "Chào buổi tối, thưa quý bà và quý ông! Nhiệt liệt chào mừng!" },
+              { "scene": "Khuya, trước khi đi ngủ" },
+              { "who": "Ben", "v": "m", "de": "Gute Nacht, Mama!", "vi": "Mẹ ngủ ngon nhé!" },
+              { "who": "Mama", "v": "f", "de": "Gute Nacht, Ben!", "vi": "Ben ngủ ngon nhé!" }
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 5,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá", "items": [
+              "Tôi chào được khi gặp và khi chia tay, đúng giờ trong ngày.",
+              "Tôi biết khi nào dùng <i>Hallo / Tschüs</i> và khi nào dùng <i>Guten Tag / Auf Wiedersehen</i>.",
+              "Tôi đọc được w, ie, au, sch, ü, sp/st, ch và g/d ở cuối từ."
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 10, bài 1–4 (bài 1–2 có audio AB track 1–2).", "tracks": "AB 1-2" },
+              "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này.",
+              "Tuỳ chọn: đọc trước phần B ở Kursbuch tr. 13."
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2", "no": 2, "minutes": 50, "set": "b",
+      "title": "Ich heiße …",
+      "vi": "Hỏi tên và giới thiệu",
+      "book": "Kursbuch tr. 13, 18 · Arbeitsbuch tr. 11–12",
+      "goals": [
+        "Hỏi tên người khác và nói tên mình — lịch sự (<i>Sie</i>) và thân mật (<i>du</i>).",
+        "Giới thiệu người khác: <i>Das ist …</i>; hỏi: <i>Wer ist das?</i>",
+        "Chia động từ <i>heißen</i> và <i>sein</i> với ich, du, Sie.",
+        "Dùng <i>Herr / Frau</i> đúng cách: đi với họ."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: tên và giới thiệu", "minutes": 10,
+          "blocks": [
+            { "type": "words", "set": "b" },
+            { "type": "listenPick", "set": "b", "n": 8, "title": "Nghe và chọn nghĩa" }
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (2)", "minutes": 7,
+          "blocks": [
+            { "type": "rules", "items": [
+              { "t": "ei → ai", "vi": "<b>ei</b> đọc là „ai“.", "ex": ["heißen|tên là", "nein|không", "mein|của tôi", "ein bisschen|một chút"] },
+              { "t": "ie hay ei?", "vi": "Mẹo dùng tiếng Anh: đọc chữ thứ hai theo <b>tên tiếng Anh</b> của nó. <b>ie</b> → „ee“ (tên chữ E), <b>ei</b> → „eye“ (tên chữ I).", "ex": ["Sie|ông/bà", "sein|là", "wie|thế nào", "weiß|biết"] },
+              { "t": "ß → s", "vi": "<b>ß</b> (gọi là <i>Eszett</i>) đọc như <b>s</b> rõ, không rung.", "ex": ["heißen|tên là", "weiß|biết", "Straße|đường phố", "groß|to, lớn"] },
+              { "t": "eu → oi", "vi": "<b>eu</b> (và <b>äu</b>) đọc là „oi“.", "ex": ["freut|vui", "Deutsch|tiếng Đức", "neu|mới", "heute|hôm nay"] },
+              { "t": "ch sau i, e, ei, eu, ä, ö, ü → „xì“ mềm", "vi": "Đặt lưỡi như khi nói „i“ rồi thổi hơi: một tiếng „xì“ nhẹ. Đừng đọc thành „k“ hay „kh“.", "ex": ["ich|tôi", "mich|tôi (tân ngữ)", "sprechen|nói", "Österreich|nước Áo"] },
+              { "t": "s trước nguyên âm → z", "vi": "<b>s</b> đứng trước nguyên âm thường đọc rung, như <i>z</i> trong tiếng Anh <i>zoo</i>.", "ex": ["Sie|ông/bà", "sein|là", "Sofia", "Musik|âm nhạc"] },
+              { "t": "j → y", "vi": "<b>j</b> đọc như <i>y</i> trong tiếng Anh <i>yes</i>.", "ex": ["ja|vâng", "Japan|Nhật Bản", "Jonas"] }
+            ] },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng", "items": [
+              { "say": "nein", "opts": ["nein", "nie"] },
+              { "say": "sei", "opts": ["sei", "Sie"] },
+              { "say": "ich", "opts": ["ich", "ach"] },
+              { "say": "heißen", "opts": ["heißen", "hießen"] },
+              { "say": "Leute", "opts": ["Leute", "Laute"] },
+              { "say": "mich", "opts": ["mich", "Milch"] }
+            ] }
+          ]
+        },
+        {
+          "id": "ngu-phap", "title": "Ngữ pháp: nói tên, Herr/Frau, Sie hay du", "minutes": 13,
+          "blocks": [
+            { "type": "table", "title": "Ba cách nói tên", "head": ["Tiếng Đức", "Nghĩa", "Dùng khi"], "say": 0, "rows": [
+              ["Ich <b class='v2'>heiße</b> Linh.", "Tôi tên là Linh.", "phổ biến nhất"],
+              ["Ich <b class='v2'>bin</b> Linh.", "Tôi là Linh.", "ngắn gọn"],
+              ["Mein Name <b class='v2'>ist</b> Linh Nguyen.", "Tên tôi là Linh Nguyen.", "trang trọng hơn"]
+            ] },
+            { "type": "tip", "title": "Herr / Frau + HỌ", "html": "<p><b>Herr</b> Becker = ông Becker · <b>Frau</b> Lange = bà/cô Lange. Luôn đi với <b>họ</b>, không đi với tên: ✗ <s>Frau Anna</s>.</p><p>Không tự gọi mình là Herr/Frau: ✗ <s>Mein Name ist Frau Lange.</s> → ✓ Mein Name ist Anna Lange.</p><p>🇻🇳 Tên người Việt: <b>Nguyễn Thị Linh</b> → Vorname (tên): <b>Linh</b> · Familienname (họ): <b>Nguyen</b> → người Đức gọi là <b>Frau Nguyen</b>.</p>" },
+            { "type": "tip", "title": "Sie hay du?", "html": "<p><b>Sie</b> (luôn viết hoa) = ông/bà/anh/chị: người lớn mới gặp, đồng nghiệp, ở cửa hàng, cơ quan, người lớn tuổi.</p><p><b>du</b> = bạn/em/cậu: bạn bè, gia đình, trẻ em, sinh viên với nhau, trên mạng.</p><p>Không chắc thì dùng <b>Sie</b>; người Đức sẽ đề nghị chuyển sang <i>du</i> nếu họ muốn.</p>" },
+            { "type": "conj", "title": "Chia động từ: heißen và sein", "persons": ["ich", "du", "Sie"], "verbs": [
+              { "inf": "heißen", "vi": "tên là", "forms": ["heiße", "heißt", "heißen"], "stem": "heiß" },
+              { "inf": "sein", "vi": "là", "forms": ["bin", "bist", "sind"] }
+            ], "vi": "Đuôi quen thuộc: ich -<b>e</b> · du -<b>st</b> · Sie -<b>en</b>. Với <i>heißen</i>, gốc đã có ß nên ngôi du chỉ thêm -<b>t</b>: du heiß<b>t</b> (không viết <s>heißst</s>). <i>sein</i> là bất quy tắc: bin · bist · sind." },
+            { "type": "gaps", "title": "Điền heißen hoặc sein", "task": "Gõ động từ đúng dạng. Cần chữ ß thì bấm nút ß hiện phía trên ô gõ.", "items": [
+              { "q": "Ich ___ Linh.", "a": ["heiße", "bin"] },
+              { "q": "Wie ___ du?", "a": ["heißt"] },
+              { "q": "Wie ___ Sie?", "a": ["heißen"] },
+              { "q": "Wer ___ du?", "a": ["bist"] },
+              { "q": "Wer ___ Sie?", "a": ["sind"] },
+              { "q": "Mein Name ___ Becker.", "a": ["ist"] },
+              { "q": "Das ___ Frau Lange.", "a": ["ist"] },
+              { "q": "Ich ___ Paul Wagner. Und Sie?", "a": ["bin", "heiße"] }
+            ] },
+            { "type": "fix", "title": "Tìm lỗi sai", "items": [
+              { "s": "Ich heißt Minh.", "err": "heißt", "fix": ["heiße"], "why": "ich → đuôi -e: ich heiße." },
+              { "s": "Wie heißen du?", "err": "heißen", "fix": ["heißt"], "why": "du → du heißt." },
+              { "s": "Ich sind Paul.", "err": "sind", "fix": ["bin"], "why": "ich bin · du bist · Sie sind." },
+              { "ctx": "Bạn chào bà Nguyễn Thị Linh:", "s": "Guten Tag, Frau Linh!", "err": "Linh", "fix": ["Nguyen"], "why": "Frau + HỌ: Frau Nguyen." },
+              { "s": "Wer ist das? – Das ist Herr Becker.", "err": null },
+              { "ctx": "Paul Becker tự giới thiệu:", "s": "Mein Name ist Herr Becker.", "err": "Herr", "fix": [""], "why": "Không tự gọi mình là Herr/Frau: Mein Name ist Paul Becker." }
+            ] },
+            { "type": "order", "title": "Xếp câu: động từ ở vị trí 2", "vi": "Động từ (ô màu cam) luôn đứng ở <b>vị trí 2</b>. Vị trí tính theo cụm: <i>Mein Name</i> là một vị trí.", "items": [
+              { "chunks": ["Ich", "heiße", "Linh."], "v": 1, "vi": "Tôi tên là Linh." },
+              { "chunks": ["Mein Name", "ist", "Paul Wagner."], "v": 1, "vi": "Tên tôi là Paul Wagner." },
+              { "chunks": ["Wie", "heißen", "Sie?"], "v": 1, "vi": "Ông/bà tên là gì?" },
+              { "chunks": ["Wer", "ist", "das?"], "v": 1, "vi": "Đó là ai?" },
+              { "chunks": ["Das", "ist", "Frau Lange."], "v": 1, "vi": "Đây là bà Lange." }
+            ] }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần B", "minutes": 8,
+          "blocks": [
+            { "type": "book", "kb": "13", "tracks": "KB 1/11-12", "steps": [
+              "B1 — <i>Ordnen Sie zu.</i> = Ghép mỗi câu với ảnh của người nói.",
+              "B2 — <i>Hören Sie und lesen Sie die Gespräche. Ergänzen Sie die Namen.</i> = Nghe (track 11–12), đọc hai hội thoại và điền tên người dưới tranh.",
+              "B3 — Đóng vai hội thoại B2 với tên của bạn: tự nói cả hai vai, thật to.",
+              "B4 — Tìm ảnh vài người nổi tiếng trên điện thoại rồi tự hỏi – đáp: <i>Wer ist das? – Das ist …</i>"
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L1</i>, trang 4–6." }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu", "minutes": 8,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Ở hội thảo (lịch sự)", "lines": [
+              { "who": "Paul Wagner", "v": "m", "de": "Guten Tag! Ich bin Paul Wagner. Und wie heißen Sie?", "vi": "Xin chào! Tôi là Paul Wagner. Còn bà tên là gì ạ?" },
+              { "who": "Anna Schmidt", "v": "f", "de": "Ich heiße Anna Schmidt.", "vi": "Tôi tên là Anna Schmidt." },
+              { "who": "Paul Wagner", "v": "m", "de": "Freut mich, Frau Schmidt.", "vi": "Rất vui được gặp bà, bà Schmidt." },
+              { "who": "Anna Schmidt", "v": "f", "de": "Freut mich auch, Herr Wagner.", "vi": "Tôi cũng rất vui, ông Wagner. (auch = cũng)" },
+              { "scene": "Một người nữa đi tới" },
+              { "who": "Paul Wagner", "v": "m", "de": "Frau Schmidt, das ist Herr Nguyen.", "vi": "Bà Schmidt, đây là ông Nguyen." },
+              { "who": "Nam Nguyen", "v": "m2", "de": "Guten Tag, Frau Schmidt! Mein Name ist Nam Nguyen.", "vi": "Chào bà Schmidt! Tên tôi là Nam Nguyen." }
+            ] },
+            { "type": "dialog", "title": "2 · Ở lớp học (thân mật)", "lines": [
+              { "who": "Lukas", "v": "m", "de": "Hallo! Ich bin Lukas. Und du? Wie heißt du?", "vi": "Chào! Mình là Lukas. Còn bạn? Bạn tên gì?" },
+              { "who": "Mai", "v": "f", "de": "Ich heiße Mai.", "vi": "Mình tên là Mai." },
+              { "who": "Lukas", "v": "m", "de": "Freut mich, Mai! Wer ist das?", "vi": "Rất vui được gặp bạn, Mai! Đó là ai vậy?" },
+              { "who": "Mai", "v": "f", "de": "Das ist Jonas.", "vi": "Đó là Jonas." },
+              { "who": "Lukas", "v": "m", "de": "Und wer ist das?", "vi": "Còn kia là ai?" },
+              { "who": "Mai", "v": "f", "de": "Hm … Ich weiß es nicht.", "vi": "Hừm… Mình không biết." }
+            ] },
+            { "type": "gaps", "title": "Hoàn thành hội thoại", "task": "Chọn câu phù hợp cho mỗi chỗ trống.", "bank": ["Wie heißen Sie?", "Freut mich.", "Wer ist das?", "Ich weiß es nicht.", "Mein Name ist"], "items": [
+              { "q": "– Guten Tag. ___ – Ich heiße Anna Schmidt.", "a": ["Wie heißen Sie?"] },
+              { "q": "– Ich bin Paul Wagner. – ___ Ich bin Anna Schmidt.", "a": ["Freut mich."] },
+              { "q": "– ___ – Das ist Herr Nguyen.", "a": ["Wer ist das?"] },
+              { "q": "– Wer ist das? – ___", "a": ["Ich weiß es nicht."] },
+              { "q": "– Guten Tag. ___ Lena Hoffmann.", "a": ["Mein Name ist"] }
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá", "items": [
+              "Tôi hỏi được tên người khác bằng <i>Sie</i> và bằng <i>du</i>.",
+              "Tôi nói được tên mình theo 3 cách.",
+              "Tôi giới thiệu được người khác: <i>Das ist …</i>",
+              "Tôi chia được <i>heißen</i> và <i>sein</i> với ich, du, Sie."
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 11–12, bài 5–11 (bài 5–6 có audio AB track 3–4).", "tracks": "AB 3-4" },
+              "Ngày mai: vào <a href='#/review'>Ôn tập</a>.",
+              "Tuỳ chọn: tìm ảnh 3 người nổi tiếng và nói <i>Das ist …</i>"
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3", "no": 3, "minutes": 50, "set": "c",
+      "title": "Ich komme aus Vietnam.",
+      "vi": "Quê quán và ngôn ngữ",
+      "book": "Kursbuch tr. 10–11, 14–15, 18–19 · Arbeitsbuch tr. 13–14",
+      "goals": [
+        "Hỏi và nói mình đến từ đâu: <i>Woher kommen Sie? – Ich komme aus Vietnam.</i>",
+        "Nói mình nói tiếng gì: <i>Ich spreche Vietnamesisch und ein bisschen Deutsch.</i>",
+        "Đặt câu hỏi với <i>wer, wie, woher, was</i> — động từ ở vị trí 2.",
+        "Chia <i>kommen</i>, <i>sprechen</i> (du sprichst!) và chọn đúng <i>du</i> hay <i>Sie</i>."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: quê quán và ngôn ngữ", "minutes": 10,
+          "blocks": [
+            { "type": "words", "set": "c" },
+            { "type": "listenPick", "set": "c", "n": 8, "title": "Nghe và chọn nghĩa" },
+            { "type": "words", "set": "c2", "title": "Thêm: tên nước và tiếng khác (tuỳ chọn)", "collapsed": true }
+          ]
+        },
+        {
+          "id": "tu-hoi", "title": "Từ để hỏi W-", "minutes": 8,
+          "blocks": [
+            { "type": "table", "head": ["Từ hỏi", "Nghĩa", "Tiếng Anh", "Ví dụ"], "say": 3, "rows": [
+              ["<b>wer</b>", "ai", "who ⚠", "Wer ist das?"],
+              ["<b>wie</b>", "thế nào; (tên) gì", "how", "Wie heißen Sie?"],
+              ["<b>woher</b>", "từ đâu", "where … from", "Woher kommen Sie?"],
+              ["<b>was</b>", "cái gì", "what", "Was sprechen Sie?"]
+            ], "vi": "⚠ Bẫy cho người biết tiếng Anh: <b>wer</b> nghĩa là <b>who</b> (ai), không phải <i>where</i>. „Ở đâu“ là <b>wo</b> — bạn sẽ gặp ở Lektion 2." },
+            { "type": "choice", "title": "Chọn từ để hỏi", "items": [
+              { "q": "___ ist das? – Das ist Herr Becker.", "opts": ["Wer", "Wie", "Woher", "Was"], "a": 0 },
+              { "q": "___ heißen Sie? – Anna Schmidt.", "opts": ["Wie", "Wer", "Woher", "Was"], "a": 0 },
+              { "q": "___ kommst du? – Aus Vietnam.", "opts": ["Woher", "Wer", "Wie", "Was"], "a": 0 },
+              { "q": "___ sprechen Sie? – Deutsch und Englisch.", "opts": ["Was", "Wer", "Woher", "Wie"], "a": 0 },
+              { "q": "___ bist du? – Ich bin Mai.", "opts": ["Wer", "Was", "Woher", "Wie"], "a": 0 },
+              { "q": "___ heißt du? – Jonas.", "opts": ["Wie", "Was", "Wer", "Woher"], "a": 0 }
+            ] },
+            { "type": "tip", "title": "Ngữ điệu", "html": "Câu hỏi có từ W- <b>xuống giọng ở cuối</b> (↘), giống câu kể: <i>Woher kommen Sie? ↘</i> Đừng lên giọng như câu hỏi „… không?“ của tiếng Việt. Bấm để nghe: <span class='say-inline' data-say='Woher kommen Sie?'>Woher kommen Sie?</span> · <span class='say-inline' data-say='Was sprechen Sie?'>Was sprechen Sie?</span>" }
+          ]
+        },
+        {
+          "id": "ngu-phap", "title": "Ngữ pháp: vị trí 2, kommen và sprechen, aus", "minutes": 14,
+          "blocks": [
+            { "type": "table", "title": "Động từ luôn ở vị trí 2", "head": ["Vị trí 1", "Vị trí 2", "…"], "rows": [
+              ["Ich", "<b class='v2'>komme</b>", "aus Vietnam."],
+              ["Mein Name", "<b class='v2'>ist</b>", "Linh Nguyen."],
+              ["Woher", "<b class='v2'>kommen</b>", "Sie?"],
+              ["Was", "<b class='v2'>sprichst</b>", "du?"]
+            ], "vi": "Trong câu kể và câu hỏi W-, động từ (đã chia) luôn đứng ở <b>vị trí 2</b>. ⚠ Người biết tiếng Anh hay viết <s>Woher Sie kommen?</s> — sai. Đúng là: <b>Woher kommen Sie?</b>" },
+            { "type": "conj", "title": "Chia động từ: kommen, sprechen (ôn heißen, sein)", "persons": ["ich", "du", "Sie"], "verbs": [
+              { "inf": "kommen", "vi": "đến", "forms": ["komme", "kommst", "kommen"], "stem": "komm" },
+              { "inf": "sprechen", "vi": "nói", "forms": ["spreche", "sprichst", "sprechen"] },
+              { "inf": "heißen", "vi": "tên là", "forms": ["heiße", "heißt", "heißen"], "stem": "heiß" },
+              { "inf": "sein", "vi": "là", "forms": ["bin", "bist", "sind"] }
+            ], "vi": "<i>sprechen</i> đổi <b>e → i</b> ở ngôi du: du spr<b>i</b>chst. Ngôi ich và Sie vẫn giữ e: ich spreche, Sie sprechen." },
+            { "type": "gaps", "title": "Điền động từ", "items": [
+              { "q": "Woher ___ du? <span class='muted'>(kommen)</span>", "a": ["kommst"] },
+              { "q": "Ich ___ aus Hanoi. <span class='muted'>(kommen)</span>", "a": ["komme"] },
+              { "q": "Was ___ Sie? <span class='muted'>(sprechen)</span>", "a": ["sprechen"] },
+              { "q": "Du ___ gut Deutsch! <span class='muted'>(sprechen)</span>", "a": ["sprichst"] },
+              { "q": "Ich ___ Vietnamesisch und Englisch. <span class='muted'>(sprechen)</span>", "a": ["spreche"] },
+              { "q": "Woher ___ Sie, Herr Becker? <span class='muted'>(kommen)</span>", "a": ["kommen"] }
+            ] },
+            { "type": "tip", "title": "aus + tên nước", "html": "<p>Đa số tên nước <b>không có mạo từ</b>: aus Vietnam, aus Deutschland, aus Österreich.</p><p>Một số nước <b>có mạo từ</b>, và mạo từ đổi dạng sau <i>aus</i>:<br><span class='g-die'>die</span> Schweiz → aus <b>der</b> Schweiz · <span class='g-die'>die</span> Türkei → aus <b>der</b> Türkei<br><span class='g-pl'>die</span> USA (số nhiều) → aus <b>den</b> USA · <span class='g-der'>der</span> Iran → aus <b>dem</b> Iran</p><p class='muted small'>Lý do (cách 3 – Dativ) bạn sẽ học sau; bây giờ chỉ cần thuộc các cụm này.</p>" },
+            { "type": "gaps", "title": "aus, aus der, aus den hay aus dem?", "items": [
+              { "q": "Ich komme ___ Vietnam.", "a": ["aus"], "opts": ["aus", "aus der", "aus den", "aus dem"] },
+              { "q": "Ich komme ___ Schweiz.", "a": ["aus der"], "opts": ["aus", "aus der", "aus den", "aus dem"] },
+              { "q": "Woher kommst du? – ___ Türkei.", "a": ["Aus der"], "opts": ["Aus", "Aus der", "Aus den", "Aus dem"] },
+              { "q": "Ich komme ___ USA.", "a": ["aus den"], "opts": ["aus", "aus der", "aus den", "aus dem"] },
+              { "q": "Woher kommen Sie? – ___ Österreich.", "a": ["Aus"], "opts": ["Aus", "Aus der", "Aus den", "Aus dem"] },
+              { "q": "Ich komme ___ Iran.", "a": ["aus dem"], "opts": ["aus", "aus der", "aus den", "aus dem"] }
+            ] },
+            { "type": "choice", "title": "du hay Sie?", "items": [
+              { "q": "Bạn hỏi tên một bé gái 6 tuổi.", "opts": ["Wie heißt du?", "Wie heißen Sie?"], "a": 0, "why": "Với trẻ em luôn dùng <i>du</i>." },
+              { "q": "Bạn hỏi nhân viên ngân hàng đến từ đâu.", "opts": ["Woher kommen Sie?", "Woher kommst du?"], "a": 0, "why": "Người lớn, quan hệ công việc → <i>Sie</i>." },
+              { "q": "Một bạn sinh viên cùng lớp hỏi bạn nói tiếng gì.", "opts": ["Was sprichst du?", "Was sprechen Sie?"], "a": 0, "why": "Sinh viên với nhau thường dùng <i>du</i>." },
+              { "q": "Bạn gặp bà hàng xóm 70 tuổi lần đầu.", "opts": ["Guten Tag! Wie heißen Sie?", "Hallo! Wie heißt du?"], "a": 0, "why": "Người lớn tuổi, mới gặp → lịch sự: <i>Sie</i>." },
+              { "q": "Bạn nhắn tin với một người bạn mới quen trong nhóm game, cùng tuổi.", "opts": ["Woher kommst du?", "Woher kommen Sie?"], "a": 0, "why": "Trên mạng, giữa người trẻ → <i>du</i>." }
+            ] },
+            { "type": "fix", "title": "Tìm lỗi sai", "items": [
+              { "s": "Du sprechst gut Deutsch.", "err": "sprechst", "fix": ["sprichst"], "why": "sprechen: du spr<b>i</b>chst." },
+              { "s": "Ich kommen aus Vietnam.", "err": "kommen", "fix": ["komme"], "why": "ich → đuôi -e: ich komme." },
+              { "s": "Ich komme aus Schweiz.", "err": "aus", "fix": ["aus der"], "why": "die Schweiz → aus der Schweiz." },
+              { "s": "Wer kommen Sie? – Aus Polen.", "err": "Wer", "fix": ["Woher"], "why": "Hỏi quê quán dùng <b>Woher</b> (từ đâu). Wer = ai." },
+              { "s": "Was sprechen Sie? – Ich spreche Deutsch.", "err": null },
+              { "s": "Ich spreche Vietnamesisch und ein bisschen deutsch.", "err": "deutsch", "fix": ["Deutsch"], "exact": true, "why": "Tên ngôn ngữ là danh từ → viết hoa: <b>D</b>eutsch." }
+            ] },
+            { "type": "order", "title": "Xếp câu", "items": [
+              { "chunks": ["Woher", "kommen", "Sie?"], "v": 1, "vi": "Ông/bà đến từ đâu?" },
+              { "chunks": ["Ich", "komme", "aus Vietnam."], "v": 1, "vi": "Tôi đến từ Việt Nam." },
+              { "chunks": ["Was", "sprichst", "du?"], "v": 1, "vi": "Bạn nói tiếng gì?" },
+              { "chunks": ["Ich", "spreche", "ein bisschen Deutsch."], "v": 1, "vi": "Tôi nói được một chút tiếng Đức." },
+              { "chunks": ["Woher", "kommst", "du?"], "v": 1, "vi": "Bạn đến từ đâu?" }
+            ] }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần C, nghe lại truyện", "minutes": 10,
+          "blocks": [
+            { "type": "book", "kb": "14–15", "tracks": "KB 1/13-18", "steps": [
+              "C1a — <i>Hören Sie und ordnen Sie zu.</i> Nghe 3 hội thoại (track 13–15), điền các dạng động từ vào chỗ trống.",
+              "C1b — <i>Ergänzen Sie die Tabelle.</i> Điền bảng chia kommen, heißen, sein (đối chiếu với phần ngữ pháp ở trên).",
+              "C2 — <i>Internationaler Kongress</i>: nghe 2 hội thoại (track 16–17), gạch chân mọi câu hỏi bắt đầu bằng W-, rồi chép vào bài b.",
+              "C3 — <i>du oder Sie?</i> Chọn du hay Sie, rồi nghe để kiểm tra (track 18).",
+              "C4 — <i>Das bin ich!</i> Bạn sẽ làm bài tự giới thiệu ở Buổi 4."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L1</i>, trang 7–10." },
+            { "type": "book", "title": "Nghe lại truyện ảnh", "kb": "10–11", "tracks": "KB 1/1-8", "steps": [
+              "Nghe lại cả truyện (track 1–8). Lần này bạn đã biết <i>kommen aus</i> và <i>sprechen</i>.",
+              "Bài 2 — <i>Was ist richtig? Hören Sie noch einmal und kreuzen Sie an.</i> = Câu nào đúng? Nghe lại và đánh dấu ✗."
+            ], "key": "Đáp án bài 2: giáo án <i>Unterrichtsplan L1</i>, trang 1." },
+            { "type": "choice", "title": "Hiểu truyện", "items": [
+              { "q": "Lara Nowak đến từ đâu?", "opts": ["aus Polen", "aus Deutschland", "aus Spanien"], "a": 0 },
+              { "q": "Lara nói những tiếng gì?", "opts": ["Polnisch, ein bisschen Englisch und Deutsch", "Deutsch und Spanisch", "nur Polnisch"], "a": 0 },
+              { "q": "Ai nói được một chút tiếng Tây Ban Nha?", "opts": ["Walter", "Lara", "Lili"], "a": 0 },
+              { "q": "Sofia Baumann đến từ đâu?", "opts": ["aus Deutschland", "aus Polen", "aus Österreich"], "a": 0 }
+            ] }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu", "minutes": 8,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Ở hội thảo quốc tế (lịch sự)", "lines": [
+              { "who": "Linh", "v": "f", "de": "Guten Tag! Ich bin Linh Nguyen.", "vi": "Xin chào! Tôi là Linh Nguyen." },
+              { "who": "Herr Huber", "v": "m", "de": "Guten Tag, Frau Nguyen. Mein Name ist Huber. Woher kommen Sie?", "vi": "Chào bà Nguyen. Tôi tên là Huber. Bà đến từ đâu?" },
+              { "who": "Linh", "v": "f", "de": "Ich komme aus Vietnam, aus Hanoi. Und Sie, Herr Huber?", "vi": "Tôi đến từ Việt Nam, từ Hà Nội. Còn ông, ông Huber?" },
+              { "who": "Herr Huber", "v": "m", "de": "Ich komme aus Österreich. Sie sprechen gut Deutsch!", "vi": "Tôi đến từ Áo. Bà nói tiếng Đức giỏi quá!" },
+              { "who": "Linh", "v": "f", "de": "Danke! Nein, nur ein bisschen.", "vi": "Cảm ơn ông! Không đâu, chỉ một chút thôi." }
+            ] },
+            { "type": "dialog", "title": "2 · Bạn mới (thân mật)", "lines": [
+              { "who": "Lukas", "v": "m", "de": "Hallo! Ich bin Lukas. Wer bist du?", "vi": "Chào! Mình là Lukas. Bạn là ai?" },
+              { "who": "Minh", "v": "m2", "de": "Ich heiße Minh.", "vi": "Mình tên là Minh." },
+              { "who": "Lukas", "v": "m", "de": "Woher kommst du, Minh?", "vi": "Bạn đến từ đâu, Minh?" },
+              { "who": "Minh", "v": "m2", "de": "Aus Vietnam. Und du?", "vi": "Từ Việt Nam. Còn bạn?" },
+              { "who": "Lukas", "v": "m", "de": "Ich komme aus der Schweiz. Was sprichst du?", "vi": "Mình đến từ Thụy Sĩ. Bạn nói tiếng gì?" },
+              { "who": "Minh", "v": "m2", "de": "Vietnamesisch, Englisch und ein bisschen Deutsch.", "vi": "Tiếng Việt, tiếng Anh và một chút tiếng Đức." }
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá", "items": [
+              "Tôi hỏi và nói được mình đến từ đâu.",
+              "Tôi nói được mình nói những tiếng gì.",
+              "Tôi đặt được câu hỏi với <i>wer, wie, woher, was</i>.",
+              "Tôi chia được <i>kommen</i>, <i>sprechen</i> và chọn đúng <i>du</i> hay <i>Sie</i>."
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 13–14, bài 12–19 (bài 18 có audio AB track 5).", "tracks": "AB 5" },
+              "Ngày mai: vào <a href='#/review'>Ôn tập</a>.",
+              "Tuỳ chọn: học thêm bộ „nước và tiếng khác“ ở trang <a href='#/vocab/l1/c2'>Từ vựng</a>."
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4", "no": 4, "minutes": 55, "set": "d",
+      "title": "Buchstabieren, bitte!",
+      "vi": "Đánh vần, gọi điện, địa chỉ — và kiểm tra cuối bài",
+      "book": "Kursbuch tr. 16–21 · Arbeitsbuch tr. 15–18",
+      "goals": [
+        "Đọc bảng chữ cái tiếng Đức và đánh vần tên mình.",
+        "Gọi điện hỏi gặp ai đó; nói <i>Wie bitte?</i> khi chưa nghe rõ.",
+        "Đọc danh thiếp và điền tờ khai: họ, tên, đường, số nhà, mã bưu chính, thành phố.",
+        "Nhớ der, die, das của các danh từ trong bài.",
+        "Tự giới thiệu bản thân: tên, quê, ngôn ngữ."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: chữ cái, điện thoại, địa chỉ", "minutes": 10,
+          "blocks": [
+            { "type": "words", "set": "d" },
+            { "type": "listenPick", "set": "d", "n": 8, "title": "Nghe và chọn nghĩa" }
+          ]
+        },
+        {
+          "id": "alphabet", "title": "Bảng chữ cái", "minutes": 10,
+          "blocks": [
+            { "type": "alphabet", "title": "Das Alphabet — bấm từng chữ để nghe" },
+            { "type": "tip", "title": "Chữ hay đọc nhầm (nhất là khi đã quen tiếng Anh)", "html": "<b>A</b> đọc „a“ (không phải „ây“) · <b>E</b> đọc „ê“ (không phải „i“) · <b>I</b> đọc „i“ (không phải „ai“) · <b>J</b> = „jót“ · <b>V</b> = „phao“ · <b>W</b> = „vê“ · <b>Y</b> = „üp-xi-lon“ · <b>Z</b> = „txét“ · <b>ß</b> = „ét-txét“. Với ä, ö, ü có thể đọc thẳng âm, hoặc nói „a Umlaut“, „o Umlaut“, „u Umlaut“." },
+            { "type": "letterPick", "title": "Nghe và chọn chữ cái", "n": 10 },
+            { "type": "spell", "title": "Nghe đánh vần rồi gõ từ", "n": 6, "words": ["Mai", "Linh", "Nguyen", "Pham", "Becker", "Huber", "Lange", "Jonas", "Name", "Frau", "Tschüs", "Wien", "Yvonne", "Vietnam", "Quiz", "Straße"] },
+            { "type": "spellMe", "title": "Đánh vần tên của bạn" }
+          ]
+        },
+        {
+          "id": "dien-thoai", "title": "Gọi điện thoại", "minutes": 8,
+          "blocks": [
+            { "type": "dialog", "title": "Gọi tới trường ngôn ngữ", "lines": [
+              { "who": "Lễ tân", "v": "f", "de": "Sprachschule Berlin, guten Tag!", "vi": "Trường ngôn ngữ Berlin xin chào!" },
+              { "who": "Pham", "v": "m", "de": "Guten Tag! Hier ist Pham. Ist Herr Krause da, bitte?", "vi": "Xin chào! Tôi là Pham. Thầy Krause có ở đó không ạ? (Hier ist … = Tôi là … — khi gọi điện)" },
+              { "who": "Lễ tân", "v": "f", "de": "Einen Moment, bitte. … Tut mir leid, Herr Krause ist nicht da. Wie ist Ihr Name, bitte?", "vi": "Xin đợi một chút… Rất tiếc, thầy Krause không có ở đây. Xin cho biết tên của anh?" },
+              { "who": "Pham", "v": "m", "de": "Pham.", "vi": "Pham." },
+              { "who": "Lễ tân", "v": "f", "de": "Wie bitte?", "vi": "Xin lỗi, gì cơ ạ?" },
+              { "who": "Pham", "v": "m", "de": "Pham. Ich buchstabiere: P – H – A – M.", "say": "Pham. Ich buchstabiere: Peh, Ha, A, Emm.", "vi": "Pham. Tôi đánh vần: P – H – A – M." },
+              { "who": "Lễ tân", "v": "f", "de": "Danke, Herr Pham.", "vi": "Cảm ơn anh Pham." },
+              { "who": "Pham", "v": "m", "de": "Vielen Dank! Auf Wiederhören!", "vi": "Cảm ơn chị nhiều! Chào chị!" },
+              { "who": "Lễ tân", "v": "f", "de": "Auf Wiederhören!", "vi": "Chào anh!" }
+            ] },
+            { "type": "choice", "title": "Bạn nói gì?", "items": [
+              { "q": "Bạn không nghe rõ người kia nói gì.", "opts": ["Wie bitte?", "Vielen Dank!", "Tut mir leid."], "a": 0 },
+              { "q": "Bạn muốn người gọi đợi một chút.", "opts": ["Einen Moment, bitte.", "Auf Wiederhören!", "Wie bitte?"], "a": 0 },
+              { "q": "Bạn kết thúc cuộc gọi.", "opts": ["Auf Wiederhören!", "Auf Wiedersehen!", "Gute Nacht!"], "a": 0, "why": "Qua điện thoại nói <i>Auf Wiederhören</i> (hören = nghe). <i>Auf Wiedersehen</i> (sehen = nhìn) dùng khi gặp mặt." },
+              { "q": "Bạn hỏi bà Roth có ở đó không.", "opts": ["Ist Frau Roth da, bitte?", "Wer ist Frau Roth?", "Woher kommt Frau Roth?"], "a": 0 },
+              { "q": "Bạn là lễ tân, báo rằng bà Roth không có ở đây.", "opts": ["Tut mir leid, Frau Roth ist nicht da.", "Danke, Frau Roth ist da.", "Wie bitte, Frau Roth?"], "a": 0 },
+              { "q": "Bạn muốn cảm ơn thật nhiều.", "opts": ["Vielen Dank!", "Bitte!", "Tschüs!"], "a": 0 }
+            ] }
+          ]
+        },
+        {
+          "id": "dia-chi", "title": "Danh thiếp và tờ khai", "minutes": 10,
+          "blocks": [
+            { "type": "book", "kb": "16–17", "tracks": "KB 1/19-21", "steps": [
+              "D1 — <i>Das Alphabet.</i> Nghe (track 19) và điền tên các chữ cái còn thiếu.",
+              "D2 — <i>Buchstabieren Sie Ihren Namen.</i> = Đánh vần tên của bạn (bạn đã luyện ở trên).",
+              "D3 — <i>Hören Sie das Telefongespräch.</i> Nghe cuộc gọi (track 20), rồi tự nói lại với tên của bạn.",
+              "E1 — Đọc 4 danh thiếp, ghép với 4 người; gạch chân <i>Vorname, Familienname, Straße, Stadt, Land</i>.",
+              "E2 — <i>Hören Sie und ergänzen Sie das Formular.</i> = Nghe (track 21) và điền tờ khai."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L1</i>, trang 10–13." },
+            { "type": "tip", "title": "Địa chỉ kiểu Đức", "html": "<p>Viết <b>đường + số nhà</b> trước, rồi <b>mã bưu chính + thành phố</b>: <i>Bergstraße 12, 80331 München</i>.</p><p>Chữ đứng trước mã bưu chính là mã nước: <b>D</b> = Deutschland · <b>A</b> = Österreich · <b>CH</b> = die Schweiz · <b>FL</b> = Liechtenstein.</p>" },
+            { "type": "form", "title": "Đọc danh thiếp, điền tờ khai", "cards": [
+              { "html": "<div class='vcard'><b>Lena Hoffmann</b><span>Grafikdesign</span><span>Bergstraße 12</span><span>80331 München</span></div>",
+                "fields": [["Familienname", ["Hoffmann"]], ["Vorname", ["Lena"]], ["Straße", ["Bergstraße"]], ["Hausnummer", ["12"]], ["Postleitzahl", ["80331"]], ["Stadt", ["München"]], ["Land", ["Deutschland"]]] },
+              { "html": "<div class='vcard'><b>Peter Gruber</b><span>Hotel Alpenblick</span><span>Mozartgasse 7</span><span>A-5020 Salzburg</span></div>",
+                "fields": [["Familienname", ["Gruber"]], ["Vorname", ["Peter"]], ["Straße", ["Mozartgasse"]], ["Hausnummer", ["7"]], ["Postleitzahl", ["5020", "A-5020"]], ["Stadt", ["Salzburg"]], ["Land", ["Österreich"]]] }
+            ] },
+            { "type": "tip", "title": "Mẹo đoán der, die, das", "html": "Danh từ đuôi <b>-ung</b> luôn là <span class='g-die'>die</span> (die Entschuldigung). Đuôi <b>-e</b> thường là <span class='g-die'>die</span> (die Straße, die Adresse) — nhưng <span class='g-der'>der</span> Name, <span class='g-der'>der</span> Buchstabe là ngoại lệ. Còn lại: học thuộc kèm màu!" },
+            { "type": "sort", "title": "der, die hay das?", "gender": true, "cats": ["der", "die", "das"], "items": [
+              { "t": "Name", "c": 0 }, { "t": "Vorname", "c": 0 }, { "t": "Familienname", "c": 0 }, { "t": "Buchstabe", "c": 0 }, { "t": "Moment", "c": 0 }, { "t": "Herr", "c": 0 },
+              { "t": "Frau", "c": 1 }, { "t": "Adresse", "c": 1 }, { "t": "Straße", "c": 1 }, { "t": "Stadt", "c": 1 }, { "t": "Postleitzahl", "c": 1 }, { "t": "Sprache", "c": 1 }, { "t": "Visitenkarte", "c": 1 }, { "t": "E-Mail", "c": 1 }, { "t": "Entschuldigung", "c": 1 },
+              { "t": "Land", "c": 2 }, { "t": "Telefon", "c": 2 }, { "t": "Formular", "c": 2 }, { "t": "Foto", "c": 2 }, { "t": "Alphabet", "c": 2 }
+            ] }
+          ]
+        },
+        {
+          "id": "das-bin-ich", "title": "Das bin ich! — Tự giới thiệu", "minutes": 8,
+          "blocks": [
+            { "type": "profile", "title": "Bài giới thiệu của bạn", "task": "Điền thông tin của bạn. Web ghép thành bài nói tiếng Đức — nghe, nói theo, rồi ghi âm. Thông tin chỉ lưu trên máy này." },
+            { "type": "tip", "title": "Thử thách", "html": "Giống bài C4 trong sách (<i>Das bin ich!</i>): quay một video 30 giây tự giới thiệu bằng điện thoại. Một tháng sau xem lại — bạn sẽ thấy mình tiến bộ!" }
+          ]
+        },
+        {
+          "id": "kiem-tra", "title": "Kiểm tra cuối Lektion 1", "minutes": 10,
+          "blocks": [
+            { "type": "test", "id": "l1", "title": "Bài kiểm tra", "items": [
+              { "k": "mc", "q": "07:30 sáng, bạn gặp bà hàng xóm. Bạn nói:", "opts": ["Guten Morgen!", "Guten Abend!", "Gute Nacht!", "Tschüs!"], "a": 0 },
+              { "k": "mc", "q": "Bạn kết thúc một cuộc gọi điện thoại:", "opts": ["Auf Wiederhören!", "Auf Wiedersehen!", "Gute Nacht!", "Hallo!"], "a": 0, "why": "Qua điện thoại: Auf Wiederhören." },
+              { "k": "mc", "q": "Bạn hỏi tên một bé trai 7 tuổi:", "opts": ["Wie heißt du?", "Wie heißen Sie?", "Wer sind Sie?", "Woher kommst du?"], "a": 0 },
+              { "k": "type", "q": "Woher ___ du? <span class='muted'>(kommen)</span>", "a": ["kommst"] },
+              { "k": "type", "q": "Du ___ gut Deutsch! <span class='muted'>(sprechen)</span>", "a": ["sprichst"] },
+              { "k": "type", "q": "Ich ___ Linh Nguyen. <span class='muted'>(sein)</span>", "a": ["bin"] },
+              { "k": "type", "q": "Wie ___ Sie? <span class='muted'>(heißen)</span>", "a": ["heißen"] },
+              { "k": "mc", "q": "___ ist das? – Das ist Herr Becker.", "opts": ["Wer", "Wie", "Woher", "Was"], "a": 0 },
+              { "k": "mc", "q": "___ sprechen Sie? – Vietnamesisch und Englisch.", "opts": ["Was", "Wer", "Woher", "Wie"], "a": 0 },
+              { "k": "mc", "q": "Ich komme ___ Schweiz.", "opts": ["aus der", "aus", "aus den", "aus dem"], "a": 0 },
+              { "k": "mc", "q": "Câu nào đúng?", "opts": ["Woher kommen Sie?", "Woher Sie kommen?", "Sie woher kommen?", "Kommen woher Sie?"], "a": 0, "why": "Động từ ở vị trí 2." },
+              { "k": "listen", "q": "Nghe đánh vần rồi gõ từ:", "say": "Peh, Ha, A, Emm", "a": ["Pham"] },
+              { "k": "listen", "q": "Nghe đánh vần rồi gõ từ:", "say": "Zeh, Ha, I, Enn, A", "a": ["China"] },
+              { "k": "listenmc", "q": "Nghe rồi chọn nghĩa:", "say": "Tut mir leid.", "opts": ["Tôi rất tiếc.", "Cảm ơn nhiều.", "Xin đợi một chút.", "Tạm biệt."], "a": 0 },
+              { "k": "mc", "q": "___ Name", "opts": ["der", "die", "das"], "a": 0, "keep": true },
+              { "k": "mc", "q": "___ Adresse", "opts": ["der", "die", "das"], "a": 1, "keep": true },
+              { "k": "mc", "q": "___ Formular", "opts": ["der", "die", "das"], "a": 2, "keep": true },
+              { "k": "mc", "q": "Nguyễn Văn An — <i>Familienname</i> là:", "opts": ["Nguyen", "An", "Van An", "Nguyen Van"], "a": 0 },
+              { "k": "mc", "q": "Paul Becker tự giới thiệu. Câu nào đúng?", "opts": ["Mein Name ist Paul Becker.", "Mein Name ist Herr Becker.", "Ich heiße Herr Paul."], "a": 0, "why": "Không tự gọi mình là Herr/Frau." }
+            ] },
+            { "type": "book", "title": "Bài kiểm tra của sách", "steps": [
+              "Arbeitsbuch tr. 18: <i>Test Lektion 1</i>.",
+              "Bài kiểm tra trong bộ giáo án: <i>Kopiervorlagen/L01/Lektionstest.pdf</i> — in ra hoặc làm ra giấy. Đáp án nằm trong <i>Lösungen zu den Tests.pdf</i>."
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá cả Lektion 1", "items": [
+              "Tôi chào hỏi và tạm biệt được (phần A).",
+              "Tôi hỏi tên và nói tên mình (phần B).",
+              "Tôi nói được mình đến từ đâu, nói tiếng gì (phần C).",
+              "Tôi đánh vần được tên mình và gọi điện hỏi gặp ai đó (phần D).",
+              "Tôi đọc được danh thiếp và điền tờ khai (phần E)."
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 15–17, bài 20–30 (bài 20–21 có audio AB track 6–12).", "tracks": "AB 6-12" },
+              { "t": "Audio-Training (Kursbuch tr. 19): nghe và trả lời theo băng.", "tracks": "KB 1/22-24" },
+              { "t": "Kursbuch tr. 20–21, <i>Zwischendurch mal …</i>: bài hát bảng chữ cái và cách chào ở các vùng.", "tracks": "KB 1/25-26" },
+              "Kursbuch tr. 18–19: đọc lại trang tổng kết ngữ pháp và mẫu câu.",
+              "Từ mai: vào <a href='#/review'>Ôn tập</a> mỗi ngày 10–15 phút."
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    }
+  ]
+}

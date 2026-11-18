@@ -1,0 +1,1598 @@
+{
+  "id": "l4",
+  "no": 4,
+  "title": "Meine Wohnung",
+  "vi": "Nhà ở, đồ đạc, màu sắc, số đến một triệu, tin cho thuê nhà, bàn làm việc",
+  "book": "Kursbuch tr. 46–57 · Arbeitsbuch tr. 41–51 · Lernwortschatz L4",
+  "audio": ["KB 1/71-88", "AB 32-43"],
+  "sets": [
+    {
+      "id": "a", "title": "Truyện ảnh và các phòng", "session": "1",
+      "items": [
+        {"id": "wohnung", "de": "Wohnung", "art": "die", "pl": "Wohnungen", "kind": "noun", "emoji": "🏢", "vi": "căn hộ; nhà ở", "syl": "WOH·nung", "note": "o dài, h không đọc: „vô-nung“. Cùng họ với wohnen (sống, ở) ở Lektion 2.", "ex": ["Die Wohnung ist hell.", "Căn hộ sáng sủa."]},
+        {"id": "haus", "de": "Haus", "art": "das", "pl": "Häuser", "kind": "noun", "emoji": "🏠", "vi": "ngôi nhà", "en": "≈ house", "note": "au đọc „ao“. Số nhiều Häuser: äu đọc „oi“.", "ex": ["Das Haus ist groß.", "Ngôi nhà này to."]},
+        {"id": "zimmer", "de": "Zimmer", "art": "das", "pl": "Zimmer", "kind": "noun", "vi": "phòng", "syl": "ZIM·mer", "note": "z = „ts“. Số nhiều không đổi. Ở Đức „3-Zimmer-Wohnung“ là căn hộ có 3 phòng ở và ngủ; bếp, phòng tắm và hành lang thường không tính.", "ex": ["Das Zimmer ist dunkel.", "Căn phòng tối."]},
+        {"id": "wohnzimmer", "de": "Wohnzimmer", "art": "das", "pl": "Wohnzimmer", "kind": "noun", "emoji": "🛋️", "vi": "phòng khách", "syl": "WOHN·zim·mer", "note": "Từ ghép: wohnen + Zimmer. Giống lấy theo từ cuối: das Zimmer → das Wohnzimmer.", "ex": ["Das Wohnzimmer ist dort.", "Phòng khách ở đằng kia."]},
+        {"id": "schlafzimmer", "de": "Schlafzimmer", "art": "das", "pl": "Schlafzimmer", "kind": "noun", "emoji": "😴", "vi": "phòng ngủ", "syl": "SCHLAF·zim·mer", "note": "schlafen = ngủ. Từ ghép với Zimmer nên luôn là das.", "ex": ["Das Schlafzimmer ist klein.", "Phòng ngủ nhỏ."]},
+        {"id": "kinderzimmer", "de": "Kinderzimmer", "art": "das", "pl": "Kinderzimmer", "kind": "noun", "emoji": "🧸", "vi": "phòng của trẻ em", "syl": "KIN·der·zim·mer", "note": "Kinder = trẻ em (số nhiều của das Kind, Lektion 2).", "ex": ["Das Kinderzimmer ist hier.", "Phòng của bọn trẻ ở đây."]},
+        {"id": "arbeitszimmer", "de": "Arbeitszimmer", "art": "das", "pl": "Arbeitszimmer", "kind": "noun", "emoji": "💼", "vi": "phòng làm việc (ở nhà)", "syl": "AR·beits·zim·mer", "note": "Arbeit = công việc. Phòng để làm việc, học bài tại nhà.", "ex": ["Ist hier auch ein Arbeitszimmer?", "Ở đây cũng có phòng làm việc à?"]},
+        {"id": "kueche", "de": "Küche", "art": "die", "pl": "Küchen", "kind": "noun", "emoji": "🍳", "vi": "bếp, nhà bếp", "syl": "KÜ·che", "note": "ü: tròn môi như „u“, đặt lưỡi như „i“. ch sau ü đọc „xì“ nhẹ.", "ex": ["Wo ist die Küche?", "Nhà bếp ở đâu?"]},
+        {"id": "bad", "de": "Bad", "art": "das", "pl": "Bäder", "kind": "noun", "emoji": "🪥", "vi": "phòng tắm", "note": "a dài. Bad = cả căn phòng tắm. Số nhiều Bäder (ä = „ê“).", "ex": ["Das Bad ist klein, aber hell.", "Phòng tắm nhỏ nhưng sáng."]},
+        {"id": "toilette", "de": "Toilette", "art": "die", "pl": "Toiletten", "kind": "noun", "emoji": "🚽", "vi": "nhà vệ sinh", "syl": "toi·LET·te", "en": "≈ toilet", "note": "Nhấn âm giữa; „oa“ đọc rời: toa-LÉT-tơ. Ở Đức nhà vệ sinh thường là một phòng riêng, tách khỏi Bad.", "ex": ["Wo ist die Toilette, bitte?", "Cho hỏi nhà vệ sinh ở đâu ạ?"]},
+        {"id": "flur", "de": "Flur", "art": "der", "pl": "Flure", "kind": "noun", "emoji": "🚪", "vi": "hành lang (trong nhà)", "note": "u dài; r cuối đọc rất nhẹ.", "ex": ["Hier ist der Flur.", "Đây là hành lang."]},
+        {"id": "balkon", "de": "Balkon", "art": "der", "pl": "Balkone", "kind": "noun", "vi": "ban công", "syl": "bal·KON", "en": "≈ balcony", "note": "Nhấn âm cuối; đọc gần „bal-KÔNG“.", "ex": ["Der Balkon ist groß.", "Ban công rộng."]},
+        {"id": "lampe", "de": "Lampe", "art": "die", "pl": "Lampen", "kind": "noun", "emoji": "💡", "vi": "cái đèn", "syl": "LAM·pe", "en": "≈ lamp", "ex": ["Die Lampe ist alt.", "Cái đèn cũ rồi."]},
+        {"id": "neu", "de": "neu", "kind": "word", "emoji": "🆕", "vi": "mới", "en": "≈ new", "note": "eu đọc „oi“: „noi“. Đối nghĩa: alt (cũ).", "ex": ["Meine Wohnung ist neu.", "Căn hộ của tôi mới."]},
+        {"id": "klein", "de": "klein", "kind": "word", "emoji": "🐜", "vi": "nhỏ", "note": "ei đọc „ai“. Đối nghĩa: groß (to).", "ex": ["Das Zimmer ist klein.", "Căn phòng nhỏ."]},
+        {"id": "hell", "de": "hell", "kind": "word", "emoji": "☀️", "vi": "sáng; nhạt (màu)", "note": "ll báo e ngắn. Đối nghĩa: dunkel.", "ex": ["Das Wohnzimmer ist hell.", "Phòng khách sáng."]},
+        {"id": "dunkel", "de": "dunkel", "kind": "word", "emoji": "🌑", "vi": "tối; đậm (màu)", "syl": "DUN·kel", "note": "Đối nghĩa: hell.", "ex": ["Das Schlafzimmer ist dunkel.", "Phòng ngủ tối."]},
+        {"id": "billig", "de": "billig", "kind": "word", "vi": "rẻ", "syl": "BIL·lig", "note": "-ig ở cuối từ đọc „ích“: „bi-lích“. Đối nghĩa: teuer (đắt).", "ex": ["Das Zimmer ist billig.", "Căn phòng này rẻ."]},
+        {"id": "schoen", "de": "schön", "kind": "word", "emoji": "😍", "vi": "đẹp", "note": "ö: tròn môi như „ô“, đặt lưỡi như „ê“. Đối nghĩa: hässlich.", "ex": ["Die Küche ist schön.", "Nhà bếp đẹp."]},
+        {"id": "haesslich", "de": "hässlich", "kind": "word", "emoji": "🤢", "vi": "xấu (không đẹp)", "syl": "HÄSS·lich", "note": "ä = „ê“ ngắn; ss báo nguyên âm ngắn; -lich đọc „lích“.", "ex": ["Die Lampe ist hässlich.", "Cái đèn xấu."]},
+        {"id": "dort", "de": "dort", "kind": "word", "vi": "ở đó, ở đằng kia", "note": "hier = ở đây (gần tôi); dort = ở đó (xa tôi). Trả lời cho câu hỏi Wo?", "ex": ["Die Toilette ist dort.", "Nhà vệ sinh ở đằng kia."]},
+        {"id": "sag-mal", "de": "Sag mal, … / Sagen Sie mal, …", "say": "Sag mal. Sagen Sie mal.", "ans": "Sagen Sie mal", "kind": "phrase", "vi": "Này, cho tôi hỏi … (mở đầu một câu hỏi; Sag mal = thân mật, Sagen Sie mal = lịch sự)"},
+        {"id": "wo-ist-denn", "de": "Wo ist denn die Küche?", "kind": "phrase", "vi": "Thế nhà bếp ở đâu vậy? (denn làm câu hỏi nghe thân thiện hơn)"},
+        {"id": "das-ist-meine", "de": "Das ist meine Wohnung.", "kind": "phrase", "vi": "Đây là nhà (căn hộ) của tôi."}
+      ]
+    },
+    {
+      "id": "b", "title": "Tính từ, er / es / sie", "session": "2",
+      "items": [
+        {"id": "alt", "de": "alt", "kind": "word", "emoji": "👴", "vi": "cũ; già", "note": "Đối nghĩa: neu. Cũng nói về tuổi: Wie alt bist du? (Lektion 2).", "ex": ["Der Teppich ist alt.", "Tấm thảm cũ rồi."]},
+        {"id": "teuer", "de": "teuer", "kind": "word", "emoji": "💰", "vi": "đắt", "syl": "TEU·er", "note": "eu đọc „oi“. Đối nghĩa: billig.", "ex": ["Die Wohnung ist teuer.", "Căn hộ đắt."]},
+        {"id": "gross", "de": "groß", "kind": "word", "emoji": "🐘", "vi": "to, lớn, rộng", "note": "ß = „ss“, o dài. Đối nghĩa: klein.", "ex": ["Der Balkon ist sehr groß.", "Ban công rất rộng."]},
+        {"id": "breit", "de": "breit", "kind": "word", "vi": "rộng (bề ngang)", "note": "ei đọc „ai“. Đối nghĩa: schmal. breit nói về bề ngang (đường, hành lang, bàn); groß nói về cỡ chung.", "ex": ["Die Straße ist breit.", "Con đường rộng."]},
+        {"id": "schmal", "de": "schmal", "kind": "word", "vi": "hẹp, chật (bề ngang)", "note": "schm- đọc „shm“. Đối nghĩa: breit.", "ex": ["Der Flur ist schmal.", "Hành lang hẹp."]},
+        {"id": "modern", "de": "modern", "kind": "word", "vi": "hiện đại", "syl": "mo·DERN", "en": "≈ modern", "note": "Nhấn âm cuối.", "ex": ["Die Küche ist sehr modern.", "Nhà bếp rất hiện đại."]},
+        {"id": "richtig", "de": "richtig", "kind": "word", "vi": "đúng", "syl": "RICH·tig", "note": "-ig cuối từ đọc „ích“. Đối nghĩa: falsch (Lektion 2).", "ex": ["Ja, das ist richtig.", "Vâng, đúng rồi."]},
+        {"id": "er-es-sie", "de": "er / es / sie", "say": "er, es, sie", "ans": "er", "kind": "word", "vi": "nó (thay cho danh từ der / das / die)", "note": "der → er · das → es · die → sie. Danh từ số nhiều (die …) cũng → sie (chúng nó).", "ex": ["Wo ist der Balkon? – Er ist dort.", "Ban công ở đâu? – Nó ở đằng kia."]},
+        {"id": "monat", "de": "Monat", "art": "der", "pl": "Monate", "kind": "noun", "vi": "tháng", "syl": "MO·nat", "en": "≈ month", "note": "im Monat = mỗi tháng, một tháng.", "ex": ["Das Zimmer kostet 350 Euro im Monat.", "Căn phòng giá 350 euro một tháng."]},
+        {"id": "beispiel", "de": "Beispiel", "art": "das", "pl": "Beispiele", "kind": "noun", "vi": "ví dụ", "syl": "BEI·spiel", "note": "zum Beispiel (z. B.) = ví dụ như. sp sau Bei- đọc „shp“: „bai-shpíl“.", "ex": ["Zum Beispiel: Das Bad ist klein.", "Ví dụ: Phòng tắm nhỏ."]},
+        {"id": "kostet-im-monat", "de": "Das Zimmer kostet 350 Euro im Monat.", "ans": "Das Zimmer kostet 350 Euro im Monat", "kind": "phrase", "vi": "Căn phòng giá 350 euro mỗi tháng."}
+      ]
+    },
+    {
+      "id": "b2", "title": "Thêm: các kiểu nhà trong tranh B3", "session": "2", "bonus": true,
+      "items": [
+        {"id": "wohnwagen", "de": "Wohnwagen", "art": "der", "pl": "Wohnwagen", "kind": "noun", "emoji": "🚐", "vi": "xe nhà di động (caravan)", "syl": "WOHN·wa·gen"},
+        {"id": "schloss", "de": "Schloss", "art": "das", "pl": "Schlösser", "kind": "noun", "emoji": "🏰", "vi": "lâu đài", "note": "Cũng là „ổ khóa“. Số nhiều Schlösser."},
+        {"id": "hochhaus", "de": "Hochhaus", "art": "das", "pl": "Hochhäuser", "kind": "noun", "emoji": "🏢", "vi": "nhà cao tầng", "syl": "HOCH·haus", "note": "hoch = cao + Haus."},
+        {"id": "huette", "de": "Hütte", "art": "die", "pl": "Hütten", "kind": "noun", "emoji": "🛖", "vi": "túp lều, nhà gỗ nhỏ", "syl": "HÜT·te"},
+        {"id": "hausboot", "de": "Hausboot", "art": "das", "pl": "Hausboote", "kind": "noun", "emoji": "⛵", "vi": "nhà thuyền", "syl": "HAUS·boot"},
+        {"id": "villa", "de": "Villa", "art": "die", "pl": "Villen", "kind": "noun", "emoji": "🏡", "vi": "biệt thự", "syl": "VIL·la"}
+      ]
+    },
+    {
+      "id": "c", "title": "Đồ đạc và thiết bị", "session": "3",
+      "items": [
+        {"id": "tisch", "de": "Tisch", "art": "der", "pl": "Tische", "kind": "noun", "vi": "cái bàn", "note": "sch = „sh“, i ngắn.", "ex": ["Der Tisch ist sehr groß.", "Cái bàn rất to."]},
+        {"id": "stuhl", "de": "Stuhl", "art": "der", "pl": "Stühle", "kind": "noun", "emoji": "🪑", "vi": "cái ghế (có lưng tựa)", "note": "st ở đầu từ đọc „scht“; h không đọc, u dài. Số nhiều Stühle.", "ex": ["Hier sind vier Stühle.", "Ở đây có bốn cái ghế."]},
+        {"id": "bett", "de": "Bett", "art": "das", "pl": "Betten", "kind": "noun", "emoji": "🛏️", "vi": "cái giường", "note": "tt báo e ngắn: „bét“.", "ex": ["Das Bett ist sehr groß.", "Cái giường rất to."]},
+        {"id": "sofa", "de": "Sofa", "art": "das", "pl": "Sofas", "kind": "noun", "emoji": "🛋️", "vi": "ghế sofa", "syl": "SO·fa", "en": "≈ sofa", "note": "s đầu từ trước nguyên âm đọc „z“: „zô-pha“. Số nhiều thêm -s.", "ex": ["Das Sofa ist sehr schön.", "Chiếc sofa rất đẹp."]},
+        {"id": "sessel", "de": "Sessel", "art": "der", "pl": "Sessel", "kind": "noun", "vi": "ghế bành", "syl": "SES·sel", "note": "Đuôi -el: số nhiều không đổi (die Sessel).", "ex": ["Der Sessel ist modern.", "Chiếc ghế bành hiện đại."]},
+        {"id": "schrank", "de": "Schrank", "art": "der", "pl": "Schränke", "kind": "noun", "vi": "cái tủ", "note": "Tủ đứng nói chung (tủ quần áo, tủ chén…). Số nhiều Schränke.", "ex": ["Der Schrank ist alt.", "Cái tủ cũ rồi."]},
+        {"id": "teppich", "de": "Teppich", "art": "der", "pl": "Teppiche", "kind": "noun", "vi": "tấm thảm", "syl": "TEP·pich", "note": "pp báo e ngắn; -ich cuối đọc „ích“.", "ex": ["Der Teppich ist hässlich.", "Tấm thảm xấu."]},
+        {"id": "moebel", "de": "Möbel", "art": "die", "plOnly": true, "kind": "noun", "vi": "đồ nội thất (số nhiều)", "syl": "MÖ·bel", "note": "Chỉ có số nhiều. ö: tròn môi như „ô“, đặt lưỡi như „ê“.", "ex": ["Die Möbel sind neu.", "Đồ nội thất còn mới."]},
+        {"id": "fernseher", "de": "Fernseher", "art": "der", "pl": "Fernseher", "kind": "noun", "emoji": "📺", "vi": "cái tivi", "syl": "FERN·se·her", "note": "-er cuối đọc nhẹ như „a“. Số nhiều không đổi.", "ex": ["Der Fernseher ist groß.", "Cái tivi to."]},
+        {"id": "kuehlschrank", "de": "Kühlschrank", "art": "der", "pl": "Kühlschränke", "kind": "noun", "vi": "tủ lạnh", "syl": "KÜHL·schrank", "note": "kühl = mát + Schrank = tủ.", "ex": ["Der Kühlschrank ist neu.", "Tủ lạnh mới."]},
+        {"id": "herd", "de": "Herd", "art": "der", "pl": "Herde", "kind": "noun", "vi": "bếp nấu", "note": "e dài; d cuối đọc „t“: „hết“.", "ex": ["Der Herd ist alt.", "Cái bếp cũ rồi."]},
+        {"id": "waschmaschine", "de": "Waschmaschine", "art": "die", "pl": "Waschmaschinen", "kind": "noun", "vi": "máy giặt", "syl": "WASCH·ma·schi·ne", "note": "waschen = giặt, rửa. -ine đọc „i-nơ“.", "ex": ["Die Waschmaschine ist neu.", "Máy giặt còn mới."]},
+        {"id": "geraet", "de": "Gerät", "art": "das", "pl": "Geräte", "kind": "noun", "emoji": "🔌", "vi": "thiết bị, dụng cụ", "syl": "ge·RÄT", "note": "ä dài. Elektrogeräte = thiết bị điện (tủ lạnh, tivi, bếp…).", "ex": ["Der Herd ist ein Elektrogerät.", "Bếp là một thiết bị điện."]},
+        {"id": "dusche", "de": "Dusche", "art": "die", "pl": "Duschen", "kind": "noun", "emoji": "🚿", "vi": "vòi hoa sen; buồng tắm đứng", "syl": "DU·sche", "ex": ["Die Dusche ist klein.", "Buồng tắm đứng nhỏ."]},
+        {"id": "badewanne", "de": "Badewanne", "art": "die", "pl": "Badewannen", "kind": "noun", "emoji": "🛁", "vi": "bồn tắm", "syl": "BA·de·wan·ne", "note": "baden = tắm bồn + Wanne = cái bồn.", "ex": ["Die Badewanne ist groß.", "Bồn tắm rộng."]},
+        {"id": "waschbecken", "de": "Waschbecken", "art": "das", "pl": "Waschbecken", "kind": "noun", "emoji": "🚰", "vi": "bồn rửa mặt", "syl": "WASCH·be·cken", "note": "Đuôi -en: số nhiều không đổi.", "ex": ["Das Waschbecken ist klein.", "Bồn rửa mặt nhỏ."]}
+      ]
+    },
+    {
+      "id": "c2", "title": "Màu sắc và ý kiến", "session": "3",
+      "items": [
+        {"id": "farbe", "de": "Farbe", "art": "die", "pl": "Farben", "kind": "noun", "emoji": "🎨", "vi": "màu sắc", "syl": "FAR·be", "ex": ["Welche Farbe hat der Tisch?", "Cái bàn màu gì?"]},
+        {"id": "schwarz", "de": "schwarz", "kind": "word", "emoji": "⚫", "vi": "đen", "note": "schw- đọc „shv“; z cuối = „ts“.", "ex": ["Die Stühle sind schwarz.", "Những chiếc ghế màu đen."]},
+        {"id": "weiss", "de": "weiß", "kind": "word", "emoji": "⚪", "vi": "trắng", "en": "≈ white", "note": "ei đọc „ai“. ⚠ Khác ich weiß (tôi biết) dù viết giống.", "ex": ["Die Milch ist weiß.", "Sữa màu trắng."]},
+        {"id": "grau", "de": "grau", "kind": "word", "emoji": "🩶", "vi": "xám", "en": "≈ grey", "ex": ["Die Lampe ist grau.", "Cái đèn màu xám."]},
+        {"id": "rot", "de": "rot", "kind": "word", "emoji": "🔴", "vi": "đỏ", "en": "≈ red", "ex": ["Das Sofa ist rot.", "Chiếc sofa màu đỏ."]},
+        {"id": "blau", "de": "blau", "kind": "word", "emoji": "🔵", "vi": "xanh dương", "en": "≈ blue", "note": "au đọc „ao“.", "ex": ["Der Teppich ist blau.", "Tấm thảm màu xanh dương."]},
+        {"id": "gruen", "de": "grün", "kind": "word", "emoji": "🟢", "vi": "xanh lá", "en": "≈ green", "note": "ü dài.", "ex": ["Der Sessel ist grün.", "Chiếc ghế bành màu xanh lá."]},
+        {"id": "gelb", "de": "gelb", "kind": "word", "emoji": "🟡", "vi": "vàng", "en": "≈ yellow", "note": "b cuối đọc „p“: „gelp“.", "ex": ["Die Banane ist gelb.", "Quả chuối màu vàng."]},
+        {"id": "braun", "de": "braun", "kind": "word", "emoji": "🟤", "vi": "nâu", "en": "≈ brown", "note": "au đọc „ao“.", "ex": ["Der Schrank ist braun.", "Cái tủ màu nâu."]},
+        {"id": "hell-dunkel", "de": "hell- / dunkel-", "say": "hell, dunkel", "ans": "hell", "kind": "word", "vi": "nhạt / đậm (ghép trước tên màu)", "note": "Viết liền với màu: hellrot = đỏ nhạt, dunkelblau = xanh dương đậm.", "ex": ["Das Sofa ist dunkelblau.", "Chiếc sofa màu xanh dương đậm."]},
+        {"id": "gefallen", "de": "gefallen", "kind": "verb", "forms": "es gefällt · sie gefallen", "vi": "thích, hợp ý, vừa mắt", "syl": "ge·FAL·len", "note": "Vật được thích là chủ ngữ: Der Tisch gefällt mir. Die Stühle gefallen mir. (dir = bạn, Ihnen = ông/bà; chỉ cần nhớ cả cụm).", "ex": ["Wie gefällt dir das Sofa?", "Bạn thấy chiếc sofa thế nào?"]},
+        {"id": "finden", "de": "finden", "kind": "verb", "forms": "ich finde · du findest · er/sie findet", "vi": "thấy, cho là, nghĩ là; tìm thấy", "syl": "FIN·den", "note": "Dùng để nêu ý kiến. Das finde ich auch. = Tôi cũng thấy thế.", "ex": ["Das Sofa finde ich sehr gut.", "Chiếc sofa thì tôi thấy rất tốt."]},
+        {"id": "wie-gefaellt", "de": "Wie gefällt dir …? / Wie gefällt Ihnen …?", "say": "Wie gefällt dir der Tisch? Wie gefällt Ihnen der Tisch?", "ans": "Wie gefällt dir", "kind": "phrase", "vi": "Bạn thấy … thế nào? (dir = thân mật, Ihnen = lịch sự)"},
+        {"id": "das-finde-ich-auch", "de": "Das finde ich auch.", "kind": "phrase", "vi": "Tôi cũng thấy vậy."},
+        {"id": "schau-mal", "de": "Schau mal! / Schauen Sie mal!", "say": "Schau mal! Schauen Sie mal!", "ans": "Schauen Sie mal", "kind": "phrase", "vi": "Nhìn này! (Schau mal = thân mật, Schauen Sie mal = lịch sự)"},
+        {"id": "bewertung", "de": "sehr gut – gut – ganz gut – es geht – nicht so gut", "say": "sehr gut, gut, ganz gut, es geht, nicht so gut", "ans": "sehr gut", "kind": "phrase", "vi": "rất tốt – tốt – khá tốt – tạm được – không hay lắm"}
+      ]
+    },
+    {
+      "id": "d", "title": "Số lớn, kích thước, điện thoại", "session": "4",
+      "items": [
+        {"id": "tausend", "de": "tausend", "kind": "num", "vi": "1.000 · một nghìn", "syl": "TAU·send", "note": "au đọc „ao“. Viết liền: zweitausend (2.000). Dấu chấm ngăn nhóm ba chữ số (1.000) — giống tiếng Việt."},
+        {"id": "million", "de": "Million", "art": "die", "pl": "Millionen", "kind": "noun", "vi": "1.000.000 · một triệu", "syl": "mil·LION", "en": "≈ million", "note": "eine Million (viết rời vì là danh từ); zwei Millionen.", "ex": ["Eine Million Euro!", "Một triệu euro!"]},
+        {"id": "zentimeter", "de": "Zentimeter", "art": "der", "pl": "Zentimeter", "kind": "noun", "vi": "xăng-ti-mét (cm)", "syl": "zen·ti·ME·ter", "note": "z = „ts“. Viết tắt cm.", "ex": ["Das Bett ist 140 Zentimeter breit.", "Cái giường rộng 140 cm."]},
+        {"id": "meter", "de": "Meter", "art": "der", "pl": "Meter", "kind": "noun", "vi": "mét (m)", "syl": "ME·ter", "note": "e dài; -er cuối đọc nhẹ như „a“.", "ex": ["Der Tisch ist zwei Meter lang.", "Cái bàn dài hai mét."]},
+        {"id": "quadratmeter", "de": "Quadratmeter", "art": "der", "pl": "Quadratmeter", "kind": "noun", "vi": "mét vuông (m², qm)", "syl": "qua·DRAT·me·ter", "note": "qu = „kv“. Viết tắt m² hoặc qm.", "ex": ["Die Wohnung ist 60 Quadratmeter groß.", "Căn hộ rộng 60 mét vuông."]},
+        {"id": "mal", "de": "mal", "kind": "word", "vi": "nhân (×); lần", "note": "60 × 120 cm đọc là sechzig mal hundertzwanzig Zentimeter.", "ex": ["Das Bett ist 90 mal 200 Zentimeter groß.", "Cái giường cỡ 90 × 200 cm."]},
+        {"id": "lang", "de": "lang", "kind": "word", "vi": "dài", "note": "Hỏi: Wie lang ist …? Đối nghĩa: kurz (ngắn).", "ex": ["Der Flur ist drei Meter lang.", "Hành lang dài ba mét."]},
+        {"id": "hoch", "de": "hoch", "kind": "word", "vi": "cao", "note": "o dài; ch sau o đọc „kh“. Hỏi: Wie hoch ist …?", "ex": ["Das Regal ist 180 Zentimeter hoch.", "Cái kệ cao 180 cm."]},
+        {"id": "ungefaehr", "de": "ungefähr", "kind": "word", "vi": "khoảng, xấp xỉ", "syl": "UN·ge·fähr", "note": "Cùng nghĩa với circa (ca.). Đối nghĩa: genau (chính xác, Lektion 2).", "ex": ["Das Bad ist ungefähr sechs Quadratmeter groß.", "Phòng tắm rộng khoảng sáu mét vuông."]},
+        {"id": "handy", "de": "Handy", "art": "das", "pl": "Handys", "kind": "noun", "emoji": "📱", "vi": "điện thoại di động", "syl": "HEN·dy", "note": "Từ „Handy“ chỉ dùng ở Đức (nghĩa là điện thoại di động); đọc „hen-đi“.", "ex": ["Meine Handynummer ist neu.", "Số di động của tôi mới."]},
+        {"id": "arbeit", "de": "Arbeit", "art": "die", "kind": "noun", "vi": "công việc; chỗ làm", "syl": "AR·beit", "note": "Thường chỉ có số ít. bei der Arbeit = ở chỗ làm.", "ex": ["Ich bin bei der Arbeit.", "Tôi đang ở chỗ làm."]},
+        {"id": "zu-hause", "de": "zu Hause", "kind": "phrase", "vi": "ở nhà", "ex": ["Ich bin zu Hause.", "Tôi đang ở nhà."]},
+        {"id": "meine-nummer", "de": "Meine Nummer zu Hause ist … · Meine Handynummer ist …", "say": "Meine Nummer zu Hause ist … Meine Handynummer ist …", "ans": "Meine Handynummer ist", "kind": "phrase", "vi": "Số của tôi ở nhà là … · Số di động của tôi là …"}
+      ]
+    },
+    {
+      "id": "d2", "title": "Tin cho thuê nhà", "session": "5",
+      "items": [
+        {"id": "anzeige", "de": "Anzeige", "art": "die", "pl": "Anzeigen", "kind": "noun", "emoji": "📰", "vi": "tin rao, quảng cáo ngắn", "syl": "AN·zei·ge", "note": "Wohnungsanzeige = tin cho thuê / bán nhà trên báo hoặc mạng.", "ex": ["Die Anzeige ist von privat.", "Tin rao này của người cho thuê cá nhân."]},
+        {"id": "ehepaar", "de": "Ehepaar", "art": "das", "pl": "Ehepaare", "kind": "noun", "emoji": "👫", "vi": "cặp vợ chồng", "syl": "E·he·paar", "note": "Ehe = hôn nhân + Paar = cặp. (Ehemann, Ehefrau: Lektion 2.)", "ex": ["Ein nettes Ehepaar sucht eine Wohnung.", "Một cặp vợ chồng dễ mến đang tìm nhà."]},
+        {"id": "nett", "de": "nett", "kind": "word", "vi": "dễ mến, tử tế", "note": "tt báo e ngắn.", "ex": ["Die Familie ist sehr nett.", "Gia đình rất dễ mến."]},
+        {"id": "suchen", "de": "suchen", "kind": "verb", "forms": "ich suche · du suchst · er/sie sucht", "emoji": "🔍", "vi": "tìm", "syl": "SU·chen", "note": "u dài; ch sau u đọc „kh“.", "ex": ["Wir suchen eine Wohnung.", "Chúng tôi đang tìm một căn hộ."]},
+        {"id": "vermieten", "de": "vermieten", "kind": "verb", "forms": "ich vermiete · du vermietest · er/sie vermietet", "vi": "cho thuê", "syl": "ver·MIE·ten", "note": "ver- đọc „fe“ (v = f) và không nhấn. Cùng họ: die Miete = tiền thuê nhà; mieten = thuê.", "ex": ["Ich vermiete ein Zimmer.", "Tôi cho thuê một phòng."]},
+        {"id": "apartment", "de": "Apartment", "art": "das", "pl": "Apartments", "kind": "noun", "vi": "căn hộ nhỏ (thường một phòng)", "syl": "a·PART·ment", "en": "≈ apartment", "ex": ["Das Apartment ist klein, aber schön.", "Căn hộ nhỏ này nhỏ nhưng đẹp."]},
+        {"id": "garten", "de": "Garten", "art": "der", "pl": "Gärten", "kind": "noun", "emoji": "🌳", "vi": "vườn", "syl": "GAR·ten", "note": "Số nhiều Gärten (ä = „ê“).", "ex": ["Der Garten ist sehr schön.", "Khu vườn rất đẹp."]},
+        {"id": "garage", "de": "Garage", "art": "die", "pl": "Garagen", "kind": "noun", "emoji": "🚗", "vi": "nhà để xe", "syl": "ga·RA·ge", "note": "-ge cuối đọc „zhơ“ như tiếng Pháp.", "ex": ["Die Garage ist neu.", "Nhà để xe còn mới."]},
+        {"id": "stock", "de": "Stock", "art": "der", "kind": "noun", "vi": "tầng (lầu)", "note": "Chỉ dùng số ít cho tầng nhà: im 3. Stock = ở tầng 3 (lầu 3). Tầng trệt là das Erdgeschoss.", "ex": ["Die Wohnung ist im 3. Stock.", "Căn hộ ở tầng 3."]},
+        {"id": "raum", "de": "Raum", "art": "der", "pl": "Räume", "kind": "noun", "vi": "phòng; không gian", "note": "Raum trang trọng hơn Zimmer, hay gặp trong tin rao: Wohnraum = phòng khách/phòng ở.", "ex": ["Der Raum ist hell.", "Căn phòng sáng sủa."]},
+        {"id": "circa", "de": "circa", "kind": "word", "vi": "khoảng (ca.)", "syl": "CIR·ca", "note": "Viết tắt ca.; đọc „tsir-ka“. Cùng nghĩa: ungefähr.", "ex": ["Die Wohnung ist circa 60 Quadratmeter groß.", "Căn hộ rộng khoảng 60 mét vuông."]},
+        {"id": "privat", "de": "privat", "kind": "word", "vi": "tư nhân; cá nhân", "syl": "pri·VAT", "note": "von privat = từ chủ nhà cá nhân (không qua công ty môi giới). v đọc „v“ (từ mượn).", "ex": ["Die Wohnung ist von privat.", "Căn hộ này của chủ nhà cá nhân."]},
+        {"id": "ab", "de": "ab", "kind": "word", "vi": "từ (thời điểm) trở đi", "note": "ab sofort = từ ngay bây giờ; ab 19 Uhr = từ 19 giờ.", "ex": ["Das Zimmer kostet ab 300 Euro.", "Phòng có giá từ 300 euro."]},
+        {"id": "sofort", "de": "sofort", "kind": "word", "vi": "ngay, lập tức", "syl": "so·FORT", "ex": ["Ich brauche sofort eine Wohnung.", "Tôi cần nhà ngay."]},
+        {"id": "maximal", "de": "maximal", "kind": "word", "vi": "tối đa (max.)", "syl": "ma·xi·MAL", "note": "Viết tắt max. Đối nghĩa: minimal (tối thiểu).", "ex": ["Das Zimmer kostet maximal 400 Euro.", "Phòng giá tối đa 400 euro."]},
+        {"id": "anruf", "de": "Anruf", "art": "der", "pl": "Anrufe", "kind": "noun", "vi": "cuộc gọi điện thoại", "syl": "AN·ruf", "note": "Cuối tin rao hay có: Ich freue mich auf Ihren Anruf. (= Tôi mong nhận được cuộc gọi của ông/bà.)", "ex": ["Hier ist ein Anruf für Sie.", "Có một cuộc gọi cho ông/bà."]},
+        {"id": "moebliert", "de": "möbliert", "kind": "word", "vi": "có sẵn đồ đạc", "syl": "mö·BLIERT", "note": "Đã có sẵn Möbel. Đối nghĩa: unmöbliert. Viết tắt möbl.", "ex": ["Das Zimmer ist möbliert.", "Căn phòng có sẵn đồ đạc."]},
+        {"id": "tv", "de": "TV", "art": "das", "kind": "noun", "emoji": "📺", "vi": "tivi", "note": "Đọc „tê-phau“ (T-V). Trong tin rao: mit TV = có tivi. Giống der Fernseher.", "ex": ["Das Apartment ist möbliert, mit TV.", "Căn hộ có sẵn đồ, có tivi."]},
+        {"id": "miete", "de": "Miete", "art": "die", "pl": "Mieten", "kind": "noun", "emoji": "💶", "vi": "tiền thuê nhà", "syl": "MIE·te", "note": "ie = i dài (khác Mitte = giữa).", "ex": ["Die Miete ist 650 Euro.", "Tiền thuê nhà là 650 euro."]},
+        {"id": "bezahlen", "de": "bezahlen", "kind": "verb", "forms": "ich bezahle · du bezahlst · er/sie bezahlt", "vi": "trả tiền", "syl": "be·ZAH·len", "note": "Không nhấn be-.", "ex": ["Ich bezahle die Miete.", "Tôi trả tiền thuê nhà."]}
+      ]
+    },
+    {
+      "id": "d3", "title": "Thêm: từ hay gặp trong tin cho thuê", "session": "5", "bonus": true,
+      "items": [
+        {"id": "kaution", "de": "Kaution", "art": "die", "pl": "Kautionen", "kind": "noun", "vi": "tiền đặt cọc", "syl": "kau·TION", "note": "Thường là 2–3 tháng tiền thuê (Monatsmieten)."},
+        {"id": "nebenkosten", "de": "Nebenkosten", "art": "die", "plOnly": true, "kind": "noun", "vi": "phụ phí (điện nước, rác…)", "syl": "NE·ben·kos·ten", "note": "Viết tắt NK. Chỉ có số nhiều."},
+        {"id": "warmmiete", "de": "Warmmiete", "art": "die", "pl": "Warmmieten", "kind": "noun", "vi": "tiền thuê đã gồm sưởi và phụ phí", "syl": "WARM·mie·te", "note": "Đối nghĩa: die Kaltmiete (tiền thuê chưa gồm phụ phí)."},
+        {"id": "einbaukueche", "de": "Einbauküche", "art": "die", "pl": "Einbauküchen", "kind": "noun", "vi": "bếp có sẵn tủ và thiết bị gắn liền", "syl": "EIN·bau·kü·che", "note": "Viết tắt EBK."}
+      ]
+    },
+    {
+      "id": "e", "title": "Bàn làm việc", "session": "6",
+      "items": [
+        {"id": "buch", "de": "Buch", "art": "das", "pl": "Bücher", "kind": "noun", "emoji": "📖", "vi": "quyển sách", "en": "≈ book", "note": "u dài; ch sau u đọc „kh“. Số nhiều Bücher (ü + ch nhẹ).", "ex": ["Das Buch ist neu.", "Quyển sách mới."]},
+        {"id": "heft", "de": "Heft", "art": "das", "pl": "Hefte", "kind": "noun", "emoji": "📓", "vi": "quyển vở", "ex": ["Ich brauche ein Heft.", "Tôi cần một quyển vở."]},
+        {"id": "stift", "de": "Stift", "art": "der", "pl": "Stifte", "kind": "noun", "emoji": "✏️", "vi": "cây bút", "note": "st ở đầu từ đọc „scht“.", "ex": ["Hier ist ein Stift.", "Đây là một cây bút."]},
+        {"id": "computer", "de": "Computer", "art": "der", "pl": "Computer", "kind": "noun", "emoji": "💻", "vi": "máy tính", "syl": "com·PU·ter", "en": "≈ computer", "note": "Nhấn âm giữa (từ mượn). Số nhiều không đổi.", "ex": ["Der Computer ist neu.", "Máy tính mới."]},
+        {"id": "tablet", "de": "Tablet", "art": "das", "pl": "Tablets", "kind": "noun", "vi": "máy tính bảng", "syl": "TA·blet", "en": "≈ tablet", "ex": ["Das Tablet ist klein.", "Máy tính bảng nhỏ."]},
+        {"id": "tagebuch", "de": "Tagebuch", "art": "das", "pl": "Tagebücher", "kind": "noun", "emoji": "📔", "vi": "nhật ký", "syl": "TA·ge·buch", "note": "Tag (ngày) + Buch (sách).", "ex": ["Das Tagebuch ist alt.", "Cuốn nhật ký cũ rồi."]},
+        {"id": "schreibtisch", "de": "Schreibtisch", "art": "der", "pl": "Schreibtische", "kind": "noun", "vi": "bàn làm việc, bàn học", "syl": "SCHREIB·tisch", "note": "schreiben = viết + Tisch = bàn. schr- đọc „shr“.", "ex": ["Mein Schreibtisch ist groß.", "Bàn làm việc của tôi to."]},
+        {"id": "schreibtischlampe", "de": "Schreibtischlampe", "art": "die", "pl": "Schreibtischlampen", "kind": "noun", "emoji": "💡", "vi": "đèn bàn", "syl": "SCHREIB·tisch·lam·pe", "ex": ["Die Schreibtischlampe ist rot.", "Chiếc đèn bàn màu đỏ."]},
+        {"id": "schreibtischstuhl", "de": "Schreibtischstuhl", "art": "der", "pl": "Schreibtischstühle", "kind": "noun", "vi": "ghế ngồi làm việc", "syl": "SCHREIB·tisch·stuhl", "ex": ["Der Schreibtischstuhl ist blau.", "Chiếc ghế làm việc màu xanh dương."]},
+        {"id": "holz", "de": "Holz", "art": "das", "pl": "Hölzer", "kind": "noun", "emoji": "🪵", "vi": "gỗ", "note": "o dài. aus Holz = làm bằng gỗ. Số nhiều Hölzer ít dùng.", "ex": ["Der Tisch ist aus Holz.", "Cái bàn làm bằng gỗ."]},
+        {"id": "viel", "de": "viel / viele", "say": "viel, viele", "ans": "viel", "kind": "word", "vi": "nhiều", "note": "viel + danh từ không đếm được (viel Platz); viele + số nhiều (viele Hefte).", "ex": ["Ich habe viele Hefte.", "Tôi có nhiều quyển vở."]},
+        {"id": "voll", "de": "voll", "kind": "word", "vi": "đầy; đông", "note": "Đối nghĩa: leer (trống).", "ex": ["Der Schreibtisch ist voll.", "Bàn làm việc đầy đồ."]},
+        {"id": "platz", "de": "Platz", "art": "der", "kind": "noun", "vi": "chỗ, không gian", "note": "Thường dùng số ít: viel Platz = nhiều chỗ. (Platz còn là „quảng trường“, số nhiều Plätze.)", "ex": ["Ich brauche viel Platz.", "Tôi cần nhiều chỗ."]},
+        {"id": "ziemlich", "de": "ziemlich", "kind": "word", "vi": "khá, tương đối", "syl": "ZIEM·lich", "note": "ie = i dài; -lich cuối đọc „lích“.", "ex": ["Mein Zimmer ist ziemlich klein.", "Phòng của tôi khá nhỏ."]},
+        {"id": "egal", "de": "egal", "kind": "word", "vi": "sao cũng được; không quan trọng", "syl": "e·GAL", "ex": ["Das ist egal.", "Cái đó không quan trọng."]},
+        {"id": "lieben", "de": "lieben", "kind": "verb", "forms": "ich liebe · du liebst · er/sie liebt", "emoji": "❤️", "vi": "yêu; rất thích", "syl": "LIE·ben", "note": "ie = i dài. Mạnh hơn „gern haben“.", "ex": ["Ich liebe meine Wohnung.", "Tôi rất yêu căn hộ của mình."]},
+        {"id": "immer", "de": "immer", "kind": "word", "vi": "luôn luôn", "syl": "IM·mer", "note": "mm báo i ngắn.", "ex": ["Mein Schreibtisch ist immer voll.", "Bàn làm việc của tôi lúc nào cũng đầy."]},
+        {"id": "hausaufgabe", "de": "Hausaufgabe", "art": "die", "pl": "Hausaufgaben", "kind": "noun", "vi": "bài tập về nhà", "syl": "HAUS·auf·ga·be", "note": "Hay dùng số nhiều: Hausaufgaben machen = làm bài tập về nhà.", "ex": ["Ich mache meine Hausaufgaben.", "Tôi làm bài tập về nhà."]},
+        {"id": "glauben", "de": "glauben", "kind": "verb", "forms": "ich glaube · du glaubst · er/sie glaubt", "vi": "tin; nghĩ rằng", "syl": "GLAU·ben", "ex": ["Ich glaube, er ist schon sehr alt.", "Tôi nghĩ nó đã rất cũ rồi."]},
+        {"id": "besonders", "de": "besonders", "kind": "word", "vi": "đặc biệt, nhất là", "syl": "be·SON·ders", "ex": ["Besonders schön ist die Lampe.", "Đặc biệt đẹp là cái đèn."]},
+        {"id": "welch", "de": "welcher / welches / welche", "say": "welcher, welches, welche", "ans": "welche", "kind": "word", "vi": "… nào? (hỏi chọn trong số vài thứ)", "syl": "WEL·cher", "note": "welcher + der-Wort · welches + das-Wort · welche + die-Wort và số nhiều.", "ex": ["Welche Farbe hat dein Schreibtisch?", "Bàn làm việc của bạn màu gì?"]}
+      ]
+    },
+    {
+      "id": "e2", "title": "Thêm: từ trong các bài đọc của sách", "session": "6", "bonus": true,
+      "items": [
+        {"id": "ein-paar", "de": "ein paar", "kind": "phrase", "vi": "vài, một vài", "ex": ["Ein paar Bücher, ein paar Stifte.", "Vài quyển sách, vài cây bút."]},
+        {"id": "wirklich", "de": "wirklich", "kind": "word", "vi": "thật sự", "syl": "WIRK·lich", "ex": ["Das Zimmer ist wirklich schön.", "Căn phòng thật sự đẹp."]},
+        {"id": "wichtig", "de": "wichtig", "kind": "word", "vi": "quan trọng", "syl": "WICH·tig", "ex": ["Der Schreibtisch ist sehr wichtig.", "Bàn làm việc rất quan trọng."]},
+        {"id": "ordnung", "de": "Ordnung", "art": "die", "kind": "noun", "vi": "sự ngăn nắp; trật tự", "syl": "ORD·nung", "note": "Bei mir ist Ordnung. = Chỗ tôi gọn gàng, ngăn nắp.", "ex": ["Bei mir ist Ordnung.", "Chỗ tôi lúc nào cũng ngăn nắp."]},
+        {"id": "leer", "de": "leer", "kind": "word", "vi": "trống, không có gì", "ex": ["Der Schreibtisch ist leer.", "Bàn làm việc trống trơn."]}
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1", "no": 1, "minutes": 65, "set": "a",
+      "title": "Das Bad ist dort.",
+      "vi": "Truyện ảnh tập 4 „Ach so!“, các phòng trong nhà, der / das / die, hier và dort",
+      "book": "Kursbuch tr. 46–48 · Arbeitsbuch tr. 41–42 · Lernwortschatz L4 (phần đầu)",
+      "goals": [
+        "Gọi tên các phòng trong nhà: <i>das Wohnzimmer, die Küche, das Bad, der Flur …</i>",
+        "Mô tả bằng tính từ đơn giản: <i>neu, klein, hell, dunkel, billig, schön, hässlich</i>.",
+        "Dùng <i>der / das / die</i> khi đã biết đó là cái nào (khác với <i>ein / eine</i>).",
+        "Hỏi và chỉ chỗ: <i>Wo ist die Küche? – Hier. / Dort.</i>",
+        "Hiểu ý chính tập 4 của truyện ảnh (Ach so!); đọc đúng ü, ä, ch và trọng âm của từ ghép."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: truyện ảnh và các phòng", "minutes": 12,
+          "blocks": [
+            {"type": "words", "set": "a"},
+            {"type": "tip", "title": "Học tính từ theo cặp đối nghĩa", "html": "<p>Tính từ dễ nhớ nhất khi học theo <b>cặp đối nghĩa</b>:</p><ul><li><b>neu</b> ↔ <b>alt</b> — mới ↔ cũ</li><li><b>groß</b> ↔ <b>klein</b> — to ↔ nhỏ</li><li><b>hell</b> ↔ <b>dunkel</b> — sáng ↔ tối</li><li><b>teuer</b> ↔ <b>billig</b> — đắt ↔ rẻ</li><li><b>schön</b> ↔ <b>hässlich</b> — đẹp ↔ xấu</li></ul><p><i>alt, groß, teuer</i> bạn đã gặp ở Lektion 2–3. Buổi 2 sẽ học thêm <i>breit ↔ schmal</i> và cách dùng tất cả các tính từ này.</p>"},
+            {"type": "listenPick", "set": "a", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "a", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (11)", "minutes": 5,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "ü, ä, äu", "vi": "<b>ü</b>: tròn môi như nói „u“ nhưng đặt lưỡi như nói „i“. <b>ä</b> đọc „ê“. <b>äu</b> đọc „oi“ (giống <b>eu</b>). Số nhiều của nhiều danh từ đổi nguyên âm: <i>das Bad → die Bäder</i>, <i>das Haus → die Häuser</i>.", "ex": ["Küche|bếp", "Bäder|phòng tắm (nhiều)", "Häuser|nhà (nhiều)", "neu|mới"]},
+                {"t": "ch: „kh“ hay „xì“?", "vi": "Nhắc lại: sau <b>a, o, u</b> đọc „kh“ ở cổ họng; sau <b>e, i, ä, ö, ü</b> đọc „xì“ nhẹ. <i>Küche</i> có ch sau ü nên đọc „xì“, giống <i>ich</i>.", "ex": ["Küche|bếp", "ich|tôi", "Milch|sữa", "Kuchen|bánh"]},
+                {"t": "Trọng âm: từ ghép và từ mượn", "vi": "Từ ghép nhấn vào <b>thành phần đầu</b>: <i>WOHN-zim-mer</i>, <i>SCHLAF-zim-mer</i>, <i>AR-beits-zim-mer</i>. Nhiều từ mượn nhấn <b>gần cuối</b>: <i>Bal-KON</i>, <i>Toi-LET-te</i>. Phần in HOA trên thẻ từ cho bạn biết âm nhấn.", "ex": ["Wohnzimmer|phòng khách", "Schlafzimmer|phòng ngủ", "Balkon|ban công", "Toilette|nhà vệ sinh"]},
+                {"t": "Nguyên âm dài hay ngắn?", "vi": "Thường: nguyên âm <b>dài</b> khi sau nó chỉ có <b>một</b> phụ âm hoặc chữ <b>h</b> (<i>Bad, Flur, Wohnung</i>); nguyên âm <b>ngắn</b> khi sau nó có <b>hai</b> phụ âm (<i>Zimmer, hell, Wohnzimmer</i>). Chữ <b>h</b> trong <i>Wohnung</i> không đọc, chỉ báo nguyên âm dài.", "ex": ["Bad|phòng tắm", "Wohnung|căn hộ", "Zimmer|phòng", "hell|sáng"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "Küche", "opts": ["Küche", "Kuche"]},
+                {"say": "Bäder", "opts": ["Bäder", "Bader"]},
+                {"say": "Häuser", "opts": ["Häuser", "Hauser"]},
+                {"say": "Zimmer", "opts": ["Zimmer", "Simmer"]},
+                {"say": "neu", "opts": ["neu", "nei"]},
+                {"say": "schön", "opts": ["schön", "schon"]},
+                {"say": "Lampe", "opts": ["Lampe", "Rampe"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "truyen", "title": "Truyện ảnh, tập 4: „Ach so!“", "minutes": 9,
+          "blocks": [
+            { "type": "book", "title": "Truyện ảnh, tập 4", "kb": "46–47", "tracks": "KB 1/71-78", "key": "Đáp án bài 1 và bài 3: giáo án <i>Unterrichtsplan L4</i>, trang 1.",
+              "steps": [
+                "Nhìn 8 bức ảnh ở trang 46–47: Tim và Lara đang ở nhà ai? Đoán rồi đánh dấu (bài 1a).",
+                "Bài 1b — <i>Zeigen Sie.</i> Chỉ vào ảnh có đèn (<i>Lampe</i>), phòng (<i>Zimmer</i>), bếp (<i>Küche</i>), phòng tắm (<i>Bad</i>).",
+                "Bài 1c — <i>Was meinen Sie? Kreuzen Sie an.</i> Đoán nghĩa các cặp tính từ nhờ hình vẽ (alt/neu, groß/klein, hell/dunkel, teuer/billig, schön/hässlich).",
+                "Bài 2 — nghe cả câu chuyện (track 71–78) và đối chiếu với những gì bạn đã đoán ở 1c.",
+                "Bài 3 — nghe thêm một lần nữa và đánh dấu những câu đúng trong danh sách a–g (mỗi câu nói về một chi tiết của truyện). Nghe nhiều lần cũng không sao."
+              ]
+            },
+            { "type": "choice", "title": "Bạn hiểu truyện chưa?",
+              "items": [
+                {"q": "Tim và Lara đang ở đâu?", "opts": ["Trong căn hộ của Lara", "Trong căn hộ của Tim", "Trong một nhà hàng"], "a": 0, "why": "Nhìn các ảnh 1–8 và nghe lại track 71–78."},
+                {"q": "Walter mang gì đến cho Lara?", "opts": ["Một chiếc đèn (Lampe)", "Một cái bàn", "Một chiếc tivi"], "a": 0},
+                {"q": "Phòng của Lara thế nào?", "opts": ["Sáng và rẻ (hell, billig)", "Tối và đắt (dunkel, teuer)", "Nhỏ và xấu (klein, hässlich)"], "a": 0},
+                {"q": "Nhà bếp của Lara thế nào?", "opts": ["Đẹp (schön)", "Xấu (hässlich)", "Tối (dunkel)"], "a": 0},
+                {"q": "Phòng của Tim thế nào?", "opts": ["Tối, xấu và đắt", "Sáng, đẹp và rẻ", "Rất to và sáng"], "a": 0},
+                {"q": "Ai sống chung căn hộ với Lara?", "opts": ["Sofia và Lili", "Walter và Tim", "Không có ai — Lara sống một mình"], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mao-tu", "title": "Ngữ pháp: der / das / die", "minutes": 14,
+          "blocks": [
+            {"type": "text", "html": "<p>Mỗi danh từ tiếng Đức có một <b>giống</b>: <span class='g-der'>der</span> (xanh dương), <span class='g-das'>das</span> (xanh lá), <span class='g-die'>die</span> (đỏ). Không có quy tắc đủ chắc để đoán, nên <b>luôn học danh từ kèm der / das / die và màu của nó</b>.</p><p>Khi nói về một thứ <b>lần đầu</b>, dùng <b>ein / eine</b> (một). Khi cả hai người <b>đã biết</b> đó là cái nào — vì vừa nhắc đến, hoặc vì đang chỉ vào nó — dùng <b>der / das / die</b> (cái …). Ví dụ: <i>Das ist <b>ein</b> Haus. <b>Das</b> Haus ist schön.</i></p>"},
+            { "type": "table", "title": "Từ ein / eine đến der / das / die", "head": ["Lần đầu nhắc đến", "Đã biết cái nào"], "say": 1, "vi": "<b>ein → der</b> (Balkon, Flur) · <b>ein → das</b> (Bad, Zimmer) · <b>eine → die</b> (Küche, Toilette). Số nhiều không có <i>ein</i>; mạo từ xác định số nhiều luôn là <b>die</b>.",
+              "rows": [
+                ["<span class='g-der'>ein</span> Balkon", "<span class='g-der'>der</span> Balkon"],
+                ["<span class='g-das'>ein</span> Bad", "<span class='g-das'>das</span> Bad"],
+                ["<span class='g-die'>eine</span> Küche", "<span class='g-die'>die</span> Küche"],
+                ["(số nhiều: không có ein) Kinderzimmer", "<span class='g-pl'>die</span> Kinderzimmer"]
+              ]
+            },
+            { "type": "sort", "title": "der, das hay die?", "gender": true, "cats": ["der", "das", "die"],
+              "items": [
+                {"t": "Balkon", "c": 0},
+                {"t": "Flur", "c": 0},
+                {"t": "Park", "c": 0},
+                {"t": "Bad", "c": 1},
+                {"t": "Zimmer", "c": 1},
+                {"t": "Haus", "c": 1},
+                {"t": "Wohnzimmer", "c": 1},
+                {"t": "Schlafzimmer", "c": 1},
+                {"t": "Kinderzimmer", "c": 1},
+                {"t": "Arbeitszimmer", "c": 1},
+                {"t": "Küche", "c": 2},
+                {"t": "Toilette", "c": 2},
+                {"t": "Wohnung", "c": 2},
+                {"t": "Lampe", "c": 2}
+              ]
+            },
+            { "type": "gaps", "title": "Điền der, das hoặc die", "task": "Chọn mạo từ đúng. Đừng đoán — nhớ lại màu của từng danh từ.",
+              "items": [
+                {"q": "Hier ist ___ Flur.", "a": ["der"], "opts": ["der", "das", "die"]},
+                {"q": "Dort ist ___ Küche.", "a": ["die"], "opts": ["der", "das", "die"]},
+                {"q": "Hier ist ___ Bad.", "a": ["das"], "opts": ["der", "das", "die"]},
+                {"q": "Das ist ein Balkon. ___ Balkon ist schön.", "a": ["Der"], "opts": ["Der", "Das", "Die"]},
+                {"q": "Das ist ein Zimmer. ___ Zimmer ist hell.", "a": ["Das"], "opts": ["Der", "Das", "Die"]},
+                {"q": "Das ist eine Lampe. ___ Lampe ist neu.", "a": ["Die"], "opts": ["Der", "Das", "Die"]},
+                {"q": "Wo ist ___ Toilette?", "a": ["die"], "opts": ["der", "das", "die"]},
+                {"q": "Wo ist ___ Wohnzimmer?", "a": ["das"], "opts": ["der", "das", "die"]}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi sai",
+              "items": [
+                {"s": "Die Balkon ist groß.", "err": "Die", "fix": ["Der"], "why": "der Balkon (xanh dương)."},
+                {"s": "Das Küche ist schön.", "err": "Das", "fix": ["Die"], "why": "die Küche (đỏ)."},
+                {"s": "Der Bad ist klein.", "err": "Der", "fix": ["Das"], "why": "das Bad (xanh lá)."},
+                {"s": "Hier ist die Zimmer.", "err": "die", "fix": ["das"], "why": "das Zimmer (xanh lá)."},
+                {"s": "Das Wohnzimmer ist hell.", "err": null},
+                {"s": "Wo ist das Toilette?", "err": "das", "fix": ["die"], "why": "die Toilette (đỏ)."},
+                {"s": "Die Lampe ist neu.", "err": null},
+                {"s": "Die Flur ist dunkel.", "err": "Die", "fix": ["Der"], "why": "der Flur (xanh dương)."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hier-dort", "title": "Wo ist …? Hier và dort", "minutes": 8,
+          "blocks": [
+            { "type": "table", "title": "Hỏi chỗ: Wo ist …?", "head": ["Câu hỏi", "Trả lời"], "say": 0, "vi": "<b>hier</b> = ở đây (gần người nói), <b>dort</b> = ở đó, ở đằng kia (xa người nói) — thường đi kèm động tác chỉ tay. <b>denn</b> trong <i>Wo ist denn …?</i> chỉ làm câu hỏi nghe thân thiện hơn, không cần dịch.",
+              "rows": [
+                ["Wo ist die Küche?", "<b>Hier.</b> (ở đây, gần tôi) · <b>Dort.</b> (ở đó, xa tôi)"],
+                ["Wo ist denn das Bad?", "Das Bad ist <b>dort</b>."],
+                ["Ist hier auch ein Arbeitszimmer?", "Ja, natürlich. Das Arbeitszimmer ist <b>dort</b>."],
+                ["Ist das hier das Bad?", "Ja, das <b>hier</b> ist das Bad."]
+              ]
+            },
+            { "type": "gaps", "title": "hier hay dort?",
+              "items": [
+                {"q": "<span class='muted'>(Bạn chỉ vào căn bếp ngay cạnh bạn.)</span> Die Küche ist ___.", "a": ["hier"], "opts": ["hier", "dort"]},
+                {"q": "<span class='muted'>(Bạn chỉ vào ban công ở tận cuối nhà.)</span> Der Balkon ist ___.", "a": ["dort"], "opts": ["hier", "dort"]},
+                {"q": "<span class='muted'>(Bạn đang đứng ngay trong phòng khách.)</span> Das Wohnzimmer ist ___.", "a": ["hier"], "opts": ["hier", "dort"]},
+                {"q": "<span class='muted'>(Bạn chỉ sang phòng ngủ ở bên kia hành lang.)</span> Das Schlafzimmer ist ___.", "a": ["dort"], "opts": ["hier", "dort"]},
+                {"q": "<span class='muted'>(Khách hỏi nhà vệ sinh; bạn chỉ vào cánh cửa ngay cạnh.)</span> Die Toilette ist ___.", "a": ["hier"], "opts": ["hier", "dort"]},
+                {"q": "<span class='muted'>(Bạn chỉ ra ngôi nhà ở phía xa ngoài cửa sổ.)</span> Das Haus ist ___.", "a": ["dort"], "opts": ["hier", "dort"]}
+              ]
+            },
+            { "type": "order", "title": "Xếp câu", "vi": "Động từ vẫn ở <b>vị trí 2</b> trong câu kể (<i>Hier ist der Flur.</i>). Câu hỏi Có/Không: động từ đứng <b>đầu</b> (<i>Ist hier auch ein Bad?</i>).",
+              "items": [
+                {"chunks": ["Hier", "ist", "der Flur."], "v": 1, "vi": "Đây là hành lang."},
+                {"chunks": ["Die Küche", "ist", "dort."], "v": 1, "vi": "Nhà bếp ở đằng kia."},
+                {"chunks": ["Wo", "ist", "denn", "die Toilette?"], "v": 1, "vi": "Thế nhà vệ sinh ở đâu?"},
+                {"chunks": ["Ist", "hier", "auch", "ein Bad?"], "v": 0, "vi": "Ở đây cũng có phòng tắm à?"},
+                {"chunks": ["Das Schlafzimmer", "ist", "dunkel."], "v": 1, "vi": "Phòng ngủ tối."},
+                {"chunks": ["Dort", "ist", "das Wohnzimmer."], "v": 1, "vi": "Phòng khách ở đằng kia."},
+                {"chunks": ["Ist", "das", "hier", "das Bad?"], "v": 0, "vi": "Đây có phải phòng tắm không?"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần A", "minutes": 5,
+          "blocks": [
+            { "type": "book", "title": "Phần A — Das Bad ist dort.", "kb": "48", "tracks": "KB 1/79", "key": "Đáp án A1, A2: giáo án <i>Unterrichtsplan L4</i>, trang 2–3.",
+              "steps": [
+                "A1 — <i>Ordnen Sie zu.</i> Ghép tên các phòng với số trên sơ đồ căn hộ của Sofia (có sẵn ví dụ: Laras Zimmer = 10). Bên dưới là bảng ba cột maskulin / neutral / feminin: thêm các phòng bạn biết vào cột đúng.",
+                "A2a — <i>Hören Sie und ergänzen Sie der, das oder die.</i> Nghe đoạn hội thoại về một ngôi nhà đang xây (track 79), điền mạo từ.",
+                "A2b — <i>Spielen Sie weitere Gespräche.</i> Đóng vai theo mẫu với <i>das Schlafzimmer, die Küche, das Bad, die Toilette, der Balkon</i>. Học một mình: đọc cả hai vai thành tiếng.",
+                "A3 — <i>Meine Traumwohnung.</i> Vẽ sơ đồ căn hộ mơ ước của bạn rồi nói: <i>Das ist meine Wohnung. Hier ist … Dort ist …</i>"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 8,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Căn hộ mới của Mia",
+              "lines": [
+                {"scene": "Mia cho Jonas xem căn hộ mới."},
+                {"who": "Mia", "v": "f", "de": "Das ist meine Wohnung. Die Wohnung ist neu.", "vi": "Đây là căn hộ của mình. Căn hộ mới đấy."},
+                {"who": "Jonas", "v": "m", "de": "Oh, schön! Wo ist denn die Küche?", "vi": "Ồ, đẹp quá! Thế nhà bếp ở đâu?"},
+                {"who": "Mia", "v": "f", "de": "Hier. Und dort ist das Wohnzimmer.", "vi": "Đây. Còn phòng khách ở đằng kia."},
+                {"who": "Jonas", "v": "m", "de": "Ist hier auch ein Bad?", "vi": "Ở đây cũng có phòng tắm à?"},
+                {"who": "Mia", "v": "f", "de": "Ja, natürlich. Das Bad ist dort. Das Bad ist klein, aber hell.", "vi": "Có chứ. Phòng tắm ở đằng kia. Phòng tắm nhỏ nhưng sáng."},
+                {"who": "Jonas", "v": "m", "de": "Super! Und wo ist die Toilette?", "vi": "Tuyệt! Còn nhà vệ sinh ở đâu?"},
+                {"who": "Mia", "v": "f", "de": "Die Toilette ist auch dort.", "vi": "Nhà vệ sinh cũng ở đằng kia."}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Xem nhà",
+              "lines": [
+                {"scene": "Bà Kim xem một ngôi nhà cùng ông Weber, người cho thuê."},
+                {"who": "Herr Weber", "v": "m2", "de": "Guten Tag, Frau Kim! Das ist das Haus.", "vi": "Chào bà Kim! Đây là ngôi nhà."},
+                {"who": "Frau Kim", "v": "f", "de": "Guten Tag, Herr Weber! Sagen Sie mal, ist hier auch ein Arbeitszimmer?", "vi": "Chào ông Weber! Cho tôi hỏi, ở đây có phòng làm việc không?"},
+                {"who": "Herr Weber", "v": "m2", "de": "Ja, natürlich. Das Arbeitszimmer ist dort.", "vi": "Có chứ. Phòng làm việc ở đằng kia."},
+                {"who": "Frau Kim", "v": "f", "de": "Und wo ist der Balkon?", "vi": "Còn ban công ở đâu?"},
+                {"who": "Herr Weber", "v": "m2", "de": "Der Balkon ist hier. Der Balkon ist sehr schön.", "vi": "Ban công ở đây. Ban công rất đẹp."},
+                {"who": "Frau Kim", "v": "f", "de": "Ah ja, danke!", "vi": "À vâng, cảm ơn ông!"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi gọi tên được ít nhất 8 căn phòng và nói đúng <i>der / das / die</i>.",
+                "Tôi hỏi và chỉ chỗ: <i>Wo ist die Küche? – Hier. / Dort.</i>",
+                "Tôi mô tả một căn phòng bằng <i>neu, alt, groß, klein, hell, dunkel, schön, hässlich</i>.",
+                "Tôi nghe hiểu ý chính tập 4 của truyện ảnh."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                "Arbeitsbuch tr. 41–42, bài 1–7 (phần A, không có audio).",
+                "Vẽ sơ đồ căn hộ mơ ước của bạn (bài A3), ghi tên các phòng kèm <i>der / das / die</i>, rồi nói to: <i>Das ist meine Wohnung. Hier ist … Dort ist …</i>",
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này.",
+                "Tuỳ chọn: nghe lại truyện ảnh (track 71–78) và thử kể bằng 2–3 câu: <i>Das ist Laras Wohnung. Die Küche ist schön. …</i>"
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2", "no": 2, "minutes": 60, "set": "b",
+      "title": "Das Zimmer ist sehr schön.",
+      "vi": "Tính từ đối nghĩa, nicht và sehr, nicht và kein, er / es / sie",
+      "book": "Kursbuch tr. 49 · Arbeitsbuch tr. 43–44 · Lernwortschatz L4 (phần B)",
+      "goals": [
+        "Mô tả nhà ở bằng sáu cặp tính từ đối nghĩa: <i>neu ↔ alt, billig ↔ teuer, groß ↔ klein, breit ↔ schmal, schön ↔ hässlich, hell ↔ dunkel</i>.",
+        "Nói mức độ: <i>sehr teuer, nicht teuer, nicht sehr groß</i>.",
+        "Phân biệt <i>nicht</i> (phủ định tính từ, nơi chốn, danh từ có der / das / die) và <i>kein / keine</i> (phủ định danh từ có ein / eine hoặc không mạo từ).",
+        "Dùng <i>er / es / sie</i> thay cho <i>der / das / die</i>: <i>Wo ist das Bad? – Es ist dort.</i>",
+        "Nói giá thuê: <i>Das Zimmer kostet 350 Euro im Monat.</i>"
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: tính từ và er / es / sie", "minutes": 8,
+          "blocks": [
+            {"type": "words", "set": "b"},
+            {"type": "listenPick", "set": "b", "n": 6, "title": "Nghe và chọn nghĩa"},
+            {"type": "words", "set": "b2", "title": "Thêm: các kiểu nhà trong tranh B3 (không bắt buộc)", "collapsed": true}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (12)", "minutes": 4,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "eu, äu, ei, ie", "vi": "<b>eu / äu</b> đọc „oi“ (<i>neu, teuer, Häuser</i>). <b>ei</b> đọc „ai“ như trong tiếng Anh <i>eye</i> (<i>klein, breit, Beispiel</i>). <b>ie</b> là một âm „i“ kéo dài (<i>hier, Beispiel, Miete</i>).", "ex": ["neu|mới", "teuer|đắt", "klein|nhỏ", "Beispiel|ví dụ"]},
+                {"t": "-ig ở cuối từ đọc „ích“", "vi": "Đuôi <b>-ig</b> đọc „ích“ (như ch trong <i>ich</i>): <i>billig, richtig, zwanzig</i>.", "ex": ["billig|rẻ", "richtig|đúng", "zwanzig|20", "dreißig|30"]},
+                {"t": "ö và ä", "vi": "<b>ö</b> (<i>schön</i>): tròn môi như „ô“, đặt lưỡi như „ê“. <b>ä</b> (<i>hässlich</i>) đọc „ê“. <i>schön</i> có ö dài (chỉ một phụ âm sau nó); <i>hässlich</i> có ä ngắn (hai chữ s sau nó).", "ex": ["schön|đẹp", "hässlich|xấu", "Käse|phô mai", "Bäder|phòng tắm (nhiều)"]},
+                {"t": "s đầu từ + nguyên âm = „z“", "vi": "Chữ <b>s</b> ở đầu từ trước nguyên âm đọc „z“: <i>sehr</i> = „zê-a“, <i>Sofa</i>, <i>sieben</i>. Còn <b>ss / ß</b> đọc „s“ rõ: <i>hässlich, groß</i>.", "ex": ["sehr|rất", "Sofa|ghế sofa", "sieben|bảy", "groß|to"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "neun", "opts": ["neun", "nein"]},
+                {"say": "schön", "opts": ["schön", "schon"]},
+                {"say": "Sofa", "opts": ["Sofa", "Zofa"]},
+                {"say": "Beispiel", "opts": ["Beispiel", "Bispiel"]},
+                {"say": "teuer", "opts": ["teuer", "Tier"]},
+                {"say": "Häuser", "opts": ["Häuser", "Hauser"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "doi-nghia", "title": "Sáu cặp tính từ đối nghĩa", "minutes": 9,
+          "blocks": [
+            { "type": "table", "title": "Sáu cặp đối nghĩa", "head": ["Cặp", "Nghĩa", "Ví dụ"], "say": 2,
+              "rows": [
+                ["<b>neu</b> ↔ <b>alt</b>", "mới ↔ cũ", "Die Lampe ist neu. Der Teppich ist alt."],
+                ["<b>billig</b> ↔ <b>teuer</b>", "rẻ ↔ đắt", "Das Zimmer ist billig. Die Wohnung ist teuer."],
+                ["<b>groß</b> ↔ <b>klein</b>", "to, rộng ↔ nhỏ", "Das Haus ist groß. Das Bad ist klein."],
+                ["<b>breit</b> ↔ <b>schmal</b>", "rộng (bề ngang) ↔ hẹp", "Die Straße ist breit. Der Flur ist schmal."],
+                ["<b>schön</b> ↔ <b>hässlich</b>", "đẹp ↔ xấu", "Die Küche ist schön. Der Balkon ist hässlich."],
+                ["<b>hell</b> ↔ <b>dunkel</b>", "sáng ↔ tối", "Das Wohnzimmer ist hell. Das Schlafzimmer ist dunkel."]
+              ]
+            },
+            {"type": "tip", "title": "Tính từ sau ist / sind không đổi dạng", "html": "<p>Sau <i>sein</i> (<i>ist, sind</i>), tính từ <b>giữ nguyên</b>, kể cả khi chủ ngữ là số nhiều: <i>Das Zimmer ist groß. Die Zimmer sind groß.</i> Chưa cần thêm đuôi nào — đuôi tính từ đứng trước danh từ (<i>ein großes Zimmer</i>) là chuyện của các Lektion sau.</p>"},
+            { "type": "gaps", "title": "Từ đối nghĩa (1)", "task": "Chọn từ đối nghĩa trong danh sách.", "bank": ["alt", "teuer", "klein", "schmal", "hässlich", "dunkel"],
+              "items": [
+                {"q": "neu ↔ ___", "a": ["alt"]},
+                {"q": "billig ↔ ___", "a": ["teuer"]},
+                {"q": "groß ↔ ___", "a": ["klein"]},
+                {"q": "breit ↔ ___", "a": ["schmal"]},
+                {"q": "schön ↔ ___", "a": ["hässlich"]},
+                {"q": "hell ↔ ___", "a": ["dunkel"]}
+              ]
+            },
+            { "type": "gaps", "title": "Từ đối nghĩa (2)", "task": "Bây giờ làm ngược lại.", "bank": ["neu", "billig", "groß", "breit", "schön", "hell"],
+              "items": [
+                {"q": "alt ↔ ___", "a": ["neu"]},
+                {"q": "teuer ↔ ___", "a": ["billig"]},
+                {"q": "klein ↔ ___", "a": ["groß"]},
+                {"q": "schmal ↔ ___", "a": ["breit"]},
+                {"q": "hässlich ↔ ___", "a": ["schön"]},
+                {"q": "dunkel ↔ ___", "a": ["hell"]}
+              ]
+            },
+            { "type": "choice", "title": "Chọn câu hợp với tình huống",
+              "items": [
+                {"q": "Căn phòng quay ra phía nam, nắng chiếu cả ngày.", "opts": ["Das Zimmer ist hell.", "Das Zimmer ist dunkel.", "Das Zimmer ist schmal."], "a": 0},
+                {"q": "Tiền thuê: 1.200 euro một tháng cho một căn phòng nhỏ.", "opts": ["Das Zimmer ist teuer.", "Das Zimmer ist billig.", "Das Zimmer ist modern."], "a": 0},
+                {"q": "Chiếc đèn bạn vừa mua hôm qua.", "opts": ["Die Lampe ist neu.", "Die Lampe ist alt.", "Die Lampe ist dunkel."], "a": 0},
+                {"q": "Hành lang chỉ rộng bảy mươi xăng-ti-mét.", "opts": ["Der Flur ist schmal.", "Der Flur ist breit.", "Der Flur ist schön."], "a": 0},
+                {"q": "Bạn rất thích căn bếp này.", "opts": ["Die Küche ist schön.", "Die Küche ist hässlich.", "Die Küche ist dunkel."], "a": 0},
+                {"q": "Ngôi nhà có hai mươi phòng.", "opts": ["Das Haus ist groß.", "Das Haus ist klein.", "Das Haus ist schmal."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nicht-sehr", "title": "nicht và sehr", "minutes": 7,
+          "blocks": [
+            { "type": "table", "title": "sehr và nicht đứng trước tính từ", "head": ["Câu", "Nghĩa"], "say": 0, "vi": "<b>sehr</b> làm tính từ mạnh hơn. <b>nicht</b> phủ định tính từ và đứng <b>ngay trước</b> nó. <b>nicht sehr</b> = không … lắm.",
+              "rows": [
+                ["Das Zimmer ist teuer.", "Căn phòng đắt."],
+                ["Das Zimmer ist <b>sehr</b> teuer.", "Căn phòng rất đắt."],
+                ["Das Zimmer ist <b>nicht</b> teuer.", "Căn phòng không đắt."],
+                ["Das Zimmer ist <b>nicht sehr</b> teuer.", "Căn phòng không đắt lắm."]
+              ]
+            },
+            { "type": "gaps", "title": "sehr hay nicht?",
+              "items": [
+                {"q": "<span class='muted'>(Phòng chỉ 150 € một tháng — rẻ.)</span> Das Zimmer ist ___ teuer.", "a": ["nicht"], "opts": ["nicht", "sehr"]},
+                {"q": "<span class='muted'>(Phòng 900 € một tháng — quá đắt.)</span> Das Zimmer ist ___ teuer.", "a": ["sehr"], "opts": ["nicht", "sehr"]},
+                {"q": "<span class='muted'>(Nhà bếp rộng và đẹp lắm.)</span> Die Küche ist ___ schön.", "a": ["sehr"], "opts": ["nicht", "sehr"]},
+                {"q": "<span class='muted'>(Nhà bếp xấu.)</span> Die Küche ist ___ schön.", "a": ["nicht"], "opts": ["nicht", "sehr"]},
+                {"q": "<span class='muted'>(Phòng tắm tí xíu.)</span> Das Bad ist ___ klein.", "a": ["sehr"], "opts": ["nicht", "sehr"]},
+                {"q": "<span class='muted'>(Phòng khách khá rộng.)</span> Das Wohnzimmer ist ___ klein.", "a": ["nicht"], "opts": ["nicht", "sehr"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nicht-kein", "title": "nicht hay kein?", "minutes": 8,
+          "blocks": [
+            { "type": "table", "title": "Phủ định bằng nicht hay kein?", "head": ["Cần phủ định …", "Dùng", "Ví dụ"], "vi": "<b>kein</b> chia như <i>ein</i>: <i>kein</i> + der-/das-Wort, <i>keine</i> + die-Wort và số nhiều (đã học ở Lektion 3). Chỉ cần tự hỏi: sau chỗ cần phủ định là <b>danh từ không có der / das / die</b> hay không? Có → <i>kein</i>; còn lại → <i>nicht</i>.",
+              "rows": [
+                ["danh từ có <b>ein / eine</b> hoặc không có mạo từ (số nhiều)", "<b>kein / keine</b>", "Das ist <b>kein</b> Haus. · Hier sind <b>keine</b> Zimmer."],
+                ["danh từ có <b>der / das / die</b> (đã biết)", "<b>nicht</b>", "Das ist <b>nicht</b> die Küche."],
+                ["<b>tính từ</b>", "<b>nicht</b>", "Das Zimmer ist <b>nicht</b> teuer."],
+                ["<b>nơi chốn</b> (hier, dort, …)", "<b>nicht</b>", "Das Bad ist <b>nicht</b> dort."]
+              ]
+            },
+            { "type": "gaps", "title": "nicht, kein hay keine?",
+              "items": [
+                {"q": "Das Zimmer ist ___ billig.", "a": ["nicht"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Das ist ___ Haus. Das ist eine Wohnung.", "a": ["kein"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Hier ist ___ Toilette.", "a": ["keine"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Das Bad ist ___ dort. Das Bad ist hier.", "a": ["nicht"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Das ist ___ die Küche. Das hier ist die Küche.", "a": ["nicht"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Wir haben ___ Zimmer.", "a": ["kein"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Die Wohnung ist ___ neu.", "a": ["nicht"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Hier sind ___ Zimmer.", "a": ["keine"], "opts": ["nicht", "kein", "keine"]}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi sai",
+              "items": [
+                {"s": "Die Wohnung ist kein teuer.", "err": "kein", "fix": ["nicht"], "why": "Tính từ → nicht."},
+                {"s": "Das ist nicht Haus.", "err": "nicht", "fix": ["kein"], "why": "Danh từ không có der / das / die → kein: Das ist kein Haus."},
+                {"s": "Der Balkon ist keine groß.", "err": "keine", "fix": ["nicht"], "why": "Tính từ → nicht."},
+                {"s": "Das Bad ist nicht dort.", "err": null},
+                {"s": "Wir haben keine Zimmer.", "err": null},
+                {"s": "Das ist kein die Küche.", "err": "kein", "fix": ["nicht"], "why": "Trước die Küche (đã biết) → nicht: Das ist nicht die Küche."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "er-es-sie", "title": "er / es / sie thay cho danh từ", "minutes": 9,
+          "blocks": [
+            { "type": "table", "title": "der → er · das → es · die → sie", "head": ["Wo ist …?", "Trả lời"], "say": 1, "vi": "Mẹo nhớ: giữ chữ cuối và đổi — <b>der → er</b>, <b>das → es</b>, <b>die → sie</b>. Số nhiều cũng là <b>sie</b>, nhưng động từ đổi thành <b>sind</b>.",
+              "rows": [
+                ["<span class='g-der'>der</span> Balkon?", "<span class='g-der'>Er</span> ist dort."],
+                ["<span class='g-das'>das</span> Bad?", "<span class='g-das'>Es</span> ist dort."],
+                ["<span class='g-die'>die</span> Küche?", "<span class='g-die'>Sie</span> ist dort."],
+                ["<span class='g-pl'>die</span> Kinderzimmer? <span class='muted small'>(số nhiều)</span>", "<span class='g-pl'>Sie</span> sind dort."]
+              ]
+            },
+            {"type": "tip", "title": "Từ sie có ba nghĩa", "html": "<p><i>sie</i> = cô ấy / nó (thay cho một die-Wort: <i>Die Küche ist neu. <b>Sie</b> ist schön.</i>) · <i>sie</i> = họ, chúng nó (số nhiều: <i>Die Zimmer sind groß. <b>Sie</b> sind hell.</i>) · <i>Sie</i> = ông/bà (viết hoa). Nhìn <b>động từ</b> (<i>ist</i> hay <i>sind</i>) và ngữ cảnh để biết nghĩa nào.</p>"},
+            { "type": "gaps", "title": "er, es hay sie?",
+              "items": [
+                {"q": "Wo ist der Balkon? – ___ ist dort.", "a": ["Er"], "opts": ["Er", "Es", "Sie"]},
+                {"q": "Wie ist das Bad? – ___ ist klein.", "a": ["Es"], "opts": ["Er", "Es", "Sie"]},
+                {"q": "Wie ist die Küche? – ___ ist modern.", "a": ["Sie"], "opts": ["Er", "Es", "Sie"]},
+                {"q": "Ist der Flur schmal? – Ja, ___ ist sehr schmal.", "a": ["er"], "opts": ["er", "es", "sie"]},
+                {"q": "Und das Wohnzimmer? – ___ ist groß und hell.", "a": ["Es"], "opts": ["Er", "Es", "Sie"]},
+                {"q": "Wo sind die Kinderzimmer? – ___ sind dort.", "a": ["Sie"], "opts": ["Er", "Es", "Sie"]},
+                {"q": "Die Wohnung ist neu. ___ kostet 700 Euro im Monat.", "a": ["Sie"], "opts": ["Er", "Es", "Sie"]},
+                {"q": "Das Zimmer ist klein. ___ kostet nur 250 Euro.", "a": ["Es"], "opts": ["Er", "Es", "Sie"]}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi sai",
+              "items": [
+                {"s": "Das Bad ist dunkel. Er ist klein.", "err": "Er", "fix": ["Es"], "why": "das Bad → es."},
+                {"s": "Die Wohnung ist teuer. Es kostet 900 Euro.", "err": "Es", "fix": ["Sie"], "why": "die Wohnung → sie."},
+                {"s": "Der Balkon ist schön. Er ist groß.", "err": null},
+                {"s": "Wo ist das Zimmer? Sie ist dort.", "err": "Sie", "fix": ["Es"], "why": "das Zimmer → es."},
+                {"s": "Der Flur ist schmal. Sie ist dunkel.", "err": "Sie", "fix": ["Er"], "why": "der Flur → er."},
+                {"s": "Wo sind die Zimmer? Sie sind dort.", "err": null}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần B", "minutes": 4,
+          "blocks": [
+            { "type": "book", "title": "Phần B — Das Zimmer ist sehr schön.", "kb": "49", "tracks": "KB 1/80", "key": "Đáp án B1, B2: giáo án <i>Unterrichtsplan L4</i>, trang 4–5.",
+              "steps": [
+                "B1 — <i>Was ist richtig? Hören Sie und kreuzen Sie an.</i> Đọc cuộc trò chuyện, nghe (track 80) rồi chọn <i>sehr</i> hoặc <i>nicht</i> ở từng chỗ. Chú ý giá phòng được nhắc đến.",
+                "B2a — <i>Lesen Sie die Nachrichten und markieren Sie.</i> Trong các tin nhắn, gạch chân cụm danh từ và đại từ thay cho nó (die Wohnung → sie …).",
+                "B2b — <i>Ergänzen Sie er, es oder sie.</i> Điền đại từ vào các tin nhắn về căn phòng ở Leipzig.",
+                "B3 — <i>Partnerspiel: Wo wohne ich?</i> Chọn một ngôi nhà trong tranh A–F và nói 3 câu: <i>Mein Haus ist … Es ist nicht … Es ist …</i> Học một mình: nói to, ghi âm bằng nút ghi âm ở bài hội thoại bên dưới rồi nghe lại; hoặc nhờ ai đó đoán."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 7,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Phòng mới của Ben",
+              "lines": [
+                {"scene": "Hai người bạn nói chuyện về căn phòng mới của Ben."},
+                {"who": "Mia", "v": "f", "de": "Hallo Ben! Wie ist dein Zimmer in Leipzig?", "vi": "Chào Ben! Phòng của cậu ở Leipzig thế nào?"},
+                {"who": "Ben", "v": "m", "de": "Es ist nicht groß, aber sehr hell.", "vi": "Nó không to, nhưng rất sáng."},
+                {"who": "Mia", "v": "f", "de": "Und die Küche?", "vi": "Còn nhà bếp?"},
+                {"who": "Ben", "v": "m", "de": "Sie ist klein und hässlich.", "vi": "Nhỏ và xấu."},
+                {"who": "Mia", "v": "f", "de": "Und das Bad?", "vi": "Còn phòng tắm?"},
+                {"who": "Ben", "v": "m", "de": "Es ist neu und schön. Der Balkon ist auch schön.", "vi": "Mới và đẹp. Ban công cũng đẹp."},
+                {"who": "Mia", "v": "f", "de": "Super! Und was kostet das Zimmer?", "vi": "Tuyệt! Thế phòng giá bao nhiêu?"},
+                {"who": "Ben", "v": "m", "de": "Es kostet 350 Euro im Monat.", "vi": "Giá 350 euro một tháng.", "say": "Es kostet dreihundertfünfzig Euro im Monat."},
+                {"who": "Mia", "v": "f", "de": "350 Euro? Das ist nicht teuer!", "vi": "350 euro à? Không đắt nhỉ!", "say": "Dreihundertfünfzig Euro? Das ist nicht teuer!"}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Xem căn hộ",
+              "lines": [
+                {"scene": "Bà Kim hỏi ông Weber về căn hộ."},
+                {"who": "Frau Kim", "v": "f", "de": "Guten Tag, Herr Weber. Wie ist die Wohnung?", "vi": "Chào ông Weber. Căn hộ thế nào ạ?"},
+                {"who": "Herr Weber", "v": "m2", "de": "Sie ist nicht sehr groß, aber sehr schön.", "vi": "Nó không rộng lắm, nhưng rất đẹp."},
+                {"who": "Frau Kim", "v": "f", "de": "Ist die Küche modern?", "vi": "Nhà bếp có hiện đại không?"},
+                {"who": "Herr Weber", "v": "m2", "de": "Ja, natürlich. Sie ist ganz neu.", "vi": "Có chứ. Nó còn hoàn toàn mới."},
+                {"who": "Frau Kim", "v": "f", "de": "Und der Flur? Ist er schmal?", "vi": "Còn hành lang? Có hẹp không?"},
+                {"who": "Herr Weber", "v": "m2", "de": "Nein, er ist nicht schmal. Er ist breit und hell.", "vi": "Không, nó không hẹp. Nó rộng và sáng."},
+                {"who": "Frau Kim", "v": "f", "de": "Was kostet die Wohnung?", "vi": "Căn hộ giá bao nhiêu?"},
+                {"who": "Herr Weber", "v": "m2", "de": "Sie kostet 650 Euro im Monat.", "vi": "Giá 650 euro một tháng.", "say": "Sie kostet sechshundertfünfzig Euro im Monat."},
+                {"who": "Frau Kim", "v": "f", "de": "Das ist nicht teuer. Danke!", "vi": "Không đắt. Cảm ơn ông!"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi nói được sáu cặp tính từ đối nghĩa và dùng đúng sau <i>ist / sind</i>.",
+                "Tôi dùng <i>sehr</i> và <i>nicht</i> với tính từ: <i>sehr teuer · nicht teuer</i>.",
+                "Tôi phân biệt <i>nicht</i> và <i>kein / keine</i>.",
+                "Tôi thay <i>der / das / die</i> bằng <i>er / es / sie</i>: <i>Wo ist das Bad? – Es ist dort.</i>",
+                "Tôi nói được giá thuê: <i>Das Zimmer kostet 350 Euro im Monat.</i>"
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                "Arbeitsbuch tr. 43–44, bài 8–15 (phần B, không có audio).",
+                "Viết 5 câu mô tả phòng hoặc căn hộ của bạn, mỗi câu một tính từ khác nhau, ít nhất hai câu có <i>sehr</i> hoặc <i>nicht</i>: <i>Mein Zimmer ist nicht sehr groß, aber es ist hell.</i>",
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này.",
+                "Tuỳ chọn: tranh A–F ở Kursbuch tr. 49 — nói một câu về mỗi ngôi nhà (xem các từ thêm: Wohnwagen, Schloss, Hochhaus, Hütte, Hausboot, Villa)."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3", "no": 3, "minutes": 64, "set": "c",
+      "title": "Die Möbel sind sehr schön.",
+      "vi": "Đồ đạc, thiết bị, màu sắc, Wie gefällt dir …?, số nhiều",
+      "book": "Kursbuch tr. 50–51 · Arbeitsbuch tr. 45–47 · Lernwortschatz L4 (phần C)",
+      "goals": [
+        "Gọi tên đồ đạc, thiết bị điện và đồ trong phòng tắm, luôn kèm <i>der / das / die</i>.",
+        "Nói tên tám màu cơ bản và dùng <i>hell- / dunkel-</i>: <i>dunkelrot, hellblau</i>.",
+        "Hỏi ý kiến: <i>Wie gefällt dir der Tisch? · Wie gefallen Ihnen die Stühle?</i> và trả lời: <i>sehr gut · gut · ganz gut · es geht · nicht so gut</i>.",
+        "Biết số nhiều của danh từ; mạo từ số nhiều luôn là <i>die</i>.",
+        "Nghe hiểu cuộc nói chuyện ở cửa hàng nội thất."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi-1", "title": "Từ mới: đồ đạc và thiết bị", "minutes": 9,
+          "blocks": [
+            {"type": "words", "set": "c"},
+            {"type": "listenPick", "set": "c", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "c", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "tu-moi-2", "title": "Từ mới: màu sắc và ý kiến", "minutes": 7,
+          "blocks": [
+            {"type": "words", "set": "c2"},
+            {"type": "listenPick", "set": "c2", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "c2", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (13)", "minutes": 4,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "-er, -el ở cuối từ", "vi": "<b>-er</b> ở cuối từ đọc nhẹ như „a“: <i>Fernseher</i> (FERN-ze-a), <i>Vater</i>, <i>Mutter</i>. <b>-el</b> đọc „ồl“ rất nhẹ: <i>Sessel</i>. Những âm cuối này không được nhấn.", "ex": ["Fernseher|tivi", "Sessel|ghế bành", "Vater|bố", "Mutter|mẹ"]},
+                {"t": "ö và ü", "vi": "<b>ö</b>: tròn môi như „ô“, đặt lưỡi như „ê“ (<i>Möbel</i>). <b>ü</b>: tròn môi như „u“, đặt lưỡi như „i“ (<i>Stühle, Kühlschrank, grün</i>). Trong các từ này cả hai đều dài.", "ex": ["Möbel|đồ nội thất", "Stühle|ghế (nhiều)", "Kühlschrank|tủ lạnh", "grün|xanh lá"]},
+                {"t": "sch và st-", "vi": "<b>sch</b> đọc „sh“ (<i>Tisch, Schrank, Waschmaschine, schwarz</i>). <b>st-</b> ở đầu từ đọc „scht“ (<i>Stuhl, Stift</i>); tương tự <b>sp-</b> đọc „schp“.", "ex": ["Tisch|bàn", "Schrank|tủ", "Waschmaschine|máy giặt", "Stuhl|ghế"]},
+                {"t": "b, d, g ở cuối từ đọc p, t, k", "vi": "Ở <b>cuối từ</b>, <b>b</b> đọc „p“, <b>d</b> đọc „t“, <b>g</b> đọc „k“: <i>gelb</i> = „gelp“, <i>Herd</i> = „hert“, <i>Tag</i> = „tak“. Chữ viết vẫn giữ b, d, g — nhìn số nhiều để chắc chắn: <i>die Herde</i>.", "ex": ["gelb|vàng", "Herd|bếp nấu", "Bad|phòng tắm", "Kind|trẻ em"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "Möbel", "opts": ["Möbel", "Mobel"]},
+                {"say": "Stühle", "opts": ["Stühle", "Stule"]},
+                {"say": "Kühlschrank", "opts": ["Kühlschrank", "Kulschrank"]},
+                {"say": "grün", "opts": ["grün", "grun"]},
+                {"say": "braun", "opts": ["braun", "brun"]},
+                {"say": "schwarz", "opts": ["schwarz", "swarz"]},
+                {"say": "weiß", "opts": ["weiß", "wies"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "so-nhieu", "title": "Số nhiều: luôn là die", "minutes": 11,
+          "blocks": [
+            {"type": "tip", "title": "Mạo từ số nhiều chỉ có một: die", "html": "<p>Ở số ít có ba mạo từ (<span class='g-der'>der</span> / <span class='g-das'>das</span> / <span class='g-die'>die</span>), nhưng ở <b>số nhiều chỉ có một: <span class='g-pl'>die</span></b>: <i>die Stühle, die Tische, die Betten, die Möbel</i>. Sau chủ ngữ số nhiều, động từ là <i>sind</i> (<i>Die Stühle sind schön.</i>) và <i>gefallen</i> (không phải <i>gefällt</i>).</p>"},
+            { "type": "table", "title": "Các kiểu số nhiều thường gặp", "head": ["Số ít", "Số nhiều", "Cách tạo"], "say": 1, "vi": "Danh sách từ của sách ghi số nhiều ngay sau danh từ (<i>der Stuhl, ¨e</i> = die Stühle). Luôn học danh từ <b>kèm số nhiều</b>.",
+              "rows": [
+                ["<span class='g-der'>der</span> Stuhl", "<span class='g-pl'>die</span> Stühle", "thêm ¨ và -e"],
+                ["<span class='g-der'>der</span> Tisch", "<span class='g-pl'>die</span> Tische", "thêm -e"],
+                ["<span class='g-das'>das</span> Bett", "<span class='g-pl'>die</span> Betten", "thêm -en"],
+                ["<span class='g-die'>die</span> Lampe", "<span class='g-pl'>die</span> Lampen", "thêm -n"],
+                ["<span class='g-das'>das</span> Sofa", "<span class='g-pl'>die</span> Sofas", "thêm -s"],
+                ["<span class='g-der'>der</span> Sessel", "<span class='g-pl'>die</span> Sessel", "không đổi"],
+                ["<span class='g-der'>der</span> Schrank", "<span class='g-pl'>die</span> Schränke", "thêm ¨ và -e"],
+                ["<span class='g-das'>das</span> Gerät", "<span class='g-pl'>die</span> Geräte", "thêm -e"],
+                ["—", "<span class='g-pl'>die</span> Möbel", "chỉ có số nhiều"]
+              ]
+            },
+            {"type": "tip", "title": "Mẹo đoán số nhiều (có ngoại lệ)", "html": "<ul><li>Đuôi <b>-er, -el, -en</b> (giống der / das): thường <b>không đổi</b> — <i>der Sessel → die Sessel · der Fernseher → die Fernseher · das Waschbecken → die Waschbecken</i>.</li><li>Đuôi <b>-e</b> (die-Wort): thêm <b>-n</b> — <i>die Lampe → die Lampen · die Dusche → die Duschen</i>.</li><li>Đuôi <b>-a, -o</b> và nhiều từ mượn: thêm <b>-s</b> — <i>das Sofa → die Sofas · das Steak → die Steaks</i>.</li><li>Còn lại (nhất là từ ngắn): phải học thuộc — vì vậy luôn học kèm số nhiều.</li></ul>"},
+            { "type": "sort", "title": "Danh từ này có số nhiều kiểu nào?", "cats": ["– (không đổi)", "-n / -en", "-e / ¨e", "-s"],
+              "items": [
+                {"t": "<span class='g-der'>der</span> Sessel", "c": 0, "why": "die Sessel"},
+                {"t": "<span class='g-der'>der</span> Fernseher", "c": 0, "why": "die Fernseher"},
+                {"t": "<span class='g-das'>das</span> Waschbecken", "c": 0, "why": "die Waschbecken"},
+                {"t": "<span class='g-das'>das</span> Zimmer", "c": 0, "why": "die Zimmer"},
+                {"t": "<span class='g-die'>die</span> Lampe", "c": 1, "why": "die Lampen"},
+                {"t": "<span class='g-die'>die</span> Dusche", "c": 1, "why": "die Duschen"},
+                {"t": "<span class='g-die'>die</span> Waschmaschine", "c": 1, "why": "die Waschmaschinen"},
+                {"t": "<span class='g-die'>die</span> Badewanne", "c": 1, "why": "die Badewannen"},
+                {"t": "<span class='g-das'>das</span> Bett", "c": 1, "why": "die Betten"},
+                {"t": "<span class='g-die'>die</span> Wohnung", "c": 1, "why": "die Wohnungen"},
+                {"t": "<span class='g-der'>der</span> Stuhl", "c": 2, "why": "die Stühle"},
+                {"t": "<span class='g-der'>der</span> Tisch", "c": 2, "why": "die Tische"},
+                {"t": "<span class='g-der'>der</span> Schrank", "c": 2, "why": "die Schränke"},
+                {"t": "<span class='g-der'>der</span> Kühlschrank", "c": 2, "why": "die Kühlschränke"},
+                {"t": "<span class='g-der'>der</span> Herd", "c": 2, "why": "die Herde"},
+                {"t": "<span class='g-das'>das</span> Gerät", "c": 2, "why": "die Geräte"},
+                {"t": "<span class='g-der'>der</span> Teppich", "c": 2, "why": "die Teppiche"},
+                {"t": "<span class='g-das'>das</span> Sofa", "c": 3, "why": "die Sofas"},
+                {"t": "<span class='g-der'>der</span> Joghurt", "c": 3, "why": "die Joghurts"},
+                {"t": "<span class='g-das'>das</span> Steak", "c": 3, "why": "die Steaks"},
+                {"t": "<span class='g-das'>das</span> Restaurant", "c": 3, "why": "die Restaurants"}
+              ]
+            },
+            { "type": "gaps", "title": "Viết số nhiều", "task": "Gõ số nhiều của danh từ. Cần ä ö ü thì bấm nút phía trên ô gõ, hoặc gõ ae oe ue.",
+              "items": [
+                {"q": "ein Stuhl → zwei ___", "a": ["Stühle"]},
+                {"q": "ein Tisch → zwei ___", "a": ["Tische"]},
+                {"q": "ein Bett → drei ___", "a": ["Betten"]},
+                {"q": "eine Lampe → zwei ___", "a": ["Lampen"]},
+                {"q": "ein Sofa → zwei ___", "a": ["Sofas"]},
+                {"q": "ein Sessel → zwei ___", "a": ["Sessel"]},
+                {"q": "ein Schrank → drei ___", "a": ["Schränke"]},
+                {"q": "ein Herd → zwei ___", "a": ["Herde"]},
+                {"q": "eine Dusche → zwei ___", "a": ["Duschen"]},
+                {"q": "ein Zimmer → drei ___", "a": ["Zimmer"]},
+                {"q": "ein Haus → zwei ___", "a": ["Häuser"]},
+                {"q": "ein Bad → zwei ___", "a": ["Bäder"]}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi sai",
+              "items": [
+                {"s": "Hier sind zwei Stuhl.", "err": "Stuhl", "fix": ["Stühle"], "why": "der Stuhl → die Stühle (thêm ¨ và -e)."},
+                {"s": "Wir haben drei Bett.", "err": "Bett", "fix": ["Betten"], "why": "das Bett → die Betten."},
+                {"s": "Die Lampe sind neu.", "err": "sind", "fix": ["ist"], "why": "die Lampe (số ít) → ist."},
+                {"s": "Die Möbel ist alt.", "err": "ist", "fix": ["sind"], "why": "die Möbel là số nhiều → sind."},
+                {"s": "Im Wohnzimmer sind zwei Sofas.", "err": null},
+                {"s": "Hier sind drei Tische.", "err": null}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gefallen", "title": "Wie gefällt dir …?", "minutes": 11,
+          "blocks": [
+            { "type": "table", "title": "Hỏi ý kiến: một vật hay nhiều vật?", "head": ["Một vật → <b>gefällt</b>", "Nhiều vật → <b>gefallen</b>"], "say": 0, "vi": "<b>dir</b> = bạn (thân mật), <b>Ihnen</b> = ông/bà (lịch sự). Vật được hỏi là chủ ngữ: một vật → <i>gefällt</i>, nhiều vật → <i>gefallen</i>. Chỉ cần nhớ nguyên cụm, chưa cần học ngữ pháp của <i>dir / Ihnen</i>.",
+              "rows": [
+                ["Wie gefällt dir <span class='g-der'>der</span> Tisch?", "Wie gefallen dir <span class='g-pl'>die</span> Stühle?"],
+                ["Wie gefällt Ihnen <span class='g-das'>das</span> Sofa?", "Wie gefallen Ihnen <span class='g-pl'>die</span> Betten?"],
+                ["Wie gefällt dir <span class='g-die'>die</span> Lampe?", "Wie gefallen dir <span class='g-pl'>die</span> Teppiche?"]
+              ]
+            },
+            { "type": "table", "title": "Trả lời", "head": ["Mức", "Câu trả lời mẫu"], "say": 1, "vi": "Thường nói thêm lý do bằng <i>Er / Es / Sie ist …</i> hoặc <i>Sie sind …</i> (số nhiều). Muốn đồng ý: <i>Das finde ich auch.</i>",
+              "rows": [
+                ["😀 rất tốt", "<b>Sehr gut.</b> Der Tisch ist sehr schön."],
+                ["🙂 tốt", "<b>Gut.</b> / <b>Ganz gut.</b> Er ist schön."],
+                ["😐 tạm được", "<b>Es geht.</b> Er ist ein bisschen klein."],
+                ["🙁 không hay", "<b>Nicht so gut.</b> Er ist hässlich."]
+              ]
+            },
+            { "type": "gaps", "title": "gefällt hay gefallen?",
+              "items": [
+                {"q": "Wie ___ dir der Tisch?", "a": ["gefällt"], "opts": ["gefällt", "gefallen"]},
+                {"q": "Wie ___ dir die Stühle?", "a": ["gefallen"], "opts": ["gefällt", "gefallen"]},
+                {"q": "Wie ___ Ihnen das Sofa?", "a": ["gefällt"], "opts": ["gefällt", "gefallen"]},
+                {"q": "Wie ___ Ihnen die Betten?", "a": ["gefallen"], "opts": ["gefällt", "gefallen"]},
+                {"q": "Wie ___ dir die Lampe?", "a": ["gefällt"], "opts": ["gefällt", "gefallen"]},
+                {"q": "Wie ___ dir die Möbel?", "a": ["gefallen"], "opts": ["gefällt", "gefallen"]},
+                {"q": "Wie ___ Ihnen der Teppich?", "a": ["gefällt"], "opts": ["gefällt", "gefallen"]},
+                {"q": "Wie ___ Ihnen die Schränke?", "a": ["gefallen"], "opts": ["gefällt", "gefallen"]}
+              ]
+            },
+            { "type": "order", "title": "Xếp câu",
+              "items": [
+                {"chunks": ["Wie", "gefällt", "dir", "der Tisch?"], "v": 1, "vi": "Bạn thấy cái bàn thế nào?"},
+                {"chunks": ["Wie", "gefallen", "Ihnen", "die Stühle?"], "v": 1, "vi": "Ông/bà thấy những chiếc ghế thế nào?"},
+                {"chunks": ["Er", "ist", "sehr", "modern."], "v": 1, "vi": "Nó rất hiện đại."},
+                {"chunks": ["Sie", "sind", "nicht", "schön."], "v": 1, "vi": "Chúng không đẹp."},
+                {"chunks": ["Das", "finde", "ich", "auch."], "v": 1, "vi": "Tôi cũng thấy vậy."}
+              ]
+            },
+            { "type": "sort", "title": "Câu này nói tốt hay không tốt?", "cats": ["🙁 không hay", "😐 tạm được", "🙂 tốt"],
+              "items": [
+                {"t": "Nicht so gut.", "c": 0},
+                {"t": "Hässlich!", "c": 0},
+                {"t": "Das finde ich nicht schön.", "c": 0},
+                {"t": "Es geht.", "c": 1},
+                {"t": "Na ja.", "c": 1},
+                {"t": "Ganz gut.", "c": 2},
+                {"t": "Sehr gut!", "c": 2},
+                {"t": "Super!", "c": 2},
+                {"t": "Das finde ich schön.", "c": 2}
+              ]
+            },
+            { "type": "choice", "title": "Bạn nói gì?",
+              "items": [
+                {"q": "Bạn hỏi một người bạn thân về cái bàn.", "opts": ["Wie gefällt dir der Tisch?", "Wie gefällt Ihnen der Tisch?", "Wie gefallen dir der Tisch?"], "a": 0},
+                {"q": "Bạn hỏi một khách lạ (lịch sự) về những chiếc ghế.", "opts": ["Wie gefallen Ihnen die Stühle?", "Wie gefällt Ihnen die Stühle?", "Wie gefallen dir die Stühle?"], "a": 0},
+                {"q": "Bạn thấy chiếc sofa không đẹp lắm.", "opts": ["Nicht so gut. Es ist hässlich.", "Sehr gut. Es ist schön.", "Super! Es ist modern."], "a": 0},
+                {"q": "Bạn đồng ý với nhận xét vừa nghe.", "opts": ["Das finde ich auch.", "Das ist nicht richtig.", "Wie bitte?"], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mau-sac", "title": "Màu sắc", "minutes": 5,
+          "blocks": [
+            { "type": "table", "title": "hell- và dunkel- + màu", "head": ["Màu", "Nhạt (hell-)", "Đậm (dunkel-)"], "say": 2, "vi": "Viết <b>liền một từ</b>: <i>hell-</i> hoặc <i>dunkel-</i> + tên màu (<i>dunkelblau, hellgrün</i>). Hỏi màu: <i>Welche Farbe hat der Tisch?</i> — <i>Er ist dunkelbraun.</i>",
+              "rows": [
+                ["rot 🔴", "hellrot", "dunkelrot"],
+                ["blau 🔵", "hellblau", "dunkelblau"],
+                ["grün 🟢", "hellgrün", "dunkelgrün"],
+                ["gelb 🟡", "hellgelb", "dunkelgelb"],
+                ["braun 🟤", "hellbraun", "dunkelbraun"],
+                ["grau 🩶", "hellgrau", "dunkelgrau"]
+              ]
+            },
+            { "type": "gaps", "title": "Màu của đồ vật quen thuộc", "task": "Chọn màu đúng trong danh sách.", "bank": ["schwarz", "weiß", "grau", "rot", "blau", "grün", "gelb", "braun"],
+              "items": [
+                {"q": "Die Banane ist ___.", "a": ["gelb"]},
+                {"q": "Die Milch ist ___.", "a": ["weiß"]},
+                {"q": "Die Tomate ist ___.", "a": ["rot"]},
+                {"q": "Der Salat ist ___.", "a": ["grün"]},
+                {"q": "Die Schokolade ist ___.", "a": ["braun"]},
+                {"q": "Der Kaffee ist ___.", "a": ["schwarz", "braun"]},
+                {"q": "Der Zucker ist ___.", "a": ["weiß"]}
+              ]
+            },
+            { "type": "choice", "title": "Welche Farbe hat …?",
+              "items": [
+                {"q": "Welche Farbe hat die Lampe? 🟡", "opts": ["Sie ist gelb.", "Er ist gelb.", "Es ist gelb."], "a": 0},
+                {"q": "Welche Farbe hat der Teppich? 🟢", "opts": ["Er ist grün.", "Sie ist grün.", "Es ist grün."], "a": 0},
+                {"q": "Welche Farbe hat das Sofa? 🔵", "opts": ["Es ist blau.", "Er ist blau.", "Sie ist blau."], "a": 0},
+                {"q": "Welche Farbe haben die Stühle? ⚫", "opts": ["Sie sind schwarz.", "Er ist schwarz.", "Sie ist schwarz."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần C", "minutes": 6,
+          "blocks": [
+            { "type": "book", "title": "Phần C — Die Möbel sind sehr schön.", "kb": "50–51", "tracks": "KB 1/81", "key": "Đáp án C1, C2: giáo án <i>Unterrichtsplan L4</i>, trang 5–7.",
+              "steps": [
+                "C1 — <i>Was ist was? Ordnen Sie zu und ergänzen Sie.</i> Xếp 16 đồ vật trong ảnh vào ba nhóm: <i>Möbel</i> (đồ nội thất), <i>Elektrogeräte</i> (thiết bị điện), <i>das Bad</i> (phòng tắm) và ghi kèm <i>der / das / die</i>. Học một mình: che danh sách từ, nhìn ảnh và nói tên đồ vật. <i>das Regal</i> bạn đã gặp ở Lektion 3.",
+                "C2a — <i>Hören Sie und ergänzen Sie der, das oder die.</i> Nghe cuộc nói chuyện ở cửa hàng nội thất (track 81) và điền mạo từ.",
+                "C2b — <i>Markieren Sie … und ergänzen Sie.</i> Tìm các câu bày tỏ thích / không thích rồi xếp theo mặt cười: nicht so gut – es geht – ganz gut / sehr gut.",
+                "C2c — Nhìn đồ vật ở C1 và hỏi–đáp theo mẫu: <i>Wie gefallen dir denn die Stühle? – Sehr gut. Sie sind sehr modern.</i>",
+                "C3 — Nói về đồ đạc của bạn và màu của chúng (dùng bảng màu và <i>hell- / dunkel-</i>): <i>Mein Kühlschrank ist … Meine Stühle sind …</i>"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 7,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Ở cửa hàng nội thất",
+              "lines": [
+                {"scene": "Ở cửa hàng nội thất: một khách hàng và một nhân viên bán hàng."},
+                {"who": "Verkäuferin", "v": "f", "de": "Guten Tag! Hier sind Sofas und Sessel. Wie gefallen Ihnen die Sessel?", "vi": "Chào anh! Ở đây có sofa và ghế bành. Anh thấy những chiếc ghế bành thế nào?"},
+                {"who": "Kunde", "v": "m", "de": "Gut. Die Farbe ist sehr schön. Was kostet der Sessel?", "vi": "Tốt. Màu rất đẹp. Chiếc ghế bành giá bao nhiêu?"},
+                {"who": "Verkäuferin", "v": "f", "de": "Er kostet 199 Euro.", "vi": "Nó giá 199 euro.", "say": "Er kostet einhundertneunundneunzig Euro."},
+                {"who": "Kunde", "v": "m", "de": "Das ist nicht billig. Und das Sofa? Wie ist das Sofa?", "vi": "Không rẻ nhỉ. Còn chiếc sofa? Nó thế nào?"},
+                {"who": "Verkäuferin", "v": "f", "de": "Es ist neu und modern. Es kostet 450 Euro.", "vi": "Nó mới và hiện đại. Giá 450 euro.", "say": "Es ist neu und modern. Es kostet vierhundertfünfzig Euro."},
+                {"who": "Kunde", "v": "m", "de": "Hm, nicht so gut. Es ist teuer. Danke, ich komme später.", "vi": "Hừm, không hay lắm. Đắt quá. Cảm ơn, tôi sẽ quay lại sau."}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Phòng khách của Paul",
+              "lines": [
+                {"scene": "Hai người bạn nói về phòng khách của Paul."},
+                {"who": "Lena", "v": "f", "de": "Wie ist dein Wohnzimmer, Paul?", "vi": "Phòng khách của cậu thế nào, Paul?"},
+                {"who": "Paul", "v": "m", "de": "Es ist nicht groß, aber hell. Das Sofa ist dunkelblau und der Teppich ist hellgrau.", "vi": "Không to nhưng sáng. Ghế sofa màu xanh dương đậm và tấm thảm màu xám nhạt."},
+                {"who": "Lena", "v": "f", "de": "Und der Tisch?", "vi": "Còn cái bàn?"},
+                {"who": "Paul", "v": "m", "de": "Er ist braun. Die Stühle sind schwarz.", "vi": "Màu nâu. Những chiếc ghế màu đen."},
+                {"who": "Lena", "v": "f", "de": "Das finde ich schön! Ist da auch ein Fernseher?", "vi": "Mình thấy đẹp đấy! Có cả tivi không?"},
+                {"who": "Paul", "v": "m", "de": "Ja, natürlich. Er ist neu.", "vi": "Có chứ. Nó mới."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi gọi tên được ít nhất 10 đồ đạc / thiết bị và nói đúng <i>der / das / die</i> cùng số nhiều.",
+                "Tôi nói được tám màu cơ bản và <i>hell- / dunkel-</i>.",
+                "Tôi hỏi và trả lời: <i>Wie gefällt dir der Tisch? – Sehr gut. / Es geht. / Nicht so gut.</i>",
+                "Tôi hỏi về nhiều vật: <i>Wie gefallen Ihnen die Stühle?</i>",
+                "Tôi biết mạo từ số nhiều luôn là <i>die</i>."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 45–47, bài 16–26 (bài 16 có audio AB track 32–33 · bài 25 có audio AB track 34–36, kiểu bài nghe của kỳ thi Start Deutsch 1).", "tracks": "AB 32-36"},
+                "Bài 21 (tr. 46) rất đáng làm: lập bảng 20 danh từ trong các Lektion 1–4 theo kiểu số nhiều.",
+                "Bài 24 (tr. 47): viết 4 câu về đồ đạc trong tranh theo mẫu <i>Die Sessel gefallen mir. Sie sind nicht modern.</i> (<i>mir</i> = với tôi).",
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> — hôm nay có hơn 30 từ mới."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4", "no": 4, "minutes": 59, "set": "d",
+      "title": "Zahlen bis eine Million",
+      "vi": "Số từ 100 đến 1.000.000, kích thước (Zentimeter, Meter), số điện thoại",
+      "book": "Kursbuch tr. 52 (D1–D3) · Arbeitsbuch tr. 48 (bài 27) · Lernwortschatz L4 (phần D, đầu)",
+      "goals": [
+        "Đếm, đọc và viết số từ 100 đến 1.000.000: <i>zweihundertfünfzig, tausend, zwölftausend, eine Million</i>.",
+        "Nghe một số (hoặc một số điện thoại) và chọn đúng chữ số.",
+        "Nói kích thước: <i>Das Bett ist 90 mal 200 Zentimeter groß. Der Tisch ist ungefähr zwei Meter lang.</i>",
+        "Nói số điện thoại của mình: <i>Meine Handynummer ist …</i>"
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: số lớn, kích thước, điện thoại", "minutes": 8,
+          "blocks": [
+            {"type": "words", "set": "d"},
+            {"type": "listenPick", "set": "d", "n": 8, "title": "Nghe và chọn nghĩa"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (14)", "minutes": 5,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "z = „ts“ và qu = „kv“", "vi": "<b>z</b> đọc „ts“: <i>Zentimeter, zwanzig, zehn, zwei</i> (zwei = „tsvai“). <b>qu</b> đọc „kv“: <i>Quadratmeter</i>.", "ex": ["Zentimeter|cm", "Quadratmeter|m²", "zwanzig|20", "zwölf|12"]},
+                {"t": "-zehn và -zig: nghe cho kỹ", "vi": "<b>-zehn</b> (13–19) và <b>-zig</b> (20–90) rất dễ nhầm: <i>vierzehn</i> (14) – <i>vierzig</i> (40); <i>sechzehn</i> – <i>sechzig</i>; <i>siebzehn</i> – <i>siebzig</i>. <i>zehn</i> có e dài và được nhấn; <i>-zig</i> ngắn, nhẹ, đọc „-tsích“.", "ex": ["vierzehn|14", "vierzig|40", "sechzehn|16", "sechzig|60"]},
+                {"t": "hundert, tausend, Million", "vi": "<b>hundert</b>: u ngắn. <b>tausend</b>: au đọc „ao“, s đọc „z“ — „TAO-zent“. <b>Million</b> nhấn âm cuối: „mi-LIÔN“.", "ex": ["hundert|100", "tausend|1.000", "Million|1.000.000", "dreihundert|300"]},
+                {"t": "r ở cuối âm tiết đọc rất nhẹ", "vi": "<b>r</b> ở cuối từ hoặc cuối âm tiết đọc rất nhẹ, gần như „a“: <i>Meter</i> (ME-ta), <i>ungefähr</i>, <i>vier</i>. Còn <b>r</b> ở đầu âm tiết đọc ở cổ họng: <i>drei, rot</i>.", "ex": ["Meter|mét", "ungefähr|khoảng", "vier|4", "drei|3"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "vierzehn", "opts": ["vierzehn", "vierzig"]},
+                {"say": "sechzehn", "opts": ["sechzehn", "sechzig"]},
+                {"say": "siebzehn", "opts": ["siebzehn", "siebzig"]},
+                {"say": "dreizehn", "opts": ["dreizehn", "dreißig"]},
+                {"say": "Zentimeter", "opts": ["Zentimeter", "Sentimeter"]},
+                {"say": "Quadratmeter", "opts": ["Quadratmeter", "Kuadratmeter"]},
+                {"say": "hoch", "opts": ["hoch", "hoh"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "so-lon", "title": "Số từ 100 đến 1.000.000", "minutes": 16,
+          "blocks": [
+            {"type": "numbers", "title": "Các số tròn — bấm từng ô để nghe", "values": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 10000, 100000, 1000000], "wide": true},
+            {"type": "tip", "title": "Cách ghép số lớn", "html": "<ul><li><b>100–999</b>: <b>hundert</b> (hoặc <b>einhundert</b>) + số nhỏ, viết <b>liền một từ</b>. 243 = <i>zwei·hundert·drei·und·vierzig</i> = <i>zweihundertdreiundvierzig</i>. Phần 21–99 vẫn có <i>und</i> và đảo thứ tự như cũ (3 + 40 → dreiundvierzig).</li><li><b>1.000–999.999</b>: số + <b>tausend</b>, viết liền: 1.250 = <i>tausendzweihundertfünfzig</i> · 12.000 = <i>zwölftausend</i> · 350.000 = <i>dreihundertfünfzigtausend</i>.</li><li><b>1.000.000</b> = <b>eine Million</b> (viết rời, vì <i>Million</i> là danh từ; <i>zwei Millionen</i>).</li><li>Không có <i>und</i> sau <i>hundert</i> và <i>tausend</i>: 101 = <i>hunderteins</i>, 2.003 = <i>zweitausenddrei</i>.</li><li>Dấu chấm ngăn nhóm ba chữ số: <b>2.099</b> — giống tiếng Việt. Số thập phân dùng dấu phẩy: <i>2,50 €</i>.</li></ul>"},
+            { "type": "table", "title": "Ghép từng bước", "head": ["Số", "Ghép từ", "Đọc liền"], "say": 2,
+              "rows": [
+                ["305", "drei · hundert · fünf", "dreihundertfünf"],
+                ["243", "zwei · hundert · drei·und·vierzig", "zweihundertdreiundvierzig"],
+                ["1.250", "tausend · zwei · hundert · fünfzig", "tausendzweihundertfünfzig"],
+                ["2.099", "zwei · tausend · neun·und·neunzig", "zweitausendneunundneunzig"],
+                ["12.000", "zwölf · tausend", "zwölftausend"],
+                ["350.000", "drei·hundert·fünfzig · tausend", "dreihundertfünfzigtausend"],
+                ["1.000.000", "eine Million", "eine Million"]
+              ]
+            },
+            {"type": "numHear", "title": "Nghe số, chọn chữ số (100–999)", "min": 100, "max": 999, "n": 8},
+            {"type": "numHear", "title": "Nghe số lớn, chọn chữ số", "pool": [1000, 1200, 2099, 3500, 4750, 12000, 15000, 50000, 75000, 100000, 250000, 600000], "n": 6},
+            {"type": "numWrite", "title": "Gõ số bằng chữ (100–999)", "task": "Thấy chữ số, gõ cách đọc bằng tiếng Đức, viết liền một từ (ví dụ 250 → zweihundertfünfzig). Cần ä ö ü thì bấm nút phía trên ô gõ, hoặc gõ ae oe ue.", "min": 100, "max": 999, "n": 5},
+            {"type": "numWrite", "mode": "read", "title": "Đọc chữ, gõ chữ số", "task": "Bấm vào từ để nghe nếu cần, rồi gõ chữ số (có hoặc không có dấu chấm đều được).", "pool": [150, 240, 365, 480, 512, 1200, 2099, 3500, 12000, 45000, 100000, 250000], "n": 6}
+          ]
+        },
+        {
+          "id": "kich-thuoc", "title": "Kích thước: mal, Zentimeter, Meter", "minutes": 8,
+          "blocks": [
+            { "type": "table", "title": "Hỏi và nói kích thước", "head": ["Câu hỏi", "Trả lời mẫu"], "say": 1, "vi": "Hỏi kích thước: <b>Wie groß / lang / breit / hoch ist …?</b> Trả lời bằng số + <i>Zentimeter / Meter / Quadratmeter</i>. <b>ungefähr</b> = khoảng, <b>genau</b> = chính xác. Dấu nhân × đọc là <b>mal</b>: 90 × 200 cm = <i>neunzig mal zweihundert Zentimeter</i>. Viết tắt: cm, m, m² (hoặc qm).",
+              "rows": [
+                ["Wie <b>groß</b> ist das Bett? <span class='muted small'>(90 × 200 cm)</span>", "Neunzig <b>mal</b> zweihundert Zentimeter."],
+                ["Wie <b>lang</b> ist der Tisch?", "Ungefähr zwei Meter. / Genau zwei Meter."],
+                ["Wie <b>breit</b> ist der Flur?", "Ungefähr neunzig Zentimeter."],
+                ["Wie <b>hoch</b> ist das Regal?", "Ungefähr hundertachtzig Zentimeter."],
+                ["Wie <b>groß</b> ist die Wohnung? <span class='muted small'>(60 m²)</span>", "Sechzig Quadratmeter."]
+              ]
+            },
+            { "type": "choice", "title": "Nghe rồi chọn",
+              "items": [
+                {"q": "<span class='say-inline' data-say='neunzig mal zweihundert Zentimeter'>🔊 Nghe</span> Cái giường lớn cỡ nào?", "opts": ["90 × 200 cm", "90 × 120 cm", "190 × 200 cm"], "a": 0},
+                {"q": "<span class='say-inline' data-say='achtzig mal hundertsechzig Zentimeter'>🔊 Nghe</span> Cái bàn lớn cỡ nào?", "opts": ["80 × 160 cm", "80 × 106 cm", "180 × 160 cm"], "a": 0},
+                {"q": "<span class='say-inline' data-say='vierzig Quadratmeter'>🔊 Nghe</span> Căn hộ rộng bao nhiêu?", "opts": ["40 m²", "14 m²", "400 m²"], "a": 0},
+                {"q": "<span class='say-inline' data-say='ungefähr hundertachtzig Zentimeter hoch'>🔊 Nghe</span> Cái kệ cao bao nhiêu?", "opts": ["ca. 180 cm", "ca. 108 cm", "ca. 118 cm"], "a": 0},
+                {"q": "<span class='say-inline' data-say='zwei Meter lang'>🔊 Nghe</span> Cái bàn dài bao nhiêu?", "opts": ["2 m", "12 m", "20 m"], "a": 0}
+              ]
+            },
+            { "type": "gaps", "title": "Chọn đơn vị đúng",
+              "items": [
+                {"q": "Der Tisch ist 2 ___ lang.", "a": ["Meter"], "opts": ["Zentimeter", "Meter", "Quadratmeter"]},
+                {"q": "Die Wohnung ist 60 ___ groß.", "a": ["Quadratmeter"], "opts": ["Zentimeter", "Meter", "Quadratmeter"]},
+                {"q": "Das Bett ist 90 ___ breit.", "a": ["Zentimeter"], "opts": ["Zentimeter", "Meter", "Quadratmeter"]},
+                {"q": "Das Haus ist 8 ___ hoch.", "a": ["Meter"], "opts": ["Zentimeter", "Meter", "Quadratmeter"]},
+                {"q": "Das Zimmer ist 18 ___ groß.", "a": ["Quadratmeter"], "opts": ["Zentimeter", "Meter", "Quadratmeter"]},
+                {"q": "60 × 120 cm = sechzig ___ hundertzwanzig Zentimeter", "a": ["mal"], "opts": ["mal", "und", "auch"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dien-thoai", "title": "Số điện thoại", "minutes": 6,
+          "blocks": [
+            {"type": "tip", "title": "Đọc số điện thoại", "html": "<p>Số điện thoại thường đọc <b>từng chữ số</b>, chia nhóm: <i>0176 / 452 318</i> → <i>null eins sieben sechs, vier fünf zwei, drei eins acht</i>. Cũng có người đọc theo cặp (<i>vierundfünfzig …</i>).</p><p>Hỏi: <i>Wie ist Ihre Nummer? · Wie ist Ihre Handynummer?</i> Trả lời: <i>Meine Nummer zu Hause ist … · Meine Handynummer ist … · Meine Nummer bei der Arbeit ist …</i></p><p>⚠ Qua điện thoại, <i>zwei</i> và <i>drei</i> dễ nghe nhầm nên nhiều người nói <b>zwo</b> thay cho <i>zwei</i>.</p>"},
+            {"type": "numHear", "mode": "digits", "title": "Nghe số điện thoại bàn (6 chữ số)", "n": 4},
+            {"type": "numHear", "mode": "digits", "mobile": true, "title": "Nghe số di động", "n": 4},
+            {"type": "text", "html": "<p><b>Bây giờ đến lượt bạn.</b> Nói to số điện thoại của bạn (thật hoặc tự nghĩ ra) theo mẫu <i>Meine Handynummer ist …</i>, từng chữ số một. Dùng nút ghi âm ở bài hội thoại bên dưới để nghe lại giọng mình.</p>"}
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần D (D1–D3)", "minutes": 5,
+          "blocks": [
+            { "type": "book", "title": "Phần D — Wohnungsanzeigen (nửa đầu)", "kb": "52", "tracks": "KB 1/82-85", "key": "Đáp án D2: giáo án <i>Unterrichtsplan L4</i>, trang 8–9.",
+              "steps": [
+                "D1 — <i>Hören Sie und sprechen Sie nach.</i> Nghe bảng số 100 → 1.000.000 (track 82) và đọc theo từng số.",
+                "D2 — <i>Was ist richtig? Hören Sie und kreuzen Sie an.</i> Nghe ba đoạn (track 83–85): giá một chiếc sofa, một số điện thoại, kích thước giường trẻ em. Nghe lại nhiều lần nếu cần; chú ý ô nhắc cách đọc cm và mal ở bên cạnh.",
+                "D3 — <i>Diktieren Sie Ihrer Partnerin / Ihrem Partner.</i> Đọc to và viết số điện thoại nhà, số di động, số ở chỗ làm của bạn (hoặc số tự nghĩ ra) theo mẫu <i>Meine Nummer zu Hause ist … · Meine Handynummer ist … · Meine Nummer bei der Arbeit ist …</i>"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 7,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Trao đổi số điện thoại",
+              "lines": [
+                {"scene": "Hai đồng nghiệp trao đổi số điện thoại."},
+                {"who": "Frau Berg", "v": "f", "de": "Wie ist Ihre Handynummer, Herr Wagner?", "vi": "Số di động của ông là gì, ông Wagner?"},
+                {"who": "Herr Wagner", "v": "m", "de": "Meine Handynummer ist 0176 / 452 318.", "vi": "Số di động của tôi là 0176 / 452 318.", "say": "Meine Handynummer ist null eins sieben sechs, vier fünf zwei, drei eins acht."},
+                {"who": "Frau Berg", "v": "f", "de": "0176 / 452 318. Ist das richtig?", "vi": "0176 / 452 318. Đúng không ạ?", "say": "Null eins sieben sechs, vier fünf zwei, drei eins acht. Ist das richtig?"},
+                {"who": "Herr Wagner", "v": "m", "de": "Ja, richtig. Und Ihre Nummer?", "vi": "Vâng, đúng. Còn số của bà?"},
+                {"who": "Frau Berg", "v": "f", "de": "Meine Nummer bei der Arbeit ist 030 / 701 108.", "vi": "Số của tôi ở chỗ làm là 030 / 701 108.", "say": "Meine Nummer bei der Arbeit ist null drei null, sieben null eins, eins null acht."},
+                {"who": "Herr Wagner", "v": "m", "de": "Danke!", "vi": "Cảm ơn bà!"}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Giường, tủ và giá tiền",
+              "lines": [
+                {"scene": "Ở cửa hàng nội thất: khách hỏi về kích thước và giá."},
+                {"who": "Kunde", "v": "m", "de": "Entschuldigung, wie groß ist das Bett hier?", "vi": "Xin lỗi, cái giường này cỡ bao nhiêu?"},
+                {"who": "Verkäuferin", "v": "f", "de": "Es ist 140 mal 200 Zentimeter groß.", "vi": "Nó cỡ 140 × 200 cm.", "say": "Es ist hundertvierzig mal zweihundert Zentimeter groß."},
+                {"who": "Kunde", "v": "m", "de": "Und was kostet es?", "vi": "Và giá bao nhiêu?"},
+                {"who": "Verkäuferin", "v": "f", "de": "Es kostet 699 Euro.", "vi": "Giá 699 euro.", "say": "Es kostet sechshundertneunundneunzig Euro."},
+                {"who": "Kunde", "v": "m", "de": "Hm, das ist teuer. Und der Schrank dort?", "vi": "Hừm, đắt. Còn cái tủ đằng kia?"},
+                {"who": "Verkäuferin", "v": "f", "de": "Er ist ungefähr 2 Meter hoch und kostet 1.250 Euro.", "vi": "Nó cao khoảng 2 mét và giá 1.250 euro.", "say": "Er ist ungefähr zwei Meter hoch und kostet tausendzweihundertfünfzig Euro."},
+                {"who": "Kunde", "v": "m", "de": "Oh! Das ist sehr teuer. Danke, auf Wiedersehen.", "vi": "Ồ! Đắt quá. Cảm ơn, tạm biệt."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi đọc và viết được số từ 100 đến 1.000.000: <i>zweihundertfünfzig, zwölftausend, eine Million</i>.",
+                "Tôi nghe một số và chọn đúng chữ số — kể cả hai chữ số dễ nhầm như <i>vierzehn / vierzig</i>.",
+                "Tôi hỏi và nói kích thước: <i>Wie groß ist das Bett? – 90 mal 200 Zentimeter.</i>",
+                "Tôi nói được số điện thoại của mình bằng tiếng Đức."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 48, bài 27 (nghe các số và đánh dấu; audio AB track 37).", "tracks": "AB 37"},
+                "Bài 28 (tin cho thuê nhà, có audio) để dành cho Buổi 5.",
+                "Tự luyện số hằng ngày: đọc to số nhà, giá trong tờ rơi hay trên mạng, số điện thoại trong danh bạ.",
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5", "no": 5, "minutes": 58, "set": "d2",
+      "title": "Wohnungsanzeigen",
+      "vi": "Đọc tin cho thuê nhà, chữ viết tắt, chọn tin phù hợp, viết tin của bạn",
+      "book": "Kursbuch tr. 52 (D4–D5) và tr. 56 (Zimmer frei!) · Arbeitsbuch tr. 48 (bài 28) · Lernwortschatz L4 (phần D, cuối)",
+      "goals": [
+        "Đọc một tin cho thuê nhà ngắn và tìm: diện tích, tiền thuê, số phòng, ban công, vườn …",
+        "Hiểu các chữ viết tắt thường gặp: <i>Whg., Zi., ca., max., qm / m², möbl., EBK, NK, Tel.</i>",
+        "Chọn tin hợp với yêu cầu (<i>Sie möchten eine Wohnung mit Balkon.</i>).",
+        "Hỏi và nói về căn hộ: <i>Wie groß ist die Wohnung? Was kostet sie im Monat? Ist sie möbliert?</i>",
+        "Viết một tin cho thuê phòng hoặc căn hộ của bạn."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: tin cho thuê nhà", "minutes": 8,
+          "blocks": [
+            {"type": "words", "set": "d2"},
+            {"type": "words", "set": "d3", "title": "Thêm: từ hay gặp trong tin cho thuê (không bắt buộc)", "collapsed": true},
+            {"type": "listenPick", "set": "d2", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "d2", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (15)", "minutes": 4,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "v = „f“ (và v = „v“ trong từ mượn)", "vi": "<b>v</b> thường đọc „f“: <i>vermieten</i> = „fe-MI-ten“, <i>viel, vier, von</i>. Chỉ trong từ mượn thì <b>v</b> đọc „v“: <i>privat, Villa</i>.", "ex": ["vermieten|cho thuê", "viel|nhiều", "vier|4", "privat|riêng, cá nhân"]},
+                {"t": "Từ mượn nhấn gần cuối", "vi": "<i>a-PART-ment</i>, <i>ga-RA-ge</i> (-ge = „zhơ“), <i>Kau-TION</i> (-tion = „tsiôn“), <i>ma-xi-MAL</i>, <i>so-FORT</i>, <i>mö-BLIERT</i>. Phần in HOA trên thẻ từ chỉ âm nhấn.", "ex": ["Apartment|căn hộ nhỏ", "Garage|nhà để xe", "Kaution|tiền đặt cọc", "möbliert|có sẵn đồ"]},
+                {"t": "ie, ei, au (nhắc lại)", "vi": "<b>ie</b> = „i“ dài (<i>Miete</i>); <b>ei</b> = „ai“ (<i>Anzeige</i> = „AN-tsai-ge“); <b>au</b> = „ao“ (<i>Raum, Haus</i>). Phân biệt <i>Miete</i> (tiền thuê) với <i>Mitte</i> (giữa): chỉ khác ie / tt.", "ex": ["Miete|tiền thuê", "Anzeige|tin rao", "Raum|phòng", "Haus|nhà"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "Miete", "opts": ["Miete", "Mitte"]},
+                {"say": "Anzeige", "opts": ["Anzeige", "Anseige"]},
+                {"say": "privat", "opts": ["privat", "pribat"]},
+                {"say": "Raum", "opts": ["Raum", "Rom"]},
+                {"say": "Garten", "opts": ["Garten", "Karten"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "viet-tat", "title": "Chữ viết tắt trong tin rao", "minutes": 6,
+          "blocks": [
+            { "type": "table", "title": "Chữ viết tắt thường gặp", "head": ["Viết tắt", "Đầy đủ", "Nghĩa"], "say": 1,
+              "rows": [
+                ["<b>Whg.</b>", "Wohnung", "căn hộ"],
+                ["<b>Zi.</b>", "Zimmer", "phòng (2-Zi.-Whg. = căn hộ 2 phòng)"],
+                ["<b>ca.</b>", "circa", "khoảng"],
+                ["<b>max.</b>", "maximal", "tối đa"],
+                ["<b>m² / qm</b>", "Quadratmeter", "mét vuông"],
+                ["<b>möbl.</b>", "möbliert", "có sẵn đồ đạc"],
+                ["<b>Balk.</b>", "Balkon", "ban công"],
+                ["<b>Gart.</b>", "Garten", "vườn"],
+                ["<b>Tel.</b>", "Telefon", "điện thoại"],
+                ["<b>EBK</b>", "Einbauküche", "bếp có sẵn tủ và thiết bị"],
+                ["<b>NK</b>", "Nebenkosten", "phụ phí (điện nước, rác …)"],
+                ["<b>KT</b>", "Kaution", "tiền đặt cọc"]
+              ]
+            },
+            {"type": "tip", "title": "Ba điều nên biết khi đọc tin cho thuê ở Đức", "html": "<ul><li><b>Zimmer</b>: <i>3-Zi.-Whg.</i> là căn hộ có 3 phòng ở và ngủ; bếp, phòng tắm và hành lang thường không tính.</li><li><b>warm</b> (Warmmiete): tiền thuê đã gồm sưởi và phụ phí; <b>kalt</b> (Kaltmiete): chưa gồm; <b>+ NK</b> nghĩa là phụ phí tính thêm.</li><li><b>Kaution</b>: tiền đặt cọc, thường tối đa 3 tháng tiền thuê (<i>3 Monatsmieten</i>).</li></ul>"},
+            { "type": "gaps", "title": "Viết tắt → từ đầy đủ", "task": "Gõ từ đầy đủ. Viết hoa danh từ (Wohnung, Zimmer …).",
+              "items": [
+                {"q": "Whg. = ___", "a": ["Wohnung"]},
+                {"q": "Zi. = ___", "a": ["Zimmer"]},
+                {"q": "ca. = ___", "a": ["circa"]},
+                {"q": "max. = ___", "a": ["maximal"]},
+                {"q": "Balk. = ___", "a": ["Balkon"]},
+                {"q": "Gart. = ___", "a": ["Garten"]},
+                {"q": "Tel. = ___", "a": ["Telefon"]},
+                {"q": "qm = ___", "a": ["Quadratmeter"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "doc-tin", "title": "Đọc tin cho thuê nhà", "minutes": 14,
+          "blocks": [
+            {"type": "text", "html": "<p>Đây là năm tin rao (do tôi tự soạn, mô phỏng tin thật). Đọc và tìm <b>diện tích</b> và <b>tiền thuê một tháng</b> — bạn không cần hiểu hết từng chữ.</p><div class='ad-grid'><div class='ad'><span class='ad-id'>A</span><b>2-Zi.-Whg.</b>, ca. 55 m², Balk., EBK, 580 € warm, von privat.<span class='ad-tel'>Tel. 0151 / 234 56 78</span></div><div class='ad'><span class='ad-id'>B</span><b>Möbl. Apartment</b>, 28 m², Dusche, TV, 420 € im Monat.<span class='ad-tel'>Tel. 0176 / 421 18 09</span></div><div class='ad'><span class='ad-id'>C</span><b>Familie sucht 4-Zi.-Whg.</b> mit Garten, max. 1.100 € warm.<span class='ad-tel'>Tel. 030 / 88 77 66</span></div><div class='ad'><span class='ad-id'>D</span><b>Haus</b>, ca. 120 m², 5 Zi., Garten, Garage, 1.450 € + NK.<span class='ad-tel'>Tel. 089 / 12 34 56</span></div><div class='ad'><span class='ad-id'>E</span><b>Nettes Ehepaar</b> vermietet <b>1-Zi.-Whg.</b>, 33 m², 390 € warm, ab sofort.<span class='ad-tel'>Tel. 0152 / 555 01 23</span></div></div><p class='ad-note'>Gợi ý: như bài D4 trong sách, chỉ cần chú ý hai thông tin — diện tích (<i>m²</i>) và tiền thuê (<i>€</i>).</p>"},
+            { "type": "choice", "title": "Đọc tin và trả lời",
+              "items": [
+                {"q": "Căn hộ ở tin A rộng bao nhiêu?", "opts": ["khoảng 55 m²", "khoảng 28 m²", "khoảng 120 m²"], "a": 0},
+                {"q": "Căn apartment ở tin B giá bao nhiêu một tháng?", "opts": ["420 €", "580 €", "390 €"], "a": 0},
+                {"q": "Tin nào là của một gia đình ĐANG TÌM nhà (không phải cho thuê)?", "opts": ["Tin C", "Tin A", "Tin D"], "a": 0},
+                {"q": "Tin nào có nhà để xe (Garage)?", "opts": ["Tin D", "Tin A", "Tin E"], "a": 0},
+                {"q": "Căn hộ ở tin E rộng bao nhiêu?", "opts": ["33 m²", "55 m²", "28 m²"], "a": 0},
+                {"q": "Gia đình ở tin C trả tối đa bao nhiêu mỗi tháng?", "opts": ["1.100 € (warm)", "1.450 €", "580 €"], "a": 0}
+              ]
+            },
+            { "type": "choice", "title": "Welche Anzeige passt?",
+              "items": [
+                {"q": "Bạn muốn một căn hộ có ban công.", "opts": ["Tin A", "Tin B", "Tin E"], "a": 0},
+                {"q": "Bạn muốn một căn có sẵn đồ đạc và tivi.", "opts": ["Tin B", "Tin A", "Tin D"], "a": 0},
+                {"q": "Bạn chỉ muốn trả 350 đến 400 euro tiền thuê.", "opts": ["Tin E", "Tin B", "Tin A"], "a": 0},
+                {"q": "Bạn cần một ngôi nhà có nhà để xe.", "opts": ["Tin D", "Tin C", "Tin E"], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gesprach", "title": "Hỏi và nói về căn hộ", "minutes": 6,
+          "blocks": [
+            { "type": "table", "title": "Hỏi về căn hộ", "head": ["Câu hỏi", "Trả lời mẫu"], "say": 1,
+              "rows": [
+                ["Wie groß ist die Wohnung?", "Sie ist circa 60 Quadratmeter groß."],
+                ["Was kostet die Wohnung im Monat?", "Sie kostet 650 Euro im Monat."],
+                ["Ist die Wohnung möbliert?", "Ja, sie ist möbliert. / Nein, sie ist nicht möbliert."],
+                ["Ist da auch ein Balkon?", "Ja, und auch ein Garten."],
+                ["Wie ist Ihre Telefonnummer?", "Meine Nummer ist …"]
+              ]
+            },
+            { "type": "order", "title": "Xếp câu",
+              "items": [
+                {"chunks": ["Was", "kostet", "die Wohnung", "im Monat?"], "v": 1, "vi": "Căn hộ giá bao nhiêu một tháng?"},
+                {"chunks": ["Sie", "ist", "circa 60 Quadratmeter", "groß."], "v": 1, "vi": "Nó rộng khoảng 60 mét vuông."},
+                {"chunks": ["Ist", "die Wohnung", "möbliert?"], "v": 0, "vi": "Căn hộ có sẵn đồ đạc không?"},
+                {"chunks": ["Ist", "da", "auch", "ein Balkon?"], "v": 0, "vi": "Ở đó cũng có ban công à?"},
+                {"chunks": ["Ich", "suche", "ab sofort", "eine Wohnung."], "v": 1, "vi": "Tôi cần tìm một căn hộ từ ngay bây giờ."}
+              ]
+            },
+            { "type": "gaps", "title": "Chọn từ đúng",
+              "items": [
+                {"q": "Die Wohnung ist ___ 60 Quadratmeter groß. <span class='muted'>(khoảng)</span>", "a": ["circa"], "opts": ["circa", "maximal", "privat", "sofort"]},
+                {"q": "Das Zimmer kostet ___ 400 Euro. <span class='muted'>(không hơn 400)</span>", "a": ["maximal"], "opts": ["circa", "maximal", "privat", "sofort"]},
+                {"q": "Ich suche ab ___ eine Wohnung. <span class='muted'>(ngay bây giờ)</span>", "a": ["sofort"], "opts": ["circa", "maximal", "privat", "sofort"]},
+                {"q": "Die Wohnung ist von ___. <span class='muted'>(chủ nhà cá nhân)</span>", "a": ["privat"], "opts": ["circa", "maximal", "privat", "sofort"]},
+                {"q": "Das Zimmer ist ___. <span class='muted'>(có sẵn bàn ghế, giường)</span>", "a": ["möbliert"], "opts": ["möbliert", "privat", "circa"]},
+                {"q": "Die ___ ist 650 Euro im Monat.", "a": ["Miete"], "opts": ["Miete", "Anzeige", "Garage"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "viet", "title": "Viết tin cho thuê (Zimmer frei!)", "minutes": 7,
+          "blocks": [
+            {"type": "text", "html": "<p>Tin mẫu — đọc to, rồi viết tin của bạn theo cùng khung:</p><div class='ad-grid'><div class='ad'><span class='ad-id'>✎</span><b>Zimmer frei!</b> Ich vermiete ein Zimmer in Berlin. Das Zimmer ist 18 Quadratmeter groß, hell und nicht teuer: 350 Euro im Monat. Es ist möbliert: ein Bett, ein Schrank, ein Tisch und zwei Stühle. Das Bad ist neu.<span class='ad-tel'>Telefon: 0176 / 111 22 33</span></div></div>"},
+            { "type": "table", "title": "Khung viết tin cho thuê", "head": ["Nói về …", "Mẫu câu"], "say": 1,
+              "rows": [
+                ["Cho thuê gì?", "Ich vermiete ein Zimmer / eine Wohnung / ein Apartment."],
+                ["Rộng bao nhiêu?", "Das Zimmer ist 18 Quadratmeter groß."],
+                ["Thế nào?", "Es ist hell und nicht teuer. Das Bad ist neu."],
+                ["Đồ đạc?", "Es ist möbliert: ein Bett, ein Schrank, ein Tisch und zwei Stühle."],
+                ["Giá?", "Die Miete ist 350 Euro im Monat."],
+                ["Liên lạc?", "Telefon: 0176 / 111 22 33."]
+              ]
+            },
+            { "type": "gaps", "title": "Hoàn thành tin mẫu", "task": "Chọn từ trong danh sách cho mỗi chỗ trống (mỗi từ dùng một lần).", "bank": ["vermiete", "groß", "möbliert", "hell", "Miete", "Telefon"],
+              "items": [
+                {"q": "Ich ___ ein Zimmer in Berlin.", "a": ["vermiete"]},
+                {"q": "Das Zimmer ist 18 Quadratmeter ___.", "a": ["groß"]},
+                {"q": "Es ist ___: ein Bett, ein Schrank und ein Tisch.", "a": ["möbliert"]},
+                {"q": "Das Zimmer ist ___ und nicht teuer.", "a": ["hell"]},
+                {"q": "Die ___ ist 350 Euro im Monat.", "a": ["Miete"]},
+                {"q": "___: 0176 / 111 22 33.", "a": ["Telefon"]}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Việc của bạn:</b> viết 5–6 câu về phòng hoặc căn hộ của bạn theo khung trên (hoặc một căn hộ tưởng tượng): rộng bao nhiêu, thế nào, có đồ gì, giá bao nhiêu, số điện thoại. Chỉ dùng các từ và câu bạn đã học — ngắn mà đúng còn hơn dài mà sai. Đọc to rồi so với tin mẫu.</p>"}
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: D4, D5 và Zimmer frei!", "minutes": 4,
+          "blocks": [
+            { "type": "book", "title": "Phần D (nửa sau) và Zwischendurch mal …", "kb": "52 và 56", "ab": "48 (bài 28)", "tracks": "AB 38", "key": "Đáp án D4, D5: giáo án <i>Unterrichtsplan L4</i>, trang 9–10; Zimmer frei!: trang 12–13.",
+              "steps": [
+                "D4 — <i>Lesen Sie die Anzeigen und markieren Sie in zwei Farben.</i> Đọc các tin A–E và đánh dấu hai màu: diện tích và tiền thuê một tháng (<i>Wie groß ist die Wohnung? Was kostet sie im Monat?</i>). Ô nhỏ bên cạnh: 1 qm / 1 m² = ein Quadratmeter.",
+                "D5 — <i>Sie suchen eine Wohnung. Welche Anzeige passt?</i> Với từng yêu cầu a–c, tìm tin phù hợp và gạch chân từ khóa trong tin. Xong sớm: làm bài <i>Schon fertig?</i> — tự viết một tin tìm nhà.",
+                "Arbeitsbuch bài 28 — các chữ viết tắt trong tin rao (<i>Balk., ca., Zi., Whg., Gart., qm …</i>) và một cuộc gọi về tin cho thuê (audio AB track 38).",
+                "Kursbuch tr. 56 · Zwischendurch mal … · <i>Zimmer frei!</i> — đọc một tin cho thuê phòng, sửa các câu sai, rồi viết tin của bạn."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 6,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Gọi điện về một tin cho thuê",
+              "lines": [
+                {"scene": "Bà Kim gọi điện hỏi về một căn hộ cho thuê."},
+                {"who": "Frau Kim", "v": "f", "de": "Guten Tag, hier ist Kim. Haben Sie eine Wohnung?", "vi": "Chào ông, tôi là Kim. Ông có căn hộ cho thuê không ạ?"},
+                {"who": "Herr Weber", "v": "m2", "de": "Ja. Sie ist 60 Quadratmeter groß und hat zwei Zimmer.", "vi": "Có. Căn hộ rộng 60 mét vuông và có hai phòng.", "say": "Ja. Sie ist sechzig Quadratmeter groß und hat zwei Zimmer."},
+                {"who": "Frau Kim", "v": "f", "de": "Was kostet die Wohnung im Monat?", "vi": "Căn hộ giá bao nhiêu một tháng?"},
+                {"who": "Herr Weber", "v": "m2", "de": "Die Miete ist 650 Euro. Ein Balkon ist auch da.", "vi": "Tiền thuê là 650 euro. Cũng có ban công.", "say": "Die Miete ist sechshundertfünfzig Euro. Ein Balkon ist auch da."},
+                {"who": "Frau Kim", "v": "f", "de": "Ist die Wohnung möbliert?", "vi": "Căn hộ có sẵn đồ đạc không?"},
+                {"who": "Herr Weber", "v": "m2", "de": "Nein, sie ist nicht möbliert. Aber die Küche ist neu.", "vi": "Không, không có sẵn đồ. Nhưng nhà bếp mới."},
+                {"who": "Frau Kim", "v": "f", "de": "Gut. Wie ist Ihre Telefonnummer?", "vi": "Tốt. Số điện thoại của ông là gì?"},
+                {"who": "Herr Weber", "v": "m2", "de": "Meine Nummer ist 0151 / 234 56 78.", "vi": "Số của tôi là 0151 / 234 56 78.", "say": "Meine Nummer ist null eins fünf eins, zwei drei vier, fünf sechs, sieben acht."}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Lena và Paul đọc tin",
+              "lines": [
+                {"scene": "Lena và Paul đọc một tin cho thuê nhà."},
+                {"who": "Lena", "v": "f", "de": "Schau mal! Hier ist eine Anzeige: zwei Zimmer, circa 55 Quadratmeter, Balkon, 580 Euro.", "vi": "Nhìn này! Có một tin đây: hai phòng, khoảng 55 mét vuông, ban công, 580 euro.", "say": "Schau mal! Hier ist eine Anzeige: zwei Zimmer, circa fünfundfünfzig Quadratmeter, Balkon, fünfhundertachtzig Euro."},
+                {"who": "Paul", "v": "m", "de": "580 Euro im Monat? Das ist nicht teuer. Ist da auch ein Garten?", "vi": "580 euro một tháng à? Không đắt. Có cả vườn không?", "say": "Fünfhundertachtzig Euro im Monat? Das ist nicht teuer. Ist da auch ein Garten?"},
+                {"who": "Lena", "v": "f", "de": "Nein, aber der Balkon ist groß.", "vi": "Không, nhưng ban công rộng."},
+                {"who": "Paul", "v": "m", "de": "Super! Dann brauchen wir die Telefonnummer.", "vi": "Tuyệt! Vậy mình cần số điện thoại."},
+                {"who": "Lena", "v": "f", "de": "Hier: 0151 / 234 56 78.", "vi": "Đây: 0151 / 234 56 78.", "say": "Hier: null eins fünf eins, zwei drei vier, fünf sechs, sieben acht."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 3,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi đọc một tin cho thuê nhà ngắn và tìm được diện tích và tiền thuê một tháng.",
+                "Tôi hiểu các chữ viết tắt <i>Whg., Zi., ca., max., m² / qm, möbl., Balk., Tel.</i>",
+                "Tôi chọn được tin phù hợp với yêu cầu của mình.",
+                "Tôi hỏi và nói về căn hộ: <i>Wie groß ist die Wohnung? Was kostet sie im Monat? Ist sie möbliert?</i>",
+                "Tôi viết được một tin cho thuê phòng ngắn."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 48, bài 28 (các chữ viết tắt và một cuộc gọi; audio AB track 38).", "tracks": "AB 38"},
+                "Viết tin cho thuê phòng hoặc căn hộ của bạn (5–6 câu), theo khung ở trên hoặc bài <i>Zimmer frei!</i> ở Kursbuch tr. 56.",
+                "Tuỳ chọn: <i>Mein Traumhaus</i> (Kursbuch tr. 56) — tìm một ảnh ngôi nhà mơ ước trên mạng và mô tả bằng 4–5 câu: <i>Mein Traumhaus ist groß und modern. Es ist …</i>",
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> — hôm nay có 20 từ mới."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6", "no": 6, "minutes": 60, "set": "e",
+      "title": "Mein Schreibtisch ist …",
+      "vi": "Đọc và viết về bàn làm việc, nguyên âm dài – ngắn, kiểm tra cuối Lektion 4",
+      "book": "Kursbuch tr. 53–57 · Arbeitsbuch tr. 49–51 · Lernwortschatz L4 (phần E)",
+      "goals": [
+        "Đọc một đoạn văn ngắn về bàn làm việc và tìm từ khóa (kích thước, màu, đồ vật).",
+        "Mô tả bàn làm việc của mình: <i>Mein Schreibtisch ist … Er ist ungefähr … lang. Da sind …</i>",
+        "Hỏi: <i>Wie groß / lang / breit / hoch ist …? Welche Farbe hat …?</i>",
+        "Phân biệt nguyên âm dài và ngắn: <i>Miete – Mitte, Tee – Bett</i>.",
+        "Làm bài kiểm tra cuối Lektion 4."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: bàn làm việc", "minutes": 8,
+          "blocks": [
+            {"type": "words", "set": "e"},
+            {"type": "words", "set": "e2", "title": "Thêm: từ trong các bài đọc của sách (không bắt buộc)", "collapsed": true},
+            {"type": "listenPick", "set": "e", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "e", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (16): e, i dài hay ngắn", "minutes": 5,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "Nguyên âm dài hay ngắn?", "vi": "Nguyên âm <b>ngắn</b> khi sau nó có <b>hai phụ âm</b>: <i>Bett, Tisch, Mitte, Zimmer</i>. Nguyên âm <b>dài</b> khi sau nó chỉ có một phụ âm, hoặc có <b>h</b> hay nguyên âm đôi: <i>Tee, Miete, Stuhl, Regal</i>. Chữ <b>ie</b> luôn là i dài.", "ex": ["Bett|giường", "Tee|trà", "Tisch|bàn", "Miete|tiền thuê"]},
+                {"t": "e dài và e ngắn", "vi": "<b>e ngắn</b> (<i>Bett, hell</i>) là „e“ mở như „bét“. <b>e dài</b> (<i>Tee, Regal, Meter</i>) là „ê“ khép: đặt môi như nói „i“ rồi chuyển dần sang „ê“ mà không đổi khẩu hình — „iiiêêê“.", "ex": ["Tee|trà", "Meter|mét", "Bett|giường", "hell|sáng"]},
+                {"t": "h: dấu hiệu của nguyên âm dài", "vi": "Chữ <b>h</b> sau nguyên âm thường không đọc, chỉ báo nguyên âm <b>dài</b>: <i>Stuhl, Wohnung, Zahl, sehr</i>. Ở đầu từ, <b>h</b> đọc nhẹ như „h“ tiếng Việt: <i>Haus, Heft, hell</i>.", "ex": ["Stuhl|ghế", "Wohnung|căn hộ", "Zahl|con số", "Heft|vở"]},
+                {"t": "Từ ghép dài: nhấn âm đầu", "vi": "Từ ghép dài nhấn vào thành phần <b>đầu</b>: <i>SCHREIB-tisch, SCHREIB-tisch-lam-pe, HAUS-auf-ga-be, TA-ge-buch</i>. Đọc chậm từng khúc rồi ghép lại.", "ex": ["Schreibtisch|bàn làm việc", "Schreibtischlampe|đèn bàn", "Hausaufgabe|bài tập về nhà", "Tagebuch|nhật ký"]}
+              ]
+            },
+            { "type": "choice", "title": "Nguyên âm này dài hay ngắn?",
+              "items": [
+                {"q": "<span class='say-inline' data-say='Bett'>🔊 Bett</span> — nguyên âm e:", "opts": ["ngắn", "dài"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Tee'>🔊 Tee</span> — nguyên âm e:", "opts": ["dài", "ngắn"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Tisch'>🔊 Tisch</span> — nguyên âm i:", "opts": ["ngắn", "dài"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Miete'>🔊 Miete</span> — nguyên âm ie:", "opts": ["dài", "ngắn"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Zimmer'>🔊 Zimmer</span> — nguyên âm i:", "opts": ["ngắn", "dài"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Stuhl'>🔊 Stuhl</span> — nguyên âm u:", "opts": ["dài", "ngắn"], "a": 0},
+                {"q": "<span class='say-inline' data-say='hell'>🔊 hell</span> — nguyên âm e:", "opts": ["ngắn", "dài"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Regal'>🔊 Regal</span> — nguyên âm e (âm đầu):", "opts": ["dài", "ngắn"], "a": 0}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng (cặp từ chỉ khác độ dài nguyên âm)",
+              "items": [
+                {"say": "Miete", "opts": ["Miete", "Mitte"]},
+                {"say": "Mitte", "opts": ["Mitte", "Miete"]},
+                {"say": "Bett", "opts": ["Bett", "Beet"]},
+                {"say": "Beet", "opts": ["Beet", "Bett"]}
+              ]
+            },
+            {"type": "text", "html": "<p class='muted small'>Mitte = giữa; Beet = luống hoa. Hai từ này chỉ để luyện nghe sự khác biệt giữa nguyên âm ngắn và dài, không cần học.</p>"}
+          ]
+        },
+        {
+          "id": "doc-hieu", "title": "Đọc hiểu: ba chiếc bàn làm việc", "minutes": 14,
+          "blocks": [
+            {"type": "text", "html": "<p>Ba người tự giới thiệu bàn làm việc của mình (bài do tôi tự soạn). Nghe từng đoạn, đọc theo, rồi trả lời câu hỏi. Bạn không cần hiểu hết từng chữ — tìm <b>từ khóa</b>: kích thước, màu, đồ vật.</p>"},
+            { "type": "dialog", "title": "Mia",
+              "lines": [
+                {"who": "Mia", "v": "f", "de": "Mein Schreibtisch ist klein und weiß.", "vi": "Bàn làm việc của tôi nhỏ và màu trắng."},
+                {"who": "Mia", "v": "f", "de": "Er ist 100 Zentimeter lang und 60 Zentimeter breit.", "vi": "Nó dài 100 cm và rộng 60 cm.", "say": "Er ist hundert Zentimeter lang und sechzig Zentimeter breit."},
+                {"who": "Mia", "v": "f", "de": "Ich brauche nicht viel Platz.", "vi": "Tôi không cần nhiều chỗ."},
+                {"who": "Mia", "v": "f", "de": "Da sind ein Computer, eine Lampe und ein Heft.", "vi": "Trên đó có một máy tính, một cái đèn và một quyển vở."},
+                {"who": "Mia", "v": "f", "de": "Die Lampe ist grau. Das ist alles. Bei mir ist Ordnung!", "vi": "Cái đèn màu xám. Chỉ có thế thôi. Chỗ tôi gọn gàng!"}
+              ]
+            },
+            { "type": "dialog", "title": "Tim",
+              "lines": [
+                {"who": "Tim", "v": "m", "de": "Mein Schreibtisch ist sehr groß: 180 Zentimeter lang und 80 Zentimeter breit.", "vi": "Bàn làm việc của tôi rất to: dài 180 cm và rộng 80 cm.", "say": "Mein Schreibtisch ist sehr groß: hundertachtzig Zentimeter lang und achtzig Zentimeter breit."},
+                {"who": "Tim", "v": "m", "de": "Er ist schwarz und modern.", "vi": "Nó màu đen và hiện đại."},
+                {"who": "Tim", "v": "m", "de": "Da sind zwei Computer und ein Tablet.", "vi": "Trên đó có hai máy tính và một máy tính bảng."},
+                {"who": "Tim", "v": "m", "de": "Ich habe keine Hefte und keine Bücher.", "vi": "Tôi không có vở và cũng không có sách."},
+                {"who": "Tim", "v": "m", "de": "Mein Schreibtischstuhl ist neu und sehr gut.", "vi": "Chiếc ghế làm việc của tôi mới và rất tốt."}
+              ]
+            },
+            { "type": "dialog", "title": "Ruth",
+              "lines": [
+                {"who": "Ruth", "v": "f", "de": "Mein Schreibtisch ist sehr alt.", "vi": "Bàn làm việc của tôi rất cũ."},
+                {"who": "Ruth", "v": "f", "de": "Er ist aus Holz und nicht modern, aber er ist sehr schön.", "vi": "Nó làm bằng gỗ và không hiện đại, nhưng rất đẹp."},
+                {"who": "Ruth", "v": "f", "de": "Da sind mein Tagebuch, viele Stifte und eine Lampe.", "vi": "Trên đó có cuốn nhật ký của tôi, nhiều bút và một cái đèn."},
+                {"who": "Ruth", "v": "f", "de": "Die Lampe ist gelb und sehr hell.", "vi": "Cái đèn màu vàng và rất sáng."},
+                {"who": "Ruth", "v": "f", "de": "Ich liebe meine Lampe!", "vi": "Tôi rất yêu cái đèn của mình!"}
+              ]
+            },
+            { "type": "choice", "title": "Ai là ai?",
+              "items": [
+                {"q": "Cái bàn nào to, màu đen và hiện đại?", "opts": ["Tim", "Mia", "Ruth"], "a": 0},
+                {"q": "Ai có một cuốn nhật ký (Tagebuch)?", "opts": ["Ruth", "Mia", "Tim"], "a": 0},
+                {"q": "Ai chỉ có máy tính, đèn và một quyển vở trên bàn?", "opts": ["Mia", "Tim", "Ruth"], "a": 0},
+                {"q": "Ai không có sách và vở?", "opts": ["Tim", "Mia", "Ruth"], "a": 0},
+                {"q": "Bàn của ai làm bằng gỗ và rất cũ?", "opts": ["Ruth", "Tim", "Mia"], "a": 0}
+              ]
+            },
+            { "type": "fix", "title": "Sửa câu sai",
+              "items": [
+                {"s": "Mias Schreibtisch ist groß.", "err": "groß", "fix": ["klein"], "why": "Mia: Mein Schreibtisch ist klein und weiß."},
+                {"s": "Tims Schreibtisch ist braun.", "err": "braun", "fix": ["schwarz"], "why": "Tim: Er ist schwarz und modern."},
+                {"s": "Ruths Schreibtisch ist neu.", "err": "neu", "fix": ["alt"], "why": "Ruth: Mein Schreibtisch ist sehr alt."},
+                {"s": "Ruths Lampe ist grau.", "err": "grau", "fix": ["gelb"], "why": "Ruth: Die Lampe ist gelb und sehr hell."},
+                {"s": "Mia braucht viel Platz.", "err": "viel", "fix": ["nicht viel"], "why": "Mia: Ich brauche nicht viel Platz."},
+                {"s": "Tims Schreibtisch ist 180 Zentimeter lang.", "err": null}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "viet", "title": "Viết về bàn làm việc của bạn", "minutes": 8,
+          "blocks": [
+            { "type": "table", "title": "Mô tả bàn làm việc", "head": ["Nói về …", "Mẫu câu"], "say": 1,
+              "rows": [
+                ["Cỡ", "Mein Schreibtisch ist (nicht) sehr groß. Er ist ungefähr 120 Zentimeter lang."],
+                ["Màu, chất liệu", "Er ist braun und aus Holz."],
+                ["Có gì trên bàn?", "Da sind ein Computer, eine Lampe und viele Hefte."],
+                ["Ý kiến", "Er ist ziemlich voll, aber das ist egal. Mein Schreibtisch gefällt mir sehr gut."],
+                ["Hỏi người khác", "Wie groß ist dein Schreibtisch? Welche Farbe hat er? Was ist da?"]
+              ]
+            },
+            { "type": "gaps", "title": "Hoàn thành đoạn mẫu", "task": "Chọn từ trong danh sách cho mỗi chỗ trống (mỗi từ dùng một lần).", "bank": ["ungefähr", "Holz", "Platz", "Computer", "immer", "egal"],
+              "items": [
+                {"q": "Mein Schreibtisch ist ___ zwei Meter lang.", "a": ["ungefähr"]},
+                {"q": "Er ist aus ___ und ziemlich alt.", "a": ["Holz"]},
+                {"q": "Ich brauche viel ___.", "a": ["Platz"]},
+                {"q": "Da sind ein ___, ein Tablet und viele Hefte.", "a": ["Computer"]},
+                {"q": "Ich mache da ___ meine Hausaufgaben.", "a": ["immer"]},
+                {"q": "Der Schreibtisch ist voll – das ist ___.", "a": ["egal"]}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Việc của bạn (bài E3):</b> viết 5–6 câu về bàn làm việc của bạn — to hay nhỏ, màu gì, làm bằng gì, trên đó có gì, bạn thấy thế nào. Chỉ dùng từ và câu đã học. Đọc to rồi so với ba đoạn mẫu ở trên.</p>"}
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần E, ôn tập và Zwischendurch", "minutes": 6,
+          "blocks": [
+            { "type": "book", "title": "Phần E — Mein Schreibtisch ist …", "kb": "53", "key": "Đáp án E2: giáo án <i>Unterrichtsplan L4</i>, trang 10–11.",
+              "steps": [
+                "E1 — <i>Schreibtische. Sehen Sie die Bilder an und zeigen Sie.</i> Nhìn ảnh các bàn làm việc và chỉ: <i>die Bücher, der Stift, die Hefte, das Tablet, der Computer, das Tagebuch, die Schreibtischlampe</i>.",
+                "E2a — <i>Welcher Schreibtisch passt zu welcher Person?</i> Đọc ba đoạn tự giới thiệu (Anita, Tom, Nicole) và ghép với ba bức ảnh A–C. Gạch chân từ khóa (<i>viele Hefte, ziemlich voll …</i>).",
+                "E2b, E2c — đọc lại, đánh dấu các câu đúng rồi viết lại các câu sai cho đúng.",
+                "E3 — <i>Mein Schreibtisch.</i> Viết về bàn làm việc của bạn: <i>Wie groß ist Ihr Schreibtisch? Welche Farbe hat er? Was ist auf dem Schreibtisch?</i>"
+              ]
+            },
+            { "type": "book", "title": "Arbeitsbuch phần E và phát âm", "ab": "49", "tracks": "AB 39-43", "key": "Đáp án: giáo án <i>Unterrichtsplan L4</i>, trang 11.",
+              "steps": [
+                "AB 29 — gạch từ không cùng nhóm trong mỗi dòng (ví dụ: Herd – Kühlschrank – <s>Tisch</s> – Lampe).",
+                "AB 30 — <i>Meine Wohnung.</i> Nghe một đoạn (audio AB track 39–40), sửa các câu sai rồi nghe tiếp và chọn đồ vật.",
+                "AB 31–32 — <i>e, i – lang oder kurz?</i> Nghe (audio AB track 41–43), đánh dấu nguyên âm dài / ngắn rồi đọc theo."
+              ]
+            },
+            { "type": "book", "title": "Tổng kết và luyện thêm (Kursbuch tr. 54–57)", "kb": "54–57", "ab": "51", "tracks": "KB 1/86-88",
+              "steps": [
+                "Kursbuch tr. 54–55 · <i>Grammatik und Kommunikation</i>: đọc lại bảng ngữ pháp (<i>definiter Artikel, er / es / sie, nicht / kein</i>) và các câu mẫu — bạn đã học tất cả trong sáu buổi.",
+                "Kursbuch tr. 57 · <i>Audio-Training</i> (track 86–88): nghe và trả lời trong các quãng dừng — <i>Wo ist …? · Ist das hier …? Nein, das ist nicht … · Wie gefällt dir …?</i>",
+                "Kursbuch tr. 56–57 · <i>Zwischendurch mal …</i>: dự án <i>Mein Traumhaus</i>, bài hát và phim <i>Das ist die Küche</i>, video-training.",
+                "Arbeitsbuch tr. 51 · <i>Fokus Beruf: Regeln im Büro</i> — đọc nội quy văn phòng, luyện <i>nicht / kein</i> (tuỳ chọn)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kiem-tra", "title": "Kiểm tra cuối Lektion 4", "minutes": 15,
+          "blocks": [
+            { "type": "test", "id": "l4", "title": "Bài kiểm tra",
+              "items": [
+                {"k": "mc", "q": "___ Küche", "opts": ["der", "das", "die"], "a": 2, "keep": true},
+                {"k": "mc", "q": "___ Balkon", "opts": ["der", "das", "die"], "a": 0, "keep": true},
+                {"k": "mc", "q": "___ Bad", "opts": ["der", "das", "die"], "a": 1, "keep": true},
+                {"k": "mc", "q": "Wo ist das Bad? – ___ ist dort.", "opts": ["Es", "Er", "Sie"], "a": 0, "why": "das Bad → es."},
+                {"k": "mc", "q": "Wo ist die Küche? – ___ ist hier.", "opts": ["Sie", "Er", "Es"], "a": 0, "why": "die Küche → sie."},
+                {"k": "type", "q": "Der Flur ist schmal. ___ ist dunkel. <span class='muted'>(er / es / sie)</span>", "a": ["Er"], "why": "der Flur → er."},
+                {"k": "type", "q": "neu ↔ ___", "a": ["alt"]},
+                {"k": "type", "q": "billig ↔ ___", "a": ["teuer"]},
+                {"k": "mc", "q": "Das Zimmer ist ___ teuer. <span class='muted'>(không đắt)</span>", "opts": ["nicht", "kein", "keine"], "a": 0, "why": "Tính từ → nicht."},
+                {"k": "mc", "q": "Das ist ___ Lampe. Das ist ein Fernseher.", "opts": ["keine", "kein", "nicht"], "a": 0, "why": "die Lampe → keine Lampe."},
+                {"k": "type", "q": "ein Stuhl → zwei ___", "a": ["Stühle"]},
+                {"k": "type", "q": "ein Bett → drei ___", "a": ["Betten"]},
+                {"k": "type", "q": "eine Lampe → zwei ___", "a": ["Lampen"]},
+                {"k": "mc", "q": "Wie ___ Ihnen die Stühle?", "opts": ["gefallen", "gefällt"], "a": 0, "why": "die Stühle (số nhiều) → gefallen."},
+                {"k": "mc", "q": "Wie ___ dir der Tisch?", "opts": ["gefällt", "gefallen"], "a": 0, "why": "der Tisch (số ít) → gefällt."},
+                {"k": "listenmc", "q": "Nghe rồi chọn màu:", "say": "dunkelblau", "opts": ["dunkelblau", "hellblau", "dunkelgrün", "hellgrün"], "a": 0},
+                {"k": "listen", "q": "Nghe và gõ chữ số:", "say": "dreihundertfünfzig", "a": ["350"]},
+                {"k": "listen", "q": "Nghe và gõ chữ số:", "say": "tausendfünfhundert", "a": ["1500", "1.500"]},
+                {"k": "listen", "q": "Nghe và gõ chữ số:", "say": "zwölftausend", "a": ["12000", "12.000"]},
+                {"k": "type", "q": "240 = ___ <span class='muted'>(gõ bằng chữ)</span>", "a": ["zweihundertvierzig"]},
+                {"k": "listenmc", "q": "Nghe rồi chọn kích thước:", "say": "sechzig mal hundertzwanzig Zentimeter", "opts": ["60 × 120 cm", "60 × 160 cm", "160 × 120 cm", "90 × 120 cm"], "a": 0},
+                {"k": "listenmc", "q": "Nghe rồi chọn số điện thoại:", "say": "null eins sieben sechs, vier fünf zwei, drei eins acht", "opts": ["0176 / 452 318", "0176 / 425 318", "0176 / 452 381", "0167 / 452 318"], "a": 0},
+                {"k": "mc", "q": "Whg. nghĩa là:", "opts": ["Wohnung", "Wohnzimmer", "Wohnort"], "a": 0},
+                {"k": "mc", "q": "„ca. 60 m²“ nghĩa là:", "opts": ["khoảng 60 mét vuông", "đúng 60 mét vuông", "tối đa 60 mét vuông"], "a": 0},
+                {"k": "mc", "q": "„Das Zimmer ist möbliert.“ nghĩa là:", "opts": ["Căn phòng có sẵn đồ đạc.", "Căn phòng không có đồ đạc.", "Căn phòng rất đắt."], "a": 0},
+                {"k": "mc", "q": "Bạn muốn biết giá thuê một tháng:", "opts": ["Was kostet die Wohnung im Monat?", "Wie groß ist die Wohnung im Monat?", "Wo ist die Miete im Monat?"], "a": 0},
+                {"k": "mc", "q": "Welche Farbe hat der Schreibtisch?", "opts": ["Er ist braun.", "Sie ist braun.", "Es ist braun."], "a": 0, "why": "der Schreibtisch → er."}
+              ]
+            },
+            { "type": "book", "title": "Bài kiểm tra của sách",
+              "steps": [
+                "Arbeitsbuch tr. 50: <i>Test Lektion 4</i>.",
+                "Bài kiểm tra trong bộ giáo án: <i>Kopiervorlagen/L04/Lektionstest.pdf</i> — làm ra giấy. Đáp án nằm trong <i>Lösungen zu den Tests.pdf</i>."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá cả Lektion 4",
+              "items": [
+                "Tôi gọi tên các phòng, đồ đạc và màu sắc, và nói đúng <i>der / das / die</i> (phần A, C).",
+                "Tôi mô tả nhà ở và đồ đạc bằng tính từ, dùng <i>sehr, nicht, kein</i> và <i>er / es / sie</i> (phần B).",
+                "Tôi hỏi và nói ý kiến: <i>Wie gefällt dir …? – Sehr gut. / Es geht.</i> (phần C).",
+                "Tôi đọc và viết số đến một triệu, nghe và nói số điện thoại, nói kích thước (phần D).",
+                "Tôi đọc một tin cho thuê nhà ngắn và viết được tin của mình (phần D).",
+                "Tôi đọc và viết một đoạn ngắn về bàn làm việc của mình (phần E)."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 49, bài 29–32 (bài 30 có audio AB track 39–40 · bài 31–32 có audio AB track 41–43).", "tracks": "AB 39-43"},
+                "Arbeitsbuch tr. 50: <i>Test Lektion 4</i>; tr. 51: <i>Fokus Beruf</i> (tuỳ chọn).",
+                {"t": "Audio-Training (Kursbuch tr. 57): nghe và trả lời theo băng.", "tracks": "KB 1/86-88"},
+                "Kursbuch tr. 56–57, <i>Zwischendurch mal …</i>: dự án <i>Mein Traumhaus</i>, bài hát <i>Das ist die Küche</i> và video.",
+                "Từ mai: vào <a href='#/review'>Ôn tập</a> mỗi ngày — Lektion 4 có hơn 120 từ mới."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    }
+  ]
+}
