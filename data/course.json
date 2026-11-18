@@ -1,0 +1,13 @@
+{
+  "title": "Deutsch Room",
+  "book": "Schritte international Neu 1 (A1.1)",
+  "lektionen": [
+    { "id": "l1", "no": 1, "title": "Guten Tag. Mein Name ist …", "vi": "Chào hỏi, tên, quê quán, đánh vần", "file": "data/l1.json", "ready": true },
+    { "id": "l2", "no": 2, "title": "Meine Familie", "vi": "Gia đình, số đếm", "ready": false },
+    { "id": "l3", "no": 3, "title": "Essen und Trinken", "vi": "Ăn uống, mua sắm", "ready": false },
+    { "id": "l4", "no": 4, "title": "Meine Wohnung", "vi": "Nhà ở", "ready": false },
+    { "id": "l5", "no": 5, "title": "Mein Tag", "vi": "Một ngày của tôi, giờ giấc", "ready": false },
+    { "id": "l6", "no": 6, "title": "Freizeit", "vi": "Thời gian rảnh", "ready": false },
+    { "id": "l7", "no": 7, "title": "Lernen – ein Leben lang", "vi": "Học suốt đời", "ready": false }
+  ]
+}

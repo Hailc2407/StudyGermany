@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Phòng tự học tiếng Đức theo Schritte international Neu 1 (A1.1)">
+  <title>Deutsch Room</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      var t = null;
+      try { t = JSON.parse(localStorage.getItem("de.theme")); } catch (e) {}
+      if (t !== "light" && t !== "dark") t = window.matchMedia && matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="app.css?v=4">
+</head>
+<body>
+  <header class="bar">
+    <div class="bar-inner">
+      <a class="brand" href="#/"><span class="flag" aria-hidden="true"></span>Deutsch Room</a>
+      <nav class="nav" aria-label="Chính">
+        <a href="#/" data-nav="home"><span class="nav-i" aria-hidden="true">🗺️</span><span class="nav-t">Lộ trình</span></a>
+        <a href="#/vocab" data-nav="vocab"><span class="nav-i" aria-hidden="true">📚</span><span class="nav-t">Từ vựng</span></a>
+        <a href="#/review" data-nav="review"><span class="nav-i" aria-hidden="true">🔁</span><span class="nav-t">Ôn tập</span><span class="badge" id="due-badge" hidden></span></a>
+        <a href="#/settings" data-nav="settings"><span class="nav-i" aria-hidden="true">⚙️</span><span class="nav-t">Cài đặt</span></a>
+      </nav>
+      <button class="tool" id="t-theme" type="button" title="Sáng / tối" aria-label="Đổi giao diện sáng tối">🌓</button>
+    </div>
+  </header>
+  <main id="app" class="app" aria-live="polite"><p class="loading">Đang mở…</p></main>
+  <div id="umlaut" class="umlaut" hidden></div>
+  <script src="js/core.js?v=4"></script>
+  <script src="js/blocks.js?v=4"></script>
+  <script src="js/pages.js?v=4"></script>
+</body>
+</html>
