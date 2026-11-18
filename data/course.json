@@ -54,8 +54,9 @@
       "id": "l7",
       "no": 7,
       "title": "Lernen – ein Leben lang",
-      "vi": "Học suốt đời",
-      "ready": false
+      "vi": "Học suốt đời: können và wollen, Perfekt với haben và sein, kể điều đã làm, mẹo học ngoại ngữ",
+      "ready": true,
+      "file": "data/l7.json"
     }
   ]
 }
