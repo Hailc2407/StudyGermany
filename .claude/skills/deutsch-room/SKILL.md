@@ -19,7 +19,7 @@ English only as a bridge (≈ cognates, ⚠ traps such as wer = who).
 - Every noun has `art` (der/die/das) and `pl`; every verb has `forms`; add `syl` (stressed syllable in
   CAPITALS) for words of two or more syllables; give an own example `ex: [de, vi]` where it helps.
 - Sessions are ~45–55 minutes: words → pronunciation → book task → grammar + exercises → dialogue →
-  review/can-do/homework/done. A Lektion is 3–4 sessions; the last one ends with a `test`.
+  review/can-do/homework/done. A Lektion is 3–6 sessions; the last one ends with a `test`.
 - Check the German carefully (gender, plural, verb forms, word order). Prefer a smaller lesson to a wrong one.
 
 ## Where things are

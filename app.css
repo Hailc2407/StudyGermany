@@ -601,3 +601,13 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
   .sort-pool .sort-card { width: auto; padding: 6px 10px; }
   .sort-item .sort-card { width: 100%; }
 }
+
+/* ---------- Big numbers and apartment ads (Lektion 4) ---------- */
+.ab-grid.wide { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.ab-grid.wide .ab-n { text-align: center; overflow-wrap: anywhere; }
+.ad-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin: 12px 0; }
+.ad { position: relative; padding: 12px 14px 12px 46px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); font-size: 15px; line-height: 1.55; }
+.ad-id { position: absolute; left: 10px; top: 11px; width: 26px; height: 26px; display: grid; place-items: center; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 14px; }
+.ad b { color: var(--text); }
+.ad .ad-tel { display: block; margin-top: 4px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.ad-note { margin: 6px 0 0; font-size: 13px; color: var(--muted); }

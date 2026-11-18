@@ -801,12 +801,34 @@
   const ONES = ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn", "elf", "zwölf",
     "dreizehn", "vierzehn", "fünfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn"];
   const TENS = ["", "", "zwanzig", "dreißig", "vierzig", "fünfzig", "sechzig", "siebzig", "achtzig", "neunzig"];
+  /* German number words: 0–99, hundreds, thousands (up to 999 999) and "eine Million". */
   function numWord(n) {
     if (n < 20) return ONES[n];
-    if (n === 100) return "hundert";
-    const t = Math.floor(n / 10), o = n % 10;
-    return o === 0 ? TENS[t] : (o === 1 ? "ein" : ONES[o]) + "und" + TENS[t];
+    if (n < 100) {
+      const t = Math.floor(n / 10), o = n % 10;
+      return o === 0 ? TENS[t] : (o === 1 ? "ein" : ONES[o]) + "und" + TENS[t];
+    }
+    if (n < 1000) {
+      const c = Math.floor(n / 100), r = n % 100;
+      return (c === 1 ? "hundert" : ONES[c] + "hundert") + (r ? numWord(r) : "");
+    }
+    if (n < 1000000) {
+      const th = Math.floor(n / 1000), r = n % 1000;
+      return (th === 1 ? "tausend" : numWord(th).replace(/eins$/, "ein") + "tausend") + (r ? numWord(r) : "");
+    }
+    return n === 1000000 ? "eine Million" : String(n);
   }
+  /* Spellings that are also right: einhundert…, eintausend… */
+  function numVariants(n) {
+    const base = numWord(n);
+    const out = new Set([base]);
+    const ein = (t) => t.replace(/(^|tausend)hundert/g, "$1einhundert");
+    const tau = (t) => t.replace(/^tausend/, "eintausend");
+    [ein(base), tau(base), ein(tau(base))].forEach((t) => out.add(t));
+    return [...out];
+  }
+  /* 1000 → "1.000" (German and Vietnamese both put a dot between groups of three digits) */
+  const fmtNum = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
   const NUMW = Array.from({ length: 21 }, (x, i) => numWord(i));
   const NUM_TRICKY = new Set([6, 7, 11, 12, 16, 17, 30, 60, 70]);
   const rnd = (lo, hi) => lo + Math.floor(Math.random() * (hi - lo + 1));
@@ -818,7 +840,7 @@
     let token = null;
     const values = b.values || Array.from({ length: 21 }, (x, i) => i);
     const tiles = values.map((v) => h("button", { type: "button", class: "ab-tile" + (NUM_TRICKY.has(v) ? " tricky" : ""), onclick: () => Speech.say(numWord(v)) },
-      h("span", { class: "ab-l" }, String(v)), h("span", { class: "ab-n" }, numWord(v))));
+      h("span", { class: "ab-l" }, fmtNum(v)), h("span", { class: "ab-n" }, numWord(v))));
     const all = btn("▶ Nghe cả bảng", async () => {
       if (token) { token = null; Speech.stop(); all.textContent = "▶ Nghe cả bảng"; return; }
       const me = (token = {});
@@ -833,21 +855,50 @@
       tiles.forEach((t) => t.classList.remove("now"));
       if (token === me) { token = null; all.textContent = "▶ Nghe cả bảng"; }
     }, "btn small ghost");
-    return h("div", { class: "alphabet" }, h("div", { class: "actions" }, all, h("span", { class: "muted small" }, "Chấm cam = số hay đọc hoặc viết nhầm.")), h("div", { class: "ab-grid" }, tiles));
+    return h("div", { class: "alphabet" }, h("div", { class: "actions" }, all, h("span", { class: "muted small" }, "Chấm cam = số hay đọc hoặc viết nhầm.")), h("div", { class: "ab-grid" + (b.wide ? " wide" : "") }, tiles));
   };
 
-  /* Wrong answers worth offering: the swapped digits (45 / 54), teen and ten (14 / 40), the neighbours. */
+  /* Wrong answers worth offering: the swapped digits (45 / 54), teen and ten (14 / 40), the neighbours,
+     and for big numbers a different size (1.200 / 12.000) or two digits swapped (213 / 231). */
   function numOptions(x, lo, hi) {
-    const special = [];
-    if (x >= 13 && x <= 19) special.push((x - 10) * 10);
-    if (x >= 30 && x <= 90 && x % 10 === 0) special.push(x / 10 + 10);
-    if (x >= 21 && x <= 99 && x % 10 !== 0) special.push((x % 10) * 10 + Math.floor(x / 10));
-    const near = [x - 1, x + 1, x - 10, x + 10];
+    const first = [];
+    const r = x % 100, base = x - r;
+    if (r >= 13 && r <= 19) first.push(base + (r - 10) * 10);
+    if (r >= 30 && r <= 90 && r % 10 === 0) first.push(base + r / 10 + 10);
+    if (r >= 21 && r <= 99 && r % 10 !== 0) first.push(base + (r % 10) * 10 + Math.floor(r / 10));
+    const more = x >= 100 ? [x - 1, x + 1, x - 10, x + 10, x - 100, x + 100] : [x - 1, x + 1, x - 10, x + 10];
+    if (x >= 100) {
+      const d = String(x);
+      for (let i = 0; i < d.length - 1; i++) {
+        if (d[i] === d[i + 1]) continue;
+        const t = d.slice(0, i) + d[i + 1] + d[i] + d.slice(i + 2);
+        if (t[0] !== "0") more.push(+t);
+      }
+      if (x >= 1000) { more.push(x * 10); if (x % 10 === 0) more.push(x / 10); }
+    }
     const ok = (n) => n >= lo && n <= hi && n !== x;
     const out = [];
-    for (const n of [...special, ...shuffle(near)]) if (ok(n) && !out.includes(n)) out.push(n);
-    while (out.length < 3) { const r = rnd(lo, hi); if (ok(r) && !out.includes(r)) out.push(r); }
+    for (const n of [...first, ...shuffle(more)]) if (ok(n) && !out.includes(n)) out.push(n);
+    while (out.length < 3) { const v = rnd(lo, hi); if (ok(v) && !out.includes(v)) out.push(v); }
     return shuffle([x, ...out.slice(0, 3)]);
+  }
+  /* Phone numbers heard as single digits in groups: "701 108" = sieben null eins, eins null acht */
+  const DIGITW = ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun"];
+  function digitsQ(b) {
+    const sizes = b.groups || (b.mobile ? [4, 3, 3] : [3, 3]);
+    const flat = (b.mobile ? "01" + [5, 6, 7][rnd(0, 2)] + rnd(0, 9) : "") + Array.from({ length: sizes.reduce((a, c) => a + c, 0) - (b.mobile ? 4 : 0) }, () => rnd(0, 9)).join("");
+    const cut = (t) => { let i = 0; return sizes.map((n) => { const part = t.slice(i, i + n); i += n; return part; }); };
+    const say = (t) => cut(t).map((g) => g.split("").map((c) => DIGITW[+c]).join(" ")).join(", ");
+    const opts = new Map([[flat, 1]]);
+    for (let guard = 0; opts.size < 4 && guard < 120; guard++) {
+      const a = flat.split("");
+      const i = rnd(b.mobile ? 4 : 0, a.length - 2);
+      if (Math.random() < 0.6) { if (a[i] !== a[i + 1]) [a[i], a[i + 1]] = [a[i + 1], a[i]]; }
+      else a[i] = String((+a[i] + rnd(1, 9)) % 10);
+      opts.set(a.join(""), 1);
+    }
+    const list = shuffle([...opts.keys()]);
+    return { say: say(flat), shown: cut(flat).join(" "), rate: 0.75, opts: list.map((t) => cut(t).join(" ")), right: list.indexOf(flat) };
   }
   function phoneOptions(seq) {
     const out = new Map([[seq.join(" "), seq]]);
@@ -889,16 +940,20 @@
     return h("div", { class: "hear-pick" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => again(), "btn small ghost")));
   }
   /* mode "single": hear one number, pick the digits (b.min/b.max, or b.pool = a list to draw from)
-     mode "phone": hear three numbers (like a phone number) */
+     mode "phone": hear three numbers (like a phone number)
+     mode "digits": hear a phone number digit by digit (b.groups = [3, 3], or b.mobile = 0176 … style) */
   B.numHear = (b) => {
     const phone = b.mode === "phone";
-    const [lo, hi] = numRange(b);
+    const digits = b.mode === "digits";
+    const [lo, hi] = b.pool ? [0, Math.max(100, ...b.pool)] : numRange(b);
     const wrap = hearRound(b, () => {
+      if (digits) return digitsQ(b);
       const seq = phone ? Array.from({ length: 3 }, () => rnd(0, 20)) : [pickNum(b)];
-      const opts = phone ? phoneOptions(seq) : numOptions(seq[0], b.pool ? 0 : lo, b.pool ? 100 : hi).map((v) => [v]);
+      const opts = phone ? phoneOptions(seq) : numOptions(seq[0], lo, hi).map((v) => [v]);
       const key = seq.join(" ");
-      return { say: seq.map(numWord).join(", "), shown: seq.map(numWord).join(" · "), rate: phone ? 0.75 : undefined,
-        opts: opts.map((o) => o.join(" ")), right: opts.findIndex((o) => o.join(" ") === key) };
+      const show = (o) => (phone ? o.join(" ") : fmtNum(o[0]));
+      return { say: seq.map(numWord).join(", "), shown: seq.map(numWord).join(phone ? " · " : ""), rate: phone ? 0.75 : undefined,
+        opts: opts.map(show), right: opts.findIndex((o) => o.join(" ") === key) };
     }, () => wrap.replaceWith(B.numHear(b)));
     return wrap;
   };
@@ -912,25 +967,28 @@
     const pool = b.pool ? b.pool.slice() : Array.from({ length: hi - lo + 1 }, (x, i) => lo + i);
     const nums = shuffle(pool).slice(0, N);
     const rows = nums.map((x, i) => {
-      const input = textInput({ size: read ? 5 : 20, "aria-label": "Câu trả lời" });
+      const input = textInput({ size: read ? 9 : 26, "aria-label": "Câu trả lời" });
       const res = h("span", { class: "sp-res" });
-      const answers = read ? [String(x)] : [numWord(x)];
+      const answers = read ? [String(x)] : numVariants(x);
       const go = () => {
         if (row.dataset.done) return;
         if (!input.value.trim()) return toast("Gõ câu trả lời trước đã.");
         row.dataset.done = 1;
         n++;
-        const r = check(input.value, answers);
+        const raw = input.value.trim();
+        const typed = read ? raw.replace(/[.\s]/g, "") : raw.replace(/\s+/g, "");
+        const r = check(typed, read ? answers : answers.map((a) => a.replace(/\s+/g, "")));
+        if (r.ok && !read && typed !== raw && !/\s/.test(numWord(x))) r.note = "Số Đức viết liền thành một từ: " + numWord(x);
         if (r.ok) ok++;
-        else Missed.add("nw:" + x + read, { type: "gap", q: (read ? esc(numWord(x)) : x) + " = ___", a: [answers] });
+        else Missed.add("nw:" + x + read, { type: "gap", q: (read ? esc(numWord(x)) : fmtNum(x)) + " = ___", a: [answers] });
         input.classList.add(r.ok ? "ok" : "bad");
-        res.textContent = (r.ok ? " ✓ " : " ✗ ") + x + " = " + numWord(x) + (r.note ? "  · " + r.note : "");
+        res.textContent = (r.ok ? " ✓ " : " ✗ ") + fmtNum(x) + " = " + numWord(x) + (r.note ? "  · " + r.note : "");
         Speech.say(numWord(x));
         if (n === N) sc.set(ok, n);
       };
       input.addEventListener("keydown", (e) => { if (e.key === "Enter") go(); });
       const row = h("div", { class: "sp-row" }, h("b", {}, i + 1 + "."),
-        h("span", { class: "nw-q" }, read ? h("span", { class: "say-inline", "data-say": numWord(x) }, numWord(x)) : String(x)),
+        h("span", { class: "nw-q" }, read ? h("span", { class: "say-inline", "data-say": numWord(x) }, numWord(x)) : fmtNum(x)),
         h("span", {}, "="), input, btn("Kiểm tra", go, "btn small ghost"), res);
       return row;
     });

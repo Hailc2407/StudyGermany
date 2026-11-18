@@ -30,8 +30,9 @@
       "id": "l4",
       "no": 4,
       "title": "Meine Wohnung",
-      "vi": "Nhà ở",
-      "ready": false
+      "vi": "Nhà ở, đồ đạc, màu sắc, số đến một triệu, tin cho thuê nhà, bàn làm việc",
+      "ready": true,
+      "file": "data/l4.json"
     },
     {
       "id": "l5",

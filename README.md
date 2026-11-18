@@ -5,7 +5,7 @@ Phòng tự học tiếng Đức theo *Schritte international Neu 1* (A1.1), ch�
 
 ## Có gì
 
-- **Lộ trình**: mỗi Lektion của sách chia thành 3–4 buổi khoảng 45 phút. Mỗi buổi: từ mới có giọng đọc,
+- **Lộ trình**: mỗi Lektion của sách chia thành 3–6 buổi khoảng 45–65 phút. Mỗi buổi: từ mới có giọng đọc,
   quy tắc phát âm, việc cần làm trong sách (trang, track), ngữ pháp giải thích bằng tiếng Việt, bài tập
   tự chấm, hội thoại mẫu để nghe – nói theo – đóng vai – ghi âm, và bài về nhà.
 - **Từ vựng**: danh từ luôn kèm der/die/das (màu theo sách: der xanh dương, die đỏ, das xanh lá) và số nhiều;

@@ -75,7 +75,8 @@ for (const meta of course.lektionen.filter((l) => l.ready)) {
       if ((b.type === "numHear" || b.type === "numWrite") && b.pool && (!Array.isArray(b.pool) || b.pool.length < 4)) bad(at, "pool cần ít nhất 4 số");
       if (b.type === "numbers" && b.values && (!Array.isArray(b.values) || !b.values.length)) bad(at, "values rỗng");
       if (b.type === "listenPick" && b.by === "emoji" && L.setIndexCheck[b.set] < 4) bad(at, "bộ từ " + b.set + " có ít hơn 4 từ có emoji");
-      if (b.type === "numHear" && b.mode && !["single", "phone"].includes(b.mode)) bad(at, "mode lạ: " + b.mode);
+      if (b.type === "numHear" && b.mode && !["single", "phone", "digits"].includes(b.mode)) bad(at, "mode lạ: " + b.mode);
+      if (b.type === "numHear" && b.mode === "digits" && b.groups && (!Array.isArray(b.groups) || b.groups.some((g) => !(g >= 1 && g <= 6)))) bad(at, "groups sai");
       if (b.type === "numWrite" && b.mode && b.mode !== "read") bad(at, "mode lạ: " + b.mode);
       if (b.type === "dialog") b.lines.forEach((ln, i) => { if (!ln.scene && (!ln.de || !ln.vi || !ln.who)) bad(at, `dòng ${i + 1}: thiếu who, de hoặc vi`); });
       if (b.type === "conj") b.verbs.forEach((v) => { if (v.forms.length !== b.persons.length) bad(at, v.inf + ": số dạng chia khác số ngôi"); });
