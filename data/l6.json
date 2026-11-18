@@ -1,0 +1,1717 @@
+{
+  "id": "l6",
+  "no": 6,
+  "title": "Freizeit",
+  "vi": "Thời tiết, gọi món (Akkusativ), đồng ý và phản bác (doch), sở thích, các mùa và du lịch",
+  "book": "Kursbuch tr. 70–81 · Arbeitsbuch tr. 63–74 · Lernwortschatz L6",
+  "audio": ["KB 2/27-43", "AB 58-69"],
+  "sets": [
+    {
+      "id": "a", "title": "Truyện ảnh và thời tiết", "session": "1",
+      "items": [
+        {"id": "ausflug", "de": "Ausflug", "art": "der", "pl": "Ausflüge", "kind": "noun", "emoji": "🚐", "vi": "chuyến đi chơi (trong ngày)", "syl": "AUS·flug", "note": "einen Ausflug machen = đi chơi một chuyến. au đọc „ao“; số nhiều có ü: die Ausflüge.", "ex": ["Am Sonntag machen wir einen Ausflug.", "Chủ nhật chúng tôi đi chơi một chuyến."]},
+        {"id": "auto", "de": "Auto", "art": "das", "pl": "Autos", "kind": "noun", "emoji": "🚗", "vi": "ô tô", "syl": "AU·to", "en": "≈ auto(mobile)", "note": "au đọc „ao“. Auto fahren = lái xe / đi bằng ô tô.", "ex": ["Ich fahre gern Auto.", "Tôi thích lái xe."]},
+        {"id": "fahren", "de": "fahren", "kind": "verb", "forms": "ich fahre · du fährst · er/sie fährt", "emoji": "🚙", "vi": "đi (bằng xe), lái xe", "syl": "FAH·ren", "note": "a → ä ở du và er/sie: fährst, fährt (học kỹ ở Buổi 5). Auto fahren, Ski fahren, Fahrrad fahren.", "ex": ["Mein Vater fährt jeden Tag Auto.", "Bố tôi lái xe mỗi ngày."]},
+        {"id": "wandern", "de": "wandern", "kind": "verb", "forms": "ich wandere · du wanderst · er/sie wandert", "emoji": "🥾", "vi": "đi bộ đường dài", "syl": "WAN·dern", "note": "w đọc „v“: „VAN-đờn“. Đi bộ đường dài / leo núi nhẹ trong thiên nhiên.", "ex": ["Am Wochenende wandern wir.", "Cuối tuần chúng tôi đi bộ đường dài."]},
+        {"id": "picknick", "de": "Picknick", "art": "das", "pl": "Picknicks", "kind": "noun", "emoji": "🧺", "vi": "buổi dã ngoại", "syl": "PICK·nick", "en": "≈ picnic", "note": "ein Picknick machen = đi dã ngoại. ck đọc „k“.", "ex": ["Am Samstag machen wir ein Picknick.", "Thứ Bảy chúng tôi đi dã ngoại."]},
+        {"id": "gitarre", "de": "Gitarre", "art": "die", "pl": "Gitarren", "kind": "noun", "emoji": "🎸", "vi": "đàn ghi-ta", "syl": "gi·TAR·re", "en": "≈ guitar", "note": "Nhấn âm giữa. Gitarre spielen = chơi ghi-ta (không cần giới từ).", "ex": ["Mein Bruder spielt Gitarre.", "Anh trai tôi chơi ghi-ta."]},
+        {"id": "fotografieren", "de": "fotografieren", "kind": "verb", "forms": "ich fotografiere · du fotografierst · er/sie fotografiert", "emoji": "📷", "vi": "chụp ảnh", "syl": "fo·to·gra·FIE·ren", "note": "Đuôi -ieren luôn nhấn ở „ie“ (giống telefonieren ở Lektion 5). Cùng họ: das Foto.", "ex": ["Mia fotografiert gern.", "Mia thích chụp ảnh."]},
+        {"id": "sonne", "de": "Sonne", "art": "die", "kind": "noun", "emoji": "☀️", "vi": "mặt trời; ánh nắng", "syl": "SON·ne", "en": "≈ sun", "note": "Thường không có số nhiều. Die Sonne scheint. = Trời nắng.", "ex": ["Heute scheint die Sonne.", "Hôm nay trời nắng."]},
+        {"id": "scheinen", "de": "scheinen", "kind": "verb", "forms": "ich scheine · du scheinst · er/sie scheint", "vi": "chiếu sáng", "syl": "SCHEI·nen", "note": "sch đọc „sh“, ei đọc „ai“. Thường nói về die Sonne.", "ex": ["Am Morgen scheint die Sonne.", "Buổi sáng mặt trời chiếu sáng."]},
+        {"id": "regnen", "de": "regnen", "kind": "verb", "forms": "es regnet", "emoji": "🌧️", "vi": "mưa", "syl": "REG·nen", "note": "Chỉ dùng với es: Es regnet. e dài, đọc rõ cả g lẫn n: „RÊG-nen“. Danh từ: der Regen (Buổi 2).", "ex": ["Heute regnet es.", "Hôm nay trời mưa."]},
+        {"id": "schneien", "de": "schneien", "kind": "verb", "forms": "es schneit", "emoji": "🌨️", "vi": "tuyết rơi", "syl": "SCHNEI·en", "note": "Chỉ dùng với es: Es schneit. Danh từ: der Schnee (Buổi 2).", "ex": ["Heute schneit es viel.", "Hôm nay tuyết rơi nhiều."]},
+        {"id": "wolke", "de": "Wolke", "art": "die", "pl": "Wolken", "kind": "noun", "emoji": "☁️", "vi": "đám mây", "syl": "WOL·ke", "note": "w đọc „v“.", "ex": ["Heute gibt es keine Wolken.", "Hôm nay không có mây."]},
+        {"id": "wetter", "de": "Wetter", "art": "das", "kind": "noun", "emoji": "🌦️", "vi": "thời tiết", "syl": "WET·ter", "en": "≈ weather", "note": "Chỉ có số ít. Đuôi -er nhẹ như „a“: „VÉT-ta“. Wie ist das Wetter? = Thời tiết thế nào?", "ex": ["Das Wetter ist heute schön.", "Hôm nay thời tiết đẹp."]},
+        {"id": "heute", "de": "heute", "kind": "word", "vi": "hôm nay", "syl": "HEU·te", "note": "eu đọc „oi“: „HOI-te“.", "ex": ["Heute bin ich müde.", "Hôm nay tôi mệt."]},
+        {"id": "viele", "de": "viele", "kind": "word", "vi": "nhiều (đứng trước danh từ số nhiều)", "syl": "VIE·le", "note": "v đọc „f“: „FI-lơ“. viele + số nhiều: viele Wolken, viele Bücher. Với danh từ không đếm được dùng viel: viel Wind, viel Zeit.", "ex": ["Er hat viele Bücher.", "Anh ấy có nhiều sách."]},
+        {"id": "vergessen", "de": "vergessen", "kind": "verb", "forms": "ich vergesse · du vergisst · er/sie vergisst", "emoji": "🤦", "vi": "quên", "syl": "ver·GES·sen", "note": "ver- đọc „fe(r)“ và không nhấn. e → i ở du và er/sie (giống sprechen → du sprichst).", "ex": ["Lili vergisst die Gitarre.", "Lili quên cây đàn ghi-ta."]},
+        {"id": "bringen", "de": "bringen", "kind": "verb", "forms": "ich bringe · du bringst · er/sie bringt", "vi": "mang đến", "syl": "BRIN·gen", "note": "ng đọc như „ng“ tiếng Việt, không có „g“ riêng.", "ex": ["Ich bringe das Brot.", "Tôi mang bánh mì đến."]},
+        {"id": "nachricht", "de": "Nachricht", "art": "die", "pl": "Nachrichten", "kind": "noun", "emoji": "💬", "vi": "tin nhắn; (số nhiều) tin tức", "syl": "NACH·richt", "note": "eine Nachricht schreiben = viết tin nhắn. ch sau a đọc „kh“, ch sau i đọc „xì“ nhẹ.", "ex": ["Mia schreibt eine Nachricht.", "Mia viết một tin nhắn."]},
+        {"id": "grad", "de": "Grad", "art": "das", "kind": "noun", "vi": "độ (nhiệt độ)", "syl": "GRAD", "note": "Sau số đếm giữ nguyên: 25 Grad. Nói nhiệt độ: Es sind 25 Grad. (dùng sind).", "ex": ["Heute sind es 20 Grad.", "Hôm nay 20 độ."]},
+        {"id": "warm", "de": "warm", "kind": "word", "emoji": "🌤️", "vi": "ấm", "note": "Es ist warm. Nóng hơn là heiß (Buổi 2).", "ex": ["Heute ist es warm.", "Hôm nay trời ấm."]},
+        {"id": "kalt", "de": "kalt", "kind": "word", "emoji": "🥶", "vi": "lạnh", "note": "Đối nghĩa: warm / heiß.", "ex": ["Am Abend ist es kalt.", "Buổi tối trời lạnh."]},
+        {"id": "windig", "de": "windig", "kind": "word", "emoji": "💨", "vi": "có gió", "syl": "WIN·dig", "note": "w đọc „v“; -ig cuối từ đọc „-ich“: „VIN-đich“. Danh từ: der Wind (Buổi 2).", "ex": ["Heute ist es windig.", "Hôm nay trời có gió."]},
+        {"id": "bewoelkt", "de": "bewölkt", "kind": "word", "emoji": "🌥️", "vi": "nhiều mây", "syl": "be·WÖLKT", "note": "Từ die Wolke. Es ist bewölkt. = Es gibt viele Wolken.", "ex": ["Am Morgen ist es bewölkt.", "Buổi sáng trời nhiều mây."]},
+        {"id": "wie-ist-das-wetter", "de": "Wie ist das Wetter?", "kind": "phrase", "vi": "Thời tiết thế nào?", "note": "Trả lời: Gut. / Schön. / Nicht so gut. / Schlecht.", "ex": ["Wie ist das Wetter in Berlin? – Gut. Die Sonne scheint.", "Thời tiết ở Berlin thế nào? – Tốt. Trời nắng."]},
+        {"id": "es-gibt", "de": "Es gibt …", "kind": "phrase", "vi": "có … (có sẵn, tồn tại)", "note": "Es gibt + danh từ: Es gibt viele Wolken. Es gibt einen Park. gibt là dạng er/sie/es của geben (e → i). Học kỹ ở Buổi 6.", "ex": ["Hier gibt es einen Supermarkt.", "Ở đây có một siêu thị."]},
+        {"id": "einen-ausflug-machen", "de": "einen Ausflug machen", "kind": "phrase", "vi": "đi chơi một chuyến", "note": "einen vì der Ausflug đứng sau machen ở Akkusativ — Buổi 3 giải thích.", "ex": ["Machen wir am Samstag einen Ausflug?", "Thứ Bảy mình đi chơi nhé?"]},
+        {"id": "gar-nicht-gern", "de": "gar nicht gern", "kind": "phrase", "vi": "hoàn toàn không thích", "note": "Thang mức độ: sehr gern (++), gern (+), nicht so gern (−), gar nicht gern (−−).", "ex": ["Ich koche gar nicht gern.", "Tôi hoàn toàn không thích nấu ăn."]}
+      ]
+    },
+    {
+      "id": "b", "title": "Bản tin thời tiết", "session": "2",
+      "items": [
+        {"id": "himmelsrichtung", "de": "Himmelsrichtung", "art": "die", "pl": "Himmelsrichtungen", "kind": "noun", "emoji": "🧭", "vi": "hướng (bắc, nam, đông, tây)", "syl": "HIM·mels·rich·tung", "note": "Himmel (bầu trời) + Richtung (hướng). Đuôi -ung → luôn là die. Bốn hướng đã gặp ở Lektion 2: der Norden, der Osten, der Süden, der Westen.", "ex": ["Wie heißen die vier Himmelsrichtungen?", "Bốn hướng tên là gì?"]},
+        {"id": "schlecht", "de": "schlecht", "kind": "word", "emoji": "👎", "vi": "xấu, tệ", "syl": "SCHLECHT", "note": "Đối nghĩa: gut. sch đọc „sh“; ch sau e đọc „xì“ nhẹ.", "ex": ["Am Wochenende ist das Wetter schlecht.", "Cuối tuần thời tiết xấu."]},
+        {"id": "wetterbericht", "de": "Wetterbericht", "art": "der", "pl": "Wetterberichte", "kind": "noun", "emoji": "📰", "vi": "bản tin thời tiết", "syl": "WET·ter·be·richt", "note": "Wetter + Bericht (bản tin). Từ ghép lấy giống của từ cuối: der Bericht → der Wetterbericht.", "ex": ["Der Wetterbericht ist kurz.", "Bản tin thời tiết ngắn."]},
+        {"id": "radio", "de": "Radio", "art": "das", "pl": "Radios", "kind": "noun", "emoji": "📻", "vi": "radio", "syl": "RA·dio", "en": "≈ radio", "note": "Nhấn âm đầu. im Radio = trên radio.", "ex": ["Papa hört Radio.", "Bố nghe radio."]},
+        {"id": "internet", "de": "Internet", "art": "das", "kind": "noun", "emoji": "🌐", "vi": "internet", "syl": "IN·ter·net", "en": "≈ Internet", "note": "Nhấn âm đầu. im Internet = trên internet; im Internet surfen = lướt web.", "ex": ["Das Wetter finde ich im Internet.", "Thời tiết tôi xem trên internet."]},
+        {"id": "sonnig", "de": "sonnig", "kind": "word", "emoji": "🌞", "vi": "nắng", "syl": "SON·nig", "note": "Từ die Sonne. -ig cuối từ đọc „-ich“.", "ex": ["Morgen ist es sonnig.", "Ngày mai trời nắng."]},
+        {"id": "morgen-adv", "de": "morgen", "kind": "word", "vi": "ngày mai", "syl": "MOR·gen", "note": "Viết thường: „ngày mai“. Khác với der Morgen (buổi sáng) ở Lektion 5.", "ex": ["Morgen regnet es.", "Ngày mai trời mưa."]},
+        {"id": "steigen", "de": "steigen", "kind": "verb", "forms": "ich steige · du steigst · er/sie steigt", "emoji": "📈", "vi": "tăng lên; leo lên", "syl": "STEI·gen", "note": "ei đọc „ai“, st- đọc „sht“. Trong dự báo: Die Temperaturen steigen = nhiệt độ tăng.", "ex": ["Am Mittag steigen die Temperaturen.", "Buổi trưa nhiệt độ tăng."]},
+        {"id": "ueberall", "de": "überall", "kind": "word", "vi": "ở khắp nơi", "syl": "Ü·ber·all", "note": "ü: chu môi như nói „u“ nhưng đặt lưỡi như nói „i“.", "ex": ["Heute ist es überall kalt.", "Hôm nay ở đâu cũng lạnh."]},
+        {"id": "temperatur", "de": "Temperatur", "art": "die", "pl": "Temperaturen", "kind": "noun", "emoji": "🌡️", "vi": "nhiệt độ", "syl": "Tem·pe·ra·TUR", "note": "Nhấn âm cuối. Đuôi -ur → die: die Temperatur, die Natur.", "ex": ["Im Süden steigt die Temperatur.", "Ở phía nam nhiệt độ tăng."]},
+        {"id": "regen", "de": "Regen", "art": "der", "kind": "noun", "emoji": "☔", "vi": "cơn mưa", "syl": "RE·gen", "note": "Danh từ của regnen. Không có số nhiều. e dài.", "ex": ["Heute gibt es viel Regen.", "Hôm nay mưa nhiều."]},
+        {"id": "schnee", "de": "Schnee", "art": "der", "kind": "noun", "emoji": "⛄", "vi": "tuyết", "syl": "SCHNEE", "note": "Danh từ của schneien. ee đọc „ê“ dài. Không có số nhiều.", "ex": ["Morgen gibt es viel Schnee.", "Ngày mai có nhiều tuyết."]},
+        {"id": "wind", "de": "Wind", "art": "der", "pl": "Winde", "kind": "noun", "emoji": "🌬️", "vi": "gió", "syl": "WIND", "note": "w đọc „v“. Tính từ: windig. Số nhiều ít dùng.", "ex": ["Am Abend gibt es viel Wind.", "Buổi tối có nhiều gió."]},
+        {"id": "bleiben", "de": "bleiben", "kind": "verb", "forms": "ich bleibe · du bleibst · er/sie bleibt", "vi": "ở lại; vẫn (giữ nguyên)", "syl": "BLEI·ben", "note": "ei đọc „ai“. Với thời tiết: Das Wetter bleibt schön = Thời tiết vẫn đẹp.", "ex": ["Das Wetter bleibt auch morgen gut.", "Ngày mai thời tiết vẫn tốt."]},
+        {"id": "minus", "de": "minus", "kind": "word", "emoji": "➖", "vi": "âm (dưới 0)", "syl": "MI·nus", "note": "minus fünf Grad = −5 °C. Cũng có thể nói: fünf Grad unter Null.", "ex": ["Heute sind es minus drei Grad.", "Hôm nay âm 3 độ."]},
+        {"id": "plus", "de": "plus", "kind": "word", "emoji": "➕", "vi": "dương (trên 0)", "note": "plus acht Grad = +8 °C. Thường chỉ cần nói: acht Grad.", "ex": ["Morgen sind es plus acht Grad.", "Ngày mai +8 độ."]},
+        {"id": "heiss", "de": "heiß", "kind": "word", "emoji": "🥵", "vi": "nóng", "syl": "HEISS", "note": "ß = „ss“, ei = „ai“. Thang: sehr kalt – kalt – warm – heiß – sehr heiß.", "ex": ["Heute ist es sehr heiß.", "Hôm nay trời rất nóng."]}
+      ]
+    },
+    {
+      "id": "c", "title": "Gọi món và Akkusativ", "session": "3",
+      "items": [
+        {"id": "speisekarte", "de": "Speisekarte", "art": "die", "pl": "Speisekarten", "kind": "noun", "emoji": "📋", "vi": "thực đơn", "syl": "SPEI·se·kar·te", "note": "Speise (món ăn) + Karte (tấm thẻ). sp- đọc „shp“; s giữa hai nguyên âm đọc „z“.", "ex": ["Die Speisekarte ist hier.", "Thực đơn đây ạ."]},
+        {"id": "speise", "de": "Speise", "art": "die", "pl": "Speisen", "kind": "noun", "emoji": "🍽️", "vi": "món ăn", "syl": "SPEI·se", "note": "Kleine Speisen = các món nhỏ, ăn nhẹ. Trang trọng hơn das Essen.", "ex": ["Die Speisen sind nicht teuer.", "Các món ăn không đắt."]},
+        {"id": "imbiss", "de": "Imbiss", "art": "der", "pl": "Imbisse", "kind": "noun", "emoji": "🍢", "vi": "quầy / quán ăn nhanh", "syl": "IM·biss", "note": "Nơi bán xúc xích, khoai tây chiên, hamburger… Cũng có nghĩa „bữa ăn nhẹ“. ss vì nguyên âm i ngắn.", "ex": ["Der Imbiss ist nicht teuer.", "Quán ăn nhanh không đắt."]},
+        {"id": "ketchup", "de": "Ketchup", "art": "der", "pl": "Ketchups", "kind": "noun", "vi": "tương cà", "syl": "KET·chup", "note": "Cả der Ketchup lẫn das Ketchup đều đúng (ở đây dùng der). Đọc gần như tiếng Anh: „KÉT-chấp“.", "ex": ["Die Pommes sind gut mit Ketchup.", "Khoai chiên ngon với tương cà."]},
+        {"id": "hamburger", "de": "Hamburger", "art": "der", "pl": "Hamburger", "kind": "noun", "emoji": "🍔", "vi": "bánh hamburger", "syl": "HAM·bur·ger", "note": "Đuôi -er nhẹ như „a“: „HAM-bur-ga“.", "ex": ["Der Hamburger kostet fünf Euro.", "Bánh hamburger giá 5 euro."]},
+        {"id": "schinken", "de": "Schinken", "art": "der", "pl": "Schinken", "kind": "noun", "emoji": "🍖", "vi": "giăm bông", "syl": "SCHIN·ken", "note": "sch đọc „sh“.", "ex": ["Ich esse Brot mit Schinken.", "Tôi ăn bánh mì với giăm bông."]},
+        {"id": "dessert", "de": "Dessert", "art": "das", "pl": "Desserts", "kind": "noun", "emoji": "🍮", "vi": "món tráng miệng", "syl": "de·SERT", "en": "≈ dessert", "note": "Từ gốc Pháp: nhấn âm cuối, đọc „đe-XÊR“; chữ t cuối không đọc.", "ex": ["Zum Dessert gibt es Eis.", "Tráng miệng có kem."]},
+        {"id": "nehmen", "de": "nehmen", "kind": "verb", "forms": "ich nehme · du nimmst · er/sie nimmt", "emoji": "🤲", "vi": "lấy; chọn (món)", "syl": "NEH·men", "note": "e → i và m gấp đôi: du nimmst, er/sie nimmt. Gọi món: Ich nehme … Hỏi: Was nimmst du?", "ex": ["Ich nehme eine Suppe.", "Tôi lấy một món súp."]},
+        {"id": "kartoffelsalat", "de": "Kartoffelsalat", "art": "der", "pl": "Kartoffelsalate", "kind": "noun", "vi": "salad khoai tây", "syl": "Kar·TOF·fel·sa·lat", "note": "Kartoffel + Salat. Từ ghép lấy giống của từ cuối: der Salat → der Kartoffelsalat. Nhấn ở thành phần đầu.", "ex": ["Würstchen mit Kartoffelsalat schmecken gut.", "Xúc xích với salad khoai tây ngon."]},
+        {"id": "apfelsaft", "de": "Apfelsaft", "art": "der", "pl": "Apfelsäfte", "kind": "noun", "emoji": "🍏", "vi": "nước ép táo", "syl": "AP·fel·saft", "note": "Apfel + Saft; giống của từ cuối: der Saft → der Apfelsaft. pf đọc liền: môi như „p“ rồi bật hơi „f“.", "ex": ["Der Apfelsaft ist kalt.", "Nước ép táo lạnh."]},
+        {"id": "orangensaft", "de": "Orangensaft", "art": "der", "pl": "Orangensäfte", "kind": "noun", "emoji": "🍊", "vi": "nước cam ép", "syl": "o·RAN·gen·saft", "note": "Orange + n + Saft (chen thêm -n- cho dễ đọc). der Saft → der Orangensaft.", "ex": ["Der Orangensaft kostet zwei Euro vierzig.", "Nước cam ép giá 2,40 euro."]},
+        {"id": "schokoladenkuchen", "de": "Schokoladenkuchen", "art": "der", "pl": "Schokoladenkuchen", "kind": "noun", "emoji": "🧁", "vi": "bánh sô-cô-la", "syl": "scho·ko·LA·den·ku·chen", "note": "Schokolade + n + Kuchen; der Kuchen → der Schokoladenkuchen. Từ ghép dài: cứ cắt theo từng phần.", "ex": ["Der Schokoladenkuchen ist sehr gut.", "Bánh sô-cô-la rất ngon."]},
+        {"id": "eis", "de": "Eis", "art": "das", "kind": "noun", "emoji": "🍦", "vi": "kem; băng, đá", "syl": "EIS", "note": "ei đọc „ai“. Eis = kem (ăn) và cũng là băng, đá.", "ex": ["Zum Dessert esse ich ein Eis.", "Tráng miệng tôi ăn một cây kem."]},
+        {"id": "einkaufsliste", "de": "Einkaufsliste", "art": "die", "pl": "Einkaufslisten", "kind": "noun", "emoji": "📝", "vi": "danh sách đi chợ", "syl": "EIN·kaufs·lis·te", "note": "einkaufen + Liste; Einkaufs- có thêm -s- nối. Đuôi -e → thường là die.", "ex": ["Ich schreibe eine Einkaufsliste.", "Tôi viết một danh sách đi chợ."]},
+        {"id": "dabeihaben", "de": "dabeihaben", "kind": "verb", "forms": "ich habe … dabei · du hast … dabei · er/sie hat … dabei", "vi": "mang theo; có trong người", "syl": "da·BEI·ha·ben", "note": "Động từ tách như ở Lektion 5: dabei|haben. Tiền tố dabei đứng cuối câu: Hast du das Brot dabei?", "ex": ["Hast du das Brot dabei?", "Bạn có mang bánh mì không?"]},
+        {"id": "was-nimmst-du", "de": "Was nimmst du? / Was nehmen Sie?", "say": "Was nimmst du? Was nehmen Sie?", "ans": "Was nimmst du", "kind": "phrase", "vi": "Bạn lấy gì? (du / Sie)"},
+        {"id": "ich-nehme", "de": "Ich nehme …", "kind": "phrase", "vi": "Tôi lấy … / Tôi chọn …", "ex": ["Ich nehme den Hamburger und einen Saft.", "Tôi lấy bánh hamburger và một nước ép."]}
+      ]
+    },
+    {
+      "id": "d", "title": "Đồng ý, phản bác, möchten", "session": "4",
+      "items": [
+        {"id": "moechten", "de": "möchten", "kind": "verb", "forms": "ich möchte · du möchtest · er/sie möchte", "emoji": "🙋", "vi": "muốn (lịch sự)", "syl": "MÖCH·ten", "note": "Chia đặc biệt: ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten. ich và er/sie giống nhau (không có -t). ö + ch: „xì“ nhẹ.", "ex": ["Ich möchte einen Kaffee.", "Tôi muốn một ly cà phê."]},
+        {"id": "lieber", "de": "lieber", "kind": "word", "vi": "thích hơn", "syl": "LIE·ber", "note": "Dạng so sánh của gern: gern → lieber (thích hơn). ie đọc „i“ dài.", "ex": ["Ich trinke lieber Tee.", "Tôi thích uống trà hơn."]},
+        {"id": "freund", "de": "Freund", "art": "der", "pl": "Freunde", "kind": "noun", "emoji": "🧑‍🤝‍🧑", "vi": "người bạn (nam); bạn trai", "syl": "FREUND", "note": "eu đọc „oi“: „froint“. Số nhiều die Freunde: nhóm bạn, có thể cả nam lẫn nữ.", "ex": ["Das ist mein Freund Tim.", "Đây là bạn tôi, Tim."]},
+        {"id": "freundin", "de": "Freundin", "art": "die", "pl": "Freundinnen", "kind": "noun", "emoji": "👭", "vi": "người bạn (nữ); bạn gái", "syl": "FREUN·din", "note": "Thêm -in cho nữ; số nhiều thêm -nen: die Freundinnen.", "ex": ["Das ist meine Freundin Lena.", "Đây là bạn tôi, Lena."]},
+        {"id": "vielleicht", "de": "vielleicht", "kind": "word", "vi": "có lẽ, có thể", "syl": "viel·LEICHT", "note": "v đọc „f“: „fi-LAIKHT“ (ei = ai; cht = „xt“). Dùng khi chưa chắc chắn.", "ex": ["Vielleicht regnet es morgen.", "Có thể ngày mai trời mưa."]},
+        {"id": "idee", "de": "Idee", "art": "die", "pl": "Ideen", "kind": "noun", "emoji": "💡", "vi": "ý tưởng", "syl": "i·DEE", "en": "≈ idea", "note": "Nhấn âm cuối; ee đọc „ê“ dài. Gute Idee! = Ý hay!", "ex": ["Das ist eine gute Idee!", "Đó là một ý hay!"]},
+        {"id": "problem", "de": "Problem", "art": "das", "pl": "Probleme", "kind": "noun", "emoji": "⚠️", "vi": "vấn đề, rắc rối", "syl": "pro·BLEM", "en": "≈ problem", "note": "Nhấn âm cuối. Kein Problem! = Không sao! / Không vấn đề gì!", "ex": ["Ich habe ein Problem.", "Tôi có một vấn đề."]},
+        {"id": "hund", "de": "Hund", "art": "der", "pl": "Hunde", "kind": "noun", "emoji": "🐶", "vi": "con chó", "syl": "HUND", "note": "d cuối đọc „t“: „hunt“. Đừng nhầm: der Hund (chó) ≠ der Hunger (cơn đói).", "ex": ["Ich habe einen Hund.", "Tôi có một con chó."]},
+        {"id": "mehr", "de": "mehr", "kind": "word", "vi": "nữa, thêm", "syl": "MEHR", "note": "kein … mehr / nicht mehr = không còn … nữa. e dài.", "ex": ["Wir haben keinen Saft mehr.", "Chúng ta không còn nước ép nữa."]},
+        {"id": "natuerlich", "de": "natürlich", "kind": "word", "vi": "tất nhiên", "syl": "na·TÜR·lich", "note": "Từ die Natur. ü chu môi; -lich đọc „-lịch(xì)“. Trả lời nhanh: Natürlich! / Klar!", "ex": ["Kommst du? – Natürlich!", "Bạn đến chứ? – Tất nhiên!"]},
+        {"id": "klar", "de": "klar", "kind": "word", "vi": "tất nhiên; rõ ràng", "note": "Ja, klar! = Ừ, tất nhiên! (thân mật).", "ex": ["Hast du Zeit? – Ja, klar!", "Bạn có thời gian không? – Ừ, tất nhiên!"]},
+        {"id": "kein-problem", "de": "Kein Problem!", "kind": "phrase", "vi": "Không sao đâu!", "ex": ["Entschuldigung! – Kein Problem!", "Xin lỗi! – Không sao đâu!"]},
+        {"id": "gute-idee", "de": "Gute Idee!", "kind": "phrase", "vi": "Ý hay đấy!", "ex": ["Machen wir ein Picknick? – Gute Idee!", "Mình đi dã ngoại nhé? – Ý hay đấy!"]},
+        {"id": "na-gut", "de": "Na gut.", "kind": "phrase", "vi": "Thôi được / Ừ thì được.", "note": "Dùng khi hơi miễn cưỡng đồng ý.", "ex": ["Na gut, dann nehme ich den Salat.", "Thôi được, vậy tôi lấy món salad."]},
+        {"id": "ach-nein", "de": "Ach nein.", "kind": "phrase", "vi": "Ôi không. / Ồ không.", "ex": ["Ach nein, es regnet!", "Ôi không, trời mưa rồi!"]},
+        {"id": "ich-weiss-nicht", "de": "Ich weiß nicht.", "kind": "phrase", "vi": "Tôi không biết. / Tôi chưa biết.", "ex": ["Was nimmst du? – Ich weiß nicht.", "Bạn lấy gì? – Tôi chưa biết."]},
+        {"id": "moment-mal", "de": "Moment mal!", "kind": "phrase", "vi": "Khoan đã! / Đợi chút!", "ex": ["Moment mal, wo ist mein Handy?", "Khoan đã, điện thoại của tôi đâu?"]},
+        {"id": "na-prima", "de": "Na prima!", "kind": "phrase", "vi": "Tuyệt quá!", "ex": ["Das Wetter bleibt gut. – Na prima!", "Thời tiết vẫn tốt. – Tuyệt quá!"]}
+      ]
+    },
+    {
+      "id": "d2", "title": "Thêm: bài hát Wir sind nicht allein", "session": "4", "bonus": true,
+      "items": [
+        {"id": "lied", "de": "Lied", "art": "das", "pl": "Lieder", "kind": "noun", "emoji": "🎶", "vi": "bài hát", "syl": "LIED", "note": "ie đọc „i“ dài; d cuối đọc „t“: „lít“.", "ex": ["Ich höre gern ein Lied.", "Tôi thích nghe một bài hát."]},
+        {"id": "verein", "de": "Verein", "art": "der", "pl": "Vereine", "kind": "noun", "emoji": "🤝", "vi": "hội, câu lạc bộ (có đăng ký)", "syl": "ver·EIN", "note": "Ở Đức rất nhiều người ở trong một Verein: Fußballverein, Schachverein, Gesangverein…", "ex": ["Mein Bruder ist im Fußballverein.", "Anh tôi ở trong câu lạc bộ bóng đá."]},
+        {"id": "allein", "de": "allein", "kind": "word", "vi": "một mình", "syl": "al·LEIN", "note": "ei đọc „ai“. Tên bài hát: Wir sind nicht allein = chúng ta không đơn độc.", "ex": ["Ich bin nicht allein.", "Tôi không đơn độc."]}
+      ]
+    },
+    {
+      "id": "e", "title": "Freizeit và sở thích", "session": "5",
+      "items": [
+        {"id": "freizeit", "de": "Freizeit", "art": "die", "kind": "noun", "emoji": "🛋️", "vi": "thời gian rảnh", "syl": "FREI·zeit", "note": "frei (rảnh, tự do) + Zeit. ei = „ai“, z = „ts“: „FRAI-tsait“. Không có số nhiều. in der Freizeit = trong thời gian rảnh.", "ex": ["Was machst du in der Freizeit?", "Bạn làm gì trong thời gian rảnh?"]},
+        {"id": "hobby", "de": "Hobby", "art": "das", "pl": "Hobbys", "kind": "noun", "emoji": "🎨", "vi": "sở thích", "syl": "HOB·by", "en": "≈ hobby", "note": "Số nhiều: die Hobbys (không phải Hobbies).", "ex": ["Mein Hobby ist Fotografieren.", "Sở thích của tôi là chụp ảnh."]},
+        {"id": "schwimmen", "de": "schwimmen", "kind": "verb", "forms": "ich schwimme · du schwimmst · er/sie schwimmt", "emoji": "🏊", "vi": "bơi", "syl": "SCHWIM·men", "note": "schw- đọc „shv“: „SHVIM-men“.", "ex": ["Wir schwimmen am Wochenende.", "Cuối tuần chúng tôi đi bơi."]},
+        {"id": "tanzen", "de": "tanzen", "kind": "verb", "forms": "ich tanze · du tanzt · er/sie tanzt", "emoji": "💃", "vi": "nhảy, khiêu vũ", "syl": "TAN·zen", "note": "z đọc „ts“: „TAN-tsen“. Thân từ đã có z nên du tanzt (không thêm s).", "ex": ["Lili tanzt sehr gern.", "Lili rất thích nhảy."]},
+        {"id": "grillen", "de": "grillen", "kind": "verb", "forms": "ich grille · du grillst · er/sie grillt", "emoji": "🍗", "vi": "nướng (BBQ)", "syl": "GRIL·len", "note": "Cùng họ: der Grill. Wir grillen = chúng tôi nướng thịt ngoài trời.", "ex": ["Am Samstag grillen wir im Garten.", "Thứ Bảy chúng tôi nướng thịt trong vườn."]},
+        {"id": "surfen", "de": "surfen", "kind": "verb", "forms": "ich surfe · du surfst · er/sie surft", "emoji": "🏄", "vi": "lướt sóng; lướt web", "syl": "SUR·fen", "note": "Từ mượn tiếng Anh, đọc gần „SƠR-phần“. im Internet surfen = lướt web.", "ex": ["Ich surfe im Internet.", "Tôi lướt web."]},
+        {"id": "ski", "de": "Ski", "art": "der", "pl": "Skier", "kind": "noun", "emoji": "⛷️", "vi": "ván trượt tuyết", "note": "Đọc „shi“ (sch + i dài), không phải „ski“. Ski fahren = trượt tuyết. Số nhiều: die Skier.", "ex": ["Papa fährt gern Ski.", "Bố thích trượt tuyết."]},
+        {"id": "spass", "de": "Spaß", "art": "der", "kind": "noun", "emoji": "😄", "vi": "niềm vui", "syl": "SPASS", "note": "sp- đọc „shp“, ß = „ss“. Das macht Spaß! = Cái đó vui lắm!", "ex": ["Tanzen macht Spaß!", "Nhảy múa vui lắm!"]},
+        {"id": "klub", "de": "Klub", "art": "der", "pl": "Klubs", "kind": "noun", "emoji": "🎪", "vi": "câu lạc bộ", "syl": "KLUB", "note": "Cũng viết: der Club.", "ex": ["Der Klub ist am Samstag geöffnet.", "Câu lạc bộ mở cửa vào thứ Bảy."]},
+        {"id": "krimi", "de": "Krimi", "art": "der", "pl": "Krimis", "kind": "noun", "emoji": "🕵️", "vi": "truyện / phim trinh thám", "syl": "KRI·mi", "note": "Rút gọn từ Kriminalroman / Kriminalfilm.", "ex": ["Ich lese gern Krimis.", "Tôi thích đọc truyện trinh thám."]},
+        {"id": "roman", "de": "Roman", "art": "der", "pl": "Romane", "kind": "noun", "emoji": "📖", "vi": "tiểu thuyết", "syl": "ro·MAN", "note": "Nhấn âm cuối: „rô-MAN“.", "ex": ["Sie liest gern Romane.", "Cô ấy thích đọc tiểu thuyết."]},
+        {"id": "toll", "de": "toll", "kind": "word", "emoji": "🤩", "vi": "tuyệt, hay", "note": "Thân mật, như super. Ich finde … toll = Tôi thấy … tuyệt.", "ex": ["Ich finde Tanzen toll.", "Tôi thấy nhảy múa tuyệt."]},
+        {"id": "interessant", "de": "interessant", "kind": "word", "emoji": "🧐", "vi": "thú vị", "syl": "in·te·res·SANT", "en": "≈ interesting", "note": "Nhấn âm cuối.", "ex": ["Ich finde Krimis interessant.", "Tôi thấy truyện trinh thám thú vị."]},
+        {"id": "berg", "de": "Berg", "art": "der", "pl": "Berge", "kind": "noun", "emoji": "⛰️", "vi": "ngọn núi", "syl": "BERG", "note": "g cuối đọc „k“: „bérk“. die Berge = vùng núi.", "ex": ["Die Berge sind schön.", "Những ngọn núi đẹp."]},
+        {"id": "total", "de": "total", "kind": "word", "vi": "hoàn toàn; cực kỳ (thân mật)", "syl": "to·TAL", "note": "Văn nói: total gern = cực kỳ thích; total toll.", "ex": ["Das finde ich total interessant.", "Cái đó tôi thấy cực kỳ thú vị."]},
+        {"id": "lieblings", "de": "Lieblings-", "kind": "word", "vi": "… yêu thích (đứng đầu từ ghép)", "syl": "LIEB·lings", "note": "Lieblings + danh từ, giống theo danh từ cuối: der Lieblingsfilm, das Lieblingsbuch, die Lieblingsmusik, die Lieblingsfarbe, das Lieblingsessen.", "ex": ["Meine Lieblingsfarbe ist Blau.", "Màu yêu thích của tôi là xanh dương."]},
+        {"id": "singen", "de": "singen", "kind": "verb", "forms": "ich singe · du singst · er/sie singt", "emoji": "🎤", "vi": "hát", "syl": "SIN·gen", "note": "ng đọc như „ng“ tiếng Việt.", "ex": ["Wir singen gern zusammen.", "Chúng tôi thích hát cùng nhau."]},
+        {"id": "freunde-treffen", "de": "Freunde treffen", "kind": "phrase", "vi": "gặp bạn bè", "note": "treffen (e → i): ich treffe, du triffst, er/sie trifft — đã gặp ở Lektion 5.", "ex": ["Am Wochenende treffe ich Freunde.", "Cuối tuần tôi gặp bạn bè."]},
+        {"id": "mein-hobby-ist", "de": "Mein Hobby ist … / Meine Hobbys sind …", "kind": "phrase", "vi": "Sở thích của tôi là …", "ex": ["Meine Hobbys sind Lesen und Schwimmen.", "Sở thích của tôi là đọc sách và bơi."]},
+        {"id": "was-sind-deine-hobbys", "de": "Was sind deine Hobbys? / Was sind Ihre Hobbys?", "say": "Was sind deine Hobbys? Was sind Ihre Hobbys?", "ans": "Was sind deine Hobbys", "kind": "phrase", "vi": "Sở thích của bạn là gì? (du / Sie)"},
+        {"id": "das-macht-spass", "de": "Das macht Spaß!", "kind": "phrase", "vi": "Cái đó vui lắm!", "ex": ["Fotografieren macht Spaß!", "Chụp ảnh vui lắm!"]},
+        {"id": "ich-finde-toll", "de": "Ich finde … toll / super / interessant.", "say": "Ich finde Krimis toll.", "kind": "phrase", "vi": "Tôi thấy … tuyệt / siêu / thú vị.", "ex": ["Ich finde Wandern super.", "Tôi thấy đi bộ đường dài rất tuyệt."]}
+      ]
+    },
+    {
+      "id": "f", "title": "Reiseland D-A-CH", "session": "6",
+      "items": [
+        {"id": "herbst", "de": "Herbst", "art": "der", "pl": "Herbste", "kind": "noun", "emoji": "🍂", "vi": "mùa thu", "syl": "HERBST", "note": "Đọc liền: „hépst“ (b → p).", "ex": ["Im Herbst regnet es oft.", "Mùa thu trời hay mưa."]},
+        {"id": "winter", "de": "Winter", "art": "der", "pl": "Winter", "kind": "noun", "emoji": "🧣", "vi": "mùa đông", "syl": "WIN·ter", "en": "≈ winter", "note": "w đọc „v“: „VIN-ta“.", "ex": ["Im Winter ist es kalt.", "Mùa đông trời lạnh."]},
+        {"id": "sommer", "de": "Sommer", "art": "der", "pl": "Sommer", "kind": "noun", "emoji": "🏖️", "vi": "mùa hè", "syl": "SOM·mer", "en": "≈ summer", "ex": ["Im Sommer ist es warm.", "Mùa hè trời ấm."]},
+        {"id": "fruehling", "de": "Frühling", "art": "der", "pl": "Frühlinge", "kind": "noun", "emoji": "🌸", "vi": "mùa xuân", "syl": "FRÜH·ling", "note": "früh (sớm) + -ling. Cũng nói: das Frühjahr. ü dài.", "ex": ["Im Frühling steigen die Temperaturen.", "Mùa xuân nhiệt độ tăng."]},
+        {"id": "jahreszeit", "de": "Jahreszeit", "art": "die", "pl": "Jahreszeiten", "kind": "noun", "emoji": "🗓️", "vi": "mùa (trong năm)", "syl": "JAH·res·zeit", "note": "Jahr (năm) + s + Zeit. z đọc „ts“.", "ex": ["Welche Jahreszeit ist das?", "Đây là mùa nào?"]},
+        {"id": "reise", "de": "Reise", "art": "die", "pl": "Reisen", "kind": "noun", "emoji": "🧳", "vi": "chuyến du lịch", "syl": "REI·se", "note": "ei = „ai“, s giữa nguyên âm = „z“: „RAI-zơ“. Reiseland = đất nước để du lịch.", "ex": ["Die Reise nach Wien ist toll.", "Chuyến đi Wien tuyệt vời."]},
+        {"id": "urlaub", "de": "Urlaub", "art": "der", "pl": "Urlaube", "kind": "noun", "emoji": "🌴", "vi": "kỳ nghỉ", "syl": "UR·laub", "note": "au = „ao“; b cuối đọc „p“. Urlaub machen = đi nghỉ. Thường dùng số ít.", "ex": ["Im Sommer machen wir Urlaub.", "Mùa hè chúng tôi đi nghỉ."]},
+        {"id": "wunderbar", "de": "wunderbar", "kind": "word", "emoji": "🌈", "vi": "tuyệt vời", "syl": "WUN·der·bar", "note": "w đọc „v“. Wunder (điều kỳ diệu) + -bar. Giống: toll, super.", "ex": ["Das Wetter ist wunderbar!", "Thời tiết tuyệt vời!"]},
+        {"id": "natur", "de": "Natur", "art": "die", "kind": "noun", "emoji": "🌳", "vi": "thiên nhiên", "syl": "na·TUR", "note": "Nhấn âm cuối (đuôi -ur → die). Không có số nhiều.", "ex": ["Ich wandere gern in der Natur.", "Tôi thích đi bộ trong thiên nhiên."]},
+        {"id": "nord", "de": "Nord- / Ost- / Süd- / West-", "kind": "word", "vi": "Bắc- / Đông- / Nam- / Tây- (đứng đầu từ ghép)", "note": "Viết liền: Norddeutschland (miền bắc nước Đức), Süddeutschland, Ostdeutschland, Westdeutschland.", "ex": ["Hamburg liegt in Norddeutschland.", "Hamburg nằm ở miền bắc nước Đức."]},
+        {"id": "windsurfen", "de": "windsurfen", "kind": "verb", "forms": "ich windsurfe · du windsurfst · er/sie windsurft", "vi": "lướt ván buồm", "syl": "WIND·sur·fen", "note": "Wind + surfen. w đọc „v“.", "ex": ["Mein Bruder windsurft gern.", "Anh tôi thích lướt ván buồm."]},
+        {"id": "segeln", "de": "segeln", "kind": "verb", "forms": "ich segle · du segelst · er/sie segelt", "emoji": "⛵", "vi": "đi thuyền buồm", "syl": "SE·geln", "note": "Thân từ có -eln: ich segle (bỏ e), du segelst, er segelt.", "ex": ["Im Urlaub segeln wir.", "Trong kỳ nghỉ chúng tôi đi thuyền buồm."]},
+        {"id": "programm", "de": "Programm", "art": "das", "pl": "Programme", "kind": "noun", "emoji": "📅", "vi": "chương trình", "syl": "pro·GRAMM", "en": "≈ program", "note": "Nhấn âm cuối; mm đọc một âm m ngắn. Cũng là chương trình truyền hình, phần mềm.", "ex": ["Was ist das Programm für morgen?", "Chương trình ngày mai là gì?"]},
+        {"id": "mitte", "de": "Mitte", "art": "die", "kind": "noun", "emoji": "🎯", "vi": "ở giữa, trung tâm", "syl": "MIT·te", "note": "in der Mitte = ở giữa. Không có số nhiều.", "ex": ["In der Mitte von Deutschland gibt es viele Wälder.", "Ở giữa nước Đức có nhiều rừng."]},
+        {"id": "moeglichkeit", "de": "Möglichkeit", "art": "die", "pl": "Möglichkeiten", "kind": "noun", "emoji": "🔀", "vi": "khả năng; lựa chọn", "syl": "MÖG·lich·keit", "note": "Đuôi -keit → luôn là die. ö dài; -keit đọc „kait“. Freizeitmöglichkeiten = các lựa chọn cho thời gian rảnh.", "ex": ["Es gibt viele Möglichkeiten.", "Có nhiều lựa chọn."]},
+        {"id": "angebot", "de": "Angebot", "art": "das", "pl": "Angebote", "kind": "noun", "emoji": "🏷️", "vi": "ưu đãi; những gì được cung cấp", "syl": "AN·ge·bot", "note": "Trong du lịch: Angebote für Wanderer = các hoạt động dành cho người đi bộ. Khi mua sắm: ưu đãi.", "ex": ["Im Winter gibt es viele Angebote.", "Mùa đông có nhiều ưu đãi / hoạt động."]},
+        {"id": "mountainbike", "de": "Mountainbike", "art": "das", "pl": "Mountainbikes", "kind": "noun", "emoji": "🚵", "vi": "xe đạp địa hình", "syl": "MOUN·tain·bike", "en": "≈ mountain bike", "note": "Từ mượn tiếng Anh. Mountainbike fahren.", "ex": ["Ich fahre gern Mountainbike.", "Tôi thích đi xe đạp địa hình."]},
+        {"id": "klettern", "de": "klettern", "kind": "verb", "forms": "ich klettere · du kletterst · er/sie klettert", "emoji": "🧗", "vi": "leo trèo, leo vách đá", "syl": "KLET·tern", "note": "Thân từ có -ern: ich klettere. Bergsteigen = leo núi; klettern = trèo vách đá.", "ex": ["Wir klettern am Wochenende.", "Cuối tuần chúng tôi leo vách đá."]},
+        {"id": "insel", "de": "Insel", "art": "die", "pl": "Inseln", "kind": "noun", "emoji": "🏝️", "vi": "hòn đảo", "syl": "IN·sel", "note": "I ngắn, s đọc „z“: „IN-zel“.", "ex": ["Malta ist eine Insel.", "Malta là một hòn đảo."]},
+        {"id": "oft", "de": "oft", "kind": "word", "vi": "thường, hay", "note": "Mức độ: immer > oft > manchmal.", "ex": ["Im Herbst regnet es oft.", "Mùa thu trời hay mưa."]},
+        {"id": "wald", "de": "Wald", "art": "der", "pl": "Wälder", "kind": "noun", "emoji": "🌲", "vi": "rừng", "syl": "WALD", "note": "w đọc „v“; d cuối đọc „t“. Số nhiều: die Wälder (a → ä).", "ex": ["Wir wandern gern im Wald.", "Chúng tôi thích đi bộ trong rừng."]},
+        {"id": "alpen", "de": "Alpen", "art": "die", "plOnly": true, "kind": "noun", "emoji": "🏔️", "vi": "dãy Alpen", "syl": "AL·pen", "note": "Chỉ có số nhiều: die Alpen. Chạy qua miền nam nước Đức, Áo và Thụy Sĩ.", "ex": ["Die Alpen sind im Süden.", "Dãy Alpen ở phía nam."]},
+        {"id": "dach", "de": "D-A-CH", "kind": "word", "vi": "Đức – Áo – Thụy Sĩ (viết tắt)", "note": "D = Deutschland, A = Österreich, CH = die Schweiz. Đọc như từ „Dach“ (mái nhà): „DAKH“.", "ex": ["D-A-CH sind drei Länder.", "D-A-CH là ba nước."]}
+      ]
+    },
+    {
+      "id": "f2", "title": "Thêm: Fokus Beruf (lịch làm việc)", "session": "6", "bonus": true,
+      "items": [
+        {"id": "plan", "de": "Plan", "art": "der", "pl": "Pläne", "kind": "noun", "emoji": "🗒️", "vi": "kế hoạch, lịch làm việc", "syl": "PLAN", "note": "Tagesplan = kế hoạch trong ngày; Tourenplan = lịch các tuyến / ca đi làm.", "ex": ["Hier ist der Plan für heute.", "Đây là kế hoạch cho hôm nay."]},
+        {"id": "aufgabe", "de": "Aufgabe", "art": "die", "pl": "Aufgaben", "kind": "noun", "emoji": "✅", "vi": "nhiệm vụ; bài tập", "syl": "AUF·ga·be", "note": "au = „ao“. Arbeitsauftrag / Aufgabe = nhiệm vụ công việc; ở trường: bài tập.", "ex": ["Meine Aufgabe ist: Kunden anrufen.", "Nhiệm vụ của tôi là gọi điện cho khách hàng."]},
+        {"id": "buero", "de": "Büro", "art": "das", "pl": "Büros", "kind": "noun", "emoji": "🏢", "vi": "văn phòng", "syl": "bü·RO", "note": "Nhấn âm cuối: „bü-RÔ“.", "ex": ["Frau Weber arbeitet im Büro.", "Bà Weber làm việc ở văn phòng."]},
+        {"id": "kunde", "de": "Kunde", "art": "der", "pl": "Kunden", "kind": "noun", "emoji": "🧑‍💼", "vi": "khách hàng (nam)", "syl": "KUN·de", "note": "Nữ: die Kundin. Số nhiều: die Kunden.", "ex": ["Der Kunde ruft an.", "Khách hàng gọi điện."]},
+        {"id": "kundin", "de": "Kundin", "art": "die", "pl": "Kundinnen", "kind": "noun", "vi": "khách hàng (nữ)", "syl": "KUN·din", "ex": ["Die Kundin kauft ein Brot.", "Khách hàng nữ mua một ổ bánh mì."]}
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1", "no": 1, "minutes": 59, "set": "a",
+      "title": "Der Käsemann",
+      "vi": "Truyện ảnh tập 6, thời tiết cơ bản (Es regnet. Es ist kalt.), gern – nicht so gern – gar nicht gern",
+      "book": "Kursbuch tr. 70–72 · Arbeitsbuch tr. 63 (bài 1–2) · Lernwortschatz L6 (Foto-Hörgeschichte, phần A1)",
+      "goals": [
+        "Kể một chuyến đi chơi: <i>einen Ausflug machen, Auto fahren, wandern, ein Picknick machen, Gitarre spielen, fotografieren</i>.",
+        "Mô tả thời tiết: <i>Die Sonne scheint. Es regnet. Es schneit. Es ist kalt / warm / windig / bewölkt. Es sind 25 Grad.</i>",
+        "Hỏi và trả lời: <i>Wie ist das Wetter? – Gut. / Schön. / Nicht so gut.</i>",
+        "Nói mức độ thích: <i>sehr gern – gern – nicht so gern – gar nicht gern</i> và đặt danh từ sau gern: <i>Ich fahre gern Auto.</i>",
+        "Hiểu ý chính tập 6 của truyện ảnh („Der Käsemann“)."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: chuyến đi chơi và thời tiết", "minutes": 11,
+          "blocks": [
+            {"type": "words", "set": "a"},
+            {"type": "listenPick", "set": "a", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "a", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (23)", "minutes": 5,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "w đọc „v“, v đọc „f“", "vi": "<b>w</b> đọc „v“: <i>Wetter, Wolke, wandern, windig</i>. <b>v</b> trong từ gốc Đức lại đọc „f“: <i>vergessen, viele</i> — ngược với tiếng Việt, hãy chú ý! <i>Wetter</i> (thời tiết) ≠ <i>Vetter</i> (anh em họ).", "ex": ["Wetter|thời tiết", "wandern|đi bộ đường dài", "vergessen|quên", "viele|nhiều"]},
+                {"t": "ei = „ai“, ie = „i“ dài", "vi": "Mẹo cho người biết tiếng Anh: chữ <b>thứ hai</b> „đọc tên“ của nó. <b>ei</b>: chữ i, trong tiếng Anh đọc „ai“ → <i>scheinen</i> = „SHAI-nen“. <b>ie</b>: chữ e, trong tiếng Anh đọc „i“ → <i>viele</i> = „FI-lơ“.", "ex": ["scheinen|chiếu sáng", "schneien|tuyết rơi", "viele|nhiều", "fotografieren|chụp ảnh"]},
+                {"t": "Đuôi -ig, -er, -ern", "vi": "<b>-ig</b> cuối từ đọc „-ich“: <i>windig</i> = „VIN-đich“. <b>-er</b> cuối từ đọc nhẹ như „a“: <i>Wetter</i> = „VÉT-ta“. <b>-ern</b>: <i>wandern</i> = „VAN-đờn“.", "ex": ["windig|có gió", "Wetter|thời tiết", "wandern|đi bộ đường dài", "Gitarre|đàn ghi-ta"]},
+                {"t": "regnen và Picknick", "vi": "Trong <b>regnen</b> đọc rõ cả g lẫn n: „RÊG-nen“ (khác <i>rechnen</i> = tính toán, có „ch“). <b>ck</b> đọc „k“ ngắn: <i>Picknick</i> = „PICK-nick“.", "ex": ["regnen|mưa", "rechnen|tính toán", "Picknick|dã ngoại", "Nachricht|tin nhắn"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "Wetter", "opts": ["Wetter", "Vetter"]},
+                {"say": "viele", "opts": ["viele", "wiele"]},
+                {"say": "windig", "opts": ["windig", "findig"]},
+                {"say": "regnen", "opts": ["regnen", "rechnen"]},
+                {"say": "Wolke", "opts": ["Wolke", "Volke"]},
+                {"say": "scheinen", "opts": ["scheinen", "schinen"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "truyen", "title": "Truyện ảnh, tập 6: „Der Käsemann“", "minutes": 9,
+          "blocks": [
+            { "type": "book", "title": "Truyện ảnh, tập 6", "kb": "70–71", "tracks": "KB 2/27-34", "key": "Đáp án bài 1b và bài 3: giáo án <i>Unterrichtsplan L6</i>, trang 1.",
+              "steps": [
+                "Bài 1a — nhìn các ảnh ở trang 70–71 và ghép các cụm trong khung (<i>einen Ausflug machen, Auto fahren, wandern, Nachrichten schreiben, ein Picknick machen, Gitarre und Mundharmonika spielen, telefonieren, fotografieren</i>) với ảnh, rồi nói thành câu ngắn, ví dụ <i>Lili fotografiert.</i> Học một mình: chỉ vào ảnh và nói to.",
+                "Bài 1b — nhìn ảnh 4 và 5: thời tiết thế nào? (nắng, mưa hay nhiều mây). Câu trả lời nằm trong ô „Wie ist das Wetter?“",
+                "Bài 2 — nghe cả truyện (track 27–34) và nhìn ảnh theo. Câu hỏi của sách: <i>Was ist in der Dose?</i> (die Dose = cái hộp, thấy trên ảnh 2 và 6).",
+                "Bài 3 — nghe lại và đánh dấu đáp án đúng cho sáu câu a–f (thời tiết, ai quên gì, ai đói, ai muốn gì, Lara làm gì, mọi người thấy nơi đó thế nào).",
+                "Bài 4 — trả lời bằng lời: <i>Wandern Sie gern? Machen Sie gern Picknick? …</i> Phần <b>gern</b> ở dưới sẽ giúp bạn nói.",
+                "Tuỳ chọn: xem phim ngắn „Laras Film“ (mã QR ở cạnh ảnh 8): Lara quay lại chuyến đi và nói về thời tiết."
+              ]
+            },
+            { "type": "choice", "title": "Bạn hiểu truyện chưa?",
+              "items": [
+                {"q": "Wer macht einen Ausflug?", "opts": ["Familie Baumann und Lara", "Lara und Tim allein", "Sofia und der Deutschkurs"], "a": 0},
+                {"q": "Wer fährt das Auto?", "opts": ["Sofia", "Walter", "Tim"], "a": 0},
+                {"q": "Wer spielt Gitarre und Mundharmonika?", "opts": ["Walter", "Lili", "Lara"], "a": 0},
+                {"q": "Was macht Lara auf Foto 3?", "opts": ["Sie schreibt Nachrichten.", "Sie spielt Gitarre.", "Sie kocht."], "a": 0},
+                {"q": "Wie ist das Wetter beim Wandern (Foto 4)?", "opts": ["Es gibt viele Wolken.", "Es schneit.", "Es ist sehr heiß."], "a": 0, "why": "Nhìn ảnh 4 và nghe lại track 27–34."},
+                {"q": "Wer hat Hunger?", "opts": ["Lili", "Walter", "Tim"], "a": 0},
+                {"q": "Was vergisst Sofia?", "opts": ["Die Dose.", "Die Gitarre.", "Das Auto."], "a": 0},
+                {"q": "Wer bringt die Dose?", "opts": ["Tim", "Lara", "Walter"], "a": 0},
+                {"q": "Was ist in der Dose?", "opts": ["Käse", "Würstchen", "Kuchen"], "a": 0},
+                {"q": "Wie finden alle den Ausflug am Ende?", "opts": ["Schön.", "Nicht so gut.", "Schlecht."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wetter", "title": "Nói về thời tiết", "minutes": 10,
+          "blocks": [
+            {"type": "text", "html": "<p>Hầu hết câu về thời tiết bắt đầu bằng <b>es</b>: <i>Es regnet. Es schneit. Es ist kalt.</i> Chữ <i>es</i> không chỉ vật nào cả — giống tiếng Anh <i>It rains, It is cold</i>. Ngoại lệ: <i>Die Sonne scheint.</i> (chủ ngữ là <i>die Sonne</i>) và <i>Es gibt viele Wolken.</i> Nói nhiệt độ: <i>Es sind 25 Grad.</i> — dùng <b>sind</b>, vì „25 Grad“ là số nhiều.</p>"},
+            { "type": "table", "title": "Câu về thời tiết", "head": ["", "Câu", "Nghĩa"], "say": 1, "vi": "Hỏi: <i>Wie ist das Wetter?</i> Trả lời: <i>Gut. Die Sonne scheint.</i> / <i>Schön.</i> / <i>Nicht so gut. Es regnet.</i>",
+              "rows": [
+                ["☀️", "Die Sonne scheint.", "Trời nắng."],
+                ["🌧️", "Es regnet.", "Trời mưa."],
+                ["🌨️", "Es schneit.", "Tuyết rơi."],
+                ["💨", "Es ist windig.", "Trời có gió."],
+                ["🌥️", "Es ist bewölkt. / Es gibt viele Wolken.", "Trời nhiều mây."],
+                ["🥶", "Es ist kalt.", "Trời lạnh."],
+                ["🌤️", "Es ist warm.", "Trời ấm."],
+                ["🌡️", "Es sind 25 Grad.", "25 độ."]
+              ]
+            },
+            { "type": "choice", "title": "Hình nào – câu nào?",
+              "items": [
+                {"q": "☀️ Wie ist das Wetter?", "opts": ["Die Sonne scheint.", "Es regnet.", "Es schneit.", "Es ist kalt."], "a": 0},
+                {"q": "🌧️ Wie ist das Wetter?", "opts": ["Es regnet.", "Es schneit.", "Es ist windig.", "Die Sonne scheint."], "a": 0},
+                {"q": "🌨️ Wie ist das Wetter?", "opts": ["Es schneit.", "Es regnet.", "Es ist warm."], "a": 0},
+                {"q": "💨 Wie ist das Wetter?", "opts": ["Es ist windig.", "Es ist bewölkt.", "Es ist warm."], "a": 0},
+                {"q": "🌥️ Wie ist das Wetter?", "opts": ["Es gibt viele Wolken.", "Die Sonne scheint.", "Es schneit."], "a": 0},
+                {"q": "🥶 Wie ist das Wetter?", "opts": ["Es ist kalt.", "Es ist warm.", "Die Sonne scheint."], "a": 0},
+                {"q": "🌡️ 25 °C — Wie ist das Wetter?", "opts": ["Es sind 25 Grad. Es ist warm.", "Es sind 5 Grad. Es ist kalt.", "Es schneit. Es ist kalt."], "a": 0}
+              ]
+            },
+            { "type": "gaps", "title": "Điền động từ", "task": "Chọn từ trong danh sách cho mỗi chỗ trống.", "bank": ["scheint", "regnet", "schneit", "ist", "sind", "gibt"],
+              "items": [
+                {"q": "Die Sonne ___. ☀️", "a": ["scheint"]},
+                {"q": "Heute ___ es. 🌧️", "a": ["regnet"]},
+                {"q": "Heute ___ es. 🌨️", "a": ["schneit"]},
+                {"q": "Es ___ kalt. 🥶", "a": ["ist"]},
+                {"q": "Es ___ 25 Grad. 🌡️", "a": ["sind"]},
+                {"q": "Es ___ viele Wolken. ☁️", "a": ["gibt"]}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi trong câu về thời tiết",
+              "items": [
+                {"s": "Die Sonne regnet.", "err": "regnet", "fix": ["scheint"], "why": "Die Sonne scheint. Còn mưa là: Es regnet."},
+                {"s": "Es sind kalt.", "err": "sind", "fix": ["ist"], "why": "kalt là tính từ: Es ist kalt. („Es sind“ chỉ dùng với số nhiều như Es sind 5 Grad.)"},
+                {"s": "Heute ist es windig.", "err": null},
+                {"s": "Es gibt viel Wolken.", "err": "viel", "fix": ["viele"], "why": "Wolken là số nhiều → viele Wolken."},
+                {"s": "Es schneien.", "err": "schneien", "fix": ["schneit"], "why": "Với es dùng dạng của er/sie/es: Es schneit."},
+                {"s": "Es sind zehn Grad.", "err": null}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gern", "title": "Thích đến mức nào? (gern)", "minutes": 10,
+          "blocks": [
+            { "type": "table", "title": "Thang mức độ", "head": ["Mức", "Câu", "Nghĩa"], "say": 1, "vi": "<b>gern</b> đứng sau động từ. Khi động từ có hai phần (<i>Auto fahren, Gitarre spielen, Musik hören</i>), danh từ đứng <b>sau gern</b>: <i>Ich fahre gern Auto.</i> Cách nói khác: <i>Wandern finde ich gut.</i> — nghĩa như <i>Ich wandere gern.</i>",
+              "rows": [
+                ["++", "Ich wandere <b>sehr gern</b>.", "Tôi rất thích đi bộ đường dài."],
+                ["+", "Ich fahre <b>gern</b> Auto.", "Tôi thích lái xe."],
+                ["−", "Ich koche <b>nicht so gern</b>.", "Tôi không thích nấu ăn lắm."],
+                ["− −", "Ich fotografiere <b>gar nicht gern</b>.", "Tôi hoàn toàn không thích chụp ảnh."]
+              ]
+            },
+            { "type": "order", "title": "Xếp câu với gern", "vi": "Ô cam = động từ (vị trí 2 trong câu kể; đầu câu trong câu hỏi Có/Không).",
+              "items": [
+                {"chunks": ["Ich", "fahre", "gern", "Auto."], "v": 1, "vi": "Tôi thích lái xe."},
+                {"chunks": ["Mia", "spielt", "sehr gern", "Gitarre."], "v": 1, "vi": "Mia rất thích chơi ghi-ta."},
+                {"chunks": ["Wir", "machen", "gern", "ein Picknick."], "v": 1, "vi": "Chúng tôi thích đi dã ngoại."},
+                {"chunks": ["Lili", "fotografiert", "gar nicht gern."], "v": 1, "vi": "Lili hoàn toàn không thích chụp ảnh."},
+                {"chunks": ["Ich", "wandere", "nicht so gern."], "v": 1, "vi": "Tôi không thích đi bộ đường dài lắm."},
+                {"chunks": ["Wandern", "finde", "ich", "gut."], "v": 1, "vi": "Đi bộ đường dài thì tôi thấy hay."},
+                {"chunks": ["Fährst", "du", "gern", "Auto?"], "v": 0, "vi": "Bạn có thích lái xe không?"}
+              ]
+            },
+            { "type": "gaps", "title": "Chọn mức độ",
+              "items": [
+                {"q": "<span class='muted'>(++)</span> Ich wandere ___.", "a": ["sehr gern"], "opts": ["sehr gern", "gern", "nicht so gern", "gar nicht gern"]},
+                {"q": "<span class='muted'>(+)</span> Ich fahre ___ Auto.", "a": ["gern"], "opts": ["sehr gern", "gern", "nicht so gern", "gar nicht gern"]},
+                {"q": "<span class='muted'>(−)</span> Ich koche ___.", "a": ["nicht so gern"], "opts": ["sehr gern", "gern", "nicht so gern", "gar nicht gern"]},
+                {"q": "<span class='muted'>(− −)</span> Ich fotografiere ___.", "a": ["gar nicht gern"], "opts": ["sehr gern", "gern", "nicht so gern", "gar nicht gern"]},
+                {"q": "<span class='muted'>(Bạn không thích dậy sớm lắm.)</span> Ich stehe ___ früh auf.", "a": ["nicht so gern"], "opts": ["sehr gern", "gern", "nicht so gern", "gar nicht gern"]}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Nói thật về bạn:</b> đọc to và hoàn thành bốn câu <i>Ich wandere … gern. · Ich fahre … gern Auto. · Ich … gern Picknick. · Ich spiele … gern Gitarre.</i> (chọn mức độ đúng với bạn). Đây cũng là bài 4 của sách: <i>Wandern Sie gern? Machen Sie gern Picknick? Machen Sie gern Musik?</i></p>"}
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần A1", "minutes": 4,
+          "blocks": [
+            { "type": "book", "title": "Phần A1 — Das Wetter ist nicht so schön.", "kb": "72", "ab": "63", "key": "Đáp án A1: giáo án <i>Unterrichtsplan L6</i>, trang 3.",
+              "steps": [
+                "A1 — ghép các câu mô tả thời tiết (mưa, nắng, gió, tuyết, mây, lạnh, ấm) với bảy hình A–G. Làm xong hãy đọc to từng câu.",
+                "Arbeitsbuch tr. 63, bài 1 — nhìn bản đồ thời tiết nước Đức, điền thành phố và nhiệt độ vào các câu (chuẩn bị cho Buổi 2); bài 2 — điền từ còn thiếu trong hai đoạn hội thoại ngắn."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 6,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Machen wir einen Ausflug?",
+              "lines": [
+                {"scene": "Mia và Ben lên kế hoạch cho ngày thứ Bảy."},
+                {"who": "Mia", "v": "f", "de": "Hallo Ben! Machen wir am Samstag einen Ausflug?", "vi": "Chào Ben! Thứ Bảy mình đi chơi nhé?"},
+                {"who": "Ben", "v": "m", "de": "Ja, gern! Wie ist das Wetter am Samstag?", "vi": "Ừ, được! Thứ Bảy thời tiết thế nào?"},
+                {"who": "Mia", "v": "f", "de": "Es sind 20 Grad und die Sonne scheint.", "vi": "20 độ và trời nắng."},
+                {"who": "Ben", "v": "m", "de": "Super! Wandern wir?", "vi": "Tuyệt! Mình đi bộ đường dài nhé?"},
+                {"who": "Mia", "v": "f", "de": "Ja, ich wandere sehr gern. Und du?", "vi": "Ừ, mình rất thích đi bộ. Còn bạn?"},
+                {"who": "Ben", "v": "m", "de": "Ich wandere nicht so gern. Aber ich fotografiere gern.", "vi": "Mình không thích đi bộ lắm. Nhưng mình thích chụp ảnh."},
+                {"who": "Mia", "v": "f", "de": "Dann wandern wir und du fotografierst!", "vi": "Vậy mình đi bộ còn bạn chụp ảnh!"},
+                {"who": "Ben", "v": "m", "de": "Okay. Und am Abend spiele ich Gitarre.", "vi": "Được. Và buổi tối mình chơi ghi-ta."}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Oje, es regnet!",
+              "lines": [
+                {"scene": "Anna và Paul đang đi dã ngoại thì trời đổi."},
+                {"who": "Anna", "v": "f", "de": "Oje, es regnet! Und es sind nur acht Grad.", "vi": "Ôi, trời mưa rồi! Mà chỉ có 8 độ."},
+                {"who": "Paul", "v": "m", "de": "Es gibt viele Wolken. Das Wetter ist nicht so gut.", "vi": "Có nhiều mây. Thời tiết không tốt lắm."},
+                {"who": "Anna", "v": "f", "de": "Ich habe Hunger. Hast du das Brot?", "vi": "Mình đói rồi. Bạn có bánh mì không?"},
+                {"who": "Paul", "v": "m", "de": "Ja, hier ist das Brot und hier ist der Käse.", "vi": "Có, đây là bánh mì và đây là phô mai."},
+                {"who": "Anna", "v": "f", "de": "Super! Dann essen wir im Auto.", "vi": "Tuyệt! Vậy mình ăn trong xe nhé."},
+                {"who": "Paul", "v": "m", "de": "Gute Idee!", "vi": "Ý hay đấy!"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi gọi tên được các hoạt động trong chuyến đi chơi: <i>Auto fahren, wandern, ein Picknick machen, Gitarre spielen, fotografieren</i>.",
+                "Tôi nói được thời tiết: <i>Es regnet. Es schneit. Die Sonne scheint. Es ist kalt / warm / windig / bewölkt. Es sind 25 Grad.</i>",
+                "Tôi hỏi và trả lời <i>Wie ist das Wetter?</i>",
+                "Tôi nói được mức độ thích và đặt danh từ sau gern: <i>Ich fahre gern Auto.</i>",
+                "Tôi hiểu ý chính của truyện ảnh „Der Käsemann“."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                "Arbeitsbuch tr. 63, bài 1–2 (thời tiết ở Đức, điền từ).",
+                "Học thuộc 8 câu thời tiết trong bảng: che cột tiếng Việt và nói lại thành tiếng.",
+                "Nói to bốn câu về bạn, mỗi câu một mức: <i>sehr gern, gern, nicht so gern, gar nicht gern</i>.",
+                {"t": "Nghe lại truyện ảnh và tự kể chỉ bằng cách nhìn ảnh: <i>Familie Baumann und Lara machen einen Ausflug. …</i>", "tracks": "KB 2/27-34"},
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2", "no": 2, "minutes": 59, "set": "b",
+      "title": "Der Wetterbericht",
+      "vi": "Himmelsrichtungen (im Norden …), bản tin thời tiết, nhiệt độ cộng và trừ, viết tin nhắn từ kỳ nghỉ",
+      "book": "Kursbuch tr. 72 (A2–A3) · Arbeitsbuch tr. 63–64 (bài 3–9) · Lernwortschatz L6 (phần A)",
+      "goals": [
+        "Nói hướng và vị trí: <i>im Norden / Osten / Süden / Westen, in der Mitte</i>.",
+        "Hỏi và nói thời tiết ở từng nơi: <i>Wie ist das Wetter in Köln? – Im Westen regnet es.</i>",
+        "Nói nhiệt độ, kể cả nhiệt độ âm: <i>Es sind plus acht Grad. Es sind minus drei Grad.</i>",
+        "Đọc và nghe một bản tin thời tiết ngắn, tìm đúng thông tin (hướng, thời tiết, độ).",
+        "Viết một tin nhắn ngắn từ kỳ nghỉ."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: bản tin thời tiết", "minutes": 9,
+          "blocks": [
+            {"type": "words", "set": "b"},
+            {"type": "listenPick", "set": "b", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "b", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (24)", "minutes": 5,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "Từ ghép nhấn ở phần đầu", "vi": "Từ ghép nhấn vào phần <b>đầu</b>: <i>WETterbericht, HIMmelsrichtung, WEtterkarte</i>. Từ mượn nhấn như trong tiếng gốc: <i>Temperatur</i> nhấn âm cuối (Tem-pe-ra-TUR), <i>Radio</i> và <i>Internet</i> nhấn âm đầu.", "ex": ["Wetterbericht|bản tin thời tiết", "Himmelsrichtung|hướng", "Temperatur|nhiệt độ", "Internet|internet"]},
+                {"t": "e dài: ee, eh, e", "vi": "<b>ee</b> và <b>eh</b> đọc „ê“ dài: <i>Schnee, Tee, gehen</i>. <b>e</b> đứng trước một phụ âm cũng thường dài: <i>Regen</i> = „RÊ-gen“. Còn <b>e</b> trước hai phụ âm thì ngắn: <i>Wetter</i>.", "ex": ["Schnee|tuyết", "Regen|cơn mưa", "Tee|trà", "gehen|đi"]},
+                {"t": "ß hay ss?", "vi": "Sau nguyên âm <b>dài</b> hoặc <b>ei, au</b> viết <b>ß</b>: <i>heiß, groß, Spaß</i>. Sau nguyên âm <b>ngắn</b> viết <b>ss</b>: <i>muss, Imbiss</i>. Cả hai đều đọc „s“ vô thanh (như „x“ tiếng Việt).", "ex": ["heiß|nóng", "groß|to, lớn", "Spaß|niềm vui", "Gruß|lời chào"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "bleiben", "opts": ["bleiben", "blieben"]},
+                {"say": "steigen", "opts": ["steigen", "stiegen"]},
+                {"say": "Schnee", "opts": ["Schnee", "Schnei"]},
+                {"say": "sonnig", "opts": ["sonnig", "sonnich"]},
+                {"say": "Temperatur", "opts": ["Temperatur", "Tempratur"]},
+                {"say": "heiß", "opts": ["heiß", "heis"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "himmel", "title": "Himmelsrichtungen: im Norden, im Süden …", "minutes": 10,
+          "blocks": [
+            {"type": "text", "html": "<p>Bốn hướng bạn đã gặp ở Lektion 2: <b>der Norden, der Osten, der Süden, der Westen</b>. Để trả lời <b>Wo?</b> (ở đâu) ta dùng <b>im</b> (= in dem): <i>im Norden, im Osten, im Süden, im Westen</i>. Ở giữa: <i>in der Mitte</i> (vì die Mitte). <i>Nord-, Ost-, Süd-, West-</i> còn đứng đầu từ ghép: <i>Norddeutschland</i> = miền bắc nước Đức.</p>"},
+            { "type": "table", "title": "La bàn", "head": ["⬅️ Tây", "Bắc – Giữa – Nam", "➡️ Đông"],
+              "rows": [
+                ["", "<b>im Norden</b> ⬆️", ""],
+                ["<b>im Westen</b>", "<b>in der Mitte</b> 🎯", "<b>im Osten</b>"],
+                ["", "<b>im Süden</b> ⬇️", ""]
+              ]
+            },
+            { "type": "table", "title": "Wetterkarte (ví dụ do tôi soạn, không phải dự báo thật)", "head": ["Thành phố", "Vị trí", "", "Thời tiết", "Nhiệt độ"], "say": 3, "vi": "Hỏi: <i>Wie ist das Wetter in Köln?</i> Trả lời: <i>Im Westen regnet es.</i> hoặc <i>In Köln regnet es. Es sind 12 Grad.</i>",
+              "rows": [
+                ["Hamburg", "im Norden", "☀️", "Die Sonne scheint.", "18 Grad"],
+                ["Berlin", "im Osten", "🌥️", "Es ist bewölkt.", "15 Grad"],
+                ["Köln", "im Westen", "🌧️", "Es regnet.", "12 Grad"],
+                ["Frankfurt", "in der Mitte", "💨", "Es ist windig.", "9 Grad"],
+                ["München", "im Süden", "🌨️", "Es schneit.", "minus 2 Grad"]
+              ]
+            },
+            { "type": "choice", "title": "Đọc bản đồ",
+              "items": [
+                {"q": "Wie ist das Wetter in Köln?", "opts": ["Es regnet.", "Es schneit.", "Die Sonne scheint.", "Es ist windig."], "a": 0},
+                {"q": "Wo scheint die Sonne?", "opts": ["Im Norden.", "Im Süden.", "Im Westen.", "In der Mitte."], "a": 0},
+                {"q": "Wo schneit es?", "opts": ["Im Süden.", "Im Norden.", "Im Osten."], "a": 0},
+                {"q": "Wie ist das Wetter in der Mitte?", "opts": ["Es ist windig.", "Es ist bewölkt.", "Es regnet."], "a": 0},
+                {"q": "Wie viele Grad sind es in Berlin?", "opts": ["15 Grad.", "18 Grad.", "12 Grad."], "a": 0},
+                {"q": "Wo ist es bewölkt?", "opts": ["Im Osten.", "Im Westen.", "Im Norden."], "a": 0}
+              ]
+            },
+            { "type": "gaps", "title": "im oder in der?",
+              "items": [
+                {"q": "Hamburg liegt ___ Norden.", "a": ["im"], "opts": ["im", "in der"]},
+                {"q": "München liegt ___ Süden.", "a": ["im"], "opts": ["im", "in der"]},
+                {"q": "Frankfurt liegt ___ Mitte.", "a": ["in der"], "opts": ["im", "in der"]},
+                {"q": "Köln liegt ___ Westen.", "a": ["im"], "opts": ["im", "in der"]},
+                {"q": "Dresden liegt ___ Osten.", "a": ["im"], "opts": ["im", "in der"]},
+                {"q": "Wo ist Kassel? – ___ Mitte.", "a": ["In der"], "opts": ["Im", "In der"]}
+              ]
+            },
+            { "type": "sort", "title": "Thành phố ở hướng nào?", "cats": ["im Norden", "im Osten", "im Süden", "im Westen", "in der Mitte"],
+              "items": [
+                {"t": "Hamburg", "c": 0, "why": "Hamburg ở phía bắc, gần biển Bắc."},
+                {"t": "Bremen", "c": 0},
+                {"t": "Berlin", "c": 1, "why": "Berlin ở phía đông bắc, thuộc miền đông nước Đức."},
+                {"t": "Dresden", "c": 1},
+                {"t": "München", "c": 2, "why": "München ở phía nam, gần dãy Alpen."},
+                {"t": "Stuttgart", "c": 2},
+                {"t": "Köln", "c": 3, "why": "Köln ở phía tây, bên sông Rhein."},
+                {"t": "Düsseldorf", "c": 3},
+                {"t": "Frankfurt", "c": 4, "why": "Frankfurt ở giữa nước Đức."},
+                {"t": "Kassel", "c": 4}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "temp", "title": "Nhiệt độ: plus và minus", "minutes": 7,
+          "blocks": [
+            { "type": "table", "title": "Cách nói nhiệt độ", "head": ["Số", "Cách nói", "Ghi chú"], "say": 1, "vi": "Nhớ cảm giác: khoảng −5 °C <b>sehr kalt</b> · 5 °C <b>kalt</b> · 15–20 °C <b>warm</b> · 25–30 °C <b>heiß</b> · 35 °C <b>sehr heiß</b> (ước lượng để dễ nhớ).",
+              "rows": [
+                ["+8 °C", "acht Grad / plus acht Grad", "„plus“ thường được bỏ"],
+                ["0 °C", "null Grad", ""],
+                ["−3 °C", "minus drei Grad", "Cũng có thể nói: drei Grad unter Null"],
+                ["−12 °C", "minus zwölf Grad", ""],
+                ["1 °C", "Es ist ein Grad.", "Số ít → dùng ist"],
+                ["25 °C", "fünfundzwanzig Grad", "Es sind 25 Grad."]
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe nhiệt độ",
+              "items": [
+                {"say": "Es sind minus drei Grad.", "opts": ["Es sind minus drei Grad.", "Es sind plus drei Grad.", "Es sind minus dreizehn Grad."]},
+                {"say": "Es sind plus acht Grad.", "opts": ["Es sind plus acht Grad.", "Es sind minus acht Grad.", "Es sind achtzehn Grad."]},
+                {"say": "Es sind fünfundzwanzig Grad.", "opts": ["Es sind fünfundzwanzig Grad.", "Es sind fünfzehn Grad.", "Es sind fünfunddreißig Grad."]},
+                {"say": "Es sind minus fünf Grad.", "opts": ["Es sind minus fünf Grad.", "Es sind plus fünf Grad.", "Es sind minus fünfzehn Grad."]},
+                {"say": "Es sind zwölf Grad.", "opts": ["Es sind zwölf Grad.", "Es sind zwanzig Grad.", "Es sind zweiundzwanzig Grad."]},
+                {"say": "Es sind null Grad.", "opts": ["Es sind null Grad.", "Es sind neun Grad.", "Es sind neunzehn Grad."]}
+              ]
+            },
+            { "type": "gaps", "title": "Viết nhiệt độ bằng chữ", "task": "Gõ một từ cho mỗi chỗ trống (ä ö ü: bấm nút phía trên, hoặc gõ ae oe ue).",
+              "items": [
+                {"q": "−4 °C → Es sind ___ vier Grad.", "a": ["minus"]},
+                {"q": "+6 °C → Es sind ___ sechs Grad.", "a": ["plus"]},
+                {"q": "0 °C → Es sind ___ Grad.", "a": ["null"]},
+                {"q": "1 °C → Es ___ ein Grad.", "a": ["ist"]},
+                {"q": "−1 °C → Es ist minus ___ Grad.", "a": ["ein"]},
+                {"q": "−15 °C → Es sind minus ___ Grad.", "a": ["fünfzehn"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bericht", "title": "Đọc bản tin thời tiết", "minutes": 11,
+          "blocks": [
+            {"type": "text", "html": "<p>Ba bản tin ngắn dưới đây tôi tự soạn, theo kiểu các bài đọc trong sách. Đọc và <b>gạch dưới các từ chỉ thời tiết, hướng và độ</b> — bạn không cần hiểu hết mọi chữ.</p><div class='ad-grid'><div class='ad'><span class='ad-id'>1</span><b>Internet · Wetter heute</b><br>Im Norden und im Westen ist es bewölkt. Im Osten und im Süden scheint die Sonne. Es sind 10 bis 16 Grad. Morgen steigen überall die Temperaturen.</div><div class='ad'><span class='ad-id'>2</span><b>Radio · Das Wetter am Wochenende</b><br>Am Samstag regnet es im Westen und in der Mitte. Es sind nur 7 Grad. Am Sonntag bleibt das Wetter schlecht. Im Süden schneit es.</div><div class='ad'><span class='ad-id'>3</span><b>Handy · Wetter</b><br>Heute ist es überall sonnig und warm: 25 Grad. Auch am Wochenende bleibt es heiß.</div></div><p class='ad-note'>Bản tin do tôi tự soạn — chỉ để luyện đọc, không phải dự báo thật.</p>"},
+            { "type": "choice", "title": "Đọc và trả lời",
+              "items": [
+                {"q": "Wo ist es heute bewölkt? (Text 1)", "opts": ["Im Norden und im Westen.", "Im Osten und im Süden.", "Überall."], "a": 0},
+                {"q": "Wie viele Grad sind es heute? (Text 1)", "opts": ["10 bis 16 Grad.", "25 Grad.", "7 Grad."], "a": 0},
+                {"q": "Wann steigen die Temperaturen? (Text 1)", "opts": ["Morgen.", "Heute.", "Am Sonntag."], "a": 0},
+                {"q": "Wie ist das Wetter am Samstag im Westen? (Text 2)", "opts": ["Es regnet.", "Es schneit.", "Die Sonne scheint."], "a": 0},
+                {"q": "Wo schneit es? (Text 2)", "opts": ["Im Süden.", "Im Norden.", "Im Westen."], "a": 0},
+                {"q": "Welcher Text passt zu „sonnig und heiß“?", "opts": ["Text 3", "Text 1", "Text 2"], "a": 0},
+                {"q": "Welcher Text passt zu „kalt und schlecht“?", "opts": ["Text 2", "Text 1", "Text 3"], "a": 0}
+              ]
+            },
+            { "type": "gaps", "title": "Điền từ còn thiếu trong bản tin", "task": "Chọn từ trong danh sách.", "bank": ["regnet", "Grad", "bleibt", "steigen", "überall"],
+              "items": [
+                {"q": "Am Samstag ___ es im Westen.", "a": ["regnet"]},
+                {"q": "Es sind nur sieben ___.", "a": ["Grad"]},
+                {"q": "Das Wetter ___ schlecht.", "a": ["bleibt"]},
+                {"q": "Morgen ___ die Temperaturen.", "a": ["steigen"]},
+                {"q": "Heute ist es ___ sonnig.", "a": ["überall"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nghe-viet", "title": "Nghe và viết", "minutes": 8,
+          "blocks": [
+            { "type": "book", "title": "Nghe bản tin radio và làm Arbeitsbuch", "kb": "72", "ab": "63–64", "tracks": "KB 2/35-37, AB 58-60", "key": "Đáp án Kursbuch A3: giáo án <i>Unterrichtsplan L6</i>, trang 3–4.",
+              "steps": [
+                "Kursbuch A3b — nghe ba bản tin trên radio (track 35–37) và xem bản nào khớp với bản tin đã đọc ở A3a. Nghe mỗi bản 2–3 lần; chỉ cần bắt các từ: hướng, thời tiết, độ.",
+                "Arbeitsbuch tr. 63, bài 3–5 — đọc bản đồ nước Áo và nước Đức, hỏi–đáp theo hướng, ghép từ với <i>im / am / um / in</i>.",
+                "Arbeitsbuch tr. 64, bài 6 — điền từ thời tiết vào hình; bài 7 — nghe ba bản tin (AB track 58–60) và đánh dấu đáp án; bài 8 — viết một tin nhắn từ kỳ nghỉ; bài 9 — đọc ba người kể về thời tiết nơi họ sống."
+              ]
+            },
+            {"type": "text", "html": "<p><b>Tin nhắn từ kỳ nghỉ — mẫu của tôi</b> (cho bài 8 trong sách):</p><div class='ad-grid'><div class='ad'><span class='ad-id'>SMS</span>Hallo Eva! Wir sind in Wien. Das Wetter ist schön: Die Sonne scheint und es sind 22 Grad. Wir wandern und fotografieren viel. Liebe Grüße, Mia</div></div>"},
+            { "type": "gaps", "title": "Hoàn thành một tin nhắn khác", "task": "Chọn từ trong danh sách.", "bank": ["Wetter", "regnet", "wandern", "steigen", "Grüße"],
+              "items": [
+                {"q": "Hallo Paul! Wir sind in Kiel. Das ___ ist nicht so gut.", "a": ["Wetter"]},
+                {"q": "Es ___ und es sind nur zehn Grad.", "a": ["regnet"]},
+                {"q": "Aber wir ___ viel und wir fotografieren.", "a": ["wandern"]},
+                {"q": "Morgen ___ die Temperaturen.", "a": ["steigen"]},
+                {"q": "Liebe ___, Mia", "a": ["Grüße"]}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Việc của bạn:</b> viết 4–5 câu như thế, ví dụ: <i>Hallo …! Wir sind in … Das Wetter ist … Es sind … Grad. Liebe Grüße, …</i> Đọc to bài viết, rồi kiểm tra: động từ ở vị trí 2? có <i>es</i> trong câu về thời tiết?</p>"}
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 5,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Wie ist das Wetter bei dir?",
+              "lines": [
+                {"scene": "Nina (ở Hamburg) gọi điện cho Max (ở München)."},
+                {"who": "Nina", "v": "f", "de": "Hallo Max! Wie ist das Wetter in München?", "vi": "Chào Max! Ở München thời tiết thế nào?"},
+                {"who": "Max", "v": "m", "de": "Nicht so gut. Es schneit und es sind minus zwei Grad. Und in Hamburg?", "vi": "Không tốt lắm. Tuyết rơi và âm 2 độ. Còn ở Hamburg?"},
+                {"who": "Nina", "v": "f", "de": "Hier im Norden regnet es. Es sind plus fünf Grad.", "vi": "Ở phía bắc này trời mưa. +5 độ."},
+                {"who": "Max", "v": "m", "de": "Und morgen? Wie ist das Wetter?", "vi": "Còn ngày mai? Thời tiết thế nào?"},
+                {"who": "Nina", "v": "f", "de": "Im Radio sagen sie: Morgen steigen die Temperaturen. Es ist überall sonnig.", "vi": "Radio nói: ngày mai nhiệt độ tăng. Ở đâu cũng nắng."},
+                {"who": "Max", "v": "m", "de": "Super! Dann machen wir einen Ausflug.", "vi": "Tuyệt! Vậy mình đi chơi nhé."},
+                {"who": "Nina", "v": "f", "de": "Gute Idee!", "vi": "Ý hay đấy!"}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Der Wetterbericht im Radio",
+              "lines": [
+                {"scene": "Một bản tin radio buổi sáng. Nghe rồi nhại theo, chú ý hướng và nhiệt độ."},
+                {"who": "Radio", "v": "m2", "de": "Guten Morgen! Das Wetter heute: Im Norden ist es bewölkt, es sind zehn Grad.", "vi": "Chào buổi sáng! Thời tiết hôm nay: ở phía bắc nhiều mây, 10 độ."},
+                {"who": "Radio", "v": "m2", "de": "Im Westen regnet es. Im Osten scheint die Sonne. Im Süden schneit es: minus ein Grad.", "vi": "Ở phía tây có mưa. Ở phía đông nắng. Ở phía nam tuyết rơi: âm 1 độ."},
+                {"who": "Radio", "v": "m2", "de": "Morgen steigen die Temperaturen. Das Wetter bleibt aber nicht überall gut.", "vi": "Ngày mai nhiệt độ tăng. Nhưng thời tiết không phải nơi nào cũng tốt."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi nói được vị trí bằng <i>im Norden / Osten / Süden / Westen, in der Mitte</i>.",
+                "Tôi hỏi và trả lời: <i>Wie ist das Wetter in Köln? – Im Westen regnet es.</i>",
+                "Tôi nói được nhiệt độ, cả nhiệt độ âm: <i>Es sind minus drei Grad.</i>",
+                "Tôi tìm được hướng, thời tiết và nhiệt độ trong một bản tin ngắn.",
+                "Tôi viết được một tin nhắn ngắn từ kỳ nghỉ."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 63–64, bài 3–9 (bài 7 có audio AB track 58–60).", "tracks": "AB 58-60"},
+                "Vẽ bản đồ nước Đức đơn giản với năm hướng, ghi thời tiết và nhiệt độ cho năm thành phố rồi nói to: <i>In Köln regnet es. Es sind zwölf Grad.</i>",
+                "Viết tin nhắn từ kỳ nghỉ (4–5 câu) theo mẫu ở trên.",
+                {"t": "Nghe lại ba bản tin radio của sách và ghi lại các từ thời tiết nghe được.", "tracks": "KB 2/35-37"},
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3", "no": 3, "minutes": 66, "set": "c",
+      "title": "Hast du den Käse?",
+      "vi": "Akkusativ: den / einen / keinen, nehmen, gọi món ở quầy ăn nhanh, lên kế hoạch dã ngoại",
+      "book": "Kursbuch tr. 73 (B1–B3) · Arbeitsbuch tr. 65–67 (bài 10–18) · Lernwortschatz L6 (phần B)",
+      "goals": [
+        "Phân biệt chủ ngữ (Nominativ: <i>Wer? Was?</i>) và tân ngữ (Akkusativ: <i>Wen? Was?</i>).",
+        "Dùng <i>den / einen / keinen</i> cho danh từ giống đực: <i>Ich habe den Käse. Ich nehme einen Saft. Wir haben keinen Hunger.</i>",
+        "Chia <i>nehmen</i> (e → i) và gọi món: <i>Ich nehme … Was nimmst du?</i>",
+        "Đoán giống của từ ghép theo từ cuối: <i>der Saft → der Orangensaft</i>.",
+        "Lập kế hoạch dã ngoại: <i>Wer kauft den Käse? – Ich kaufe den Käse.</i>"
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: thực đơn và gọi món", "minutes": 9,
+          "blocks": [
+            {"type": "words", "set": "c"},
+            {"type": "listenPick", "set": "c", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "c", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (25)", "minutes": 5,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "Nhấn câu: từ quan trọng nhất", "vi": "Trong câu, từ <b>mang thông tin mới hoặc đối lập</b> được nhấn mạnh nhất (Satzakzent). <i>Hast du den KÄSE?</i> – <i>Nein, den Käse habe ich nicht, aber den SALAT.</i> Đây chính là nội dung bài 10 của Arbeitsbuch (audio AB track 61–63): nghe rồi nhại theo.", "ex": ["Hast du den Salat?|Bạn có salad không?", "Nein, den Salat habe ich nicht.|Không, tôi không có salad.", "Aber ich habe den Käse.|Nhưng tôi có phô mai."]},
+                {"t": "pf: p và f đọc liền", "vi": "<b>pf</b>: khép môi như „p“ rồi thổi „f“ ngay, không có nguyên âm giữa: <i>Apfel, Apfelsaft, Pfeffer</i>. Cũng đọc liền: <b>ck</b> = „k“, <b>tz</b> = „ts“.", "ex": ["Apfelsaft|nước ép táo", "Apfel|quả táo", "Pfeffer|hạt tiêu", "Kartoffel|khoai tây"]},
+                {"t": "s: z, sh, shp", "vi": "<b>s</b> trước nguyên âm đọc „z“: <i>Salat, Suppe, Speise</i>. <b>sch</b> đọc „sh“: <i>Schinken</i>. <b>sp-</b> và <b>st-</b> ở đầu từ đọc „shp-“ và „sht-“: <i>Speisekarte, Stück</i>. <b>ss</b> / <b>ß</b> đọc „s“ vô thanh: <i>Imbiss</i>.", "ex": ["Salat|salad", "Schinken|giăm bông", "Speisekarte|thực đơn", "Imbiss|quán ăn nhanh"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "Apfelsaft", "opts": ["Apfelsaft", "Apfelzaft"]},
+                {"say": "Dessert", "opts": ["Dessert", "Desert"]},
+                {"say": "Imbiss", "opts": ["Imbiss", "Imbis"]},
+                {"say": "Schinken", "opts": ["Schinken", "Shinken"]},
+                {"say": "nehmen", "opts": ["nehmen", "nemen"]},
+                {"say": "Speisekarte", "opts": ["Speisekarte", "Spaisekarte"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "akkusativ", "title": "Ngữ pháp: Akkusativ (den, einen, keinen)", "minutes": 18,
+          "blocks": [
+            {"type": "text", "html": "<p>Trong câu có <b>chủ ngữ</b> (Nominativ — hỏi <i>Wer? Was?</i>) và <b>tân ngữ</b> (Akkusativ — hỏi <i>Wen? Was?</i>). Sau <b>sein</b> là Nominativ: <i>Der Käse ist hier.</i> Sau <b>haben, nehmen, kaufen, brauchen, essen, trinken</b> là Akkusativ: <i>Ich habe den Käse.</i></p><p>Điều cần nhớ rất ít: chỉ danh từ <b>giống đực</b> (der) đổi hình ở Akkusativ. Giống cái, giống trung và số nhiều <b>giữ nguyên</b>. Với người biết tiếng Anh: giống như <i>he → him</i> — chủ ngữ đổi sang tân ngữ.</p>"},
+            { "type": "table", "title": "Mạo từ xác định", "head": ["", "Nominativ — Wo ist / sind …?", "Akkusativ — Ich habe …"], "vi": "Chỉ có <b>der → den</b>. <i>Wo ist der Käse? → Ich habe den Käse.</i>",
+              "rows": [
+                ["giống đực", "<span class='g-der'>der Käse</span>", "<span class='g-der'><b>den</b> Käse</span>"],
+                ["giống trung", "<span class='g-das'>das Würstchen</span>", "<span class='g-das'>das Würstchen</span>"],
+                ["giống cái", "<span class='g-die'>die Cola</span>", "<span class='g-die'>die Cola</span>"],
+                ["số nhiều", "<span class='g-pl'>die Tomaten</span>", "<span class='g-pl'>die Tomaten</span>"]
+              ]
+            },
+            { "type": "table", "title": "Mạo từ không xác định và phủ định", "head": ["", "Nominativ — Das ist …", "Akkusativ — Ich habe …"],
+              "rows": [
+                ["giống đực", "<span class='g-der'>ein Käse / kein Käse</span>", "<span class='g-der'><b>einen</b> Käse / <b>keinen</b> Käse</span>"],
+                ["giống trung", "<span class='g-das'>ein Würstchen / kein Würstchen</span>", "<span class='g-das'>ein Würstchen / kein Würstchen</span>"],
+                ["giống cái", "<span class='g-die'>eine Cola / keine Cola</span>", "<span class='g-die'>eine Cola / keine Cola</span>"],
+                ["số nhiều", "<span class='g-pl'>Tomaten / keine Tomaten</span>", "<span class='g-pl'>Tomaten / keine Tomaten</span>"]
+              ]
+            },
+            {"type": "tip", "title": "Mẹo nhớ", "html": "<p><b>den – einen – keinen</b>: cả ba đều kết thúc bằng <b>-en</b>. Mạo từ sở hữu cũng làm như <i>ein</i> và <i>kein</i> (bài 16 của Arbeitsbuch): <i>Das ist mein Saft. → Ich nehme <b>meinen</b> Saft.</i> · <i>Das ist dein Kaffee. → Ich nehme <b>deinen</b> Kaffee.</i></p>"},
+            { "type": "gaps", "title": "den, einen hay keinen?",
+              "items": [
+                {"q": "Ich habe ___ Käse. <span class='muted'>(der Käse)</span>", "a": ["den"], "opts": ["der", "den"]},
+                {"q": "Wir nehmen ___ Salat. <span class='muted'>(der Salat)</span>", "a": ["den"], "opts": ["der", "den"]},
+                {"q": "Hast du ___ Hamburger? <span class='muted'>(ein: der Hamburger)</span>", "a": ["einen"], "opts": ["ein", "einen"]},
+                {"q": "Ich habe ___ Hunger. <span class='muted'>(kein: der Hunger)</span>", "a": ["keinen"], "opts": ["kein", "keinen"]},
+                {"q": "Ich nehme ___ Cola. <span class='muted'>(die Cola)</span>", "a": ["die"], "opts": ["die", "den"]},
+                {"q": "Wir haben ___ Würstchen. <span class='muted'>(das Würstchen)</span>", "a": ["das"], "opts": ["das", "den"]},
+                {"q": "Hast du ___ Brot dabei? <span class='muted'>(kein: das Brot)</span>", "a": ["kein"], "opts": ["kein", "keinen"]},
+                {"q": "Ich kaufe ___ Orangensaft. <span class='muted'>(ein: der Orangensaft)</span>", "a": ["einen"], "opts": ["ein", "einen"]},
+                {"q": "Wir brauchen ___ Tomaten. <span class='muted'>(die Tomaten)</span>", "a": ["die"], "opts": ["die", "den"]}
+              ]
+            },
+            { "type": "choice", "title": "Cụm gạch dưới là Nominativ hay Akkusativ?",
+              "items": [
+                {"q": "<i><u>Der Saft</u></i> ist kalt. — „der Saft“ là:", "opts": ["Nominativ (chủ ngữ)", "Akkusativ (tân ngữ)"], "a": 0, "why": "Der Saft là chủ ngữ: Wer/Was ist kalt? — Der Saft."},
+                {"q": "Ich trinke <i><u>den Saft</u></i>. — „den Saft“ là:", "opts": ["Akkusativ (tân ngữ)", "Nominativ (chủ ngữ)"], "a": 0, "why": "Wen/Was trinke ich? — den Saft."},
+                {"q": "Hier ist <i><u>ein Hamburger</u></i>. — „ein Hamburger“ là:", "opts": ["Nominativ (chủ ngữ)", "Akkusativ (tân ngữ)"], "a": 0, "why": "Sau sein là Nominativ."},
+                {"q": "Ich nehme <i><u>einen Hamburger</u></i>. — „einen Hamburger“ là:", "opts": ["Akkusativ (tân ngữ)", "Nominativ (chủ ngữ)"], "a": 0},
+                {"q": "Wir haben <i><u>keinen Käse</u></i>. — „keinen Käse“ là:", "opts": ["Akkusativ (tân ngữ)", "Nominativ (chủ ngữ)"], "a": 0, "why": "Sau haben là Akkusativ."},
+                {"q": "<i><u>Die Cola</u></i> ist teuer. — „die Cola“ là:", "opts": ["Nominativ (chủ ngữ)", "Akkusativ (tân ngữ)"], "a": 0, "why": "Chủ ngữ — nhưng die không đổi, nên phải nhìn chức năng trong câu."},
+                {"q": "Ich nehme <i><u>die Cola</u></i>. — „die Cola“ là:", "opts": ["Akkusativ (tân ngữ)", "Nominativ (chủ ngữ)"], "a": 0, "why": "Tân ngữ của nehmen — die giống cái nên không đổi hình."},
+                {"q": "Hast du <i><u>das Würstchen</u></i>? — „das Würstchen“ là:", "opts": ["Akkusativ (tân ngữ)", "Nominativ (chủ ngữ)"], "a": 0, "why": "Tân ngữ của haben; das giống trung nên không đổi hình."}
+              ]
+            },
+            { "type": "order", "title": "Xếp câu Akkusativ", "vi": "Ô cam = động từ; ô xanh dương = tiền tố tách (dabei).",
+              "items": [
+                {"chunks": ["Ich", "habe", "den Käse."], "v": 1, "vi": "Tôi có phô mai."},
+                {"chunks": ["Hast", "du", "den Käse", "dabei?"], "v": 0, "vi": "Bạn có mang phô mai không?", "p": 3},
+                {"chunks": ["Wir", "haben", "keinen", "Saft."], "v": 1, "vi": "Chúng tôi không có nước ép."},
+                {"chunks": ["Lili", "nimmt", "einen Hamburger."], "v": 1, "vi": "Lili lấy một cái hamburger."},
+                {"chunks": ["Ich", "kaufe", "den Orangensaft."], "v": 1, "vi": "Tôi mua nước cam ép."},
+                {"chunks": ["Nimmst", "du", "einen Saft?"], "v": 0, "vi": "Bạn lấy một nước ép chứ?"},
+                {"chunks": ["Ich", "nehme", "die Cola."], "v": 1, "vi": "Tôi lấy cola."}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi Akkusativ",
+              "items": [
+                {"s": "Ich habe der Käse.", "err": "der Käse", "fix": ["den Käse"], "why": "Sau haben là Akkusativ: der Käse → den Käse."},
+                {"s": "Wir haben kein Saft.", "err": "kein Saft", "fix": ["keinen Saft"], "why": "der Saft → keinen Saft."},
+                {"s": "Ich nehme ein Hamburger.", "err": "ein Hamburger", "fix": ["einen Hamburger"], "why": "der Hamburger → einen Hamburger."},
+                {"s": "Hast du das Brot?", "err": null},
+                {"s": "Sie kauft der Orangensaft.", "err": "der Orangensaft", "fix": ["den Orangensaft"], "why": "der Orangensaft → den Orangensaft."},
+                {"s": "Ich nehme die Cola.", "err": null},
+                {"s": "Wir haben keine Tomaten.", "err": null},
+                {"s": "Ich esse einen Salat.", "err": null}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nehmen", "title": "Chia động từ: nehmen, essen, sprechen", "minutes": 7,
+          "blocks": [
+            {"type": "conj", "title": "Nhóm động từ đổi e → i", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [{"inf": "nehmen", "vi": "lấy; chọn (món)", "forms": ["nehme", "nimmst", "nimmt", "nehmen", "nehmt", "nehmen"]}, {"inf": "essen", "vi": "ăn", "forms": ["esse", "isst", "isst", "essen", "esst", "essen"]}, {"inf": "sprechen", "vi": "nói", "forms": ["spreche", "sprichst", "spricht", "sprechen", "sprecht", "sprechen"]}], "vi": "Chỉ <b>du</b> và <b>er/sie</b> đổi nguyên âm (e → i); ich, wir, ihr, sie/Sie giữ nguyên. <i>nehmen</i> còn gấp đôi m: <i>nimmst, nimmt</i>. <i>essen</i>: <i>isst</i> (không thêm -st lần nữa). Cùng nhóm: <i>vergessen</i> (Buổi 1), <i>treffen</i> (Buổi 5), <i>geben</i> (<i>es gibt</i>)."},
+            { "type": "gaps", "title": "Điền dạng chia", "task": "Gõ dạng chia đúng của động từ.",
+              "items": [
+                {"q": "Ich ___ den Salat. <span class='muted'>(nehmen)</span>", "a": ["nehme"]},
+                {"q": "Was ___ du? <span class='muted'>(nehmen)</span>", "a": ["nimmst"]},
+                {"q": "Lili ___ einen Saft. <span class='muted'>(nehmen)</span>", "a": ["nimmt"]},
+                {"q": "Wir ___ den Hamburger. <span class='muted'>(nehmen)</span>", "a": ["nehmen"]},
+                {"q": "___ ihr auch eine Cola? <span class='muted'>(nehmen)</span>", "a": ["Nehmt"]},
+                {"q": "Du ___ viel Salat. <span class='muted'>(essen)</span>", "a": ["isst"]},
+                {"q": "Mia ___ gern Schinken. <span class='muted'>(essen)</span>", "a": ["isst"]},
+                {"q": "Tim ___ den Käse. <span class='muted'>(vergessen)</span>", "a": ["vergisst"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speisekarte", "title": "Gọi món ở quầy ăn nhanh", "minutes": 10,
+          "blocks": [
+            { "type": "table", "title": "Speisekarte — Imbiss „Sonnenschein“ (thực đơn do tôi soạn, giá chỉ để luyện tập)", "head": ["Nhóm", "Món", "Giá"], "say": 1, "vi": "Đọc giá: <i>3,50 € = drei Euro fünfzig</i>. Xem lại bài giá cả ở Lektion 3 nếu cần.",
+              "rows": [
+                ["Kleine Speisen", "Gemüsesuppe", "3,50 €"],
+                ["", "Pommes mit Ketchup", "2,80 €"],
+                ["", "Würstchen mit Kartoffelsalat", "4,20 €"],
+                ["", "Hamburger mit Pommes", "6,50 €"],
+                ["", "Salat mit Schinken und Ei", "5,20 €"],
+                ["Desserts", "Schokoladenkuchen", "2,90 €"],
+                ["", "Eis", "1,80 €"],
+                ["Getränke", "Mineralwasser", "1,90 €"],
+                ["", "Apfelsaft", "2,20 €"],
+                ["", "Orangensaft", "2,40 €"],
+                ["", "Cola", "2,30 €"],
+                ["", "Tee / Kaffee", "2,00 € / 2,20 €"]
+              ]
+            },
+            { "type": "table", "title": "Từ ghép: giống của từ cuối", "head": ["Từ ghép", "= từ 1 + từ 2", "Giống"], "say": 0, "vi": "Gặp từ ghép lạ, cứ nhìn <b>từ cuối cùng</b>: nó quyết định der / die / das và cả số nhiều.",
+              "rows": [
+                ["der Orangensaft", "die Orange + n + <b>der Saft</b>", "der (theo Saft)"],
+                ["der Apfelsaft", "der Apfel + <b>der Saft</b>", "der (theo Saft)"],
+                ["die Gemüsesuppe", "das Gemüse + <b>die Suppe</b>", "die (theo Suppe)"],
+                ["das Mineralwasser", "Mineral + <b>das Wasser</b>", "das (theo Wasser)"],
+                ["der Kartoffelsalat", "die Kartoffel + <b>der Salat</b>", "der (theo Salat)"],
+                ["die Einkaufsliste", "einkaufen + s + <b>die Liste</b>", "die (theo Liste)"]
+              ]
+            },
+            { "type": "choice", "title": "Từ ghép là der, die hay das?",
+              "items": [
+                {"q": "Orangensaft", "opts": ["der", "die", "das"], "a": 0, "why": "Từ cuối là der Saft."},
+                {"q": "Schokoladenkuchen", "opts": ["der", "die", "das"], "a": 0, "why": "Từ cuối là der Kuchen."},
+                {"q": "Gemüsesuppe", "opts": ["die", "der", "das"], "a": 0, "why": "Từ cuối là die Suppe."},
+                {"q": "Mineralwasser", "opts": ["das", "der", "die"], "a": 0, "why": "Từ cuối là das Wasser."},
+                {"q": "Einkaufsliste", "opts": ["die", "der", "das"], "a": 0, "why": "Từ cuối là die Liste."},
+                {"q": "Kartoffelsalat", "opts": ["der", "die", "das"], "a": 0, "why": "Từ cuối là der Salat."}
+              ]
+            },
+            { "type": "choice", "title": "Tính tiền",
+              "items": [
+                {"q": "Hamburger mit Pommes + Cola: wie viel?", "opts": ["8,80 Euro", "8,50 Euro", "9,20 Euro"], "a": 0},
+                {"q": "Würstchen mit Kartoffelsalat + Tee: wie viel?", "opts": ["6,20 Euro", "5,20 Euro", "6,70 Euro"], "a": 0},
+                {"q": "Gemüsesuppe + Eis: wie viel?", "opts": ["5,30 Euro", "4,30 Euro", "6,30 Euro"], "a": 0},
+                {"q": "Salat mit Schinken und Ei + Apfelsaft: wie viel?", "opts": ["7,40 Euro", "7,20 Euro", "8,40 Euro"], "a": 0},
+                {"q": "Pommes mit Ketchup + Mineralwasser: wie viel?", "opts": ["4,70 Euro", "4,60 Euro", "5,70 Euro"], "a": 0}
+              ]
+            },
+            { "type": "order", "title": "Xếp câu gọi món",
+              "items": [
+                {"chunks": ["Ich", "nehme", "den Hamburger", "mit Pommes."], "v": 1, "vi": "Tôi lấy bánh hamburger với khoai chiên."},
+                {"chunks": ["Was", "nimmst", "du?"], "v": 1, "vi": "Bạn lấy gì?"},
+                {"chunks": ["Ich", "nehme", "keinen", "Saft."], "v": 1, "vi": "Tôi không lấy nước ép."},
+                {"chunks": ["Wir", "nehmen", "einen Kaffee", "und ein Eis."], "v": 1, "vi": "Chúng tôi lấy một cà phê và một kem."},
+                {"chunks": ["Nimmst", "du", "den Salat?"], "v": 0, "vi": "Bạn lấy món salad à?"}
+              ]
+            },
+            { "type": "dialog", "title": "1 · Am Imbiss",
+              "lines": [
+                {"scene": "Tom gọi món ở quầy ăn nhanh „Sonnenschein“."},
+                {"who": "Verkäuferin", "v": "f", "de": "Guten Tag! Was nehmen Sie?", "vi": "Chào anh! Anh lấy gì ạ?"},
+                {"who": "Tom", "v": "m", "de": "Guten Tag. Ich nehme den Hamburger mit Pommes. Haben Sie auch Ketchup?", "vi": "Chào chị. Tôi lấy bánh hamburger với khoai chiên. Chị có tương cà không?"},
+                {"who": "Verkäuferin", "v": "f", "de": "Ja, gern. Und was trinken Sie?", "vi": "Có ạ. Còn anh uống gì?"},
+                {"who": "Tom", "v": "m", "de": "Einen Orangensaft, bitte.", "vi": "Cho tôi một nước cam ép."},
+                {"who": "Verkäuferin", "v": "f", "de": "Das macht zusammen 8,90 Euro.", "vi": "Tổng cộng 8,90 euro ạ.", "say": "Das macht zusammen acht Euro neunzig."},
+                {"who": "Tom", "v": "m", "de": "Hier, bitte.", "vi": "Của chị đây."},
+                {"who": "Verkäuferin", "v": "f", "de": "Danke schön! Guten Appetit!", "vi": "Cảm ơn anh! Chúc ngon miệng!"}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Was nimmst du?",
+              "lines": [
+                {"scene": "Mia và Ben chọn món."},
+                {"who": "Mia", "v": "f", "de": "Was nimmst du, Ben?", "vi": "Bạn lấy gì, Ben?"},
+                {"who": "Ben", "v": "m", "de": "Ich nehme den Salat mit Schinken und Ei. Und du?", "vi": "Mình lấy salad với giăm bông và trứng. Còn bạn?"},
+                {"who": "Mia", "v": "f", "de": "Ich weiß nicht. Ich habe Hunger, aber ich nehme keinen Hamburger. Eine Suppe vielleicht?", "vi": "Mình chưa biết. Mình đói, nhưng mình không lấy hamburger. Có lẽ một món súp?"},
+                {"who": "Ben", "v": "m", "de": "Gute Idee! Die Gemüsesuppe ist sehr gut.", "vi": "Ý hay! Súp rau rất ngon."},
+                {"who": "Mia", "v": "f", "de": "Dann nehme ich die Suppe und einen Apfelsaft.", "vi": "Vậy mình lấy súp và một nước táo."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "picknick", "title": "Lên kế hoạch dã ngoại: Wer kauft was?", "minutes": 7,
+          "blocks": [
+            {"type": "text", "html": "<p>Bạn và bạn bè muốn đi dã ngoại. Viết một <b>Einkaufsliste</b>, rồi nói ai mua gì — chính là chỗ dùng Akkusativ: <i>Wer kauft den Käse? – Ich kaufe den Käse.</i></p>"},
+            { "type": "table", "title": "Ví dụ: danh sách và người mua", "head": ["Món", "Ai mua", "Câu"], "say": 2,
+              "rows": [
+                ["der Käse", "Jonas", "Jonas kauft den Käse."],
+                ["das Brot", "Mia", "Mia kauft das Brot."],
+                ["der Orangensaft", "Carmen", "Carmen kauft den Orangensaft."],
+                ["die Tomaten", "Ben", "Ben kauft die Tomaten."],
+                ["die Würstchen", "tôi", "Ich kaufe die Würstchen."],
+                ["der Kuchen", "Lili", "Lili kauft einen Kuchen."]
+              ]
+            },
+            { "type": "gaps", "title": "Ai mua gì?",
+              "items": [
+                {"q": "Jonas kauft ___ Käse. <span class='muted'>(der Käse)</span>", "a": ["den"], "opts": ["der", "den"]},
+                {"q": "Mia kauft ___ Brot. <span class='muted'>(das Brot)</span>", "a": ["das"], "opts": ["das", "den"]},
+                {"q": "Carmen kauft ___ Orangensaft. <span class='muted'>(der Orangensaft)</span>", "a": ["den"], "opts": ["der", "den"]},
+                {"q": "Wer kauft ___ Tomaten? <span class='muted'>(die Tomaten)</span>", "a": ["die"], "opts": ["die", "den"]},
+                {"q": "Lili kauft ___ Kuchen. <span class='muted'>(ein: der Kuchen)</span>", "a": ["einen"], "opts": ["ein", "einen"]},
+                {"q": "Wir kaufen ___ Eis. <span class='muted'>(kein: das Eis)</span>", "a": ["kein"], "opts": ["kein", "keinen"]}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Việc của bạn:</b> viết danh sách sáu món cho buổi dã ngoại của bạn (<i>der …, das …, die …</i>) rồi nói to sáu câu: <i>Wer kauft den …? – Ich kaufe den …</i> Chú ý: món nào giống đực thì <b>den / einen / keinen</b>.</p>"}
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần B và Arbeitsbuch", "minutes": 6,
+          "blocks": [
+            { "type": "book", "title": "Phần B — Hast du den Käse?", "kb": "73", "tracks": "KB 2/38", "key": "Đáp án B1: giáo án <i>Unterrichtsplan L6</i>, trang 4–5.",
+              "steps": [
+                "B1a — nghe hai đoạn hội thoại ở trang 73 (track 38) và điền vào hai bảng ngữ pháp (Nominativ / Akkusativ). Đối chiếu với bảng ở trên.",
+                "B1b — hỏi và trả lời tương tự với các từ trong khung (Cola, Tomaten, Saft, Wasser, Kuchen, Schokolade): thay <i>Käse</i> bằng từ mới và nhớ <i>den</i> chỉ dùng cho giống đực.",
+                "B2 — đọc thực đơn trên bảng đen ở trang 73 và chọn món cùng bạn (học một mình: đóng cả hai vai). Xem bảng chia <i>nehmen</i> bên cạnh.",
+                "B3 — lập kế hoạch dã ngoại (đã làm ở phần trên). Tuỳ chọn: xem lại „Laras Film“ để xem người ta mang gì đi dã ngoại."
+              ]
+            },
+            { "type": "book", "title": "Arbeitsbuch phần B", "ab": "65–67", "tracks": "AB 61-63",
+              "steps": [
+                "Bài 10 (tr. 65) — Satzakzent: nghe (AB track 61–63), gạch dưới từ mang trọng âm câu rồi nói theo.",
+                "Bài 11–12 (tr. 65) — đánh dấu <i>Wer/Was?</i> và <i>Wen/Was?</i>; điền <i>der – das – die – ein – kein</i> đúng dạng.",
+                "Bài 13–15 (tr. 66) — chọn đúng dạng <i>ein / kein</i>, điền một thư điện tử, chia <i>nehmen</i>.",
+                "Bài 16–17 (tr. 67) — <i>mein, dein, ein</i> ở Akkusativ; ghép từ thành từ ghép (<i>Orangensaft</i>).",
+                "Bài 18 (tr. 67) — bài đọc kiểu kỳ thi Start Deutsch 1: đọc hai tin nhắn và chọn đúng / sai. Thử làm trong 8 phút, không dùng từ điển."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi phân biệt được chủ ngữ (<i>Wer/Was?</i>) và tân ngữ (<i>Wen/Was?</i>).",
+                "Tôi dùng đúng <i>den / einen / keinen</i> với danh từ giống đực và biết các giống khác không đổi.",
+                "Tôi chia được <i>nehmen</i> và gọi món: <i>Ich nehme den Hamburger und einen Saft. Was nimmst du?</i>",
+                "Tôi đoán được giống của từ ghép (<i>der Orangensaft</i>).",
+                "Tôi lên được kế hoạch dã ngoại: <i>Wer kauft den Käse?</i>"
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 65–67, bài 10–18 (bài 10 có audio AB track 61–63).", "tracks": "AB 61-63"},
+                "Viết 10 câu Akkusativ với <i>haben</i> và <i>nehmen</i>, mỗi câu một danh từ khác nhau (ít nhất 4 danh từ giống đực).",
+                "Đọc to bảng „der → den, ein → einen, kein → keinen“ cùng ba ví dụ: <i>Ich habe den Käse. Ich nehme einen Saft. Wir haben keinen Hunger.</i>",
+                {"t": "Nghe lại hai đoạn hội thoại của sách (B1) và nhại theo.", "tracks": "KB 2/38"},
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4", "no": 4, "minutes": 65, "set": "d",
+      "title": "Doch!",
+      "vi": "Ja / nein / doch với câu hỏi phủ định, möchten, kein … mehr, phản ứng trong hội thoại, trò chơi „Wie bitte?“",
+      "book": "Kursbuch tr. 74 (C1–C3) · Arbeitsbuch tr. 68 (bài 19–22) · Lernwortschatz L6 (phần C) · Lied: Kursbuch tr. 80",
+      "goals": [
+        "Trả lời câu hỏi Có/Không: <i>Ja</i> / <i>Nein</i> với câu hỏi khẳng định; <i>Doch</i> / <i>Nein</i> với câu hỏi phủ định.",
+        "Đặt câu hỏi phủ định với <i>nicht</i> và <i>kein</i>: <i>Hast du keinen Hunger mehr?</i>",
+        "Chia và dùng <i>möchten</i>: <i>Ich möchte einen Kaffee. Möchtest du ein Würstchen?</i>",
+        "Phản ứng tự nhiên trong hội thoại: <i>Gute Idee! Kein Problem! Na gut. Ach nein. Moment mal!</i>",
+        "Chơi trò „Wie bitte?“: hỏi lại với vẻ ngạc nhiên."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: đồng ý, từ chối, möchten", "minutes": 9,
+          "blocks": [
+            {"type": "words", "set": "d"},
+            {"type": "listenPick", "set": "d", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "d", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (26)", "minutes": 5,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "ch có hai âm", "vi": "Sau <b>a, o, u, au</b>: <b>ch</b> đọc „kh“ (<i>doch, auch, Buch</i>). Sau các chữ còn lại (<b>i, e, ä, ö, ü, ei, eu, l, n, r</b>): đọc „xì“ nhẹ (<i>nicht, ich, möchte, natürlich</i>). Đổi nguyên âm thì đổi cả âm ch: <i>Buch</i> (kh) ↔ <i>Bücher</i> (xì).", "ex": ["doch|có chứ", "auch|cũng", "nicht|không", "möchte|muốn"]},
+                {"t": "Câu hỏi: giọng lên hay xuống?", "vi": "Câu hỏi <b>Có/Không</b> (<i>Möchtest du einen Tee?</i>) — giọng <b>lên</b> ở cuối ↗. Câu hỏi <b>W</b> (<i>Was möchtest du?</i>) — giọng <b>xuống</b> ở cuối ↘. Câu trả lời <i>Doch!</i> thường nói mạnh, như để phản bác.", "ex": ["Möchtest du einen Tee?|Bạn muốn một ly trà không?", "Was möchtest du?|Bạn muốn gì?", "Doch!|Có chứ!"]},
+                {"t": "v = „f“, ie, ei, eu", "vi": "<i>vielleicht</i> = „fi-LAIKHT“: <b>v</b> đọc „f“, <b>ie</b> đọc „i“ dài, <b>ei</b> đọc „ai“. <i>lieber</i> = „LI-ba“. <b>eu</b> đọc „oi“: <i>Freund</i> = „froint“ (d cuối đọc „t“).", "ex": ["vielleicht|có lẽ", "lieber|thích hơn", "Freund|bạn", "Freundin|bạn gái"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "möchte", "opts": ["möchte", "mochte"]},
+                {"say": "lieber", "opts": ["lieber", "Leber"]},
+                {"say": "vielleicht", "opts": ["vielleicht", "vieleicht"]},
+                {"say": "natürlich", "opts": ["natürlich", "naturlich"]},
+                {"say": "Idee", "opts": ["Idee", "Ide"]},
+                {"say": "Freund", "opts": ["Freund", "Freunt"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jand", "title": "Ngữ pháp: ja – nein – doch", "minutes": 15,
+          "blocks": [
+            {"type": "text", "html": "<p>Câu hỏi <b>Có/Không</b> (Ja/Nein-Frage) có động từ đứng đầu câu. Bình thường trả lời <b>Ja</b> hoặc <b>Nein</b>. Nhưng khi câu hỏi có <b>nicht</b> hoặc <b>kein</b> (câu hỏi phủ định), tiếng Đức có thêm <b>Doch</b> — nghĩa là „<i>có chứ, ngược lại với điều bạn nghĩ</i>“.</p>"},
+            { "type": "table", "title": "ja – nein – doch", "head": ["Câu hỏi", "Thực ra là có", "Thực ra là không"], "say": 0, "vi": "Hàng 1 là câu hỏi khẳng định; hàng 2 và 3 là câu hỏi phủ định (có <i>keine</i> / <i>nicht</i>). Với câu hỏi phủ định: <b>Doch</b> = „có, nó có / tôi có“ (phản bác lại câu hỏi); <b>Nein</b> = „đúng, không“ (đồng ý với câu hỏi).",
+              "rows": [
+                ["Möchtest du einen Kaffee?", "<b>Ja</b>, gern.", "<b>Nein</b>, danke."],
+                ["Hast du heute <b>keine</b> Zeit?", "<b>Doch</b>, ich habe Zeit.", "<b>Nein</b>, ich habe keine Zeit."],
+                ["Ist das Wetter <b>nicht</b> schön?", "<b>Doch</b>, es ist schön.", "<b>Nein</b>, es ist nicht schön."]
+              ]
+            },
+            {"type": "tip", "title": "Cầu nối với tiếng Anh", "html": "<p>Tiếng Anh dùng <i>yes / no</i> theo sự thật: <i>Aren't you hungry? – Yes, I am.</i> Tiếng Đức tách hẳn ra: <i>Hast du keinen Hunger? – <b>Doch</b>, ich habe Hunger.</i> (= Yes, I am.) <i>Nein</i> = No, I'm not. Chỉ cần nhớ: câu hỏi có <b>nicht / kein</b> và bạn muốn nói „có“ → <b>Doch</b>.</p>"},
+            { "type": "choice", "title": "ja, nein hay doch?",
+              "items": [
+                {"q": "Möchtest du einen Tee? <span class='muted'>(Bạn muốn uống trà.)</span>", "opts": ["Ja, gern.", "Doch.", "Nein, danke."], "a": 0},
+                {"q": "Möchtest du einen Tee? <span class='muted'>(Bạn không muốn.)</span>", "opts": ["Nein, danke.", "Doch.", "Ja, gern."], "a": 0},
+                {"q": "Hast du keine Zeit? <span class='muted'>(Thực ra bạn có thời gian.)</span>", "opts": ["Doch!", "Ja!", "Nein!"], "a": 0},
+                {"q": "Hast du keine Zeit? <span class='muted'>(Đúng là bạn không có thời gian.)</span>", "opts": ["Nein.", "Doch!", "Ja!"], "a": 0},
+                {"q": "Ist das Wetter nicht schön? <span class='muted'>(Bạn thấy trời đẹp.)</span>", "opts": ["Doch!", "Nein.", "Ja."], "a": 0},
+                {"q": "Regnet es nicht? <span class='muted'>(Trời đang mưa.)</span>", "opts": ["Doch!", "Nein.", "Ja."], "a": 0},
+                {"q": "Sprichst du nicht Deutsch? <span class='muted'>(Bạn nói tiếng Đức.)</span>", "opts": ["Doch!", "Nein.", "Ja."], "a": 0},
+                {"q": "Haben wir keinen Käse mehr? <span class='muted'>(Vẫn còn phô mai.)</span>", "opts": ["Doch, hier ist der Käse.", "Nein, hier ist der Käse.", "Ja, hier ist der Käse."], "a": 0}
+              ]
+            },
+            { "type": "gaps", "title": "Điền ja, nein hoặc doch", "task": "Chọn Ja, Nein hoặc Doch.",
+              "items": [
+                {"q": "Möchtest du ein Würstchen? – ___, gern.", "a": ["Ja"], "opts": ["Ja", "Nein", "Doch"]},
+                {"q": "Hast du kein Handy? – ___, hier ist mein Handy.", "a": ["Doch"], "opts": ["Ja", "Nein", "Doch"]},
+                {"q": "Ist der Kaffee nicht heiß? – ___, er ist kalt.", "a": ["Nein"], "opts": ["Ja", "Nein", "Doch"]},
+                {"q": "Trinkst du nicht gern Tee? – ___, ich trinke sehr gern Tee.", "a": ["Doch"], "opts": ["Ja", "Nein", "Doch"]},
+                {"q": "Hast du einen Hund? – ___, ich habe keinen Hund.", "a": ["Nein"], "opts": ["Ja", "Nein", "Doch"]},
+                {"q": "Isst du kein Fleisch? – ___, ich esse Fleisch.", "a": ["Doch"], "opts": ["Ja", "Nein", "Doch"]},
+                {"q": "Haben wir keine Cola mehr? – ___, wir haben keine Cola mehr.", "a": ["Nein"], "opts": ["Ja", "Nein", "Doch"]},
+                {"q": "Kommst du nicht zum Picknick? – ___, natürlich komme ich!", "a": ["Doch"], "opts": ["Ja", "Nein", "Doch"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "moechten", "title": "Chia động từ và dùng möchten", "minutes": 10,
+          "blocks": [
+            {"type": "text", "html": "<p><b>möchten</b> = muốn (cách nói lịch sự). Dùng khi gọi món, xin, hỏi ý. Đi với danh từ (ở <b>Akkusativ</b>: <i>Ich möchte <b>einen</b> Kaffee</i>) hoặc với một động từ nguyên mẫu đứng cuối câu.</p>"},
+            {"type": "conj", "title": "möchten", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [{"inf": "möchten", "vi": "muốn (lịch sự)", "forms": ["möchte", "möchtest", "möchte", "möchten", "möchtet", "möchten"]}], "vi": "Chia đặc biệt: <b>ich</b> và <b>er/sie</b> giống nhau (<i>möchte</i>, không có -t). Các ngôi còn lại: du <b>-st</b>, wir / sie / Sie <b>-n</b>, ihr <b>-t</b>."},
+            { "type": "table", "title": "Cách dùng möchten", "head": ["Câu", "Nghĩa"], "say": 0, "vi": "<b>lieber</b> = „thích hơn“ (so sánh của gern): <i>Ich möchte lieber Tee.</i>",
+              "rows": [
+                ["Ich möchte <b>einen</b> Kaffee.", "Tôi muốn một ly cà phê."],
+                ["Möchtest du ein Würstchen?", "Bạn muốn một cái xúc xích không?"],
+                ["Lili möchte <b>keine</b> Würstchen.", "Lili không muốn xúc xích."],
+                ["Wir möchten <b>lieber</b> Käse.", "Chúng tôi thích phô mai hơn."],
+                ["Möchtet ihr ein Eis?", "Các bạn muốn ăn kem không?"]
+              ]
+            },
+            { "type": "gaps", "title": "Điền dạng möchten", "task": "Gõ dạng chia đúng (ö: bấm nút phía trên, hoặc gõ oe).",
+              "items": [
+                {"q": "Ich ___ einen Kaffee.", "a": ["möchte"]},
+                {"q": "Was ___ du?", "a": ["möchtest"]},
+                {"q": "Lili ___ ein Eis.", "a": ["möchte"]},
+                {"q": "Wir ___ lieber Tee.", "a": ["möchten"]},
+                {"q": "___ ihr einen Saft?", "a": ["Möchtet"]},
+                {"q": "Sofia ___ keine Würstchen.", "a": ["möchte"]}
+              ]
+            },
+            { "type": "order", "title": "Xếp câu với möchten",
+              "items": [
+                {"chunks": ["Möchtest", "du", "einen Kaffee?"], "v": 0, "vi": "Bạn muốn một ly cà phê không?"},
+                {"chunks": ["Ich", "möchte", "lieber", "Tee."], "v": 1, "vi": "Tôi thích trà hơn."},
+                {"chunks": ["Lili", "möchte", "keine Würstchen."], "v": 1, "vi": "Lili không muốn xúc xích."},
+                {"chunks": ["Was", "möchtest", "du?"], "v": 1, "vi": "Bạn muốn gì?"},
+                {"chunks": ["Wir", "möchten", "einen Salat."], "v": 1, "vi": "Chúng tôi muốn một món salad."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kein-mehr", "title": "kein … mehr và nicht mehr", "minutes": 5,
+          "blocks": [
+            { "type": "table", "title": "Không còn … nữa", "head": ["Câu gốc", "Không còn nữa", "Nghĩa"], "say": 1, "vi": "<b>kein … mehr</b> đi với danh từ; <b>nicht … mehr</b> đi với động từ, tính từ… Nhớ: <b>kein</b> + danh từ, <b>nicht</b> cho phần còn lại của câu.",
+              "rows": [
+                ["Ich habe Hunger.", "Ich habe <b>keinen</b> Hunger <b>mehr</b>.", "Tôi không còn đói nữa."],
+                ["Wir haben Käse.", "Wir haben <b>keinen</b> Käse <b>mehr</b>.", "Chúng ta không còn phô mai nữa."],
+                ["Es gibt Saft.", "Es gibt <b>keinen</b> Saft <b>mehr</b>.", "Hết nước ép rồi."],
+                ["Es regnet.", "Es regnet <b>nicht mehr</b>.", "Trời hết mưa rồi."]
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi: kein hay nicht?",
+              "items": [
+                {"s": "Ich habe nicht Hunger mehr.", "err": "nicht Hunger", "fix": ["keinen Hunger"], "why": "Danh từ → kein-: keinen Hunger (der Hunger)."},
+                {"s": "Wir haben kein Käse mehr.", "err": "kein Käse", "fix": ["keinen Käse"], "why": "der Käse → keinen Käse."},
+                {"s": "Es regnet nicht mehr.", "err": null},
+                {"s": "Ich esse keinen Hamburger.", "err": null},
+                {"s": "Das Wetter ist kein schön.", "err": "kein", "fix": ["nicht"], "why": "schön là tính từ → nicht schön."},
+                {"s": "Wir haben keine Zeit mehr.", "err": null}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "strategien", "title": "Phản ứng trong hội thoại", "minutes": 5,
+          "blocks": [
+            { "type": "table", "title": "Những câu ngắn rất hay dùng", "head": ["Cụm", "Dùng khi", "Ví dụ"], "say": 0,
+              "rows": [
+                ["Gute Idee!", "Bạn thấy đề nghị hay", "Machen wir ein Picknick? – Gute Idee!"],
+                ["Kein Problem!", "Ai đó xin lỗi hoặc nhờ bạn", "Entschuldigung! – Kein Problem!"],
+                ["Na gut.", "Bạn đồng ý, hơi miễn cưỡng", "Na gut, dann nehme ich den Salat."],
+                ["Ach nein.", "Có chuyện không hay xảy ra", "Ach nein, es regnet!"],
+                ["Ich weiß nicht.", "Bạn chưa biết, chưa quyết định", "Was nimmst du? – Ich weiß nicht."],
+                ["Moment mal!", "Bạn cần dừng lại, hoặc chợt nhận ra có gì sai", "Moment mal, wo ist mein Handy?"],
+                ["Na prima!", "Tin tốt, tuyệt", "Das Wetter bleibt gut. – Na prima!"]
+              ]
+            },
+            { "type": "choice", "title": "Phản ứng nào hợp?",
+              "items": [
+                {"q": "Bạn bè rủ: „Machen wir morgen ein Picknick?“ Bạn thấy rất hay:", "opts": ["Gute Idee!", "Ach nein.", "Kein Problem!"], "a": 0},
+                {"q": "Ai đó nói: „Entschuldigung, ich bin zu spät!“ Bạn đáp:", "opts": ["Kein Problem!", "Na prima!", "Moment mal!"], "a": 0},
+                {"q": "Trời đang nắng bất ngờ đổ mưa trong buổi dã ngoại:", "opts": ["Ach nein, es regnet!", "Na prima!", "Gute Idee!"], "a": 0},
+                {"q": "Bạn chưa chọn xong món:", "opts": ["Ich weiß nicht.", "Kein Problem!", "Na prima!"], "a": 0},
+                {"q": "Dự báo: ngày mai trời nắng, 25 độ:", "opts": ["Na prima!", "Ach nein.", "Moment mal!"], "a": 0},
+                {"q": "Bạn không tìm thấy điện thoại:", "opts": ["Moment mal, wo ist mein Handy?", "Na gut.", "Gute Idee!"], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wie-bitte", "title": "Trò chơi „Wie bitte?“", "minutes": 5,
+          "blocks": [
+            {"type": "text", "html": "<p>Trò chơi (bài C3 của sách): bạn hỏi một câu <b>Có/Không</b>; bạn của bạn trả lời; bạn giả vờ nghe nhầm và hỏi lại bằng một câu <b>phủ định</b> — họ phải đáp <b>Doch</b> hoặc <b>Nein</b>.</p>"},
+            { "type": "dialog", "title": "Wie bitte?",
+              "lines": [
+                {"scene": "Mia và Ben chơi trò hỏi lại."},
+                {"who": "Mia", "v": "f", "de": "Trinkst du gern Tee?", "vi": "Bạn có thích uống trà không?"},
+                {"who": "Ben", "v": "m", "de": "Ja, ich trinke sehr gern Tee.", "vi": "Có, mình rất thích uống trà."},
+                {"who": "Mia", "v": "f", "de": "Wie bitte? Du trinkst nicht gern Tee?", "vi": "Cái gì cơ? Bạn không thích uống trà à?"},
+                {"who": "Ben", "v": "m", "de": "Doch! Ich trinke sehr gern Tee.", "vi": "Có chứ! Mình rất thích uống trà."},
+                {"who": "Mia", "v": "f", "de": "Hast du eine Gitarre?", "vi": "Bạn có đàn ghi-ta không?"},
+                {"who": "Ben", "v": "m", "de": "Nein.", "vi": "Không."},
+                {"who": "Mia", "v": "f", "de": "Wie bitte? Du hast keine Gitarre?", "vi": "Cái gì cơ? Bạn không có đàn ghi-ta à?"},
+                {"who": "Ben", "v": "m", "de": "Nein, ich habe keine Gitarre.", "vi": "Đúng, mình không có đàn ghi-ta."}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Việc của bạn:</b> viết bốn câu hỏi Có/Không (không dùng W-Frage) về sở thích hoặc đồ vật, ví dụ <i>Wanderst du gern? Hast du einen Hund? Sprichst du Englisch? Möchtest du einen Kaffee?</i> Rồi tự đóng hai vai: hỏi → trả lời → „Wie bitte? Du … nicht …?“ → trả lời <i>Doch</i> hoặc <i>Nein</i>.</p>"}
+          ]
+        },
+        {
+          "id": "lied", "title": "Bài hát: Wir sind nicht allein", "minutes": 3,
+          "blocks": [
+            {"type": "words", "set": "d2", "title": "Từ thêm cho bài hát", "collapsed": true},
+            { "type": "book", "title": "Zwischendurch mal … Lied", "kb": "80", "tracks": "KB 2/43",
+              "steps": [
+                "Nghe bài hát (track 43) khi sách đóng; ghi các từ về đồ ăn, đồ uống bạn nghe được.",
+                "Mở trang 80, nghe lại và hát theo. Gạch dưới các câu có <i>kein-</i> — bài hát có nhiều <i>keinen / keine</i>, đúng thứ bạn vừa học.",
+                "Bài 2 — nghĩ xem còn những <i>-verein</i> / <i>-klub</i> nào (Fußballverein, Musikverein, Schachverein …). Ở Đức, rất nhiều người sinh hoạt trong một Verein."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần C", "minutes": 4,
+          "blocks": [
+            { "type": "book", "title": "Phần C — Hast du keinen Hunger mehr? – Doch.", "kb": "74", "tracks": "KB 2/39", "key": "Đáp án C1, C2: giáo án <i>Unterrichtsplan L6</i>, trang 6–7.",
+              "steps": [
+                "C1 — nghe hai đoạn hội thoại (track 39), điền <i>Ja / Nein / Doch</i> vào chỗ trống; sau khi nghe, đọc lại thành tiếng.",
+                "C2 — đọc bốn đoạn tin nhắn A–D và điền <i>ja, nein</i> hoặc <i>doch</i>; để ý câu hỏi nào có <i>nicht / kein</i>.",
+                "C3 — trò chơi „Wie bitte?“: viết bốn câu hỏi và hỏi bạn (học một mình: tự đóng hai vai như ở trên)."
+              ]
+            },
+            { "type": "book", "title": "Arbeitsbuch phần C", "ab": "68",
+              "steps": [
+                "Bài 19 (tr. 68) — điền <i>möchten</i> và <i>nehmen</i> đúng dạng.",
+                "Bài 20–21 — điền <i>Ja – Nein – Doch</i> và nối câu hỏi với câu trả lời.",
+                "Bài 22 — viết câu hỏi phủ định với <i>nicht</i> từ các câu trả lời cho sẵn."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi trả lời đúng câu hỏi Có/Không: <i>Ja / Nein</i>, và <i>Doch</i> khi câu hỏi có <i>nicht / kein</i> mà tôi muốn nói „có“.",
+                "Tôi đặt được câu hỏi phủ định: <i>Hast du keinen Hunger mehr?</i>",
+                "Tôi chia được <i>möchten</i> và nói: <i>Ich möchte einen Kaffee. Möchtest du ein Würstchen?</i>",
+                "Tôi phản ứng tự nhiên: <i>Gute Idee! Kein Problem! Na gut. Ach nein. Moment mal!</i>",
+                "Tôi chơi được trò „Wie bitte?“."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                "Arbeitsbuch tr. 68, bài 19–22.",
+                "Viết 8 câu hỏi phủ định (<i>nicht</i> / <i>kein</i>) và trả lời mỗi câu hai cách: <i>Doch …</i> và <i>Nein …</i>.",
+                {"t": "Nghe lại hai đoạn hội thoại của sách (C1) và nhại theo. Nghe bài hát „Wir sind nicht allein“.", "tracks": "KB 2/39, KB 2/43"},
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5", "no": 5, "minutes": 67, "set": "e",
+      "title": "Was machst du in der Freizeit?",
+      "vi": "Sở thích và thời gian rảnh, đổi nguyên âm lesen – treffen – fahren, đọc hồ sơ cá nhân, Lieblings-, Audio-Training",
+      "book": "Kursbuch tr. 75, 79 (D1–D2) · Arbeitsbuch tr. 69–71 (bài 23–31) · Lernwortschatz L6 (phần D) · Zwischendurch: Audio-Training, Almas Hobby",
+      "goals": [
+        "Kể 8–10 hoạt động lúc rảnh: <i>schwimmen, tanzen, joggen, grillen, Ski fahren, Gitarre spielen, Freunde treffen, lesen, im Internet surfen, singen</i>.",
+        "Chia <i>lesen</i> (e → ie), <i>treffen</i> (e → i), <i>fahren</i> (a → ä) và nhận ra cả nhóm động từ đổi nguyên âm.",
+        "Hỏi – đáp về sở thích: <i>Was sind deine Hobbys? – Mein Hobby ist Lesen. Ich finde Krimis toll.</i>",
+        "Đọc một hồ sơ cá nhân (Personenprofil), tìm thông tin và viết hồ sơ của mình.",
+        "Nói về điều yêu thích: <i>Mein Lieblingsfilm / Meine Lieblingsmusik ist …</i>"
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: thời gian rảnh và sở thích", "minutes": 10,
+          "blocks": [
+            {"type": "words", "set": "e"},
+            {"type": "listenPick", "set": "e", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "e", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (27)", "minutes": 5,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "Nhấn âm trong động từ", "vi": "Động từ có đuôi <b>-en</b> nhấn ở <b>âm đầu</b>: <i>SCHWIM-men, TAN-zen, GRIL-len, SUR-fen</i>. Riêng đuôi <b>-ieren</b> nhấn ở <b>ie</b>: <i>fotograFIEren, telefoNIEren</i>. Âm <b>-en</b> cuối đọc rất nhẹ, gần như chỉ còn „n“. (Bài 31 của Arbeitsbuch luyện chính điểm này.)", "ex": ["schwimmen|bơi", "tanzen|nhảy", "grillen|nướng", "fotografieren|chụp ảnh"]},
+                {"t": "Từ mượn: Ski, surfen, joggen", "vi": "Từ mượn đọc theo kiểu Đức: <b>Ski</b> đọc „shi“ (sch + i dài); <b>surfen</b> gần „ZƠR-phần“; <b>joggen</b> đọc „DSHOG-ghen“. <b>sp-</b> ở đầu từ đọc „shp-“: <i>Spaß</i> = „shpas“. <b>z</b> đọc „ts“: <i>tanzen</i>.", "ex": ["Ski|ván trượt tuyết", "surfen|lướt", "joggen|chạy bộ", "Spaß|niềm vui"]},
+                {"t": "ie, ä, ff: liest, fährt, trifft", "vi": "<b>ie</b> đọc „i“ dài: <i>liest</i> = „LIST“. <b>ä</b> dài đọc „ê“ dài: <i>fährt</i> = „FÊRT“. <b>ff</b> chỉ là một âm f và làm nguyên âm trước nó ngắn: <i>trifft</i>.", "ex": ["liest|đọc (er/sie)", "fährt|đi xe (er/sie)", "trifft|gặp (er/sie)", "schläft|ngủ (er/sie)"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "liest", "opts": ["liest", "list"]},
+                {"say": "fährt", "opts": ["fährt", "fahrt"]},
+                {"say": "trifft", "opts": ["trifft", "trift"]},
+                {"say": "tanzen", "opts": ["tanzen", "tansen"]},
+                {"say": "Spaß", "opts": ["Spaß", "Spas"]},
+                {"say": "Krimi", "opts": ["Krimi", "Krimmi"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verben", "title": "Đổi nguyên âm: lesen, treffen, fahren", "minutes": 14,
+          "blocks": [
+            {"type": "text", "html": "<p>Ba động từ mới của Lektion 6 đổi nguyên âm ở <b>du</b> và <b>er/sie/es</b>: <b>lesen</b> e → <b>ie</b> (<i>liest</i>), <b>treffen</b> e → <b>i</b> (<i>triffst, trifft</i>), <b>fahren</b> a → <b>ä</b> (<i>fährst, fährt</i>). Các ngôi <i>ich, wir, ihr, sie/Sie</i> <b>không đổi</b>. Bạn đã gặp cả nhóm này: <i>sprechen, essen, nehmen, vergessen, fernsehen, schlafen, anfangen</i>.</p>"},
+            {"type": "conj", "title": "Ba động từ đổi nguyên âm", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [{"inf": "lesen", "vi": "đọc", "forms": ["lese", "liest", "liest", "lesen", "lest", "lesen"]}, {"inf": "treffen", "vi": "gặp", "forms": ["treffe", "triffst", "trifft", "treffen", "trefft", "treffen"]}, {"inf": "fahren", "vi": "đi (bằng xe)", "forms": ["fahre", "fährst", "fährt", "fahren", "fahrt", "fahren"]}], "vi": "Chỉ <b>du</b> và <b>er/sie</b> đổi. <i>lesen</i>: du <i>liest</i> (không thêm -st lần nữa), ihr <i>lest</i>."},
+            { "type": "table", "title": "Cả nhóm động từ đổi nguyên âm", "head": ["Kiểu đổi", "Động từ", "du … / er/sie …"], "vi": "Mẹo: khi học một động từ mới, hãy học luôn dạng <i>du</i> và <i>er/sie</i>, ví dụ <i>fahren – fährt</i>.",
+              "rows": [
+                ["e → i", "sprechen · essen · nehmen · treffen · vergessen", "du sprichst · isst · nimmst · triffst · vergisst"],
+                ["e → ie", "lesen · (fern)sehen", "du liest · siehst"],
+                ["a → ä", "fahren · schlafen · anfangen", "du fährst · schläfst · fängst … an"]
+              ]
+            },
+            { "type": "gaps", "title": "Điền dạng chia", "task": "Gõ dạng chia đúng (ä: bấm nút phía trên, hoặc gõ ae).",
+              "items": [
+                {"q": "Lara ___ gern Krimis. <span class='muted'>(lesen)</span>", "a": ["liest"]},
+                {"q": "Du ___ am Samstag deine Freunde. <span class='muted'>(treffen)</span>", "a": ["triffst"]},
+                {"q": "Sofia ___ gern Auto. <span class='muted'>(fahren)</span>", "a": ["fährt"]},
+                {"q": "___ du gern Ski? <span class='muted'>(fahren)</span>", "a": ["Fährst"]},
+                {"q": "Er ___ viel. <span class='muted'>(schlafen)</span>", "a": ["schläft"]},
+                {"q": "Ihr ___ viele Bücher. <span class='muted'>(lesen)</span>", "a": ["lest"]},
+                {"q": "Wir ___ am Wochenende Freunde. <span class='muted'>(treffen)</span>", "a": ["treffen"]},
+                {"q": "Was ___ du? <span class='muted'>(nehmen)</span>", "a": ["nimmst"]},
+                {"q": "Mein Vater ___ jeden Tag ein Buch. <span class='muted'>(lesen)</span>", "a": ["liest"]},
+                {"q": "Ich ___ gern Fahrrad. <span class='muted'>(fahren)</span>", "a": ["fahre"]}
+              ]
+            },
+            { "type": "choice", "title": "Dạng nào đúng?",
+              "items": [
+                {"q": "Er (lesen) viel.", "opts": ["liest", "lest", "lesst", "liesen"], "a": 0},
+                {"q": "Du (fahren) gern Auto.", "opts": ["fährst", "fahrst", "fährt"], "a": 0},
+                {"q": "Sie (= cô ấy) (treffen) heute Freunde.", "opts": ["trifft", "treffet", "triffet"], "a": 0},
+                {"q": "Ihr (fahren) nach Wien.", "opts": ["fahrt", "fährt", "fährst"], "a": 0},
+                {"q": "Ich (lesen) gern.", "opts": ["lese", "liese", "lies"], "a": 0}
+              ]
+            },
+            { "type": "order", "title": "Xếp câu",
+              "items": [
+                {"chunks": ["Ich", "treffe", "am Wochenende", "meine Freunde."], "v": 1, "vi": "Cuối tuần tôi gặp bạn bè."},
+                {"chunks": ["Am Wochenende", "treffe", "ich", "meine Freunde."], "v": 1, "vi": "Cuối tuần thì tôi gặp bạn bè."},
+                {"chunks": ["Lara", "liest", "gern", "Krimis."], "v": 1, "vi": "Lara thích đọc truyện trinh thám."},
+                {"chunks": ["Fährt", "Sofia", "gern", "Auto?"], "v": 0, "vi": "Sofia có thích lái xe không?"},
+                {"chunks": ["Wir", "fahren", "gern", "Ski."], "v": 1, "vi": "Chúng tôi thích trượt tuyết."},
+                {"chunks": ["Triffst", "du", "am Samstag", "Freunde?"], "v": 0, "vi": "Thứ Bảy bạn gặp bạn bè chứ?"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hobbys", "title": "Nói về sở thích", "minutes": 12,
+          "blocks": [
+            { "type": "table", "title": "Hobbys: Ich … gern", "head": ["", "Câu", "Nghĩa"], "say": 1,
+              "rows": [
+                ["🏊", "Ich schwimme gern.", "Tôi thích bơi."],
+                ["💃", "Ich tanze gern.", "Tôi thích nhảy."],
+                ["🏃", "Ich jogge gern.", "Tôi thích chạy bộ."],
+                ["🍗", "Ich grille gern.", "Tôi thích nướng thịt."],
+                ["⛷️", "Ich fahre gern Ski.", "Tôi thích trượt tuyết."],
+                ["🎸", "Ich spiele gern Gitarre.", "Tôi thích chơi ghi-ta."],
+                ["👫", "Ich treffe gern Freunde.", "Tôi thích gặp bạn bè."],
+                ["📖", "Ich lese gern.", "Tôi thích đọc sách."],
+                ["🌐", "Ich surfe gern im Internet.", "Tôi thích lướt web."],
+                ["🎤", "Ich singe gern.", "Tôi thích hát."]
+              ]
+            },
+            { "type": "table", "title": "Bốn cách nói về hobby", "head": ["Cách nói", "Ví dụ", "Nghĩa"], "say": 1, "vi": "Khi động từ làm chủ ngữ hoặc đứng sau <i>ist</i>, nó thành danh từ và <b>viết hoa</b>: <i>Schwimmen finde ich toll. Mein Hobby ist Lesen.</i> Với danh từ thật: <i>Ich finde Krimis interessant.</i>",
+              "rows": [
+                ["Ich … gern", "Ich schwimme gern.", "Tôi thích bơi."],
+                ["… finde ich toll / gut / interessant", "Schwimmen finde ich toll.", "Bơi thì tôi thấy tuyệt."],
+                ["… macht Spaß", "Schwimmen macht Spaß!", "Bơi vui lắm!"],
+                ["Mein Hobby ist …", "Mein Hobby ist Schwimmen.", "Sở thích của tôi là bơi."]
+              ]
+            },
+            { "type": "choice", "title": "Chọn câu đúng",
+              "items": [
+                {"q": "Sở thích của tôi là đọc sách.", "opts": ["Mein Hobby ist Lesen.", "Mein Hobby ist lesen.", "Meine Hobby ist Lesen."], "a": 0},
+                {"q": "Nhảy thì tôi thấy tuyệt.", "opts": ["Tanzen finde ich toll.", "Tanzen ich finde toll.", "Ich finde tanzen gern."], "a": 0},
+                {"q": "Bơi vui lắm!", "opts": ["Schwimmen macht Spaß!", "Schwimmen machst Spaß!", "Schwimmen macht gern!"], "a": 0},
+                {"q": "Tôi thấy truyện trinh thám thú vị.", "opts": ["Ich finde Krimis interessant.", "Ich finde Krimis interessiert.", "Ich finde Krimis gern."], "a": 0},
+                {"q": "Các sở thích của tôi là bơi và hát.", "opts": ["Meine Hobbys sind Schwimmen und Singen.", "Mein Hobbys ist Schwimmen und Singen.", "Meine Hobbys ist Schwimmen und Singen."], "a": 0}
+              ]
+            },
+            { "type": "order", "title": "Xếp câu về hobby",
+              "items": [
+                {"chunks": ["Ich", "tanze", "total", "gern."], "v": 1, "vi": "Tôi cực kỳ thích nhảy."},
+                {"chunks": ["Ich", "finde", "Krimis", "interessant."], "v": 1, "vi": "Tôi thấy truyện trinh thám thú vị."},
+                {"chunks": ["Mein Hobby", "ist", "Fotografieren."], "v": 1, "vi": "Sở thích của tôi là chụp ảnh."},
+                {"chunks": ["Schwimmen", "macht", "viel", "Spaß."], "v": 1, "vi": "Bơi rất vui."},
+                {"chunks": ["Singen", "finde", "ich", "toll."], "v": 1, "vi": "Hát thì tôi thấy tuyệt."}
+              ]
+            },
+            { "type": "table", "title": "Lieblings- + danh từ", "head": ["Từ", "Ví dụ"], "say": 1, "vi": "Giống của từ ghép theo từ cuối. <b>mein</b> cho der / das, <b>meine</b> cho die.",
+              "rows": [
+                ["<span class='g-der'>der Lieblingsfilm</span>", "Mein Lieblingsfilm ist ein Krimi."],
+                ["<span class='g-das'>das Lieblingsbuch</span>", "Mein Lieblingsbuch ist „Momo“."],
+                ["<span class='g-die'>die Lieblingsmusik</span>", "Meine Lieblingsmusik ist Rock."],
+                ["<span class='g-die'>die Lieblingsfarbe</span>", "Meine Lieblingsfarbe ist Blau."],
+                ["<span class='g-das'>das Lieblingsessen</span>", "Mein Lieblingsessen ist Pizza."]
+              ]
+            },
+            { "type": "gaps", "title": "Mein hay meine?",
+              "items": [
+                {"q": "<span class='muted'>(der Film)</span> ___ Lieblingsfilm ist ein Krimi.", "a": ["Mein"], "opts": ["Mein", "Meine"]},
+                {"q": "<span class='muted'>(das Buch)</span> ___ Lieblingsbuch ist „Momo“.", "a": ["Mein"], "opts": ["Mein", "Meine"]},
+                {"q": "<span class='muted'>(die Musik)</span> ___ Lieblingsmusik ist Rock.", "a": ["Meine"], "opts": ["Mein", "Meine"]},
+                {"q": "<span class='muted'>(die Farbe)</span> ___ Lieblingsfarbe ist Blau.", "a": ["Meine"], "opts": ["Mein", "Meine"]},
+                {"q": "<span class='muted'>(das Essen)</span> ___ Lieblingsessen ist Pizza.", "a": ["Mein"], "opts": ["Mein", "Meine"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "profil", "title": "Đọc một hồ sơ cá nhân", "minutes": 10,
+          "blocks": [
+            {"type": "text", "html": "<p>Đây là một hồ sơ trên mạng xã hội (tôi tự soạn, theo kiểu bài D1 trong sách). Đọc trong hai phút, rồi trả lời các câu hỏi; sau đó viết hồ sơ của bạn.</p><div class='ad-grid'><div class='ad'><span class='ad-id'>Profil</span><b>Lena Schröder</b><br><span class='muted'>Wohnort:</span> Bremen, Deutschland · <span class='muted'>Alter:</span> 27 · <span class='muted'>Familienstand:</span> verheiratet<br><span class='muted'>Freizeit:</span> Ich schwimme jeden Tag und ich lese gern Krimis. Am Wochenende treffe ich meine Freunde. Wir grillen zusammen oder wir gehen ins Kino. Ich fahre auch gern Fahrrad. Aber ich surfe nicht gern im Internet.<br><span class='muted'>Lieblingsfilm:</span> ein Krimi · <span class='muted'>Lieblingsbuch:</span> „Momo“ · <span class='muted'>Lieblingsmusik:</span> Pop und Rock</div></div><p class='ad-note'>Hồ sơ do tôi tự soạn — chỉ để luyện đọc, không phải người thật.</p>"},
+            { "type": "choice", "title": "Đọc và trả lời",
+              "items": [
+                {"q": "Wo wohnt Lena?", "opts": ["In Bremen.", "In Berlin.", "In Wien."], "a": 0},
+                {"q": "Wie alt ist Lena?", "opts": ["27", "30", "17"], "a": 0},
+                {"q": "Was macht Lena jeden Tag?", "opts": ["Sie schwimmt.", "Sie tanzt.", "Sie grillt."], "a": 0},
+                {"q": "Was macht Lena am Wochenende?", "opts": ["Sie trifft ihre Freunde.", "Sie liest den ganzen Tag.", "Sie arbeitet im Klub."], "a": 0},
+                {"q": "Was macht Lena nicht gern?", "opts": ["Im Internet surfen.", "Schwimmen.", "Fahrrad fahren."], "a": 0},
+                {"q": "Wie heißt Lenas Lieblingsbuch?", "opts": ["Momo", "Krimi", "Pop"], "a": 0}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Việc của bạn:</b> (1) Gạch dưới những câu cũng đúng với bạn. (2) Viết hồ sơ của bạn, 5–6 dòng: <i>Wohnort, Alter, Freizeit</i> (<i>Ich … gern. … finde ich toll. Am Wochenende …</i>), <i>Lieblingsfilm / -buch / -musik</i>. Đọc to bài viết rồi kiểm tra: động từ ở vị trí 2? <i>du/er</i> đã đổi nguyên âm chưa?</p>"}
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 6,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Was machst du gern in der Freizeit?",
+              "lines": [
+                {"scene": "Eva và Jonas hỏi nhau về sở thích."},
+                {"who": "Eva", "v": "f", "de": "Hallo Jonas! Was machst du gern in der Freizeit?", "vi": "Chào Jonas! Bạn thích làm gì lúc rảnh?"},
+                {"who": "Jonas", "v": "m", "de": "Ich fahre gern Ski und ich schwimme viel. Und du?", "vi": "Mình thích trượt tuyết và bơi nhiều. Còn bạn?"},
+                {"who": "Eva", "v": "f", "de": "Ich lese gern. Mein Hobby ist Lesen. Ich finde Krimis toll.", "vi": "Mình thích đọc sách. Sở thích của mình là đọc. Mình thấy truyện trinh thám rất hay."},
+                {"who": "Jonas", "v": "m", "de": "Aha! Und was machst du am Wochenende?", "vi": "À ra thế! Còn cuối tuần bạn làm gì?"},
+                {"who": "Eva", "v": "f", "de": "Am Wochenende treffe ich meine Freunde. Wir grillen zusammen. Das macht Spaß!", "vi": "Cuối tuần mình gặp bạn bè. Bọn mình nướng thịt cùng nhau. Vui lắm!"},
+                {"who": "Jonas", "v": "m", "de": "Tanzt du auch gern?", "vi": "Bạn có thích nhảy không?"},
+                {"who": "Eva", "v": "f", "de": "Nein, ich tanze gar nicht gern. Aber ich singe sehr gern.", "vi": "Không, mình hoàn toàn không thích nhảy. Nhưng mình rất thích hát."}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Was ist dein Lieblingsfilm?",
+              "lines": [
+                {"scene": "Tim và Lara hỏi nhau về những điều yêu thích."},
+                {"who": "Tim", "v": "m", "de": "Was ist dein Lieblingsfilm?", "vi": "Phim bạn thích nhất là gì?"},
+                {"who": "Lara", "v": "f", "de": "Mein Lieblingsfilm ist ein Krimi. Und was ist deine Lieblingsmusik?", "vi": "Phim mình thích nhất là một phim trinh thám. Còn nhạc bạn thích nhất là gì?"},
+                {"who": "Tim", "v": "m", "de": "Meine Lieblingsmusik ist Rock. Ich spiele auch Gitarre.", "vi": "Nhạc mình thích nhất là rock. Mình cũng chơi ghi-ta."},
+                {"who": "Lara", "v": "f", "de": "Toll! Ich singe gern. Wir machen Musik zusammen!", "vi": "Tuyệt! Mình thích hát. Mình cùng chơi nhạc nhé!"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần D, Arbeitsbuch và Zwischendurch", "minutes": 6,
+          "blocks": [
+            { "type": "book", "title": "Phần D — Freizeit und Hobbys", "kb": "75, 79", "key": "Đáp án D1a, D2: giáo án <i>Unterrichtsplan L6</i>, trang 8–9.",
+              "steps": [
+                "D1a — ghép tám hoạt động (tanzen, wandern, schwimmen, Gitarre spielen, Freunde treffen, Ski fahren, joggen, grillen) với tám ảnh A–H ở trang 75.",
+                "D1b — đọc hồ sơ của Adrian Greven và tìm hobby không có trong hồ sơ; đối chiếu với bảng chia bên cạnh (<i>treffe, triffst, trifft · lese, liest · fahre, fährst, fährt</i>).",
+                "D2 — hỏi–đáp theo mẫu <i>Was machst du gern in der Freizeit?</i> Học một mình: nói to năm câu về bạn. Ô „Schon fertig?“: liệt kê những việc bạn <i>nicht gern</i> làm.",
+                "Kursbuch tr. 79 — ô „Hobbys: Ich tanze gern.“ và khung viết <i>In meiner Freizeit …</i>"
+              ]
+            },
+            { "type": "book", "title": "Arbeitsbuch phần D", "ab": "69–71", "tracks": "AB 64-66",
+              "steps": [
+                "Bài 23–24 (tr. 69) — tìm chín từ ẩn trong dãy chữ và ghép với hình; nối động từ với từ đi cùng.",
+                "Bài 25–27 (tr. 70) — đánh dấu đáp án đúng, viết câu về <i>Lieblings-</i>, viết về sở thích của Paula.",
+                "Bài 28–30 (tr. 70–71) — hoàn thành đoạn chat; đọc năm hội thoại ngắn (bài 29, có audio AB track 64); chọn từ không hợp (bài 30).",
+                "Bài 31 (tr. 71) — Wortakzent: nghe (AB track 65–66), đánh dấu âm nhấn của các từ có đuôi -en rồi nói theo."
+              ]
+            },
+            { "type": "book", "title": "Zwischendurch mal …: Audio-Training và phim", "kb": "79–80", "tracks": "KB 2/40-42",
+              "steps": [
+                "Audio-Training 1 — „Meine Hobbys“ (track 40): nghe tên hobby rồi đáp trong quãng dừng bằng <i>Oh ja, … macht Spaß!</i>",
+                "Audio-Training 2 — „Was machst du in der Freizeit?“ (track 41): nghe tiếng động rồi nói <i>Ich … gern.</i>",
+                "Audio-Training 3 — „Vorlieben“ (track 42): trả lời <i>Mein Lieblings… ist …</i>",
+                "Phim „Almas Hobby: Wolkenfotos“ (Kursbuch tr. 80, mã QR): Alma kể hobby chụp ảnh mây — xem hai lần và đánh dấu những gì Alma thích."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi kể được ít nhất tám hoạt động lúc rảnh bằng tiếng Đức.",
+                "Tôi chia được <i>lesen, treffen, fahren</i> và nhớ cả nhóm động từ đổi nguyên âm.",
+                "Tôi hỏi và trả lời: <i>Was sind deine Hobbys? – Mein Hobby ist Lesen. Ich finde Krimis toll.</i>",
+                "Tôi hiểu một hồ sơ cá nhân và viết được hồ sơ của mình.",
+                "Tôi nói được <i>Mein Lieblingsfilm / Meine Lieblingsmusik ist …</i>"
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 69–71, bài 23–31 (bài 29b audio AB track 64 · bài 31 audio AB track 65–66).", "tracks": "AB 64-66"},
+                {"t": "Làm Audio-Training 1–3 (Kursbuch tr. 79): nghe và trả lời trong các quãng dừng.", "tracks": "KB 2/40-42"},
+                "Viết hồ sơ của bạn (5–6 dòng) theo mẫu của Lena rồi đọc to.",
+                "Học bảng nhóm đổi nguyên âm <i>e → i, e → ie, a → ä</i> — viết ba câu cho mỗi kiểu.",
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6", "no": 6, "minutes": 66, "set": "f",
+      "title": "Reiseland D-A-CH",
+      "vi": "Các mùa, „Es gibt …“, đọc tờ rơi du lịch, viết về đất nước yêu thích, Fokus Beruf (lịch làm việc) và kiểm tra cuối Lektion 6",
+      "book": "Kursbuch tr. 76–77, 79, 81 · Arbeitsbuch tr. 72–74 (bài 32–33, Test, Fokus Beruf) · Lernwortschatz L6 (phần E)",
+      "goals": [
+        "Gọi tên bốn mùa và nói thời tiết theo mùa: <i>Im Sommer ist es heiß. Im Winter schneit es.</i>",
+        "Hiểu D-A-CH và đọc một tờ rơi du lịch: tìm hoạt động theo vùng (Norden, Mitte, Süden).",
+        "Dùng <i>Es gibt …</i>: <i>Im Süden gibt es viele Berge.</i>",
+        "Viết một đoạn ngắn về đất nước yêu thích: mùa, thời tiết, hoạt động.",
+        "Đọc một lịch làm việc (Fokus Beruf) và tìm giờ, việc cần làm.",
+        "Làm bài kiểm tra cuối Lektion 6."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: mùa, du lịch, thiên nhiên", "minutes": 8,
+          "blocks": [
+            {"type": "words", "set": "f"},
+            {"type": "listenPick", "set": "f", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "f", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (28)", "minutes": 4,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "D-A-CH đọc thế nào?", "vi": "<b>D-A-CH</b> được đọc như một từ: <i>Dach</i> = „DAKH“ (ch sau a đọc „kh“). Từng chữ cái là D, A, CH = „đê – a – xê-ha“. Ba nước: <i>Deutschland, Österreich, die Schweiz</i>.", "ex": ["D-A-CH|Đức – Áo – Thụy Sĩ", "Deutschland|nước Đức", "Österreich|nước Áo", "Schweiz|Thụy Sĩ"]},
+                {"t": "-keit, -ung, -ling", "vi": "Đuôi <b>-keit</b> đọc „-kait“ và danh từ luôn là <b>die</b>: <i>die Möglichkeit</i>. Cùng nhóm: <b>-ung</b> (<i>die Wohnung</i>), <b>-heit</b>. Đuôi <b>-ling</b> thường là <b>der</b>: <i>der Frühling</i>.", "ex": ["Möglichkeit|khả năng", "Wohnung|căn hộ", "Frühling|mùa xuân", "Reise|chuyến du lịch"]},
+                {"t": "w = v, z = ts, au = ao", "vi": "<b>w</b> đọc „v“: <i>Winter, wunderbar, Wald</i>. <b>z</b> đọc „ts“: <i>Jahreszeit</i>. <b>au</b> đọc „ao“: <i>Urlaub</i>. <i>Herbst</i> đọc liền „hépst“.", "ex": ["Winter|mùa đông", "Jahreszeit|mùa", "Herbst|mùa thu", "Urlaub|kỳ nghỉ"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "Herbst", "opts": ["Herbst", "Herpst"]},
+                {"say": "Frühling", "opts": ["Frühling", "Fruling"]},
+                {"say": "Urlaub", "opts": ["Urlaub", "Urlaup"]},
+                {"say": "Natur", "opts": ["Natur", "Nattur"]},
+                {"say": "klettern", "opts": ["klettern", "kletern"]},
+                {"say": "Insel", "opts": ["Insel", "Insal"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jahreszeiten", "title": "Bốn mùa và „Es gibt …“", "minutes": 9,
+          "blocks": [
+            { "type": "table", "title": "Vier mùa", "head": ["", "Mùa", "Thời tiết thường gặp", "Nghĩa"], "say": 2, "vi": "<b>im</b> (= in dem) dùng với mùa — giống <i>im Norden</i>: <i>im Frühling, im Sommer, im Herbst, im Winter</i>. Với người biết tiếng Anh: <i>Sommer ≈ summer, Winter ≈ winter</i>.",
+              "rows": [
+                ["🌸", "der Frühling", "Im Frühling steigen die Temperaturen. Es regnet manchmal.", "Mùa xuân: nhiệt độ tăng, thỉnh thoảng mưa."],
+                ["🏖️", "der Sommer", "Im Sommer ist es warm oder heiß. Die Sonne scheint viel.", "Mùa hè: ấm hoặc nóng, nắng nhiều."],
+                ["🍂", "der Herbst", "Im Herbst ist es windig. Es regnet oft.", "Mùa thu: có gió, hay mưa."],
+                ["🧣", "der Winter", "Im Winter ist es kalt. Es schneit oft.", "Mùa đông: lạnh, hay có tuyết."]
+              ]
+            },
+            { "type": "choice", "title": "Welche Jahreszeit?",
+              "items": [
+                {"q": "Es schneit und es ist kalt.", "opts": ["Im Winter.", "Im Sommer.", "Im Herbst."], "a": 0},
+                {"q": "Es ist heiß. Wir schwimmen viel.", "opts": ["Im Sommer.", "Im Winter.", "Im Frühling."], "a": 0},
+                {"q": "Die Temperaturen steigen. Die Natur ist grün.", "opts": ["Im Frühling.", "Im Herbst.", "Im Winter."], "a": 0},
+                {"q": "Es ist windig und es regnet oft.", "opts": ["Im Herbst.", "Im Sommer.", "Im Frühling."], "a": 0},
+                {"q": "Wir fahren Ski.", "opts": ["Im Winter.", "Im Sommer.", "Im Herbst."], "a": 0},
+                {"q": "Wir segeln und windsurfen.", "opts": ["Im Sommer.", "Im Winter.", "Im Herbst."], "a": 0}
+              ]
+            },
+            { "type": "gaps", "title": "Điền tên mùa", "task": "Chọn tên mùa trong danh sách.", "bank": ["Frühling", "Sommer", "Herbst", "Winter"],
+              "items": [
+                {"q": "Im ___ schneit es oft.", "a": ["Winter"]},
+                {"q": "Im ___ ist es sehr heiß.", "a": ["Sommer"]},
+                {"q": "Im ___ regnet es oft und es ist windig.", "a": ["Herbst"]},
+                {"q": "Im ___ steigen die Temperaturen.", "a": ["Frühling"]}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Es gibt + Akkusativ</b> = „có …“ (như <i>there is / there are</i>). Dùng cho cả số ít lẫn số nhiều: <i>Es gibt einen Park. Es gibt viele Möglichkeiten.</i> Vì sau <i>es gibt</i> là Akkusativ nên danh từ giống đực đổi: <i>Es gibt <b>einen</b> Berg. Es gibt <b>keinen</b> Supermarkt.</i> <i>gibt</i> là dạng er/sie/es của <i>geben</i> (e → i) — và <i>es gibt</i> luôn giữ dạng này, kể cả với số nhiều.</p>"},
+            { "type": "table", "title": "Es gibt …", "head": ["Câu", "Nghĩa"], "say": 0,
+              "rows": [
+                ["Im Süden gibt es viele Berge.", "Ở phía nam có nhiều núi."],
+                ["Hier gibt es <b>einen</b> Supermarkt.", "Ở đây có một siêu thị."],
+                ["Heute gibt es <b>keinen</b> Regen.", "Hôm nay không có mưa."],
+                ["Im Winter gibt es viel Schnee.", "Mùa đông có nhiều tuyết."],
+                ["Gibt es hier <b>einen</b> Klub?", "Ở đây có câu lạc bộ không?"]
+              ]
+            },
+            { "type": "gaps", "title": "Es gibt …", "task": "Gõ hoặc chọn từ đúng (ä: bấm nút phía trên, hoặc gõ ae).",
+              "items": [
+                {"q": "Im Norden ___ es viel Wind.", "a": ["gibt"]},
+                {"q": "In der Mitte gibt es viele ___. <span class='muted'>(rừng)</span>", "a": ["Wälder"]},
+                {"q": "Hier gibt es ___ Supermarkt. <span class='muted'>(ein: der Supermarkt)</span>", "a": ["einen"], "opts": ["ein", "einen"]},
+                {"q": "Heute gibt es ___ Regen. <span class='muted'>(kein: der Regen)</span>", "a": ["keinen"], "opts": ["kein", "keinen"]},
+                {"q": "Gibt es hier ___ Klub? <span class='muted'>(ein: der Klub)</span>", "a": ["einen"], "opts": ["ein", "einen"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "reiseland", "title": "Đọc tờ rơi du lịch: Reiseland D-A-CH", "minutes": 12,
+          "blocks": [
+            {"type": "text", "html": "<p>Đọc tờ rơi ngắn dưới đây — nó nói về ba vùng: bắc, giữa, nam. Bạn <b>không cần hiểu hết</b> từng chữ: chỉ tìm xem mỗi vùng có gì và làm được gì.</p><div class='ad-grid'><div class='ad'><span class='ad-id'>D-A-CH</span><b>Willkommen im Reiseland D-A-CH!</b><br>D-A-CH sind drei Länder: Deutschland (D), Österreich (A) und die Schweiz (CH). Hier gibt es für jede Jahreszeit ein Programm.</div><div class='ad'><span class='ad-id'>Norden</span><b>Im Norden</b><br>Hier gibt es die Nordsee und die Ostsee. Im Sommer schwimmen, segeln oder windsurfen Sie. Es gibt viel Wind, und das Wetter ist nicht immer schön. Auch Wandern und Fahrradfahren sind im Norden toll.</div><div class='ad'><span class='ad-id'>Mitte</span><b>In der Mitte</b><br>Hier gibt es viele Wälder. Im Frühling, im Sommer und im Herbst wandern Sie gern oder Sie fahren Rad. Im Winter gibt es Schnee, und Sie fahren Ski.</div><div class='ad'><span class='ad-id'>Süden</span><b>Im Süden</b><br>Hier gibt es die Alpen und viele Berge. Sie fahren gern Mountainbike? Sie klettern gern? Dann ist der Süden super! Im Winter fahren Sie hier Ski.</div><div class='ad'><span class='ad-id'>Immer</span><b>Im Frühling, im Sommer, im Herbst und im Winter</b><br>In D-A-CH ist es immer schön!</div></div><p class='ad-note'>Tờ rơi do tôi tự soạn — ngắn và dễ hơn bài đọc trong sách (Kursbuch tr. 76–77).</p>"},
+            { "type": "choice", "title": "Đọc và trả lời",
+              "items": [
+                {"q": "D-A-CH sind …", "opts": ["drei Länder.", "drei Städte.", "drei Berge."], "a": 0},
+                {"q": "Wo gibt es die Nordsee und die Ostsee?", "opts": ["Im Norden.", "Im Süden.", "In der Mitte."], "a": 0},
+                {"q": "Wo gibt es viel Wind?", "opts": ["Im Norden.", "Im Süden.", "In der Mitte."], "a": 0},
+                {"q": "Wo gibt es viele Wälder?", "opts": ["In der Mitte.", "Im Norden.", "Im Süden."], "a": 0},
+                {"q": "Wo gibt es die Alpen?", "opts": ["Im Süden.", "Im Norden.", "In der Mitte."], "a": 0},
+                {"q": "Wo fahren Sie im Winter Ski?", "opts": ["In der Mitte und im Süden.", "Nur im Norden.", "Nur an der Ostsee."], "a": 0},
+                {"q": "Welche Hobbys passen zum Süden?", "opts": ["Klettern und Mountainbike fahren.", "Segeln und Windsurfen.", "Schwimmen in der Ostsee."], "a": 0}
+              ]
+            },
+            { "type": "sort", "title": "Hoạt động hợp với vùng nào?", "cats": ["im Norden", "in der Mitte", "im Süden"],
+              "items": [
+                {"t": "segeln", "c": 0},
+                {"t": "windsurfen", "c": 0},
+                {"t": "viel Wind", "c": 0, "why": "Phía bắc có biển, gió nhiều."},
+                {"t": "viele Wälder", "c": 1},
+                {"t": "wandern im Wald", "c": 1},
+                {"t": "die Alpen", "c": 2, "why": "Dãy Alpen ở phía nam."},
+                {"t": "klettern", "c": 2},
+                {"t": "Mountainbike fahren", "c": 2}
+              ]
+            },
+            { "type": "fix", "title": "Sửa các câu sai (như bài E3 của sách)",
+              "items": [
+                {"s": "Im Norden gibt es keinen Wind.", "err": "keinen Wind", "fix": ["viel Wind"], "why": "Im Norden gibt es viel Wind."},
+                {"s": "In der Mitte gibt es keine Wälder.", "err": "keine Wälder", "fix": ["viele Wälder"], "why": "In der Mitte gibt es viele Wälder."},
+                {"s": "Im Süden gibt es keine Berge.", "err": "keine Berge", "fix": ["viele Berge"], "why": "Im Süden gibt es die Alpen und viele Berge."},
+                {"s": "In D-A-CH ist es nur im Winter schön.", "err": "nur im Winter", "fix": ["immer"], "why": "Im Text: In D-A-CH ist es immer schön."},
+                {"s": "D-A-CH sind drei Länder.", "err": null},
+                {"s": "Im Süden gibt es die Alpen.", "err": null}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lieblingsland", "title": "Viết về đất nước yêu thích", "minutes": 6,
+          "blocks": [
+            {"type": "text", "html": "<p><b>Mẫu của tôi</b> (bài E5 của sách yêu cầu viết về nước mình thích; tôi lấy Việt Nam làm ví dụ — hãy thay bằng nước bạn thích):</p><div class='ad-grid'><div class='ad'><span class='ad-id'>Mẫu</span>Mein Lieblingsland ist Vietnam. Im Norden gibt es vier Jahreszeiten. Im Winter ist es kalt, manchmal sind es nur zehn Grad. Im Sommer ist es sehr heiß und es regnet viel. Im Süden ist es immer warm. Im Urlaub schwimme ich gern und ich fotografiere viel. Das Essen ist toll!</div></div>"},
+            { "type": "gaps", "title": "Hoàn thành đoạn mẫu", "task": "Chọn từ trong danh sách.", "bank": ["Lieblingsland", "gibt", "ist", "Sommer", "immer", "schwimme"],
+              "items": [
+                {"q": "Mein ___ ist Vietnam.", "a": ["Lieblingsland"]},
+                {"q": "Im Norden ___ es vier Jahreszeiten.", "a": ["gibt"]},
+                {"q": "Im Winter ___ es kalt.", "a": ["ist"]},
+                {"q": "Im ___ ist es sehr heiß und es regnet viel.", "a": ["Sommer"]},
+                {"q": "Im Süden ist es ___ warm.", "a": ["immer"]},
+                {"q": "Im Urlaub ___ ich gern.", "a": ["schwimme"]}
+              ]
+            },
+            { "type": "table", "title": "Khung câu để viết", "head": ["Câu", "Nghĩa"], "say": 0,
+              "rows": [
+                ["Mein Lieblingsland ist …", "Đất nước tôi thích nhất là …"],
+                ["Im Norden / Süden / in der Mitte gibt es …", "Ở phía bắc / nam / ở giữa có …"],
+                ["Im Winter / Sommer … ist es … / regnet es / schneit es.", "Mùa đông / hè … trời … / mưa / tuyết."],
+                ["Im Urlaub … ich gern.", "Khi đi nghỉ tôi thích …"],
+                ["Ich finde … toll / wunderbar / interessant.", "Tôi thấy … tuyệt / tuyệt vời / thú vị."]
+              ]
+            },
+            {"type": "text", "html": "<p><b>Việc của bạn:</b> viết 6–8 câu về nước bạn thích nhất theo khung trên, rồi đọc to. <b>Dự án nhỏ „Freizeit in …“</b> (Kursbuch tr. 81): chọn một thành phố ở D-A-CH (ví dụ Wien, Zürich, Hamburg, München), tìm hôm nay thời tiết thế nào, bao nhiêu độ, lúc rảnh làm được gì, rồi viết 5 câu: <i>Wien liegt im Osten. Heute … Es sind … Grad. In Wien gibt es …</i></p>"}
+          ]
+        },
+        {
+          "id": "fokus-beruf", "title": "Fokus Beruf: đọc lịch làm việc", "minutes": 6,
+          "blocks": [
+            {"type": "words", "set": "f2", "title": "Từ thêm cho phần Fokus Beruf", "collapsed": true},
+            {"type": "text", "html": "<p>Ở chỗ làm, bạn thường nhận một <b>Plan</b> ghi giờ và nhiệm vụ. Đây là một lịch làm việc ngắn do tôi soạn (khác với lịch trong sách, tr. 74). Chỉ cần tìm: <b>giờ — việc — nghỉ</b>.</p>"},
+            { "type": "table", "title": "Tagesplan — Büro Weber (do tôi soạn)", "head": ["Zeit", "Aufgabe"], "say": 1, "vi": "Giờ kiểu chính thức: <i>08.30 Uhr</i> = acht Uhr dreißig (xem lại Lektion 5).",
+              "rows": [
+                ["08.00–08.30 Uhr", "E-Mails lesen"],
+                ["08.30–10.00 Uhr", "Kunden anrufen"],
+                ["10.00–10.30 Uhr", "Pause: Kaffee trinken"],
+                ["10.30–12.00 Uhr", "Einkaufsliste schreiben und einkaufen"],
+                ["12.00–13.00 Uhr", "Mittagspause"],
+                ["13.00–15.00 Uhr", "Büro aufräumen und Termine machen"]
+              ]
+            },
+            { "type": "choice", "title": "Đọc lịch và trả lời",
+              "items": [
+                {"q": "Was macht Frau Weber um 8.30 Uhr?", "opts": ["Sie ruft Kunden an.", "Sie liest E-Mails.", "Sie macht Pause."], "a": 0},
+                {"q": "Wann ist die Mittagspause?", "opts": ["Von 12 bis 13 Uhr.", "Von 10 bis 10.30 Uhr.", "Von 13 bis 15 Uhr."], "a": 0},
+                {"q": "Von wann bis wann ist die Pause am Vormittag?", "opts": ["Von 10 bis 10.30 Uhr.", "Von 12 bis 13 Uhr.", "Von 8 bis 8.30 Uhr."], "a": 0},
+                {"q": "Wann kauft Frau Weber ein?", "opts": ["Von 10.30 bis 12 Uhr.", "Von 8 bis 8.30 Uhr.", "Von 13 bis 15 Uhr."], "a": 0},
+                {"q": "Was macht Frau Weber nach der Mittagspause?", "opts": ["Sie räumt das Büro auf.", "Sie kauft ein.", "Sie ruft Kunden an."], "a": 0}
+              ]
+            },
+            { "type": "gaps", "title": "Điền động từ tách (Lektion 5)", "task": "Gõ dạng chia của động từ và tiền tố (ä ö ü: bấm nút phía trên, hoặc gõ ae oe ue).",
+              "items": [
+                {"q": "Um 8.30 Uhr ___ Frau Weber Kunden ___. <span class='muted'>(anrufen)</span>", "a": [["ruft"], ["an"]]},
+                {"q": "Um 10.30 Uhr ___ sie ___. <span class='muted'>(einkaufen)</span>", "a": [["kauft"], ["ein"]]},
+                {"q": "Um 13 Uhr ___ sie das Büro ___. <span class='muted'>(aufräumen)</span>", "a": [["räumt"], ["auf"]]},
+                {"q": "Um 8 Uhr ___ sie E-Mails. <span class='muted'>(lesen)</span>", "a": ["liest"]}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Việc của bạn:</b> viết lịch học hoặc làm việc của bạn cho ngày mai (4 dòng, mỗi dòng gồm giờ và việc), dùng ít nhất hai động từ tách.</p>"}
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần E, tổng kết và Arbeitsbuch", "minutes": 5,
+          "blocks": [
+            { "type": "book", "title": "Phần E — Reiseland D-A-CH", "kb": "76–77", "ab": "72", "key": "Đáp án E1, E2, E3: giáo án <i>Unterrichtsplan L6</i>, trang 10–11.",
+              "steps": [
+                "E1 — nhìn bốn cây ở trang 76 và ghép với bốn mùa. Arbeitsbuch bài 32 (tr. 72): điền tên bốn mùa bằng tiếng Đức, so với tiếng Anh và tiếng mẹ đẻ.",
+                "E2 — đọc tờ rơi „Willkommen im Reiseland D-A-CH!“ (tr. 76–77) và ghi hoạt động theo vùng (Norden, Mitte, Süden). Chỉ cần tìm từ khoá.",
+                "E3 — đọc lại và sửa các câu sai; để ý cách nói „Es gibt …“ trong khung bên cạnh.",
+                "E4 — nói: <i>Welche Region finden Sie interessant? Warum?</i> E5 — viết về nước yêu thích (mẫu của sách nói về một hòn đảo)."
+              ]
+            },
+            { "type": "book", "title": "Arbeitsbuch: Lieblingsjahreszeit", "ab": "72", "tracks": "AB 67-69",
+              "steps": [
+                "Bài 33 (tr. 72) — nghe ba người nói về mùa họ thích nhất và hobby của họ (AB track 67–69), điền mùa, ghép hình hobby, rồi viết về mùa yêu thích của bạn."
+              ]
+            },
+            { "type": "book", "title": "Tổng kết Lektion 6 và Zwischendurch", "kb": "78–81", "ab": "73–74", "tracks": "KB 2/43",
+              "steps": [
+                "Kursbuch tr. 78–79 — Grammatik und Kommunikation: đọc lại các bảng Akkusativ (der → den), ja – nein – doch, chia lesen / treffen / nehmen / fahren / möchten, và các khung Hobbys, Vorlieben, Wetter, Strategien. Rồi tự đánh giá ở ô Lernziele.",
+                "Kursbuch tr. 80 — bài hát „Wir sind nicht allein“ (track 43) và phim „Almas Hobby“; tr. 81 — dự án „Freizeit in …“.",
+                "Arbeitsbuch tr. 73 — Test Lektion 6; tr. 74 — Fokus Beruf."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kiem-tra", "title": "Kiểm tra cuối Lektion 6", "minutes": 12,
+          "blocks": [
+            { "type": "test", "id": "l6", "title": "Bài kiểm tra",
+              "items": [
+                {"k": "mc", "q": "Die Sonne ___. ☀️", "opts": ["scheint", "scheinen", "scheinst"], "a": 0},
+                {"k": "mc", "q": "Wie ist das Wetter? 🌥️", "opts": ["Es gibt viele Wolken.", "Es gibt viel Wolke.", "Es regnet Wolken."], "a": 0},
+                {"k": "type", "q": "Heute ___ es. 🌨️ <span class='muted'>(schneien)</span>", "a": ["schneit"]},
+                {"k": "type", "q": "Es sind minus fünf ___. <span class='muted'>(độ)</span>", "a": ["Grad"]},
+                {"k": "listenmc", "q": "Nghe rồi chọn nhiệt độ:", "say": "Es sind minus drei Grad.", "opts": ["−3 °C", "+3 °C", "13 °C", "−13 °C"], "a": 0},
+                {"k": "listenmc", "q": "Nghe rồi chọn câu đúng:", "say": "Im Westen regnet es und es sind zwölf Grad.", "opts": ["Westen · mưa · 12 độ", "Osten · mưa · 12 độ", "Westen · tuyết · 12 độ", "Westen · mưa · 2 độ"], "a": 0},
+                {"k": "mc", "q": "Hamburg liegt ___ Norden.", "opts": ["im", "in der", "am"], "a": 0, "why": "Hướng dùng im (= in dem)."},
+                {"k": "mc", "q": "Frankfurt liegt ___ Mitte.", "opts": ["in der", "im", "am"], "a": 0, "why": "die Mitte → in der Mitte."},
+                {"k": "mc", "q": "Ich habe ___ Käse.", "opts": ["den", "der", "die"], "a": 0, "why": "Sau haben là Akkusativ: der Käse → den Käse."},
+                {"k": "mc", "q": "Wir haben ___ Saft mehr.", "opts": ["keinen", "kein", "keine"], "a": 0, "why": "der Saft → keinen Saft."},
+                {"k": "type", "q": "Ich nehme ___ Hamburger. <span class='muted'>(ein)</span>", "a": ["einen"], "why": "der Hamburger → einen Hamburger."},
+                {"k": "type", "q": "Er ___ den Salat. <span class='muted'>(nehmen)</span>", "a": ["nimmt"], "why": "e → i: er nimmt."},
+                {"k": "type", "q": "Du ___ viele Bücher. <span class='muted'>(lesen)</span>", "a": ["liest"], "why": "e → ie: du liest."},
+                {"k": "type", "q": "Lara ___ gern Auto. <span class='muted'>(fahren)</span>", "a": ["fährt"], "why": "a → ä: sie fährt."},
+                {"k": "mc", "q": "Hast du keinen Hunger? — Bạn đang đói. Bạn đáp:", "opts": ["Doch!", "Ja!", "Nein!"], "a": 0, "why": "Doch phản bác câu hỏi phủ định."},
+                {"k": "mc", "q": "Möchtest du einen Tee? — Bạn không muốn. Bạn đáp:", "opts": ["Nein, danke.", "Doch.", "Ja, gern."], "a": 0},
+                {"k": "type", "q": "Ich ___ einen Kaffee. <span class='muted'>(möchten)</span>", "a": ["möchte"]},
+                {"k": "mc", "q": "Câu nào đúng?", "opts": ["Ich spiele gern Gitarre.", "Ich gern spiele Gitarre.", "Gern ich spiele Gitarre."], "a": 0, "why": "Động từ ở vị trí 2."},
+                {"k": "mc", "q": "Ich finde Krimis ___.", "opts": ["toll", "gern", "Spaß"], "a": 0},
+                {"k": "mc", "q": "Tanzen macht ___!", "opts": ["Spaß", "gern", "toll"], "a": 0},
+                {"k": "mc", "q": "Es ist heiß und wir schwimmen viel. Mùa nào?", "opts": ["der Sommer", "der Winter", "der Herbst"], "a": 0},
+                {"k": "mc", "q": "___ Winter schneit es.", "opts": ["Im", "Am", "Um"], "a": 0},
+                {"k": "mc", "q": "Im Süden ___ es viele Berge.", "opts": ["gibt", "ist", "hat"], "a": 0, "why": "Es gibt = có."},
+                {"k": "type", "q": "Mein ___ ist Lesen. <span class='muted'>(sở thích)</span>", "a": ["Hobby"]},
+                {"k": "mc", "q": "Morgen ___ die Temperaturen.", "opts": ["steigen", "steige", "steigst"], "a": 0},
+                {"k": "listen", "q": "Nghe và gõ số độ:", "say": "fünfundzwanzig Grad", "a": ["25"]},
+                {"k": "mc", "q": "Hast du ___ Idee? <span class='muted'>(không có)</span>", "opts": ["keine", "kein", "keinen"], "a": 0, "why": "die Idee → keine Idee."},
+                {"k": "mc", "q": "„Wie bitte?“ dùng khi:", "opts": ["bạn nghe không rõ hoặc ngạc nhiên.", "bạn muốn cảm ơn.", "bạn muốn tạm biệt."], "a": 0},
+                {"k": "mc", "q": "Orangensaft: der, die hay das?", "opts": ["der", "die", "das"], "a": 0, "why": "Từ cuối là der Saft."},
+                {"k": "mc", "q": "___ Lieblingsmusik ist Rock.", "opts": ["Meine", "Mein", "Meinen"], "a": 0, "why": "die Musik → meine Lieblingsmusik."}
+              ]
+            },
+            { "type": "book", "title": "Bài kiểm tra của sách",
+              "steps": [
+                "Arbeitsbuch tr. 73: <i>Test Lektion 6</i>.",
+                "Bài kiểm tra trong bộ giáo án: <i>Kopiervorlagen/L06/Lektionstest.pdf</i> — làm ra giấy. Đáp án nằm trong <i>Lösungen zu den Tests.pdf</i>."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá cả Lektion 6",
+              "items": [
+                "Tôi nói về thời tiết, hướng và nhiệt độ, và hiểu một bản tin ngắn (phần A).",
+                "Tôi dùng <i>den / einen / keinen</i>, chia <i>nehmen</i> và gọi món ở quầy ăn nhanh (phần B).",
+                "Tôi trả lời <i>ja / nein / doch</i>, dùng <i>möchten</i> và phản ứng tự nhiên trong hội thoại (phần C).",
+                "Tôi nói về sở thích, chia <i>lesen / treffen / fahren</i> và hiểu một hồ sơ cá nhân (phần D).",
+                "Tôi nói về các mùa, đọc tờ rơi du lịch và viết về đất nước yêu thích (phần E)."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 72–74: bài 32–33 (bài 33 audio AB track 67–69), Test Lektion 6 và Fokus Beruf (tuỳ chọn).", "tracks": "AB 67-69"},
+                "Viết đoạn „Mein Lieblingsland“ (6–8 câu) và đọc to.",
+                "Làm dự án nhỏ „Freizeit in …“ cho một thành phố ở D-A-CH (5 câu).",
+                {"t": "Nghe lại cả truyện ảnh và các bài audio của Lektion 6 một lần nữa.", "tracks": "KB 2/27-43"},
+                "Từ mai: vào <a href='#/review'>Ôn tập</a> mỗi ngày — Lektion 6 có hơn 120 từ mới."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    }
+  ]
+}

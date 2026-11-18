@@ -40,7 +40,8 @@ English only as a bridge (≈ cognates, ⚠ traps such as wer = who).
    Arbeitsbuch and Lernwortschatz pages as images (render with `fitz` into the scratchpad and read them).
 2. Plan the sessions briefly in the reply (sections, minutes), then build without waiting.
 3. Write `data/lN.json`, set the Lektion `ready` in `data/course.json`, run `node tools/check.mjs` (ALL OK).
-4. Serve the repo (`python3 -m http.server 8790`) and open every new session in the browser: no console
-   errors, every block renders, answers check correctly. Test on desktop only: the owner studies on a computer and does not want phone checks or phone-specific design.
+4. Run `node tools/check.mjs` (must print ALL OK). The owner does not want a browser test pass before pushing
+   ("không cần test trước khi push"), so skip it unless the owner asks or JS/CSS changed; if JS must change, keep the
+   edit small and syntax-check it. Optional: `python3 -m http.server 8790` and open the new sessions yourself.
 5. If `app.css` or `js/*.js` changed, bump `?v=` in `index.html`.
-6. Commit on a branch or `main` as the owner asks, push, and report what was added and what was tested.
+6. Commit on a branch or `main` as the owner asks, push, and report what was added and what was (and was not) checked.

@@ -46,8 +46,9 @@
       "id": "l6",
       "no": 6,
       "title": "Freizeit",
-      "vi": "Thời gian rảnh",
-      "ready": false
+      "vi": "Thời gian rảnh: thời tiết, gọi món (Akkusativ), ja – nein – doch, sở thích, các mùa và du lịch D-A-CH",
+      "ready": true,
+      "file": "data/l6.json"
     },
     {
       "id": "l7",
