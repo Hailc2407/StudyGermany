@@ -572,7 +572,7 @@
           const k = built[s];
           slots.append(h("button", { type: "button", class: "slot" + (s === it.v ? " v2-slot" : "") + (k == null ? " empty" : ""),
             onclick: () => { if (row.dataset.done || k == null) return; built.splice(s, 1); paint(); } },
-            h("span", { class: "slot-n" }, s === it.v ? "2 · động từ" : String(s + 1)), k == null ? "" : it.chunks[k]));
+            h("span", { class: "slot-n" }, s === it.v ? (s + 1) + " · động từ" : String(s + 1)), k == null ? "" : it.chunks[k]));
         }
         pool.filter((k) => !built.includes(k)).forEach((k) => bank.append(h("button", { type: "button", class: "chunk",
           onclick: () => { if (row.dataset.done) return; built.push(k); paint(); if (built.length === N) checkIt(); } }, it.chunks[k])));
@@ -795,6 +795,122 @@
       h("p", { class: "muted small" }, "Nói to theo: ", h("i", {}, "Ich buchstabiere: …"), " rồi đọc từng chữ cái."));
   };
 
+  /* ---------- Numbers 0–20: table to hear, hear-and-pick, type the word or the digits ---------- */
+  const NUMW = ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn", "elf", "zwölf",
+    "dreizehn", "vierzehn", "fünfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn", "zwanzig"];
+  const NUM_TRICKY = new Set([6, 7, 11, 12, 16, 17]);
+  B.numbers = () => {
+    let token = null;
+    const tiles = NUMW.map((w, i) => h("button", { type: "button", class: "ab-tile" + (NUM_TRICKY.has(i) ? " tricky" : ""), onclick: () => Speech.say(w) },
+      h("span", { class: "ab-l" }, String(i)), h("span", { class: "ab-n" }, w)));
+    const all = btn("▶ Nghe cả bảng", async () => {
+      if (token) { token = null; Speech.stop(); all.textContent = "▶ Nghe cả bảng"; return; }
+      const me = (token = {});
+      all.textContent = "⏹ Dừng";
+      for (let i = 0; i < NUMW.length; i++) {
+        if (token !== me) return;
+        tiles.forEach((t) => t.classList.remove("now"));
+        tiles[i].classList.add("now");
+        await Speech.say(NUMW[i]);
+        await wait(300);
+      }
+      tiles.forEach((t) => t.classList.remove("now"));
+      if (token === me) { token = null; all.textContent = "▶ Nghe cả bảng"; }
+    }, "btn small ghost");
+    return h("div", { class: "alphabet" }, h("div", { class: "actions" }, all, h("span", { class: "muted small" }, "Chấm cam = số hay đọc hoặc viết nhầm.")), h("div", { class: "ab-grid" }, tiles));
+  };
+  function numOptions(x) {
+    const near = [x - 1, x + 1, x <= 10 ? x + 10 : x - 10, x <= 9 ? x * 2 : 0].filter((n) => n >= 0 && n <= 20 && n !== x);
+    const out = new Set(shuffle([...new Set(near)]).slice(0, 3));
+    while (out.size < 3) { const r = Math.floor(Math.random() * 21); if (r !== x) out.add(r); }
+    return shuffle([x, ...out]);
+  }
+  function phoneOptions(seq) {
+    const out = new Map([[seq.join(" "), seq]]);
+    for (let guard = 0; out.size < 4 && guard < 80; guard++) {
+      const alt = seq.slice();
+      const i = Math.floor(Math.random() * alt.length);
+      if (Math.random() < 0.5) alt[i] = alt[i] <= 10 ? alt[i] + 10 : alt[i] - 10;
+      else { const j = (i + 1) % alt.length; [alt[i], alt[j]] = [alt[j], alt[i]]; }
+      out.set(alt.join(" "), alt);
+    }
+    return shuffle([...out.values()]);
+  }
+  /* mode "single": hear one number, pick the digits · mode "phone": hear three numbers (like a phone number) */
+  B.numHear = (b) => {
+    const sc = scoreLine();
+    let ok = 0, n = 0;
+    const N = b.n || 8;
+    const phone = b.mode === "phone";
+    const rows = Array.from({ length: N }, (x, i) => {
+      const seq = phone ? Array.from({ length: 3 }, () => Math.floor(Math.random() * 21)) : [Math.floor(Math.random() * 21)];
+      const say = seq.map((v) => NUMW[v]).join(", ");
+      const key = seq.join(" ");
+      const opts = phone ? phoneOptions(seq) : numOptions(seq[0]).map((v) => [v]);
+      const right = opts.findIndex((o) => o.join(" ") === key);
+      const reveal = h("span", { class: "reveal", hidden: true }, seq.map((v) => NUMW[v]).join(" · "));
+      const row = h("div", { class: "hp-row" }, h("b", {}, i + 1 + "."),
+        btn("🔊", () => Speech.say(say, { rate: phone ? 0.75 : undefined }), "btn small", "Nghe"),
+        btn("🐢", () => Speech.say(say, { slow: true }), "icon-btn", "Nghe chậm"),
+        h("span", { class: "hp-opts" }, opts.map((o, j) => h("button", { type: "button", class: "pick letter", onclick: (e) => {
+          if (row.dataset.done) return;
+          row.dataset.done = 1;
+          n++;
+          const good = j === right;
+          if (good) ok++;
+          else Missed.add("nh:" + say, { type: "choice", q: "<span class='say-inline' data-say='" + esc(say) + "'>🔊 Bấm nghe</span> — số nào?", opts: opts.map((x2) => x2.join(" ")), a: right });
+          e.currentTarget.classList.add(good ? "ok" : "bad");
+          $$(".pick", row)[right].classList.add("ok");
+          reveal.hidden = false;
+          if (n === N) sc.set(ok, n);
+        } }, o.join("  ")))),
+        reveal);
+      return row;
+    });
+    const wrap = h("div", { class: "hear-pick" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => wrap.replaceWith(B.numHear(b)), "btn small ghost")));
+    return wrap;
+  };
+  /* Type the German word for a number (default) or, with mode "read", the digits for a German word. */
+  B.numWrite = (b) => {
+    const sc = scoreLine();
+    let ok = 0, n = 0;
+    const N = b.n || 8;
+    const read = b.mode === "read";
+    const nums = shuffle(Array.from({ length: 21 }, (x, i) => i)).slice(0, N);
+    const rows = nums.map((x, i) => {
+      const input = textInput({ size: read ? 5 : 12, "aria-label": "Câu trả lời" });
+      const res = h("span", { class: "sp-res" });
+      const answers = read ? [String(x)] : [NUMW[x]];
+      const go = () => {
+        if (row.dataset.done) return;
+        if (!input.value.trim()) return toast("Gõ câu trả lời trước đã.");
+        row.dataset.done = 1;
+        n++;
+        const r = check(input.value, answers);
+        if (r.ok) ok++;
+        else Missed.add("nw:" + x + read, { type: "gap", q: (read ? esc(NUMW[x]) : x) + " = ___", a: [answers] });
+        input.classList.add(r.ok ? "ok" : "bad");
+        res.textContent = (r.ok ? " ✓ " : " ✗ ") + x + " = " + NUMW[x] + (r.note ? "  · " + r.note : "");
+        Speech.say(NUMW[x]);
+        if (n === N) sc.set(ok, n);
+      };
+      input.addEventListener("keydown", (e) => { if (e.key === "Enter") go(); });
+      const row = h("div", { class: "sp-row" }, h("b", {}, i + 1 + "."),
+        h("span", { class: "nw-q" }, read ? h("span", { class: "say-inline", "data-say": NUMW[x] }, NUMW[x]) : String(x)),
+        h("span", {}, "="), input, btn("Kiểm tra", go, "btn small ghost"), res);
+      return row;
+    });
+    const wrap = h("div", { class: "spell" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => wrap.replaceWith(B.numWrite(b)), "btn small ghost")));
+    return wrap;
+  };
+
+  /* ---------- Family tree: rows of people (click a card to hear it) ---------- */
+  B.tree = (b) => h("div", { class: "ftree" }, b.rows.map((r) => h("div", { class: "ft-gen" },
+    h("div", { class: "ft-label muted small", lang: "vi" }, r.label),
+    h("div", { class: "ft-row" }, r.people.map((p) => h("button", { type: "button", class: "ft-card " + (p.art ? "ft-" + p.art : "ft-me"), onclick: () => Speech.say(p.say || p.rel) },
+      h("span", { class: "ft-rel" }, p.art ? h("span", { class: "art g-" + p.art }, p.art) : null, p.art ? " " : "", p.rel),
+      h("span", { class: "ft-name" }, p.name)))))));
+
   /* ---------- Business cards and a form ---------- */
   B.form = (b) => {
     const sc = scoreLine();
@@ -827,13 +943,18 @@
     ["Japan", "aus Japan"], ["Südkorea", "aus Südkorea"], ["Thailand", "aus Thailand"], ["Laos", "aus Laos"], ["Kambodscha", "aus Kambodscha"], ["die USA", "aus den USA"]];
   const LANGS = [["Vietnamesisch", "tiếng Việt"], ["Englisch", "tiếng Anh"], ["Chinesisch", "tiếng Trung"], ["Japanisch", "tiếng Nhật"], ["Koreanisch", "tiếng Hàn"], ["Französisch", "tiếng Pháp"], ["Russisch", "tiếng Nga"], ["Spanisch", "tiếng Tây Ban Nha"]];
   const joinUnd = (a) => (a.length <= 1 ? a.join("") : a.slice(0, -1).join(", ") + " und " + a[a.length - 1]);
-  B.profile = () => {
-    const me = Object.assign({ first: "", last: "", country: "Vietnam", city: "", langs: ["Vietnamesisch", "Englisch"] }, store.get("me", {}));
+  B.profile = (b = {}) => {
+    const ext = Boolean(b.ext); // ext: also age, place of living, marital status, children (Lektion 2)
+    const me = Object.assign({ first: "", last: "", country: "Vietnam", city: "", langs: ["Vietnamesisch", "Englisch"], age: "", home: "", status: "ledig", kids: 0 }, store.get("me", {}));
     const first = textInput({ class: "gap-in wide", value: me.first, placeholder: "Thu Hà", "aria-label": "Vorname" });
     const last = textInput({ class: "gap-in wide", value: me.last, placeholder: "Nguyễn", "aria-label": "Familienname" });
     const country = h("select", { class: "sel", "aria-label": "Land" }, COUNTRIES.map(([c]) => h("option", { value: c, selected: c === me.country }, c)));
     const city = textInput({ class: "gap-in wide", value: me.city, placeholder: "Hanoi", "aria-label": "Stadt" });
     const langBoxes = LANGS.map(([l, vi]) => h("label", { class: "chk" }, h("input", { type: "checkbox", value: l, checked: me.langs.includes(l) }), " " + l + " ", h("span", { class: "muted small", lang: "vi" }, "(" + vi + ")")));
+    const age = h("input", { type: "number", min: 0, max: 120, inputmode: "numeric", class: "gap-in", value: me.age, placeholder: "20", "aria-label": "Alter" });
+    const home = textInput({ class: "gap-in wide", value: me.home, placeholder: "Berlin", "aria-label": "Wohnort" });
+    const status = h("select", { class: "sel", "aria-label": "Familienstand" }, ["ledig", "verheiratet", "geschieden", "verwitwet"].map((s) => h("option", { value: s, selected: s === me.status }, s)));
+    const kids = h("input", { type: "number", min: 0, max: 10, inputmode: "numeric", class: "gap-in", value: me.kids, "aria-label": "Kinder" });
     const out = h("div", { class: "intro-text" });
     let lines = [];
     function build() {
@@ -842,19 +963,29 @@
       const c = plainName(city.value.trim());
       const langs = langBoxes.map((x) => x.firstChild).filter((x) => x.checked).map((x) => x.value).filter((x) => x !== "Deutsch");
       const sp = spellOut(l === "…" ? "" : l);
+      const ageN = ext ? parseInt(age.value, 10) || 0 : 0;
+      const wohn = ext ? plainName(home.value.trim()) : "";
+      const kidsN = ext ? Math.max(0, Math.min(20, parseInt(kids.value, 10) || 0)) : 0;
       lines = [
         { de: `Hallo! Ich heiße ${f} ${l}.` },
         { de: `Mein Vorname ist ${f}, mein Familienname ist ${l}.` },
         l !== "…" ? { de: `Ich buchstabiere: ${sp.shown}.`, say: `Ich buchstabiere: ${sp.say}.` } : null,
+        ext && ageN > 0 && ageN < 120 ? { de: `Ich bin ${ageN <= 20 ? NUMW[ageN] : ageN} Jahre alt.` } : null,
         { de: `Ich komme ${aus}` + (c ? `, aus ${c}.` : ".") },
+        ext && c ? { de: `Ich bin in ${c} geboren.` } : null,
+        ext && wohn ? { de: `Ich wohne in ${wohn}.` } : null,
+        ext ? { de: `Ich bin ${status.value}.` } : null,
+        ext ? { de: kidsN === 0 ? "Ich habe keine Kinder." : kidsN === 1 ? "Ich habe ein Kind." : `Ich habe ${NUMW[kidsN]} Kinder.` } : null,
         { de: `Ich spreche ${joinUnd([...langs, "ein bisschen Deutsch"])}.` },
       ].filter(Boolean);
       out.textContent = "";
       lines.forEach((ln) => out.append(h("p", { class: "intro-line" }, h("span", {}, ln.de), btn("🔊", () => Speech.say(ln.say || ln.de), "icon-btn tiny", "Nghe"))));
-      store.set("me", { first: first.value.trim(), last: last.value.trim(), country: country.value, city: city.value.trim(), langs: langBoxes.map((x) => x.firstChild).filter((x) => x.checked).map((x) => x.value) });
+      const upd = { first: first.value.trim(), last: last.value.trim(), country: country.value, city: city.value.trim(), langs: langBoxes.map((x) => x.firstChild).filter((x) => x.checked).map((x) => x.value) };
+      if (ext) Object.assign(upd, { age: age.value, home: home.value.trim(), status: status.value, kids: kids.value });
+      store.set("me", Object.assign(store.get("me", {}), upd));
     }
-    [first, last, city].forEach((x) => x.addEventListener("input", build));
-    country.addEventListener("change", build);
+    [first, last, city, age, home, kids].forEach((x) => x.addEventListener("input", build));
+    [country, status].forEach((x) => x.addEventListener("change", build));
     langBoxes.forEach((x) => x.firstChild.addEventListener("change", build));
     let token = null;
     async function readAll(shadow) {
@@ -876,7 +1007,13 @@
         h("label", { class: "form-row" }, h("span", { class: "form-label" }, "Vorname ", h("span", { class: "muted small", lang: "vi" }, "(tên)")), first),
         h("label", { class: "form-row" }, h("span", { class: "form-label" }, "Familienname ", h("span", { class: "muted small", lang: "vi" }, "(họ)")), last),
         h("label", { class: "form-row" }, h("span", { class: "form-label" }, "Land ", h("span", { class: "muted small", lang: "vi" }, "(nước)")), country),
-        h("label", { class: "form-row" }, h("span", { class: "form-label" }, "Stadt ", h("span", { class: "muted small", lang: "vi" }, "(thành phố)")), city),
+        h("label", { class: "form-row" }, h("span", { class: "form-label" }, "Stadt ", h("span", { class: "muted small", lang: "vi" }, "(thành phố quê / nơi sinh)")), city),
+        ext ? [
+          h("label", { class: "form-row" }, h("span", { class: "form-label" }, "Alter ", h("span", { class: "muted small", lang: "vi" }, "(tuổi)")), age),
+          h("label", { class: "form-row" }, h("span", { class: "form-label" }, "Wohnort ", h("span", { class: "muted small", lang: "vi" }, "(nơi đang ở)")), home),
+          h("label", { class: "form-row" }, h("span", { class: "form-label" }, "Familienstand ", h("span", { class: "muted small", lang: "vi" }, "(hôn nhân)")), status),
+          h("label", { class: "form-row" }, h("span", { class: "form-label" }, "Kinder ", h("span", { class: "muted small", lang: "vi" }, "(số con)")), kids),
+        ] : null,
         h("div", { class: "form-row" }, h("span", { class: "form-label" }, "Sprachen ", h("span", { class: "muted small", lang: "vi" }, "(ngôn ngữ)")), h("div", { class: "chk-list" }, langBoxes))),
       h("div", { class: "intro-card" }, h("div", { class: "intro-head" }, "Das bin ich!"), out,
         h("div", { class: "actions" },

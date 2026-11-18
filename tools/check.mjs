@@ -5,7 +5,7 @@ import { readFileSync } from "node:fs";
 
 const KNOWN = new Set(["text", "tip", "table", "words", "listenPick", "rules", "hearPick", "book", "dialog", "conj", "gaps", "choice",
   "sort", "order", "fix", "timeGreet", "alphabet", "letterPick", "spell", "spellMe", "form", "profile", "test", "review", "cando",
-  "checklist", "done"]);
+  "checklist", "done", "numbers", "numHear", "numWrite", "tree"]);
 const fold = (s) => String(s).toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
   .replace(/-/g, "").replace(/[.,!?;:„“”"()…–—]/g, " ").replace(/\s+/g, " ").trim();
 const problems = [];
@@ -66,6 +66,12 @@ for (const meta of course.lektionen.filter((l) => l.ready)) {
         if ((it.k === "type" || it.k === "listen") && !(Array.isArray(it.a) && it.a.length)) bad(at, `câu ${i + 1}: thiếu đáp án`);
         if (it.k.startsWith("listen") && !it.say) bad(at, `câu ${i + 1}: thiếu say`);
       });
+      if (b.type === "tree") b.rows.forEach((r, i) => r.people.forEach((p, j) => {
+        if (!p.rel || !p.name) bad(at, `hàng ${i + 1}, người ${j + 1}: thiếu rel hoặc name`);
+        if (p.art && !["der", "die", "das"].includes(p.art)) bad(at, `hàng ${i + 1}, người ${j + 1}: art lạ`);
+      }));
+      if (b.type === "numHear" && b.mode && !["single", "phone"].includes(b.mode)) bad(at, "mode lạ: " + b.mode);
+      if (b.type === "numWrite" && b.mode && b.mode !== "read") bad(at, "mode lạ: " + b.mode);
       if (b.type === "dialog") b.lines.forEach((ln, i) => { if (!ln.scene && (!ln.de || !ln.vi || !ln.who)) bad(at, `dòng ${i + 1}: thiếu who, de hoặc vi`); });
       if (b.type === "conj") b.verbs.forEach((v) => { if (v.forms.length !== b.persons.length) bad(at, v.inf + ": số dạng chia khác số ngôi"); });
       if (b.type === "form") b.cards.forEach((c, i) => c.fields.forEach((f) => { if (!Array.isArray(f) || !Array.isArray(f[1]) || !f[1].length) bad(at, `danh thiếp ${i + 1}: field sai`); }));

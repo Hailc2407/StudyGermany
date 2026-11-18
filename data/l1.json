@@ -4,6 +4,7 @@
   "title": "Guten Tag. Mein Name ist …",
   "vi": "Chào hỏi, tên, quê quán, đánh vần",
   "book": "Kursbuch tr. 10–21 · Arbeitsbuch tr. 10–18 · Lernwortschatz L1",
+  "audio": ["KB 1/1-26", "AB 1-12"],
   "sets": [
     {
       "id": "a", "title": "Chào hỏi", "session": "1",

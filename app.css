@@ -563,3 +563,27 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
   .gap-in.wide { max-width: 100%; }
   .form-label { min-width: 0; width: 100%; }
 }
+
+/* ---------- Family tree & numbers ---------- */
+.ftree { display: flex; flex-direction: column; gap: 4px; }
+.ft-gen { padding: 8px 0; border-bottom: 1px dashed var(--border); }
+.ft-gen:last-child { border-bottom: 0; }
+.ft-label { margin-bottom: 6px; text-align: center; }
+.ft-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.ft-card { display: flex; flex-direction: column; align-items: center; min-width: 124px; padding: 8px 14px; border: 1px solid var(--border); border-top-width: 4px; border-radius: 12px; background: var(--surface); cursor: pointer; }
+.ft-card:hover { background: var(--surface-2); }
+.ft-der { border-top-color: var(--der); }
+.ft-die { border-top-color: var(--die); }
+.ft-das { border-top-color: var(--das); }
+.ft-me { border-top-color: var(--accent); background: var(--accent-soft); }
+.ft-rel { font-weight: 700; }
+.ft-name { color: var(--muted); font-size: 14px; }
+.nw-q { min-width: 5.5em; font-family: var(--display); font-size: 18px; font-weight: 700; }
+
+@media (max-width: 520px) {
+  /* Three verb columns plus the persons must fit a phone without sideways scrolling. */
+  table.conj { min-width: 0; }
+  table.conj th, table.conj td { padding: 6px 3px; }
+  .conj-in { width: 5.2em; padding: 4px 5px; font-size: 15px; }
+  .ft-card { min-width: 96px; padding: 6px 10px; }
+}

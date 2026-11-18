@@ -90,7 +90,7 @@
       h("div", { class: "set-links" }, L.sets.map((s) => h("a", { class: "chip big", href: "#/vocab/" + L.id + "/" + s.id }, s.title + " (" + s.items.length + ")"))),
       h("h2", {}, "Audio của sách"),
       h("p", { class: "muted small" }, "Phát từ file trên máy bạn (thêm trong ", h("a", { href: "#/settings" }, "Cài đặt"), ")."),
-      trackPlayer("KB 1/1-26"), h("div", { style: "height:10px" }), trackPlayer("AB 1-12")));
+      (L.audio || []).map((ref) => [trackPlayer(ref), h("div", { style: "height:10px" })])));
   }
 
   /* ---------- One session ---------- */
@@ -183,7 +183,7 @@
     const short = w.de.replace(/…/g, "").trim().length <= 22;
     return (short ? ["mean", "listen", "type"] : ["mean", "listen"])[n % (short ? 3 : 2)];
   }
-  const answerOf = (w) => (w.art && !w.plOnly && w.kind === "noun" ? w.art + " " + w.de : w.plOnly ? "die " + w.de : w.de).replace(/…/g, "").trim();
+  const answerOf = (w) => (w.ans ? w.ans : w.art && !w.plOnly && w.kind === "noun" ? w.art + " " + w.de : w.plOnly ? "die " + w.de : w.de).replace(/…/g, "").trim();
   async function review() {
     await Data.allLeks();
     const srs = SRS.all();

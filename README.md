@@ -26,7 +26,7 @@ js/core.js                   tiện ích, giọng đọc, audio của sách, ôn
 js/blocks.js                 các dạng bài (words, listenPick, rules, dialog, conj, gaps, order, fix, test…)
 js/pages.js                  các trang: lộ trình, buổi học, từ vựng, ôn tập, cài đặt
 data/course.json             danh sách Lektion (ready: true = đã có bài)
-data/l1.json                 Lektion 1: các bộ từ (sets) và các buổi (sessions → sections → blocks)
+data/l1.json, l2.json …       từng Lektion: các bộ từ (sets) và các buổi (sessions → sections → blocks)
 tools/check.mjs              kiểm tra dữ liệu bài trước khi đăng
 .claude/skills/deutsch-room  hướng dẫn Claude Code soạn Lektion tiếp theo
 ```
