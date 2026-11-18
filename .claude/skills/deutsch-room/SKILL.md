@@ -41,6 +41,6 @@ English only as a bridge (≈ cognates, ⚠ traps such as wer = who).
 2. Plan the sessions briefly in the reply (sections, minutes), then build without waiting.
 3. Write `data/lN.json`, set the Lektion `ready` in `data/course.json`, run `node tools/check.mjs` (ALL OK).
 4. Serve the repo (`python3 -m http.server 8790`) and open every new session in the browser: no console
-   errors, every block renders, answers check correctly, phone width (375 px) has no sideways scrolling.
+   errors, every block renders, answers check correctly. Test on desktop only: the owner studies on a computer and does not want phone checks or phone-specific design.
 5. If `app.css` or `js/*.js` changed, bump `?v=` in `index.html`.
 6. Commit on a branch or `main` as the owner asks, push, and report what was added and what was tested.

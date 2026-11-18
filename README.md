@@ -23,7 +23,7 @@ duyệt). Tiến độ lưu trong `localStorage` của trình duyệt, có nút 
 ```
 index.html, app.css          khung trang và giao diện
 js/core.js                   tiện ích, giọng đọc, audio của sách, ôn tập ngắt quãng, nạp dữ liệu
-js/blocks.js                 các dạng bài (words, listenPick, rules, dialog, conj, gaps, order, fix, test…)
+js/blocks.js                 các dạng bài (words, listenPick, rules, dialog, conj, gaps, order, fix, numbers, priceHear, test…)
 js/pages.js                  các trang: lộ trình, buổi học, từ vựng, ôn tập, cài đặt
 data/course.json             danh sách Lektion (ready: true = đã có bài)
 data/l1.json, l2.json …       từng Lektion: các bộ từ (sets) và các buổi (sessions → sections → blocks)

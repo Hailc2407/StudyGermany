@@ -587,3 +587,17 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
   .conj-in { width: 5.2em; padding: 4px 5px; font-size: 15px; }
   .ft-card { min-width: 96px; padding: 6px 10px; }
 }
+
+/* ---------- Pictures (emoji) on food words ---------- */
+.wc-title { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.wc-emoji { font-size: 30px; line-height: 1; }
+.wrow-emoji, .rv-emoji { font-size: 22px; line-height: 1; }
+.fl-emoji { font-size: 64px; line-height: 1.1; }
+.pick.emoji { min-width: 76px; text-align: center; font-size: 34px; line-height: 1.2; padding: 8px 14px; }
+.lp-opts.emojis { grid-template-columns: repeat(auto-fit, minmax(84px, 1fr)); }
+
+@media (max-width: 520px) {
+  /* Long sorts: the cards to place wrap in rows instead of one long column; placed cards fill their column. */
+  .sort-pool .sort-card { width: auto; padding: 6px 10px; }
+  .sort-item .sort-card { width: 100%; }
+}

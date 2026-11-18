@@ -147,7 +147,7 @@
     }
     function row(w) {
       const lvl = SRS.level(w.key);
-      return h("div", { class: "wrow" }, btn("🔊", () => Speech.say(sayOf(w)), "icon-btn tiny", "Nghe"), wordLabel(w),
+      return h("div", { class: "wrow" }, btn("🔊", () => Speech.say(sayOf(w)), "icon-btn tiny", "Nghe"), w.emoji ? h("span", { class: "wrow-emoji" }, w.emoji) : null, wordLabel(w),
         w.pl ? h("span", { class: "muted small" }, "· die " + w.pl) : null,
         h("span", { class: "wrow-vi", lang: "vi" }, w.vi),
         h("span", { class: "wc-lvl inline lvl-" + lvl, title: levelText(lvl) }));
@@ -246,7 +246,7 @@
           fb.hidden = false;
           fb.className = "rv-fb " + (ok ? "good" : "bad");
           fb.textContent = "";
-          fb.append(...[h("div", { class: "rv-res" }, ok ? "✓ Đúng" : "✗ Chưa đúng"), h("div", { class: "rv-word" }, wordLabel(w), sayBtns(sayOf(w))),
+          fb.append(...[h("div", { class: "rv-res" }, ok ? "✓ Đúng" : "✗ Chưa đúng"), h("div", { class: "rv-word" }, w.emoji ? h("span", { class: "rv-emoji" }, w.emoji) : null, wordLabel(w), sayBtns(sayOf(w))),
             h("div", { lang: "vi" }, w.vi), w.pl ? h("div", { class: "muted small" }, "số nhiều: die " + w.pl) : null,
             extraNote ? h("div", { class: "muted small" }, extraNote) : null].filter(Boolean));
           Speech.say(sayOf(w));

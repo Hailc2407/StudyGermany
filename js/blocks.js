@@ -29,7 +29,7 @@
     const lvl = SRS.level(w.key);
     const a = artOf(w);
     return h("article", { class: "wcard" + (a ? " wc-" + (a === "pl" ? "pl" : a) : "") },
-      h("div", { class: "wc-head" }, wordLabel(w), sayBtns(sayOf(w))),
+      h("div", { class: "wc-head" }, h("span", { class: "wc-title" }, w.emoji ? h("span", { class: "wc-emoji", "aria-hidden": "true" }, w.emoji) : null, wordLabel(w)), sayBtns(sayOf(w))),
       w.pl ? h("div", { class: "wc-pl" }, h("span", { class: "muted small" }, "số nhiều "), h("span", { class: "say-inline pl-word", "data-say": "die " + w.pl }, "die " + w.pl))
         : w.kind === "noun" && !w.plOnly ? h("div", { class: "wc-pl muted small" }, "chỉ có số ít") : null,
       w.forms ? h("div", { class: "wc-forms say-inline", "data-say": w.forms.replace(/·/g, ","), title: "Bấm để nghe" }, w.forms) : null,
@@ -109,8 +109,8 @@
       if (!queue.length) return end(head);
       const w = queue[0];
       const front = dir === "de"
-        ? h("div", { class: "fl-front" }, h("div", { class: "fl-word" }, wordLabel(w)), sayBtns(sayOf(w)))
-        : h("div", { class: "fl-front" }, h("div", { class: "fl-vi", lang: "vi" }, w.vi), w.kind === "noun" ? h("div", { class: "muted small" }, "(nhớ cả der/die/das)") : null);
+        ? h("div", { class: "fl-front" }, w.emoji ? h("div", { class: "fl-emoji" }, w.emoji) : null, h("div", { class: "fl-word" }, wordLabel(w)), sayBtns(sayOf(w)))
+        : h("div", { class: "fl-front" }, w.emoji ? h("div", { class: "fl-emoji" }, w.emoji) : null, h("div", { class: "fl-vi", lang: "vi" }, w.vi), w.kind === "noun" ? h("div", { class: "muted small" }, "(nhớ cả der/die/das)") : null);
       const back = h("div", { class: "fl-back" },
         dir === "de" ? h("div", { class: "fl-vi", lang: "vi" }, w.vi) : h("div", { class: "fl-word" }, wordLabel(w), sayBtns(sayOf(w))),
         w.pl ? h("div", { class: "muted small" }, "số nhiều: die " + w.pl) : null,
@@ -158,7 +158,7 @@
     if (!set) return h("p", { class: "muted" }, "Không tìm thấy bộ từ " + b.set);
     const words = set.items;
     const grid = b.compact
-      ? h("div", { class: "wlist" }, words.map((w) => h("div", { class: "wrow" }, btn("🔊", () => Speech.say(sayOf(w)), "icon-btn tiny", "Nghe"), wordLabel(w), h("span", { class: "wrow-vi hide-q", lang: "vi" }, w.vi), w.note ? h("span", { class: "wrow-note muted small hide-q" }, w.note) : null)))
+      ? h("div", { class: "wlist" }, words.map((w) => h("div", { class: "wrow" }, btn("🔊", () => Speech.say(sayOf(w)), "icon-btn tiny", "Nghe"), w.emoji ? h("span", { class: "wrow-emoji" }, w.emoji) : null, wordLabel(w), h("span", { class: "wrow-vi hide-q", lang: "vi" }, w.vi), w.note ? h("span", { class: "wrow-note muted small hide-q" }, w.note) : null)))
       : h("div", { class: "wgrid" }, words.map(wordCard));
     const hide = btn("🙈 Ẩn nghĩa", () => {
       const on = grid.classList.toggle("quiz");
@@ -191,28 +191,30 @@
   /* Hear a word, pick its meaning. */
   B.listenPick = (b, ctx) => {
     const set = ctx.L.setIndex[b.set];
-    const pool = set.items;
+    const em = b.by === "emoji"; // hear a word, pick its picture (words with an emoji only)
+    const pool = em ? set.items.filter((w) => w.emoji) : set.items;
     const qs = sample(pool, Math.min(b.n || 8, pool.length));
     const sc = scoreLine();
     let ok = 0, done = 0;
+    const show = (x) => (em ? x.emoji : x.vi);
     const rows = qs.map((w, i) => {
-      const others = sample(pool.filter((x) => x.key !== w.key && x.vi !== w.vi), 3);
+      const others = sample(pool.filter((x) => x.key !== w.key && show(x) !== show(w)), 3);
       const opts = shuffle([w, ...others]);
       const reveal = h("span", { class: "reveal", hidden: true }, wordLabel(w));
       const row = h("div", { class: "lp-q" },
         h("div", { class: "lp-head" }, h("b", {}, i + 1 + "."), btn("🔊 Nghe", () => Speech.say(sayOf(w)), "btn small"), btn("🐢", () => Speech.say(sayOf(w), { slow: true }), "icon-btn", "Nghe chậm"), reveal),
-        h("div", { class: "lp-opts" }, opts.map((o) => h("button", { type: "button", class: "pick", lang: "vi", onclick: (e) => {
+        h("div", { class: "lp-opts" + (em ? " emojis" : "") }, opts.map((o) => h("button", { type: "button", class: "pick" + (em ? " emoji" : ""), lang: em ? null : "vi", onclick: (e) => {
           if (row.dataset.done) return;
           row.dataset.done = 1;
           done++;
           const right = o.key === w.key;
           if (right) ok++;
-          else Missed.add("lp:" + w.key, { type: "choice", q: "<span class='say-inline' data-say='" + esc(sayOf(w)) + "'>🔊 " + esc(w.de) + "</span> nghĩa là gì?", opts: opts.map((x) => esc(x.vi)), a: opts.indexOf(w) });
+          else Missed.add("lp:" + (em ? "e:" : "") + w.key, { type: "choice", q: "<span class='say-inline' data-say='" + esc(sayOf(w)) + "'>🔊 " + esc(w.de) + "</span> " + (em ? "— hình nào?" : "nghĩa là gì?"), opts: opts.map((x) => esc(show(x))), a: opts.indexOf(w) });
           e.currentTarget.classList.add(right ? "ok" : "bad");
           $$(".pick", row)[opts.indexOf(w)].classList.add("ok");
           reveal.hidden = false;
           if (done === qs.length) sc.set(ok, done);
-        } }, o.vi))));
+        } }, show(o)))));
       return row;
     });
     const wrap = h("div", { class: "listen-pick" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => wrap.replaceWith(B.listenPick(b, ctx)), "btn small ghost")));
@@ -795,23 +797,37 @@
       h("p", { class: "muted small" }, "Nói to theo: ", h("i", {}, "Ich buchstabiere: …"), " rồi đọc từng chữ cái."));
   };
 
-  /* ---------- Numbers 0–20: table to hear, hear-and-pick, type the word or the digits ---------- */
-  const NUMW = ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn", "elf", "zwölf",
-    "dreizehn", "vierzehn", "fünfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn", "zwanzig"];
-  const NUM_TRICKY = new Set([6, 7, 11, 12, 16, 17]);
-  B.numbers = () => {
+  /* ---------- Numbers (0–100) and prices: table to hear, hear-and-pick, type the word or the digits ---------- */
+  const ONES = ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn", "elf", "zwölf",
+    "dreizehn", "vierzehn", "fünfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn"];
+  const TENS = ["", "", "zwanzig", "dreißig", "vierzig", "fünfzig", "sechzig", "siebzig", "achtzig", "neunzig"];
+  function numWord(n) {
+    if (n < 20) return ONES[n];
+    if (n === 100) return "hundert";
+    const t = Math.floor(n / 10), o = n % 10;
+    return o === 0 ? TENS[t] : (o === 1 ? "ein" : ONES[o]) + "und" + TENS[t];
+  }
+  const NUMW = Array.from({ length: 21 }, (x, i) => numWord(i));
+  const NUM_TRICKY = new Set([6, 7, 11, 12, 16, 17, 30, 60, 70]);
+  const rnd = (lo, hi) => lo + Math.floor(Math.random() * (hi - lo + 1));
+  const numRange = (b) => [b.min == null ? 0 : b.min, b.max == null ? 20 : b.max];
+  const pickNum = (b) => (b.pool ? b.pool[rnd(0, b.pool.length - 1)] : rnd(...numRange(b)));
+
+  /* Table of numbers (default 0–20; b.values = a list such as [20, 30, … 100]). Click to hear. */
+  B.numbers = (b = {}) => {
     let token = null;
-    const tiles = NUMW.map((w, i) => h("button", { type: "button", class: "ab-tile" + (NUM_TRICKY.has(i) ? " tricky" : ""), onclick: () => Speech.say(w) },
-      h("span", { class: "ab-l" }, String(i)), h("span", { class: "ab-n" }, w)));
+    const values = b.values || Array.from({ length: 21 }, (x, i) => i);
+    const tiles = values.map((v) => h("button", { type: "button", class: "ab-tile" + (NUM_TRICKY.has(v) ? " tricky" : ""), onclick: () => Speech.say(numWord(v)) },
+      h("span", { class: "ab-l" }, String(v)), h("span", { class: "ab-n" }, numWord(v))));
     const all = btn("▶ Nghe cả bảng", async () => {
       if (token) { token = null; Speech.stop(); all.textContent = "▶ Nghe cả bảng"; return; }
       const me = (token = {});
       all.textContent = "⏹ Dừng";
-      for (let i = 0; i < NUMW.length; i++) {
+      for (let i = 0; i < values.length; i++) {
         if (token !== me) return;
         tiles.forEach((t) => t.classList.remove("now"));
         tiles[i].classList.add("now");
-        await Speech.say(NUMW[i]);
+        await Speech.say(numWord(values[i]));
         await wait(300);
       }
       tiles.forEach((t) => t.classList.remove("now"));
@@ -819,11 +835,19 @@
     }, "btn small ghost");
     return h("div", { class: "alphabet" }, h("div", { class: "actions" }, all, h("span", { class: "muted small" }, "Chấm cam = số hay đọc hoặc viết nhầm.")), h("div", { class: "ab-grid" }, tiles));
   };
-  function numOptions(x) {
-    const near = [x - 1, x + 1, x <= 10 ? x + 10 : x - 10, x <= 9 ? x * 2 : 0].filter((n) => n >= 0 && n <= 20 && n !== x);
-    const out = new Set(shuffle([...new Set(near)]).slice(0, 3));
-    while (out.size < 3) { const r = Math.floor(Math.random() * 21); if (r !== x) out.add(r); }
-    return shuffle([x, ...out]);
+
+  /* Wrong answers worth offering: the swapped digits (45 / 54), teen and ten (14 / 40), the neighbours. */
+  function numOptions(x, lo, hi) {
+    const special = [];
+    if (x >= 13 && x <= 19) special.push((x - 10) * 10);
+    if (x >= 30 && x <= 90 && x % 10 === 0) special.push(x / 10 + 10);
+    if (x >= 21 && x <= 99 && x % 10 !== 0) special.push((x % 10) * 10 + Math.floor(x / 10));
+    const near = [x - 1, x + 1, x - 10, x + 10];
+    const ok = (n) => n >= lo && n <= hi && n !== x;
+    const out = [];
+    for (const n of [...special, ...shuffle(near)]) if (ok(n) && !out.includes(n)) out.push(n);
+    while (out.length < 3) { const r = rnd(lo, hi); if (ok(r) && !out.includes(r)) out.push(r); }
+    return shuffle([x, ...out.slice(0, 3)]);
   }
   function phoneOptions(seq) {
     const out = new Map([[seq.join(" "), seq]]);
@@ -836,38 +860,46 @@
     }
     return shuffle([...out.values()]);
   }
-  /* mode "single": hear one number, pick the digits · mode "phone": hear three numbers (like a phone number) */
-  B.numHear = (b) => {
+  /* One round of "hear it, pick the written form". makeQ() → { say, opts: [text…], right: index, shown, rate? } */
+  function hearRound(b, makeQ, again) {
     const sc = scoreLine();
     let ok = 0, n = 0;
     const N = b.n || 8;
-    const phone = b.mode === "phone";
     const rows = Array.from({ length: N }, (x, i) => {
-      const seq = phone ? Array.from({ length: 3 }, () => Math.floor(Math.random() * 21)) : [Math.floor(Math.random() * 21)];
-      const say = seq.map((v) => NUMW[v]).join(", ");
-      const key = seq.join(" ");
-      const opts = phone ? phoneOptions(seq) : numOptions(seq[0]).map((v) => [v]);
-      const right = opts.findIndex((o) => o.join(" ") === key);
-      const reveal = h("span", { class: "reveal", hidden: true }, seq.map((v) => NUMW[v]).join(" · "));
+      const q = makeQ();
+      const reveal = h("span", { class: "reveal", hidden: true }, q.shown);
       const row = h("div", { class: "hp-row" }, h("b", {}, i + 1 + "."),
-        btn("🔊", () => Speech.say(say, { rate: phone ? 0.75 : undefined }), "btn small", "Nghe"),
-        btn("🐢", () => Speech.say(say, { slow: true }), "icon-btn", "Nghe chậm"),
-        h("span", { class: "hp-opts" }, opts.map((o, j) => h("button", { type: "button", class: "pick letter", onclick: (e) => {
+        btn("🔊", () => Speech.say(q.say, { rate: q.rate }), "btn small", "Nghe"),
+        btn("🐢", () => Speech.say(q.say, { slow: true }), "icon-btn", "Nghe chậm"),
+        h("span", { class: "hp-opts" }, q.opts.map((o, j) => h("button", { type: "button", class: "pick letter", onclick: (e) => {
           if (row.dataset.done) return;
           row.dataset.done = 1;
           n++;
-          const good = j === right;
+          const good = j === q.right;
           if (good) ok++;
-          else Missed.add("nh:" + say, { type: "choice", q: "<span class='say-inline' data-say='" + esc(say) + "'>🔊 Bấm nghe</span> — số nào?", opts: opts.map((x2) => x2.join(" ")), a: right });
+          else Missed.add("hr:" + q.say, { type: "choice", q: "<span class='say-inline' data-say='" + esc(q.say) + "'>🔊 Bấm nghe</span> — nghe được gì?", opts: q.opts, a: q.right });
           e.currentTarget.classList.add(good ? "ok" : "bad");
-          $$(".pick", row)[right].classList.add("ok");
+          $$(".pick", row)[q.right].classList.add("ok");
           reveal.hidden = false;
           if (n === N) sc.set(ok, n);
-        } }, o.join("  ")))),
+        } }, o))),
         reveal);
       return row;
     });
-    const wrap = h("div", { class: "hear-pick" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => wrap.replaceWith(B.numHear(b)), "btn small ghost")));
+    return h("div", { class: "hear-pick" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => again(), "btn small ghost")));
+  }
+  /* mode "single": hear one number, pick the digits (b.min/b.max, or b.pool = a list to draw from)
+     mode "phone": hear three numbers (like a phone number) */
+  B.numHear = (b) => {
+    const phone = b.mode === "phone";
+    const [lo, hi] = numRange(b);
+    const wrap = hearRound(b, () => {
+      const seq = phone ? Array.from({ length: 3 }, () => rnd(0, 20)) : [pickNum(b)];
+      const opts = phone ? phoneOptions(seq) : numOptions(seq[0], b.pool ? 0 : lo, b.pool ? 100 : hi).map((v) => [v]);
+      const key = seq.join(" ");
+      return { say: seq.map(numWord).join(", "), shown: seq.map(numWord).join(" · "), rate: phone ? 0.75 : undefined,
+        opts: opts.map((o) => o.join(" ")), right: opts.findIndex((o) => o.join(" ") === key) };
+    }, () => wrap.replaceWith(B.numHear(b)));
     return wrap;
   };
   /* Type the German word for a number (default) or, with mode "read", the digits for a German word. */
@@ -876,11 +908,13 @@
     let ok = 0, n = 0;
     const N = b.n || 8;
     const read = b.mode === "read";
-    const nums = shuffle(Array.from({ length: 21 }, (x, i) => i)).slice(0, N);
+    const [lo, hi] = numRange(b);
+    const pool = b.pool ? b.pool.slice() : Array.from({ length: hi - lo + 1 }, (x, i) => lo + i);
+    const nums = shuffle(pool).slice(0, N);
     const rows = nums.map((x, i) => {
-      const input = textInput({ size: read ? 5 : 12, "aria-label": "Câu trả lời" });
+      const input = textInput({ size: read ? 5 : 20, "aria-label": "Câu trả lời" });
       const res = h("span", { class: "sp-res" });
-      const answers = read ? [String(x)] : [NUMW[x]];
+      const answers = read ? [String(x)] : [numWord(x)];
       const go = () => {
         if (row.dataset.done) return;
         if (!input.value.trim()) return toast("Gõ câu trả lời trước đã.");
@@ -888,19 +922,84 @@
         n++;
         const r = check(input.value, answers);
         if (r.ok) ok++;
-        else Missed.add("nw:" + x + read, { type: "gap", q: (read ? esc(NUMW[x]) : x) + " = ___", a: [answers] });
+        else Missed.add("nw:" + x + read, { type: "gap", q: (read ? esc(numWord(x)) : x) + " = ___", a: [answers] });
         input.classList.add(r.ok ? "ok" : "bad");
-        res.textContent = (r.ok ? " ✓ " : " ✗ ") + x + " = " + NUMW[x] + (r.note ? "  · " + r.note : "");
-        Speech.say(NUMW[x]);
+        res.textContent = (r.ok ? " ✓ " : " ✗ ") + x + " = " + numWord(x) + (r.note ? "  · " + r.note : "");
+        Speech.say(numWord(x));
         if (n === N) sc.set(ok, n);
       };
       input.addEventListener("keydown", (e) => { if (e.key === "Enter") go(); });
       const row = h("div", { class: "sp-row" }, h("b", {}, i + 1 + "."),
-        h("span", { class: "nw-q" }, read ? h("span", { class: "say-inline", "data-say": NUMW[x] }, NUMW[x]) : String(x)),
+        h("span", { class: "nw-q" }, read ? h("span", { class: "say-inline", "data-say": numWord(x) }, numWord(x)) : String(x)),
         h("span", {}, "="), input, btn("Kiểm tra", go, "btn small ghost"), res);
       return row;
     });
     const wrap = h("div", { class: "spell" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => wrap.replaceWith(B.numWrite(b)), "btn small ghost")));
+    return wrap;
+  };
+
+  /* Prices: 2,45 € = zwei Euro fünfundvierzig · 0,20 € = zwanzig Cent · 1,00 € = ein Euro */
+  const eu = (n) => (n === 1 ? "ein" : numWord(n));
+  function priceWords(e, c) {
+    if (e === 0) return (c === 1 ? "ein" : numWord(c)) + " Cent";
+    if (c === 0) return eu(e) + " Euro";
+    return eu(e) + " Euro " + numWord(c);
+  }
+  const priceFmt = (e, c) => e + "," + String(c).padStart(2, "0") + " €";
+  const CENTS = [5, 10, 15, 20, 25, 29, 30, 35, 39, 40, 45, 49, 50, 55, 59, 60, 65, 69, 70, 75, 79, 80, 85, 89, 90, 95, 99];
+  function randPrice(maxEuro) {
+    const e = rnd(0, maxEuro);
+    let c = Math.random() < 0.15 ? 0 : CENTS[rnd(0, CENTS.length - 1)];
+    if (e === 0 && c === 0) c = 50;
+    return [e, c];
+  }
+  function priceOptions(e, c) {
+    const out = new Map([[priceFmt(e, c), [e, c]]]);
+    const swapped = c >= 1 && c % 11 !== 0 ? [e, (c % 10) * 10 + Math.floor(c / 10)] : null;
+    const alts = [[e + 1, c], [Math.max(e - 1, 0), c], [e, c <= 49 ? c + 50 : c - 50], [e === 0 ? 1 : e, c]];
+    for (const [e2, c2] of [...(swapped ? [swapped] : []), ...shuffle(alts)]) {
+      if (out.size >= 4) break;
+      if (c2 >= 0 && c2 <= 99 && !(e2 === 0 && c2 === 0)) out.set(priceFmt(e2, c2), [e2, c2]);
+    }
+    while (out.size < 4) { const [e3, c3] = randPrice(Math.max(e + 3, 5)); out.set(priceFmt(e3, c3), [e3, c3]); }
+    return shuffle([...out.values()]);
+  }
+  B.priceHear = (b) => {
+    const wrap = hearRound(b, () => {
+      const [e, c] = randPrice(b.maxEuro == null ? 20 : b.maxEuro);
+      const opts = priceOptions(e, c).map((o) => priceFmt(o[0], o[1]));
+      return { say: priceWords(e, c), shown: priceWords(e, c), opts, right: opts.indexOf(priceFmt(e, c)) };
+    }, () => wrap.replaceWith(B.priceHear(b)));
+    return wrap;
+  };
+  B.priceWrite = (b) => {
+    const sc = scoreLine();
+    let ok = 0, n = 0;
+    const N = b.n || 6;
+    const rows = Array.from({ length: N }, (x, i) => {
+      const [e, c] = randPrice(b.maxEuro == null ? 20 : b.maxEuro);
+      const words = priceWords(e, c);
+      const answers = e > 0 && c > 0 ? [words, words + " Cent"] : [words];
+      const input = textInput({ size: 30, "aria-label": "Giá bằng chữ" });
+      const res = h("span", { class: "sp-res" });
+      const go = () => {
+        if (row.dataset.done) return;
+        if (!input.value.trim()) return toast("Gõ câu trả lời trước đã.");
+        row.dataset.done = 1;
+        n++;
+        const r = check(input.value, answers);
+        if (r.ok) ok++;
+        else Missed.add("pw:" + priceFmt(e, c), { type: "gap", q: priceFmt(e, c) + " = ___", a: [answers] });
+        input.classList.add(r.ok ? "ok" : "bad");
+        res.textContent = (r.ok ? " ✓ " : " ✗ ") + words + (r.note ? "  · " + r.note : "");
+        Speech.say(words);
+        if (n === N) sc.set(ok, n);
+      };
+      input.addEventListener("keydown", (ev) => { if (ev.key === "Enter") go(); });
+      const row = h("div", { class: "sp-row" }, h("b", {}, i + 1 + "."), h("span", { class: "nw-q" }, priceFmt(e, c)), h("span", {}, "="), input, btn("Kiểm tra", go, "btn small ghost"), res);
+      return row;
+    });
+    const wrap = h("div", { class: "spell" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => wrap.replaceWith(B.priceWrite(b)), "btn small ghost")));
     return wrap;
   };
 

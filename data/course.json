@@ -22,8 +22,9 @@
       "id": "l3",
       "no": 3,
       "title": "Essen und Trinken",
-      "vi": "Ăn uống, mua sắm",
-      "ready": false
+      "vi": "Đồ ăn thức uống, mua sắm, số đến 100, giá tiền, món yêu thích",
+      "ready": true,
+      "file": "data/l3.json"
     },
     {
       "id": "l4",

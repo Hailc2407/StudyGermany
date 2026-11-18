@@ -1,0 +1,913 @@
+{
+  "id": "l3",
+  "no": 3,
+  "title": "Essen und Trinken",
+  "vi": "Đồ ăn thức uống, mua sắm, số đến 100, giá tiền, món yêu thích",
+  "book": "Kursbuch tr. 34–45 · Arbeitsbuch tr. 30–40 · Lernwortschatz L3",
+  "audio": ["KB 1/48-70", "AB 25-31"],
+  "sets": [
+    {
+      "id": "a", "title": "Bananenpfannkuchen, ein và kein", "session": "1",
+      "items": [
+        { "id": "banane", "de": "Banane", "art": "die", "pl": "Bananen", "kind": "noun", "emoji": "🍌", "vi": "quả chuối", "syl": "ba·NA·ne", "en": "≈ banana", "ex": ["Ich kaufe drei Bananen.", "Tôi mua ba quả chuối."] },
+        { "id": "butter", "de": "Butter", "art": "die", "kind": "noun", "emoji": "🧈", "vi": "bơ", "syl": "BUT·ter", "en": "≈ butter", "note": "Chỉ có số ít. u ngắn (hai chữ t).", "ex": ["Ich brauche Butter.", "Tôi cần bơ."] },
+        { "id": "ei", "de": "Ei", "art": "das", "pl": "Eier", "kind": "noun", "emoji": "🥚", "vi": "quả trứng", "en": "≈ egg", "note": "Ei đọc „ai“; số nhiều Eier đọc „ai-a“.", "ex": ["Ich brauche zehn Eier.", "Tôi cần mười quả trứng."] },
+        { "id": "mehl", "de": "Mehl", "art": "das", "kind": "noun", "vi": "bột mì", "note": "Chỉ có số ít. h không đọc, e dài: „mêl“.", "ex": ["Haben wir Mehl?", "Nhà mình có bột mì không?"] },
+        { "id": "milch", "de": "Milch", "art": "die", "kind": "noun", "emoji": "🥛", "vi": "sữa", "en": "≈ milk", "note": "Chỉ có số ít. lch: „l“ rồi „xì“ nhẹ.", "ex": ["Ein Glas Milch, bitte.", "Cho tôi một cốc sữa."] },
+        { "id": "zucker", "de": "Zucker", "art": "der", "kind": "noun", "vi": "đường", "syl": "ZU·cker", "note": "Chỉ có số ít. z = ts: „tsu-ka“.", "ex": ["Wir brauchen Zucker.", "Chúng tôi cần đường."] },
+        { "id": "pfannkuchen", "de": "Pfannkuchen", "art": "der", "pl": "Pfannkuchen", "kind": "noun", "emoji": "🥞", "vi": "bánh kếp (pancake)", "syl": "PFAN·ku·chen", "note": "pf = p và f đọc liền. ch sau u đọc „kh“.", "ex": ["Wir machen Pfannkuchen.", "Chúng tôi làm bánh kếp."] },
+        { "id": "schokolade", "de": "Schokolade", "art": "die", "kind": "noun", "emoji": "🍫", "vi": "sô-cô-la", "syl": "scho·ko·LA·de", "en": "≈ chocolate", "note": "Chỉ có số ít. Nhấn âm áp chót: scho-ko-LA-de.", "ex": ["Das ist Schokolade.", "Đây là sô-cô-la."] },
+        { "id": "brauchen", "de": "brauchen", "kind": "verb", "forms": "ich brauche · du brauchst · er/sie braucht", "vi": "cần", "syl": "BRAU·chen", "note": "ch sau au đọc „kh“. Đi thẳng với danh từ: Ich brauche Eier.", "ex": ["Wir brauchen Mehl.", "Chúng tôi cần bột mì."] },
+        { "id": "kaufen", "de": "kaufen", "kind": "verb", "forms": "ich kaufe · du kaufst · er/sie kauft", "vi": "mua", "syl": "KAU·fen", "ex": ["Ich kaufe Bananen.", "Tôi mua chuối."] },
+        { "id": "hunger", "de": "Hunger", "art": "der", "kind": "noun", "vi": "cơn đói", "syl": "HUN·ger", "note": "Ich habe Hunger = tôi đói (nghĩa đen: tôi có cơn đói). Chỉ có số ít.", "ex": ["Ich habe Hunger!", "Tôi đói!"] },
+        { "id": "dann", "de": "dann", "kind": "word", "vi": "sau đó; vậy thì", "ex": ["Ich kaufe Eier und dann Mehl.", "Tôi mua trứng rồi mua bột mì."] },
+        { "id": "helfen", "de": "helfen", "kind": "verb", "forms": "ich helfe · du hilfst · er/sie hilft", "vi": "giúp đỡ", "syl": "HEL·fen", "note": "Đổi e → i: du hilfst, er/sie hilft. Đi với dir / Ihnen.", "ex": ["Kann ich dir helfen?", "Mình giúp bạn được không?"] },
+        { "id": "ein", "de": "ein / eine", "say": "ein, eine", "ans": "ein", "kind": "word", "vi": "một (mạo từ không xác định)", "note": "ein + der-/das-Wort · eine + die-Wort. Số nhiều: không có mạo từ.", "ex": ["Das ist ein Apfel.", "Đây là một quả táo."] },
+        { "id": "kein", "de": "kein / keine", "say": "kein, keine", "ans": "kein", "kind": "word", "vi": "không có; không phải (phủ định danh từ)", "note": "kein + der-/das-Wort · keine + die-Wort và số nhiều.", "ex": ["Das ist kein Apfel.", "Đây không phải quả táo."] },
+        { "id": "apfel", "de": "Apfel", "art": "der", "pl": "Äpfel", "kind": "noun", "emoji": "🍎", "vi": "quả táo", "syl": "AP·fel", "en": "≈ apple", "note": "pf đọc liền. Số nhiều có ä: Äpfel.", "ex": ["Ich kaufe ein Kilo Äpfel.", "Tôi mua một ký táo."] },
+        { "id": "orange", "de": "Orange", "art": "die", "pl": "Orangen", "kind": "noun", "emoji": "🍊", "vi": "quả cam", "syl": "o·RAN·ge", "en": "≈ orange", "note": "Đuôi -ge đọc „-zhơ“ như tiếng Pháp: o-RAN-zhơ.", "ex": ["Das ist eine Orange.", "Đây là một quả cam."] },
+        { "id": "kuchen", "de": "Kuchen", "art": "der", "pl": "Kuchen", "kind": "noun", "emoji": "🍰", "vi": "bánh ngọt", "syl": "KU·chen", "note": "ch sau u đọc „kh“: „ku-khn“. Số nhiều không đổi.", "ex": ["Der Kuchen ist super!", "Cái bánh tuyệt quá!"] },
+        { "id": "kaffee", "de": "Kaffee", "art": "der", "pl": "Kaffees", "kind": "noun", "emoji": "☕", "vi": "cà phê", "syl": "KAF·fee", "en": "≈ coffee", "ex": ["Haben wir Kaffee?", "Nhà mình có cà phê không?"] },
+        { "id": "saft", "de": "Saft", "art": "der", "pl": "Säfte", "kind": "noun", "emoji": "🧃", "vi": "nước ép", "note": "Số nhiều có ä: Säfte.", "ex": ["Ein Glas Saft, bitte.", "Cho tôi một cốc nước ép."] },
+        { "id": "broetchen", "de": "Brötchen", "art": "das", "pl": "Brötchen", "kind": "noun", "emoji": "🥖", "vi": "ổ bánh mì nhỏ", "syl": "BRÖT·chen", "note": "ö: môi tròn, nói „ê“. -chen = nhỏ và luôn là das (Brot → Brötchen).", "ex": ["Ich esse ein Brötchen.", "Tôi ăn một ổ bánh mì nhỏ."] },
+        { "id": "wuerstchen", "de": "Würstchen", "art": "das", "pl": "Würstchen", "kind": "noun", "emoji": "🌭", "vi": "xúc xích nhỏ", "syl": "WÜRST·chen", "note": "-chen = nhỏ: die Wurst → das Würstchen.", "ex": ["Das ist ein Würstchen.", "Đây là một cái xúc xích."] },
+        { "id": "birne", "de": "Birne", "art": "die", "pl": "Birnen", "kind": "noun", "emoji": "🍐", "vi": "quả lê", "syl": "BIR·ne", "ex": ["Das ist keine Birne.", "Đây không phải quả lê."] },
+        { "id": "tomate", "de": "Tomate", "art": "die", "pl": "Tomaten", "kind": "noun", "emoji": "🍅", "vi": "quả cà chua", "syl": "to·MA·te", "en": "≈ tomato", "ex": ["Ich kaufe drei Tomaten.", "Tôi mua ba quả cà chua."] },
+        { "id": "was-ist-das", "de": "Was ist das?", "kind": "phrase", "vi": "Đây là cái gì?" },
+        { "id": "wie-heisst-das", "de": "Wie heißt das auf Deutsch?", "kind": "phrase", "vi": "Cái này tiếng Đức gọi là gì?", "note": "Câu hữu ích nhất khi tự học: chỉ vào đồ vật và hỏi." },
+        { "id": "das-ist-doch-kein", "de": "Das ist doch kein …!", "kind": "phrase", "vi": "Đó đâu phải … đâu!", "note": "doch thêm sắc thái ngạc nhiên hoặc phản bác.", "ex": ["Das ist doch kein Ei!", "Đó đâu phải quả trứng!"] }
+      ]
+    },
+    {
+      "id": "b", "title": "Số nhiều và đi chợ", "session": "2",
+      "items": [
+        { "id": "brot", "de": "Brot", "art": "das", "pl": "Brote", "kind": "noun", "emoji": "🍞", "vi": "bánh mì (ổ lớn)", "en": "≈ bread", "note": "o dài; số nhiều Brote.", "ex": ["Ich kaufe ein Brot.", "Tôi mua một ổ bánh mì."] },
+        { "id": "kartoffel", "de": "Kartoffel", "art": "die", "pl": "Kartoffeln", "kind": "noun", "emoji": "🥔", "vi": "khoai tây", "syl": "kar·TOF·fel", "note": "Nhấn âm thứ hai. ff = f ngắn.", "ex": ["Ich kaufe ein Kilo Kartoffeln.", "Tôi mua một ký khoai tây."] },
+        { "id": "joghurt", "de": "Joghurt", "art": "der", "pl": "Joghurts", "kind": "noun", "vi": "sữa chua", "syl": "JO·ghurt", "en": "≈ yogurt", "note": "Cũng có thể nói das Joghurt. j = y: „yô-ghurt“.", "ex": ["Ich esse gern Joghurt.", "Tôi thích ăn sữa chua."] },
+        { "id": "zwiebel", "de": "Zwiebel", "art": "die", "pl": "Zwiebeln", "kind": "noun", "emoji": "🧅", "vi": "củ hành tây", "syl": "ZWIE·bel", "note": "zw = „tsv“, ie = i dài.", "ex": ["Ich brauche zwei Zwiebeln.", "Tôi cần hai củ hành."] },
+        { "id": "fisch", "de": "Fisch", "art": "der", "pl": "Fische", "kind": "noun", "emoji": "🐟", "vi": "con cá; món cá", "en": "≈ fish", "note": "sch = „sh“.", "ex": ["Ich kaufe zwei Fische.", "Tôi mua hai con cá."] },
+        { "id": "regal", "de": "Regal", "art": "das", "pl": "Regale", "kind": "noun", "vi": "cái kệ, giá để đồ", "syl": "re·GAL", "ex": ["Im Regal sind Äpfel.", "Trên kệ có táo."] },
+        { "id": "kaese", "de": "Käse", "art": "der", "kind": "noun", "emoji": "🧀", "vi": "phô mai", "syl": "KÄ·se", "note": "Chỉ có số ít. ä dài đọc „ê“: „kê-zơ“.", "ex": ["Haben wir Käse?", "Nhà mình có phô mai không?"] },
+        { "id": "salz", "de": "Salz", "art": "das", "kind": "noun", "emoji": "🧂", "vi": "muối", "en": "≈ salt", "note": "Chỉ có số ít. z = ts.", "ex": ["Haben Sie Salz?", "Ông/bà có muối không?"] },
+        { "id": "tee", "de": "Tee", "art": "der", "pl": "Tees", "kind": "noun", "emoji": "🍵", "vi": "trà", "en": "≈ tea", "note": "ee = ê dài: „tê“.", "ex": ["Haben wir Tee?", "Nhà mình có trà không?"] },
+        { "id": "obst", "de": "Obst", "art": "das", "kind": "noun", "emoji": "🍇", "vi": "trái cây (nói chung)", "note": "Chỉ có số ít: Obst = Äpfel, Birnen, Bananen… nói chung.", "ex": ["Ich kaufe Obst.", "Tôi mua trái cây."] },
+        { "id": "gemuese", "de": "Gemüse", "art": "das", "pl": "Gemüse", "kind": "noun", "emoji": "🥦", "vi": "rau củ (nói chung)", "syl": "ge·MÜ·se", "note": "ü: môi tròn, nói „i“. Nhấn âm thứ hai.", "ex": ["Ich brauche Gemüse.", "Tôi cần rau."] },
+        { "id": "mineralwasser", "de": "Mineralwasser", "art": "das", "kind": "noun", "emoji": "💧", "vi": "nước khoáng", "syl": "mi·ne·RAL·was·ser", "note": "Chỉ có số ít.", "ex": ["Brauchen wir Mineralwasser?", "Mình có cần nước khoáng không?"] },
+        { "id": "wasser", "de": "Wasser", "art": "das", "kind": "noun", "emoji": "🚰", "vi": "nước", "syl": "WAS·ser", "en": "≈ water", "note": "w = „v“: „va-sa“. Chỉ có số ít.", "ex": ["Ein Glas Wasser, bitte.", "Cho tôi một cốc nước."] },
+        { "id": "fleisch", "de": "Fleisch", "art": "das", "kind": "noun", "emoji": "🥩", "vi": "thịt", "note": "Chỉ có số ít. ei = „ai“, sch = „sh“.", "ex": ["Haben wir Fleisch?", "Nhà mình có thịt không?"] },
+        { "id": "reis", "de": "Reis", "art": "der", "kind": "noun", "emoji": "🍚", "vi": "gạo; cơm", "note": "Chỉ có số ít. ei = „ai“: „rais“.", "ex": ["Brauchst du Reis?", "Bạn có cần gạo không?"] },
+        { "id": "wein", "de": "Wein", "art": "der", "pl": "Weine", "kind": "noun", "emoji": "🍷", "vi": "rượu vang", "en": "≈ wine", "note": "w = v; ei = ai: „vain“. Đừng nhầm Wein với Wien (thành phố Viên).", "ex": ["Haben wir Wein?", "Nhà mình có rượu vang không?"] },
+        { "id": "bier", "de": "Bier", "art": "das", "pl": "Biere", "kind": "noun", "emoji": "🍺", "vi": "bia", "en": "≈ beer", "ex": ["Haben wir Bier?", "Nhà mình có bia không?"] },
+        { "id": "haben-wir", "de": "Haben wir …?", "kind": "phrase", "vi": "Nhà mình có … không?", "note": "Câu hỏi Có/Không: động từ đứng đầu." },
+        { "id": "haben-sie", "de": "Haben Sie …?", "kind": "phrase", "vi": "Ông/bà có … không? (hỏi người bán hàng)", "ex": ["Haben Sie Eier?", "Ông/bà có trứng không?"] },
+        { "id": "ich-brauche", "de": "Ich brauche …", "kind": "phrase", "vi": "Tôi cần …", "ex": ["Ich brauche Milch.", "Tôi cần sữa."] },
+        { "id": "ja-natuerlich", "de": "Ja, natürlich.", "kind": "phrase", "vi": "Vâng, dĩ nhiên rồi.", "syl": "ja, na·TÜR·lich" },
+        { "id": "hier-bitte", "de": "Hier, bitte.", "kind": "phrase", "vi": "Của bạn đây. / Xin mời." },
+        { "id": "sonst-noch-etwas", "de": "Sonst noch etwas?", "kind": "phrase", "vi": "Còn gì nữa không ạ?", "syl": "sonst noch ET·was" },
+        { "id": "nein-tut-mir-leid", "de": "Nein, tut mir leid.", "kind": "phrase", "vi": "Không, rất tiếc." }
+      ]
+    },
+    {
+      "id": "n", "title": "Số tròn chục đến 100", "session": "3",
+      "items": [
+        { "id": "n30", "de": "dreißig", "kind": "num", "vi": "30 · ba mươi", "syl": "DREI·ßig", "note": "Viết ß: dreißig (không phải dreizig). Đọc „drai-sích“." },
+        { "id": "n40", "de": "vierzig", "kind": "num", "vi": "40 · bốn mươi", "syl": "VIER·zig" },
+        { "id": "n50", "de": "fünfzig", "kind": "num", "vi": "50 · năm mươi", "syl": "FÜNF·zig" },
+        { "id": "n60", "de": "sechzig", "kind": "num", "vi": "60 · sáu mươi", "syl": "SECH·zig", "note": "Bỏ chữ s: sechzig (không phải sechszig)." },
+        { "id": "n70", "de": "siebzig", "kind": "num", "vi": "70 · bảy mươi", "syl": "SIEB·zig", "note": "Bỏ -en: siebzig (không phải siebenzig)." },
+        { "id": "n80", "de": "achtzig", "kind": "num", "vi": "80 · tám mươi", "syl": "ACHT·zig" },
+        { "id": "n90", "de": "neunzig", "kind": "num", "vi": "90 · chín mươi", "syl": "NEUN·zig" },
+        { "id": "n100", "de": "hundert", "kind": "num", "vi": "100 · một trăm", "syl": "HUN·dert", "note": "Cũng có thể nói einhundert." }
+      ]
+    },
+    {
+      "id": "d", "title": "Giá cả và đơn vị", "session": "3",
+      "items": [
+        { "id": "preis", "de": "Preis", "art": "der", "pl": "Preise", "kind": "noun", "vi": "giá cả", "en": "≈ price", "note": "ei = „ai“: „prais“.", "ex": ["Der Preis ist super!", "Giá tuyệt quá!"] },
+        { "id": "cent", "de": "Cent", "art": "der", "kind": "noun", "vi": "xu (1/100 euro)", "en": "≈ cent", "note": "Đọc „sent“ như tiếng Anh. Sau số không đổi: zwanzig Cent.", "ex": ["Das kostet zwanzig Cent.", "Cái này giá hai mươi xu."] },
+        { "id": "euro", "de": "Euro", "art": "der", "kind": "noun", "vi": "đồng euro", "syl": "EU·ro", "note": "eu = „oi“: „oi-rô“. Sau số không đổi: zwei Euro.", "ex": ["Das kostet zwei Euro.", "Cái này giá hai euro."] },
+        { "id": "prospekt", "de": "Prospekt", "art": "der", "pl": "Prospekte", "kind": "noun", "vi": "tờ rơi quảng cáo", "syl": "pro·SPEKT" },
+        { "id": "sonderangebot", "de": "Sonderangebot", "art": "das", "pl": "Sonderangebote", "kind": "noun", "vi": "hàng khuyến mãi", "syl": "SON·der·an·ge·bot", "note": "Sonder- = đặc biệt + Angebot = hàng chào bán." },
+        { "id": "lebensmittel", "de": "Lebensmittel", "art": "das", "pl": "Lebensmittel", "kind": "noun", "vi": "thực phẩm", "syl": "LE·bens·mit·tel", "note": "Thường dùng ở số nhiều: die Lebensmittel." },
+        { "id": "abteilung", "de": "Abteilung", "art": "die", "pl": "Abteilungen", "kind": "noun", "vi": "quầy, khu (trong cửa hàng)", "syl": "AB·tei·lung" },
+        { "id": "wurst", "de": "Wurst", "art": "die", "pl": "Würste", "kind": "noun", "emoji": "🌭", "vi": "xúc xích, lạp xưởng", "note": "Số nhiều có ü: Würste.", "ex": ["Hundert Gramm Wurst, bitte.", "Cho tôi một trăm gam xúc xích."] },
+        { "id": "hackfleisch", "de": "Hackfleisch", "art": "das", "kind": "noun", "emoji": "🥩", "vi": "thịt băm", "syl": "HACK·fleisch", "note": "Chỉ có số ít." },
+        { "id": "oel", "de": "Öl", "art": "das", "pl": "Öle", "kind": "noun", "emoji": "🫒", "vi": "dầu ăn", "note": "Ö dài: môi tròn, nói „ê“." },
+        { "id": "wie-viel", "de": "wie viel", "kind": "phrase", "vi": "bao nhiêu", "note": "Với danh từ đếm được ở số nhiều dùng wie viele: Wie viele Eier brauchen Sie?", "ex": ["Wie viel kostet das?", "Cái này bao nhiêu tiền?"] },
+        { "id": "kosten", "de": "kosten", "kind": "verb", "forms": "es kostet · sie kosten", "vi": "có giá (bao nhiêu)", "syl": "KOS·ten", "note": "Số ít: kostet · số nhiều: kosten.", "ex": ["Ein Brot kostet zwei Euro.", "Một ổ bánh mì giá hai euro."] },
+        { "id": "kilo", "de": "Kilo", "art": "das", "kind": "noun", "vi": "ký (kg)", "note": "Viết tắt kg. Sau số không đổi: zwei Kilo.", "ex": ["Ich kaufe ein Kilo Orangen.", "Tôi mua một ký cam."] },
+        { "id": "gramm", "de": "Gramm", "art": "das", "kind": "noun", "vi": "gam (g)", "note": "Viết tắt g. Nói: hundert Gramm.", "ex": ["Hundert Gramm Käse, bitte.", "Cho tôi một trăm gam phô mai."] },
+        { "id": "pfund", "de": "Pfund", "art": "das", "kind": "noun", "vi": "nửa ký (500 g)", "note": "ein Pfund = 500 Gramm. pf đọc liền.", "ex": ["Ein Pfund Brot, bitte.", "Cho tôi nửa ký bánh mì."] },
+        { "id": "liter", "de": "Liter", "art": "der", "pl": "Liter", "kind": "noun", "vi": "lít (l)", "syl": "LI·ter", "note": "Sau số không đổi: drei Liter.", "ex": ["Ein Liter Milch kostet 89 Cent.", "Một lít sữa giá 89 xu."] },
+        { "id": "flasche", "de": "Flasche", "art": "die", "pl": "Flaschen", "kind": "noun", "emoji": "🍾", "vi": "cái chai", "syl": "FLA·sche", "ex": ["Eine Flasche Saft, bitte.", "Cho tôi một chai nước ép."] },
+        { "id": "dose", "de": "Dose", "art": "die", "pl": "Dosen", "kind": "noun", "emoji": "🥫", "vi": "lon, hộp thiếc", "syl": "DO·se", "ex": ["Eine Dose Tomaten kostet 79 Cent.", "Một lon cà chua giá 79 xu."] },
+        { "id": "packung", "de": "Packung", "art": "die", "pl": "Packungen", "kind": "noun", "vi": "gói, hộp giấy", "syl": "PA·ckung", "ex": ["Eine Packung Tee, bitte.", "Cho tôi một hộp trà."] },
+        { "id": "becher", "de": "Becher", "art": "der", "pl": "Becher", "kind": "noun", "vi": "cốc, hộp nhỏ (sữa chua, kem)", "syl": "BE·cher", "note": "ch sau e đọc „xì“ nhẹ.", "ex": ["Ein Becher Sahne kostet 59 Cent.", "Một hộp kem tươi giá 59 xu."] },
+        { "id": "sahne", "de": "Sahne", "art": "die", "kind": "noun", "vi": "kem tươi (dùng nấu ăn)", "syl": "SAH·ne", "note": "Chỉ có số ít. h không đọc." },
+        { "id": "was-kostet", "de": "Was kostet …?", "kind": "phrase", "vi": "… giá bao nhiêu? (một món)", "ex": ["Was kostet ein Kilo Äpfel?", "Một ký táo giá bao nhiêu?"] },
+        { "id": "was-kosten", "de": "Was kosten …?", "kind": "phrase", "vi": "… giá bao nhiêu? (nhiều món)", "ex": ["Was kosten hundert Gramm Käse?", "Một trăm gam phô mai giá bao nhiêu?"] },
+        { "id": "das-macht", "de": "Das macht zusammen …", "kind": "phrase", "vi": "Tổng cộng là …", "note": "Người thu ngân nói khi tính tiền.", "ex": ["Das macht zusammen vier Euro achtundzwanzig.", "Tổng cộng bốn euro hai mươi tám."] }
+      ]
+    },
+    {
+      "id": "e", "title": "Món yêu thích", "session": "4",
+      "items": [
+        { "id": "restaurant", "de": "Restaurant", "art": "das", "pl": "Restaurants", "kind": "noun", "emoji": "🍽️", "vi": "nhà hàng", "syl": "res·to·RANT", "note": "Đọc theo kiểu Pháp, âm cuối mũi: „res-to-RANG“.", "ex": ["Wir essen im Restaurant.", "Chúng tôi ăn ở nhà hàng."] },
+        { "id": "mensa", "de": "Mensa", "art": "die", "pl": "Mensen", "kind": "noun", "vi": "căng-tin đại học", "syl": "MEN·sa", "note": "s đứng trước nguyên âm đọc „z“: „men-za“." },
+        { "id": "essen", "de": "essen", "kind": "verb", "forms": "ich esse · du isst · er/sie isst", "vi": "ăn", "syl": "ES·sen", "note": "Đổi e → i ở du và er/sie. ss báo nguyên âm ngắn.", "ex": ["Ich esse gern Fisch.", "Tôi thích ăn cá."] },
+        { "id": "trinken", "de": "trinken", "kind": "verb", "forms": "ich trinke · du trinkst · er/sie trinkt", "vi": "uống", "syl": "TRIN·ken", "ex": ["Ich trinke gern Tee.", "Tôi thích uống trà."] },
+        { "id": "kochen", "de": "kochen", "kind": "verb", "forms": "ich koche · du kochst · er/sie kocht", "vi": "nấu ăn", "syl": "KO·chen", "note": "ch sau o đọc „kh“.", "ex": ["Meine Mutter kocht gern.", "Mẹ tôi thích nấu ăn."] },
+        { "id": "steak", "de": "Steak", "art": "das", "pl": "Steaks", "kind": "noun", "emoji": "🥩", "vi": "bít tết", "note": "Từ tiếng Anh nhưng đọc „scht-êk“: st ở đầu từ đọc „scht“.", "ex": ["Ich esse Steak mit Salat.", "Tôi ăn bít tết với salad."] },
+        { "id": "salat", "de": "Salat", "art": "der", "pl": "Salate", "kind": "noun", "emoji": "🥗", "vi": "salad; rau xà lách", "syl": "sa·LAT", "ex": ["Ich esse gern Salat.", "Tôi thích ăn salad."] },
+        { "id": "haehnchen", "de": "Hähnchen", "art": "das", "pl": "Hähnchen", "kind": "noun", "emoji": "🍗", "vi": "gà (thịt gà)", "syl": "HÄHN·chen", "note": "ä dài; -chen đọc „-xờn“.", "ex": ["Das Hähnchen schmeckt super!", "Món gà ngon tuyệt!"] },
+        { "id": "pommes", "de": "Pommes", "art": "die", "plOnly": true, "kind": "noun", "emoji": "🍟", "vi": "khoai tây chiên", "note": "Đầy đủ: Pommes frites. Thường chỉ nói Pommes (đọc „pom“)." },
+        { "id": "pizza", "de": "Pizza", "art": "die", "pl": "Pizzen", "kind": "noun", "emoji": "🍕", "vi": "bánh pizza", "syl": "PIT·za", "note": "zz đọc „ts“: „pít-xa“." },
+        { "id": "cola", "de": "Cola", "art": "die", "pl": "Colas", "kind": "noun", "emoji": "🥤", "vi": "nước cola", "note": "Cũng nói das Cola." },
+        { "id": "suppe", "de": "Suppe", "art": "die", "pl": "Suppen", "kind": "noun", "emoji": "🍲", "vi": "súp, canh", "syl": "SUP·pe" },
+        { "id": "glas", "de": "Glas", "art": "das", "pl": "Gläser", "kind": "noun", "vi": "cốc thủy tinh; ly", "note": "Số nhiều có ä: Gläser. Ein Glas Wasser = một cốc nước." },
+        { "id": "durst", "de": "Durst", "art": "der", "kind": "noun", "vi": "cơn khát", "note": "Ich habe Durst = tôi khát. Chỉ có số ít.", "ex": ["Ich habe Durst!", "Tôi khát!"] },
+        { "id": "getraenk", "de": "Getränk", "art": "das", "pl": "Getränke", "kind": "noun", "vi": "đồ uống", "syl": "ge·TRÄNK" },
+        { "id": "lieblingsessen", "de": "Lieblingsessen", "art": "das", "pl": "Lieblingsessen", "kind": "noun", "vi": "món ăn yêu thích", "syl": "LIEB·lings·es·sen", "note": "Lieblings- + từ khác = „yêu thích nhất“: Lieblingsgetränk, Lieblingsfilm.", "ex": ["Mein Lieblingsessen ist Pizza.", "Món ăn yêu thích của tôi là pizza."] },
+        { "id": "schmecken", "de": "schmecken", "kind": "verb", "forms": "es schmeckt · sie schmecken", "vi": "có vị; ngon", "syl": "SCHME·cken", "note": "Hay đi với gut / lecker: Das schmeckt gut!", "ex": ["Das schmeckt sehr gut!", "Cái này ngon lắm!"] },
+        { "id": "lecker", "de": "lecker", "kind": "word", "vi": "ngon", "syl": "LE·cker", "ex": ["Der Kuchen ist lecker!", "Cái bánh ngon quá!"] },
+        { "id": "gern", "de": "gern", "kind": "word", "vi": "thích (làm việc gì)", "note": "Đứng sau động từ: Ich esse gern Fisch. Phủ định: nicht gern. Mạnh hơn: sehr gern.", "ex": ["Ich trinke gern Tee.", "Tôi thích uống trà."] },
+        { "id": "rezept", "de": "Rezept", "art": "das", "pl": "Rezepte", "kind": "noun", "vi": "công thức nấu ăn", "syl": "re·ZEPT" },
+        { "id": "portion", "de": "Portion", "art": "die", "pl": "Portionen", "kind": "noun", "vi": "suất, khẩu phần", "syl": "por·TION", "note": "-tion đọc „-tsiôn“.", "ex": ["Das Rezept ist für vier Portionen.", "Công thức này cho bốn suất."] },
+        { "id": "fuer", "de": "für", "kind": "word", "vi": "cho, dành cho", "note": "ü: môi tròn, nói „i“.", "ex": ["Ein Rezept für zwei Portionen.", "Một công thức cho hai suất."] },
+        { "id": "einfach", "de": "einfach", "kind": "word", "vi": "đơn giản, dễ", "syl": "EIN·fach", "ex": ["Das Rezept ist einfach.", "Công thức rất đơn giản."] },
+        { "id": "was-isst-du-gern", "de": "Was isst du gern?", "kind": "phrase", "vi": "Bạn thích ăn gì?" },
+        { "id": "was-trinkst-du-gern", "de": "Was trinkst du gern?", "kind": "phrase", "vi": "Bạn thích uống gì?" },
+        { "id": "mein-lieblingsessen-ist", "de": "Mein Lieblingsessen ist …", "kind": "phrase", "vi": "Món ăn yêu thích của tôi là …" }
+      ]
+    },
+    {
+      "id": "e2", "title": "Thêm: từ trong các bài đọc của sách", "session": "4", "bonus": true,
+      "items": [
+        { "id": "sosse", "de": "Soße", "art": "die", "pl": "Soßen", "kind": "noun", "vi": "nước sốt", "syl": "SO·ße", "ex": ["Spaghetti mit Tomatensoße!", "Mì Ý với sốt cà chua!"] },
+        { "id": "typisch", "de": "typisch", "kind": "word", "vi": "điển hình, đặc trưng", "syl": "TY·pisch" },
+        { "id": "ganz", "de": "ganz", "kind": "word", "vi": "hoàn toàn, rất", "ex": ["Das Rezept ist ganz einfach.", "Công thức rất đơn giản."] },
+        { "id": "studieren", "de": "studieren", "kind": "verb", "forms": "ich studiere · du studierst · er/sie studiert", "vi": "học đại học", "syl": "stu·DIE·ren", "note": "st ở đầu từ đọc „scht“: „schtu-DI-ren“." },
+        { "id": "pfeffer", "de": "Pfeffer", "art": "der", "kind": "noun", "vi": "hạt tiêu", "syl": "PFEF·fer", "note": "Chỉ có số ít. pf đọc liền." },
+        { "id": "reichen", "de": "reichen", "kind": "verb", "forms": "es reicht · sie reichen", "vi": "đủ", "ex": ["Das reicht für drei Tage.", "Cái này đủ cho ba ngày."] },
+        { "id": "tag", "de": "Tag", "art": "der", "pl": "Tage", "kind": "noun", "vi": "ngày", "note": "g cuối đọc „k“: „tak“." },
+        { "id": "teuer", "de": "teuer", "kind": "word", "vi": "đắt", "syl": "TEU·er", "note": "eu = „oi“: „toi-a“.", "ex": ["Das ist nicht teuer.", "Cái này không đắt."] },
+        { "id": "zum-beispiel", "de": "zum Beispiel", "kind": "phrase", "vi": "ví dụ", "note": "Viết tắt z. B." },
+        { "id": "gross", "de": "groß", "kind": "word", "vi": "to, lớn", "note": "ß = s; o dài." }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1", "no": 1, "minutes": 50, "set": "a",
+      "title": "Das ist doch kein Ei.",
+      "vi": "Truyện ảnh tập 3, ein / eine / kein / keine",
+      "book": "Kursbuch tr. 34–36 · Arbeitsbuch tr. 30–31 · Lernwortschatz L3 (phần đầu)",
+      "goals": [
+        "Nói <i>Das ist ein / eine …</i> và <i>Das ist kein / keine …</i> với các món ăn.",
+        "Hỏi <i>Was ist das?</i> và <i>Wie heißt das auf Deutsch?</i>",
+        "Biết <i>ein</i> đi với der-/das-Wort, <i>eine</i> đi với die-Wort.",
+        "Nghe hiểu ý chính tập 3 của truyện ảnh (Bananenpfannkuchen).",
+        "Đọc đúng pf, -chen, ch sau u (Kuchen) và ä."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: đồ ăn và truyện ảnh", "minutes": 10,
+          "blocks": [
+            { "type": "words", "set": "a" },
+            { "type": "listenPick", "set": "a", "n": 8, "title": "Nghe và chọn nghĩa" },
+            { "type": "listenPick", "set": "a", "by": "emoji", "n": 6, "title": "Nghe và chọn hình" }
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (7)", "minutes": 6,
+          "blocks": [
+            { "type": "rules", "items": [
+              { "t": "pf → p và f đọc liền", "vi": "<b>pf</b>: môi bật „p“ rồi thổi „f“ ngay, như một âm duy nhất.", "ex": ["Pfannkuchen|bánh kếp", "Apfel|táo", "Pfund|nửa ký", "Pfeffer|tiêu"] },
+              { "t": "ch: „kh“ hay „xì“?", "vi": "Sau <b>a, o, u, au</b>: „kh“ (Kuchen, Buch, brauchen). Sau <b>e, i, ä, ö, ü</b> và trong <b>-chen</b>: „xì“ nhẹ (ich, Milch, Brötchen).", "ex": ["Kuchen|bánh", "brauchen|cần", "Milch|sữa", "Brötchen|bánh mì nhỏ", "Würstchen|xúc xích nhỏ"] },
+              { "t": "-chen = nhỏ, luôn là das", "vi": "Đuôi <b>-chen</b> làm danh từ nhỏ đi và luôn là <b>das</b>; số nhiều không đổi.", "ex": ["Brötchen|ổ bánh mì nhỏ", "Würstchen|xúc xích nhỏ", "Hähnchen|gà", "Mädchen|cô bé"] },
+              { "t": "ä → „ê“", "vi": "<b>ä</b> đọc như „ê“ (dài hoặc ngắn).", "ex": ["Äpfel|táo (nhiều)", "Käse|phô mai", "Hähnchen|gà", "Gläser|cốc (nhiều)"] }
+            ] },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng", "items": [
+              { "say": "Pfannkuchen", "opts": ["Pfannkuchen", "Fannkuchen"] },
+              { "say": "Apfel", "opts": ["Apfel", "Abfel"] },
+              { "say": "Äpfel", "opts": ["Äpfel", "Epfel"] },
+              { "say": "Zucker", "opts": ["Zucker", "Zuker"] },
+              { "say": "Milch", "opts": ["Milch", "Milsch"] },
+              { "say": "Würstchen", "opts": ["Würstchen", "Würstschen"] }
+            ] }
+          ]
+        },
+        {
+          "id": "truyen", "title": "Truyện ảnh, tập 3: „Bananenpfannkuchen“", "minutes": 8,
+          "blocks": [
+            { "type": "book", "title": "Làm trong sách", "kb": "34–35", "tracks": "KB 1/48-55", "steps": [
+              "Mở Kursbuch trang 34–35. Nhìn 8 bức ảnh: hai cô gái trong bếp, một cô bé ở siêu thị, một ông cụ. Đoán xem họ định làm gì.",
+              "Bài 1 — <i>Welche Wörter kennen Sie oder verstehen Sie? Zeigen Sie.</i> = Bạn nhận ra những từ nào (Bananen, Butter, Eier, Mehl, Milch, Zucker…)? Chỉ vào chúng — nhiều từ giống tiếng Anh.",
+              "Nghe cả câu chuyện (track 48–55) một lần, chưa cần hiểu hết.",
+              "Bài 2 — <i>Was ist richtig? Hören Sie und kreuzen Sie an.</i> = Nghe lại và đánh dấu: họ có gì, cần gì, ai mua gì.",
+              "Bài 3 (trang 35) — <i>Welches Foto passt?</i> Ghép 8 câu thoại với 8 bức ảnh, rồi nghe lại để kiểm tra.",
+              "Bài 4 — kể bạn ăn pancake kiểu nào (tự nói, không cần chữ)."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L3</i>, trang 1." },
+            { "type": "choice", "title": "Bạn hiểu truyện chưa?", "items": [
+              { "q": "Lara và Sofia muốn làm món gì?", "opts": ["Pfannkuchen (bánh kếp)", "Kartoffelsalat (salad khoai tây)", "Gemüsesuppe (súp rau)"], "a": 0 },
+              { "q": "Họ không có …", "opts": ["Eier (trứng)", "Butter (bơ)", "Mehl (bột mì)"], "a": 0, "why": "Họ có bơ, đường, bột mì — nhưng không có trứng: „Wir haben kein Ei.“" },
+              { "q": "Lili đi mua …", "opts": ["Bananen và Eier", "Fleisch và Fisch", "Wein und Bier"], "a": 0 },
+              { "q": "Ở quầy thu ngân, tổng cộng là bao nhiêu?", "opts": ["3 Euro 87", "2 Euro 20", "9 Euro 50"], "a": 0 },
+              { "q": "Cuối truyện mọi người làm gì?", "opts": ["Họ ăn bánh kếp chuối (Bananenpfannkuchen).", "Họ đi ăn nhà hàng.", "Họ cãi nhau về giá tiền."], "a": 0 }
+            ] }
+          ]
+        },
+        {
+          "id": "ngu-phap", "title": "Ngữ pháp: ein / eine / kein / keine", "minutes": 14,
+          "blocks": [
+            { "type": "table", "title": "Mạo từ không xác định và phủ định", "head": ["", "der (nam)", "das (trung)", "die (nữ)", "số nhiều"], "rows": [
+              ["<b>Das ist … · Das sind …</b>", "ein Apfel", "ein Ei", "ein<b class='v2'>e</b> Banane", "Äpfel <span class='muted small'>(không mạo từ)</span>"],
+              ["<b>Phủ định</b>", "<b class='v2'>k</b>ein Apfel", "<b class='v2'>k</b>ein Ei", "<b class='v2'>k</b>eine Banane", "<b class='v2'>k</b>eine Äpfel"]
+            ], "vi": "<b>ein</b> + der-/das-Wort, <b>eine</b> + die-Wort (đuôi -e giống mein/meine ở Lektion 2). <b>kein-</b> = ein- thêm chữ <b>k</b>: ein → kein, eine → keine. Số nhiều không có „ein“, nhưng phủ định vẫn là <b>keine</b>." },
+            { "type": "tip", "title": "kein hay nicht?", "html": "<p><b>kein</b> phủ định <b>danh từ</b> (đi với ein/eine hoặc không có mạo từ): <i>Das ist kein Apfel. Ich habe keine Kinder.</i></p><p><b>nicht</b> phủ định phần còn lại của câu: <i>Das ist nicht gut. Frau Beck ist nicht da.</i></p>" },
+            { "type": "sort", "title": "ein hay eine?", "cats": ["ein<br><span class='muted small'>(der / das)</span>", "eine<br><span class='muted small'>(die)</span>"], "items": [
+              { "t": "<span class='g-der'>der</span> Apfel", "c": 0 },
+              { "t": "<span class='g-das'>das</span> Ei", "c": 0 },
+              { "t": "<span class='g-das'>das</span> Brötchen", "c": 0 },
+              { "t": "<span class='g-der'>der</span> Kuchen", "c": 0 },
+              { "t": "<span class='g-das'>das</span> Würstchen", "c": 0 },
+              { "t": "<span class='g-der'>der</span> Saft", "c": 0 },
+              { "t": "<span class='g-die'>die</span> Banane", "c": 1 },
+              { "t": "<span class='g-die'>die</span> Orange", "c": 1 },
+              { "t": "<span class='g-die'>die</span> Birne", "c": 1 },
+              { "t": "<span class='g-die'>die</span> Tomate", "c": 1 },
+              { "t": "<span class='g-die'>die</span> Schokolade", "c": 1 },
+              { "t": "<span class='g-der'>der</span> Kaffee", "c": 0 }
+            ] },
+            { "type": "gaps", "title": "Điền ein / eine / kein / keine", "items": [
+              { "q": "🍎 Das ist ___ Apfel.", "a": ["ein"], "opts": ["ein", "eine"] },
+              { "q": "🍌 Das ist ___ Banane.", "a": ["eine"], "opts": ["ein", "eine"] },
+              { "q": "🥚 Das ist ___ Ei.", "a": ["ein"], "opts": ["ein", "eine"] },
+              { "q": "🍊 Das ist ___ Orange.", "a": ["eine"], "opts": ["ein", "eine"] },
+              { "q": "Das ist doch ___ Ei! Das ist Schokolade.", "a": ["kein"], "opts": ["ein", "eine", "kein", "keine"] },
+              { "q": "Das ist ___ Birne. Das ist ein Apfel.", "a": ["keine"], "opts": ["ein", "eine", "kein", "keine"] },
+              { "q": "Das ist ___ Kuchen. Das ist ein Brötchen.", "a": ["kein"], "opts": ["ein", "eine", "kein", "keine"] },
+              { "q": "Das ist ___ Tomate. Das ist eine Orange.", "a": ["keine"], "opts": ["ein", "eine", "kein", "keine"] },
+              { "q": "🌭 Das ist ___ Würstchen.", "a": ["ein"], "opts": ["ein", "eine", "kein", "keine"] },
+              { "q": "🍐 Das ist ___ Birne.", "a": ["eine"], "opts": ["ein", "eine", "kein", "keine"] }
+            ] },
+            { "type": "fix", "title": "Tìm lỗi sai", "items": [
+              { "s": "Das ist ein Banane.", "err": "ein", "fix": ["eine"], "why": "Banane là die-Wort → eine Banane." },
+              { "s": "Das ist eine Apfel.", "err": "eine", "fix": ["ein"], "why": "Apfel là der-Wort → ein Apfel." },
+              { "s": "Das ist kein Orange.", "err": "kein", "fix": ["keine"], "why": "die Orange → keine Orange." },
+              { "s": "Das ist keine Ei.", "err": "keine", "fix": ["kein"], "why": "das Ei → kein Ei." },
+              { "s": "Ich habe kein Kinder.", "err": "kein", "fix": ["keine"], "why": "Kinder là số nhiều → keine Kinder." },
+              { "s": "Das ist doch kein Ei!", "err": null }
+            ] },
+            { "type": "order", "title": "Xếp câu", "items": [
+              { "chunks": ["Das", "ist", "doch", "kein Ei."], "v": 1, "vi": "Đó đâu phải quả trứng." },
+              { "chunks": ["Das", "ist", "eine Orange."], "v": 1, "vi": "Đây là một quả cam." },
+              { "chunks": ["Was", "ist", "das?"], "v": 1, "vi": "Đây là cái gì?" },
+              { "chunks": ["Wie", "heißt", "das", "auf Deutsch?"], "v": 1, "vi": "Cái này tiếng Đức gọi là gì?" },
+              { "chunks": ["Das", "ist", "keine Birne."], "v": 1, "vi": "Đây không phải quả lê." }
+            ] }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần A", "minutes": 3,
+          "blocks": [
+            { "type": "book", "kb": "36", "tracks": "KB 1/56", "steps": [
+              "A1a — <i>Ein Ei? Hören Sie und ordnen Sie zu.</i> Nghe (track 56) và điền ein / kein / keine vào hội thoại. A1b — điền bảng ein → kein.",
+              "A2 — <i>Was ist das? Zeigen Sie und sprechen Sie.</i> Nhìn khay đồ ăn, chỉ và hỏi–đáp: <i>Wie heißt das auf Deutsch? – Das ist eine Orange.</i>",
+              "A3 — <i>Ergänzen Sie.</i> Điền ein / eine / kein / keine dưới mỗi ảnh nhỏ.",
+              "A4 — <i>Spiel: Zeichnen Sie. Die anderen raten.</i> Nếu không có bạn học: tự vẽ rồi tự hỏi–đáp."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L3</i>, trang 2–4." }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 5,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Ở chợ: Was ist das?", "lines": [
+              { "who": "Max", "v": "m", "de": "Entschuldigung, was ist das? Ist das eine Tomate?", "vi": "Xin lỗi, đây là cái gì? Có phải cà chua không?" },
+              { "who": "Frau Berger", "v": "f", "de": "Nein, das ist keine Tomate. Das ist eine Orange.", "vi": "Không, đây không phải cà chua. Đây là quả cam." },
+              { "who": "Max", "v": "m", "de": "Und das? Ist das ein Apfel?", "vi": "Còn đây? Có phải quả táo không?" },
+              { "who": "Frau Berger", "v": "f", "de": "Ja, das ist ein Apfel.", "vi": "Vâng, đây là quả táo." },
+              { "who": "Max", "v": "m", "de": "Danke! Wie heißt das auf Deutsch?", "vi": "Cảm ơn! Cái này tiếng Đức gọi là gì?" },
+              { "who": "Frau Berger", "v": "f", "de": "Das ist ein Brötchen.", "vi": "Đây là một ổ bánh mì nhỏ." }
+            ] },
+            { "type": "dialog", "title": "2 · Ở nhà: bánh kếp", "lines": [
+              { "who": "Lara", "v": "f", "de": "Ich habe Hunger! Machen wir Pfannkuchen?", "vi": "Mình đói quá! Mình làm bánh kếp nhé?" },
+              { "who": "Sofia", "v": "f", "de": "Super! Haben wir Mehl?", "vi": "Hay quá! Nhà mình có bột mì không?" },
+              { "who": "Lara", "v": "f", "de": "Ja, wir haben Mehl, Butter und Zucker.", "vi": "Có, mình có bột mì, bơ và đường." },
+              { "who": "Sofia", "v": "f", "de": "Und Milch?", "vi": "Còn sữa?" },
+              { "who": "Lara", "v": "f", "de": "Ja, Milch haben wir auch. Aber wir haben keine Eier.", "vi": "Có, sữa cũng có. Nhưng mình không có trứng." },
+              { "who": "Sofia", "v": "f", "de": "Ach nein! Dann kaufen wir Eier.", "vi": "Ôi không! Vậy mình đi mua trứng." }
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá", "items": [
+              "Tôi nói được <i>Das ist ein / eine …</i> và <i>Das ist kein / keine …</i> đúng với các món ăn.",
+              "Tôi hỏi được <i>Was ist das?</i> và <i>Wie heißt das auf Deutsch?</i>",
+              "Tôi biết <i>ein</i> đi với der-/das-Wort, <i>eine</i> đi với die-Wort.",
+              "Tôi hiểu ý chính truyện ảnh tập 3."
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 30–31, bài 1–7 (bài 7 có audio AB track 25).", "tracks": "AB 25" },
+              "Ngày mai: vào <a href='#/review'>Ôn tập</a> ôn các từ của buổi này.",
+              "Tuỳ chọn: mở tủ bếp nhà bạn và nói <i>Das ist ein / eine …</i> cho mười món đồ ăn."
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2", "no": 2, "minutes": 55, "set": "b",
+      "title": "Haben wir Zucker?",
+      "vi": "Số nhiều, câu hỏi Có/Không, đi chợ",
+      "book": "Kursbuch tr. 37–38, 42 · Arbeitsbuch tr. 32–35",
+      "goals": [
+        "Nói số nhiều của các danh từ chính và học danh từ kèm số nhiều.",
+        "Dùng <i>keine</i> với danh từ số nhiều: <i>Im Regal sind keine Kartoffeln.</i>",
+        "Hỏi bằng câu Có/Không: <i>Haben wir Zucker? Brauchst du Reis?</i>",
+        "Hỏi mua hàng: <i>Haben Sie Eier? – Ja, natürlich. Hier, bitte. Sonst noch etwas?</i>",
+        "Chia <i>brauchen</i> và <i>kaufen</i> với 6 ngôi."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: thực phẩm và đi chợ", "minutes": 10,
+          "blocks": [
+            { "type": "words", "set": "b" },
+            { "type": "listenPick", "set": "b", "n": 8, "title": "Nghe và chọn nghĩa" },
+            { "type": "listenPick", "set": "b", "by": "emoji", "n": 6, "title": "Nghe và chọn hình" }
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (8)", "minutes": 5,
+          "blocks": [
+            { "type": "rules", "items": [
+              { "t": "Trọng âm: từ mượn nhấn gần cuối", "vi": "Từ Đức bản địa thường nhấn <b>âm đầu</b> (<i>Kuchen, Brötchen, Zwiebel</i>). Nhiều từ mượn nhấn <b>gần cuối</b>: <i>ba-NA-ne, to-MA-te, kar-TOF-fel</i>. Từ có tiền tố <b>ge-</b> không nhấn vào ge-: <i>ge-MÜ-se</i>. Phần in HOA trên thẻ từ cho bạn biết âm nhấn.", "ex": ["Banane|chuối", "Tomate|cà chua", "Kartoffel|khoai tây", "Gemüse|rau", "Mineralwasser|nước khoáng"] },
+              { "t": "ei = ai · ie = i dài (nhắc lại)", "vi": "<b>ei</b> đọc „ai“, <b>ie</b> đọc „i“ dài — nhớ theo tên tiếng Anh của chữ thứ hai.", "ex": ["Reis|gạo", "Wein|rượu vang", "Fleisch|thịt", "Bier|bia", "Zwiebel|hành tây"] },
+              { "t": "Chữ lạ: j, ä, ü", "vi": "<b>j</b> đọc „y“; <b>ä</b> đọc „ê“; <b>ü</b> môi tròn nói „i“.", "ex": ["Joghurt|sữa chua", "Käse|phô mai", "Gemüse|rau", "Würstchen|xúc xích nhỏ"] }
+            ] },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng", "items": [
+              { "say": "Käse", "opts": ["Käse", "Kese"] },
+              { "say": "Reis", "opts": ["Reis", "Rais"] },
+              { "say": "Bier", "opts": ["Bier", "Beir"] },
+              { "say": "Zwiebel", "opts": ["Zwiebel", "Zwibel"] },
+              { "say": "Tee", "opts": ["Tee", "Te"] },
+              { "say": "Salz", "opts": ["Salz", "Salts"] }
+            ] }
+          ]
+        },
+        {
+          "id": "so-nhieu", "title": "Số nhiều (Plural)", "minutes": 14,
+          "blocks": [
+            { "type": "tip", "title": "Học danh từ kèm số nhiều", "html": "<p>Luôn học <b>der Apfel – die Äpfel</b>, <b>das Ei – die Eier</b>, <b>die Banane – die Bananen</b>. Danh sách từ của sách ghi số nhiều ngay sau danh từ: <i>der Apfel, ¨</i> · <i>das Ei, -er</i> · <i>die Banane, -n</i>. Thẻ từ trên web cũng ghi sẵn.</p>" },
+            { "type": "table", "title": "Các kiểu số nhiều", "head": ["Kiểu", "Ví dụ", "Dễ nhận ra khi"], "rows": [
+              ["<b>–</b> (không đổi)", "der Kuchen → die Kuchen<br>das Brötchen → die Brötchen<br>der Lehrer → die Lehrer", "đuôi -en, -er, -el, -chen (giống đực/trung)"],
+              ["<b>¨</b> (thêm dấu ¨)", "der Apfel → die Äpfel<br>der Vater → die Väter<br>die Tochter → die Töchter", "một số từ quen thuộc"],
+              ["<b>-e / ¨e</b>", "das Brot → die Brote<br>der Fisch → die Fische<br>der Saft → die Säfte", "từ ngắn, một âm tiết"],
+              ["<b>-(e)n</b>", "die Banane → die Bananen<br>die Kartoffel → die Kartoffeln<br>die Zwiebel → die Zwiebeln", "hầu hết danh từ <b>die</b> đuôi -e, -el"],
+              ["<b>-er / ¨er</b>", "das Ei → die Eier<br>das Kind → die Kinder", "một số từ <b>das</b>"],
+              ["<b>-s</b>", "der Joghurt → die Joghurts<br>das Steak → die Steaks", "từ mượn"]
+            ], "vi": "Đây là xu hướng, không phải luật tuyệt đối. Cách chắc chắn nhất vẫn là học thuộc số nhiều cùng danh từ." },
+            { "type": "sort", "title": "Danh từ này có số nhiều kiểu nào?", "cats": ["– (không đổi)", "¨ (Umlaut)", "-e / ¨e", "-(e)n", "-er / -s"], "items": [
+              { "t": "<span class='g-der'>der</span> Kuchen", "c": 0 },
+              { "t": "<span class='g-das'>das</span> Brötchen", "c": 0 },
+              { "t": "<span class='g-das'>das</span> Würstchen", "c": 0 },
+              { "t": "<span class='g-der'>der</span> Lehrer", "c": 0 },
+              { "t": "<span class='g-der'>der</span> Apfel", "c": 1 },
+              { "t": "<span class='g-der'>der</span> Vater", "c": 1 },
+              { "t": "<span class='g-der'>der</span> Bruder", "c": 1 },
+              { "t": "<span class='g-die'>die</span> Tochter", "c": 1 },
+              { "t": "<span class='g-das'>das</span> Brot", "c": 2 },
+              { "t": "<span class='g-der'>der</span> Fisch", "c": 2 },
+              { "t": "<span class='g-der'>der</span> Saft", "c": 2 },
+              { "t": "<span class='g-das'>das</span> Bier", "c": 2 },
+              { "t": "<span class='g-der'>der</span> Sohn", "c": 2 },
+              { "t": "<span class='g-die'>die</span> Banane", "c": 3 },
+              { "t": "<span class='g-die'>die</span> Kartoffel", "c": 3 },
+              { "t": "<span class='g-die'>die</span> Zwiebel", "c": 3 },
+              { "t": "<span class='g-die'>die</span> Birne", "c": 3 },
+              { "t": "<span class='g-die'>die</span> Schwester", "c": 3 },
+              { "t": "<span class='g-das'>das</span> Ei", "c": 4 },
+              { "t": "<span class='g-das'>das</span> Kind", "c": 4 },
+              { "t": "<span class='g-der'>der</span> Joghurt", "c": 4 },
+              { "t": "<span class='g-das'>das</span> Steak", "c": 4 }
+            ] },
+            { "type": "gaps", "title": "Viết số nhiều", "task": "Gõ số nhiều của danh từ. Cần ä ö ü thì bấm nút phía trên ô gõ, hoặc gõ ae oe ue.", "items": [
+              { "q": "ein Apfel → zwei ___", "a": ["Äpfel"] },
+              { "q": "ein Brot → zwei ___", "a": ["Brote"] },
+              { "q": "eine Banane → drei ___", "a": ["Bananen"] },
+              { "q": "ein Ei → vier ___", "a": ["Eier"] },
+              { "q": "eine Kartoffel → fünf ___", "a": ["Kartoffeln"] },
+              { "q": "ein Kuchen → zwei ___", "a": ["Kuchen"] },
+              { "q": "ein Fisch → zwei ___", "a": ["Fische"] },
+              { "q": "eine Zwiebel → drei ___", "a": ["Zwiebeln"] },
+              { "q": "ein Joghurt → zwei ___", "a": ["Joghurts"] },
+              { "q": "ein Saft → zwei ___", "a": ["Säfte"] }
+            ] },
+            { "type": "gaps", "title": "kein hay keine?", "items": [
+              { "q": "Hier sind ___ Kartoffeln.", "a": ["keine"], "opts": ["kein", "keine"] },
+              { "q": "Im Regal ist ___ Fisch.", "a": ["kein"], "opts": ["kein", "keine"] },
+              { "q": "Wir haben ___ Eier.", "a": ["keine"], "opts": ["kein", "keine"] },
+              { "q": "Ich habe ___ Banane.", "a": ["keine"], "opts": ["kein", "keine"] },
+              { "q": "Das sind ___ Würstchen.", "a": ["keine"], "opts": ["kein", "keine"] },
+              { "q": "Das ist ___ Würstchen.", "a": ["kein"], "opts": ["kein", "keine"] }
+            ] },
+            { "type": "fix", "title": "Tìm lỗi sai", "items": [
+              { "s": "Ich kaufe drei Banane.", "err": "Banane", "fix": ["Bananen"], "why": "Số nhiều của die Banane là Bananen." },
+              { "s": "Wir brauchen zehn Ei.", "err": "Ei", "fix": ["Eier"], "why": "das Ei → die Eier." },
+              { "s": "Hier sind zwei Apfel.", "err": "Apfel", "fix": ["Äpfel"], "why": "der Apfel → die Äpfel (thêm ¨)." },
+              { "s": "Im Regal sind keine Brot.", "err": "Brot", "fix": ["Brote"], "why": "das Brot → die Brote." },
+              { "s": "Ich kaufe zwei Kuchen.", "err": null },
+              { "s": "Wir haben keine Kartoffeln.", "err": null }
+            ] }
+          ]
+        },
+        {
+          "id": "haben-wir", "title": "Câu hỏi Có/Không và đi chợ", "minutes": 12,
+          "blocks": [
+            { "type": "table", "title": "Đảo động từ lên đầu", "head": ["Vị trí 1", "…", "…", "Trả lời"], "rows": [
+              ["Wir", "<b class='v2'>haben</b>", "Zucker.", "<span class='muted'>câu kể</span>"],
+              ["<b class='v2'>Haben</b>", "wir", "Zucker?", "Ja. / Nein."],
+              ["<b class='v2'>Brauchst</b>", "du", "Reis?", "Ja. / Nein."],
+              ["<b class='v2'>Haben</b>", "Sie", "Eier?", "Ja, natürlich."],
+              ["Was", "<b class='v2'>brauchen</b>", "Sie?", "Eier."]
+            ], "vi": "Câu hỏi <b>Có/Không</b>: <b>động từ đứng đầu</b> (<i>Wir haben Zucker.</i> → <i>Haben wir Zucker?</i>), trả lời Ja hoặc Nein. Câu hỏi <b>W-</b>: từ hỏi ở vị trí 1, động từ ở vị trí 2 (<i>Was brauchen Sie?</i>)." },
+            { "type": "tip", "title": "Một lưu ý nhỏ (chưa cần học)", "html": "<p>Với danh từ <b>giống đực</b> làm tân ngữ sau <i>haben, brauchen, kaufen</i>, <b>ein → einen</b> và <b>kein → keinen</b>: <i>Ich brauche einen Apfel.</i> Sách dạy phần này sau, nên các bài ở đây dùng danh từ không mạo từ (<i>Zucker, Reis, Käse</i>), số nhiều, hoặc die-/das-Wort. Biết trước để lần sau gặp <i>einen / keinen</i> không bất ngờ.</p>" },
+            { "type": "order", "title": "Xếp câu hỏi", "items": [
+              { "chunks": ["Haben", "wir", "Zucker?"], "v": 0, "vi": "Nhà mình có đường không?" },
+              { "chunks": ["Brauchst", "du", "Reis?"], "v": 0, "vi": "Bạn có cần gạo không?" },
+              { "chunks": ["Haben", "Sie", "Milch?"], "v": 0, "vi": "Ông/bà có sữa không?" },
+              { "chunks": ["Was", "brauchen", "Sie?"], "v": 1, "vi": "Ông/bà cần gì?" },
+              { "chunks": ["Brauchen", "wir", "Eier?"], "v": 0, "vi": "Mình có cần trứng không?" },
+              { "chunks": ["Wo", "ist", "der Käse?"], "v": 1, "vi": "Phô mai ở đâu?" }
+            ] },
+            { "type": "conj", "title": "Chia brauchen và kaufen", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [
+              { "inf": "brauchen", "vi": "cần", "forms": ["brauche", "brauchst", "braucht", "brauchen", "braucht", "brauchen"], "stem": "brauch" },
+              { "inf": "kaufen", "vi": "mua", "forms": ["kaufe", "kaufst", "kauft", "kaufen", "kauft", "kaufen"], "stem": "kauf" }
+            ] },
+            { "type": "gaps", "title": "Điền động từ", "items": [
+              { "q": "Ich ___ Eier. <span class='muted'>(brauchen)</span>", "a": ["brauche"] },
+              { "q": "___ du Reis? <span class='muted'>(brauchen)</span>", "a": ["Brauchst"] },
+              { "q": "Wir ___ Mehl. <span class='muted'>(kaufen)</span>", "a": ["kaufen"] },
+              { "q": "Lili ___ Bananen. <span class='muted'>(kaufen)</span>", "a": ["kauft"] },
+              { "q": "___ Sie Salz? <span class='muted'>(haben)</span>", "a": ["Haben"] },
+              { "q": "Ihr ___ Milch. <span class='muted'>(brauchen)</span>", "a": ["braucht"] },
+              { "q": "Meine Eltern ___ Fisch. <span class='muted'>(kaufen)</span>", "a": ["kaufen"] }
+            ] },
+            { "type": "fix", "title": "Tìm lỗi sai", "items": [
+              { "s": "Du braucht Eier.", "err": "braucht", "fix": ["brauchst"], "why": "du → đuôi -st." },
+              { "s": "Wir kaufst Brot.", "err": "kaufst", "fix": ["kaufen"], "why": "wir → đuôi -en." },
+              { "s": "Brauchen du Reis?", "err": "Brauchen", "fix": ["Brauchst"], "why": "du → Brauchst du …?" },
+              { "s": "Er kaufen Käse.", "err": "kaufen", "fix": ["kauft"], "why": "er → đuôi -t." },
+              { "s": "Haben wir Zucker?", "err": null }
+            ] },
+            { "type": "choice", "title": "Bạn nói gì khi đi chợ?", "items": [
+              { "q": "Bạn muốn hỏi người bán có trứng không:", "opts": ["Haben Sie Eier?", "Wie heißt das auf Deutsch?", "Ich habe Eier."], "a": 0 },
+              { "q": "Người bán có hàng và đưa cho bạn:", "opts": ["Ja, natürlich. Hier, bitte.", "Nein, tut mir leid.", "Wie bitte?"], "a": 0 },
+              { "q": "Người bán không có hàng:", "opts": ["Nein, tut mir leid.", "Ja, natürlich.", "Sonst noch etwas?"], "a": 0 },
+              { "q": "Người bán hỏi bạn có cần gì nữa không:", "opts": ["Sonst noch etwas?", "Hier, bitte.", "Haben Sie Milch?"], "a": 0 },
+              { "q": "Bạn không cần gì nữa:", "opts": ["Nein, danke.", "Ja, natürlich.", "Tut mir leid."], "a": 0 }
+            ] }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần B và C", "minutes": 4,
+          "blocks": [
+            { "type": "book", "title": "Phần B — số nhiều", "kb": "37", "tracks": "KB 1/57", "steps": [
+              "B1 — <i>Hören Sie und ordnen Sie zu.</i> Nghe (track 57): ghép số lượng (zehn, zwei, zwanzig) với trứng, chuối, bánh kếp.",
+              "B2 — <i>Ordnen Sie zu.</i> Xếp các thực phẩm vào giỏ hàng rồi nói: <i>Im Einkaufswagen sind (keine) …</i>",
+              "B3 — <i>Suchen Sie im Wörterbuch und ergänzen Sie.</i> Tra từ điển để biết số nhiều (Kartoffel, Joghurt, Zwiebel, Fisch).",
+              "B4 — <i>Suchbild.</i> Tìm 7 điểm khác nhau giữa hai kệ hàng A và B; nói to: <i>In Regal A sind drei Bananen. In Regal B sind keine Bananen.</i>"
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L3</i>, trang 5–6." },
+            { "type": "book", "title": "Phần C — Haben wir Zucker?", "kb": "38", "tracks": "KB 1/58-59", "steps": [
+              "C1 — <i>Ordnen Sie zu.</i> Đánh số các thực phẩm trong ảnh (Fleisch, Bier, Käse, Salz, Tee, Obst, Wein, Mineralwasser, Reis, Zucker, Gemüse, Mehl).",
+              "C2 — Nhìn tranh và hỏi–đáp theo mẫu: <i>Haben wir Zucker? – Ja. / Nein.</i> (track 58).",
+              "C3 — <i>Hören Sie und spielen Sie weitere Gespräche.</i> Nghe (track 59) rồi đóng vai với Eier, Bananen, Milch, Zucker, Schokolade.",
+              "C4 — <i>Einkaufszettel.</i> Viết những gì bạn có ở nhà và những gì cần mua."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L3</i>, trang 7–8." }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 6,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Ở nhà: Haben wir …?", "lines": [
+              { "who": "Anna", "v": "f", "de": "Tom, wir brauchen Eier. Haben wir Eier?", "vi": "Tom, mình cần trứng. Nhà mình có trứng không?" },
+              { "who": "Tom", "v": "m", "de": "Nein, wir haben keine Eier. Aber wir haben Mehl und Milch.", "vi": "Không, mình không có trứng. Nhưng có bột mì và sữa." },
+              { "who": "Anna", "v": "f", "de": "Und Zucker? Haben wir Zucker?", "vi": "Còn đường? Nhà mình có đường không?" },
+              { "who": "Tom", "v": "m", "de": "Ja, natürlich. Hier, bitte.", "vi": "Có chứ. Của bạn đây." },
+              { "who": "Anna", "v": "f", "de": "Super! Dann kaufe ich zehn Eier.", "vi": "Tuyệt! Vậy mình đi mua mười quả trứng." }
+            ] },
+            { "type": "dialog", "title": "2 · Ở cửa hàng", "lines": [
+              { "who": "Kunde", "v": "m", "de": "Guten Tag! Haben Sie Käse?", "vi": "Xin chào! Chị có phô mai không?" },
+              { "who": "Verkäuferin", "v": "f", "de": "Ja, natürlich. Hier, bitte. Sonst noch etwas?", "vi": "Có chứ. Của anh đây. Anh cần gì nữa không?" },
+              { "who": "Kunde", "v": "m", "de": "Haben Sie auch Fisch?", "vi": "Chị có cá không?" },
+              { "who": "Verkäuferin", "v": "f", "de": "Nein, tut mir leid.", "vi": "Không, rất tiếc." },
+              { "who": "Kunde", "v": "m", "de": "Dann brauche ich nur Käse. Danke!", "vi": "Vậy tôi chỉ cần phô mai. Cảm ơn!" }
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá", "items": [
+              "Tôi nói được số nhiều của các danh từ chính và biết học danh từ kèm số nhiều.",
+              "Tôi dùng <i>keine</i> với danh từ số nhiều.",
+              "Tôi hỏi được <i>Haben wir …? · Brauchst du …?</i> và trả lời Ja / Nein.",
+              "Tôi hỏi mua hàng và đáp lại: <i>Haben Sie …? – Ja, natürlich. Hier, bitte.</i>"
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 32–35, bài 8–22 (bài 8 audio AB track 26 · bài 14 audio AB track 27 · bài 18 audio AB track 28).", "tracks": "AB 26-28" },
+              "Ngày mai: vào <a href='#/review'>Ôn tập</a>.",
+              "Tuỳ chọn: viết một Einkaufszettel (danh sách mua hàng) cho tuần này bằng tiếng Đức, ví dụ: <i>Eier, Mehl, Kartoffeln …</i>"
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3", "no": 3, "minutes": 55, "set": "d",
+      "title": "Preise und Mengenangaben",
+      "vi": "Số đến 100, giá tiền, đơn vị đo, hỏi giá",
+      "book": "Kursbuch tr. 39, 43 · Arbeitsbuch tr. 36",
+      "goals": [
+        "Đếm đến 100: 20, 30 … 100 và các số ghép như <i>fünfundvierzig</i>.",
+        "Nghe và đọc giá tiền: <i>zwei Euro fünfundvierzig</i> = 2,45 €.",
+        "Dùng đúng Kilo, Gramm, Pfund, Liter, Flasche, Dose, Packung, Becher.",
+        "Hỏi giá: <i>Was kostet …? · Was kosten …?</i>",
+        "Tính tổng tiền đơn giản và nói <i>Das macht zusammen …</i>"
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: giá cả và đơn vị", "minutes": 8,
+          "blocks": [
+            { "type": "words", "set": "n", "title": "Số tròn chục" },
+            { "type": "words", "set": "d", "title": "Giá cả và đơn vị" },
+            { "type": "listenPick", "set": "d", "n": 8, "title": "Nghe và chọn nghĩa" },
+            { "type": "listenPick", "set": "d", "by": "emoji", "n": 5, "title": "Nghe và chọn hình" }
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (9)", "minutes": 4,
+          "blocks": [
+            { "type": "rules", "items": [
+              { "t": "-zig → „-tsích“ (dreißig: „-sích“)", "vi": "Đuôi <b>-zig</b> đọc „-tsích“. <b>dreißig</b> viết với <b>ß</b> nhưng vẫn đọc „drai-sích“.", "ex": ["zwanzig|20", "dreißig|30", "vierzig|40", "fünfzig|50", "achtzig|80"] },
+              { "t": "eu → oi: Euro", "vi": "<b>eu</b> đọc „oi“: <i>Euro</i> = „oi-rô“, <i>neun</i> = „noin“.", "ex": ["Euro|euro", "neun|9", "neunzig|90", "neunzehn|19"] },
+              { "t": "13 hay 30? Nghe âm cuối", "vi": "<b>-zehn</b> (13–19) đọc „-tsên“ (có „ê“ rõ); <b>-zig</b> (30–90) đọc „-tsích“. Cả hai đều nhấn âm đầu, nên hãy nghe kỹ âm cuối.", "ex": ["dreizehn|13", "dreißig|30", "vierzehn|14", "vierzig|40", "sechzehn|16", "sechzig|60"] },
+              { "t": "ö, ü trong Öl, fünfzig, Würste", "vi": "Môi tròn như bài trước: <b>ö</b> nói „ê“, <b>ü</b> nói „i“.", "ex": ["Öl|dầu ăn", "fünfzig|50", "Würste|xúc xích (nhiều)"] }
+            ] },
+            { "type": "hearPick", "title": "Nghe và chọn: teen hay chục?", "items": [
+              { "say": "dreißig", "opts": ["dreißig", "dreizehn"] },
+              { "say": "vierzig", "opts": ["vierzig", "vierzehn"] },
+              { "say": "sechzehn", "opts": ["sechzehn", "sechzig"] },
+              { "say": "siebzig", "opts": ["siebzig", "siebzehn"] },
+              { "say": "neunzehn", "opts": ["neunzehn", "neunzig"] },
+              { "say": "fünfzig", "opts": ["fünfzig", "fünfzehn"] }
+            ] }
+          ]
+        },
+        {
+          "id": "so", "title": "Số từ 20 đến 100", "minutes": 14,
+          "blocks": [
+            { "type": "numbers", "title": "Các số tròn chục — bấm để nghe", "values": [20, 30, 40, 50, 60, 70, 80, 90, 100] },
+            { "type": "tip", "title": "Quy luật 21–99", "html": "<ul><li>Số ghép = <b>đơn vị + und + chục</b> — đọc <b>ngược</b> so với tiếng Việt: 45 = fünf<b>und</b>vierzig (năm-và-bốn mươi).</li><li>Viết liền thành một từ. Số 1 trong số ghép là <b>ein</b> (không phải eins): ein<b>und</b>zwanzig.</li><li>Nhớ ba chỗ rút gọn: dre<b>ißig</b> (30), <b>sech</b>zig (60, bỏ s), <b>sieb</b>zig (70, bỏ -en).</li></ul>" },
+            { "type": "table", "title": "Ví dụ số ghép", "head": ["Số", "Đọc", "Cách ghép"], "say": 1, "rows": [
+              ["21", "einundzwanzig", "ein + und + zwanzig"],
+              ["32", "zweiunddreißig", "zwei + und + dreißig"],
+              ["45", "fünfundvierzig", "fünf + und + vierzig"],
+              ["58", "achtundfünfzig", "acht + und + fünfzig"],
+              ["67", "siebenundsechzig", "sieben + und + sechzig"],
+              ["73", "dreiundsiebzig", "drei + und + siebzig"],
+              ["84", "vierundachtzig", "vier + und + achtzig"],
+              ["99", "neunundneunzig", "neun + und + neunzig"]
+            ] },
+            { "type": "numHear", "title": "Nghe số, chọn chữ số (20–100)", "min": 20, "max": 100, "n": 8 },
+            { "type": "numHear", "title": "13 hay 30? 14 hay 40?", "task": "Những cặp này dễ nhầm nhất. Nghe kỹ âm cuối: -zehn hay -zig.", "pool": [13, 14, 15, 16, 17, 18, 19, 30, 40, 50, 60, 70, 80, 90], "n": 6 },
+            { "type": "numWrite", "title": "Gõ số bằng chữ (20–100)", "task": "Thấy chữ số, gõ cả số bằng tiếng Đức, viết liền (ví dụ 45 → fünfundvierzig). Gõ ß hoặc ss đều được.", "min": 20, "max": 100, "n": 8 },
+            { "type": "numWrite", "mode": "read", "title": "Đọc số bằng chữ, gõ chữ số", "min": 20, "max": 100, "n": 8 },
+            { "type": "book", "kb": "39", "tracks": "KB 1/60-63", "steps": [
+              "D1 — <i>Zahlen: Hören Sie und verbinden Sie.</i> Nghe (track 60) và nối giá tiền (0,20 € … 1,00 €) với cách đọc (zwanzig Cent … ein Euro).",
+              "D2 — <i>Preise: Was ist richtig? Hören Sie und kreuzen Sie an.</i> Nghe (track 61–63) và chọn giá đúng."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L3</i>, trang 9–10." }
+          ]
+        },
+        {
+          "id": "gia", "title": "Giá tiền: Euro và Cent", "minutes": 10,
+          "blocks": [
+            { "type": "table", "title": "Cách đọc giá tiền", "head": ["Viết", "Đọc"], "say": 1, "rows": [
+              ["0,20 €", "zwanzig Cent"],
+              ["0,99 €", "neunundneunzig Cent"],
+              ["1,00 €", "ein Euro"],
+              ["1,10 €", "ein Euro zehn"],
+              ["2,45 €", "zwei Euro fünfundvierzig"],
+              ["10,00 €", "zehn Euro"],
+              ["12,05 €", "zwölf Euro fünf"],
+              ["100,00 €", "hundert Euro"]
+            ], "vi": "Đọc <b>số Euro</b> trước, rồi <b>số Cent</b>; có thể bỏ chữ „Cent“: <i>2,45 € = zwei Euro fünfundvierzig</i>. Số <b>1</b> trước Euro/Cent là <b>ein</b>: ein Euro, ein Cent. Dấu phẩy ngăn Euro và Cent (không dùng dấu chấm)." },
+            { "type": "priceHear", "title": "Nghe giá tiền, chọn số đúng", "n": 6 },
+            { "type": "priceWrite", "title": "Đọc giá tiền: gõ bằng chữ", "task": "Thấy giá bằng chữ số, gõ cách đọc (ví dụ 2,45 € → zwei Euro fünfundvierzig).", "n": 5 },
+            { "type": "choice", "title": "Giá nào đúng?", "items": [
+              { "q": "„ein Euro zehn“ là:", "opts": ["1,10 €", "1,01 €", "11,00 €", "0,11 €"], "a": 0 },
+              { "q": "„neunzig Cent“ là:", "opts": ["0,90 €", "9,00 €", "0,09 €", "90,00 €"], "a": 0 },
+              { "q": "„drei Euro fünfzig“ là:", "opts": ["3,50 €", "3,15 €", "5,30 €", "0,35 €"], "a": 0 },
+              { "q": "„zwölf Euro fünfundzwanzig“ là:", "opts": ["12,25 €", "2,25 €", "12,52 €", "21,25 €"], "a": 0 }
+            ] }
+          ]
+        },
+        {
+          "id": "mengen", "title": "Đơn vị đo và hỏi giá", "minutes": 12,
+          "blocks": [
+            { "type": "table", "title": "Đơn vị và dụng cụ chứa", "head": ["Đơn vị", "Nghĩa", "Ví dụ"], "say": 2, "rows": [
+              ["ein Kilo (kg)", "1 ký", "ein Kilo Orangen"],
+              ["hundert Gramm (g)", "100 gam", "hundert Gramm Käse"],
+              ["ein Pfund", "500 gam", "ein Pfund Brot"],
+              ["ein Liter (l)", "1 lít", "ein Liter Milch"],
+              ["eine Flasche", "1 chai", "eine Flasche Saft"],
+              ["eine Packung", "1 gói, hộp giấy", "eine Packung Tee"],
+              ["eine Dose", "1 lon, hộp thiếc", "eine Dose Tomaten"],
+              ["ein Becher", "1 cốc, hộp nhỏ", "ein Becher Sahne"]
+            ], "vi": "Sau đơn vị <b>không cần giới từ</b>: <i>ein Kilo Orangen</i> (không có „von“). Đơn vị giống đực/trung <b>giữ nguyên</b> khi nhiều: <i>zwei Kilo, drei Liter, zwei Pfund, 200 Gramm, zwei Becher</i>. Đơn vị giống cái (die) thêm <b>-n/-en</b>: <i>zwei Flaschen, drei Dosen, zwei Packungen</i>." },
+            { "type": "gaps", "title": "Chọn dạng đúng", "items": [
+              { "q": "Ich kaufe zwei ___ Orangen.", "a": ["Kilo"], "opts": ["Kilo", "Kilos"] },
+              { "q": "Wir brauchen drei ___ Milch.", "a": ["Liter"], "opts": ["Liter", "Litern", "Liters"] },
+              { "q": "Ich kaufe zwei ___ Saft.", "a": ["Flaschen"], "opts": ["Flasche", "Flaschen"] },
+              { "q": "Eine ___ Tomaten kostet 79 Cent.", "a": ["Dose"], "opts": ["Dose", "Dosen"] },
+              { "q": "Ich brauche zwei ___ Tee.", "a": ["Packungen"], "opts": ["Packung", "Packungen"] },
+              { "q": "Zwei ___ Sahne, bitte.", "a": ["Becher"], "opts": ["Becher", "Bechern"] }
+            ] },
+            { "type": "table", "title": "Sonderangebote — bảng giá để làm bài (giá minh hoạ do web đặt)", "head": ["Sản phẩm", "Giá"], "rows": [
+              ["Brot, 500 g", "1,99 €"],
+              ["Milch, 1 Liter", "0,89 €"],
+              ["Käse, 100 g", "1,29 €"],
+              ["Orangen, 1 Kilo", "2,99 €"],
+              ["Äpfel, 1 Kilo", "1,99 €"],
+              ["Butter, 250 g", "1,69 €"],
+              ["Kaffee, 250 g", "3,49 €"],
+              ["Mineralwasser, 1 Flasche", "0,59 €"],
+              ["Tomaten, 1 Dose", "0,79 €"]
+            ], "vi": "Hỏi giá: <i>Was kostet ein Liter Milch?</i> (một món → <b>kostet</b>) · <i>Was kosten hundert Gramm Käse?</i> (nhiều → <b>kosten</b>). Người thu ngân: <i>Das macht zusammen …</i>" },
+            { "type": "gaps", "title": "Hỏi giá và tính tiền", "task": "Dùng bảng giá ở trên. Gõ số tiền dạng 2,58 (dấu phẩy hay dấu chấm đều được).", "items": [
+              { "q": "Was kostet ein Liter Milch? – ___ €", "a": ["0,89"], "size": 6 },
+              { "q": "Was kosten 200 Gramm Käse? – ___ €", "a": ["2,58"], "size": 6 },
+              { "q": "Ein Kilo Äpfel kostet 1,99 €. Zwei Kilo Äpfel kosten ___ €.", "a": ["3,98"], "size": 6 },
+              { "q": "Eine Dose Tomaten kostet 0,79 €. Zwei Dosen kosten ___ €.", "a": ["1,58"], "size": 6 },
+              { "q": "Brot und Milch: Das macht zusammen ___ €.", "a": ["2,88"], "size": 6 },
+              { "q": "Käse (100 g) und Butter: Das macht zusammen ___ €.", "a": ["2,98"], "size": 6 }
+            ] },
+            { "type": "book", "kb": "39", "steps": [
+              "D3 — <i>Sehen Sie den Prospekt an. Fragen Sie und antworten Sie.</i> Nhìn tờ quảng cáo Sonderangebote trong sách và hỏi–đáp: <i>Was kostet … ? Was kosten … ?</i>",
+              "Trang 43 (<i>Kommunikation</i>): đọc lại các mẫu câu <i>Beim Einkaufen · Mengenangaben · Preise</i>."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L3</i>, trang 9–10." }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 5,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Ở cửa hàng thực phẩm", "lines": [
+              { "who": "Verkäuferin", "v": "f", "de": "Guten Tag! Was brauchen Sie?", "vi": "Xin chào! Anh cần gì ạ?" },
+              { "who": "Kunde", "v": "m", "de": "Ich brauche ein Kilo Orangen. Was kostet das?", "vi": "Tôi cần một ký cam. Giá bao nhiêu?" },
+              { "who": "Verkäuferin", "v": "f", "de": "Ein Kilo Orangen kostet zwei Euro neunundneunzig.", "vi": "Một ký cam giá hai euro chín mươi chín." },
+              { "who": "Kunde", "v": "m", "de": "Gut. Und haben Sie auch Käse?", "vi": "Được. Chị có phô mai không?" },
+              { "who": "Verkäuferin", "v": "f", "de": "Ja, natürlich. Hundert Gramm Käse kosten ein Euro neunundzwanzig.", "vi": "Có chứ. Một trăm gam phô mai giá một euro hai mươi chín." },
+              { "who": "Kunde", "v": "m", "de": "Dann hundert Gramm Käse, bitte.", "vi": "Vậy cho tôi một trăm gam phô mai." },
+              { "who": "Verkäuferin", "v": "f", "de": "Hier, bitte. Sonst noch etwas?", "vi": "Của anh đây. Anh cần gì nữa không?" },
+              { "who": "Kunde", "v": "m", "de": "Nein, danke. Was macht das zusammen?", "vi": "Không, cảm ơn. Tổng cộng bao nhiêu?" },
+              { "who": "Verkäuferin", "v": "f", "de": "Das macht zusammen vier Euro achtundzwanzig.", "vi": "Tổng cộng bốn euro hai mươi tám." }
+            ] },
+            { "type": "dialog", "title": "2 · Ở chợ", "lines": [
+              { "who": "Kundin", "v": "f", "de": "Entschuldigung, wie viel kostet ein Pfund Kartoffeln?", "vi": "Xin lỗi, nửa ký khoai tây giá bao nhiêu?" },
+              { "who": "Verkäufer", "v": "m", "de": "Ein Pfund Kartoffeln kostet neunundsiebzig Cent.", "vi": "Nửa ký khoai tây giá bảy mươi chín xu." },
+              { "who": "Kundin", "v": "f", "de": "Und was kosten Tomaten?", "vi": "Còn cà chua giá bao nhiêu?" },
+              { "who": "Verkäufer", "v": "m", "de": "Ein Kilo Tomaten kostet drei Euro fünfzig.", "vi": "Một ký cà chua giá ba euro năm mươi." },
+              { "who": "Kundin", "v": "f", "de": "Dann ein Kilo Tomaten und ein Pfund Kartoffeln, bitte.", "vi": "Vậy cho tôi một ký cà chua và nửa ký khoai tây." },
+              { "who": "Verkäufer", "v": "m", "de": "Das macht zusammen vier Euro neunundzwanzig.", "vi": "Tổng cộng bốn euro hai mươi chín." }
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 3,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá", "items": [
+              "Tôi đếm được đến 100 và nghe hiểu số, phân biệt được 13 / 30, 14 / 40…",
+              "Tôi đọc và nghe hiểu giá tiền: <i>zwei Euro fünfundvierzig</i>.",
+              "Tôi dùng đúng Kilo, Gramm, Pfund, Liter, Flasche, Dose, Packung, Becher.",
+              "Tôi hỏi được giá: <i>Was kostet …? Was kosten …?</i>"
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 36, bài 23–27 (bài 23 audio AB track 29 · bài 24 audio AB track 30).", "tracks": "AB 29-30" },
+              "Ngày mai: vào <a href='#/review'>Ôn tập</a> ôn số và đơn vị.",
+              "Tuỳ chọn: mở tờ quảng cáo siêu thị (hoặc trang web siêu thị Đức) và đọc to năm giá bằng tiếng Đức."
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4", "no": 4, "minutes": 65, "set": "e",
+      "title": "Mein Lieblingsessen",
+      "vi": "Thích ăn gì, uống gì; đọc công thức; kiểm tra cuối Lektion 3",
+      "book": "Kursbuch tr. 40–45 · Arbeitsbuch tr. 37–40",
+      "goals": [
+        "Nói mình thích ăn, uống gì: <i>Ich esse gern Fisch. Ich trinke gern Tee.</i>",
+        "Hỏi bạn: <i>Was isst du gern? Was trinkst du gern?</i>",
+        "Chia <i>essen</i> (e → i), <i>trinken</i>, <i>kochen</i> với 6 ngôi.",
+        "Nói món yêu thích và nhận xét: <i>Das schmeckt sehr gut!</i>",
+        "Đọc một công thức đơn giản có số lượng; làm bài kiểm tra cuối Lektion 3."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: món ăn và đồ uống", "minutes": 10,
+          "blocks": [
+            { "type": "words", "set": "e" },
+            { "type": "listenPick", "set": "e", "n": 8, "title": "Nghe và chọn nghĩa" },
+            { "type": "listenPick", "set": "e", "by": "emoji", "n": 6, "title": "Nghe và chọn hình" },
+            { "type": "words", "set": "e2", "title": "Thêm: từ trong các bài đọc của sách (tuỳ chọn)", "collapsed": true }
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (10)", "minutes": 4,
+          "blocks": [
+            { "type": "rules", "items": [
+              { "t": "st, sp ở đầu từ → scht, schp", "vi": "Quy tắc bạn đã biết áp dụng cả với từ mượn: <i>Steak</i> = „scht-êk“.", "ex": ["Steak|bít tết", "Stadt|thành phố", "später|lát nữa", "sprechen|nói"] },
+              { "t": "zz → ts: Pizza", "vi": "<b>zz</b> đọc „ts“: <i>Pizza</i> = „pít-xa“.", "ex": ["Pizza|pizza", "Pizzen|các cái pizza"] },
+              { "t": "Từ mượn tiếng Pháp / Anh", "vi": "Một số từ giữ gần cách đọc gốc: <i>Restaurant</i> „res-to-RANG“, <i>Pommes</i> „pom“, <i>Cola</i> „cô-la“.", "ex": ["Restaurant|nhà hàng", "Pommes|khoai tây chiên", "Cola|cô-la", "Joghurt|sữa chua"] },
+              { "t": "ss sau nguyên âm ngắn: isst, essen", "vi": "<b>ss</b> báo hiệu nguyên âm ngắn: <i>isst, esst, essen</i>.", "ex": ["essen|ăn", "isst|ăn (du, er/sie)", "esst|ăn (ihr)", "Tschüss|tạm biệt"] }
+            ] },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng", "items": [
+              { "say": "Pizza", "opts": ["Pizza", "Pisa"] },
+              { "say": "Suppe", "opts": ["Suppe", "Zuppe"] },
+              { "say": "Salat", "opts": ["Salat", "Zalat"] },
+              { "say": "Mensa", "opts": ["Mensa", "Menza"] },
+              { "say": "Hähnchen", "opts": ["Hähnchen", "Hähnschen"] },
+              { "say": "schmeckt", "opts": ["schmeckt", "smeckt"] }
+            ] }
+          ]
+        },
+        {
+          "id": "ngu-phap", "title": "Ngữ pháp: essen, trinken và gern", "minutes": 14,
+          "blocks": [
+            { "type": "conj", "title": "Chia essen, trinken, kochen", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [
+              { "inf": "essen", "vi": "ăn", "forms": ["esse", "isst", "isst", "essen", "esst", "essen"], "stem": "ess" },
+              { "inf": "trinken", "vi": "uống", "forms": ["trinke", "trinkst", "trinkt", "trinken", "trinkt", "trinken"], "stem": "trink" },
+              { "inf": "kochen", "vi": "nấu ăn", "forms": ["koche", "kochst", "kocht", "kochen", "kocht", "kochen"], "stem": "koch" }
+            ], "vi": "<i>essen</i> đổi <b>e → i</b> ở du và er/sie: du <b>isst</b>, er/sie <b>isst</b>. Học theo cụm ba dạng <b>ich esse · du isst · er/sie isst</b>, giống <i>sprechen</i> ở Lektion 2." },
+            { "type": "table", "title": "gern — thích", "head": ["Tiếng Đức", "Nghĩa"], "say": 0, "rows": [
+              ["Ich esse <b class='v2'>gern</b> Fisch.", "Tôi thích ăn cá."],
+              ["Ich trinke <b class='v2'>sehr gern</b> Tee.", "Tôi rất thích uống trà."],
+              ["Ich esse <b class='v2'>nicht gern</b> Fleisch.", "Tôi không thích ăn thịt."],
+              ["Was isst du <b class='v2'>gern</b>?", "Bạn thích ăn gì?"],
+              ["Trinkst du <b class='v2'>gern</b> Kaffee?", "Bạn có thích uống cà phê không?"]
+            ], "vi": "<b>gern</b> đứng <b>sau động từ</b> (và sau chủ ngữ): <i>Ich trinke gern Tee.</i> Nó bổ nghĩa cho hành động ăn, uống, làm — không đứng một mình." },
+            { "type": "sort", "title": "essen hay trinken?", "cats": ["Ich esse … 🍽️", "Ich trinke … 🥤"], "items": [
+              { "t": "Suppe", "c": 0 }, { "t": "Pizza", "c": 0 }, { "t": "Salat", "c": 0 }, { "t": "Steak", "c": 0 }, { "t": "Fleisch", "c": 0 }, { "t": "Hähnchen", "c": 0 }, { "t": "Pommes", "c": 0 }, { "t": "Kuchen", "c": 0 },
+              { "t": "Wasser", "c": 1 }, { "t": "Saft", "c": 1 }, { "t": "Tee", "c": 1 }, { "t": "Kaffee", "c": 1 }, { "t": "Cola", "c": 1 }, { "t": "Bier", "c": 1 }, { "t": "Wein", "c": 1 }, { "t": "Milch", "c": 1 }
+            ] },
+            { "type": "gaps", "title": "Điền động từ", "items": [
+              { "q": "Ich ___ gern Pizza. <span class='muted'>(essen)</span>", "a": ["esse"] },
+              { "q": "Du ___ gern Fisch. <span class='muted'>(essen)</span>", "a": ["isst"] },
+              { "q": "Er ___ nicht gern Fleisch. <span class='muted'>(essen)</span>", "a": ["isst"] },
+              { "q": "Wir ___ gern Suppe. <span class='muted'>(essen)</span>", "a": ["essen"] },
+              { "q": "Ihr ___ gern Salat. <span class='muted'>(essen)</span>", "a": ["esst"] },
+              { "q": "Was ___ du gern? <span class='muted'>(trinken)</span>", "a": ["trinkst"] },
+              { "q": "Meine Mutter ___ gern Tee. <span class='muted'>(trinken)</span>", "a": ["trinkt"] },
+              { "q": "Mai ___ Reis mit Gemüse. <span class='muted'>(kochen)</span>", "a": ["kocht"] }
+            ] },
+            { "type": "order", "title": "Xếp câu", "items": [
+              { "chunks": ["Ich", "trinke", "gern", "Tee."], "v": 1, "vi": "Tôi thích uống trà." },
+              { "chunks": ["Was", "isst", "du", "gern?"], "v": 1, "vi": "Bạn thích ăn gì?" },
+              { "chunks": ["Isst", "du", "gern", "Fisch?"], "v": 0, "vi": "Bạn có thích ăn cá không?" },
+              { "chunks": ["Mein Lieblingsessen", "ist", "Pizza."], "v": 1, "vi": "Món yêu thích của tôi là pizza." },
+              { "chunks": ["Das", "schmeckt", "sehr gut."], "v": 1, "vi": "Cái này ngon lắm." },
+              { "chunks": ["Wir", "essen", "nicht gern", "Fleisch."], "v": 1, "vi": "Chúng tôi không thích ăn thịt." }
+            ] },
+            { "type": "fix", "title": "Tìm lỗi sai", "items": [
+              { "s": "Du esst gern Fisch.", "err": "esst", "fix": ["isst"], "why": "du isst (e → i)." },
+              { "s": "Was trinkt du gern?", "err": "trinkt", "fix": ["trinkst"], "why": "du → đuôi -st." },
+              { "s": "Wir isst gern Suppe.", "err": "isst", "fix": ["essen"], "why": "wir → essen." },
+              { "s": "Ich bin Hunger.", "err": "bin", "fix": ["habe"], "why": "Nói „tôi đói“ là Ich habe Hunger." },
+              { "s": "Das schmecken gut.", "err": "schmecken", "fix": ["schmeckt"], "why": "Das (một món) → schmeckt." },
+              { "s": "Ich esse nicht gern Fleisch.", "err": null }
+            ] }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 7,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Ở căng-tin", "lines": [
+              { "who": "Jonas", "v": "m", "de": "Hallo, Mia! Was isst du gern?", "vi": "Chào Mia! Bạn thích ăn gì?" },
+              { "who": "Mia", "v": "f", "de": "Ich esse gern Pizza und Salat. Und du?", "vi": "Mình thích ăn pizza và salad. Còn bạn?" },
+              { "who": "Jonas", "v": "m", "de": "Ich esse nicht gern Salat. Ich esse gern Fleisch: Steak mit Pommes.", "vi": "Mình không thích ăn salad. Mình thích ăn thịt: bít tết với khoai tây chiên." },
+              { "who": "Mia", "v": "f", "de": "Und was trinkst du gern?", "vi": "Còn bạn thích uống gì?" },
+              { "who": "Jonas", "v": "m", "de": "Ich trinke gern Cola. Und du?", "vi": "Mình thích uống cola. Còn bạn?" },
+              { "who": "Mia", "v": "f", "de": "Ich trinke gern Wasser.", "vi": "Mình thích uống nước lọc." }
+            ] },
+            { "type": "dialog", "title": "2 · Ở nhà hàng", "lines": [
+              { "who": "Frau Lange", "v": "f", "de": "Ich habe Hunger und Durst!", "vi": "Tôi vừa đói vừa khát!" },
+              { "who": "Herr Becker", "v": "m", "de": "Ich auch. Was essen Sie gern, Frau Lange?", "vi": "Tôi cũng vậy. Bà thích ăn gì, bà Lange?" },
+              { "who": "Frau Lange", "v": "f", "de": "Ich esse gern Fisch. Und Sie?", "vi": "Tôi thích ăn cá. Còn ông?" },
+              { "who": "Herr Becker", "v": "m", "de": "Ich esse gern Hähnchen mit Pommes. Und ich trinke ein Glas Wein.", "vi": "Tôi thích ăn gà với khoai tây chiên. Và tôi uống một ly rượu vang." },
+              { "who": "Frau Lange", "v": "f", "de": "Ich trinke Mineralwasser. – Das Hähnchen schmeckt sehr gut, oder?", "vi": "Tôi uống nước khoáng. – Món gà ngon lắm phải không?" },
+              { "who": "Herr Becker", "v": "m", "de": "Ja, super!", "vi": "Vâng, tuyệt!" }
+            ] }
+          ]
+        },
+        {
+          "id": "doc-hieu", "title": "Đọc hiểu: ba công thức", "minutes": 10,
+          "blocks": [
+            { "type": "dialog", "title": "Ba người kể món yêu thích", "lines": [
+              { "who": "Mai", "v": "f", "de": "Hallo! Ich bin Mai und komme aus Vietnam. Mein Lieblingsessen ist Reis mit Fleisch und Gemüse. Das Rezept ist einfach. Für zwei Portionen brauchst du: 250 Gramm Reis, ein Pfund Fleisch, drei Tomaten, eine Zwiebel, etwas Öl und Salz. Ich trinke gern Tee. Das schmeckt super!", "vi": "Chào! Mình là Mai, đến từ Việt Nam. Món yêu thích của mình là cơm với thịt và rau. Công thức rất đơn giản. Cho hai suất bạn cần: 250 gam gạo, nửa ký thịt, ba quả cà chua, một củ hành tây, một ít dầu ăn và muối. Mình thích uống trà. Món này ngon tuyệt!" },
+              { "who": "Paul", "v": "m", "de": "Guten Tag! Ich bin Paul. Ich koche gern, und mein Lieblingsessen ist Tomatensuppe. Für vier Portionen brauchst du: 1 Dose Tomaten, 2 Zwiebeln, 1 Becher Sahne, 1 Liter Wasser und Salz. Ich esse Brot, und ich trinke Wasser.", "vi": "Xin chào! Tôi là Paul. Tôi thích nấu ăn, và món yêu thích của tôi là súp cà chua. Cho bốn suất bạn cần: 1 lon cà chua, 2 củ hành tây, 1 hộp kem tươi, 1 lít nước và muối. Tôi ăn bánh mì và uống nước." },
+              { "who": "Lea", "v": "f", "de": "Hallo! Ich bin Lea und wohne in Wien. Mein Lieblingsessen ist Apfelkuchen. Das Rezept: 250 Gramm Mehl, 150 Gramm Zucker, 3 Eier, 1 Kilo Äpfel und 200 Gramm Butter. Ich trinke gern Kaffee. Der Kuchen schmeckt sehr gut!", "vi": "Chào! Mình là Lea, sống ở Wien. Món yêu thích của mình là bánh táo. Công thức: 250 gam bột mì, 150 gam đường, 3 quả trứng, 1 ký táo và 200 gam bơ. Mình thích uống cà phê. Cái bánh ngon lắm!" }
+            ] },
+            { "type": "choice", "title": "Bạn hiểu bài đọc chưa?", "items": [
+              { "q": "Mais Lieblingsessen ist …", "opts": ["Reis mit Fleisch und Gemüse", "Tomatensuppe", "Apfelkuchen"], "a": 0 },
+              { "q": "Wie viel Reis braucht Mai für zwei Portionen?", "opts": ["250 Gramm", "1 Kilo", "150 Gramm"], "a": 0 },
+              { "q": "Was braucht Paul für die Tomatensuppe?", "opts": ["1 Dose Tomaten", "1 Kilo Tomaten", "3 Tomaten"], "a": 0 },
+              { "q": "Wie viele Zwiebeln braucht Paul?", "opts": ["zwei", "eine", "drei"], "a": 0 },
+              { "q": "Was trinkt Paul?", "opts": ["Wasser", "Tee", "Kaffee"], "a": 0 },
+              { "q": "Wie viele Eier braucht Lea?", "opts": ["drei", "zwei", "zehn"], "a": 0 },
+              { "q": "Wer trinkt gern Kaffee?", "opts": ["Lea", "Mai", "Paul"], "a": 0 },
+              { "q": "Wo wohnt Lea?", "opts": ["in Wien", "in Berlin", "in Hanoi"], "a": 0 }
+            ] }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần E", "minutes": 3,
+          "blocks": [
+            { "type": "book", "kb": "40–41", "tracks": "KB 1/64-67", "steps": [
+              "E1 — <i>Wo sind die Leute? Ordnen Sie zu.</i> Xem 4 bức ảnh (ở nhà, ở nhà hàng, ở căng-tin) và ghép.",
+              "E2a — <i>Was essen oder trinken die Personen?</i> Nghe (track 64–67) và đánh dấu món ăn, đồ uống của từng người. E2b — nghe lại và đánh dấu câu đúng.",
+              "E3 — Đọc 3 đoạn giới thiệu món yêu thích (trang 41), điền bảng, rồi trả lời câu hỏi về công thức (số lượng). Bạn vừa luyện đúng kiểu bài này ở trên.",
+              "E4 — <i>Was essen Sie und trinken Sie gern?</i> Tự hỏi–đáp (nói to cả hai vai) và viết danh sách nguyên liệu cho món yêu thích của bạn.",
+              "Trang 42–43: đọc lại <i>Grammatik und Kommunikation</i> (ein / kein, Plural, essen…)."
+            ], "key": "Đáp án: giáo án <i>Unterrichtsplan L3</i>, trang 11–12." }
+          ]
+        },
+        {
+          "id": "kiem-tra", "title": "Kiểm tra cuối Lektion 3", "minutes": 12,
+          "blocks": [
+            { "type": "test", "id": "l3", "title": "Bài kiểm tra", "items": [
+              { "k": "mc", "q": "Das ist ___ Banane.", "opts": ["eine", "ein"], "a": 0, "keep": true },
+              { "k": "mc", "q": "Das ist ___ Apfel.", "opts": ["ein", "eine"], "a": 0, "keep": true },
+              { "k": "mc", "q": "Das ist doch ___ Ei! Das ist Schokolade.", "opts": ["kein", "keine"], "a": 0, "keep": true },
+              { "k": "type", "q": "Hier sind zwei ___. <span class='muted'>(der Apfel)</span>", "a": ["Äpfel"] },
+              { "k": "type", "q": "Wir brauchen zehn ___. <span class='muted'>(das Ei)</span>", "a": ["Eier"] },
+              { "k": "type", "q": "Ich kaufe drei ___. <span class='muted'>(die Banane)</span>", "a": ["Bananen"] },
+              { "k": "mc", "q": "Im Regal sind ___ Kartoffeln.", "opts": ["keine", "kein"], "a": 0, "keep": true },
+              { "k": "mc", "q": "Câu hỏi Có/Không nào đúng?", "opts": ["Haben wir Zucker?", "Wir haben Zucker?", "Wir Zucker haben?", "Zucker haben wir?"], "a": 0, "why": "Câu hỏi Có/Không: động từ đứng đầu." },
+              { "k": "type", "q": "___ du Reis? <span class='muted'>(brauchen)</span>", "a": ["Brauchst"] },
+              { "k": "type", "q": "Ich ___ gern Pizza. <span class='muted'>(essen)</span>", "a": ["esse"] },
+              { "k": "type", "q": "Du ___ gern Fisch. <span class='muted'>(essen)</span>", "a": ["isst"] },
+              { "k": "type", "q": "Wir ___ Eier. <span class='muted'>(kaufen)</span>", "a": ["kaufen"] },
+              { "k": "listen", "q": "Nghe và gõ chữ số:", "say": "vierundfünfzig", "a": ["54"] },
+              { "k": "listen", "q": "Nghe và gõ chữ số:", "say": "neunundneunzig", "a": ["99"] },
+              { "k": "type", "q": "63 = ___ <span class='muted'>(gõ bằng chữ)</span>", "a": ["dreiundsechzig"] },
+              { "k": "listenmc", "q": "Nghe rồi chọn giá tiền:", "say": "zwei Euro fünfundvierzig", "opts": ["2,45 €", "2,54 €", "2,15 €", "12,45 €"], "a": 0 },
+              { "k": "listenmc", "q": "Nghe rồi chọn giá tiền:", "say": "ein Euro zehn", "opts": ["1,10 €", "1,01 €", "11,00 €", "0,11 €"], "a": 0 },
+              { "k": "mc", "q": "Bạn muốn hỏi giá của MỘT chai nước:", "opts": ["Was kostet eine Flasche Wasser?", "Was kosten eine Flasche Wasser?", "Wie kostet eine Flasche Wasser?", "Was kostet Flaschen Wasser?"], "a": 0 },
+              { "k": "mc", "q": "Ich kaufe zwei ___ Saft.", "opts": ["Flaschen", "Flasche", "Flaschens"], "a": 0 },
+              { "k": "type", "q": "Zwei Kilo Orangen kosten 5,98 €. Ein Kilo kostet ___ €.", "a": ["2,99"] },
+              { "k": "mc", "q": "Câu nào đúng?", "opts": ["Ich trinke gern Tee.", "Ich gern trinke Tee.", "Gern ich trinke Tee.", "Ich trinke Tee gern nicht."], "a": 0, "why": "gern đứng sau động từ." },
+              { "k": "listenmc", "q": "Nghe rồi chọn nghĩa:", "say": "Das schmeckt sehr gut!", "opts": ["Món này ngon lắm!", "Món này đắt lắm!", "Tôi đói lắm!", "Tôi muốn uống nước!"], "a": 0 },
+              { "k": "mc", "q": "___ Käse", "opts": ["der", "die", "das"], "a": 0, "keep": true },
+              { "k": "mc", "q": "___ Brot", "opts": ["der", "die", "das"], "a": 2, "keep": true }
+            ] },
+            { "type": "book", "title": "Bài kiểm tra của sách", "steps": [
+              "Arbeitsbuch tr. 39: <i>Test Lektion 3</i>.",
+              "Bài kiểm tra trong bộ giáo án: <i>Kopiervorlagen/L03/Lektionstest.pdf</i> — làm ra giấy. Đáp án nằm trong <i>Lösungen zu den Tests.pdf</i>."
+            ] }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 5,
+          "blocks": [
+            { "type": "review", "title": "Làm lại các câu sai" },
+            { "type": "cando", "title": "Tự đánh giá cả Lektion 3", "items": [
+              "Tôi hỏi tên một món đồ và nói <i>ein / eine / kein / keine</i> (phần A).",
+              "Tôi nói được số nhiều và số lượng: <i>zwei Bananen, ein Kilo Kartoffeln</i> (phần B).",
+              "Tôi viết được danh sách mua hàng và hỏi <i>Haben wir …?</i> (phần C).",
+              "Tôi hỏi và hiểu giá tiền, số lượng (phần D).",
+              "Tôi nói mình thích ăn gì, uống gì và đọc được một công thức đơn giản (phần E)."
+            ] },
+            { "type": "checklist", "title": "Bài về nhà", "items": [
+              { "t": "Arbeitsbuch tr. 37–38, bài 28–33 (bài 32b có audio AB track 31).", "tracks": "AB 31" },
+              "Arbeitsbuch tr. 39: Test Lektion 3.",
+              "Arbeitsbuch tr. 40: <i>Fokus Beruf</i> — đọc bảng đặt hàng đồ uống trên mạng và tính tiền.",
+              { "t": "Audio-Training (Kursbuch tr. 43): nghe và trả lời theo băng.", "tracks": "KB 1/68-70" },
+              "Kursbuch tr. 44, <i>Zwischendurch mal …</i>: „Das Lebensmittel-Alphabet“ (viết một thực phẩm cho mỗi chữ cái A–Z) và phim „Opas Kartoffelsalat“.",
+              "Kursbuch tr. 45: „Gerichte aus Deutschland, Österreich und der Schweiz“ và truyện tranh „Der kleine Mann: Kiosk“.",
+              "Từ mai: vào <a href='#/review'>Ôn tập</a> mỗi ngày — Lektion 3 có hơn 100 từ mới."
+            ] },
+            { "type": "done" }
+          ]
+        }
+      ]
+    }
+  ]
+}

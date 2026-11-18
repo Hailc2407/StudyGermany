@@ -5,7 +5,7 @@ import { readFileSync } from "node:fs";
 
 const KNOWN = new Set(["text", "tip", "table", "words", "listenPick", "rules", "hearPick", "book", "dialog", "conj", "gaps", "choice",
   "sort", "order", "fix", "timeGreet", "alphabet", "letterPick", "spell", "spellMe", "form", "profile", "test", "review", "cando",
-  "checklist", "done", "numbers", "numHear", "numWrite", "tree"]);
+  "checklist", "done", "numbers", "numHear", "numWrite", "tree", "priceHear", "priceWrite"]);
 const fold = (s) => String(s).toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
   .replace(/-/g, "").replace(/[.,!?;:„“”"()…–—]/g, " ").replace(/\s+/g, " ").trim();
 const problems = [];
@@ -17,6 +17,7 @@ for (const meta of course.lektionen.filter((l) => l.ready)) {
   const L = JSON.parse(readFileSync(meta.file, "utf8"));
   const ids = new Set();
   const sets = new Map(L.sets.map((s) => [s.id, s]));
+  L.setIndexCheck = Object.fromEntries(L.sets.map((s) => [s.id, s.items.filter((w) => w.emoji).length]));
   for (const s of L.sets) for (const w of s.items) {
     const at = `${L.id}/${s.id}/${w.id}`;
     if (ids.has(w.id)) bad(at, "id lặp lại");
@@ -70,6 +71,10 @@ for (const meta of course.lektionen.filter((l) => l.ready)) {
         if (!p.rel || !p.name) bad(at, `hàng ${i + 1}, người ${j + 1}: thiếu rel hoặc name`);
         if (p.art && !["der", "die", "das"].includes(p.art)) bad(at, `hàng ${i + 1}, người ${j + 1}: art lạ`);
       }));
+      if ((b.type === "numHear" || b.type === "numWrite") && b.min != null && b.max != null && b.min >= b.max) bad(at, "min phải nhỏ hơn max");
+      if ((b.type === "numHear" || b.type === "numWrite") && b.pool && (!Array.isArray(b.pool) || b.pool.length < 4)) bad(at, "pool cần ít nhất 4 số");
+      if (b.type === "numbers" && b.values && (!Array.isArray(b.values) || !b.values.length)) bad(at, "values rỗng");
+      if (b.type === "listenPick" && b.by === "emoji" && L.setIndexCheck[b.set] < 4) bad(at, "bộ từ " + b.set + " có ít hơn 4 từ có emoji");
       if (b.type === "numHear" && b.mode && !["single", "phone"].includes(b.mode)) bad(at, "mode lạ: " + b.mode);
       if (b.type === "numWrite" && b.mode && b.mode !== "read") bad(at, "mode lạ: " + b.mode);
       if (b.type === "dialog") b.lines.forEach((ln, i) => { if (!ln.scene && (!ln.de || !ln.vi || !ln.who)) bad(at, `dòng ${i + 1}: thiếu who, de hoặc vi`); });
