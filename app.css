@@ -611,3 +611,26 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .ad b { color: var(--text); }
 .ad .ad-tel { display: block; margin-top: 4px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .ad-note { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+
+/* ---------- Clocks and separable verbs (Lektion 5) ---------- */
+.clock-svg { display: block; flex: none; }
+.cl-face { fill: var(--surface); stroke: var(--border); stroke-width: 2; }
+.cl-tick { stroke: var(--muted); stroke-linecap: round; }
+.cl-num { fill: var(--text-2); font: 600 8.5px var(--display); text-anchor: middle; }
+.cl-hour { stroke: var(--text); }
+.cl-min { stroke: var(--accent); }
+.cl-pin { fill: var(--text); }
+.clock-lab { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; padding: 16px 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2); }
+.cl-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+.cl-digital { font: 700 36px var(--display); letter-spacing: 0.02em; }
+.cl-digital.small { font-size: 26px; }
+.cl-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 6px 0; font-size: 18px; }
+.cl-tag { min-width: 104px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.cl-q { display: inline-flex; align-items: center; gap: 12px; }
+.cl-row { align-items: center; }
+.pick.clock-opt { padding: 6px 8px; }
+.cl-phrase { min-width: 15em; }
+.conj .sep, .sep { color: var(--der); font-weight: 700; }
+.slot.p-slot { border-color: var(--der); background: var(--der-soft); }
+.slot.p-slot .slot-n { color: var(--der); }
+.ord-ok .slot.p-slot { background: var(--der-soft); }

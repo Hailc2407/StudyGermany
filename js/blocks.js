@@ -353,8 +353,10 @@
 
   /* ---------- Verb tables ---------- */
   function markEnding(v, form) {
-    if (v.stem && form.startsWith(v.stem) && form.length > v.stem.length) return esc(v.stem) + "<b>" + esc(form.slice(v.stem.length)) + "</b>";
-    return "<b>" + esc(form) + "</b>";
+    let tail = "";
+    if (v.sep && form.endsWith(" " + v.sep)) { tail = " <span class='sep'>" + esc(v.sep) + "</span>"; form = form.slice(0, -(v.sep.length + 1)); }
+    if (v.stem && form.startsWith(v.stem) && form.length > v.stem.length) return esc(v.stem) + "<b>" + esc(form.slice(v.stem.length)) + "</b>" + tail;
+    return "<b>" + esc(form) + "</b>" + tail;
   }
   B.conj = (b) => {
     const P = b.persons;
@@ -572,9 +574,9 @@
         bank.textContent = "";
         for (let s = 0; s < N; s++) {
           const k = built[s];
-          slots.append(h("button", { type: "button", class: "slot" + (s === it.v ? " v2-slot" : "") + (k == null ? " empty" : ""),
+          slots.append(h("button", { type: "button", class: "slot" + (s === it.v ? " v2-slot" : "") + (s === it.p ? " p-slot" : "") + (k == null ? " empty" : ""),
             onclick: () => { if (row.dataset.done || k == null) return; built.splice(s, 1); paint(); } },
-            h("span", { class: "slot-n" }, s === it.v ? (s + 1) + " · động từ" : String(s + 1)), k == null ? "" : it.chunks[k]));
+            h("span", { class: "slot-n" }, s === it.v ? (s + 1) + " · động từ" : s === it.p ? (s + 1) + " · tiền tố" : String(s + 1)), k == null ? "" : it.chunks[k]));
         }
         pool.filter((k) => !built.includes(k)).forEach((k) => bank.append(h("button", { type: "button", class: "chunk",
           onclick: () => { if (row.dataset.done) return; built.push(k); paint(); if (built.length === N) checkIt(); } }, it.chunks[k])));
@@ -1058,6 +1060,232 @@
       return row;
     });
     const wrap = h("div", { class: "spell" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => wrap.replaceWith(B.priceWrite(b)), "btn small ghost")));
+    return wrap;
+  };
+
+  /* ---------- Clocks: everyday and official times, analog face, explorer, quizzes ---------- */
+  const HW = ["", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn", "elf", "zwölf"];
+  const pad2 = (n) => String(n).padStart(2, "0");
+  const digital = (h24, m) => pad2(h24) + ":" + pad2(m);
+  const wrapH = (x) => ((x % 24) + 24) % 24;
+  const wrapM = (x) => ((x % 60) + 60) % 60;
+  const h12 = (h24) => (h24 % 12 === 0 ? 12 : h24 % 12);
+  /* Everyday time on a 12-hour clock. Returns every phrase that is right; the first one is the one the book teaches. */
+  function timePrivate(h24, m) {
+    const h = h12(h24), nx = (h % 12) + 1;
+    if (m === 0) return [(h === 1 ? "ein" : HW[h]) + " Uhr", HW[h]];
+    if (m >= 1 && m <= 4) return ["kurz nach " + HW[h]];
+    if (m >= 56) return ["kurz vor " + HW[nx], "gleich " + HW[nx]];
+    const t = {
+      5: ["fünf nach " + HW[h]], 10: ["zehn nach " + HW[h]], 15: ["Viertel nach " + HW[h]],
+      20: ["zwanzig nach " + HW[h], "zehn vor halb " + HW[nx]], 25: ["fünf vor halb " + HW[nx]], 30: ["halb " + HW[nx]],
+      35: ["fünf nach halb " + HW[nx]], 40: ["zwanzig vor " + HW[nx], "zehn nach halb " + HW[nx]], 45: ["Viertel vor " + HW[nx]],
+      50: ["zehn vor " + HW[nx]], 55: ["fünf vor " + HW[nx]],
+    };
+    return t[m] || [];
+  }
+  /* Official time (24-hour clock: radio, trains, opening hours): "neunzehn Uhr dreißig" */
+  function timeOfficial(h24, m) {
+    return (h24 === 1 ? "ein" : numWord(h24)) + " Uhr" + (m ? " " + numWord(m) : "");
+  }
+  const timePhrases = (style, h24, m) => (style === "official" ? [timeOfficial(h24, m)] : timePrivate(h24, m));
+  const STEPS = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55];
+  function randTime(b, style) {
+    const mins = b.minutes || (b.kurz ? STEPS.concat([58, 2]) : STEPS);
+    const [h0, h1] = b.hours || (style === "official" ? [0, 23] : [1, 12]);
+    return [rnd(h0, h1), mins[rnd(0, mins.length - 1)]];
+  }
+  const timeKey = (style, t) => (style === "official" ? digital(t[0], t[1]) : digital(t[0] % 12, t[1]));
+  const timeShown = (style, t) => (style === "official" ? digital(t[0], t[1]) : digital(h12(t[0]), t[1]));
+  /* Wrong times worth offering: vor ↔ nach (7:15 / 7:45), the hour next to it, five or ten minutes off, a.m. ↔ p.m. */
+  function timeDistractors(style, h24, m) {
+    const c = [[h24, wrapM(60 - m)], [h24 + 1, m], [h24 - 1, m], [h24, m + 5], [h24, m - 5], [h24, m + 10], [h24, m - 10]];
+    if (style === "official") c.push([h24 + 12, m], [h24 - 12, m]);
+    const seen = new Set([timeKey(style, [h24, m])]);
+    const out = [];
+    for (const [hh, mm] of shuffle(c)) {
+      const t = [wrapH(hh), wrapM(mm)];
+      const k = timeKey(style, t);
+      if (!seen.has(k) && timePhrases(style, t[0], t[1]).length) { seen.add(k); out.push(t); }
+    }
+    while (out.length < 3) { const t = [rnd(0, 23), STEPS[rnd(0, 11)]]; const k = timeKey(style, t); if (!seen.has(k)) { seen.add(k); out.push(t); } }
+    return out.slice(0, 3);
+  }
+  const SVGNS = "http://www.w3.org/2000/svg";
+  function svgEl(tag, attrs = {}) {
+    const e = document.createElementNS(SVGNS, tag);
+    Object.keys(attrs).forEach((k) => e.setAttribute(k, attrs[k]));
+    return e;
+  }
+  /* An analog clock face showing h24:m (12-hour dial) */
+  function clockSvg(h24, m, size = 110) {
+    const svg = svgEl("svg", { viewBox: "0 0 100 100", width: size, height: size, class: "clock-svg", role: "img", "aria-label": digital(h12(h24), m) });
+    svg.append(svgEl("circle", { cx: 50, cy: 50, r: 47, class: "cl-face" }));
+    const at = (deg, r) => [(50 + r * Math.sin((deg * Math.PI) / 180)).toFixed(2), (50 - r * Math.cos((deg * Math.PI) / 180)).toFixed(2)];
+    for (let i = 0; i < 60; i++) {
+      const big = i % 5 === 0;
+      const [x1, y1] = at(i * 6, big ? 40 : 43.5), [x2, y2] = at(i * 6, 46);
+      svg.append(svgEl("line", { x1, y1, x2, y2, class: "cl-tick", "stroke-width": big ? 1.6 : 0.6 }));
+    }
+    for (let k = 1; k <= 12; k++) {
+      const [x, y] = at(k * 30, 32);
+      const t = svgEl("text", { x, y: (+y + 3).toFixed(2), class: "cl-num" });
+      t.textContent = String(k);
+      svg.append(t);
+    }
+    const hand = (deg, len, w, cls) => { const [x, y] = at(deg, len); return svgEl("line", { x1: 50, y1: 50, x2: x, y2: y, "stroke-width": w, "stroke-linecap": "round", class: cls }); };
+    svg.append(hand(((h24 % 12) + m / 60) * 30, 22, 3.4, "cl-hour"), hand(m * 6, 34, 2.2, "cl-min"), svgEl("circle", { cx: 50, cy: 50, r: 2.6, class: "cl-pin" }));
+    return svg;
+  }
+
+  /* Explorer: set any time, see the clock, the digits, the everyday phrase and the official phrase (and hear them). b.h, b.m = start */
+  B.clockLab = (b = {}) => {
+    let h24 = b.h == null ? 7 : b.h, m = b.m == null ? 45 : b.m;
+    const MINS = [0, 2, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 58];
+    const face = h("div", { class: "cl-face-wrap" });
+    const dig = h("div", { class: "cl-digital" });
+    const privText = h("span", { class: "cl-text" }), privAlt = h("span", { class: "cl-alt muted small" });
+    const offText = h("span", { class: "cl-text" });
+    const hs = h("select", { class: "sel", "aria-label": "Giờ", onchange: () => { h24 = +hs.value; paint(); } },
+      Array.from({ length: 24 }, (x, i) => h("option", { value: String(i) }, pad2(i) + " giờ")));
+    const ms = h("select", { class: "sel", "aria-label": "Phút", onchange: () => { m = +ms.value; paint(); } },
+      MINS.map((x) => h("option", { value: String(x) }, pad2(x) + " phút" + (x === 2 ? " (kurz nach)" : x === 58 ? " (kurz vor)" : ""))));
+    let pText = "", oText = "";
+    function paint() {
+      hs.value = String(h24);
+      ms.value = String(m);
+      face.textContent = "";
+      face.append(clockSvg(h24, m, 160));
+      dig.textContent = digital(h24, m);
+      const p = timePrivate(h24, m);
+      pText = "Es ist " + p[0] + ".";
+      oText = "Es ist " + timeOfficial(h24, m) + ".";
+      privText.textContent = pText;
+      privAlt.textContent = m === 20 || m === 40 || m >= 56 ? "cũng đúng: " + p.slice(1).join(" · ") : "";
+      offText.textContent = oText;
+    }
+    const step = (dm) => {
+      const base = h24 * 60 + Math.round(m / 5) * 5;
+      const t = (((base + dm) % 1440) + 1440) % 1440;
+      h24 = Math.floor(t / 60);
+      m = t % 60;
+      paint();
+    };
+    const randomize = () => { h24 = rnd(0, 23); m = STEPS[rnd(0, 11)]; paint(); };
+    const line = (tag, text, alt) => h("div", { class: "cl-line" }, h("span", { class: "cl-tag", lang: "vi" }, tag), text, alt || null,
+      btn("🔊", () => Speech.say(text.textContent), "icon-btn tiny", "Nghe"), btn("🐢", () => Speech.say(text.textContent, { slow: true }), "icon-btn tiny", "Nghe chậm"));
+    const wrap = h("div", { class: "clock-lab" }, face,
+      h("div", { class: "cl-side" },
+        h("div", { class: "cl-controls" }, hs, ms, btn("−5′", () => step(-5), "btn small ghost"), btn("+5′", () => step(5), "btn small ghost"), btn("🎲 Ngẫu nhiên", randomize, "btn small ghost")),
+        dig,
+        line("Thường ngày", privText, privAlt),
+        line("Chính thức", offText)));
+    paint();
+    return wrap;
+  };
+
+  /* Quiz: mode "read" = see the clock (or the digits for official times) and pick the phrase;
+     mode "hear" = hear the phrase and pick the clock (or the digits). style: "private" | "official" | "mixed".
+     b.minutes = allowed minutes (default every five), b.kurz = also use kurz vor / kurz nach, b.hours = [from, to] */
+  B.clockPick = (b) => {
+    const mode = b.mode || "read";
+    const N = b.n || 6;
+    const sc = scoreLine();
+    let ok = 0, done = 0;
+    const used = new Set();
+    const rows = Array.from({ length: N }, (x, i) => {
+      const style = b.style === "mixed" ? (Math.random() < 0.5 ? "private" : "official") : b.style || "private";
+      let t, guard = 0;
+      do { t = randTime(b, style); } while (used.has(style + timeKey(style, t)) && ++guard < 40);
+      used.add(style + timeKey(style, t));
+      const [h24, m] = t;
+      const right = timePhrases(style, h24, m)[0];
+      const opts = shuffle([t, ...timeDistractors(style, h24, m)]);
+      const rightIdx = opts.findIndex((o) => timeKey(style, o) === timeKey(style, t));
+      const shown = timeShown(style, t);
+      const sayText = "Es ist " + right + ".";
+      const textOf = (o) => timePhrases(style, o[0], o[1])[0];
+      const asClock = mode === "hear" && style === "private";
+      const reveal = h("span", { class: "reveal", hidden: true }, shown + " · Es ist " + right);
+      const head = mode === "read"
+        ? h("div", { class: "cl-q" }, style === "private" ? clockSvg(h24, m, 92) : h("span", { class: "cl-digital small" }, shown), h("span", { class: "muted", lang: "vi" }, "Es ist …"))
+        : h("div", { class: "cl-q" }, btn("🔊", () => Speech.say(sayText, { rate: 0.85 }), "btn small", "Nghe"), btn("🐢", () => Speech.say(sayText, { slow: true }), "icon-btn", "Nghe chậm"),
+          h("span", { class: "muted small", lang: "vi" }, style === "official" ? "(giờ chính thức)" : "(giờ thường ngày)"));
+      const row = h("div", { class: "hp-row cl-row" }, h("b", {}, i + 1 + "."), head,
+        h("span", { class: "hp-opts" }, opts.map((o, j) => h("button", { type: "button", class: "pick" + (asClock ? " clock-opt" : ""), "data-time": timeShown(style, o), onclick: (e) => {
+          if (row.dataset.done) return;
+          row.dataset.done = 1;
+          done++;
+          const good = j === rightIdx;
+          if (good) ok++;
+          else Missed.add("cp:" + mode + style + shown, mode === "read"
+            ? { type: "choice", q: "🕒 " + shown + " — Es ist …", opts: opts.map(textOf), a: rightIdx }
+            : { type: "choice", q: "<span class='say-inline' data-say='" + esc(sayText) + "'>🔊 Bấm nghe</span> — mấy giờ?", opts: opts.map((x) => timeShown(style, x)), a: rightIdx });
+          e.currentTarget.classList.add(good ? "ok" : "bad");
+          $$(".pick", row)[rightIdx].classList.add("ok");
+          reveal.hidden = false;
+          Speech.say(sayText);
+          if (done === N) sc.set(ok, done);
+        } }, mode === "read" ? textOf(o) : asClock ? clockSvg(o[0], o[1], 78) : timeShown(style, o)))),
+        reveal);
+      return row;
+    });
+    const wrap = h("div", { class: "hear-pick clock-pick" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => wrap.replaceWith(B.clockPick(b)), "btn small ghost")));
+    return wrap;
+  };
+
+  /* Write: mode "words" = see the digits (and the clock) and type the phrase; mode "digits" = read the phrase and type the digits (7:45).
+     Typing "Es ist …" in front is fine. */
+  B.timeWrite = (b) => {
+    const mode = b.mode || "words";
+    const N = b.n || 6;
+    const sc = scoreLine();
+    let ok = 0, n = 0;
+    const used = new Set();
+    const rows = Array.from({ length: N }, (x, i) => {
+      const style = b.style === "mixed" ? (Math.random() < 0.5 ? "private" : "official") : b.style || "private";
+      let t, guard = 0;
+      do { t = randTime(b, style); } while (used.has(style + timeKey(style, t)) && ++guard < 40);
+      used.add(style + timeKey(style, t));
+      const [h24, m] = t;
+      const phrases = timePhrases(style, h24, m);
+      const shown = timeShown(style, t);
+      const okMinutes = (style === "official" ? [h24] : [h24 % 12, (h24 % 12) + 12]).map((hh) => hh * 60 + m);
+      const input = textInput({ size: mode === "digits" ? 8 : 34, "aria-label": "Câu trả lời" });
+      const res = h("span", { class: "sp-res" });
+      const go = () => {
+        if (row.dataset.done) return;
+        const raw = input.value.trim();
+        if (!raw) return toast("Gõ câu trả lời trước đã.");
+        row.dataset.done = 1;
+        n++;
+        let good = false, note = "";
+        if (mode === "digits") {
+          const mm = raw.match(/^(\d{1,2})\s*[:.]\s*(\d{2})(?:\s*uhr)?$/i);
+          good = !!mm && okMinutes.includes(+mm[1] * 60 + +mm[2]);
+        } else {
+          const r = check(raw.replace(/^es\s+ist\s+/i, ""), phrases);
+          good = r.ok;
+          note = r.note || "";
+        }
+        if (good) ok++;
+        else Missed.add("tw:" + mode + style + shown, { type: "gap", q: mode === "digits" ? "Es ist " + esc(phrases[0]) + " = ___" : shown + " (" + (style === "official" ? "chính thức" : "thường ngày") + ") → Es ist ___", a: [mode === "digits" ? [shown] : phrases] });
+        input.classList.add(good ? "ok" : "bad");
+        res.textContent = (good ? " ✓ " : " ✗ ") + shown + " = " + phrases[0] + (phrases.length > 1 && style === "private" && (m === 20 || m === 40 || m >= 56) ? "  (cũng đúng: " + phrases.slice(1).join(" / ") + ")" : "") + (note ? "  · " + note : "");
+        Speech.say("Es ist " + phrases[0] + ".");
+        if (n === N) sc.set(ok, n);
+      };
+      input.addEventListener("keydown", (e) => { if (e.key === "Enter") go(); });
+      const kind = h("span", { class: "muted small", lang: "vi" }, style === "official" ? "(chính thức)" : "(thường ngày)");
+      const question = mode === "digits"
+        ? h("span", { class: "nw-q cl-phrase" }, h("span", { class: "say-inline", "data-say": "Es ist " + phrases[0] + "." }, "Es ist " + phrases[0] + "."))
+        : h("span", { class: "nw-q" }, shown);
+      const row = h("div", { class: "sp-row cl-row" }, h("b", {}, i + 1 + "."),
+        mode === "words" && style === "private" && b.clock !== false ? clockSvg(h24, m, 64) : null,
+        question, kind, h("span", {}, "="), input, btn("Kiểm tra", go, "btn small ghost"), res);
+      return row;
+    });
+    const wrap = h("div", { class: "spell" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => wrap.replaceWith(B.timeWrite(b)), "btn small ghost")));
     return wrap;
   };
 

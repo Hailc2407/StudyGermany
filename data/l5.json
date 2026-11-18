@@ -1,0 +1,1484 @@
+{
+  "id": "l5",
+  "no": 5,
+  "title": "Mein Tag",
+  "vi": "Một ngày của tôi: động từ tách, giờ giấc, thứ trong tuần, các buổi trong ngày, giờ mở cửa",
+  "book": "Kursbuch tr. 58–69 · Arbeitsbuch tr. 52–62 · Lernwortschatz L5",
+  "audio": ["KB 2/1-26", "AB 44-57"],
+  "sets": [
+    {
+      "id": "a", "title": "Truyện ảnh và động từ tách", "session": "1",
+      "items": [
+        {"id": "machen", "de": "machen", "kind": "verb", "forms": "ich mache · du machst · er/sie macht", "vi": "làm", "syl": "MA·chen", "note": "ch sau a đọc „kh“: „ma-khen“. Was machst du? = Bạn làm gì (đang làm gì)?", "ex": ["Lara macht eine Präsentation.", "Lara đang thuyết trình."]},
+        {"id": "praesentation", "de": "Präsentation", "art": "die", "pl": "Präsentationen", "kind": "noun", "emoji": "📊", "vi": "bài thuyết trình", "syl": "Prä·sen·ta·TION", "en": "≈ presentation", "note": "Nhấn âm cuối. eine Präsentation machen = thuyết trình.", "ex": ["Lara macht eine Präsentation.", "Lara thuyết trình."]},
+        {"id": "fruehstuecken", "de": "frühstücken", "kind": "verb", "forms": "ich frühstücke · du frühstückst · er/sie frühstückt", "emoji": "🥐", "vi": "ăn sáng", "syl": "FRÜH·stü·cken", "note": "früh (sớm) + stücken. das Frühstück = bữa sáng. ü: tròn môi, đặt lưỡi như nói „i“.", "ex": ["Wir frühstücken zusammen.", "Chúng tôi ăn sáng cùng nhau."]},
+        {"id": "einkaufen", "de": "einkaufen", "kind": "verb", "forms": "ich kaufe ein · du kaufst ein · er/sie kauft ein", "emoji": "🛍️", "vi": "đi mua sắm, đi chợ", "syl": "EIN·kau·fen", "note": "Động từ tách: kaufen … ein. Tiền tố ein- được nhấn.", "ex": ["Ich kaufe im Supermarkt ein.", "Tôi đi siêu thị mua đồ."]},
+        {"id": "spazieren-gehen", "de": "spazieren gehen", "kind": "verb", "forms": "ich gehe spazieren · du gehst spazieren · er/sie geht spazieren", "emoji": "🚶", "vi": "đi dạo", "syl": "spa·ZIE·ren GE·hen", "note": "spazieren đứng cuối câu giống như tiền tố: Lara geht spazieren.", "ex": ["Lara geht spazieren.", "Lara đi dạo."]},
+        {"id": "aufraeumen", "de": "aufräumen", "kind": "verb", "forms": "ich räume auf · du räumst auf · er/sie räumt auf", "emoji": "🧹", "vi": "dọn dẹp, dọn gọn", "syl": "AUF·räu·men", "note": "Động từ tách: räumen … auf. äu đọc „oi“: „rôi-men“.", "ex": ["Sie räumt die Küche auf.", "Cô ấy dọn bếp."]},
+        {"id": "aufstehen", "de": "aufstehen", "kind": "verb", "forms": "ich stehe auf · du stehst auf · er/sie steht auf", "emoji": "⏰", "vi": "thức dậy, đứng dậy", "syl": "AUF·ste·hen", "note": "Động từ tách: stehen … auf. st sau tiền tố vẫn đọc „sht“: „AUF-shte-hen“.", "ex": ["Lara steht früh auf.", "Lara dậy sớm."]},
+        {"id": "gehen", "de": "gehen", "kind": "verb", "forms": "ich gehe · du gehst · er/sie geht", "vi": "đi (bộ), đi đến", "syl": "GE·hen", "note": "zum = zu dem, zur = zu der, ins = in das: cụm cố định zum Deutschkurs, zur Arbeit, ins Bett.", "ex": ["Lara geht zum Deutschkurs.", "Lara đi học lớp tiếng Đức."]},
+        {"id": "oder", "de": "oder", "kind": "word", "vi": "hoặc, hay", "ex": ["Sie geht spazieren oder kauft ein.", "Cô ấy đi dạo hoặc đi mua đồ."]},
+        {"id": "arbeiten", "de": "arbeiten", "kind": "verb", "forms": "ich arbeite · du arbeitest · er/sie arbeitet", "vi": "làm việc", "syl": "AR·bei·ten", "note": "Thêm -e- trước -st / -t cho dễ đọc: du arbeitest, er arbeitet. Cùng họ: die Arbeit (Lektion 4).", "ex": ["Sofia arbeitet sehr viel.", "Sofia làm việc rất nhiều."]},
+        {"id": "muede", "de": "müde", "kind": "word", "emoji": "😴", "vi": "mệt, buồn ngủ", "syl": "MÜ·de", "note": "ü dài. müde = mệt vì cần ngủ.", "ex": ["Am Abend ist Sofia müde.", "Buổi tối Sofia mệt."]},
+        {"id": "anrufen", "de": "anrufen", "kind": "verb", "forms": "ich rufe an · du rufst an · er/sie ruft an", "emoji": "📞", "vi": "gọi điện cho ai", "syl": "AN·ru·fen", "note": "Động từ tách: rufen … an. Gọi ai thì không cần giới từ: Lara ruft ihre Familie an (ihre = của cô ấy).", "ex": ["Lara ruft ihre Familie an.", "Lara gọi điện cho gia đình."]},
+        {"id": "frueh", "de": "früh", "kind": "word", "vi": "sớm", "note": "Đối nghĩa: spät (muộn, học ở Buổi 2).", "ex": ["Ich stehe früh auf.", "Tôi dậy sớm."]},
+        {"id": "supermarkt", "de": "Supermarkt", "art": "der", "pl": "Supermärkte", "kind": "noun", "emoji": "🛒", "vi": "siêu thị", "syl": "SU·per·markt", "ex": ["Sie kauft im Supermarkt ein.", "Cô ấy mua đồ ở siêu thị."]},
+        {"id": "fernsehen", "de": "fernsehen", "kind": "verb", "forms": "ich sehe fern · du siehst fern · er/sie sieht fern", "emoji": "📺", "vi": "xem tivi", "syl": "FERN·se·hen", "note": "Động từ tách và đổi nguyên âm e → ie ở du và er/sie (sehen: siehst, sieht), như sprechen → sprichst ở Lektion 1.", "ex": ["Sie sieht ein bisschen fern.", "Cô ấy xem tivi một chút."]},
+        {"id": "mit", "de": "mit", "kind": "word", "vi": "cùng với", "note": "mit + người: mit Lara, mit Lili.", "ex": ["Sofia frühstückt mit Lara und Lili.", "Sofia ăn sáng cùng Lara và Lili."]},
+        {"id": "spielen", "de": "spielen", "kind": "verb", "forms": "ich spiele · du spielst · er/sie spielt", "emoji": "🎲", "vi": "chơi", "syl": "SPIE·len", "note": "sp- ở đầu từ đọc „shp“: „SHPI-len“.", "ex": ["Sie spielt mit Lili.", "Cô ấy chơi với Lili."]},
+        {"id": "hoeren", "de": "hören", "kind": "verb", "forms": "ich höre · du hörst · er/sie hört", "emoji": "🎧", "vi": "nghe", "syl": "HÖ·ren", "note": "ö: tròn môi như „ô“, đặt lưỡi như „ê“.", "ex": ["Lara hört Musik.", "Lara nghe nhạc."]},
+        {"id": "musik", "de": "Musik", "art": "die", "kind": "noun", "emoji": "🎵", "vi": "âm nhạc", "syl": "mu·SIK", "en": "≈ music", "note": "Nhấn âm cuối. Thường không có số nhiều.", "ex": ["Ich höre gern Musik.", "Tôi thích nghe nhạc."]},
+        {"id": "abendessen", "de": "Abendessen", "art": "das", "pl": "Abendessen", "kind": "noun", "emoji": "🍽️", "vi": "bữa tối", "syl": "A·bend·es·sen", "note": "Abend (buổi tối) + essen. Cùng họ: das Frühstück, das Mittagessen.", "ex": ["Lara kocht das Abendessen.", "Lara nấu bữa tối."]},
+        {"id": "deutschkurs", "de": "Deutschkurs", "art": "der", "pl": "Deutschkurse", "kind": "noun", "emoji": "🏫", "vi": "lớp tiếng Đức", "syl": "DEUTSCH·kurs", "ex": ["Lara geht zum Deutschkurs.", "Lara đi học lớp tiếng Đức."]},
+        {"id": "ins-bett-gehen", "de": "ins Bett gehen", "kind": "phrase", "vi": "đi ngủ", "note": "ins = in das (cụm cố định). Cùng kiểu: ins Kino gehen (đi xem phim).", "ex": ["Sofia geht ins Bett.", "Sofia đi ngủ."]},
+        {"id": "zur-arbeit-gehen", "de": "zur Arbeit gehen", "kind": "phrase", "vi": "đi làm", "note": "zur = zu der.", "ex": ["Sofia geht zur Arbeit.", "Sofia đi làm."]},
+        {"id": "was-machst-du-gern", "de": "Was machst du gern? / Was machen Sie gern?", "say": "Was machst du gern? Was machen Sie gern?", "ans": "Was machst du gern", "kind": "phrase", "vi": "Bạn thích làm gì? (du = thân mật, Sie = lịch sự)"}
+      ]
+    },
+    {
+      "id": "b", "title": "Giờ giấc", "session": "2",
+      "items": [
+        {"id": "uhr", "de": "Uhr", "art": "die", "pl": "Uhren", "kind": "noun", "emoji": "🕒", "vi": "đồng hồ; giờ", "note": "Đọc „u-a“ (r cuối nhẹ). Uhr là cái đồng hồ, và cũng là „giờ“ khi nói sieben Uhr.", "ex": ["Das ist eine Uhr.", "Đây là một chiếc đồng hồ."]},
+        {"id": "spaet", "de": "spät", "kind": "word", "vi": "muộn", "note": "ä dài: „spêt“. Hỏi giờ: Wie spät ist es? (nghĩa đen: „muộn thế nào rồi?“). Đối nghĩa: früh.", "ex": ["Es ist schon spät.", "Đã muộn rồi."]},
+        {"id": "schon", "de": "schon", "kind": "word", "vi": "đã … rồi", "note": "schon = đã … rồi (hơi bất ngờ vì sớm hơn dự kiến). ⚠ Khác schön (đẹp).", "ex": ["Ist es schon zwölf?", "Đã 12 giờ rồi à?"]},
+        {"id": "erst", "de": "erst", "kind": "word", "vi": "mới (chỉ mới)", "note": "erst = mới … thôi, ít hơn mong đợi. Đối lập với schon.", "ex": ["Nein, es ist erst Viertel vor zwölf.", "Không, mới 11 giờ 45 thôi."]},
+        {"id": "viertel", "de": "Viertel", "art": "das", "pl": "Viertel", "kind": "noun", "vi": "một phần tư; 15 phút", "syl": "VIER·tel", "note": "Viertel nach drei = 3:15; Viertel vor vier = 3:45. ie = i dài.", "ex": ["Es ist Viertel nach drei.", "Bây giờ là 3 giờ 15."]},
+        {"id": "vor", "de": "vor", "kind": "word", "vi": "trước (… phút trước giờ)", "note": "fünf vor zwei = 1:55 (còn 5 phút nữa đến 2 giờ). Giống tiếng Anh „to“ (five to two).", "ex": ["Es ist zehn vor acht.", "Bây giờ là 7 giờ 50."]},
+        {"id": "nach", "de": "nach", "kind": "word", "vi": "sau (… phút sau giờ)", "note": "zehn nach zwei = 2:10. Giống tiếng Anh „past“ (ten past two).", "ex": ["Es ist fünf nach drei.", "Bây giờ là 3 giờ 5."]},
+        {"id": "halb", "de": "halb", "kind": "word", "vi": "rưỡi, một nửa", "note": "⚠ halb zwei = 1:30 (nửa đường tới 2 giờ), KHÔNG phải 2:30. Luôn nói giờ SAU. b cuối đọc „p“.", "ex": ["Es ist halb neun.", "Bây giờ là 8 giờ 30."]},
+        {"id": "zeichnen", "de": "zeichnen", "kind": "verb", "forms": "ich zeichne · du zeichnest · er/sie zeichnet", "vi": "vẽ", "syl": "ZEICH·nen", "note": "ei = „ai“; thêm -e- như arbeiten: du zeichnest.", "ex": ["Zeichnen Sie die Uhrzeit.", "Hãy vẽ giờ."]},
+        {"id": "kurz", "de": "kurz", "kind": "word", "vi": "ngắn; ngay (trước / sau)", "note": "kurz vor zwölf = ngay trước 12 giờ (11:58); kurz nach zwölf = ngay sau 12 giờ (12:03).", "ex": ["Es ist kurz vor zwölf.", "Sắp 12 giờ rồi."]},
+        {"id": "gleich", "de": "gleich", "kind": "word", "vi": "ngay; sắp (đúng giờ)", "note": "gleich zwölf = sắp đúng 12 giờ. Còn nghĩa „ngay lát nữa“: Ich komme gleich.", "ex": ["Es ist gleich zwölf.", "Sắp đúng 12 giờ."]},
+        {"id": "wie-spaet", "de": "Wie spät ist es? / Wie viel Uhr ist es?", "say": "Wie spät ist es? Wie viel Uhr ist es?", "ans": "Wie spät ist es", "kind": "phrase", "vi": "Mấy giờ rồi?"},
+        {"id": "es-ist-halb", "de": "Es ist halb acht.", "kind": "phrase", "vi": "Bây giờ là 7 rưỡi.", "note": "Lưu ý: halb acht = 7:30."},
+        {"id": "ist-es-schon", "de": "Ist es schon zwölf? – Nein, es ist erst elf.", "ans": "Ist es schon zwölf", "kind": "phrase", "vi": "Đã 12 giờ chưa? – Chưa, mới 11 giờ."}
+      ]
+    },
+    {
+      "id": "c", "title": "Các thứ trong tuần", "session": "3",
+      "items": [
+        {"id": "montag", "de": "Montag", "art": "der", "pl": "Montage", "kind": "noun", "vi": "thứ Hai", "syl": "MON·tag", "en": "≈ Monday", "note": "Cả 7 ngày đều giống der. tag cuối đọc „tak“.", "ex": ["Am Montag arbeite ich.", "Thứ Hai tôi làm việc."]},
+        {"id": "dienstag", "de": "Dienstag", "art": "der", "pl": "Dienstage", "kind": "noun", "vi": "thứ Ba", "syl": "DIENS·tag", "note": "ie = i dài.", "ex": ["Am Dienstag spielt Tim Fußball.", "Thứ Ba Tim đá bóng."]},
+        {"id": "mittwoch", "de": "Mittwoch", "art": "der", "pl": "Mittwoche", "kind": "noun", "vi": "thứ Tư", "syl": "MITT·woch", "note": "Mitte (giữa) + Woche (tuần) = giữa tuần. ch cuối đọc „kh“.", "ex": ["Am Mittwoch lerne ich Deutsch.", "Thứ Tư tôi học tiếng Đức."]},
+        {"id": "donnerstag", "de": "Donnerstag", "art": "der", "pl": "Donnerstage", "kind": "noun", "vi": "thứ Năm", "syl": "DON·ners·tag", "en": "≈ Thursday (Donner = sấm)", "ex": ["Am Donnerstag rufe ich Mama an.", "Thứ Năm tôi gọi cho mẹ."]},
+        {"id": "freitag", "de": "Freitag", "art": "der", "pl": "Freitage", "kind": "noun", "vi": "thứ Sáu", "syl": "FREI·tag", "en": "≈ Friday", "ex": ["Am Freitag kaufe ich ein.", "Thứ Sáu tôi đi mua đồ."]},
+        {"id": "samstag", "de": "Samstag", "art": "der", "pl": "Samstage", "kind": "noun", "vi": "thứ Bảy", "syl": "SAMS·tag", "note": "Miền Bắc và miền Đông nước Đức còn nói der Sonnabend.", "ex": ["Am Samstag koche ich.", "Thứ Bảy tôi nấu ăn."]},
+        {"id": "sonntag", "de": "Sonntag", "art": "der", "pl": "Sonntage", "kind": "noun", "vi": "Chủ nhật", "syl": "SONN·tag", "en": "≈ Sunday", "ex": ["Am Sonntag schlafe ich lange.", "Chủ nhật tôi ngủ nướng."]},
+        {"id": "woche", "de": "Woche", "art": "die", "pl": "Wochen", "kind": "noun", "emoji": "📅", "vi": "tuần", "syl": "WO·che", "note": "ch sau o đọc „kh“.", "ex": ["Die Woche hat sieben Tage.", "Một tuần có bảy ngày."]},
+        {"id": "wochenende", "de": "Wochenende", "art": "das", "pl": "Wochenenden", "kind": "noun", "emoji": "🏖️", "vi": "cuối tuần", "syl": "WO·chen·en·de", "note": "= Samstag + Sonntag. am Wochenende = vào cuối tuần.", "ex": ["Am Wochenende schlafe ich lange.", "Cuối tuần tôi ngủ nướng."]},
+        {"id": "termin", "de": "Termin", "art": "der", "pl": "Termine", "kind": "noun", "vi": "cuộc hẹn, lịch hẹn", "syl": "ter·MIN", "note": "Nhấn âm cuối. Termin = giờ hẹn bác sĩ, cuộc họp… (không phải hẹn hò).", "ex": ["Der Termin ist am Freitag.", "Cuộc hẹn vào thứ Sáu."]},
+        {"id": "terminkalender", "de": "Terminkalender", "art": "der", "pl": "Terminkalender", "kind": "noun", "vi": "sổ lịch hẹn", "syl": "ter·MIN·ka·len·der", "ex": ["Mein Terminkalender ist voll.", "Sổ lịch hẹn của tôi kín chỗ."]},
+        {"id": "naechst", "de": "nächst-", "kind": "word", "vi": "tới, sau (nächste Woche = tuần sau)", "syl": "NÄCHST", "note": "ä = „ê“; ch + st: „nêxst“. Đuôi -e vì Woche là die-Wort (đuôi tính từ học sau).", "ex": ["Nächste Woche habe ich keine Zeit.", "Tuần sau tôi không có thời gian."]}
+      ]
+    },
+    {
+      "id": "c2", "title": "Thời điểm, hẹn gặp, lịch", "session": "3",
+      "items": [
+        {"id": "wann", "de": "wann", "kind": "word", "vi": "khi nào, lúc nào", "note": "Hỏi thời điểm hoặc khoảng thời gian. ⚠ wann ≠ wenn.", "ex": ["Wann fängt der Kurs an?", "Khi nào lớp bắt đầu?"]},
+        {"id": "am", "de": "am", "kind": "word", "vi": "vào (thứ …, buổi …)", "note": "am = an dem. Dùng với thứ trong tuần và buổi trong ngày: am Montag, am Abend (ngoại lệ: in der Nacht).", "ex": ["Am Montag lerne ich Deutsch.", "Thứ Hai tôi học tiếng Đức."]},
+        {"id": "um", "de": "um", "kind": "word", "vi": "lúc (giờ cụ thể)", "note": "um + giờ: um halb neun, um zwei Uhr.", "ex": ["Ich stehe um sieben Uhr auf.", "Tôi dậy lúc 7 giờ."]},
+        {"id": "von-bis", "de": "von … bis …", "say": "von bis", "ans": "von bis", "kind": "word", "vi": "từ … đến …", "note": "Khoảng thời gian: von Montag bis Freitag, von acht bis drei Uhr.", "ex": ["Der Kurs ist von Montag bis Freitag.", "Lớp học từ thứ Hai đến thứ Sáu."]},
+        {"id": "party", "de": "Party", "art": "die", "pl": "Partys", "kind": "noun", "emoji": "🎉", "vi": "bữa tiệc", "syl": "PAR·ty", "en": "≈ party", "ex": ["Ich mache am Freitag eine Party.", "Thứ Sáu tôi tổ chức tiệc."]},
+        {"id": "zeit", "de": "Zeit", "art": "die", "kind": "noun", "emoji": "⏳", "vi": "thời gian; thì giờ rảnh", "note": "Hast du Zeit? = Bạn có rảnh không? Ich habe keine Zeit. = Tôi không có thời gian.", "ex": ["Hast du am Samstag Zeit?", "Thứ Bảy bạn có rảnh không?"]},
+        {"id": "fussball", "de": "Fußball", "art": "der", "kind": "noun", "emoji": "⚽", "vi": "bóng đá", "syl": "FUSS·ball", "note": "ß = „s“, u dài. Fußball spielen = chơi bóng đá.", "ex": ["Tim spielt am Dienstag Fußball.", "Thứ Ba Tim đá bóng."]},
+        {"id": "anfangen", "de": "anfangen", "kind": "verb", "forms": "ich fange an · du fängst an · er/sie fängt an", "emoji": "▶️", "vi": "bắt đầu", "syl": "AN·fan·gen", "note": "Động từ tách: fangen … an. a → ä ở du và er/sie (fängst, fängt).", "ex": ["Der Deutschkurs fängt um neun Uhr an.", "Lớp tiếng Đức bắt đầu lúc 9 giờ."]},
+        {"id": "passen", "de": "passen", "kind": "verb", "forms": "es passt · sie passen", "vi": "hợp, vừa, tiện", "syl": "PAS·sen", "note": "Das passt gut. = Được đấy / Thế là tiện.", "ex": ["Der Termin passt gut.", "Cuộc hẹn này tiện."]},
+        {"id": "schlafen", "de": "schlafen", "kind": "verb", "forms": "ich schlafe · du schläfst · er/sie schläft", "emoji": "😴", "vi": "ngủ", "syl": "SCHLA·fen", "note": "a → ä ở du và er/sie. lange schlafen = ngủ nướng.", "ex": ["Am Sonntag schläft er lange.", "Chủ nhật anh ấy ngủ nướng."]},
+        {"id": "intensivkurs", "de": "Intensivkurs", "art": "der", "pl": "Intensivkurse", "kind": "noun", "vi": "khóa học cấp tốc", "syl": "in·ten·SIV·kurs", "ex": ["Der Intensivkurs ist von Montag bis Freitag.", "Khóa cấp tốc từ thứ Hai đến thứ Sáu."]},
+        {"id": "mama", "de": "Mama", "art": "die", "pl": "Mamas", "kind": "noun", "emoji": "👩", "vi": "mẹ (thân mật)", "syl": "MA·ma", "ex": ["Tim ruft Mama an.", "Tim gọi cho mẹ."]},
+        {"id": "papa", "de": "Papa", "art": "der", "pl": "Papas", "kind": "noun", "emoji": "👨", "vi": "bố (thân mật)", "syl": "PA·pa", "ex": ["Papa arbeitet am Samstag.", "Thứ Bảy bố làm việc."]},
+        {"id": "hast-du-zeit", "de": "Hast du Zeit?", "kind": "phrase", "vi": "Bạn có rảnh không?", "note": "Mời hoặc hẹn: Hast du am Freitag Zeit?"},
+        {"id": "das-passt-gut", "de": "Das passt gut.", "kind": "phrase", "vi": "Thế là tiện / Được đấy."},
+        {"id": "da-habe-ich-keine-zeit", "de": "Da habe ich keine Zeit.", "kind": "phrase", "vi": "Lúc đó tôi không rảnh.", "note": "Từ chối lịch hẹn một cách lịch sự."},
+        {"id": "um-wie-viel-uhr", "de": "Um wie viel Uhr …?", "say": "Um wie viel Uhr gehst du ins Bett?", "ans": "Um wie viel Uhr", "kind": "phrase", "vi": "Lúc mấy giờ …?", "note": "Hỏi giờ cụ thể. Trả lời: Um halb elf. / Um elf Uhr."}
+      ]
+    },
+    {
+      "id": "d", "title": "Các buổi trong ngày", "session": "4",
+      "items": [
+        {"id": "morgen", "de": "Morgen", "art": "der", "pl": "Morgen", "kind": "noun", "emoji": "🌅", "vi": "buổi sáng (sớm)", "syl": "MOR·gen", "note": "Khác với lời chào Guten Morgen! am Morgen = vào buổi sáng.", "ex": ["Am Morgen stehe ich früh auf.", "Buổi sáng tôi dậy sớm."]},
+        {"id": "vormittag", "de": "Vormittag", "art": "der", "pl": "Vormittage", "kind": "noun", "emoji": "☀️", "vi": "buổi trước trưa (khoảng 9–12 giờ)", "syl": "VOR·mit·tag", "ex": ["Am Vormittag lerne ich Deutsch.", "Buổi trước trưa tôi học tiếng Đức."]},
+        {"id": "mittag", "de": "Mittag", "art": "der", "pl": "Mittage", "kind": "noun", "emoji": "🌞", "vi": "buổi trưa (khoảng 12–14 giờ)", "syl": "MIT·tag", "ex": ["Am Mittag esse ich mit Anna.", "Buổi trưa tôi ăn cùng Anna."]},
+        {"id": "nachmittag", "de": "Nachmittag", "art": "der", "pl": "Nachmittage", "kind": "noun", "emoji": "🌤️", "vi": "buổi chiều", "syl": "NACH·mit·tag", "note": "ach: „kh“. Khác Mittag (trưa).", "ex": ["Am Nachmittag gehe ich spazieren.", "Buổi chiều tôi đi dạo."]},
+        {"id": "abend", "de": "Abend", "art": "der", "pl": "Abende", "kind": "noun", "emoji": "🌆", "vi": "buổi tối", "syl": "A·bend", "note": "Lời chào Guten Abend bạn đã học; am Abend = vào buổi tối.", "ex": ["Am Abend sehe ich fern.", "Buổi tối tôi xem tivi."]},
+        {"id": "nacht", "de": "Nacht", "art": "die", "pl": "Nächte", "kind": "noun", "emoji": "🌙", "vi": "đêm", "note": "⚠ Ngoại lệ: in der Nacht (không nói am Nacht). Số nhiều Nächte.", "ex": ["In der Nacht schlafe ich.", "Ban đêm tôi ngủ."]},
+        {"id": "kino", "de": "Kino", "art": "das", "pl": "Kinos", "kind": "noun", "emoji": "🎬", "vi": "rạp chiếu phim", "syl": "KI·no", "note": "ins Kino gehen = đi xem phim.", "ex": ["Am Abend gehe ich ins Kino.", "Buổi tối tôi đi xem phim."]},
+        {"id": "chatten", "de": "chatten", "kind": "verb", "forms": "ich chatte · du chattest · er/sie chattet", "emoji": "💬", "vi": "chat (trò chuyện trực tuyến)", "syl": "CHAT·ten", "note": "ch đọc „tsh“ như tiếng Anh. Thêm -e- như arbeiten: er chattet.", "ex": ["In der Nacht chattet Max.", "Ban đêm Max chat."]},
+        {"id": "raten", "de": "raten", "kind": "verb", "forms": "ich rate · du rätst · er/sie rät", "vi": "đoán", "syl": "RA·ten", "note": "a → ä ở du và er/sie: du rätst, er rät.", "ex": ["Die anderen raten: Was ist falsch?", "Những người khác đoán: Cái gì sai?"]},
+        {"id": "jeder", "de": "jeden / jede", "say": "jeden Tag, jede Nacht", "ans": "jeden", "kind": "word", "vi": "mỗi, mọi", "note": "Với thời gian: jeden Tag / Morgen / Abend (der-Wort), jede Nacht / Woche (die-Wort).", "ex": ["Ich stehe jeden Morgen um sechs Uhr auf.", "Mỗi sáng tôi dậy lúc 6 giờ."]},
+        {"id": "sport", "de": "Sport", "art": "der", "kind": "noun", "emoji": "🏃", "vi": "thể thao", "note": "Sport machen = tập thể thao.", "ex": ["Am Nachmittag macht er Sport.", "Buổi chiều anh ấy tập thể thao."]},
+        {"id": "computerspiel", "de": "Computerspiel", "art": "das", "pl": "Computerspiele", "kind": "noun", "emoji": "🎮", "vi": "trò chơi điện tử", "syl": "com·PU·ter·spiel", "ex": ["Am Nachmittag spielt er Computerspiele.", "Buổi chiều anh ấy chơi game."]},
+        {"id": "doch", "de": "doch", "kind": "word", "vi": "có chứ! (trả lời câu phủ định)", "note": "Doch = „ngược lại, có chứ“: Du stehst nicht um sechs auf. – Doch! (Có chứ!)", "ex": ["Du hast keine Zeit? – Doch!", "Bạn không có thời gian à? – Có chứ!"]},
+        {"id": "in-der-nacht", "de": "in der Nacht", "kind": "phrase", "vi": "vào ban đêm", "note": "Giới từ đặc biệt: in der (không phải am)."},
+        {"id": "jeden-tag", "de": "jeden Tag", "kind": "phrase", "vi": "mỗi ngày", "ex": ["Ich lerne jeden Tag Deutsch.", "Tôi học tiếng Đức mỗi ngày."]},
+        {"id": "ich-glaube", "de": "Ich glaube, …", "kind": "phrase", "vi": "Tôi nghĩ là …", "note": "Dùng để đoán: Ich glaube, du stehst nicht jeden Tag um sechs auf. Trả lời: Stimmt. / Doch."}
+      ]
+    },
+    {
+      "id": "d2", "title": "Thêm: từ trong phần Zwischendurch của sách", "session": "4", "bonus": true,
+      "items": [
+        {"id": "ausgehen", "de": "ausgehen", "kind": "verb", "forms": "ich gehe aus · du gehst aus · er/sie geht aus", "vi": "đi chơi, đi ra ngoài"},
+        {"id": "losgehen", "de": "losgehen", "kind": "verb", "forms": "ich gehe los · du gehst los · er/sie geht los", "vi": "lên đường, xuất phát"},
+        {"id": "treffen", "de": "treffen", "kind": "verb", "forms": "ich treffe · du triffst · er/sie trifft", "vi": "gặp gỡ", "note": "e → i: triffst, trifft."},
+        {"id": "lesen", "de": "lesen", "kind": "verb", "forms": "ich lese · du liest · er/sie liest", "vi": "đọc", "note": "e → ie: liest."},
+        {"id": "telefonieren", "de": "telefonieren", "kind": "verb", "forms": "ich telefoniere · du telefonierst · er/sie telefoniert", "vi": "nói chuyện điện thoại", "syl": "te·le·fo·NIE·ren"},
+        {"id": "joggen", "de": "joggen", "kind": "verb", "forms": "ich jogge · du joggst · er/sie joggt", "vi": "chạy bộ", "note": "Đọc „dsh“ như tiếng Anh."},
+        {"id": "manchmal", "de": "manchmal", "kind": "word", "vi": "thỉnh thoảng", "syl": "MANCH·mal"},
+        {"id": "mittagessen", "de": "Mittagessen", "art": "das", "pl": "Mittagessen", "kind": "noun", "vi": "bữa trưa", "syl": "MIT·tag·es·sen"},
+        {"id": "mittagspause", "de": "Mittagspause", "art": "die", "pl": "Mittagspausen", "kind": "noun", "vi": "giờ nghỉ trưa", "syl": "MIT·tags·pau·se"}
+      ]
+    },
+    {
+      "id": "e", "title": "Giờ mở cửa", "session": "5",
+      "items": [
+        {"id": "cafe", "de": "Café", "art": "das", "pl": "Cafés", "kind": "noun", "emoji": "☕", "vi": "quán cà phê", "syl": "ca·FÉ", "note": "Nhấn âm cuối; é cuối đọc „ê“.", "ex": ["Das Café ist täglich geöffnet.", "Quán cà phê mở cửa hằng ngày."]},
+        {"id": "taeglich", "de": "täglich", "kind": "word", "vi": "hằng ngày", "syl": "TÄG·lich", "note": "= jeden Tag. ä = „ê“, -lich đọc „lích“.", "ex": ["Die Bibliothek ist täglich geöffnet.", "Thư viện mở cửa hằng ngày."]},
+        {"id": "fahrrad", "de": "Fahrrad", "art": "das", "pl": "Fahrräder", "kind": "noun", "emoji": "🚲", "vi": "xe đạp", "syl": "FAHR·rad", "note": "fahren (đi xe) + Rad (bánh xe). Số nhiều Fahrräder.", "ex": ["Das Fahrrad ist neu.", "Chiếc xe đạp mới."]},
+        {"id": "bibliothek", "de": "Bibliothek", "art": "die", "pl": "Bibliotheken", "kind": "noun", "emoji": "📚", "vi": "thư viện", "syl": "Bi·bli·o·THEK", "note": "Nhấn âm cuối.", "ex": ["Die Bibliothek ist am Montag geöffnet.", "Thư viện mở cửa vào thứ Hai."]},
+        {"id": "feiertag", "de": "Feiertag", "art": "der", "pl": "Feiertage", "kind": "noun", "vi": "ngày lễ", "syl": "FEI·er·tag", "note": "Feier (lễ) + Tag. An Feiertagen = vào các ngày lễ.", "ex": ["Am Feiertag ist die Bibliothek geschlossen.", "Vào ngày lễ thư viện đóng cửa."]},
+        {"id": "geschlossen", "de": "geschlossen", "kind": "word", "emoji": "🔒", "vi": "đóng cửa", "syl": "ge·SCHLOS·sen", "note": "Đối nghĩa: geöffnet.", "ex": ["Am Sonntag ist das Café geschlossen.", "Chủ nhật quán cà phê đóng cửa."]},
+        {"id": "ansage", "de": "Ansage", "art": "die", "pl": "Ansagen", "kind": "noun", "emoji": "📢", "vi": "thông báo (qua loa, điện thoại)", "syl": "AN·sa·ge", "ex": ["Hören Sie die Ansage.", "Hãy nghe thông báo."]},
+        {"id": "offiziell", "de": "offiziell", "kind": "word", "vi": "chính thức", "syl": "of·fi·ZIELL", "note": "offizielle Uhrzeit = giờ chính thức (24 giờ).", "ex": ["Offiziell: neunzehn Uhr dreißig.", "Chính thức: 19 giờ 30."]},
+        {"id": "wann-ist-geoeffnet", "de": "Wann ist … geöffnet?", "say": "Wann ist die Bibliothek geöffnet?", "ans": "Wann ist die Bibliothek geöffnet", "kind": "phrase", "vi": "… mở cửa khi nào?"}
+      ]
+    },
+    {
+      "id": "e2", "title": "Một ngày ở thành phố", "session": "6",
+      "items": [
+        {"id": "film", "de": "Film", "art": "der", "pl": "Filme", "kind": "noun", "emoji": "🎞️", "vi": "bộ phim", "note": "i ngắn, đọc liền một âm tiết: „film“.", "ex": ["Der Film fängt um acht Uhr an.", "Phim bắt đầu lúc 8 giờ."]},
+        {"id": "sehen", "de": "sehen", "kind": "verb", "forms": "ich sehe · du siehst · er/sie sieht", "vi": "nhìn, xem", "syl": "SE·hen", "note": "e → ie ở du và er/sie. Cùng họ với fernsehen.", "ex": ["Ich sehe das Schiff.", "Tôi nhìn thấy con tàu."]},
+        {"id": "museum", "de": "Museum", "art": "das", "pl": "Museen", "kind": "noun", "emoji": "🏛️", "vi": "bảo tàng", "syl": "mu·SE·um", "note": "Số nhiều: die Museen.", "ex": ["Das Museum ist am Montag geschlossen.", "Bảo tàng đóng cửa vào thứ Hai."]},
+        {"id": "geoeffnet", "de": "geöffnet", "kind": "word", "vi": "mở cửa", "syl": "ge·ÖFF·net", "note": "Đối nghĩa: geschlossen.", "ex": ["Das Café ist täglich geöffnet.", "Quán cà phê mở cửa hằng ngày."]},
+        {"id": "schiff", "de": "Schiff", "art": "das", "pl": "Schiffe", "kind": "noun", "emoji": "🚢", "vi": "con tàu, tàu thủy", "ex": ["Das Schiff fährt am Nachmittag.", "Con tàu chạy vào buổi chiều."]},
+        {"id": "tour", "de": "Tour", "art": "die", "pl": "Touren", "kind": "noun", "emoji": "🧭", "vi": "chuyến tham quan", "note": "Đọc „tua“.", "ex": ["Die Tour fängt um drei Uhr an.", "Chuyến tham quan bắt đầu lúc 3 giờ."]},
+        {"id": "kaufhaus", "de": "Kaufhaus", "art": "das", "pl": "Kaufhäuser", "kind": "noun", "emoji": "🏬", "vi": "trung tâm bách hóa", "syl": "KAUF·haus", "ex": ["Das Kaufhaus ist von Montag bis Samstag geöffnet.", "Trung tâm bách hóa mở từ thứ Hai đến thứ Bảy."]},
+        {"id": "europa", "de": "Europa", "art": "das", "kind": "noun", "emoji": "🇪🇺", "vi": "châu Âu", "syl": "eu·RO·pa", "note": "eu = „oi“: „oi-RÔ-pa“.", "ex": ["Deutschland liegt in Europa.", "Nước Đức nằm ở châu Âu."]},
+        {"id": "moment", "de": "Moment", "art": "der", "pl": "Momente", "kind": "noun", "vi": "lúc, khoảnh khắc", "syl": "mo·MENT", "note": "im Moment = lúc này, hiện tại. Bạn đã gặp „Moment!“ ở Lektion 1.", "ex": ["Im Moment ist das Museum geschlossen.", "Lúc này bảo tàng đóng cửa."]},
+        {"id": "kennenlernen", "de": "kennenlernen", "kind": "verb", "forms": "ich lerne kennen · du lernst kennen · er/sie lernt kennen", "vi": "làm quen, tìm hiểu", "syl": "KEN·nen·ler·nen", "note": "kennen (biết) + lernen. Động từ tách: Ich lerne Hamburg kennen. Tiền tố kennen- được nhấn.", "ex": ["Ich lerne die Stadt kennen.", "Tôi làm quen với thành phố."]},
+        {"id": "abfahrt", "de": "Abfahrt", "art": "die", "pl": "Abfahrten", "kind": "noun", "vi": "giờ khởi hành", "syl": "AB·fahrt", "note": "Trên bảng giờ tàu, thuyền: Abfahrt = giờ đi.", "ex": ["Die Abfahrt ist um zehn Uhr dreißig.", "Giờ khởi hành là 10 giờ 30."]},
+        {"id": "erwachsene", "de": "Erwachsene", "art": "der", "pl": "Erwachsenen", "kind": "noun", "vi": "người lớn", "syl": "er·WACH·se·ne", "note": "Trên bảng giá: Erwachsene (người lớn) / Kinder (trẻ em).", "ex": ["Für Erwachsene kostet die Tour acht Euro.", "Người lớn: chuyến tham quan giá 8 euro."]},
+        {"id": "plan", "de": "Plan", "art": "der", "pl": "Pläne", "kind": "noun", "emoji": "🗺️", "vi": "kế hoạch", "note": "einen Plan machen = lập kế hoạch.", "ex": ["Mein Plan für Samstag ist gut.", "Kế hoạch thứ Bảy của tôi rất ổn."]}
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1", "no": 1, "minutes": 65, "set": "a",
+      "title": "Ich räume mein Zimmer auf.",
+      "vi": "Truyện ảnh tập 5 „Von früh bis spät“, động từ tách (trennbare Verben), gern / nicht gern",
+      "book": "Kursbuch tr. 58–60 · Arbeitsbuch tr. 52–53 · Lernwortschatz L5 (phần đầu)",
+      "goals": [
+        "Nói về những việc hằng ngày: <i>aufstehen, frühstücken, einkaufen, aufräumen, fernsehen …</i>",
+        "Dùng động từ tách: <i>Lara steht früh auf.</i> — động từ ở vị trí 2, tiền tố ở cuối câu.",
+        "Chia <i>arbeiten</i> (thêm -e-) và <i>fernsehen</i> (e → ie).",
+        "Nói thích / không thích làm gì: <i>Ich stehe (nicht) gern früh auf.</i>",
+        "Hiểu ý chính tập 5 của truyện ảnh và đọc đúng âm nhấn ở tiền tố."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: truyện ảnh và hoạt động hằng ngày", "minutes": 11,
+          "blocks": [
+            {"type": "words", "set": "a"},
+            {"type": "listenPick", "set": "a", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "a", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (17)", "minutes": 4,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "Động từ tách: nhấn vào tiền tố", "vi": "Ở động từ tách, <b>tiền tố</b> được nhấn: <i>AUF-stehen, EIN-kaufen, AN-rufen, AUF-räumen, FERN-sehen</i>. Phần in HOA trên thẻ từ chỉ âm nhấn. Với tiền tố <b>be-, ver-</b> (không tách) thì ngược lại: <i>be-ZAH-len, ver-MIE-ten</i>.", "ex": ["aufstehen|thức dậy", "einkaufen|đi mua sắm", "anrufen|gọi điện", "fernsehen|xem tivi"]},
+                {"t": "sp-, st-: „shp“, „sht“", "vi": "<b>sp-</b> đọc „shp“ (<i>spielen, spazieren</i>), <b>st-</b> đọc „sht“ (<i>stehen, aufstehen, frühstücken</i>). Còn <b>s</b> đơn trước nguyên âm đọc „z“: <i>sehen</i>.", "ex": ["spielen|chơi", "spazieren|đi dạo", "stehen|đứng", "sehen|nhìn"]},
+                {"t": "ü, ö, äu", "vi": "<b>ü</b>: <i>früh, müde, frühstücken</i>. <b>ö</b>: <i>hören</i>. <b>äu</b> đọc „oi“: <i>aufräumen</i> = „AUF-rôi-men“.", "ex": ["früh|sớm", "müde|mệt", "hören|nghe", "aufräumen|dọn dẹp"]},
+                {"t": "ch và tsch", "vi": "Sau a, o, u: <b>ch</b> đọc „kh“ (<i>machen, Nacht</i>). Sau e, i, ü: „xì“ nhẹ (<i>ich, Küche</i>). <b>tsch</b> đọc như „ch“ tiếng Việt (<i>Deutsch</i>).", "ex": ["machen|làm", "Nacht|đêm", "ich|tôi", "Deutschkurs|lớp tiếng Đức"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "stehen", "opts": ["stehen", "sehen"]},
+                {"say": "räume", "opts": ["räume", "Raume"]},
+                {"say": "früh", "opts": ["früh", "fruh"]},
+                {"say": "müde", "opts": ["müde", "Mude"]},
+                {"say": "spielen", "opts": ["spielen", "schpielen"]},
+                {"say": "hören", "opts": ["hören", "horen"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "truyen", "title": "Truyện ảnh, tập 5: „Von früh bis spät“", "minutes": 9,
+          "blocks": [
+            { "type": "book", "title": "Truyện ảnh, tập 5", "kb": "58–59", "tracks": "KB 2/1-8", "key": "Đáp án bài 1 và bài 3: giáo án <i>Unterrichtsplan L5</i>, trang 1.",
+              "steps": [
+                "Nhìn ảnh 1 và 8 ở trang 58–59: Lara đang ở đâu và làm gì? Đoán rồi đánh dấu (bài 1).",
+                "Bài 2 — nghe cả truyện (track 1–8). Viết các hoạt động lên từng mảnh giấy (<i>frühstücken, einkaufen, Musik hören, kochen, spazieren gehen, eine Präsentation machen, aufräumen, aufstehen, Deutschkurs haben</i>) rồi đặt mỗi mảnh vào ảnh đúng.",
+                "Bài 3 — nghe lại và nối ai làm gì: Lara, Sofia, hay cả Lara – Sofia – Lili. Chưa cần để ý giờ giấc — Buổi 2 mới học.",
+                "Bài 4 — <i>Was machen Sie auch jeden Tag?</i> Chọn các mảnh giấy hợp với bạn và kể lại bằng lời."
+              ]
+            },
+            { "type": "choice", "title": "Bạn hiểu truyện chưa?",
+              "items": [
+                {"q": "Trong ảnh 1 và 8, Lara đang ở đâu và làm gì?", "opts": ["Ở lớp học, đang thuyết trình", "Ở nhà, đang nghe nhạc", "Ở siêu thị, đang mua đồ"], "a": 0, "why": "Nhìn ảnh 1 và 8, nghe lại track 1–8."},
+                {"q": "Lara dậy lúc mấy giờ?", "opts": ["7 giờ 15 (Viertel nach sieben)", "6 giờ", "8 giờ rưỡi"], "a": 0},
+                {"q": "Ai ăn sáng cùng nhau?", "opts": ["Lara, Sofia và Lili", "Chỉ Lara và Sofia", "Lara và Tim"], "a": 0},
+                {"q": "Buổi chiều Lara làm gì?", "opts": ["Đi dạo hoặc đi mua đồ", "Làm việc ở văn phòng", "Xem tivi cả buổi"], "a": 0},
+                {"q": "Buổi tối Sofia thế nào?", "opts": ["Rất mệt vì làm việc nhiều", "Đi xem phim", "Nấu bữa tối cho cả nhà"], "a": 0},
+                {"q": "Lara gọi điện cho ai?", "opts": ["Cho gia đình", "Cho cô giáo", "Cho Tim"], "a": 0},
+                {"q": "Ai nấu bữa tối?", "opts": ["Lara", "Sofia", "Lili"], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dong-tu-tach", "title": "Ngữ pháp: động từ tách (trennbare Verben)", "minutes": 14,
+          "blocks": [
+            {"type": "text", "html": "<p>Nhiều động từ tiếng Đức gồm hai phần: <b>tiền tố</b> + <b>động từ</b>, ví dụ <i>auf|stehen, ein|kaufen, an|rufen, auf|räumen, fern|sehen</i>. Trong câu kể, động từ đã chia đứng ở <b>vị trí 2</b>, còn <b>tiền tố tách ra và đứng ở cuối câu</b>: <i>Lara <b class='v2'>steht</b> früh <span class='sep'>auf</span>.</i> Dù câu dài đến đâu, tiền tố vẫn nằm cuối câu. Chia động từ như bình thường (đuôi -e, -st, -t, -en).</p>"},
+            { "type": "table", "title": "Vị trí 2 và cuối câu", "head": ["Vị trí 1", "Vị trí 2 (động từ)", "…", "Cuối câu (tiền tố)"], "vi": "Câu hỏi Có/Không: động từ lên đầu, tiền tố vẫn ở cuối: <i><b class='v2'>Stehst</b> du früh <span class='sep'>auf</span>?</i>",
+              "rows": [
+                ["Ich", "<b class='v2'>räume</b>", "mein Zimmer", "<span class='sep'>auf</span>."],
+                ["Lara", "<b class='v2'>steht</b>", "früh", "<span class='sep'>auf</span>."],
+                ["Lara", "<b class='v2'>kauft</b>", "im Supermarkt", "<span class='sep'>ein</span>."],
+                ["Sie", "<b class='v2'>ruft</b>", "ihre Familie", "<span class='sep'>an</span>."],
+                ["Du", "<b class='v2'>siehst</b>", "viel", "<span class='sep'>fern</span>."]
+              ]
+            },
+            {"type": "tip", "title": "Cách ghi nhớ", "html": "<p>Ghi mỗi động từ tách thành hai nửa kèm một câu mẫu trong sổ: <b>auf|stehen</b> — <i>Lara steht früh auf.</i> Khi nói, hãy tưởng tượng hai nửa bị kéo xa nhau: nửa động từ nhảy lên vị trí 2, nửa tiền tố nhảy xuống cuối câu.</p>"},
+            { "type": "order", "title": "Xếp câu: động từ ở vị trí 2, tiền tố ở cuối", "vi": "Ô cam = động từ đã chia; ô xanh dương = tiền tố tách.",
+              "items": [
+                {"chunks": ["Lara", "steht", "früh", "auf."], "v": 1, "vi": "Lara dậy sớm.", "p": 3},
+                {"chunks": ["Sie", "kauft", "im Supermarkt", "ein."], "v": 1, "vi": "Cô ấy mua đồ ở siêu thị.", "p": 3},
+                {"chunks": ["Ich", "räume", "die Küche", "auf."], "v": 1, "vi": "Tôi dọn bếp.", "p": 3},
+                {"chunks": ["Lara", "ruft", "ihre Familie", "an."], "v": 1, "vi": "Lara gọi điện cho gia đình.", "p": 3},
+                {"chunks": ["Du", "siehst", "viel", "fern."], "v": 1, "vi": "Bạn xem tivi nhiều.", "p": 3},
+                {"chunks": ["Wir", "kaufen", "zusammen", "ein."], "v": 1, "vi": "Chúng tôi cùng đi mua đồ.", "p": 3},
+                {"chunks": ["Stehst", "du", "früh", "auf?"], "v": 0, "vi": "Bạn dậy sớm à?", "p": 3},
+                {"chunks": ["Ruft", "Lara", "ihre Familie", "an?"], "v": 0, "vi": "Lara có gọi điện cho gia đình không?", "p": 3}
+              ]
+            },
+            { "type": "sort", "title": "Động từ này tách được hay không?", "cats": ["tách được (trennbar)", "không tách"],
+              "items": [
+                {"t": "aufstehen", "c": 0, "why": "auf- là tiền tố tách: ich stehe auf."},
+                {"t": "einkaufen", "c": 0},
+                {"t": "anrufen", "c": 0},
+                {"t": "aufräumen", "c": 0},
+                {"t": "fernsehen", "c": 0},
+                {"t": "frühstücken", "c": 1, "why": "Không có tiền tố tách: ich frühstücke."},
+                {"t": "arbeiten", "c": 1},
+                {"t": "kochen", "c": 1},
+                {"t": "essen", "c": 1},
+                {"t": "spielen", "c": 1},
+                {"t": "hören", "c": 1},
+                {"t": "machen", "c": 1},
+                {"t": "bezahlen", "c": 1, "why": "be- là tiền tố không tách (Lektion 4)."},
+                {"t": "vermieten", "c": 1, "why": "ver- là tiền tố không tách (Lektion 4)."}
+              ]
+            },
+            { "type": "gaps", "title": "Điền tiền tố", "task": "Chọn tiền tố đúng trong danh sách.", "bank": ["auf", "ein", "an", "fern"],
+              "items": [
+                {"q": "Lara steht früh ___.", "a": ["auf"]},
+                {"q": "Ich kaufe im Supermarkt ___.", "a": ["ein"]},
+                {"q": "Sie ruft ihre Familie ___.", "a": ["an"]},
+                {"q": "Du siehst viel ___.", "a": ["fern"]},
+                {"q": "Wir räumen die Wohnung ___.", "a": ["auf"]},
+                {"q": "Kaufst du zusammen mit Lara ___?", "a": ["ein"]},
+                {"q": "Ruft Lara ihre Mama ___?", "a": ["an"]}
+              ]
+            },
+            { "type": "choice", "title": "Câu nào đúng?",
+              "items": [
+                {"q": "Tôi dậy sớm.", "opts": ["Ich stehe früh auf.", "Ich aufstehe früh.", "Ich stehe auf früh.", "Ich früh stehe auf."], "a": 0},
+                {"q": "Lara đi mua đồ ở siêu thị.", "opts": ["Lara kauft im Supermarkt ein.", "Lara einkauft im Supermarkt.", "Lara kauft ein im Supermarkt.", "Lara im Supermarkt kauft ein."], "a": 0},
+                {"q": "Bạn có gọi điện cho mẹ không?", "opts": ["Rufst du Mama an?", "Du rufst Mama an?", "Anrufst du Mama?", "Rufst an du Mama?"], "a": 0},
+                {"q": "Sofia xem tivi.", "opts": ["Sofia sieht fern.", "Sofia sehen fern.", "Sofia sieht fernsehen.", "Sofia fernsieht."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chia-dong-tu", "title": "Chia động từ: arbeiten và fernsehen", "minutes": 8,
+          "blocks": [
+            {"type": "conj", "title": "Chia động từ tách", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [{"inf": "aufstehen", "vi": "thức dậy", "forms": ["stehe auf", "stehst auf", "steht auf", "stehen auf", "steht auf", "stehen auf"], "stem": "steh", "sep": "auf"}, {"inf": "einkaufen", "vi": "đi mua sắm", "forms": ["kaufe ein", "kaufst ein", "kauft ein", "kaufen ein", "kauft ein", "kaufen ein"], "stem": "kauf", "sep": "ein"}, {"inf": "anrufen", "vi": "gọi điện", "forms": ["rufe an", "rufst an", "ruft an", "rufen an", "ruft an", "rufen an"], "stem": "ruf", "sep": "an"}], "vi": "Đuôi quen thuộc: ich -<b>e</b> · du -<b>st</b> · er/sie -<b>t</b> · wir -<b>en</b> · ihr -<b>t</b> · sie/Sie -<b>en</b>. Tiền tố (chữ xanh dương) luôn đứng sau."},
+            {"type": "tip", "title": "Hai điều cần nhớ", "html": "<ul><li><b>arbeiten</b>: thân từ kết thúc bằng -t nên thêm <b>-e-</b> cho dễ đọc: <i>du arbeit<b>e</b>st, er arbeit<b>e</b>t, ihr arbeit<b>e</b>t</i>.</li><li><b>fernsehen</b>: đổi nguyên âm <b>e → ie</b> ở <i>du</i> và <i>er/sie</i> — <i>ich sehe fern, du s<b>ie</b>hst fern, er sieht fern</i> (giống <i>sprechen → du sprichst</i> ở Lektion 1).</li></ul>"},
+            {"type": "conj", "title": "arbeiten và fernsehen", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [{"inf": "arbeiten", "vi": "làm việc", "forms": ["arbeite", "arbeitest", "arbeitet", "arbeiten", "arbeitet", "arbeiten"], "stem": "arbeit"}, {"inf": "fernsehen", "vi": "xem tivi", "forms": ["sehe fern", "siehst fern", "sieht fern", "sehen fern", "seht fern", "sehen fern"], "sep": "fern"}]},
+            { "type": "gaps", "title": "Điền động từ", "task": "Gõ dạng chia của động từ và tiền tố. Cần ä ö ü thì bấm nút phía trên ô gõ, hoặc gõ ae oe ue.",
+              "items": [
+                {"q": "Lara ___ früh ___. <span class='muted'>(aufstehen)</span>", "a": [["steht"], ["auf"]]},
+                {"q": "Ich ___ im Supermarkt ___. <span class='muted'>(einkaufen)</span>", "a": [["kaufe"], ["ein"]]},
+                {"q": "___ du viel ___? <span class='muted'>(fernsehen)</span>", "a": [["Siehst"], ["fern"]]},
+                {"q": "Sofia ___ sehr viel. <span class='muted'>(arbeiten)</span>", "a": ["arbeitet"]},
+                {"q": "Du ___ viel. <span class='muted'>(arbeiten)</span>", "a": ["arbeitest"]},
+                {"q": "Wir ___ die Küche ___. <span class='muted'>(aufräumen)</span>", "a": [["räumen"], ["auf"]]},
+                {"q": "Lara ___ ihre Familie ___. <span class='muted'>(anrufen)</span>", "a": [["ruft"], ["an"]]},
+                {"q": "___ ihr zusammen ___? <span class='muted'>(fernsehen)</span>", "a": [["Seht"], ["fern"]]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gern", "title": "gern và nicht gern", "minutes": 5,
+          "blocks": [
+            { "type": "table", "title": "Thích hay không thích?", "head": ["Câu", "Nghĩa"], "say": 0, "vi": "<b>gern</b> (Lektion 3) đứng sau động từ; <b>nicht gern</b> = không thích. Tiền tố tách vẫn ở <b>cuối câu</b>, sau cả gern và nicht gern.",
+              "rows": [
+                ["Ich arbeite <b>gern</b>.", "Tôi thích làm việc."],
+                ["Ich stehe <b>nicht gern</b> früh <span class='sep'>auf</span>.", "Tôi không thích dậy sớm."],
+                ["<b class='v2'>Stehst</b> du <b>gern</b> früh <span class='sep'>auf</span>?", "Bạn có thích dậy sớm không?"],
+                ["Nein. Ich stehe nicht gern früh <span class='sep'>auf</span>. Und du?", "Không. Tôi không thích dậy sớm. Còn bạn?"]
+              ]
+            },
+            { "type": "order", "title": "Xếp câu với gern",
+              "items": [
+                {"chunks": ["Ich", "stehe", "nicht gern", "früh", "auf."], "v": 1, "vi": "Tôi không thích dậy sớm.", "p": 4},
+                {"chunks": ["Lara", "kauft", "gern", "im Supermarkt", "ein."], "v": 1, "vi": "Lara thích đi mua đồ ở siêu thị.", "p": 4},
+                {"chunks": ["Sofia", "arbeitet", "gern."], "v": 1, "vi": "Sofia thích làm việc."},
+                {"chunks": ["Stehst", "du", "gern", "früh", "auf?"], "v": 0, "vi": "Bạn có thích dậy sớm không?", "p": 4}
+              ]
+            },
+            { "type": "gaps", "title": "gern hay nicht gern?",
+              "items": [
+                {"q": "<span class='muted'>(Bạn rất thích nghe nhạc.)</span> Ich höre ___ Musik.", "a": ["gern"], "opts": ["gern", "nicht gern"]},
+                {"q": "<span class='muted'>(Bạn ghét dọn dẹp.)</span> Ich räume ___ auf.", "a": ["nicht gern"], "opts": ["gern", "nicht gern"]},
+                {"q": "<span class='muted'>(Bạn thích nấu ăn.)</span> Ich koche ___.", "a": ["gern"], "opts": ["gern", "nicht gern"]},
+                {"q": "<span class='muted'>(Bạn không thích dậy sớm.)</span> Ich stehe ___ früh auf.", "a": ["nicht gern"], "opts": ["gern", "nicht gern"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần A", "minutes": 5,
+          "blocks": [
+            { "type": "book", "title": "Phần A — Ich räume mein Zimmer auf.", "kb": "60", "tracks": "KB 2/9", "key": "Đáp án A1, A2: giáo án <i>Unterrichtsplan L5</i>, trang 2–3.",
+              "steps": [
+                "A1 — <i>Was macht Lara? Hören Sie und ordnen Sie.</i> Nghe (track 9) và đánh số các ảnh theo thứ tự trong ngày của Lara. Xem ô nhỏ bên dưới: động từ bị „cắt“ làm đôi, và bảng chia <i>fernsehen</i>.",
+                "A2 — <i>Sofias Tag.</i> Dựa vào các từ khoá (<i>früh aufstehen, lange arbeiten, mit Lili spielen …</i>) kể ngày của Sofia thành câu: <i>Sie frühstückt mit Lara und Lili. Sie geht zur Arbeit.</i>",
+                "A3 — <i>Partnerinterview.</i> Viết sáu việc bạn (không) thích làm rồi hỏi–đáp: <i>Stehst du gern früh auf? – Nein. Ich stehe nicht gern früh auf. Und du?</i> Học một mình: tự hỏi và tự trả lời thành tiếng.",
+                "A4, A5 — hoạt động trong lớp và làm ảnh kể một ngày của bạn: tuỳ chọn."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 6,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Bạn có thích dậy sớm không?",
+              "lines": [
+                {"scene": "Hai người bạn hỏi nhau về thói quen hằng ngày."},
+                {"who": "Sara", "v": "f", "de": "Hallo Daniel! Stehst du gern früh auf?", "vi": "Chào Daniel! Bạn có thích dậy sớm không?"},
+                {"who": "Daniel", "v": "m", "de": "Nein, ich stehe nicht gern früh auf. Und du?", "vi": "Không, mình không thích dậy sớm. Còn bạn?"},
+                {"who": "Sara", "v": "f", "de": "Ich stehe gern früh auf. Dann frühstücke ich und höre Musik.", "vi": "Mình thích dậy sớm. Rồi mình ăn sáng và nghe nhạc."},
+                {"who": "Daniel", "v": "m", "de": "Arbeitest du gern?", "vi": "Bạn có thích làm việc không?"},
+                {"who": "Sara", "v": "f", "de": "Ja, ich arbeite sehr gern. Aber am Abend bin ich müde.", "vi": "Có, mình rất thích làm việc. Nhưng buổi tối mình mệt."},
+                {"who": "Daniel", "v": "m", "de": "Siehst du dann fern?", "vi": "Rồi bạn xem tivi à?"},
+                {"who": "Sara", "v": "f", "de": "Ja, ein bisschen. Und du? Was machst du gern?", "vi": "Ừ, một chút. Còn bạn? Bạn thích làm gì?"},
+                {"who": "Daniel", "v": "m", "de": "Ich spiele gern Fußball und ich kaufe gern ein.", "vi": "Mình thích chơi bóng đá và thích đi mua đồ."},
+                {"who": "Sara", "v": "f", "de": "Dann räumst du auch gern auf!", "vi": "Vậy bạn cũng thích dọn dẹp nhỉ!"},
+                {"who": "Daniel", "v": "m", "de": "Nein! Ich räume nicht gern auf.", "vi": "Không! Mình không thích dọn dẹp."}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Mama gọi điện",
+              "lines": [
+                {"scene": "Mama gọi điện cho Tim."},
+                {"who": "Mama", "v": "f", "de": "Hallo Tim! Was machst du?", "vi": "Chào Tim! Con đang làm gì đấy?"},
+                {"who": "Tim", "v": "m", "de": "Hallo Mama! Ich räume die Wohnung auf. Und du?", "vi": "Chào mẹ! Con đang dọn nhà. Còn mẹ?"},
+                {"who": "Mama", "v": "f", "de": "Ich koche das Abendessen. Papa sieht fern.", "vi": "Mẹ đang nấu bữa tối. Bố xem tivi."},
+                {"who": "Tim", "v": "m", "de": "Wie immer! Papa sieht immer fern.", "vi": "Như mọi khi! Bố lúc nào cũng xem tivi."},
+                {"who": "Mama", "v": "f", "de": "Und du? Du bist doch müde. Gehst du ins Bett?", "vi": "Còn con? Con mệt mà. Con đi ngủ chứ?"},
+                {"who": "Tim", "v": "m", "de": "Ja, gleich. Gute Nacht, Mama!", "vi": "Vâng, ngay đây. Chúc mẹ ngủ ngon!"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 3,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi nói được ít nhất 8 việc làm hằng ngày bằng tiếng Đức.",
+                "Tôi đặt động từ tách đúng chỗ: động từ ở vị trí 2, tiền tố ở cuối câu.",
+                "Tôi chia được <i>arbeiten</i> và <i>fernsehen</i>.",
+                "Tôi nói và hỏi được: <i>Stehst du gern früh auf? – Nein, ich stehe nicht gern früh auf.</i>",
+                "Tôi hiểu ý chính tập 5 của truyện ảnh."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 52–53, bài 1–7 (bài 6 có audio AB track 44–46: nhấn âm của động từ tách).", "tracks": "AB 44-46"},
+                "Mở một trang sổ: ghi mỗi động từ tách thành hai nửa kèm một câu mẫu — <i>auf|stehen: Lara steht früh auf.</i>",
+                "Nói to 5 câu về một ngày của bạn: <i>Ich stehe … auf. Ich frühstücke. Ich …</i>",
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2", "no": 2, "minutes": 57, "set": "b",
+      "title": "Wie spät ist es jetzt?",
+      "vi": "Hỏi và nói giờ thường ngày: Viertel nach, halb, vor / nach, kurz vor, schon và erst",
+      "book": "Kursbuch tr. 61 · Arbeitsbuch tr. 54 · Lernwortschatz L5 (phần B)",
+      "goals": [
+        "Hỏi giờ: <i>Wie spät ist es? / Wie viel Uhr ist es?</i> và trả lời: <i>Es ist halb acht.</i>",
+        "Nói giờ tròn, <i>Viertel nach / vor</i>, <i>fünf / zehn / zwanzig nach / vor</i> và <i>fünf vor / nach halb</i>.",
+        "Nói <i>kurz vor / kurz nach / gleich</i> khi giờ gần tròn.",
+        "Dùng <i>schon</i> và <i>erst</i>: <i>Ist es schon zwölf? – Nein, es ist erst elf.</i>",
+        "Không nhầm <i>halb zwei</i> (1:30) với 2:30."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: giờ giấc", "minutes": 6,
+          "blocks": [
+            {"type": "words", "set": "b"},
+            {"type": "listenPick", "set": "b", "n": 8, "title": "Nghe và chọn nghĩa"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (18)", "minutes": 4,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "Các số 1–12 khi nói giờ", "vi": "<b>zwölf</b> đọc „tsvölf“; <b>sechs</b> „zeks“; <b>sieben</b> „zi-ben“ (s = z); <b>fünf</b> có ü. Giờ tròn: <i>ein Uhr</i> (không phải <i>eins Uhr</i>), nhưng <i>Viertel nach eins</i>.", "ex": ["zwölf|12", "sechs|6", "sieben|7", "fünf|5"]},
+                {"t": "ie, ei: Viertel, vier, drei", "vi": "<b>ie</b> là một âm i dài (<i>Viertel, vier</i>); <b>ei</b> đọc „ai“ (<i>zwei, drei, gleich</i>).", "ex": ["Viertel|một phần tư", "vier|4", "zwei|2", "gleich|ngay"]},
+                {"t": "b, d ở cuối từ đọc p, t", "vi": "<b>b</b> cuối từ đọc „p“: <i>halb</i> = „halp“. Cùng quy tắc với <i>gelb, Herd, Bad</i> bạn đã học.", "ex": ["halb|rưỡi", "gelb|vàng", "Herd|bếp nấu", "Bad|phòng tắm"]},
+                {"t": "ä dài và u ngắn: spät, kurz", "vi": "<b>spät</b>: ä dài „spêt“; <b>kurz</b>: u ngắn, r rất nhẹ, z = „ts“. <b>schon</b> khác <b>schön</b>: o dài vs ö.", "ex": ["spät|muộn", "kurz|ngắn", "schon|đã", "schön|đẹp"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "halb", "opts": ["halb", "halp"]},
+                {"say": "schon", "opts": ["schon", "schön"]},
+                {"say": "nach", "opts": ["nach", "Nacht"]},
+                {"say": "Viertel", "opts": ["Viertel", "Firtel"]},
+                {"say": "zwölf", "opts": ["zwölf", "swölf"]},
+                {"say": "spät", "opts": ["spät", "Spat"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "clock-lab", "title": "Đồng hồ: đọc giờ thường ngày", "minutes": 9,
+          "blocks": [
+            {"type": "text", "html": "<p>Chọn giờ và phút trên đồng hồ dưới đây, xem cách đọc và nghe thử. Có hai kiểu nói giờ: <b>thường ngày</b> (đồng hồ 12 giờ, <i>Viertel vor acht</i>) — học kỹ trong buổi này — và <b>chính thức</b> (24 giờ, <i>sieben Uhr fünfundvierzig</i>) — học ở Buổi 5.</p>"},
+            {"type": "clockLab", "h": 7, "m": 45},
+            { "type": "table", "title": "Viết và nói", "head": ["Viết", "Nói (thường ngày)"], "say": 1,
+              "rows": [
+                ["07.00 / 19.00 Uhr", "sieben Uhr"],
+                ["07.05", "fünf nach sieben"],
+                ["07.10", "zehn nach sieben"],
+                ["07.15", "Viertel nach sieben"],
+                ["07.20", "zwanzig nach sieben"],
+                ["07.25", "fünf vor halb acht"],
+                ["07.30", "halb acht"],
+                ["07.35", "fünf nach halb acht"],
+                ["07.40", "zwanzig vor acht"],
+                ["07.45", "Viertel vor acht"],
+                ["07.50", "zehn vor acht"],
+                ["07.55", "fünf vor acht"],
+                ["06.58", "kurz vor sieben · gleich sieben"],
+                ["07.03", "kurz nach sieben"]
+              ]
+            },
+            {"type": "tip", "title": "halb = nửa đường tới giờ SAU", "html": "<p><b>halb acht = 7:30</b> (nửa đường tới 8 giờ), <b>không phải</b> 8:30. Luôn nói giờ <b>sau</b>: <i>fünf vor halb acht</i> = 7:25 · <i>fünf nach halb acht</i> = 7:35 · <i>halb eins</i> = 12:30.</p><p>Khi nói giờ chỉ dùng số 1–12 (không có 13, 14 …), và không thêm <i>Uhr</i> sau <i>Viertel vor drei</i>. Có hai cách cho 7:20 và 7:40: <i>zwanzig nach sieben</i> = <i>zehn vor halb acht</i>; <i>zwanzig vor acht</i> = <i>zehn nach halb acht</i> — sách ưu tiên cách đầu.</p>"}
+          ]
+        },
+        {
+          "id": "luyen", "title": "Luyện đọc và nghe giờ", "minutes": 16,
+          "blocks": [
+            {"type": "clockPick", "mode": "read", "style": "private", "n": 6, "title": "Nhìn đồng hồ, chọn cách đọc (giờ tròn, 15, 30, 45)", "minutes": [0, 15, 30, 45]},
+            {"type": "clockPick", "mode": "read", "style": "private", "n": 6, "title": "Nhìn đồng hồ, chọn cách đọc (mọi bội số của 5 phút)"},
+            {"type": "clockPick", "mode": "hear", "style": "private", "n": 6, "title": "Nghe, chọn đồng hồ đúng"},
+            {"type": "clockPick", "mode": "read", "style": "private", "n": 4, "title": "kurz vor / kurz nach / gleich", "minutes": [58, 59, 2, 3]},
+            {"type": "timeWrite", "mode": "words", "style": "private", "n": 6, "title": "Nhìn giờ, gõ cách đọc", "task": "Thấy giờ bằng chữ số (và đồng hồ), gõ cách đọc thường ngày, ví dụ 07.45 → Viertel vor acht. Có thể gõ thêm „Es ist“ ở đầu."},
+            {"type": "timeWrite", "mode": "digits", "style": "private", "n": 6, "title": "Đọc chữ, gõ số giờ", "task": "Đọc câu rồi gõ giờ bằng chữ số, ví dụ 7:45. Giờ thường ngày có thể là sáng hoặc tối nên 7:45 và 19:45 đều đúng."}
+          ]
+        },
+        {
+          "id": "schon-erst", "title": "schon và erst", "minutes": 6,
+          "blocks": [
+            { "type": "table", "title": "Muộn hơn hay sớm hơn bạn nghĩ?", "head": ["Câu", "Nghĩa"], "say": 0, "vi": "<b>schon</b>: muộn hơn hoặc nhiều hơn bạn nghĩ. <b>erst</b>: sớm hơn hoặc ít hơn bạn nghĩ.",
+              "rows": [
+                ["Ist es <b>schon</b> zwölf?", "Đã 12 giờ rồi à? (bạn tưởng còn sớm)"],
+                ["Nein, es ist <b>erst</b> elf.", "Chưa, mới 11 giờ thôi."],
+                ["Oje! <b>Schon</b> zwanzig nach sieben!", "Ôi! Đã 7 giờ 20 rồi! (muộn hơn dự tính)"],
+                ["Es ist <b>erst</b> halb acht.", "Mới 7 rưỡi thôi. (còn sớm)"]
+              ]
+            },
+            { "type": "gaps", "title": "schon hay erst?",
+              "items": [
+                {"q": "<span class='muted'>(Bạn tưởng đã trưa, nhưng mới 10 giờ.)</span> Es ist ___ zehn Uhr.", "a": ["erst"], "opts": ["schon", "erst"]},
+                {"q": "<span class='muted'>(Lớp bắt đầu lúc 8 giờ, bây giờ đã 8 giờ 20 — bạn đến muộn.)</span> Oje! Es ist ___ zwanzig nach acht!", "a": ["schon"], "opts": ["schon", "erst"]},
+                {"q": "<span class='muted'>(Bạn tưởng còn sớm, nhưng đã gần 12 giờ.)</span> Oje! Es ist ___ gleich zwölf!", "a": ["schon"], "opts": ["schon", "erst"]},
+                {"q": "<span class='muted'>(Còn rất sớm.)</span> Es ist ___ sieben Uhr.", "a": ["erst"], "opts": ["schon", "erst"]},
+                {"q": "Ist es ___ zwölf? – Nein, es ist ___ halb zwölf.", "a": [["schon"], ["erst"]], "opts": [["schon", "erst"], ["schon", "erst"]]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần B", "minutes": 5,
+          "blocks": [
+            { "type": "book", "title": "Phần B — Wie spät ist es jetzt?", "kb": "61", "tracks": "KB 2/10-14", "key": "Đáp án B2: giáo án <i>Unterrichtsplan L5</i>, trang 5.",
+              "steps": [
+                "B1 — <i>Hören Sie und spielen Sie weitere Gespräche.</i> Nghe (track 10): <i>Wie spät ist es jetzt? Ist es schon zwölf? – Nein. Es ist erst Viertel vor zwölf.</i> Rồi đổi giờ trên các mặt đồng hồ nhỏ và hỏi–đáp. Xem bảng <i>Man schreibt / Man sagt</i> và đồng hồ lớn ghi sẵn <i>5 vor, 10 vor, Viertel vor, 20 vor, 5 nach halb, halb …</i>",
+                "B2a — nghe bốn đoạn hội thoại (track 11–14) và ghép với bốn bức tranh A–D.",
+                "B2b — nghe lại, vẽ kim đồng hồ và viết giờ bằng chữ (ví dụ <i>zwanzig vor neun</i>).",
+                "B3 — viết giờ cho 06:58, 09:57, 10:02, 11:59 và 12:04 bằng <i>kurz vor / kurz nach / gleich</i>.",
+                "B4 — vẽ bốn đồng hồ và hỏi người bên cạnh <i>Wie spät ist es?</i> Học một mình: dùng đồng hồ trên web."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 7,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Hỏi giờ ở trạm xe buýt",
+              "lines": [
+                {"scene": "Mia hỏi một người lạ giờ."},
+                {"who": "Mia", "v": "f", "de": "Entschuldigung, wie spät ist es jetzt?", "vi": "Xin lỗi, bây giờ là mấy giờ ạ?"},
+                {"who": "Herr Roth", "v": "m2", "de": "Es ist zehn nach acht.", "vi": "Bây giờ là 8 giờ 10."},
+                {"who": "Mia", "v": "f", "de": "Zehn nach acht? Schon? Oje!", "vi": "8 giờ 10 rồi ạ? Ôi trời!"},
+                {"who": "Herr Roth", "v": "m2", "de": "Ist das ein Problem?", "vi": "Có vấn đề gì không?"},
+                {"who": "Mia", "v": "f", "de": "Ja, ich bin spät. Danke!", "vi": "Có, cháu muộn rồi. Cảm ơn ông!"},
+                {"who": "Herr Roth", "v": "m2", "de": "Bitte. Auf Wiedersehen!", "vi": "Không có gì. Tạm biệt!"}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Ist es schon halb zwei?",
+              "lines": [
+                {"scene": "Hai người bạn trước giờ ăn trưa."},
+                {"who": "Leon", "v": "m", "de": "Hallo Mia! Ist es schon halb zwei?", "vi": "Chào Mia! Đã 1 giờ rưỡi rồi à?"},
+                {"who": "Mia", "v": "f", "de": "Nein, es ist erst Viertel nach eins.", "vi": "Chưa, mới 1 giờ 15."},
+                {"who": "Leon", "v": "m", "de": "Gut, dann kaufe ich im Supermarkt ein.", "vi": "Tốt, vậy mình đi siêu thị mua đồ."},
+                {"who": "Mia", "v": "f", "de": "Aber nicht lange! Gleich ist es zwei.", "vi": "Nhưng đừng lâu nhé! Sắp 2 giờ rồi."},
+                {"who": "Leon", "v": "m", "de": "Okay. Bis gleich!", "vi": "Được. Lát nữa gặp!"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi hỏi giờ được: <i>Wie spät ist es?</i> và trả lời đúng với giờ tròn, <i>Viertel</i> và <i>halb</i>.",
+                "Tôi nói được <i>fünf / zehn / zwanzig vor / nach</i> và <i>fünf vor / nach halb</i>.",
+                "Tôi biết <i>halb acht</i> là 7:30 và nói được <i>kurz vor / kurz nach / gleich</i>.",
+                "Tôi dùng được <i>schon</i> và <i>erst</i>: <i>Ist es schon zwölf? – Nein, es ist erst elf.</i>"
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                "Arbeitsbuch tr. 54, bài 8–11 (phần B, không có audio).",
+                "Mỗi ngày nhìn đồng hồ và nói to giờ bằng tiếng Đức ít nhất 5 lần (<i>Es ist Viertel vor acht.</i>). Dùng đồng hồ trên web để kiểm tra.",
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3", "no": 3, "minutes": 62, "set": "c",
+      "title": "Wann fängt der Deutschkurs an?",
+      "vi": "Thứ trong tuần, am / um / von … bis …, hẹn gặp (Hast du Zeit?), anfangen và schlafen",
+      "book": "Kursbuch tr. 62 · Arbeitsbuch tr. 55–56 · Lernwortschatz L5 (phần C)",
+      "goals": [
+        "Nói tên bảy ngày trong tuần và <i>am Wochenende</i>.",
+        "Hỏi <i>Wann …?</i> và trả lời đúng: <i>am Montag · um halb neun · von Montag bis Freitag · von acht bis drei</i>.",
+        "Hẹn gặp và từ chối lịch sự: <i>Hast du am Freitag Zeit? – Das passt gut. / Da habe ich keine Zeit.</i>",
+        "Chia <i>anfangen</i> và <i>schlafen</i> (a → ä ở du và er/sie).",
+        "Hỏi giờ cụ thể bằng <i>Um wie viel Uhr …?</i>"
+      ],
+      "sections": [
+        {
+          "id": "tu-moi-1", "title": "Từ mới: các thứ trong tuần", "minutes": 6,
+          "blocks": [
+            {"type": "words", "set": "c"},
+            {"type": "tip", "title": "Học các thứ trong tuần thành một hàng", "html": "<p>Nói to cả hàng <b>Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag</b> nhiều lần: não nhớ một chuỗi dễ hơn nhớ từng từ rời. Cả bảy ngày đều là <span class='g-der'>der</span>. Mẹo: <i>Mittwoch</i> = <i>Mitte</i> (giữa) + <i>Woche</i> (tuần) = giữa tuần.</p>"},
+            { "type": "table", "title": "Viết tắt trên lịch", "head": ["Viết tắt", "Đầy đủ"], "say": 1,
+              "rows": [
+                ["Mo", "Montag"],
+                ["Di", "Dienstag"],
+                ["Mi", "Mittwoch"],
+                ["Do", "Donnerstag"],
+                ["Fr", "Freitag"],
+                ["Sa", "Samstag"],
+                ["So", "Sonntag"]
+              ]
+            },
+            { "type": "order", "title": "Xếp các ngày theo thứ tự trong tuần",
+              "items": [
+                {"chunks": ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"], "v": null, "vi": "Từ thứ Hai đến Chủ nhật."}
+              ]
+            },
+            {"type": "listenPick", "set": "c", "n": 8, "title": "Nghe và chọn nghĩa"}
+          ]
+        },
+        {
+          "id": "tu-moi-2", "title": "Từ mới: thời điểm, hẹn gặp, lịch", "minutes": 7,
+          "blocks": [
+            {"type": "words", "set": "c2"},
+            {"type": "listenPick", "set": "c2", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "c2", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (19)", "minutes": 4,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "ä: fängt, schläft, nächste", "vi": "<b>ä</b> đọc „ê“. Ở <i>fängt, schläft</i> nguyên âm đổi từ a sang ä khi chia với du và er/sie; <i>nächste</i> có ä + ch (xì nhẹ).", "ex": ["fängt|bắt đầu", "schläft|ngủ", "nächste|tới", "spät|muộn"]},
+                {"t": "ng và g cuối từ", "vi": "<b>ng</b> đọc như „ng“ tiếng Việt (<i>anfangen</i>). <b>g</b> cuối từ đọc „k“: <i>Montag</i> = „môn-tak“, <i>Freitag, Sonntag</i>.", "ex": ["anfangen|bắt đầu", "Montag|thứ Hai", "Freitag|thứ Sáu", "Sonntag|Chủ nhật"]},
+                {"t": "Các thứ trong tuần: nhấn âm đầu", "vi": "<i>MON-tag, DIENS-tag, MITT-woch, DON-ners-tag, FREI-tag, SAMS-tag, SONN-tag</i>. <b>ie</b> trong Dienstag là i dài; <b>tt, nn</b> báo nguyên âm ngắn (Mittwoch, Donnerstag, Sonntag).", "ex": ["Dienstag|thứ Ba", "Mittwoch|thứ Tư", "Donnerstag|thứ Năm", "Samstag|thứ Bảy"]},
+                {"t": "w = „v“, v = „f“", "vi": "<b>w</b> đọc „v“ (<i>Woche, Wochenende, wann</i>). <b>v</b> thường đọc „f“ (<i>von, vor, viel</i>).", "ex": ["Woche|tuần", "wann|khi nào", "von|từ", "vor|trước"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "fängt", "opts": ["fängt", "fangt"]},
+                {"say": "schläft", "opts": ["schläft", "schlaft"]},
+                {"say": "nächste", "opts": ["nächste", "nachste"]},
+                {"say": "Dienstag", "opts": ["Dienstag", "Dinstag"]},
+                {"say": "wann", "opts": ["wann", "Wahn"]},
+                {"say": "Mittwoch", "opts": ["Mittwoch", "Mitwoch"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thoi-gian", "title": "Wann? am, um, von … bis …", "minutes": 14,
+          "blocks": [
+            { "type": "table", "title": "Wann? → am / um / von … bis …", "head": ["Hỏi", "Trả lời", "Dùng khi nói về"], "vi": "<b>Wann?</b> hỏi cả thời điểm lẫn khoảng thời gian. Muốn hỏi đúng giờ: <b>Um wie viel Uhr …?</b> — trả lời bằng giờ. Chỉ cần nhớ cụm: <b>am</b> + thứ, <b>um</b> + giờ, <b>von … bis …</b> + khoảng.",
+              "rows": [
+                ["Wann ist der Kurs?", "<b>Am</b> Montag. · <b>Am</b> Wochenende.", "một ngày (thứ trong tuần)"],
+                ["Wann fängt der Kurs an?", "<b>Um</b> halb neun. · <b>Um</b> neun Uhr.", "một giờ cụ thể"],
+                ["Wann ist der Kurs?", "<b>Von</b> Montag <b>bis</b> Freitag. · <b>Von</b> halb neun <b>bis</b> drei (Uhr).", "một khoảng thời gian"]
+              ]
+            },
+            { "type": "sort", "title": "am, um hay von … bis …?", "cats": ["am", "um", "von … bis …"],
+              "items": [
+                {"t": "Montag", "c": 0},
+                {"t": "Freitag", "c": 0},
+                {"t": "Wochenende", "c": 0, "why": "am Wochenende = vào cuối tuần."},
+                {"t": "halb neun", "c": 1},
+                {"t": "acht Uhr", "c": 1},
+                {"t": "Viertel vor zwölf", "c": 1},
+                {"t": "Montag – Freitag", "c": 2},
+                {"t": "acht – drei Uhr", "c": 2},
+                {"t": "halb neun – drei", "c": 2}
+              ]
+            },
+            { "type": "gaps", "title": "Điền am, um, von hoặc bis",
+              "items": [
+                {"q": "Der Kurs fängt ___ halb neun an.", "a": ["um"], "opts": ["am", "um", "von", "bis"]},
+                {"q": "Ich habe ___ Freitag Zeit.", "a": ["am"], "opts": ["am", "um", "von", "bis"]},
+                {"q": "Der Kurs ist ___ Montag ___ Freitag.", "a": [["von"], ["bis"]], "opts": [["am", "um", "von", "bis"], ["am", "um", "von", "bis"]]},
+                {"q": "___ Wochenende schlafe ich lange.", "a": ["Am"], "opts": ["Am", "Um", "Von", "Bis"]},
+                {"q": "Wir spielen ___ zwei Uhr Fußball.", "a": ["um"], "opts": ["am", "um", "von", "bis"]},
+                {"q": "Nila arbeitet ___ neun ___ eins.", "a": [["von"], ["bis"]], "opts": [["am", "um", "von", "bis"], ["am", "um", "von", "bis"]]},
+                {"q": "Ich gehe ___ Samstag spazieren.", "a": ["am"], "opts": ["am", "um", "von", "bis"]}
+              ]
+            },
+            { "type": "choice", "title": "Chọn câu trả lời đúng",
+              "items": [
+                {"q": "Wann ist die Party? – ___ Freitag.", "opts": ["Am Freitag.", "Um Freitag.", "Von Freitag."], "a": 0},
+                {"q": "Wann fängt der Film an? – ___ halb acht.", "opts": ["Um halb acht.", "Am halb acht.", "Von halb acht."], "a": 0},
+                {"q": "Wann arbeitest du? – ___ Montag ___ Mittwoch.", "opts": ["Von Montag bis Mittwoch.", "Am Montag um Mittwoch.", "Um Montag bis Mittwoch."], "a": 0},
+                {"q": "Wann schläft Max lange? – ___ Sonntag.", "opts": ["Am Sonntag.", "Um Sonntag.", "Von Sonntag."], "a": 0}
+              ]
+            },
+            { "type": "order", "title": "Xếp câu",
+              "items": [
+                {"chunks": ["Der Kurs", "fängt", "um halb neun", "an."], "v": 1, "vi": "Lớp bắt đầu lúc 8 giờ 30.", "p": 3},
+                {"chunks": ["Ich", "spiele", "am Dienstag", "Fußball."], "v": 1, "vi": "Thứ Ba tôi đá bóng."},
+                {"chunks": ["Der Kurs", "ist", "von Montag", "bis Freitag."], "v": 1, "vi": "Lớp học từ thứ Hai đến thứ Sáu."},
+                {"chunks": ["Tim", "ruft", "am Donnerstag", "Mama und Papa", "an."], "v": 1, "vi": "Thứ Năm Tim gọi cho mẹ và bố.", "p": 4},
+                {"chunks": ["Wann", "fängt", "der Kurs", "an?"], "v": 1, "vi": "Khi nào lớp bắt đầu?", "p": 3}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dong-tu", "title": "anfangen và schlafen: a → ä", "minutes": 7,
+          "blocks": [
+            {"type": "conj", "title": "Chia anfangen và schlafen", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [{"inf": "anfangen", "vi": "bắt đầu", "forms": ["fange an", "fängst an", "fängt an", "fangen an", "fangt an", "fangen an"], "sep": "an"}, {"inf": "schlafen", "vi": "ngủ", "forms": ["schlafe", "schläfst", "schläft", "schlafen", "schlaft", "schlafen"], "stem": "schlaf"}], "vi": "<b>a → ä</b> chỉ ở <i>du</i> và <i>er/sie</i>: <i>fängst, fängt · schläfst, schläft</i> — giống e → i / ie ở Buổi 1 (<i>sprechen, essen, sehen</i>). Các ngôi khác giữ nguyên a."},
+            { "type": "gaps", "title": "Điền động từ", "task": "Gõ dạng chia. Cần ä thì bấm nút phía trên ô gõ, hoặc gõ ae.",
+              "items": [
+                {"q": "Der Kurs ___ um neun Uhr ___. <span class='muted'>(anfangen)</span>", "a": [["fängt"], ["an"]]},
+                {"q": "___ du lange? <span class='muted'>(schlafen)</span>", "a": ["Schläfst"]},
+                {"q": "Am Sonntag ___ er lange. <span class='muted'>(schlafen)</span>", "a": ["schläft"]},
+                {"q": "Wir ___ um acht Uhr ___. <span class='muted'>(anfangen)</span>", "a": [["fangen"], ["an"]]},
+                {"q": "Wann ___ der Film ___? <span class='muted'>(anfangen)</span>", "a": [["fängt"], ["an"]]},
+                {"q": "Ich ___ am Wochenende lange. <span class='muted'>(schlafen)</span>", "a": ["schlafe"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hen", "title": "Hẹn gặp và lịch tuần", "minutes": 9,
+          "blocks": [
+            { "type": "table", "title": "Hẹn gặp (Verabredung)", "head": ["Mời / hỏi", "Nhận lời", "Từ chối"], "vi": "Lịch hợp: <i>Das passt gut.</i> Lịch kín: <i>Da habe ich keine Zeit.</i> (hoặc nêu việc bận: <i>Da spiele ich Fußball.</i>)",
+              "rows": [
+                ["Hast du am Freitag Zeit?", "Ja, gern. Das passt gut.", "Am Freitag? Da habe ich keine Zeit."],
+                ["Ich mache am Samstag eine Party. Hast du Zeit?", "Am Samstag? Ja, das passt gut.", "Am Samstag? Da spiele ich Fußball."],
+                ["Wann fängt die Party an? – Um sieben Uhr.", "Um sieben? Das passt gut. Ich komme gern.", "Um sieben? Da arbeite ich."]
+              ]
+            },
+            { "type": "table", "title": "Nilas Woche (lịch do tôi tự soạn)", "head": ["Tag", "Termine"],
+              "rows": [
+                ["Montag", "9.00–13.00 Uhr arbeiten · 18.30 Uhr Fußball spielen"],
+                ["Dienstag", "9.00–13.00 Uhr arbeiten · 15.00 Uhr Deutschkurs"],
+                ["Mittwoch", "9.00–13.00 Uhr arbeiten · 19.00 Uhr Mama anrufen"],
+                ["Donnerstag", "15.00 Uhr Deutschkurs · 17.00 Uhr Hausaufgaben machen"],
+                ["Freitag", "9.00–13.00 Uhr arbeiten · 17.30 Uhr einkaufen"],
+                ["Samstag", "lange schlafen · 14.00 Uhr Wohnung aufräumen · 19.00 Uhr Party"],
+                ["Sonntag", "10.00 Uhr spazieren gehen · 21.00 Uhr fernsehen"]
+              ]
+            },
+            { "type": "choice", "title": "Đọc lịch của Nila và trả lời",
+              "items": [
+                {"q": "Wann spielt Nila Fußball?", "opts": ["Am Montag um halb sieben.", "Am Dienstag um drei.", "Am Samstag um zwei."], "a": 0},
+                {"q": "Wann ruft Nila Mama an?", "opts": ["Am Mittwoch um sieben.", "Am Donnerstag um fünf.", "Am Sonntag um zehn."], "a": 0},
+                {"q": "Wann hat Nila Deutschkurs?", "opts": ["Am Dienstag und am Donnerstag um drei.", "Von Montag bis Freitag um neun.", "Am Wochenende um sieben."], "a": 0},
+                {"q": "Wann arbeitet Nila?", "opts": ["Am Montag, Dienstag, Mittwoch und Freitag von neun bis eins.", "Von Montag bis Sonntag von neun bis eins.", "Am Samstag und am Sonntag um neun."], "a": 0},
+                {"q": "Wann ist die Party?", "opts": ["Am Samstag um sieben.", "Am Freitag um halb sechs.", "Am Sonntag um neun."], "a": 0},
+                {"q": "Was macht Nila am Sonntag um zehn Uhr?", "opts": ["Sie geht spazieren.", "Sie kauft ein.", "Sie räumt die Wohnung auf."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần C", "minutes": 5,
+          "blocks": [
+            { "type": "book", "title": "Phần C — Wann fängt der Deutschkurs an?", "kb": "62", "tracks": "KB 2/15-16", "key": "Đáp án C1: giáo án <i>Unterrichtsplan L5</i>, trang 6.",
+              "steps": [
+                "C1a — <i>Welchen Deutschkurs besucht Lara?</i> Nghe (track 15) và đánh dấu khóa học trong bảng chương trình (giờ học, số tiết).",
+                "C1b — nghe lại và điền bảng <i>Temporale Präpositionen</i>: <i>Am … · Um … · Von … bis …</i> (câu hỏi <i>Wann?</i>).",
+                "C2 — <i>Hören Sie und spielen Sie weitere Gespräche.</i> Nghe (track 16) lời mời đi tiệc và hẹn giờ. Xem hai ô <i>anfangen</i> và <i>schlafen</i> (a → ä).",
+                "C3 — <i>Tims Woche.</i> Nhìn lịch của Tim và nói về tuần của anh ấy: <i>Wann spielt Tim Fußball? – Am Dienstag um fünf Uhr.</i> Ô bên phải: <i>am Samstag + am Sonntag = am Wochenende</i>.",
+                "C4 — <i>Partnerinterview.</i> Viết sáu câu hỏi <i>Wann …?</i> rồi hỏi–đáp (ví dụ <i>Wann lernst du Deutsch? – Von Montag bis Freitag von acht bis fünf Uhr.</i>). Xong sớm: viết lịch tuần sau (<i>Schon fertig?</i>)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 6,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Lời mời dự tiệc",
+              "lines": [
+                {"scene": "Nina mời Kemal đến dự tiệc."},
+                {"who": "Nina", "v": "f", "de": "Hallo Kemal! Ich mache am Samstag eine Party. Hast du Zeit?", "vi": "Chào Kemal! Thứ Bảy mình tổ chức tiệc. Bạn có rảnh không?"},
+                {"who": "Kemal", "v": "m", "de": "Am Samstag? Da spiele ich von drei bis fünf Fußball. Aber am Abend habe ich Zeit.", "vi": "Thứ Bảy à? Mình đá bóng từ 3 đến 5 giờ. Nhưng buổi tối thì rảnh."},
+                {"who": "Nina", "v": "f", "de": "Super! Die Party fängt um sieben Uhr an.", "vi": "Tuyệt! Tiệc bắt đầu lúc 7 giờ."},
+                {"who": "Kemal", "v": "m", "de": "Um sieben? Das passt gut. Ich komme gern!", "vi": "7 giờ à? Tiện đấy. Mình đến chứ!"},
+                {"who": "Nina", "v": "f", "de": "Super! Bis Samstag!", "vi": "Tuyệt! Hẹn thứ Bảy nhé!"}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Ở trường ngoại ngữ",
+              "lines": [
+                {"scene": "Linh hỏi về khóa học ở một trường ngoại ngữ."},
+                {"who": "Linh", "v": "f", "de": "Guten Tag! Haben Sie Deutschkurse?", "vi": "Chào chị! Trường có các lớp tiếng Đức không ạ?"},
+                {"who": "Frau Lehmann", "v": "f", "de": "Ja, natürlich. Der Intensivkurs ist von Montag bis Freitag. Der Abendkurs ist am Dienstag und am Donnerstag.", "vi": "Có chứ. Khóa cấp tốc học từ thứ Hai đến thứ Sáu. Khóa buổi tối học vào thứ Ba và thứ Năm."},
+                {"who": "Linh", "v": "f", "de": "Wann fängt der Intensivkurs an?", "vi": "Khóa cấp tốc khi nào bắt đầu ạ?"},
+                {"who": "Frau Lehmann", "v": "f", "de": "Am Montag um halb neun.", "vi": "Thứ Hai lúc 8 giờ rưỡi."},
+                {"who": "Linh", "v": "f", "de": "Und von wann bis wann ist der Kurs?", "vi": "Và khóa học từ mấy giờ đến mấy giờ ạ?"},
+                {"who": "Frau Lehmann", "v": "f", "de": "Von halb neun bis drei Uhr.", "vi": "Từ 8 giờ rưỡi đến 3 giờ."},
+                {"who": "Linh", "v": "f", "de": "Von halb neun bis drei? Das passt gut. Danke!", "vi": "Từ 8 rưỡi đến 3 giờ ạ? Tiện đấy. Cảm ơn chị!"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi nói được bảy ngày trong tuần theo thứ tự và <i>am Wochenende</i>.",
+                "Tôi dùng đúng <i>am + thứ</i>, <i>um + giờ</i>, <i>von … bis …</i> khi trả lời câu hỏi <i>Wann?</i>",
+                "Tôi hẹn gặp và từ chối lịch sự: <i>Hast du Zeit? – Das passt gut. / Da habe ich keine Zeit.</i>",
+                "Tôi chia được <i>anfangen</i> và <i>schlafen</i>."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 55–56, bài 12–17 (bài 15 có audio AB track 47).", "tracks": "AB 47"},
+                "Bài 16 (tr. 56): viết các thứ trong tuần bằng tiếng Đức, tiếng Anh và tiếng mẹ đẻ rồi tìm những cặp nghe giống nhau (<i>Montag – Monday</i>).",
+                "Viết lịch tuần này của bạn bằng tiếng Đức, ít nhất 5 câu: <i>Am Montag … Um … Uhr … Von … bis …</i>",
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> — hôm nay có hơn 25 từ mới."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4", "no": 4, "minutes": 65, "set": "d",
+      "title": "Tageszeiten",
+      "vi": "Các buổi trong ngày, động từ luôn ở vị trí 2 khi thời gian đứng đầu câu, jeden Tag, kể về một ngày",
+      "book": "Kursbuch tr. 63 và tr. 68–69 · Arbeitsbuch tr. 57–58 · Lernwortschatz L5 (phần D)",
+      "goals": [
+        "Gọi tên các buổi trong ngày: <i>am Morgen, am Vormittag, am Mittag, am Nachmittag, am Abend, in der Nacht</i>.",
+        "Đặt thời gian lên đầu câu mà động từ vẫn ở vị trí 2: <i>Am Morgen hört Max Musik.</i>",
+        "Nói <i>jeden Tag / jeden Morgen / jeden Abend / jede Nacht</i>.",
+        "Kể về một ngày của mình bằng các câu ngắn, đúng trật tự.",
+        "Đoán và trả lời: <i>Ich glaube, … – Stimmt. / Doch.</i>"
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: các buổi trong ngày", "minutes": 8,
+          "blocks": [
+            {"type": "words", "set": "d"},
+            {"type": "words", "set": "d2", "title": "Thêm: từ trong phần Zwischendurch của sách (không bắt buộc)", "collapsed": true},
+            {"type": "listenPick", "set": "d", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "d", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (20)", "minutes": 4,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "ch sau a, o: „kh“", "vi": "<b>ch</b> sau a, o, u đọc „kh“: <i>Nacht, Nachmittag, machen, doch</i>.", "ex": ["Nacht|đêm", "Nachmittag|buổi chiều", "machen|làm", "doch|có chứ"]},
+                {"t": "Các buổi trong ngày: nhấn âm đầu", "vi": "<i>MOR-gen, VOR-mit-tag, MIT-tag, NACH-mit-tag, A-bend, NACHT</i>. <b>g</b> cuối âm tiết đọc „k“: <i>Mittag</i> = „mit-tak“.", "ex": ["Morgen|buổi sáng", "Vormittag|trước trưa", "Mittag|buổi trưa", "Abend|buổi tối"]},
+                {"t": "Từ mượn tiếng Anh", "vi": "<b>chatten</b> = „tsét-ten“, <b>joggen</b> = „dsho-gen“, <b>Sport</b> = „shpoát“ (sp = shp), <b>Computerspiel</b> nhấn âm 2 của Computer.", "ex": ["chatten|chat", "Sport|thể thao", "Computerspiel|trò chơi điện tử", "Kino|rạp phim"]},
+                {"t": "j = „y“ và a → ä trong raten", "vi": "<b>j</b> đọc „y“ (<i>jeden, jede</i>). <b>raten</b>: a → ä ở du và er/sie (<i>du rätst, er rät</i>).", "ex": ["jeden|mỗi", "jede|mỗi", "raten|đoán", "rät|đoán (er/sie)"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "doch", "opts": ["doch", "Dock"]},
+                {"say": "jeden", "opts": ["jeden", "jedem"]},
+                {"say": "Nacht", "opts": ["Nacht", "Macht"]},
+                {"say": "chatten", "opts": ["chatten", "Schatten"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tageszeiten", "title": "Các buổi trong ngày", "minutes": 8,
+          "blocks": [
+            { "type": "table", "title": "Sáu buổi trong ngày", "head": ["Buổi", "Khoảng giờ", "Cách nói"], "say": 2, "vi": "Ranh giới chỉ là ước chừng. <b>am</b> dùng cho cả thứ trong tuần lẫn các buổi trong ngày (<i>am Montag, am Abend</i>); ngoại lệ duy nhất là <b>in der Nacht</b>.",
+              "rows": [
+                ["<span class='g-der'>der</span> Morgen", "khoảng 5–9 giờ", "<b>am</b> Morgen"],
+                ["<span class='g-der'>der</span> Vormittag", "khoảng 9–12 giờ", "<b>am</b> Vormittag"],
+                ["<span class='g-der'>der</span> Mittag", "khoảng 12–14 giờ", "<b>am</b> Mittag"],
+                ["<span class='g-der'>der</span> Nachmittag", "khoảng 14–18 giờ", "<b>am</b> Nachmittag"],
+                ["<span class='g-der'>der</span> Abend", "khoảng 18–22 giờ", "<b>am</b> Abend"],
+                ["<span class='g-die'>die</span> Nacht", "khoảng 22–5 giờ", "<b>in der</b> Nacht ⚠"]
+              ]
+            },
+            { "type": "choice", "title": "Giờ này thuộc buổi nào?",
+              "items": [
+                {"q": "07:30 — Ich frühstücke …", "opts": ["am Morgen", "am Mittag", "am Abend"], "a": 0},
+                {"q": "10:00 — Ich lerne Deutsch …", "opts": ["am Vormittag", "am Nachmittag", "in der Nacht"], "a": 0},
+                {"q": "12:30 — Ich esse mit Anna …", "opts": ["am Mittag", "am Morgen", "am Abend"], "a": 0},
+                {"q": "15:30 — Ich gehe spazieren …", "opts": ["am Nachmittag", "am Vormittag", "am Morgen"], "a": 0},
+                {"q": "20:00 — Ich sehe fern …", "opts": ["am Abend", "am Mittag", "am Nachmittag"], "a": 0},
+                {"q": "02:00 — Ich schlafe …", "opts": ["in der Nacht", "am Abend", "am Morgen"], "a": 0}
+              ]
+            },
+            { "type": "gaps", "title": "am hay in der?",
+              "items": [
+                {"q": "___ Morgen stehe ich früh auf.", "a": ["Am"], "opts": ["Am", "In der"]},
+                {"q": "Ich schlafe ___ Nacht.", "a": ["in der"], "opts": ["am", "in der"]},
+                {"q": "___ Abend koche ich das Abendessen.", "a": ["Am"], "opts": ["Am", "In der"]},
+                {"q": "Max chattet ___ Nacht.", "a": ["in der"], "opts": ["am", "in der"]},
+                {"q": "Ich mache ___ Nachmittag Sport.", "a": ["am"], "opts": ["am", "in der"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "satzstellung", "title": "Thời gian đứng đầu câu: động từ vẫn ở vị trí 2", "minutes": 12,
+          "blocks": [
+            {"type": "text", "html": "<p>Cùng một ý có thể xếp theo hai cách. Khi <b>thời gian</b> đứng đầu câu (vị trí 1), <b>động từ vẫn ở vị trí 2</b> và <b>chủ ngữ nhường chỗ</b>, đứng ngay sau động từ: <i>Max <b class='v2'>hört</b> am Morgen Musik.</i> = <i>Am Morgen <b class='v2'>hört</b> Max Musik.</i> Tiền tố của động từ tách vẫn ở cuối câu.</p>"},
+            { "type": "table", "title": "Hai cách xếp cùng một câu", "head": ["Vị trí 1", "Vị trí 2 (động từ)", "…", "…"], "vi": "Dễ nhớ: <b>vị trí 1</b> là bất kỳ cụm nào bạn muốn nhấn mạnh (chủ ngữ hoặc thời gian), nhưng <b>vị trí 2 luôn là động từ</b>.",
+              "rows": [
+                ["Max", "<b class='v2'>hört</b>", "am Morgen", "Musik."],
+                ["Am Morgen", "<b class='v2'>hört</b>", "Max", "Musik."],
+                ["Ich", "<b class='v2'>stehe</b>", "am Morgen um sechs", "<span class='sep'>auf</span>."],
+                ["Am Morgen", "<b class='v2'>stehe</b>", "ich um sechs", "<span class='sep'>auf</span>."]
+              ]
+            },
+            { "type": "order", "title": "Xếp câu bắt đầu bằng thời gian",
+              "items": [
+                {"chunks": ["Am Morgen", "hört", "Max", "Musik."], "v": 1, "vi": "Buổi sáng Max nghe nhạc."},
+                {"chunks": ["Am Vormittag", "lernt", "Max", "Deutsch."], "v": 1, "vi": "Buổi trước trưa Max học tiếng Đức."},
+                {"chunks": ["Am Mittag", "isst", "Max", "mit Nina."], "v": 1, "vi": "Buổi trưa Max ăn cùng Nina."},
+                {"chunks": ["Am Nachmittag", "macht", "Max", "Sport."], "v": 1, "vi": "Buổi chiều Max tập thể thao."},
+                {"chunks": ["Am Abend", "sieht", "Max", "fern."], "v": 1, "vi": "Buổi tối Max xem tivi.", "p": 3},
+                {"chunks": ["In der Nacht", "chattet", "Max."], "v": 1, "vi": "Ban đêm Max chat."},
+                {"chunks": ["Am Morgen", "stehe", "ich", "früh", "auf."], "v": 1, "vi": "Buổi sáng tôi dậy sớm.", "p": 4},
+                {"chunks": ["Am Abend", "räumt", "sie", "die Küche", "auf."], "v": 1, "vi": "Buổi tối cô ấy dọn bếp.", "p": 4}
+              ]
+            },
+            { "type": "gaps", "title": "Đổi chỗ: viết câu bắt đầu bằng thời gian", "task": "Gõ động từ (và tiền tố) đúng dạng.",
+              "items": [
+                {"q": "Max macht am Nachmittag Sport. → Am Nachmittag ___ Max Sport.", "a": ["macht"]},
+                {"q": "Ich sehe am Abend fern. → Am Abend ___ ich ___.", "a": [["sehe"], ["fern"]]},
+                {"q": "Sie kauft am Samstag ein. → Am Samstag ___ sie ___.", "a": [["kauft"], ["ein"]]},
+                {"q": "Wir spielen am Dienstag Fußball. → Am Dienstag ___ wir Fußball.", "a": ["spielen"]},
+                {"q": "Er chattet in der Nacht. → In der Nacht ___ er.", "a": ["chattet"]}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi: động từ phải ở vị trí 2",
+              "items": [
+                {"s": "Am Morgen Max hört Musik.", "err": "Max hört", "fix": ["hört Max"], "why": "Động từ ở vị trí 2: Am Morgen hört Max Musik."},
+                {"s": "Am Abend ich sehe fern.", "err": "ich sehe", "fix": ["sehe ich"], "why": "Am Abend sehe ich fern."},
+                {"s": "In der Nacht Lara schläft.", "err": "Lara schläft", "fix": ["schläft Lara"], "why": "In der Nacht schläft Lara."},
+                {"s": "Am Mittag isst Max mit Nina.", "err": null},
+                {"s": "Am Samstag kaufe ich ein.", "err": null},
+                {"s": "Am Montag ich arbeite.", "err": "ich arbeite", "fix": ["arbeite ich"], "why": "Am Montag arbeite ich."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jeden", "title": "jeden Tag, jede Nacht", "minutes": 5,
+          "blocks": [
+            { "type": "table", "title": "jeden / jede + thời gian", "head": ["Cụm", "Ví dụ", "Nghĩa"], "say": 1, "vi": "Với danh từ <span class='g-der'>der</span> dùng <b>jeden</b> (<i>jeden Tag, jeden Morgen, jeden Abend</i>); với danh từ <span class='g-die'>die</span> dùng <b>jede</b> (<i>jede Nacht, jede Woche</i>). <i>Montag bis Sonntag</i> = <i>jeden Tag</i>. Chỉ cần nhớ nguyên cụm.",
+              "rows": [
+                ["jeden Tag", "Ich lerne <b>jeden Tag</b> Deutsch.", "mỗi ngày"],
+                ["jeden Morgen / Abend", "Ich stehe <b>jeden Morgen</b> um sechs Uhr auf.", "mỗi sáng / mỗi tối"],
+                ["jede Nacht", "Max chattet <b>jede Nacht</b>.", "mỗi đêm"],
+                ["jede Woche", "Ich rufe Mama <b>jede Woche</b> an.", "mỗi tuần"]
+              ]
+            },
+            { "type": "gaps", "title": "jeden hay jede?",
+              "items": [
+                {"q": "Ich lerne ___ Tag Deutsch.", "a": ["jeden"], "opts": ["jeden", "jede"]},
+                {"q": "Max chattet ___ Nacht.", "a": ["jede"], "opts": ["jeden", "jede"]},
+                {"q": "Ich stehe ___ Morgen um sechs Uhr auf.", "a": ["jeden"], "opts": ["jeden", "jede"]},
+                {"q": "Sie ruft ___ Woche Mama an.", "a": ["jede"], "opts": ["jeden", "jede"]},
+                {"q": "Wir essen ___ Abend zusammen.", "a": ["jeden"], "opts": ["jeden", "jede"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mein-tag", "title": "Đọc hiểu: ngày của Paula; tìm giờ chạy bộ", "minutes": 8,
+          "blocks": [
+            {"type": "text", "html": "<p>Nghe và đọc theo đoạn tự giới thiệu ngắn dưới đây (bài do tôi tự soạn), rồi trả lời câu hỏi.</p>"},
+            { "type": "dialog", "title": "Paula",
+              "lines": [
+                {"who": "Paula", "v": "f", "de": "Ich heiße Paula. Ich arbeite im Supermarkt.", "vi": "Tôi tên là Paula. Tôi làm việc ở siêu thị."},
+                {"who": "Paula", "v": "f", "de": "Am Morgen stehe ich um halb sechs auf. Ich bin müde, aber ich frühstücke gern.", "vi": "Buổi sáng tôi dậy lúc 5 rưỡi. Tôi mệt, nhưng tôi thích ăn sáng."},
+                {"who": "Paula", "v": "f", "de": "Von sieben bis drei arbeite ich.", "vi": "Từ 7 đến 3 giờ tôi làm việc."},
+                {"who": "Paula", "v": "f", "de": "Am Mittag esse ich mit Tom.", "vi": "Buổi trưa tôi ăn cùng Tom."},
+                {"who": "Paula", "v": "f", "de": "Am Nachmittag räume ich die Wohnung auf und ich kaufe ein.", "vi": "Buổi chiều tôi dọn nhà và đi mua đồ."},
+                {"who": "Paula", "v": "f", "de": "Am Abend koche ich das Abendessen und sehe ein bisschen fern.", "vi": "Buổi tối tôi nấu bữa tối và xem tivi một chút."},
+                {"who": "Paula", "v": "f", "de": "Um elf Uhr gehe ich ins Bett.", "vi": "Lúc 11 giờ tôi đi ngủ."},
+                {"who": "Paula", "v": "f", "de": "Am Wochenende schlafe ich lange. Das mache ich gern!", "vi": "Cuối tuần tôi ngủ nướng. Tôi thích thế!"}
+              ]
+            },
+            { "type": "choice", "title": "Bạn hiểu bài của Paula chưa?",
+              "items": [
+                {"q": "Wann steht Paula auf?", "opts": ["Um halb sechs.", "Um sechs.", "Um halb sieben."], "a": 0},
+                {"q": "Wo arbeitet Paula?", "opts": ["Im Supermarkt.", "Im Café.", "Im Kaufhaus."], "a": 0},
+                {"q": "Von wann bis wann arbeitet Paula?", "opts": ["Von sieben bis drei.", "Von acht bis fünf.", "Von neun bis zwölf."], "a": 0},
+                {"q": "Mit wem isst Paula am Mittag?", "opts": ["Mit Tom.", "Mit Mama.", "Mit Nina."], "a": 0},
+                {"q": "Was macht Paula am Abend?", "opts": ["Sie kocht und sieht fern.", "Sie geht ins Kino.", "Sie spielt Fußball."], "a": 0},
+                {"q": "Wann geht Paula ins Bett?", "opts": ["Um elf Uhr.", "Um zehn Uhr.", "Um halb zwölf."], "a": 0}
+              ]
+            },
+            { "type": "table", "title": "Wann können Lea und Karla zusammen joggen? (lịch do tôi tự soạn)", "head": ["", "Lea", "Karla"],
+              "rows": [
+                ["Mittwoch, am Vormittag", "arbeiten", "arbeiten"],
+                ["Mittwoch, am Abend", "Deutschkurs", "hat Zeit"],
+                ["Samstag, am Vormittag", "lange schlafen", "hat Zeit"],
+                ["Samstag, am Abend", "Party", "Kino"],
+                ["Sonntag, am Vormittag", "hat Zeit", "hat Zeit"],
+                ["Sonntag, am Abend", "fernsehen", "hat Zeit"]
+              ]
+            },
+            { "type": "choice", "title": "Tìm giờ chạy bộ",
+              "items": [
+                {"q": "Lea und Karla möchten zusammen joggen gehen. Wann haben beide Zeit?", "opts": ["Am Sonntag am Vormittag.", "Am Mittwoch am Abend.", "Am Samstag am Vormittag."], "a": 0},
+                {"q": "Wann hat Karla am Mittwoch Zeit?", "opts": ["Am Abend.", "Am Vormittag.", "In der Nacht."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "spiel", "title": "Ich glaube, … – Stimmt. / Doch.", "minutes": 5,
+          "blocks": [
+            { "type": "table", "title": "Đoán và trả lời", "head": ["Bạn đoán", "Đoán đúng", "Đoán sai"], "vi": "<b>Stimmt.</b> = Bạn đoán đúng. <b>Doch.</b> = Không, ngược lại! — chỉ dùng để phản bác một câu <b>phủ định</b> (có <i>nicht / kein</i>).",
+              "rows": [
+                ["Ich glaube, du stehst nicht jeden Tag um sechs Uhr auf.", "Stimmt. Am Wochenende stehe ich später auf.", "Doch! Ich stehe jeden Tag um sechs Uhr auf."],
+                ["Ich glaube, du arbeitest nicht am Samstag.", "Stimmt. Am Samstag schlafe ich lange.", "Doch! Am Samstag arbeite ich bis zwei."]
+              ]
+            },
+            { "type": "choice", "title": "Stimmt hay doch?",
+              "items": [
+                {"q": "Ich glaube, du schläfst nicht lange am Sonntag. – ___ Ich schlafe bis zehn Uhr.", "opts": ["Doch!", "Stimmt!", "Danke!"], "a": 0},
+                {"q": "Ich glaube, du arbeitest nicht am Sonntag. – ___ Am Sonntag schlafe ich lange.", "opts": ["Stimmt!", "Doch!", "Bitte!"], "a": 0},
+                {"q": "Ich glaube, du kochst gern. – ___ Ich koche sehr gern.", "opts": ["Stimmt!", "Doch!", "Nein!"], "a": 0},
+                {"q": "Ich glaube, du siehst nicht gern fern. – ___ Ich sehe sehr gern fern.", "opts": ["Doch!", "Stimmt!", "Danke!"], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần D và Zwischendurch", "minutes": 6,
+          "blocks": [
+            { "type": "book", "title": "Phần D — Tageszeiten", "kb": "63", "ab": "57–58", "tracks": "KB 2/17", "key": "Đáp án D1, D2: giáo án <i>Unterrichtsplan L5</i>, trang 8–9.",
+              "steps": [
+                "D1 — <i>Ordnen Sie zu.</i> Ghép các hình mặt trời với <i>am Morgen / am Vormittag / am Mittag / am Nachmittag / am Abend / in der Nacht</i>. Ô bên cạnh nhắc: <i>am</i> cho các buổi, riêng <i>in der Nacht</i>.",
+                "D2a — <i>Roberts Samstag.</i> Nghe (track 17) và nối từng buổi với việc Robert làm. Xem hình dây phơi bên cạnh: động từ luôn ở vị trí 2, thời gian và chủ ngữ đổi chỗ cho nhau.",
+                "D2b — nhìn các ảnh A–F, ghép việc làm và viết câu: <i>Am Morgen hört Robert Musik. …</i>",
+                "D3 — <i>Spiel: Ihr Tag.</i> Viết 4 câu về ngày của bạn, trong đó một câu sai. Người khác đoán: <i>Ich glaube, … – Stimmt. / Doch.</i> Học một mình: tự viết 4 câu rồi đọc to."
+              ]
+            },
+            { "type": "book", "title": "Zwischendurch mal … (Kursbuch tr. 68–69)", "kb": "68–69", "tracks": "KB 2/25-26", "key": "Đáp án: giáo án <i>Unterrichtsplan L5</i>, trang 12–14.",
+              "steps": [
+                "<i>Comic: Der kleine Mann: Die Traumfrau</i> — ghép các câu (giờ giấc, sinh hoạt) với sáu bức tranh.",
+                "<i>Lesen: Hallo! Ich bin Franziska.</i> — đọc bài tự giới thiệu và ghi thông tin theo mẫu (tuổi, quê, nơi ở, nghề, bạn trai, sở thích).",
+                "<i>Film: So ist mein Tag.</i> — nối giờ giấc với việc Franziska làm rồi kể một ngày của cô ấy.",
+                "<i>Hören: Gehen wir joggen?</i> — nghe Lea (track 25) và Karla (track 26), điền lịch tuần của họ, rồi tìm hai thời điểm hai người cùng đi chạy bộ được. (Phần trên của buổi này có một bài tương tự do tôi tự soạn.)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 6,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Thứ Bảy của Max",
+              "lines": [
+                {"scene": "Katja hỏi Max về ngày thứ Bảy."},
+                {"who": "Katja", "v": "f", "de": "Max, was machst du am Samstag?", "vi": "Max, thứ Bảy bạn làm gì?"},
+                {"who": "Max", "v": "m", "de": "Am Vormittag schlafe ich lange. Am Mittag koche ich mit Nina.", "vi": "Buổi trước trưa mình ngủ nướng. Buổi trưa mình nấu ăn cùng Nina."},
+                {"who": "Katja", "v": "f", "de": "Und am Nachmittag?", "vi": "Còn buổi chiều?"},
+                {"who": "Max", "v": "m", "de": "Am Nachmittag mache ich Sport und am Abend gehe ich ins Kino.", "vi": "Buổi chiều mình tập thể thao và buổi tối mình đi xem phim."},
+                {"who": "Katja", "v": "f", "de": "Und in der Nacht?", "vi": "Còn ban đêm?"},
+                {"who": "Max", "v": "m", "de": "In der Nacht chatte ich ein bisschen. Und du?", "vi": "Ban đêm mình chat một chút. Còn bạn?"},
+                {"who": "Katja", "v": "f", "de": "Ich schlafe lange, räume auf und sehe fern.", "vi": "Mình ngủ nướng, dọn dẹp và xem tivi."},
+                {"who": "Max", "v": "m", "de": "Schön! Dann bis Montag!", "vi": "Hay đấy! Vậy hẹn thứ Hai nhé!"}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Stimmt oder doch?",
+              "lines": [
+                {"scene": "Ben và Lena chơi trò đoán thói quen của nhau."},
+                {"who": "Ben", "v": "m", "de": "Ich glaube, du stehst nicht jeden Tag um sechs Uhr auf.", "vi": "Mình đoán bạn không dậy lúc 6 giờ mỗi ngày."},
+                {"who": "Lena", "v": "f", "de": "Doch! Ich stehe jeden Tag um sechs Uhr auf.", "vi": "Có chứ! Ngày nào mình cũng dậy lúc 6 giờ."},
+                {"who": "Ben", "v": "m", "de": "Aha! Und ich glaube, du arbeitest nicht am Samstag.", "vi": "À há! Và mình đoán bạn không làm việc vào thứ Bảy."},
+                {"who": "Lena", "v": "f", "de": "Stimmt. Am Samstag schlafe ich lange.", "vi": "Đúng vậy. Thứ Bảy mình ngủ nướng."},
+                {"who": "Ben", "v": "m", "de": "Und ich glaube, du siehst nicht gern fern.", "vi": "Và mình đoán bạn không thích xem tivi."},
+                {"who": "Lena", "v": "f", "de": "Doch, ich sehe sehr gern fern!", "vi": "Có chứ, mình rất thích xem tivi!"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 3,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi gọi tên được sáu buổi trong ngày và nói đúng <i>am Morgen … in der Nacht</i>.",
+                "Tôi đặt thời gian lên đầu câu mà động từ vẫn ở vị trí 2: <i>Am Abend sehe ich fern.</i>",
+                "Tôi dùng được <i>jeden Tag, jeden Morgen, jede Nacht</i>.",
+                "Tôi kể được một ngày của mình bằng 5–6 câu và biết đáp <i>Stimmt.</i> hoặc <i>Doch.</i>"
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                "Arbeitsbuch tr. 57–58, bài 18–22 (phần D, không có audio).",
+                {"t": "Kursbuch tr. 69, <i>Hören: Gehen wir joggen?</i> — nghe Lea và Karla rồi điền lịch tuần.", "tracks": "KB 2/25-26"},
+                "Viết 6 câu về ngày của bạn: <i>Am Morgen … Am Vormittag … Am Mittag … Am Nachmittag … Am Abend … In der Nacht …</i>",
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5", "no": 5, "minutes": 53, "set": "e",
+      "title": "Wann ist geöffnet?",
+      "vi": "Giờ chính thức (24 giờ), giờ mở cửa, thông báo (Ansagen), hỏi giờ mở cửa",
+      "book": "Kursbuch tr. 64 (E1) · Arbeitsbuch tr. 59 (bài 23) · Lernwortschatz L5 (phần E, đầu)",
+      "goals": [
+        "Phân biệt giờ thường ngày (<i>halb neun</i>) và giờ chính thức (<i>acht Uhr dreißig</i>).",
+        "Đọc và nói giờ chính thức: <i>neunzehn Uhr, dreizehn Uhr fünfzehn</i>.",
+        "Hiểu giờ mở cửa trên biển và trong thông báo: <i>Von Montag bis Freitag von 9 bis 19 Uhr geöffnet.</i>",
+        "Hỏi giờ mở cửa: <i>Wann ist die Bibliothek geöffnet? · Von wann bis wann …?</i>"
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: giờ mở cửa", "minutes": 6,
+          "blocks": [
+            {"type": "words", "set": "e"},
+            {"type": "listenPick", "set": "e", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "e", "by": "emoji", "n": 5, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (21)", "minutes": 4,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "Giờ chính thức: số 13–24", "vi": "Giờ chính thức dùng số đến 24: <b>dreizehn, vierzehn … zwanzig</b>. Chú ý <i>sechzehn</i> và <i>siebzehn</i> bỏ bớt chữ (sech-zehn, sieb-zehn); phân biệt <b>-zehn</b> (13–19) với <b>-zig</b> (20–90).", "ex": ["dreizehn|13", "sechzehn|16", "siebzehn|17", "zwanzig|20"]},
+                {"t": "sch, ss trong geschlossen", "vi": "<b>sch</b> đọc „sh“; <b>ss</b> báo nguyên âm ngắn: <i>geschlossen</i> = „ge-SHLOS-sen“. <b>ö</b> trong <i>geöffnet</i>: tròn môi, đặt lưỡi như „ê“ (öff = „ơf“ ngắn).", "ex": ["geschlossen|đóng cửa", "geöffnet|mở cửa", "Ansage|thông báo", "täglich|hằng ngày"]},
+                {"t": "Nhấn âm: từ mượn và từ ghép", "vi": "Từ mượn nhấn gần cuối: <i>Bi-bli-o-THEK, of-fi-ZIELL, ca-FÉ</i>. Từ ghép nhấn âm đầu: <i>FAHR-rad, FEI-er-tag</i>.", "ex": ["Bibliothek|thư viện", "offiziell|chính thức", "Café|quán cà phê", "Fahrrad|xe đạp"]}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "dreizehn", "opts": ["dreizehn", "dreißig"]},
+                {"say": "sechzehn", "opts": ["sechzehn", "sechzig"]},
+                {"say": "siebzehn", "opts": ["siebzehn", "siebzig"]},
+                {"say": "Café", "opts": ["Café", "Kaffee"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "offiziell", "title": "Giờ chính thức (24 giờ)", "minutes": 15,
+          "blocks": [
+            { "type": "table", "title": "Cùng một giờ, hai cách nói", "head": ["Viết", "Chính thức (radio, tivi, ga, thông báo, cơ quan)", "Thường ngày (gia đình, bạn bè)"], "say": 1,
+              "rows": [
+                ["08:30", "acht Uhr dreißig", "halb neun"],
+                ["10:15", "zehn Uhr fünfzehn", "Viertel nach zehn"],
+                ["13:00", "dreizehn Uhr", "eins (ein Uhr)"],
+                ["15:45", "fünfzehn Uhr fünfundvierzig", "Viertel vor vier"],
+                ["19:00", "neunzehn Uhr", "sieben Uhr"],
+                ["21:20", "einundzwanzig Uhr zwanzig", "zwanzig nach neun"],
+                ["00:30", "null Uhr dreißig", "halb eins"]
+              ]
+            },
+            {"type": "tip", "title": "Khi nào dùng giờ chính thức?", "html": "<ul><li><b>Chính thức</b> (24 giờ): radio, tivi, thông báo ở ga tàu / sân bay, cơ quan, bác sĩ, giờ mở cửa, lời nhắn trên máy trả lời tự động. Nói <b>giờ + Uhr + phút</b>, không dùng <i>Viertel, halb, vor, nach</i>: 17:05 = <i>siebzehn Uhr fünf</i>; 17:00 = <i>siebzehn Uhr</i>.</li><li><b>Thường ngày</b> (12 giờ): trong gia đình, với bạn bè — như đã học ở Buổi 2.</li><li>Từ 13 giờ trở đi chỉ có kiểu chính thức: <i>dreizehn Uhr</i> = <i>ein Uhr</i> (thường ngày).</li></ul>"},
+            {"type": "clockLab", "title": "Đồng hồ: xem cả hai cách nói", "h": 14, "m": 30},
+            {"type": "clockPick", "mode": "read", "style": "official", "n": 6, "title": "Xem giờ, chọn cách đọc chính thức"},
+            {"type": "clockPick", "mode": "hear", "style": "official", "n": 6, "title": "Nghe giờ chính thức, chọn số"},
+            {"type": "clockPick", "mode": "hear", "style": "mixed", "n": 6, "title": "Nghe (thường ngày hoặc chính thức), chọn đáp án"},
+            {"type": "timeWrite", "mode": "words", "style": "official", "n": 6, "title": "Nhìn số, gõ cách đọc chính thức", "task": "Thấy giờ như 15:45, gõ cách đọc chính thức: fünfzehn Uhr fünfundvierzig. Cần ä ö ü thì bấm nút phía trên ô gõ, hoặc gõ ae oe ue."},
+            {"type": "timeWrite", "mode": "digits", "style": "official", "n": 6, "title": "Đọc chữ, gõ số giờ", "task": "Đọc câu chính thức rồi gõ giờ bằng chữ số, ví dụ 19:30."}
+          ]
+        },
+        {
+          "id": "oeffnungszeiten", "title": "Giờ mở cửa", "minutes": 12,
+          "blocks": [
+            { "type": "table", "title": "Biển giờ mở cửa (tôi tự soạn)", "head": ["Nơi", "Giờ mở cửa"],
+              "rows": [
+                ["Café Sonne", "täglich 8.00–22.00 Uhr"],
+                ["Stadtbibliothek", "Mo–Fr 9.00–19.00 Uhr · Sa 10.00–14.00 Uhr · So und an Feiertagen geschlossen"],
+                ["Supermarkt Nord", "Mo–Sa 7.00–21.00 Uhr"],
+                ["Museum am Fluss", "Di–So 10.00–18.00 Uhr · Mo geschlossen"],
+                ["Fahrradstation", "Mo–Fr 10.00–18.30 Uhr · Sa 10.00–17.00 Uhr"]
+              ]
+            },
+            { "type": "gaps", "title": "Điền theo biển giờ mở cửa", "task": "Gõ từ còn thiếu. Cần ä ö ü thì bấm nút phía trên ô gõ, hoặc gõ ae oe ue.",
+              "items": [
+                {"q": "Das Café ist ___ von acht bis zweiundzwanzig Uhr geöffnet.", "a": ["täglich"]},
+                {"q": "Die Bibliothek ist von Montag ___ Freitag von neun bis neunzehn Uhr geöffnet.", "a": ["bis"]},
+                {"q": "Am Sonntag ist die Bibliothek ___.", "a": ["geschlossen"]},
+                {"q": "Der Supermarkt ist von ___ bis Samstag geöffnet.", "a": ["Montag"]},
+                {"q": "Das Museum ist am ___ geschlossen.", "a": ["Montag"]},
+                {"q": "Die Fahrradstation ist am Samstag von zehn ___ siebzehn Uhr geöffnet.", "a": ["bis"]}
+              ]
+            },
+            { "type": "choice", "title": "Đọc biển và trả lời",
+              "items": [
+                {"q": "Wann ist das Café geöffnet?", "opts": ["Täglich von 8 bis 22 Uhr.", "Nur am Wochenende.", "Von Montag bis Freitag."], "a": 0},
+                {"q": "Ist die Bibliothek am Sonntag geöffnet?", "opts": ["Nein, am Sonntag ist sie geschlossen.", "Ja, von 10 bis 14 Uhr.", "Ja, von 9 bis 19 Uhr."], "a": 0},
+                {"q": "Wann ist der Supermarkt am Samstag geöffnet?", "opts": ["Von 7 bis 21 Uhr.", "Von 9 bis 14 Uhr.", "Er ist geschlossen."], "a": 0},
+                {"q": "Sie gehen am Montag ins Museum. Ist es geöffnet?", "opts": ["Nein, am Montag ist das Museum geschlossen.", "Ja, von 10 bis 18 Uhr.", "Ja, von 9 bis 12 Uhr."], "a": 0},
+                {"q": "Bis wann ist die Fahrradstation am Samstag geöffnet?", "opts": ["Bis 17 Uhr.", "Bis 18.30 Uhr.", "Bis 14 Uhr."], "a": 0}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Thông báo qua điện thoại</b> (bài tự soạn): nghe — các giờ được đọc theo kiểu <b>chính thức</b>.</p>"},
+            { "type": "dialog", "title": "Ansage der Stadtbibliothek",
+              "lines": [
+                {"who": "Ansage", "v": "f", "de": "Guten Tag. Sie hören die Ansage der Stadtbibliothek. Wir sind von Montag bis Freitag von neun bis neunzehn Uhr für Sie da.", "vi": "Xin chào. Quý vị đang nghe thông báo của thư viện thành phố. Chúng tôi phục vụ từ thứ Hai đến thứ Sáu, từ 9 đến 19 giờ."},
+                {"who": "Ansage", "v": "f", "de": "Am Samstag sind wir von zehn bis vierzehn Uhr geöffnet. Am Sonntag und an Feiertagen ist die Bibliothek geschlossen.", "vi": "Thứ Bảy chúng tôi mở cửa từ 10 đến 14 giờ. Chủ nhật và các ngày lễ thư viện đóng cửa."},
+                {"who": "Ansage", "v": "f", "de": "Vielen Dank! Auf Wiederhören!", "vi": "Xin cảm ơn! Hẹn nghe lại!"}
+              ]
+            },
+            { "type": "choice", "title": "Bạn hiểu thông báo chưa?",
+              "items": [
+                {"q": "Bis wann ist die Bibliothek am Freitag geöffnet?", "opts": ["Bis neunzehn Uhr.", "Bis vierzehn Uhr.", "Bis achtzehn Uhr."], "a": 0},
+                {"q": "Wann ist sie am Samstag geöffnet?", "opts": ["Von zehn bis vierzehn Uhr.", "Von neun bis neunzehn Uhr.", "Sie ist geschlossen."], "a": 0},
+                {"q": "Und am Sonntag?", "opts": ["Sie ist geschlossen.", "Von zehn bis vierzehn Uhr.", "Von neun bis neunzehn Uhr."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần E (E1)", "minutes": 6,
+          "blocks": [
+            { "type": "book", "title": "Phần E — Ein Tag in Berlin (nửa đầu)", "kb": "64", "ab": "59", "tracks": "KB 2/18-21", "key": "Đáp án E1: giáo án <i>Unterrichtsplan L5</i>, trang 10–11.",
+              "steps": [
+                "E1a — <i>Öffnungszeiten. Hören Sie und ordnen Sie die Anzeigen zu.</i> Xem bốn biển thông báo A–D (Tourist-Info, quán cà phê, trạm xe đạp, thư viện thiếu nhi) và nghe bốn thông báo (track 18–21); ghép mỗi thông báo với biển đúng (đã làm sẵn một ví dụ).",
+                "E1b — đọc các biển, đánh dấu giờ mở cửa rồi nghe lại và <b>sửa những giờ ghi sai</b> trên biển. Chú ý cách đọc giờ trong thông báo: giờ chính thức.",
+                "Ô thông tin bên dưới: bảng giờ chính thức ↔ thường ngày (08.30 = <i>acht Uhr dreißig</i> / <i>halb neun</i>; 19.00 = <i>neunzehn Uhr</i> / <i>sieben Uhr</i>).",
+                "Trang tổng kết (tr. 67) — ô <i>Öffnungszeiten</i>: điền giờ mở cửa của quán cà phê, thư viện và siêu thị theo mẫu <i>Wann ist … geöffnet?</i>",
+                "Arbeitsbuch bài 23 — nghe sáu hội thoại, ghép với mặt đồng hồ và đánh dấu giờ thường ngày (p) hay chính thức (o) (audio AB track 48–53)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hoi-thoai", "title": "Hội thoại mẫu: nghe rồi nói theo", "minutes": 6,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Hỏi giờ mở cửa thư viện",
+              "lines": [
+                {"scene": "Ông Roth gọi điện cho thư viện."},
+                {"who": "Herr Roth", "v": "m2", "de": "Guten Tag. Wann ist die Bibliothek am Samstag geöffnet?", "vi": "Chào chị. Thư viện thứ Bảy mở cửa lúc nào ạ?"},
+                {"who": "Frau Berg", "v": "f", "de": "Am Samstag von zehn bis vierzehn Uhr.", "vi": "Thứ Bảy từ 10 đến 14 giờ."},
+                {"who": "Herr Roth", "v": "m2", "de": "Von zehn bis vierzehn Uhr. Das ist von zehn bis zwei, richtig?", "vi": "Từ 10 đến 14 giờ. Tức là từ 10 đến 2 giờ, đúng không ạ?"},
+                {"who": "Frau Berg", "v": "f", "de": "Ja, genau. Und am Sonntag ist die Bibliothek geschlossen.", "vi": "Vâng, đúng vậy. Còn Chủ nhật thư viện đóng cửa."},
+                {"who": "Herr Roth", "v": "m2", "de": "Vielen Dank!", "vi": "Cảm ơn chị rất nhiều!"}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Quán cà phê",
+              "lines": [
+                {"scene": "Lena hỏi giờ mở cửa của một quán cà phê."},
+                {"who": "Lena", "v": "f", "de": "Entschuldigung, ist das Café am Sonntag geöffnet?", "vi": "Xin lỗi, Chủ nhật quán có mở cửa không ạ?"},
+                {"who": "Frau Weiss", "v": "f", "de": "Ja, wir sind täglich geöffnet: von acht bis zweiundzwanzig Uhr.", "vi": "Có, chúng tôi mở cửa hằng ngày: từ 8 đến 22 giờ."},
+                {"who": "Lena", "v": "f", "de": "Von acht bis zweiundzwanzig Uhr? Das ist von acht bis zehn!", "vi": "Từ 8 đến 22 giờ ạ? Tức là từ 8 đến 10 giờ (tối) nhỉ!"},
+                {"who": "Frau Weiss", "v": "f", "de": "Genau!", "vi": "Chính xác!"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 4,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá",
+              "items": [
+                "Tôi đọc và nói được giờ chính thức: <i>neunzehn Uhr dreißig, dreizehn Uhr fünfzehn</i>.",
+                "Tôi biết khi nào dùng giờ chính thức và khi nào dùng giờ thường ngày.",
+                "Tôi hiểu giờ mở cửa trên biển và trong thông báo.",
+                "Tôi hỏi được: <i>Wann ist die Bibliothek geöffnet?</i>"
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 59, bài 23 (nghe sáu hội thoại, giờ thường ngày hay chính thức; audio AB track 48–53).", "tracks": "AB 48-53"},
+                "Lên mạng tìm giờ mở cửa (<i>Öffnungszeiten</i>) của một cửa hàng hoặc thư viện ở Đức và đọc to bằng giờ chính thức.",
+                "Ngày mai: vào <a href='#/review'>Ôn tập</a> để ôn các từ của buổi này."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6", "no": 6, "minutes": 66, "set": "e2",
+      "title": "Ein Tag in der Stadt",
+      "vi": "Đọc thông tin, lập kế hoạch một ngày, nguyên âm dài – ngắn, Fokus Beruf và kiểm tra cuối Lektion 5",
+      "book": "Kursbuch tr. 64–69 · Arbeitsbuch tr. 59–62 · Lernwortschatz L5 (phần E, cuối)",
+      "goals": [
+        "Đọc thông tin ngắn (giờ mở cửa, giá vé, giờ khởi hành) và tìm đúng điều cần biết.",
+        "Lập kế hoạch một ngày với giờ giấc: <i>Um acht Uhr frühstücken wir im Café. Um halb elf machen wir eine Tour.</i>",
+        "Nói về việc học, việc làm và giờ làm: <i>Ich arbeite von Montag bis Samstag von sieben bis drei Uhr.</i>",
+        "Phân biệt nguyên âm dài và ngắn (<i>Ofen – offen, Staat – Stadt</i>).",
+        "Làm bài kiểm tra cuối Lektion 5."
+      ],
+      "sections": [
+        {
+          "id": "tu-moi", "title": "Từ mới: một ngày ở thành phố", "minutes": 6,
+          "blocks": [
+            {"type": "words", "set": "e2"},
+            {"type": "listenPick", "set": "e2", "n": 8, "title": "Nghe và chọn nghĩa"},
+            {"type": "listenPick", "set": "e2", "by": "emoji", "n": 6, "title": "Nghe và chọn hình"}
+          ]
+        },
+        {
+          "id": "doc", "title": "Đọc chữ Đức (22): nguyên âm dài hay ngắn?", "minutes": 5,
+          "blocks": [
+            { "type": "rules",
+              "items": [
+                {"t": "Dài hay ngắn? (nhắc lại)", "vi": "Nguyên âm <b>dài</b> khi sau nó chỉ có một phụ âm, hoặc có <b>h</b> / nguyên âm đôi: <i>Abend, Tee, Kino, Uhr, früh</i>. Nguyên âm <b>ngắn</b> khi sau nó có hai phụ âm: <i>wann, Bett, bitte, fünf, Mutter</i>. Có ngoại lệ, ví dụ <i>Montag</i> (o dài).", "ex": ["Abend|buổi tối", "wann|khi nào", "Montag|thứ Hai", "Mutter|mẹ"]},
+                {"t": "Cặp từ chỉ khác độ dài", "vi": "Độ dài nguyên âm làm đổi nghĩa: <i>Ofen</i> (lò, o dài) – <i>offen</i> (mở, o ngắn); <i>Staat</i> (nhà nước, a dài) – <i>Stadt</i> (thành phố, a ngắn).", "ex": ["Ofen|lò", "offen|mở", "Staat|nhà nước", "Stadt|thành phố"]},
+                {"t": "ö, ü: dài hay ngắn?", "vi": "Dài: <i>schön, hören, früh, müde</i>. Ngắn: <i>fünf, Küche</i> (ü) và <i>öffnen</i> (ö).", "ex": ["schön|đẹp", "hören|nghe", "fünf|5", "Küche|bếp"]}
+              ]
+            },
+            { "type": "choice", "title": "Nguyên âm này dài hay ngắn?",
+              "items": [
+                {"q": "<span class='say-inline' data-say='Abend'>🔊 Abend</span> — nguyên âm a:", "opts": ["dài", "ngắn"], "a": 0},
+                {"q": "<span class='say-inline' data-say='wann'>🔊 wann</span> — nguyên âm a:", "opts": ["ngắn", "dài"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Tee'>🔊 Tee</span> — nguyên âm ee:", "opts": ["dài", "ngắn"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Bett'>🔊 Bett</span> — nguyên âm e:", "opts": ["ngắn", "dài"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Kino'>🔊 Kino</span> — nguyên âm i (âm đầu):", "opts": ["dài", "ngắn"], "a": 0},
+                {"q": "<span class='say-inline' data-say='bitte'>🔊 bitte</span> — nguyên âm i:", "opts": ["ngắn", "dài"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Montag'>🔊 Montag</span> — nguyên âm o:", "opts": ["dài", "ngắn"], "a": 0},
+                {"q": "<span class='say-inline' data-say='kochen'>🔊 kochen</span> — nguyên âm o:", "opts": ["ngắn", "dài"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Uhr'>🔊 Uhr</span> — nguyên âm u:", "opts": ["dài", "ngắn"], "a": 0},
+                {"q": "<span class='say-inline' data-say='Mutter'>🔊 Mutter</span> — nguyên âm u:", "opts": ["ngắn", "dài"], "a": 0},
+                {"q": "<span class='say-inline' data-say='früh'>🔊 früh</span> — nguyên âm ü:", "opts": ["dài", "ngắn"], "a": 0},
+                {"q": "<span class='say-inline' data-say='fünf'>🔊 fünf</span> — nguyên âm ü:", "opts": ["ngắn", "dài"], "a": 0}
+              ]
+            },
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng (cặp từ khác độ dài nguyên âm)",
+              "items": [
+                {"say": "Ofen", "opts": ["Ofen", "offen"]},
+                {"say": "Staat", "opts": ["Staat", "Stadt"]},
+                {"say": "Miete", "opts": ["Miete", "Mitte"]},
+                {"say": "Beet", "opts": ["Beet", "Bett"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lesen", "title": "Đọc thông tin: Was ist los in Hamburg?", "minutes": 12,
+          "blocks": [
+            {"type": "text", "html": "<p>Frau Kim ist einen Tag in Hamburg. Dưới đây là bốn tin thông tin (tôi tự soạn). Đọc và tìm đúng điều cần biết — bạn <b>không cần hiểu hết</b> từng chữ.</p><div class='ad-grid'><div class='ad'><span class='ad-id'>A</span><b>Schiffstour durch den Hafen</b><br>Täglich. Abfahrt: 10.30 / 12.45 / 15.00 / 17.15 Uhr.<br>Erwachsene 14 Euro · Kinder 7 Euro</div><div class='ad'><span class='ad-id'>B</span><b>Kaufhaus Nordstern</b><br>Mo–Do 10.00–20.00 Uhr · Fr 10.00–21.00 Uhr · Sa 9.30–20.00 Uhr</div><div class='ad'><span class='ad-id'>C</span><b>Museum am Hafen</b><br>Täglich von 11 bis 17 Uhr. Dienstag geschlossen.<br>Erwachsene 8 Euro · Kinder 3 Euro</div><div class='ad'><span class='ad-id'>D</span><b>Kino Lux</b><br>Heute: der Film „Sommer in Hamburg“<br>15.30 / 17.30 / 19.30 / 22.00 Uhr</div></div><p class='ad-note'>Tin mẫu do tôi tự soạn — giờ và giá chỉ để luyện đọc, không phải thông tin thật.</p>"},
+            { "type": "choice", "title": "Đọc tin và trả lời",
+              "items": [
+                {"q": "Frau Kim macht am Vormittag eine Tour mit dem Schiff. Wann ist die Abfahrt?", "opts": ["Um 10.30 Uhr.", "Um 15.00 Uhr.", "Um 17.15 Uhr."], "a": 0},
+                {"q": "Was kostet die Tour für ein Kind?", "opts": ["7 Euro.", "14 Euro.", "3 Euro."], "a": 0},
+                {"q": "Wann ist das Museum geschlossen?", "opts": ["Am Dienstag.", "Am Sonntag.", "Am Samstag."], "a": 0},
+                {"q": "Wann ist das Kaufhaus am Freitag geöffnet?", "opts": ["Von 10 bis 21 Uhr.", "Von 10 bis 20 Uhr.", "Von 9.30 bis 20 Uhr."], "a": 0},
+                {"q": "Der Film fängt um 22.00 Uhr an. Wie sagt man das im Alltag?", "opts": ["Um zehn Uhr.", "Um zwei Uhr.", "Um halb elf."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tagesplan", "title": "Lập kế hoạch một ngày", "minutes": 9,
+          "blocks": [
+            {"type": "text", "html": "<p>Frau Kim und ihre Freundin machen einen <b>Plan</b> für den Tag (mô hình cho bài E3). Xếp các hoạt động theo thứ tự thời gian, rồi điền các câu của kế hoạch.</p>"},
+            { "type": "order", "title": "Xếp kế hoạch theo thứ tự thời gian",
+              "items": [
+                {"chunks": ["8.00 Uhr: im Café frühstücken", "10.30 Uhr: Tour mit dem Schiff", "13.00 Uhr: im Kaufhaus einkaufen", "15.00 Uhr: ins Museum gehen", "19.30 Uhr: ins Kino gehen"], "v": null, "vi": "Từ sáng đến tối."}
+              ]
+            },
+            { "type": "gaps", "title": "Hoàn thành kế hoạch", "task": "Chọn từ trong danh sách cho mỗi chỗ trống.", "bank": ["frühstücken", "Tour", "kaufen", "Museum", "Kino"],
+              "items": [
+                {"q": "Um acht Uhr ___ wir im Café.", "a": ["frühstücken"]},
+                {"q": "Um halb elf machen wir eine ___ mit dem Schiff.", "a": ["Tour"]},
+                {"q": "Am Nachmittag ___ wir im Kaufhaus ein.", "a": ["kaufen"]},
+                {"q": "Um drei Uhr gehen wir ins ___.", "a": ["Museum"]},
+                {"q": "Am Abend gehen wir ins ___.", "a": ["Kino"]}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Việc của bạn (bài E3):</b> lập kế hoạch một ngày cho hai người trong thành phố bạn thích — 5–6 câu có giờ giấc, ví dụ: <i>Um acht Uhr frühstücken wir. Um halb elf … Am Abend …</i> Đọc to rồi so với mẫu ở trên. Nhớ: động từ ở vị trí 2, tiền tố (<i>ein</i>, <i>an</i>…) ở cuối câu.</p>"}
+          ]
+        },
+        {
+          "id": "fokus-beruf", "title": "Việc học và việc làm (Fokus Beruf)", "minutes": 7,
+          "blocks": [
+            { "type": "table", "title": "Ba người nói về việc học và việc làm (tôi tự soạn)", "head": ["Tên", "Họ nói", "Giờ giấc", "Thấy thế nào"], "vi": "Dùng lại <i>Wie gefällt dir …? – … gefällt mir (sehr) gut / nicht so gut</i> của Lektion 4.",
+              "rows": [
+                ["Jana", "Ich studiere in Hamburg. Am Vormittag lerne ich in der Bibliothek, am Nachmittag arbeite ich im Café.", "buổi sáng thư viện, buổi chiều quán cà phê", "Das Café gefällt mir sehr gut."],
+                ["Omar", "Ich arbeite im Supermarkt.", "von Montag bis Samstag von sieben bis drei Uhr", "Die Arbeit gefällt mir nicht so gut."],
+                ["Lisa", "Ich arbeite im Kaufhaus.", "von Dienstag bis Freitag; am Wochenende habe ich Zeit", "Die Arbeit gefällt mir gut."]
+              ]
+            },
+            { "type": "choice", "title": "Bạn hiểu rồi chứ?",
+              "items": [
+                {"q": "Wer arbeitet am Wochenende nicht?", "opts": ["Lisa", "Omar", "Jana"], "a": 0},
+                {"q": "Wer findet die Arbeit nicht so gut?", "opts": ["Omar", "Jana", "Lisa"], "a": 0},
+                {"q": "Wo arbeitet Jana am Nachmittag?", "opts": ["Im Café.", "In der Bibliothek.", "Im Supermarkt."], "a": 0},
+                {"q": "Von wann bis wann arbeitet Omar?", "opts": ["Von sieben bis drei Uhr.", "Von neun bis eins.", "Von acht bis fünf."], "a": 0}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Bây giờ đến bạn:</b> nói 3 câu về việc học hoặc việc làm của bạn theo mẫu: <i>Ich studiere / arbeite … Ich arbeite von … bis … Das gefällt mir (nicht so) gut.</i></p>"}
+          ]
+        },
+        {
+          "id": "sach", "title": "Làm trong sách: phần E, Arbeitsbuch và ôn tập", "minutes": 7,
+          "blocks": [
+            { "type": "book", "title": "Phần E — Ein Tag in Berlin (nửa sau)", "kb": "64–65", "key": "Đáp án E2: giáo án <i>Unterrichtsplan L5</i>, trang 11.",
+              "steps": [
+                "E2 — <i>Herr Tanaka ist heute in Berlin.</i> Đọc các thông tin ở trang 65 (<i>Was ist los in Berlin?</i>) và đánh dấu đáp án đúng cho 5 câu hỏi (phim nào, giờ mở cửa bảo tàng, giờ xuất phát của tàu, ăn ở đâu, Reichstagskuppel có mở không). Chỉ cần tìm từ khoá: giờ, ngày, giá.",
+                "E3 — <i>Machen Sie einen Plan.</i> Lập kế hoạch một ngày ở Berlin cho hai người bằng thông tin ở E1 và E2, rồi trình bày: <i>Um acht Uhr frühstücken wir im Café Einstein. Um halb elf machen wir eine Tour mit dem Schiff.</i>"
+              ]
+            },
+            { "type": "book", "title": "Arbeitsbuch phần E: nghe và phát âm", "ab": "59–60", "tracks": "AB 54-57", "key": "Đáp án: giáo án <i>Unterrichtsplan L5</i>, trang 11.",
+              "steps": [
+                "AB 24 — đọc bảng giờ tàu thủy trên sông Rhein (Fahrplan) và đánh dấu câu đúng.",
+                "AB 25 — <i>Was ist richtig? Hören Sie und kreuzen Sie an.</i> Nghe mỗi đoạn hai lần (audio AB track 54–56); kiểu bài nghe của kỳ thi Start Deutsch 1: hỏi giờ, ngày, giờ mở cửa.",
+                "AB 26 — <i>lang oder kurz?</i> Nghe và đánh dấu nguyên âm dài / ngắn (audio AB track 57), rồi xếp các từ theo âm a, e, i, o, u, ä, ö, ü."
+              ]
+            },
+            { "type": "book", "title": "Tổng kết và luyện thêm", "kb": "66–67", "ab": "62", "tracks": "KB 2/22-24",
+              "steps": [
+                "Kursbuch tr. 66–67 · Grammatik und Kommunikation: đọc lại bảng <i>trennbare Verben, Verb im Satz, temporale Präpositionen, Konjugation, Position im Hauptsatz</i> và các ô giao tiếp (Uhrzeit, Öffnungszeiten, Verabredung, Vorlieben, Strategien).",
+                "Kursbuch tr. 67 · Audio-Training (track 22–24): nghe và trả lời trong các quãng dừng — <i>Aha! … · Ich stehe nicht gern auf … · Am Samstag? Am Samstag gehe ich ins Kino.</i>",
+                "Arbeitsbuch tr. 62 · Fokus Beruf: Über Studium und Beruf sprechen — đọc ba bài tự giới thiệu và điền bảng (tuỳ chọn)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kiem-tra", "title": "Kiểm tra cuối Lektion 5", "minutes": 15,
+          "blocks": [
+            { "type": "test", "id": "l5", "title": "Bài kiểm tra",
+              "items": [
+                {"k": "mc", "q": "Lara ___ früh auf.", "opts": ["steht", "aufsteht", "stehen"], "a": 0, "why": "Động từ tách: stehen … auf → Lara steht früh auf."},
+                {"k": "mc", "q": "Sie ruft ihre Familie ___.", "opts": ["an", "auf", "ein"], "a": 0},
+                {"k": "type", "q": "Ich kaufe im Supermarkt ___. <span class='muted'>(einkaufen)</span>", "a": ["ein"]},
+                {"k": "type", "q": "Du ___ viel fern. <span class='muted'>(fernsehen)</span>", "a": ["siehst"], "why": "e → ie: du siehst fern."},
+                {"k": "type", "q": "Sofia ___ sehr viel. <span class='muted'>(arbeiten)</span>", "a": ["arbeitet"]},
+                {"k": "type", "q": "Du ___ lange. <span class='muted'>(schlafen)</span>", "a": ["schläfst"], "why": "a → ä: du schläfst."},
+                {"k": "type", "q": "Der Kurs ___ um neun Uhr an. <span class='muted'>(anfangen)</span>", "a": ["fängt"], "why": "a → ä: er/sie fängt an."},
+                {"k": "mc", "q": "Câu nào đúng?", "opts": ["Am Abend sehe ich fern.", "Am Abend ich sehe fern.", "Am Abend sehe fern ich."], "a": 0, "why": "Động từ luôn ở vị trí 2."},
+                {"k": "mc", "q": "Ich stehe ___ gern früh auf. <span class='muted'>(tôi không thích dậy sớm)</span>", "opts": ["nicht", "kein", "keine"], "a": 0},
+                {"k": "listenmc", "q": "Nghe rồi chọn giờ:", "say": "Es ist Viertel vor acht.", "opts": ["7:45", "8:15", "7:15", "8:45"], "a": 0},
+                {"k": "listenmc", "q": "Nghe rồi chọn giờ:", "say": "Es ist halb zehn.", "opts": ["9:30", "10:30", "10:00", "9:00"], "a": 0},
+                {"k": "listenmc", "q": "Nghe rồi chọn giờ:", "say": "Es ist fünf vor halb vier.", "opts": ["3:25", "3:35", "4:25", "2:55"], "a": 0},
+                {"k": "type", "q": "07:20 → Es ist ___ nach sieben. <span class='muted'>(gõ số bằng chữ)</span>", "a": ["zwanzig"]},
+                {"k": "type", "q": "06:58 → Es ist kurz ___ sieben.", "a": ["vor"]},
+                {"k": "mc", "q": "„Es ist erst elf.“ nghĩa là:", "opts": ["Mới 11 giờ (còn sớm).", "Đã 11 giờ rồi (muộn).", "Sắp 11 giờ."], "a": 0},
+                {"k": "mc", "q": "Der Kurs ist ___ Montag bis Freitag.", "opts": ["von", "am", "um"], "a": 0},
+                {"k": "mc", "q": "Wir spielen ___ halb drei Fußball.", "opts": ["um", "am", "von"], "a": 0},
+                {"k": "mc", "q": "Ich habe ___ Samstag Zeit.", "opts": ["am", "um", "bis"], "a": 0},
+                {"k": "mc", "q": "Max chattet ___ Nacht.", "opts": ["in der", "am", "um"], "a": 0, "why": "Ngoại lệ: in der Nacht."},
+                {"k": "mc", "q": "Ich lerne ___ Tag Deutsch.", "opts": ["jeden", "jede", "jedem"], "a": 0},
+                {"k": "mc", "q": "Ich glaube, du hast am Sonntag keine Zeit. – ___! Ich habe Zeit.", "opts": ["Doch", "Stimmt", "Danke"], "a": 0, "why": "Doch phản bác câu phủ định."},
+                {"k": "listen", "q": "Nghe và gõ giờ (ví dụ 13:30):", "say": "dreizehn Uhr dreißig", "a": ["13:30"]},
+                {"k": "listen", "q": "Nghe và gõ giờ (ví dụ 13:30):", "say": "neunzehn Uhr fünfzehn", "a": ["19:15"]},
+                {"k": "listenmc", "q": "Nghe rồi chọn giờ mở cửa:", "say": "Die Bibliothek ist von neun bis neunzehn Uhr geöffnet.", "opts": ["9–19 Uhr", "9–9 Uhr", "19–21 Uhr", "9–17 Uhr"], "a": 0},
+                {"k": "type", "q": "17:45 (chính thức) → ___ Uhr fünfundvierzig", "a": ["siebzehn"]},
+                {"k": "mc", "q": "Am Sonntag ist das Museum ___. <span class='muted'>(đóng cửa)</span>", "opts": ["geschlossen", "geöffnet", "täglich"], "a": 0},
+                {"k": "mc", "q": "Bạn hỏi giờ mở cửa của thư viện:", "opts": ["Wann ist die Bibliothek geöffnet?", "Wie spät ist die Bibliothek?", "Wo ist die Bibliothek geöffnet?"], "a": 0},
+                {"k": "mc", "q": "Thứ Bảy và Chủ nhật gọi chung là:", "opts": ["das Wochenende", "der Feiertag", "die Woche"], "a": 0}
+              ]
+            },
+            { "type": "book", "title": "Bài kiểm tra của sách",
+              "steps": [
+                "Arbeitsbuch tr. 61: <i>Test Lektion 5</i>.",
+                "Bài kiểm tra trong bộ giáo án: <i>Kopiervorlagen/L05/Lektionstest.pdf</i> — làm ra giấy. Đáp án nằm trong <i>Lösungen zu den Tests.pdf</i>."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Ôn lại và bài về nhà", "minutes": 5,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá cả Lektion 5",
+              "items": [
+                "Tôi kể được một ngày của mình bằng các việc hằng ngày và đặt động từ tách đúng chỗ (phần A).",
+                "Tôi hỏi và nói giờ thường ngày: <i>Es ist Viertel vor acht.</i> (phần B).",
+                "Tôi trả lời <i>Wann?</i> bằng <i>am Montag, um halb neun, von … bis …</i> và hẹn gặp được (phần C).",
+                "Tôi nói về các buổi trong ngày, dùng <i>jeden Tag</i> và đặt thời gian đầu câu (phần D).",
+                "Tôi hiểu giờ chính thức và giờ mở cửa trên biển, trong thông báo (phần E)."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                {"t": "Arbeitsbuch tr. 59–60, bài 23–26 (bài 23 audio AB track 48–53 · bài 25 audio AB track 54–56 · bài 26 audio AB track 57).", "tracks": "AB 48-57"},
+                "Arbeitsbuch tr. 61: <i>Test Lektion 5</i>; tr. 62: <i>Fokus Beruf</i> (tuỳ chọn).",
+                {"t": "Audio-Training (Kursbuch tr. 67): nghe và trả lời theo băng.", "tracks": "KB 2/22-24"},
+                "Kursbuch tr. 68–69, <i>Zwischendurch mal …</i>: truyện tranh <i>Der kleine Mann: Die Traumfrau</i>, bài đọc <i>Hallo! Ich bin Franziska.</i>, phim <i>So ist mein Tag.</i> và bài nghe <i>Gehen wir joggen?</i> (đã nhắc ở Buổi 4).",
+                "Từ mai: vào <a href='#/review'>Ôn tập</a> mỗi ngày — Lektion 5 có hơn 100 từ mới."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    }
+  ]
+}

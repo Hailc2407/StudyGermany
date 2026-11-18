@@ -38,8 +38,9 @@
       "id": "l5",
       "no": 5,
       "title": "Mein Tag",
-      "vi": "Một ngày của tôi, giờ giấc",
-      "ready": false
+      "vi": "Một ngày của tôi: động từ tách, giờ giấc, thứ trong tuần, các buổi trong ngày, giờ mở cửa",
+      "ready": true,
+      "file": "data/l5.json"
     },
     {
       "id": "l6",

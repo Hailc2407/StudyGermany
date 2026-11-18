@@ -5,7 +5,7 @@ import { readFileSync } from "node:fs";
 
 const KNOWN = new Set(["text", "tip", "table", "words", "listenPick", "rules", "hearPick", "book", "dialog", "conj", "gaps", "choice",
   "sort", "order", "fix", "timeGreet", "alphabet", "letterPick", "spell", "spellMe", "form", "profile", "test", "review", "cando",
-  "checklist", "done", "numbers", "numHear", "numWrite", "tree", "priceHear", "priceWrite"]);
+  "checklist", "done", "numbers", "numHear", "numWrite", "tree", "priceHear", "priceWrite", "clockLab", "clockPick", "timeWrite"]);
 const fold = (s) => String(s).toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
   .replace(/-/g, "").replace(/[.,!?;:„“”"()…–—]/g, " ").replace(/\s+/g, " ").trim();
 const problems = [];
@@ -50,7 +50,15 @@ for (const meta of course.lektionen.filter((l) => l.ready)) {
       if (b.type === "order") b.items.forEach((it, i) => {
         if (it.chunks.length < 2) bad(at, `câu ${i + 1}: cần ít nhất 2 cụm`);
         if (it.v != null && !(it.v >= 0 && it.v < it.chunks.length)) bad(at, `câu ${i + 1}: v ngoài khoảng`);
+        if (it.p != null && !(it.p >= 0 && it.p < it.chunks.length)) bad(at, `câu ${i + 1}: p ngoài khoảng`);
       });
+      if (b.type === "clockPick" || b.type === "timeWrite") {
+        if (b.style && !["private", "official", "mixed"].includes(b.style)) bad(at, "style lạ: " + b.style);
+        if (b.type === "clockPick" && b.mode && !["read", "hear"].includes(b.mode)) bad(at, "mode lạ: " + b.mode);
+        if (b.type === "timeWrite" && b.mode && !["words", "digits"].includes(b.mode)) bad(at, "mode lạ: " + b.mode);
+        if (b.hours && (!Array.isArray(b.hours) || b.hours.length !== 2 || b.hours[0] > b.hours[1] || b.hours[0] < 0 || b.hours[1] > 23)) bad(at, "hours phải là [từ, đến] trong 0–23");
+        if (b.minutes && (!Array.isArray(b.minutes) || b.minutes.some((m) => !(m >= 0 && m <= 59)))) bad(at, "minutes sai");
+      }
       if (b.type === "fix") b.items.forEach((it, i) => {
         if (it.err == null) return;
         const words = it.s.split(" ").map(fold), err = it.err.split(" ").map(fold);
