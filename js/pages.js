@@ -16,6 +16,7 @@
     return null;
   }
   const fmtDate = (d) => d.split("-").reverse().join("/");
+  const lekName = (L) => L.label || "Lektion " + L.no;
   function page(title, ...kids) {
     document.title = title ? title + " · Deutsch Room" : "Deutsch Room";
     app.textContent = "";
@@ -43,7 +44,7 @@
         due ? h("a", { class: "btn", href: "#/review" }, "Ôn ngay →") : null),
       h("div", { class: "today-card" },
         h("span", { class: "kicker" }, nxt ? "Học tiếp" : "Hoàn thành"),
-        h("strong", {}, nxt ? "Lektion " + nxt.L.no + " · Buổi " + nxt.S.no + ": " + nxt.S.title : "Bạn đã học hết các buổi hiện có 🎉"),
+        h("strong", {}, nxt ? lekName(nxt.L) + " · Buổi " + nxt.S.no + ": " + nxt.S.title : "Bạn đã học hết các buổi hiện có 🎉"),
         h("span", { class: "muted small", lang: "vi" }, nxt ? nxt.S.vi + " · ~" + nxt.S.minutes + " phút" : "Bài tiếp theo sẽ sớm có."),
         nxt ? h("a", { class: "btn", href: "#/" + nxt.L.id + "/" + nxt.S.id }, "Học tiếp →") : null));
     const path = h("section", { class: "path" }, h("h2", {}, "Lộ trình"), course.lektionen.map((meta) => {
@@ -76,9 +77,9 @@
   async function lektion(id) {
     const L = await Data.getLek(id);
     if (!L) return home();
-    page("Lektion " + L.no, h("div", { class: "lek-page" },
+    page(lekName(L), h("div", { class: "lek-page" },
       h("p", { class: "muted small" }, h("a", { href: "#/" }, "← Lộ trình")),
-      h("p", { class: "kicker" }, "Lektion " + L.no),
+      h("p", { class: "kicker" }, lekName(L)),
       h("h1", {}, L.title),
       h("p", { class: "lead", lang: "vi" }, L.vi),
       h("p", { class: "muted small" }, "📘 " + L.book),
@@ -86,10 +87,10 @@
       h("div", { class: "sess-cards" }, L.sessions.map((S) => h("a", { class: "sess-card" + (sessionDone(L, S) ? " done" : ""), href: "#/" + L.id + "/" + S.id },
         h("span", { class: "kicker" }, "Buổi " + S.no + " · ~" + S.minutes + " phút" + (sessionDone(L, S) ? " · ✓ xong" : "")),
         h("strong", {}, S.title), h("span", { class: "muted small", lang: "vi" }, S.vi), h("span", { class: "muted small" }, "📘 " + S.book)))),
-      h("h2", {}, "Từ vựng của bài"),
-      h("div", { class: "set-links" }, L.sets.map((s) => h("a", { class: "chip big", href: "#/vocab/" + L.id + "/" + s.id }, s.title + " (" + s.items.length + ")"))),
-      h("h2", {}, "Audio của sách"),
-      h("p", { class: "muted small" }, "Phát từ file trên máy bạn (thêm trong ", h("a", { href: "#/settings" }, "Cài đặt"), ")."),
+      L.sets.length ? h("h2", {}, "Từ vựng của bài") : null,
+      L.sets.length ? h("div", { class: "set-links" }, L.sets.map((s) => h("a", { class: "chip big", href: "#/vocab/" + L.id + "/" + s.id }, s.title + " (" + s.items.length + ")"))) : null,
+      (L.audio || []).length ? h("h2", {}, "Audio của sách") : null,
+      (L.audio || []).length ? h("p", { class: "muted small" }, "Phát từ file trên máy bạn (thêm trong ", h("a", { href: "#/settings" }, "Cài đặt"), ").") : null,
       (L.audio || []).map((ref) => [trackPlayer(ref), h("div", { style: "height:10px" })])));
   }
 
@@ -106,7 +107,7 @@
       h("a", { href: "#", class: "toc-item", "data-sec": "s-" + s.id, onclick: (e) => { e.preventDefault(); document.getElementById("s-" + s.id).scrollIntoView({ behavior: "smooth" }); } },
         h("span", { class: "toc-n" }, k + 1), h("span", { class: "toc-t" }, s.title), h("span", { class: "toc-m" }, s.minutes + "′"))));
     const head = h("header", { class: "lesson-head" },
-      h("p", { class: "kicker" }, h("a", { href: "#/" + L.id }, "Lektion " + L.no), " · Buổi " + S.no + " · ~" + S.minutes + " phút", sessionDone(L, S) ? " · ✓ đã xong" : ""),
+      h("p", { class: "kicker" }, h("a", { href: "#/" + L.id }, lekName(L)), " · Buổi " + S.no + " · ~" + S.minutes + " phút", sessionDone(L, S) ? " · ✓ đã xong" : ""),
       h("h1", {}, S.title),
       h("p", { class: "lead", lang: "vi" }, S.vi),
       h("p", { class: "muted small" }, "📘 " + S.book),
@@ -162,7 +163,7 @@
         return;
       }
       if (cur) {
-        body.append(h("h2", {}, "Lektion " + cur.L.no + " · " + cur.s.title), renderBlock({ type: "words", set: cur.s.id }, { L: cur.L, S: null, key: "vocab" }));
+        body.append(h("h2", {}, lekName(cur.L) + " · " + cur.s.title), renderBlock({ type: "words", set: cur.s.id }, { L: cur.L, S: null, key: "vocab" }));
         return;
       }
       body.append(h("div", { class: "actions" }, btn("🃏 Học bằng thẻ: 20 từ ngẫu nhiên", () => flash(sample(all, 20), { title: "20 từ ngẫu nhiên" }), "btn small")),
@@ -436,7 +437,7 @@
       else if (parts[0] === "vocab") { markNav("vocab"); await vocab(parts[1], parts[2]); }
       else if (parts[0] === "review") { markNav("review"); await review(); }
       else if (parts[0] === "settings") { markNav("settings"); await settings(); }
-      else if (/^l\d+$/.test(parts[0])) { markNav("home"); await (parts[1] ? session(parts[0], parts[1]) : lektion(parts[0])); }
+      else if (/^[lw]\d+$/.test(parts[0])) { markNav("home"); await (parts[1] ? session(parts[0], parts[1]) : lektion(parts[0])); }
       else { markNav("home"); await home(); }
     } catch (e) {
       console.error(e);

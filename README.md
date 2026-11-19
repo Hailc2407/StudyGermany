@@ -8,6 +8,8 @@ Phòng tự học tiếng Đức theo *Schritte international Neu 1* (A1.1), ch�
 - **Lộ trình**: mỗi Lektion của sách chia thành 3–6 buổi khoảng 45–65 phút. Mỗi buổi: từ mới có giọng đọc,
   quy tắc phát âm, việc cần làm trong sách (trang, track), ngữ pháp giải thích bằng tiếng Việt, bài tập
   tự chấm, hội thoại mẫu để nghe – nói theo – đóng vai – ghi âm, và bài về nhà.
+- **Wiederholung 1–7**: sau Lektion 7 có mục ôn tổng hợp Band 1 (3 buổi ôn + bài kiểm tra cuối Band 1, 60 câu, mỗi câu
+  sai có đường dẫn tới buổi cần học lại).
 - **Từ vựng**: danh từ luôn kèm der/die/das (màu theo sách: der xanh dương, die đỏ, das xanh lá) và số nhiều;
   động từ kèm dạng chia; tìm kiếm bằng tiếng Đức hoặc tiếng Việt; học bằng thẻ lật.
 - **Ôn tập**: lặp lại ngắt quãng (1, 2, 4, 7, 15, 30 ngày). Mỗi lần ôn đổi dạng câu hỏi: nghĩa, nghe,
@@ -27,6 +29,7 @@ js/blocks.js                 các dạng bài (words, listenPick, rules, dialog,
 js/pages.js                  các trang: lộ trình, buổi học, từ vựng, ôn tập, cài đặt
 data/course.json             danh sách Lektion (ready: true = đã có bài)
 data/l1.json, l2.json …       từng Lektion: các bộ từ (sets) và các buổi (sessions → sections → blocks)
+data/w1.json                 Wiederholung 1–7: mục ôn không có bộ từ (sets rỗng), id bắt đầu bằng w
 tools/check.mjs              kiểm tra dữ liệu bài trước khi đăng
 .claude/skills/deutsch-room  hướng dẫn Claude Code soạn Lektion tiếp theo
 ```

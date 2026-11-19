@@ -57,6 +57,14 @@
       "vi": "Học suốt đời: können và wollen, Perfekt với haben và sein, kể điều đã làm, mẹo học ngoại ngữ",
       "ready": true,
       "file": "data/l7.json"
+    },
+    {
+      "id": "w1",
+      "no": "Ôn",
+      "title": "Wiederholung 1–7",
+      "vi": "Ôn tổng hợp Band 1: chia động từ, câu hỏi, mạo từ, số – giờ – giá, Akkusativ, können và wollen, Perfekt — 3 buổi ôn và bài kiểm tra cuối Band 1",
+      "ready": true,
+      "file": "data/w1.json"
     }
   ]
 }

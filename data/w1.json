@@ -1,0 +1,1181 @@
+{
+  "id": "w1",
+  "no": "Ôn",
+  "label": "Wiederholung",
+  "title": "Wiederholung 1–7",
+  "vi": "Ôn tổng hợp Band 1: chia động từ, câu hỏi, mạo từ, số – giờ – giá, Akkusativ, können và wollen, Perfekt — 3 buổi ôn và bài kiểm tra cuối Band 1",
+  "book": "Ôn Kursbuch Lektion 1–7 · Arbeitsbuch: bảy bài Test (tr. 18, 28, 39, 50, 61, 73, 84) · Kopiervorlagen: Lektionstest và Wiederholung của L01–L07",
+  "audio": [],
+  "sets": [],
+  "sessions": [
+    {
+      "id": "1", "no": 1, "minutes": 60,
+      "title": "Wer? Wie? Wie viel?",
+      "vi": "Ôn Lektion 1–3: chia động từ, câu hỏi, mạo từ và số nhiều, số – giá tiền, giới thiệu bản thân",
+      "book": "Ôn Kursbuch Lektion 1–3 · Arbeitsbuch Test tr. 18, 28, 39 · Kopiervorlagen L01–L03",
+      "goals": [
+        "Chia đúng các động từ hay gặp: <i>sein, haben, wohnen, kommen</i>, nhóm đổi nguyên âm (<i>sprechen, essen, nehmen</i>) và ba động từ khuyết.",
+        "Đặt đúng câu hỏi W- và câu hỏi Có/Không; động từ ở vị trí 2 hoặc vị trí 1.",
+        "Chọn đúng <i>ein / eine / kein / keine / mein / meine</i> và nhớ số nhiều của các danh từ quen.",
+        "Nghe và viết số (kể cả 13 – 30), giá tiền và số điện thoại.",
+        "Giới thiệu bản thân và gia đình, hỏi giá ở chợ."
+      ],
+      "sections": [
+        {
+          "id": "ban-do", "title": "Bản đồ Band 1 và cách dùng bài ôn", "minutes": 4,
+          "blocks": [
+            {"type": "text", "html": "<p>Bạn đã đi hết <b>7 Lektion</b> của <i>Schritte international Neu 1</i> (A1.1). Bài ôn này có <b>4 buổi</b>: buổi 1 ôn Lektion 1–3, buổi 2 ôn Lektion 3–5, buổi 3 ôn Lektion 6–7, buổi 4 là <b>bài kiểm tra cuối Band 1</b> (60 câu). Tất cả bài tập đều do tôi soạn, không chép từ sách.</p>"},
+            { "type": "table", "title": "Band 1 trong một bảng", "head": ["Lektion", "Chủ đề", "Mẫu câu bạn phải nói được"], "say": 2, "vi": "Bấm 🔊 ở mỗi dòng để nghe và nói theo. Nếu một dòng nghe còn lạ, hãy quay lại Lektion đó trước khi làm bài ôn.",
+              "rows": [
+                ["1", "Chào hỏi, tên, quê quán, đánh vần", "Ich heiße Linh. Ich komme aus Vietnam. Ich spreche Deutsch."],
+                ["2", "Gia đình, nơi ở, số 0–20", "Das ist mein Bruder. Er wohnt in Berlin. Er ist zwanzig Jahre alt."],
+                ["3", "Đồ ăn, số nhiều, số đến 100, giá tiền", "Haben Sie Eier? Was kostet das Kilo Äpfel? Ich esse gern Fisch."],
+                ["4", "Nhà ở, đồ đạc, màu sắc, số lớn, tin cho thuê", "Das Zimmer ist nicht sehr groß. Es kostet dreihundertfünfzig Euro im Monat."],
+                ["5", "Động từ tách, giờ giấc, ngày trong tuần, giờ mở cửa", "Am Montag stehe ich um halb sieben auf. Die Bibliothek ist von neun bis neunzehn Uhr geöffnet."],
+                ["6", "Thời tiết, Akkusativ, ja – nein – doch, sở thích", "Es regnet. Ich nehme einen Saft. Doch, ich habe Hunger."],
+                ["7", "können, wollen, Perfekt", "Ich kann gut kochen. Gestern habe ich Fußball gespielt. Wir sind nach Wien gefahren."]
+              ]
+            },
+            {"type": "tip", "title": "Cách ôn cho nhớ lâu", "html": "<ol><li><b>Làm trước, xem lại sau.</b> Đừng mở bài cũ trước khi làm. Cố nhớ ra câu trả lời rồi mới kiểm tra — nhớ lại là cách học mạnh hơn đọc lại.</li><li><b>Mỗi buổi một ngày</b>, cách nhau ít nhất một đêm: bốn buổi trong bốn ngày nhớ lâu hơn bốn buổi trong một ngày.</li><li>Câu nào sai thì dùng <b>Làm lại các câu sai</b> ở cuối buổi, rồi mở lại buổi học tương ứng. Từ nào chưa chắc thì vào <a href='#/review'>Ôn tập</a> (thẻ từ) trước.</li></ol>"}
+          ]
+        },
+        {
+          "id": "aussprache", "title": "Phát âm và chính tả", "minutes": 4,
+          "blocks": [
+            {"type": "tip", "title": "Bốn điều dễ quên", "html": "<ul><li><b>ei</b> đọc [ai], <b>ie</b> đọc [i:] — <i>Wein</i> (rượu vang) ≠ <i>Wien</i> (thành phố Viên).</li><li><b>w</b> đọc [v], <b>v</b> thường đọc [f] (<i>Vater</i>), <b>z</b> đọc [ts] (<i>Zimmer</i>), <b>s</b> trước nguyên âm đọc [z] (<i>Sofa</i>).</li><li><b>sp</b> và <b>st</b> ở đầu từ đọc [schp], [scht]: <i>Spaß, Straße, Stuhl</i>.</li><li>Nguyên âm có hai chấm (<b>ä ö ü</b>) làm đổi nghĩa: <i>Mutter</i> (mẹ) – <i>Mütter</i> (các bà mẹ), <i>schon</i> (đã) – <i>schön</i> (đẹp).</li></ul>"},
+            { "type": "hearPick", "title": "Nghe và chọn cách viết đúng",
+              "items": [
+                {"say": "Wien", "opts": ["Wien", "Wein"]},
+                {"say": "schön", "opts": ["schön", "schon"]},
+                {"say": "Mütter", "opts": ["Mütter", "Mutter"]},
+                {"say": "Miete", "opts": ["Miete", "Mitte"]},
+                {"say": "achtzehn", "opts": ["achtzehn", "achtzig"]},
+                {"say": "dreizehn", "opts": ["dreizehn", "dreißig"]},
+                {"say": "Vater", "opts": ["Vater", "Fater"]},
+                {"say": "Zucker", "opts": ["Zucker", "Sucker"]},
+                {"say": "Spaß", "opts": ["Spaß", "Schpaß"]},
+                {"say": "Straße", "opts": ["Straße", "Schtraße"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verben", "title": "Chia động từ tổng hợp", "minutes": 13,
+          "blocks": [
+            {"type": "text", "html": "<p>Đuôi thường: <b>ich -e · du -st · er/sie -t · wir -en · ihr -t · sie/Sie -en</b>. Ba nhóm cần thuộc thêm: <b>sein và haben</b> (bất quy tắc), nhóm <b>đổi nguyên âm</b> (chỉ du và er/sie), và <b>động từ khuyết</b> (ich = er/sie, không có đuôi).</p>"},
+            {"type": "conj", "title": "Ba động từ không theo quy tắc hoặc có -e-", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [{"inf": "sein", "vi": "thì, là, ở", "forms": ["bin", "bist", "ist", "sind", "seid", "sind"]}, {"inf": "haben", "vi": "có", "forms": ["habe", "hast", "hat", "haben", "habt", "haben"]}, {"inf": "arbeiten", "vi": "làm việc", "forms": ["arbeite", "arbeitest", "arbeitet", "arbeiten", "arbeitet", "arbeiten"], "stem": "arbeit"}], "vi": "Gõ cả bảng rồi bấm <b>Kiểm tra</b>. <i>arbeiten</i> thêm <b>-e-</b> ở du, er/sie và ihr cho dễ đọc."},
+            {"type": "conj", "title": "Đổi nguyên âm: chỉ ở du và er/sie", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [{"inf": "sprechen", "vi": "nói", "forms": ["spreche", "sprichst", "spricht", "sprechen", "sprecht", "sprechen"]}, {"inf": "nehmen", "vi": "lấy, gọi (món)", "forms": ["nehme", "nimmst", "nimmt", "nehmen", "nehmt", "nehmen"]}, {"inf": "fahren", "vi": "đi (bằng xe)", "forms": ["fahre", "fährst", "fährt", "fahren", "fahrt", "fahren"]}], "vi": "Cùng kiểu: <i>essen – du isst, er isst · lesen – du liest · treffen – du triffst · schlafen – du schläfst</i>. Các ngôi <b>ich, wir, ihr, sie/Sie</b> không đổi nguyên âm."},
+            {"type": "conj", "title": "Động từ khuyết: ich và er/sie giống nhau", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [{"inf": "können", "vi": "có thể, biết làm", "forms": ["kann", "kannst", "kann", "können", "könnt", "können"]}, {"inf": "wollen", "vi": "muốn (làm gì)", "forms": ["will", "willst", "will", "wollen", "wollt", "wollen"]}, {"inf": "möchten", "vi": "muốn (lịch sự)", "forms": ["möchte", "möchtest", "möchte", "möchten", "möchtet", "möchten"]}], "vi": "Quy tắc chung: <b>ich = er/sie</b> (không thêm đuôi). Động từ thứ hai ở dạng nguyên mẫu, đứng cuối câu."},
+            { "type": "gaps", "title": "Điền dạng đúng của động từ trong ngoặc", "task": "Gõ dạng đã chia (ä ö ü: bấm nút phía trên hoặc gõ ae oe ue).",
+              "items": [
+                {"q": "Ich ___ Linh. (heißen)", "a": ["heiße"]},
+                {"q": "Woher ___ du? (kommen)", "a": ["kommst"]},
+                {"q": "Er ___ gut Deutsch. (sprechen)", "a": ["spricht"]},
+                {"q": "Wir ___ in Köln. (wohnen)", "a": ["wohnen"]},
+                {"q": "___ ihr Geschwister? (haben)", "a": ["Habt"]},
+                {"q": "Anna ___ aus Polen. (kommen)", "a": ["kommt"]},
+                {"q": "Was ___ du gern? (essen)", "a": ["isst"]},
+                {"q": "Ich ___ ein Brötchen. (nehmen)", "a": ["nehme"]},
+                {"q": "Du ___ viel. (lesen)", "a": ["liest"]},
+                {"q": "Mein Vater ___ gern Auto. (fahren)", "a": ["fährt"]},
+                {"q": "Ihr ___ aus Vietnam. (sein)", "a": ["seid"]},
+                {"q": "Ich ___ Hunger. (haben)", "a": ["habe"]},
+                {"q": "Er ___ gut kochen. (können)", "a": ["kann"]},
+                {"q": "Wir ___ ins Kino gehen. (wollen)", "a": ["wollen"]},
+                {"q": "Du ___ ein Eis. (möchten)", "a": ["möchtest"]},
+                {"q": "Meine Eltern ___ in Hanoi. (wohnen)", "a": ["wohnen"]}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi chia động từ",
+              "items": [
+                {"s": "Du sprechst sehr gut Deutsch.", "err": "sprechst", "fix": ["sprichst"], "why": "sprechen: du sprichst (e → i)."},
+                {"s": "Er esst gern Fisch.", "err": "esst", "fix": ["isst"], "why": "essen: er isst (e → i)."},
+                {"s": "Ich bist aus Vietnam.", "err": "bist", "fix": ["bin"], "why": "ich → bin. (bist là của du.)"},
+                {"s": "Wir hat zwei Kinder.", "err": "hat", "fix": ["haben"], "why": "wir → haben."},
+                {"s": "Anna nehmt einen Tee.", "err": "nehmt", "fix": ["nimmt"], "why": "nehmen: er/sie nimmt (e → i)."},
+                {"s": "Er kannst gut tanzen.", "err": "kannst", "fix": ["kann"], "why": "Động từ khuyết: er/sie kann — không có -st."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fragen", "title": "Câu hỏi: W- và Có/Không", "minutes": 10,
+          "blocks": [
+            { "type": "table", "title": "Từ hỏi W-", "head": ["Từ hỏi", "Hỏi về", "Ví dụ"], "say": 2, "vi": "Câu hỏi W-: <b>từ hỏi</b> ở vị trí 1, <b>động từ</b> ở vị trí 2. Câu hỏi Có/Không: <b>động từ</b> ở vị trí 1.",
+              "rows": [
+                ["Wer?", "ai", "Wer ist das?"],
+                ["Was?", "cái gì", "Was ist das?"],
+                ["Wie?", "thế nào; tên là gì", "Wie heißen Sie?"],
+                ["Woher?", "từ đâu", "Woher kommst du?"],
+                ["Wo?", "ở đâu", "Wo wohnst du?"],
+                ["Wann?", "khi nào", "Wann fängt der Kurs an?"],
+                ["Wie viel?", "bao nhiêu", "Wie viel kostet das?"],
+                ["Wie alt?", "bao nhiêu tuổi", "Wie alt bist du?"],
+                ["Um wie viel Uhr?", "mấy giờ", "Um wie viel Uhr fängt der Kurs an?"]
+              ]
+            },
+            { "type": "choice", "title": "Chọn câu trả lời hợp",
+              "items": [
+                {"q": "<b>Woher kommen Sie?</b>", "opts": ["Aus Vietnam.", "In Köln.", "Ich heiße Linh."], "a": 0},
+                {"q": "<b>Wo wohnst du?</b>", "opts": ["In Berlin.", "Aus Berlin.", "Zwanzig Jahre."], "a": 0},
+                {"q": "<b>Wie alt ist dein Bruder?</b>", "opts": ["Er ist vierundzwanzig.", "Er wohnt in Wien.", "Er heißt Jan."], "a": 0},
+                {"q": "<b>Was kostet der Käse?</b>", "opts": ["Zwei Euro fünfzig.", "Ja, natürlich.", "Ein Kilo."], "a": 0},
+                {"q": "<b>Haben Sie Eier?</b>", "opts": ["Ja, natürlich. Hier, bitte.", "Danke, gut. Und Ihnen?", "Aus Deutschland."], "a": 0},
+                {"q": "<b>Wann fängt der Kurs an?</b>", "opts": ["Am Montag um halb neun.", "In Köln.", "Meine Lehrerin."], "a": 0},
+                {"q": "<b>Wer ist das?</b>", "opts": ["Das ist meine Schwester.", "Das ist ein Foto.", "Das macht drei Euro."], "a": 0},
+                {"q": "<b>Wie geht es Ihnen?</b>", "opts": ["Danke, gut. Und Ihnen?", "Ich heiße Müller.", "Aus Wien."], "a": 0}
+              ]
+            },
+            { "type": "sort", "title": "Câu hỏi W- hay câu hỏi Có/Không?", "cats": ["Câu hỏi W- (từ hỏi ở vị trí 1)", "Câu hỏi Có/Không (động từ ở vị trí 1)"],
+              "items": [
+                {"t": "Wie heißen Sie?", "c": 0},
+                {"t": "Heißen Sie Müller?", "c": 1},
+                {"t": "Kommst du aus Polen?", "c": 1},
+                {"t": "Woher kommst du?", "c": 0},
+                {"t": "Haben Sie Kinder?", "c": 1},
+                {"t": "Wo wohnt deine Familie?", "c": 0},
+                {"t": "Ist das dein Bruder?", "c": 1},
+                {"t": "Wer ist das?", "c": 0},
+                {"t": "Sprechen Sie Englisch?", "c": 1},
+                {"t": "Was ist das?", "c": 0},
+                {"t": "Brauchst du Reis?", "c": 1},
+                {"t": "Was kostet das?", "c": 0}
+              ]
+            },
+            { "type": "order", "title": "Xếp thành câu đúng", "vi": "Ô cam = động từ. Ở câu hỏi Có/Không, động từ ở vị trí 1.",
+              "items": [
+                {"chunks": ["Woher", "kommst", "du?"], "v": 1, "vi": "Bạn đến từ đâu?"},
+                {"chunks": ["Mein Bruder", "wohnt", "in Berlin."], "v": 1, "vi": "Anh trai tôi sống ở Berlin."},
+                {"chunks": ["Haben", "Sie", "Eier?"], "v": 0, "vi": "Bà/ông có trứng không?"},
+                {"chunks": ["Wie", "heißt", "deine Schwester?"], "v": 1, "vi": "Chị/em gái bạn tên gì?"},
+                {"chunks": ["Ich", "esse", "gern", "Fisch."], "v": 1, "vi": "Tôi thích ăn cá."},
+                {"chunks": ["Kommt", "ihr", "aus Polen?"], "v": 0, "vi": "Các bạn đến từ Ba Lan à?"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nomen", "title": "Mạo từ, sở hữu và số nhiều", "minutes": 11,
+          "blocks": [
+            {"type": "tip", "title": "Nhắc nhanh", "html": "<p>Màu sách: <span class='g-der'>der</span> xanh dương · <span class='g-das'>das</span> xanh lá · <span class='g-die'>die</span> đỏ. Với <b>die</b> và <b>số nhiều</b>: <i>eine, keine, meine, deine, Ihre</i>. Với <b>der</b> và <b>das</b>: <i>ein, kein, mein, dein, Ihr</i>. Số nhiều luôn là <b>die</b>.</p>"},
+            { "type": "sort", "title": "der, das hay die?", "gender": true, "cats": ["der", "das", "die"],
+              "items": [
+                {"t": "Name", "c": 0},
+                {"t": "Vater", "c": 0},
+                {"t": "Bruder", "c": 0},
+                {"t": "Käse", "c": 0},
+                {"t": "Saft", "c": 0},
+                {"t": "Fisch", "c": 0},
+                {"t": "Foto", "c": 1},
+                {"t": "Land", "c": 1},
+                {"t": "Kind", "c": 1},
+                {"t": "Ei", "c": 1},
+                {"t": "Brot", "c": 1},
+                {"t": "Wasser", "c": 1},
+                {"t": "Frau", "c": 2},
+                {"t": "Straße", "c": 2},
+                {"t": "Stadt", "c": 2},
+                {"t": "Milch", "c": 2},
+                {"t": "Banane", "c": 2},
+                {"t": "Schwester", "c": 2}
+              ]
+            },
+            { "type": "gaps", "title": "ein, eine, kein hay keine?", "task": "Chọn mạo từ đúng. Nhớ: eine/keine dùng cho die-Wort và số nhiều.",
+              "items": [
+                {"q": "Das ist ___ Banane.", "a": ["eine"], "opts": ["ein", "eine", "kein", "keine"]},
+                {"q": "Das ist ___ Brötchen.", "a": ["ein"], "opts": ["ein", "eine", "kein", "keine"]},
+                {"q": "Das ist ___ Ei, das ist eine Orange.", "a": ["kein"], "opts": ["ein", "eine", "kein", "keine"]},
+                {"q": "Das ist ___ Tomate, das ist eine Birne.", "a": ["keine"], "opts": ["ein", "eine", "kein", "keine"]},
+                {"q": "Im Regal sind ___ Eier.", "a": ["keine"], "opts": ["ein", "eine", "kein", "keine"]},
+                {"q": "Das ist ___ Apfel.", "a": ["ein"], "opts": ["ein", "eine", "kein", "keine"]},
+                {"q": "Das ist ___ Käse, das ist Joghurt.", "a": ["kein"], "opts": ["ein", "eine", "kein", "keine"]},
+                {"q": "Wir haben heute ___ Brot.", "a": ["kein"], "opts": ["ein", "eine", "kein", "keine"]}
+              ]
+            },
+            { "type": "gaps", "title": "mein, meine, dein, deine, Ihr hay Ihre?", "task": "Chọn đúng theo người sở hữu (trong ngoặc) và giống của danh từ.",
+              "items": [
+                {"q": "Das ist ___ Bruder. (ich)", "a": ["mein"], "opts": ["mein", "meine", "dein", "deine", "Ihr", "Ihre"]},
+                {"q": "Das ist ___ Schwester. (ich)", "a": ["meine"], "opts": ["mein", "meine", "dein", "deine", "Ihr", "Ihre"]},
+                {"q": "Wie heißt ___ Mutter? (du)", "a": ["deine"], "opts": ["mein", "meine", "dein", "deine", "Ihr", "Ihre"]},
+                {"q": "Wo wohnt ___ Vater? (du)", "a": ["dein"], "opts": ["mein", "meine", "dein", "deine", "Ihr", "Ihre"]},
+                {"q": "Wie ist ___ Name? (Sie)", "a": ["Ihr"], "opts": ["mein", "meine", "dein", "deine", "Ihr", "Ihre"]},
+                {"q": "Sind das ___ Kinder? (Sie)", "a": ["Ihre"], "opts": ["mein", "meine", "dein", "deine", "Ihr", "Ihre"]},
+                {"q": "Das sind ___ Eltern. (ich)", "a": ["meine"], "opts": ["mein", "meine", "dein", "deine", "Ihr", "Ihre"]}
+              ]
+            },
+            { "type": "choice", "title": "Số nhiều của danh từ",
+              "items": [
+                {"q": "Số nhiều của <b>das Kind</b>?", "opts": ["die Kinder", "die Kinds", "die Kindern"], "a": 0},
+                {"q": "Số nhiều của <b>die Frau</b>?", "opts": ["die Frauen", "die Fraus", "die Fräuen"], "a": 0},
+                {"q": "Số nhiều của <b>der Bruder</b>?", "opts": ["die Brüder", "die Bruder", "die Bruders"], "a": 0},
+                {"q": "Số nhiều của <b>das Ei</b>?", "opts": ["die Eier", "die Eis", "die Eien"], "a": 0},
+                {"q": "Số nhiều của <b>die Stadt</b>?", "opts": ["die Städte", "die Stadte", "die Städten"], "a": 0},
+                {"q": "Số nhiều của <b>der Tisch</b>?", "opts": ["die Tische", "die Tischen", "die Tisch"], "a": 0},
+                {"q": "Số nhiều của <b>das Zimmer</b>?", "opts": ["die Zimmer", "die Zimmers", "die Zimmeren"], "a": 0},
+                {"q": "Số nhiều của <b>das Foto</b>?", "opts": ["die Fotos", "die Foten", "die Föter"], "a": 0}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi mạo từ",
+              "items": [
+                {"s": "Das ist ein Küche.", "err": "ein", "fix": ["eine"], "why": "Küche là die-Wort → eine."},
+                {"s": "Ich habe kein Kinder.", "err": "kein", "fix": ["keine"], "why": "Kinder là số nhiều → keine."},
+                {"s": "Das ist meine Bruder.", "err": "meine", "fix": ["mein"], "why": "Bruder là der-Wort → mein."},
+                {"s": "Die Foto ist schön.", "err": "Die", "fix": ["Das"], "why": "Foto là das-Wort."},
+                {"s": "Der Kind heißt Mia.", "err": "Der", "fix": ["Das"], "why": "Kind là das-Wort."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "zahlen", "title": "Số, giá tiền, số điện thoại", "minutes": 8,
+          "blocks": [
+            {"type": "numHear", "title": "Nghe số, chọn chữ số (0–100)", "min": 0, "max": 100, "n": 6},
+            {"type": "numHear", "title": "13 hay 30? 14 hay 40?", "task": "Nghe kỹ âm cuối: -zehn hay -zig.", "pool": [13, 14, 15, 16, 17, 18, 19, 30, 40, 50, 60, 70, 80, 90], "n": 6},
+            {"type": "numWrite", "title": "Gõ số bằng chữ (20–100)", "task": "Thấy chữ số, gõ cả số bằng tiếng Đức, viết liền (ví dụ 45 → fünfundvierzig).", "min": 20, "max": 100, "n": 5},
+            {"type": "priceHear", "title": "Nghe giá tiền, chọn số đúng", "n": 5},
+            {"type": "priceWrite", "title": "Đọc giá tiền: gõ bằng chữ", "task": "Thấy giá bằng chữ số, gõ cách đọc (ví dụ 2,45 € → zwei Euro fünfundvierzig).", "n": 4},
+            {"type": "numHear", "mode": "phone", "title": "Nghe ba số liền nhau (như số điện thoại)", "task": "Số điện thoại tiếng Đức thường đọc từng số một hoặc từng cặp. Chọn dãy số đúng.", "n": 4}
+          ]
+        },
+        {
+          "id": "gespraech", "title": "Hội thoại tổng hợp", "minutes": 7,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Im Sprachkurs",
+              "lines": [
+                {"scene": "Lớp tiếng Đức, ngày đầu tiên. Linh và Marek làm quen với nhau."},
+                {"who": "Linh", "v": "f", "de": "Hallo! Ich heiße Linh. Und wie heißt du?", "vi": "Chào bạn! Mình tên là Linh. Còn bạn tên gì?"},
+                {"who": "Marek", "v": "m", "de": "Ich bin Marek. Woher kommst du, Linh?", "vi": "Mình là Marek. Linh, bạn đến từ đâu?"},
+                {"who": "Linh", "v": "f", "de": "Ich komme aus Vietnam, aus Hanoi. Und du?", "vi": "Mình đến từ Việt Nam, từ Hà Nội. Còn bạn?"},
+                {"who": "Marek", "v": "m", "de": "Ich komme aus Polen. Jetzt wohne ich in Köln.", "vi": "Mình đến từ Ba Lan. Bây giờ mình sống ở Köln."},
+                {"who": "Linh", "v": "f", "de": "Sprichst du gut Deutsch?", "vi": "Bạn nói tiếng Đức giỏi không?"},
+                {"who": "Marek", "v": "m", "de": "Nur ein bisschen. Ich spreche Polnisch, Englisch und ein bisschen Deutsch.", "vi": "Chỉ một chút. Mình nói tiếng Ba Lan, tiếng Anh và một chút tiếng Đức."},
+                {"who": "Linh", "v": "f", "de": "Hast du Geschwister?", "vi": "Bạn có anh chị em không?"},
+                {"who": "Marek", "v": "m", "de": "Ja, ich habe eine Schwester. Sie ist zweiundzwanzig Jahre alt und wohnt in Polen.", "vi": "Có, mình có một chị/em gái. Cô ấy 22 tuổi và sống ở Ba Lan."},
+                {"who": "Linh", "v": "f", "de": "Wie ist deine Handynummer?", "vi": "Số di động của bạn là gì?"},
+                {"who": "Marek", "v": "m", "de": "Meine Handynummer ist null eins sieben sechs, drei vier fünf, acht zwei.", "vi": "Số di động của mình là 0176 345 82."},
+                {"who": "Linh", "v": "f", "de": "Danke! Bis später, Marek!", "vi": "Cảm ơn! Hẹn gặp lại, Marek!"},
+                {"who": "Marek", "v": "m", "de": "Tschüs, Linh!", "vi": "Tạm biệt, Linh!"}
+              ]
+            },
+            { "type": "choice", "title": "Bạn hiểu hội thoại chưa?",
+              "items": [
+                {"q": "Woher kommt Linh?", "opts": ["Aus Vietnam.", "Aus Polen.", "Aus Köln."], "a": 0},
+                {"q": "Wo wohnt Marek jetzt?", "opts": ["In Köln.", "In Hanoi.", "In Polen."], "a": 0},
+                {"q": "Wie viele Sprachen spricht Marek?", "opts": ["Drei.", "Zwei.", "Vier."], "a": 0},
+                {"q": "Wie alt ist Mareks Schwester?", "opts": ["Zweiundzwanzig.", "Zwölf.", "Zweiunddreißig."], "a": 0}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Auf dem Markt",
+              "lines": [
+                {"scene": "Frau Berger kauft auf dem Markt ein."},
+                {"who": "Frau Berger", "v": "f", "de": "Guten Tag. Haben Sie Äpfel?", "vi": "Chào ông. Ông có táo không?"},
+                {"who": "Verkäufer", "v": "m", "de": "Ja, natürlich. Ein Kilo kostet zwei Euro fünfzig.", "vi": "Có chứ. Một ký giá 2 euro 50."},
+                {"who": "Frau Berger", "v": "f", "de": "Gut, ich nehme ein Kilo. Und ich brauche auch Eier.", "vi": "Được, tôi lấy một ký. Và tôi cũng cần trứng."},
+                {"who": "Verkäufer", "v": "m", "de": "Hier, bitte. Zehn Eier kosten drei Euro vierzig. Sonst noch etwas?", "vi": "Đây ạ. Mười quả trứng giá 3 euro 40. Bà cần gì nữa không?"},
+                {"who": "Frau Berger", "v": "f", "de": "Nein, danke. Was macht das zusammen?", "vi": "Không, cảm ơn. Tất cả bao nhiêu?"},
+                {"who": "Verkäufer", "v": "m", "de": "Das macht zusammen fünf Euro neunzig.", "vi": "Tất cả là 5 euro 90."},
+                {"who": "Frau Berger", "v": "f", "de": "Hier, bitte. Auf Wiedersehen!", "vi": "Đây ạ. Chào ông!"},
+                {"who": "Verkäufer", "v": "m", "de": "Danke, Frau Berger! Auf Wiedersehen!", "vi": "Cảm ơn bà Berger! Chào bà!"}
+              ]
+            },
+            { "type": "choice", "title": "Hiểu hội thoại ở chợ",
+              "items": [
+                {"q": "Was kostet ein Kilo Äpfel?", "opts": ["Zwei Euro fünfzig.", "Drei Euro vierzig.", "Fünf Euro neunzig."], "a": 0},
+                {"q": "Wie viele Eier kauft Frau Berger?", "opts": ["Zehn.", "Zwölf.", "Zwei."], "a": 0},
+                {"q": "Was kostet alles zusammen?", "opts": ["Fünf Euro neunzig.", "Sechs Euro vierzig.", "Zwei Euro fünfzig."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Làm lại câu sai và hoàn thành buổi 1", "minutes": 3,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá buổi 1",
+              "items": [
+                "Tôi chia được <i>sein, haben, wohnen, kommen, sprechen, essen</i> và ba động từ khuyết với cả sáu ngôi.",
+                "Tôi đặt đúng câu hỏi W- và câu hỏi Có/Không.",
+                "Tôi chọn đúng <i>ein / eine / kein / keine / mein / meine</i> và nói được số nhiều của các danh từ quen.",
+                "Tôi nghe và viết được số, giá tiền và số điện thoại.",
+                "Tôi giới thiệu được bản thân, gia đình và hỏi giá ở chợ."
+              ]
+            },
+            { "type": "book", "title": "Bài kiểm tra của sách (Lektion 1–3)",
+              "steps": [
+                "Arbeitsbuch tr. 18 (Test Lektion 1), tr. 28 (Test Lektion 2), tr. 39 (Test Lektion 3).",
+                "Bài kiểm tra trong bộ giáo án: <i>Kopiervorlagen/L01, L02, L03/Lektionstest.pdf</i> — làm ra giấy. Đáp án nằm trong <i>Lösungen zu den Tests.pdf</i>.",
+                "Tờ ôn tập của bộ giáo án: <i>Kopiervorlagen/L01, L02, L03/Wiederholung.pdf</i> — các tờ điền câu và thẻ hỏi–đáp để in ra, làm một mình hoặc đọc to."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                "Ôn tập: vào <a href='#/review'>Ôn tập</a> và làm hết thẻ đến hạn của Lektion 1–3.",
+                "Làm một bài Test của sách (Lektion 1, 2 hoặc 3) ra giấy và tự chấm.",
+                "Đọc to hai hội thoại của buổi này, rồi ghi âm lại giới thiệu bản thân ở bài <i>Das bin ich!</i> của Lektion 1."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2", "no": 2, "minutes": 61,
+      "title": "Essen, Wohnen, Zeit",
+      "vi": "Ôn Lektion 3–5: đi chợ và hỏi giá, nhà ở, nicht – kein, giờ giấc, ngày trong tuần, động từ tách",
+      "book": "Ôn Kursbuch Lektion 3–5 · Arbeitsbuch Test tr. 39, 50, 61 · Kopiervorlagen L03–L05",
+      "goals": [
+        "Đi chợ: hỏi có không, hỏi giá, nói số lượng (<i>Kilo, Flasche, Packung …</i>) và tính tổng.",
+        "Mô tả nhà ở bằng tính từ đối nghĩa; chọn đúng <i>nicht</i> hay <i>kein</i>; thay danh từ bằng <i>er / es / sie</i>.",
+        "Nghe, đọc, viết số lớn và giá thuê nhà; đọc tin cho thuê nhà ngắn.",
+        "Nói giờ (thường ngày và chính thức), ngày trong tuần và buổi trong ngày; dùng <i>am / um / von … bis</i>.",
+        "Dùng động từ tách và giữ động từ ở vị trí 2 khi thời gian đứng đầu câu."
+      ],
+      "sections": [
+        {
+          "id": "einkaufen", "title": "Đi chợ và nói về món ăn", "minutes": 9,
+          "blocks": [
+            { "type": "table", "title": "Mẫu câu đi chợ", "head": ["Tình huống", "Câu mẫu"], "say": 1, "vi": "Đọc to từng dòng. Cố nhớ câu tiếng Đức khi chỉ nhìn cột bên trái.",
+              "rows": [
+                ["Hỏi có hàng không", "Haben Sie Käse?"],
+                ["Hỏi giá một món", "Was kostet das Kilo Äpfel?"],
+                ["Hỏi giá nhiều món", "Was kosten die Eier?"],
+                ["Nói bạn lấy gì", "Ich nehme ein Kilo Äpfel und eine Packung Reis."],
+                ["Người bán hỏi thêm", "Sonst noch etwas?"],
+                ["Tính tiền", "Das macht zusammen vier Euro dreißig."],
+                ["Nói món thích", "Mein Lieblingsessen ist Pizza. Ich esse gern Fisch, aber ich trinke nicht gern Milch."]
+              ]
+            },
+            { "type": "gaps", "title": "Đơn vị đo và bao bì", "task": "Chọn từ trong danh sách (mỗi từ dùng một lần).", "bank": ["Kilo", "Liter", "Flasche", "Packung", "Becher", "Dose", "Pfund"],
+              "items": [
+                {"q": "Ich brauche ein ___ Äpfel.", "a": ["Kilo"]},
+                {"q": "Zwei ___ Milch, bitte.", "a": ["Liter"]},
+                {"q": "Eine ___ Cola, bitte.", "a": ["Flasche"]},
+                {"q": "Haben Sie eine ___ Reis?", "a": ["Packung"]},
+                {"q": "Ein ___ Joghurt, bitte.", "a": ["Becher"]},
+                {"q": "Eine ___ Tomaten, bitte.", "a": ["Dose"]},
+                {"q": "Ich möchte ein ___ Hackfleisch.", "a": ["Pfund"]}
+              ]
+            },
+            { "type": "gaps", "title": "kostet hay kosten?", "task": "Một vật → kostet. Nhiều vật → kosten.",
+              "items": [
+                {"q": "Was ___ das Brot?", "a": ["kostet"], "opts": ["kostet", "kosten"]},
+                {"q": "Was ___ die Tomaten?", "a": ["kosten"], "opts": ["kostet", "kosten"]},
+                {"q": "Der Käse ___ drei Euro.", "a": ["kostet"], "opts": ["kostet", "kosten"]},
+                {"q": "Die Äpfel ___ zwei Euro fünfzig.", "a": ["kosten"], "opts": ["kostet", "kosten"]},
+                {"q": "Das Mineralwasser ___ neunzig Cent.", "a": ["kostet"], "opts": ["kostet", "kosten"]},
+                {"q": "Was ___ zwei Flaschen Wein?", "a": ["kosten"], "opts": ["kostet", "kosten"]}
+              ]
+            },
+            { "type": "dialog", "title": "In der Mensa",
+              "lines": [
+                {"scene": "Ben und Mia essen zusammen in der Mensa."},
+                {"who": "Ben", "v": "m", "de": "Mia, was isst du gern?", "vi": "Mia, bạn thích ăn gì?"},
+                {"who": "Mia", "v": "f", "de": "Ich esse gern Fisch und Kartoffeln. Und du?", "vi": "Mình thích ăn cá và khoai tây. Còn bạn?"},
+                {"who": "Ben", "v": "m", "de": "Ich esse gern Pizza. Aber ich koche nicht gern.", "vi": "Mình thích ăn pizza. Nhưng mình không thích nấu ăn."},
+                {"who": "Mia", "v": "f", "de": "Ich koche gern! Heute koche ich Suppe. Hast du Hunger?", "vi": "Mình thích nấu! Hôm nay mình nấu súp. Bạn đói không?"},
+                {"who": "Ben", "v": "m", "de": "Ja, ich habe Hunger! Was brauchst du?", "vi": "Có, mình đói! Bạn cần gì?"},
+                {"who": "Mia", "v": "f", "de": "Zwiebeln und Tomaten. Ich habe keine Tomaten mehr.", "vi": "Hành tây và cà chua. Mình hết cà chua rồi."},
+                {"who": "Ben", "v": "m", "de": "Kein Problem, ich kaufe Tomaten.", "vi": "Không sao, mình sẽ mua cà chua."},
+                {"who": "Mia", "v": "f", "de": "Super, danke!", "vi": "Tuyệt, cảm ơn bạn!"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wohnen", "title": "Nhà ở: tính từ, nicht – kein, er / es / sie", "minutes": 13,
+          "blocks": [
+            { "type": "choice", "title": "Từ trái nghĩa",
+              "items": [
+                {"q": "Từ trái nghĩa của <b>groß</b>?", "opts": ["klein", "alt", "hell"], "a": 0},
+                {"q": "Từ trái nghĩa của <b>neu</b>?", "opts": ["alt", "klein", "teuer"], "a": 0},
+                {"q": "Từ trái nghĩa của <b>billig</b>?", "opts": ["teuer", "schmal", "dunkel"], "a": 0},
+                {"q": "Từ trái nghĩa của <b>hell</b>?", "opts": ["dunkel", "breit", "hässlich"], "a": 0},
+                {"q": "Từ trái nghĩa của <b>schön</b>?", "opts": ["hässlich", "schmal", "billig"], "a": 0},
+                {"q": "Từ trái nghĩa của <b>breit</b>?", "opts": ["schmal", "klein", "alt"], "a": 0}
+              ]
+            },
+            { "type": "table", "title": "nicht hay kein?", "head": ["Cần phủ định …", "Dùng", "Ví dụ"], "say": 2,
+              "rows": [
+                ["tính từ, nơi chốn, động từ", "nicht", "Das Zimmer ist nicht groß. Wir wohnen nicht in Berlin."],
+                ["danh từ có ein / eine hoặc không có mạo từ", "kein / keine", "Das ist kein Sofa. Ich habe keine Kinder."],
+                ["danh từ có der / das / die / mein …", "nicht", "Das ist nicht die Küche, das ist das Bad."]
+              ]
+            },
+            { "type": "gaps", "title": "nicht, kein hay keine?",
+              "items": [
+                {"q": "Das Sofa ist ___ neu.", "a": ["nicht"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Die Wohnung hat ___ Garage.", "a": ["keine"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Das ist ___ meine Küche, das ist die Küche von Anna.", "a": ["nicht"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Ich habe ___ Auto.", "a": ["kein"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Der Tisch ist ___ billig.", "a": ["nicht"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Das ist ___ Kühlschrank, das ist ein Schrank.", "a": ["kein"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Wir wohnen ___ in Berlin.", "a": ["nicht"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Im Bad ist ___ Waschmaschine.", "a": ["keine"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Das Zimmer ist ___ sehr groß.", "a": ["nicht"], "opts": ["nicht", "kein", "keine"]},
+                {"q": "Das sind ___ Stühle, das sind Sessel.", "a": ["keine"], "opts": ["nicht", "kein", "keine"]}
+              ]
+            },
+            { "type": "gaps", "title": "er, es hay sie?", "task": "Thay danh từ bằng er (der), es (das) hoặc sie (die).",
+              "items": [
+                {"q": "Wo ist der Flur? – ___ ist dort.", "a": ["Er"], "opts": ["Er", "Es", "Sie"]},
+                {"q": "Wo ist das Bad? – ___ ist hier.", "a": ["Es"], "opts": ["Er", "Es", "Sie"]},
+                {"q": "Wo ist die Küche? – ___ ist dort.", "a": ["Sie"], "opts": ["Er", "Es", "Sie"]},
+                {"q": "Wie ist das Zimmer? – ___ ist sehr hell.", "a": ["Es"], "opts": ["Er", "Es", "Sie"]},
+                {"q": "Wie teuer ist die Wohnung? – ___ kostet sechshundert Euro.", "a": ["Sie"], "opts": ["Er", "Es", "Sie"]},
+                {"q": "Wie gefällt dir der Sessel? – ___ ist sehr schön.", "a": ["Er"], "opts": ["Er", "Es", "Sie"]}
+              ]
+            },
+            { "type": "order", "title": "Xếp thành câu đúng",
+              "items": [
+                {"chunks": ["Das Bad", "ist", "nicht", "groß."], "v": 1, "vi": "Phòng tắm không lớn."},
+                {"chunks": ["Wo", "ist", "die Küche?"], "v": 1, "vi": "Bếp ở đâu?"},
+                {"chunks": ["Das Zimmer", "kostet", "dreihundertfünfzig Euro", "im Monat."], "v": 1, "vi": "Phòng giá 350 euro một tháng."},
+                {"chunks": ["Ist", "die Wohnung", "möbliert?"], "v": 0, "vi": "Căn hộ có đồ đạc không?"},
+                {"chunks": ["Wie", "gefällt", "dir", "der Tisch?"], "v": 1, "vi": "Bạn thấy cái bàn thế nào?"}
+              ]
+            },
+            {"type": "text", "html": "<p>Hai tin cho thuê nhà do tôi soạn (dùng các chữ viết tắt của Lektion 4: <i>Zi., Whg., ca., qm, möbl., EBK, NK</i>).</p><div class='ad-grid'><div class='ad'><span class='ad-id'>Anzeige A</span>1-Zi.-Whg., ca. 30 qm, möbl., 350 € Miete, ab sofort.<br>Tel. 0160 2233 4455</div><div class='ad'><span class='ad-id'>Anzeige B</span>3-Zi.-Whg., 80 qm, Balkon + Garten, EBK, 900 € + NK, ab 1.5.<br>Tel. 0177 8899 1234</div></div>"},
+            { "type": "choice", "title": "Đọc tin cho thuê nhà",
+              "items": [
+                {"q": "Wie viele Zimmer hat Anzeige B?", "opts": ["Drei.", "Eins.", "Dreißig."], "a": 0},
+                {"q": "Was kostet Anzeige A im Monat?", "opts": ["350 Euro.", "35 Euro.", "3.500 Euro."], "a": 0},
+                {"q": "Welche Wohnung ist möbliert?", "opts": ["Anzeige A.", "Anzeige B.", "Anzeige A und B."], "a": 0},
+                {"q": "Wo ist ein Garten?", "opts": ["Bei Anzeige B.", "Bei Anzeige A.", "Bei Anzeige A und B."], "a": 0},
+                {"q": "Wie ist die Telefonnummer von Anzeige B?", "opts": ["0177 8899 1234", "0177 8899 1243", "0171 8899 1234"], "a": 0}
+              ]
+            },
+            {"type": "numHear", "title": "Nghe số lớn: giá thuê, diện tích", "pool": [350, 480, 650, 780, 900, 1200, 1450, 2500], "n": 5},
+            {"type": "numWrite", "mode": "read", "title": "Đọc chữ, gõ chữ số", "task": "Bấm vào từ để nghe nếu cần, rồi gõ chữ số.", "pool": [315, 450, 1200, 2099, 12000, 250000], "n": 4}
+          ]
+        },
+        {
+          "id": "zeit", "title": "Giờ giấc, ngày và buổi trong ngày", "minutes": 15,
+          "blocks": [
+            {"type": "clockPick", "mode": "read", "style": "private", "n": 6, "title": "Nhìn đồng hồ, chọn cách đọc thường ngày"},
+            {"type": "clockPick", "mode": "hear", "style": "private", "n": 5, "title": "Nghe, chọn đồng hồ đúng"},
+            {"type": "clockPick", "mode": "read", "style": "official", "n": 5, "title": "Xem giờ, chọn cách đọc chính thức"},
+            {"type": "timeWrite", "mode": "words", "style": "private", "n": 4, "title": "Nhìn giờ, gõ cách đọc thường ngày", "task": "Thấy giờ bằng chữ số, gõ cách đọc, ví dụ 07.45 → Viertel vor acht."},
+            {"type": "timeWrite", "mode": "digits", "style": "official", "n": 4, "title": "Đọc giờ chính thức, gõ số giờ", "task": "Đọc câu chính thức rồi gõ giờ bằng chữ số, ví dụ 19:30."},
+            { "type": "table", "title": "Wann? am – um – von … bis", "head": ["Nói về …", "Mẫu câu"], "say": 1,
+              "rows": [
+                ["Ngày trong tuần", "am Montag, am Wochenende"],
+                ["Buổi trong ngày", "am Morgen, am Abend, in der Nacht"],
+                ["Giờ cụ thể", "um acht Uhr, um halb neun"],
+                ["Khoảng giờ", "von neun bis drei Uhr"],
+                ["Khoảng ngày", "von Montag bis Freitag"],
+                ["Lặp lại", "jeden Tag, jeden Morgen, jede Nacht"]
+              ]
+            },
+            { "type": "gaps", "title": "Điền am, um, von, bis hoặc in", "task": "Chọn từ trong danh sách. Mỗi chỗ trống một từ.", "bank": ["am", "um", "von", "bis", "in"],
+              "items": [
+                {"q": "Der Deutschkurs fängt ___ Montag ___ halb neun an.", "a": [["am"], ["um"]]},
+                {"q": "Die Bibliothek ist ___ Montag ___ Freitag geöffnet.", "a": [["von"], ["bis"]]},
+                {"q": "Ich arbeite ___ acht ___ drei Uhr.", "a": [["von"], ["bis"]]},
+                {"q": "___ Samstag habe ich Zeit.", "a": ["Am", "am"]},
+                {"q": "Wir essen ___ Abend um sieben Uhr.", "a": ["am"]},
+                {"q": "Das Kino ist ___ der Nacht geschlossen.", "a": ["in"]},
+                {"q": "Ich stehe jeden Morgen ___ sechs Uhr auf.", "a": ["um"]}
+              ]
+            },
+            { "type": "table", "title": "Stadtbibliothek — Öffnungszeiten", "head": ["Tag", "Geöffnet"],
+              "rows": [
+                ["Montag bis Freitag", "9 bis 19 Uhr"],
+                ["Samstag", "10 bis 14 Uhr"],
+                ["Sonntag", "geschlossen"]
+              ]
+            },
+            { "type": "choice", "title": "Đọc giờ mở cửa",
+              "items": [
+                {"q": "Ist die Bibliothek am Mittwoch um 18 Uhr geöffnet?", "opts": ["Ja, bis 19 Uhr.", "Nein, sie ist schon geschlossen.", "Nein, nur am Samstag."], "a": 0},
+                {"q": "Wann ist die Bibliothek am Samstag geöffnet?", "opts": ["Von 10 bis 14 Uhr.", "Von 9 bis 19 Uhr.", "Von 14 bis 19 Uhr."], "a": 0},
+                {"q": "Ist die Bibliothek am Sonntag geöffnet?", "opts": ["Nein, sie ist geschlossen.", "Ja, von 10 bis 14 Uhr.", "Ja, von 9 bis 19 Uhr."], "a": 0},
+                {"q": "Bis wann ist die Bibliothek am Freitag geöffnet?", "opts": ["Bis 19 Uhr.", "Bis 14 Uhr.", "Bis 9 Uhr."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "trennbar", "title": "Động từ tách và vị trí động từ", "minutes": 11,
+          "blocks": [
+            {"type": "tip", "title": "Nhắc nhanh", "html": "<p>Động từ tách: động từ đã chia ở <b>vị trí 2</b>, tiền tố ở <b>cuối câu</b>. Đặt thời gian lên đầu câu cũng không đổi gì: <i>Am Montag stehe ich früh auf.</i> (vị trí 1 = <i>Am Montag</i>, vị trí 2 = <i>stehe</i>).</p>"},
+            {"type": "conj", "title": "Chia ba động từ tách", "persons": ["ich", "du", "er/sie", "wir", "ihr", "sie/Sie"], "verbs": [{"inf": "aufstehen", "vi": "thức dậy", "forms": ["stehe auf", "stehst auf", "steht auf", "stehen auf", "steht auf", "stehen auf"], "stem": "steh", "sep": "auf"}, {"inf": "anfangen", "vi": "bắt đầu", "forms": ["fange an", "fängst an", "fängt an", "fangen an", "fangt an", "fangen an"], "sep": "an"}, {"inf": "fernsehen", "vi": "xem tivi", "forms": ["sehe fern", "siehst fern", "sieht fern", "sehen fern", "seht fern", "sehen fern"], "sep": "fern"}], "vi": "Gõ cả cụm, ví dụ <i>stehe auf</i>. <i>anfangen</i> đổi a → ä (du fängst, er fängt); <i>fernsehen</i> đổi e → ie (du siehst, er sieht)."},
+            { "type": "sort", "title": "Động từ tách hay không tách?", "cats": ["Tách: tiền tố đứng cuối câu", "Không tách"],
+              "items": [
+                {"t": "aufräumen", "c": 0},
+                {"t": "einkaufen", "c": 0},
+                {"t": "anrufen", "c": 0},
+                {"t": "fernsehen", "c": 0},
+                {"t": "anfangen", "c": 0},
+                {"t": "aufstehen", "c": 0},
+                {"t": "frühstücken", "c": 1},
+                {"t": "telefonieren", "c": 1},
+                {"t": "fotografieren", "c": 1},
+                {"t": "bezahlen", "c": 1},
+                {"t": "besuchen", "c": 1},
+                {"t": "arbeiten", "c": 1}
+              ]
+            },
+            { "type": "order", "title": "Xếp câu: động từ ở vị trí 2, tiền tố ở cuối", "vi": "Ô cam = động từ đã chia; ô xanh dương = tiền tố tách.",
+              "items": [
+                {"chunks": ["Max", "steht", "um sieben Uhr", "auf."], "v": 1, "vi": "Max dậy lúc 7 giờ.", "p": 3},
+                {"chunks": ["Am Morgen", "höre", "ich", "Musik."], "v": 1, "vi": "Buổi sáng tôi nghe nhạc."},
+                {"chunks": ["Am Abend", "sehen", "wir", "fern."], "v": 1, "vi": "Buổi tối chúng tôi xem tivi.", "p": 3},
+                {"chunks": ["Ich", "kaufe", "im Supermarkt", "ein."], "v": 1, "vi": "Tôi mua đồ ở siêu thị.", "p": 3},
+                {"chunks": ["Der Kurs", "fängt", "um neun Uhr", "an."], "v": 1, "vi": "Khoá học bắt đầu lúc 9 giờ.", "p": 3},
+                {"chunks": ["Rufst", "du", "Anna", "an?"], "v": 0, "vi": "Bạn có gọi cho Anna không?", "p": 3},
+                {"chunks": ["Jeden Tag", "räumt", "Lara", "ihr Zimmer", "auf."], "v": 1, "vi": "Ngày nào Lara cũng dọn phòng.", "p": 4},
+                {"chunks": ["Wann", "stehst", "du", "auf?"], "v": 1, "vi": "Bạn dậy lúc nào?", "p": 3}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi (có câu đúng)",
+              "items": [
+                {"s": "Am Montag ich stehe früh auf.", "err": "ich stehe", "fix": ["stehe ich"], "why": "Thời gian đứng đầu câu thì động từ vẫn ở vị trí 2: Am Montag stehe ich früh auf."},
+                {"s": "Er seht jeden Abend fern.", "err": "seht", "fix": ["sieht"], "why": "fernsehen: er sieht (e → ie)."},
+                {"s": "Ich kaufe im Supermarkt an.", "err": "an", "fix": ["ein"], "why": "einkaufen: kaufe … ein."},
+                {"s": "Wann fangst du an?", "err": "fangst", "fix": ["fängst"], "why": "anfangen: du fängst (a → ä)."},
+                {"s": "Am Samstag schlafe ich lange.", "err": null},
+                {"s": "Lara räumt ihr Zimmer auf.", "err": null}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lesen", "title": "Đọc hiểu: một ngày của Mia", "minutes": 6,
+          "blocks": [
+            {"type": "text", "html": "<p>Một ngày thứ Hai của Mia (tôi tự soạn):</p><div class='ad-grid'><div class='ad'><span class='ad-id'>Mia</span>Ich heiße Mia und wohne in Köln. Am Montag stehe ich um halb sieben auf. Ich frühstücke nicht, ich trinke nur einen Kaffee. Um acht Uhr gehe ich zur Arbeit. Von neun bis drei arbeite ich im Büro. Am Nachmittag kaufe ich ein und rufe meine Mutter an. Am Abend koche ich und sehe fern. Am Mittwoch habe ich einen Deutschkurs. Er fängt um achtzehn Uhr an.</div></div>"},
+            { "type": "choice", "title": "Bạn hiểu bài đọc chưa?",
+              "items": [
+                {"q": "Wann steht Mia am Montag auf?", "opts": ["Um halb sieben.", "Um sechs Uhr.", "Um halb acht."], "a": 0},
+                {"q": "Was trinkt Mia am Morgen?", "opts": ["Einen Kaffee.", "Einen Tee.", "Eine Milch."], "a": 0},
+                {"q": "Wann geht Mia zur Arbeit?", "opts": ["Um acht Uhr.", "Um neun Uhr.", "Um drei Uhr."], "a": 0},
+                {"q": "Bis wann arbeitet Mia im Büro?", "opts": ["Bis drei Uhr.", "Bis neun Uhr.", "Bis sechs Uhr."], "a": 0},
+                {"q": "Was macht Mia am Nachmittag?", "opts": ["Sie kauft ein und ruft ihre Mutter an.", "Sie sieht fern.", "Sie hat einen Deutschkurs."], "a": 0},
+                {"q": "Wann fängt der Deutschkurs an?", "opts": ["Am Mittwoch um achtzehn Uhr.", "Am Mittwoch um acht Uhr.", "Am Montag um achtzehn Uhr."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gespraech", "title": "Hội thoại: hẹn gặp", "minutes": 4,
+          "blocks": [
+            { "type": "dialog", "title": "Hast du am Freitag Zeit?",
+              "lines": [
+                {"scene": "Lara und Tom machen einen Termin."},
+                {"who": "Lara", "v": "f", "de": "Hallo Tom! Hast du am Freitag Zeit?", "vi": "Chào Tom! Thứ Sáu bạn có thời gian không?"},
+                {"who": "Tom", "v": "m", "de": "Am Freitag? Nein, da habe ich keine Zeit. Ich arbeite bis acht.", "vi": "Thứ Sáu à? Không, hôm đó mình không rảnh. Mình làm việc đến 8 giờ."},
+                {"who": "Lara", "v": "f", "de": "Und am Samstag? Wir können um vier Uhr einen Kaffee trinken.", "vi": "Còn thứ Bảy thì sao? Mình có thể uống cà phê lúc 4 giờ."},
+                {"who": "Tom", "v": "m", "de": "Am Samstag passt gut. Das Café ist am Samstag von zehn bis zwanzig Uhr geöffnet.", "vi": "Thứ Bảy thì được. Quán mở cửa thứ Bảy từ 10 đến 20 giờ."},
+                {"who": "Lara", "v": "f", "de": "Super! Dann bis Samstag um vier Uhr.", "vi": "Tuyệt! Vậy hẹn thứ Bảy lúc 4 giờ."},
+                {"who": "Tom", "v": "m", "de": "Bis Samstag, Lara. Tschüs!", "vi": "Hẹn thứ Bảy, Lara. Tạm biệt!"}
+              ]
+            },
+            { "type": "choice", "title": "Hiểu hội thoại",
+              "items": [
+                {"q": "Was macht Tom am Freitag?", "opts": ["Er arbeitet bis acht.", "Er trinkt Kaffee.", "Er hat Zeit."], "a": 0},
+                {"q": "Wann trinken Lara und Tom einen Kaffee?", "opts": ["Am Samstag um vier Uhr.", "Am Freitag um acht Uhr.", "Am Sonntag um vier Uhr."], "a": 0},
+                {"q": "Bis wann ist das Café am Samstag geöffnet?", "opts": ["Bis zwanzig Uhr.", "Bis zehn Uhr.", "Bis vierzehn Uhr."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Làm lại câu sai và hoàn thành buổi 2", "minutes": 3,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá buổi 2",
+              "items": [
+                "Tôi đi chợ bằng tiếng Đức: hỏi có không, hỏi giá, nói số lượng và tính tiền.",
+                "Tôi mô tả nhà và đồ đạc, dùng đúng <i>nicht / kein</i> và <i>er / es / sie</i>.",
+                "Tôi nghe, đọc và viết số lớn, giá thuê nhà; đọc được tin cho thuê nhà ngắn.",
+                "Tôi nói và hiểu giờ giấc (thường ngày và chính thức), ngày trong tuần và buổi trong ngày.",
+                "Tôi đặt động từ tách đúng chỗ, kể cả khi thời gian đứng đầu câu."
+              ]
+            },
+            { "type": "book", "title": "Bài kiểm tra của sách (Lektion 3–5)",
+              "steps": [
+                "Arbeitsbuch tr. 39 (Test Lektion 3), tr. 50 (Test Lektion 4), tr. 61 (Test Lektion 5).",
+                "Bài kiểm tra trong bộ giáo án: <i>Kopiervorlagen/L03, L04, L05/Lektionstest.pdf</i> — làm ra giấy. Đáp án nằm trong <i>Lösungen zu den Tests.pdf</i>.",
+                "Tờ ôn tập: <i>Kopiervorlagen/L03, L04, L05/Wiederholung.pdf</i> — câu hỏi ôn (ein / eine, số nhiều, đếm số) và trò chơi bàn cờ giờ giấc của Lektion 5, để in ra."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                "Ôn tập: làm hết thẻ đến hạn của Lektion 3–5 trong <a href='#/review'>Ôn tập</a>.",
+                "Làm một bài Test của sách (Lektion 3, 4 hoặc 5) ra giấy và tự chấm.",
+                "Viết 6 câu về một ngày của bạn, dùng ít nhất hai động từ tách và hai cụm giờ (<i>um … Uhr</i>, <i>von … bis …</i>)."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3", "no": 3, "minutes": 67,
+      "title": "Freizeit und Pläne",
+      "vi": "Ôn Lektion 6–7: thời tiết, Akkusativ, ja – nein – doch, können – wollen – möchten, Perfekt với haben và sein",
+      "book": "Ôn Kursbuch Lektion 6–7 · Arbeitsbuch Test tr. 73, 84 · Kopiervorlagen L06–L07",
+      "goals": [
+        "Nói về thời tiết, mức độ thích và đọc một bản tin thời tiết ngắn.",
+        "Dùng Akkusativ: <i>den / einen / keinen / meinen</i> với danh từ giống đực.",
+        "Trả lời <i>ja – nein – doch</i> đúng với câu hỏi phủ định; dùng <i>möchten</i> khi gọi món.",
+        "Phân biệt <i>können / wollen / möchten</i> và đặt đúng Satzklammer.",
+        "Kể chuyện đã xảy ra bằng Perfekt (<i>haben</i> hoặc <i>sein</i> + Partizip II) và viết một thư ngắn trả lời bạn."
+      ],
+      "sections": [
+        {
+          "id": "wetter", "title": "Thời tiết và mức độ thích", "minutes": 7,
+          "blocks": [
+            { "type": "table", "title": "Nói về thời tiết", "head": ["Tiếng Đức", "Nghĩa"], "say": 0,
+              "rows": [
+                ["Es regnet.", "Trời mưa."],
+                ["Es schneit.", "Trời có tuyết."],
+                ["Die Sonne scheint.", "Trời nắng."],
+                ["Es ist kalt, warm, heiß, windig, bewölkt.", "Lạnh, ấm, nóng, có gió, nhiều mây."],
+                ["Es sind fünfundzwanzig Grad.", "25 độ."],
+                ["Es sind minus drei Grad.", "−3 độ."],
+                ["Im Norden regnet es.", "Ở miền Bắc trời mưa."]
+              ]
+            },
+            {"type": "text", "html": "<p>Bản tin thời tiết do tôi soạn:</p><div class='ad-grid'><div class='ad'><span class='ad-id'>Wetter heute</span>Im Norden ist es windig und bewölkt, es sind zwölf Grad. In der Mitte regnet es, es sind vierzehn Grad. Im Süden scheint die Sonne, es sind einundzwanzig Grad. Im Osten ist es kalt: Es sind minus zwei Grad.</div></div>"},
+            { "type": "choice", "title": "Đọc bản tin thời tiết",
+              "items": [
+                {"q": "Wo scheint die Sonne?", "opts": ["Im Süden.", "Im Norden.", "In der Mitte."], "a": 0},
+                {"q": "Wie warm ist es in der Mitte?", "opts": ["Vierzehn Grad.", "Zwölf Grad.", "Einundzwanzig Grad."], "a": 0},
+                {"q": "Wie viel Grad sind es im Osten?", "opts": ["Minus zwei Grad.", "Plus zwei Grad.", "Zwölf Grad."], "a": 0},
+                {"q": "Wie ist das Wetter im Norden?", "opts": ["Es ist windig und bewölkt.", "Es regnet.", "Die Sonne scheint."], "a": 0},
+                {"q": "Wo regnet es?", "opts": ["In der Mitte.", "Im Süden.", "Im Osten."], "a": 0}
+              ]
+            },
+            { "type": "choice", "title": "Mức độ thích",
+              "items": [
+                {"q": "<b>Ich tanze gar nicht gern.</b>", "opts": ["Tôi hoàn toàn không thích nhảy.", "Tôi rất thích nhảy.", "Tôi nhảy rất giỏi."], "a": 0},
+                {"q": "<b>Ich fahre sehr gern Auto.</b>", "opts": ["Tôi rất thích lái xe.", "Tôi không thích lái xe.", "Tôi lái xe rất giỏi."], "a": 0},
+                {"q": "<b>Wir wandern nicht so gern.</b>", "opts": ["Chúng tôi không thích đi bộ đường dài lắm.", "Chúng tôi rất thích đi bộ đường dài.", "Chúng tôi không đi bộ đường dài."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "akkusativ", "title": "Akkusativ: den – einen – keinen – meinen", "minutes": 13,
+          "blocks": [
+            {"type": "text", "html": "<p>Hỏi <b>Wer / Was</b> làm việc đó → Nominativ (chủ ngữ). Hỏi <b>Wen / Was</b> chịu tác động → Akkusativ (tân ngữ). Ví dụ: <i>Der Saft ist kalt.</i> (chủ ngữ) – <i>Ich nehme den Saft.</i> (tân ngữ).</p>"},
+            { "type": "table", "title": "Nominativ và Akkusativ", "head": ["", "Nominativ — Das ist …", "Akkusativ — Ich habe / nehme / kaufe …"], "vi": "Chỉ <b>danh từ giống đực (der)</b> đổi dạng khi là tân ngữ (câu hỏi <i>Wen? Was?</i>): der → den, ein → einen, kein → keinen, mein → meinen.",
+              "rows": [
+                ["der", "<span class='g-der'>der</span> Saft", "<span class='g-der'><b>den</b></span> Saft"],
+                ["ein", "ein Saft", "<b>einen</b> Saft"],
+                ["kein", "kein Saft", "<b>keinen</b> Saft"],
+                ["mein", "mein Bruder", "<b>meinen</b> Bruder"],
+                ["das", "das Ei", "das Ei <span class='muted'>(không đổi)</span>"],
+                ["die", "die Banane", "die Banane <span class='muted'>(không đổi)</span>"],
+                ["số nhiều", "die Eier · keine Eier", "die Eier · keine Eier <span class='muted'>(không đổi)</span>"]
+              ]
+            },
+            { "type": "sort", "title": "Có đổi ở Akkusativ không?", "cats": ["Đổi dạng (der → den, ein → einen …)", "Giữ nguyên"],
+              "items": [
+                {"t": "der Saft", "c": 0},
+                {"t": "ein Apfel", "c": 0},
+                {"t": "kein Hunger", "c": 0},
+                {"t": "mein Bruder", "c": 0},
+                {"t": "der Kaffee", "c": 0},
+                {"t": "der Tisch", "c": 0},
+                {"t": "das Brot", "c": 1},
+                {"t": "ein Ei", "c": 1},
+                {"t": "die Milch", "c": 1},
+                {"t": "eine Banane", "c": 1},
+                {"t": "keine Tomaten", "c": 1},
+                {"t": "meine Schwester", "c": 1},
+                {"t": "das Eis", "c": 1},
+                {"t": "die Eier", "c": 1}
+              ]
+            },
+            { "type": "gaps", "title": "Điền dạng Akkusativ", "task": "Gõ mạo từ đúng. Chữ trong ngoặc cho biết loại mạo từ (ein, der, kein, mein).",
+              "items": [
+                {"q": "Ich nehme ___ Saft. (ein)", "a": ["einen"]},
+                {"q": "Wir haben ___ Käse. (der)", "a": ["den"]},
+                {"q": "Hast du ___ Hunger? (kein)", "a": ["keinen"]},
+                {"q": "Ich kaufe ___ Brot. (ein)", "a": ["ein"]},
+                {"q": "Ich esse ___ Banane. (ein)", "a": ["eine"]},
+                {"q": "Wir brauchen ___ Tisch. (ein)", "a": ["einen"]},
+                {"q": "Ich rufe ___ Bruder an. (mein)", "a": ["meinen"]},
+                {"q": "Hast du ___ Salat? (der)", "a": ["den"]},
+                {"q": "Ich habe ___ Auto. (kein)", "a": ["kein"]},
+                {"q": "Wer kauft ___ Käse? (der)", "a": ["den"]}
+              ]
+            },
+            { "type": "order", "title": "Xếp thành câu đúng",
+              "items": [
+                {"chunks": ["Ich", "nehme", "einen Saft."], "v": 1, "vi": "Tôi lấy một ly nước ép."},
+                {"chunks": ["Wir", "brauchen", "einen Tisch."], "v": 1, "vi": "Chúng tôi cần một cái bàn."},
+                {"chunks": ["Hast", "du", "den Käse?"], "v": 0, "vi": "Bạn có (cái) phô mai không?"},
+                {"chunks": ["Heute", "kaufe", "ich", "keinen Fisch."], "v": 1, "vi": "Hôm nay tôi không mua cá."},
+                {"chunks": ["Ich", "rufe", "meinen Bruder", "an."], "v": 1, "vi": "Tôi gọi điện cho anh trai tôi.", "p": 3}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi Akkusativ",
+              "items": [
+                {"s": "Ich nehme ein Saft.", "err": "ein", "fix": ["einen"], "why": "Saft là der-Wort → Akkusativ: einen Saft."},
+                {"s": "Wir haben kein Hunger.", "err": "kein", "fix": ["keinen"], "why": "Hunger là der-Wort → keinen Hunger."},
+                {"s": "Ich kaufe der Käse.", "err": "der", "fix": ["den"], "why": "Käse là der-Wort → den Käse."},
+                {"s": "Ich rufe mein Bruder an.", "err": "mein", "fix": ["meinen"], "why": "Bruder là der-Wort → meinen Bruder."},
+                {"s": "Er isst eine Apfel.", "err": "eine", "fix": ["einen"], "why": "Apfel là der-Wort → einen Apfel."},
+                {"s": "Kaufst du den Brot?", "err": "den", "fix": ["das"], "why": "Brot là das-Wort — das-Wort không đổi: das Brot."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "doch", "title": "Ja – nein – doch và möchten", "minutes": 7,
+          "blocks": [
+            { "type": "table", "title": "ja – nein – doch", "head": ["Câu hỏi", "Thực ra là có", "Thực ra là không"], "vi": "Câu hỏi có <b>nicht</b> hoặc <b>kein</b>: trả lời <i>có</i> bằng <b>doch</b>, trả lời <i>không</i> bằng <b>nein</b>.",
+              "rows": [
+                ["Hast du Hunger?", "<b>Ja</b>, ich habe Hunger.", "<b>Nein</b>, ich habe keinen Hunger."],
+                ["Hast du keinen Hunger?", "<b>Doch</b>, ich habe Hunger!", "<b>Nein</b>, ich habe keinen Hunger."],
+                ["Ist das nicht dein Bruder?", "<b>Doch</b>, das ist mein Bruder.", "<b>Nein</b>, das ist nicht mein Bruder."]
+              ]
+            },
+            { "type": "choice", "title": "Ja, nein hay doch?",
+              "items": [
+                {"q": "Hast du keinen Hunger? — ___, ich habe Hunger.", "opts": ["Doch", "Ja", "Nein"], "a": 0},
+                {"q": "Kommst du nicht aus Polen? — ___, ich komme aus Vietnam.", "opts": ["Nein", "Doch", "Ja"], "a": 0},
+                {"q": "Spielst du Fußball? — ___, sehr gern.", "opts": ["Ja", "Doch", "Nein"], "a": 0},
+                {"q": "Ist das nicht dein Bruder? — ___, das ist mein Bruder.", "opts": ["Doch", "Ja", "Nein"], "a": 0},
+                {"q": "Hast du Zeit? — ___, ich habe keine Zeit.", "opts": ["Nein", "Doch", "Ja"], "a": 0},
+                {"q": "Möchtest du keinen Kaffee? — ___, gern!", "opts": ["Doch", "Ja", "Nein"], "a": 0}
+              ]
+            },
+            { "type": "gaps", "title": "Điền dạng của möchten", "task": "Gõ dạng đúng của möchten (ö: bấm nút phía trên hoặc gõ oe).",
+              "items": [
+                {"q": "Ich ___ einen Kaffee.", "a": ["möchte"]},
+                {"q": "___ du ein Eis?", "a": ["Möchtest"]},
+                {"q": "Wir ___ zwei Cola, bitte.", "a": ["möchten"]},
+                {"q": "Was ___ Sie trinken?", "a": ["möchten"]},
+                {"q": "Er ___ nach Wien fahren.", "a": ["möchte"]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "modal", "title": "können – wollen – möchten và Satzklammer", "minutes": 10,
+          "blocks": [
+            { "type": "table", "title": "können – wollen – möchten", "head": ["", "können", "wollen", "möchten"], "vi": "Cả ba: động từ khuyết ở <b>vị trí 2</b> (hoặc vị trí 1 khi hỏi Có/Không), động từ chính ở <b>nguyên mẫu, cuối câu</b>.",
+              "rows": [
+                ["Nghĩa", "có thể; biết làm", "muốn (kế hoạch, ý định)", "muốn (lịch sự, khi gọi món)"],
+                ["Ví dụ", "<i>Ich kann gut kochen.</i>", "<i>Wir wollen morgen wandern.</i>", "<i>Ich möchte einen Tee.</i>"],
+                ["Câu hỏi", "<i>Kannst du mir helfen?</i>", "<i>Wollen wir ins Kino gehen?</i>", "<i>Möchten Sie einen Kaffee?</i>"]
+              ]
+            },
+            { "type": "choice", "title": "Chọn động từ khuyết hợp",
+              "items": [
+                {"q": "Trong quán cà phê, bạn nói lịch sự: Ich ___ einen Tee, bitte.", "opts": ["möchte", "will", "kann"], "a": 0},
+                {"q": "Lara übt jeden Tag Klavier. Jetzt ___ sie sehr gut spielen.", "opts": ["kann", "will", "möchte"], "a": 0},
+                {"q": "Ben hat Hunger. Er ___ jetzt essen.", "opts": ["will", "willst", "wollen"], "a": 0},
+                {"q": "Wir haben Zeit. ___ wir ins Kino gehen?", "opts": ["Wollen", "Will", "Wollt"], "a": 0},
+                {"q": "Ich ___ nicht schwimmen. Ich lerne es jetzt.", "opts": ["kann", "kannst", "können"], "a": 0},
+                {"q": "Im Restaurant: Wir ___ bitte zwei Cola.", "opts": ["möchten", "möchte", "möchtet"], "a": 0}
+              ]
+            },
+            { "type": "gaps", "title": "Chia động từ khuyết", "task": "Gõ dạng đã chia (ö: bấm nút phía trên hoặc gõ oe).",
+              "items": [
+                {"q": "Ich ___ gut tanzen. (können)", "a": ["kann"]},
+                {"q": "Wir ___ am Wochenende wandern. (wollen)", "a": ["wollen"]},
+                {"q": "___ du mir helfen? (können)", "a": ["Kannst"]},
+                {"q": "Er ___ einen Kurs machen. (wollen)", "a": ["will"]},
+                {"q": "Was ___ ihr trinken? (möchten)", "a": ["möchtet"]},
+                {"q": "Ihr ___ gut singen! (können)", "a": ["könnt"]},
+                {"q": "Ich ___ jeden Tag Gitarre üben. (wollen)", "a": ["will"]},
+                {"q": "Mia ___ morgen nicht kommen. (können)", "a": ["kann"]}
+              ]
+            },
+            { "type": "order", "title": "Satzklammer: động từ khuyết ôm lấy câu", "vi": "Ô cam = động từ khuyết (vị trí 2, hoặc vị trí 1 khi hỏi Có/Không). Động từ ở nguyên mẫu đứng cuối câu.",
+              "items": [
+                {"chunks": ["Ich", "kann", "gut", "Gitarre", "spielen."], "v": 1, "vi": "Tôi chơi ghi-ta giỏi."},
+                {"chunks": ["Wollen", "wir", "am Samstag", "ins Kino", "gehen?"], "v": 0, "vi": "Thứ Bảy mình đi xem phim nhé?"},
+                {"chunks": ["Am Samstag", "will", "Tom", "Fußball", "spielen."], "v": 1, "vi": "Thứ Bảy Tom muốn chơi bóng đá."},
+                {"chunks": ["Ich", "möchte", "einen Kaffee", "trinken."], "v": 1, "vi": "Tôi muốn uống một ly cà phê."},
+                {"chunks": ["Kannst", "du", "mir", "helfen?"], "v": 0, "vi": "Bạn giúp mình được không?"},
+                {"chunks": ["Mia", "kann", "morgen", "nicht", "kommen."], "v": 1, "vi": "Ngày mai Mia không đến được."}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi (có câu đúng)",
+              "items": [
+                {"s": "Er kannst gut singen.", "err": "kannst", "fix": ["kann"], "why": "Động từ khuyết: er/sie kann — không có -st."},
+                {"s": "Wollen wir gehen ins Kino?", "err": "gehen ins Kino", "fix": ["ins Kino gehen"], "why": "Động từ nguyên mẫu đứng cuối câu."},
+                {"s": "Ich will einen Kaffee trinke.", "err": "trinke", "fix": ["trinken"], "why": "Sau động từ khuyết là nguyên mẫu: trinken."},
+                {"s": "Wir wollen am Samstag fahren nach Wien.", "err": "fahren nach Wien", "fix": ["nach Wien fahren"], "why": "Động từ nguyên mẫu đứng cuối câu."},
+                {"s": "Ich kann gut kochen.", "err": null}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "perfekt", "title": "Perfekt: haben hay sein?", "minutes": 13,
+          "blocks": [
+            { "type": "table", "title": "Perfekt = haben / sein + Partizip II", "head": ["Kiểu Partizip II", "Ví dụ", "Câu mẫu"], "say": 2, "vi": "Trợ động từ (<b>haben</b> hoặc <b>sein</b>) ở vị trí 2, <b>Partizip II ở cuối câu</b>. Đa số động từ dùng haben; động từ chỉ sự di chuyển hoặc thay đổi trạng thái (<i>gehen, fahren, kommen, bleiben, aufstehen</i>) dùng sein.",
+              "rows": [
+                ["ge…t (có quy tắc)", "gemacht, gekauft, gelernt", "Ich habe gestern Fußball gespielt."],
+                ["ge…en (bất quy tắc)", "gegessen, getrunken, gesehen", "Wir haben Pizza gegessen."],
+                ["động từ tách: tiền tố + ge", "eingekauft, angerufen, ferngesehen", "Wir haben im Supermarkt eingekauft."],
+                ["không có ge- (-ieren, be-, ver-)", "telefoniert, besucht, bezahlt, vergessen", "Sie hat ihre Freundin besucht."],
+                ["dùng sein (đi, đến, ở lại, thức dậy)", "gegangen, gefahren, geblieben, aufgestanden", "Wir sind nach Wien gefahren."]
+              ]
+            },
+            { "type": "sort", "title": "Partizip II thuộc nhóm nào?", "cats": ["ge…t", "ge…en", "tiền tố tách: …ge…", "không có ge-"],
+              "items": [
+                {"t": "gemacht", "c": 0},
+                {"t": "gekauft", "c": 0},
+                {"t": "gelernt", "c": 0},
+                {"t": "gespielt", "c": 0},
+                {"t": "gegessen", "c": 1},
+                {"t": "getrunken", "c": 1},
+                {"t": "gesehen", "c": 1},
+                {"t": "geschrieben", "c": 1},
+                {"t": "eingekauft", "c": 2},
+                {"t": "aufgeräumt", "c": 2},
+                {"t": "ferngesehen", "c": 2},
+                {"t": "angerufen", "c": 2},
+                {"t": "telefoniert", "c": 3},
+                {"t": "besucht", "c": 3},
+                {"t": "bezahlt", "c": 3},
+                {"t": "vergessen", "c": 3},
+                {"t": "fotografiert", "c": 3}
+              ]
+            },
+            { "type": "sort", "title": "haben hay sein?", "cats": ["haben", "sein"],
+              "items": [
+                {"t": "machen", "c": 0},
+                {"t": "kaufen", "c": 0},
+                {"t": "essen", "c": 0},
+                {"t": "lernen", "c": 0},
+                {"t": "sehen", "c": 0},
+                {"t": "spielen", "c": 0},
+                {"t": "schreiben", "c": 0},
+                {"t": "arbeiten", "c": 0},
+                {"t": "schlafen", "c": 0},
+                {"t": "telefonieren", "c": 0},
+                {"t": "gehen", "c": 1},
+                {"t": "fahren", "c": 1},
+                {"t": "kommen", "c": 1},
+                {"t": "bleiben", "c": 1},
+                {"t": "wandern", "c": 1},
+                {"t": "aufstehen", "c": 1}
+              ]
+            },
+            { "type": "gaps", "title": "Điền trợ động từ và Partizip II", "task": "Gõ hai từ: trợ động từ (haben/sein đã chia) và Partizip II.",
+              "items": [
+                {"q": "Gestern ___ ich Fußball ___. (spielen)", "a": [["habe"], ["gespielt"]]},
+                {"q": "Wir ___ am Sonntag nach Wien ___. (fahren)", "a": [["sind"], ["gefahren"]]},
+                {"q": "Was ___ du gestern ___? (machen)", "a": [["hast"], ["gemacht"]]},
+                {"q": "Mia ___ früh ___. (aufstehen)", "a": [["ist"], ["aufgestanden"]]},
+                {"q": "Ich ___ drei Brötchen ___. (essen)", "a": [["habe"], ["gegessen"]]},
+                {"q": "Er ___ gestern Abend zu Hause ___. (bleiben)", "a": [["ist"], ["geblieben"]]},
+                {"q": "Ihr ___ viel ___. (lernen)", "a": [["habt"], ["gelernt"]]},
+                {"q": "Wir ___ im Supermarkt ___. (einkaufen)", "a": [["haben"], ["eingekauft"]]},
+                {"q": "Lara ___ ihre Freundin ___. (anrufen)", "a": [["hat"], ["angerufen"]]},
+                {"q": "Am Wochenende ___ wir viel ___. (wandern)", "a": [["sind"], ["gewandert"]]}
+              ]
+            },
+            { "type": "order", "title": "Xếp câu Perfekt", "vi": "Ô cam = haben / sein. Chữ cuối câu là Partizip II.",
+              "items": [
+                {"chunks": ["Gestern", "habe", "ich", "Pizza", "gegessen."], "v": 1, "vi": "Hôm qua tôi đã ăn pizza."},
+                {"chunks": ["Wir", "sind", "nach Köln", "gefahren."], "v": 1, "vi": "Chúng tôi đã đi Köln."},
+                {"chunks": ["Hast", "du", "am Wochenende", "gearbeitet?"], "v": 0, "vi": "Cuối tuần bạn có đi làm không?"},
+                {"chunks": ["Mia", "ist", "um sieben Uhr", "aufgestanden."], "v": 1, "vi": "Mia đã dậy lúc 7 giờ."},
+                {"chunks": ["Am Samstag", "haben", "wir", "Freunde", "getroffen."], "v": 1, "vi": "Thứ Bảy chúng tôi đã gặp bạn bè."},
+                {"chunks": ["Bist", "du", "schon mal", "in Wien", "gewesen?"], "v": 0, "vi": "Bạn đã từng ở Wien chưa?"}
+              ]
+            },
+            { "type": "fix", "title": "Tìm lỗi Perfekt",
+              "items": [
+                {"s": "Ich habe nach Wien gefahren.", "err": "habe", "fix": ["bin"], "why": "fahren (đi) dùng sein: Ich bin nach Wien gefahren."},
+                {"s": "Wir sind Pizza gegessen.", "err": "sind", "fix": ["haben"], "why": "essen dùng haben: Wir haben Pizza gegessen."},
+                {"s": "Er hat gestern gearbeiten.", "err": "gearbeiten", "fix": ["gearbeitet"], "why": "arbeiten có quy tắc: ge + arbeit + et."},
+                {"s": "Ich habe ein Foto gefinden.", "err": "gefinden", "fix": ["gefunden"], "why": "finden: gefunden (ge…en, đổi nguyên âm)."},
+                {"s": "Gestern ich habe Fußball gespielt.", "err": "ich habe", "fix": ["habe ich"], "why": "Thời gian đứng đầu câu thì trợ động từ vẫn ở vị trí 2."},
+                {"s": "Hast du schon mal in Wien gewesen?", "err": "Hast", "fix": ["Bist"], "why": "gewesen (từ sein) đi với trợ động từ sein: Bist du schon mal in Wien gewesen?"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "schreiben", "title": "Đọc và viết: kể chuyện cuối tuần", "minutes": 9,
+          "blocks": [
+            {"type": "text", "html": "<p>E-mail do tôi soạn:</p><div class='ad-grid'><div class='ad'><span class='ad-id'>E-Mail von Tom</span>Hallo Anna,<br>wie geht's dir? Am Samstag bin ich nach Hamburg gefahren. Dort wohnt mein Bruder. Wir haben im Park Fußball gespielt und am Abend haben wir Pizza gegessen. Es hat geregnet, aber das hat Spaß gemacht! Am Sonntag bin ich um zehn Uhr aufgestanden und habe lange gefrühstückt. Und du? Was hast du am Wochenende gemacht?<br>Liebe Grüße<br>Tom</div></div>"},
+            { "type": "choice", "title": "Hiểu e-mail của Tom",
+              "items": [
+                {"q": "Wo wohnt Toms Bruder?", "opts": ["In Hamburg.", "In Köln.", "Im Park."], "a": 0},
+                {"q": "Was haben die Brüder im Park gemacht?", "opts": ["Sie haben Fußball gespielt.", "Sie haben Pizza gegessen.", "Sie sind gewandert."], "a": 0},
+                {"q": "Hat es am Samstag geregnet?", "opts": ["Ja, aber das hat Spaß gemacht.", "Nein, es hat nicht geregnet.", "Ja, und das hat keinen Spaß gemacht."], "a": 0},
+                {"q": "Um wie viel Uhr ist Tom am Sonntag aufgestanden?", "opts": ["Um zehn Uhr.", "Um sieben Uhr.", "Um zwölf Uhr."], "a": 0},
+                {"q": "Was hat Tom am Sonntag gemacht?", "opts": ["Er hat lange gefrühstückt.", "Er hat Fußball gespielt.", "Er ist nach Hamburg gefahren."], "a": 0}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Việc của bạn:</b> viết thư trả lời Tom, 5–6 câu: <i>Was hast du am Wochenende gemacht?</i> Dùng Perfekt (haben hoặc sein), thời gian như <i>am Samstag, am Abend, gestern</i>, và kết thư bằng <i>Viele Grüße</i>. Viết trên giấy hoặc trong ghi chú của bạn, đừng nhìn mẫu trước.</p>"},
+            {"type": "tip", "title": "Thư trả lời mẫu (do tôi soạn)", "html": "<p>Hallo Tom,<br>danke für deine E-Mail! Am Samstag habe ich meine Eltern besucht. Wir haben zusammen gekocht und Fotos gemacht. Am Abend habe ich ferngesehen. Am Sonntag bin ich spazieren gegangen. Das hat Spaß gemacht!<br>Viele Grüße<br>Anna</p><p class='muted small'>Trợ động từ ở vị trí 2, Partizip II ở cuối câu — bạn thấy cả <i>haben</i> lẫn <i>sein</i> trong thư này.</p>"},
+            { "type": "checklist", "title": "Tự kiểm tra bài viết",
+              "items": [
+                "Có lời chào (<i>Hallo …</i>) và lời kết (<i>Viele Grüße / Liebe Grüße</i>).",
+                "Ít nhất 3 câu Perfekt đúng (haben hoặc sein + Partizip II).",
+                "Trợ động từ ở vị trí 2, Partizip II ở cuối câu; khi mở đầu bằng thời gian vẫn giữ vị trí 2.",
+                "Đọc to bài viết của bạn rồi ghi âm lại."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gespraech", "title": "Hội thoại tổng hợp", "minutes": 5,
+          "blocks": [
+            { "type": "dialog", "title": "1 · Am Imbiss",
+              "lines": [
+                {"scene": "Ben kauft etwas zu essen am Imbiss."},
+                {"who": "Verkäuferin", "v": "f", "de": "Guten Tag! Was möchten Sie?", "vi": "Chào anh! Anh muốn gì ạ?"},
+                {"who": "Ben", "v": "m", "de": "Ich möchte einen Hamburger und eine Cola, bitte.", "vi": "Cho tôi một bánh hamburger và một cola."},
+                {"who": "Verkäuferin", "v": "f", "de": "Möchten Sie keine Pommes?", "vi": "Anh không muốn khoai tây chiên sao?"},
+                {"who": "Ben", "v": "m", "de": "Doch, gern! Eine Portion, bitte.", "vi": "Có chứ, tôi muốn! Cho một phần."},
+                {"who": "Verkäuferin", "v": "f", "de": "Das macht zusammen sieben Euro fünfzig.", "vi": "Tất cả là 7 euro 50."},
+                {"who": "Ben", "v": "m", "de": "Hier, bitte.", "vi": "Đây ạ."},
+                {"who": "Verkäuferin", "v": "f", "de": "Danke und schönen Tag noch!", "vi": "Cảm ơn anh, chúc anh một ngày tốt lành!"}
+              ]
+            },
+            { "type": "choice", "title": "Hiểu hội thoại ở quầy ăn nhanh",
+              "items": [
+                {"q": "Was kostet alles zusammen?", "opts": ["Sieben Euro fünfzig.", "Sechs Euro fünfzig.", "Siebzehn Euro fünfzig."], "a": 0},
+                {"q": "Möchte Ben Pommes?", "opts": ["Ja, eine Portion.", "Nein, keine Pommes.", "Nein, er hat keinen Hunger."], "a": 0}
+              ]
+            },
+            { "type": "dialog", "title": "2 · Was hast du am Wochenende gemacht?",
+              "lines": [
+                {"scene": "Mia und Ben sprechen am Montag über das Wochenende."},
+                {"who": "Mia", "v": "f", "de": "Hallo Ben! Was hast du am Wochenende gemacht?", "vi": "Chào Ben! Cuối tuần bạn đã làm gì?"},
+                {"who": "Ben", "v": "m", "de": "Ich bin gewandert und habe viele Fotos gemacht. Und du?", "vi": "Mình đã đi bộ đường dài và chụp nhiều ảnh. Còn bạn?"},
+                {"who": "Mia", "v": "f", "de": "Ich habe lange geschlafen und dann habe ich Gitarre geübt.", "vi": "Mình đã ngủ lâu rồi sau đó luyện ghi-ta."},
+                {"who": "Ben", "v": "m", "de": "Kannst du schon gut spielen?", "vi": "Bạn chơi giỏi chưa?"},
+                {"who": "Mia", "v": "f", "de": "Nein, noch nicht. Aber ich will jeden Tag üben.", "vi": "Chưa. Nhưng mình muốn luyện mỗi ngày."},
+                {"who": "Ben", "v": "m", "de": "Super! Wollen wir am Freitag zusammen Musik machen?", "vi": "Tuyệt! Thứ Sáu mình cùng chơi nhạc nhé?"},
+                {"who": "Mia", "v": "f", "de": "Gern! Das passt gut.", "vi": "Vui lắm! Hợp quá."}
+              ]
+            },
+            { "type": "choice", "title": "Hiểu hội thoại về cuối tuần",
+              "items": [
+                {"q": "Was hat Ben am Wochenende gemacht?", "opts": ["Er ist gewandert und hat Fotos gemacht.", "Er hat lange geschlafen.", "Er hat Gitarre geübt."], "a": 0},
+                {"q": "Kann Mia schon gut Gitarre spielen?", "opts": ["Nein, noch nicht.", "Ja, sehr gut.", "Ja, ein bisschen."], "a": 0},
+                {"q": "Wann wollen Mia und Ben Musik machen?", "opts": ["Am Freitag.", "Am Montag.", "Am Samstag."], "a": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Làm lại câu sai và hoàn thành buổi 3", "minutes": 3,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"},
+            { "type": "cando", "title": "Tự đánh giá buổi 3",
+              "items": [
+                "Tôi nói về thời tiết và mức độ thích (<i>sehr gern – gern – nicht so gern – gar nicht gern</i>).",
+                "Tôi dùng <i>den / einen / keinen / meinen</i> đúng với danh từ giống đực.",
+                "Tôi trả lời <i>ja, nein, doch</i> đúng với câu hỏi có <i>nicht</i> hoặc <i>kein</i>.",
+                "Tôi phân biệt <i>können, wollen, möchten</i> và đặt động từ nguyên mẫu ở cuối câu.",
+                "Tôi kể chuyện đã xảy ra với Perfekt và chọn đúng <i>haben</i> hay <i>sein</i>."
+              ]
+            },
+            { "type": "book", "title": "Bài kiểm tra của sách (Lektion 6–7)",
+              "steps": [
+                "Arbeitsbuch tr. 73 (Test Lektion 6), tr. 84 (Test Lektion 7).",
+                "Bài kiểm tra trong bộ giáo án: <i>Kopiervorlagen/L06, L07/Lektionstest.pdf</i> — làm ra giấy. Đáp án nằm trong <i>Lösungen zu den Tests.pdf</i>.",
+                "Tờ ôn tập: <i>Kopiervorlagen/L06/Wiederholung.pdf</i> (trò chơi bàn cờ) và <i>L07/Wiederholung.pdf</i> (thẻ câu hỏi về wollen, können, Perfekt) — in ra, chơi hoặc tự trả lời thành tiếng."
+              ]
+            },
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                "Ôn tập: làm hết thẻ đến hạn của Lektion 6–7 trong <a href='#/review'>Ôn tập</a>, nhất là các thẻ Partizip.",
+                "Làm một bài Test của sách (Lektion 6 hoặc 7) ra giấy và tự chấm.",
+                "Kể cho chính mình nghe (thành tiếng, 6 câu): <i>Was hast du gestern gemacht?</i>"
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4", "no": 4, "minutes": 75,
+      "title": "Abschlusstest Band 1",
+      "vi": "Kiểm tra cuối Band 1 (60 câu: nghe, từ vựng, ngữ pháp, đọc hiểu), luyện nói, viết một tin nhắn, đọc kết quả và bước tiếp theo",
+      "book": "Ôn Kursbuch Lektion 1–7 · Arbeitsbuch Test tr. 18, 28, 39, 50, 61, 73, 84 · Kopiervorlagen L01–L07 (Lektionstest, Wiederholung)",
+      "goals": [
+        "Làm một bài kiểm tra 60 câu về cả Band 1: nghe, từ vựng, ngữ pháp, đọc hiểu.",
+        "Biết chính xác mình yếu ở Lektion nào nhờ đường dẫn ↗ sau mỗi câu, và làm lại các câu sai.",
+        "Nói về mình bằng tiếng Đức và trả lời mười câu hỏi quen thuộc.",
+        "Viết một tin nhắn ngắn rủ bạn đi chơi.",
+        "Tự đánh giá cả Band 1 và biết bước tiếp theo."
+      ],
+      "sections": [
+        {
+          "id": "vorbereitung", "title": "Chuẩn bị cho bài kiểm tra", "minutes": 3,
+          "blocks": [
+            {"type": "text", "html": "<p><b>Bài kiểm tra cuối Band 1</b> có 60 câu, khoảng 40–45 phút: <b>A · Hören</b> (10 câu — bấm 🔊, nghe được nhiều lần), <b>B · Wortschatz</b> (10), <b>C · Grammatik</b> (28), <b>D · Lesen</b> (12, ba đoạn ngắn).</p><p>Không mở sách, không mở bài cũ. Gõ <i>ä ö ü</i> bằng nút phía trên ô gõ hoặc gõ <i>ae oe ue</i>. Sau khi nộp bài, mỗi câu hiện đáp án và một đường dẫn <b>↗ L? · buổi ?</b> — bấm vào để mở đúng buổi cần học lại (mở ở thẻ mới nên kết quả của bạn vẫn còn). Rồi dùng <b>Làm lại các câu sai</b> ở bên dưới.</p><p class='muted small'>Mục tiêu không phải điểm tuyệt đối mà là biết chỗ nào còn yếu. Điểm cao nhất của bạn được lưu trên trang Lộ trình.</p>"}
+          ]
+        },
+        {
+          "id": "kiem-tra", "title": "Kiểm tra cuối Band 1 (Wiederholung 1–7)", "minutes": 45,
+          "blocks": [
+            { "type": "test", "id": "w1", "title": "Bài kiểm tra cuối Band 1",
+              "items": [
+                {"k": "listen", "q": "<small class='muted'>[A · Hören]</small> Nghe và gõ số bằng chữ số:", "say": "siebenundsechzig", "a": ["67"], "why": "siebenundsechzig = 7 + 60 = 67 (đọc đơn vị trước). <a href='#/l3/3' target='_blank' rel='noopener'>↗ L3 · buổi 3</a>"},
+                {"k": "listen", "q": "<small class='muted'>[A · Hören]</small> Nghe và gõ số bằng chữ số:", "say": "dreihundertvierzig", "a": ["340"], "why": "dreihundert + vierzig = 340. <a href='#/l4/4' target='_blank' rel='noopener'>↗ L4 · buổi 4</a>"},
+                {"k": "listenmc", "q": "<small class='muted'>[A · Hören]</small> Nghe, chọn giá tiền:", "say": "vier Euro fünfzig", "opts": ["4,50 €", "4,15 €", "14,50 €", "4,05 €"], "a": 0, "why": "vier Euro fünfzig = 4,50 €. <a href='#/l3/3' target='_blank' rel='noopener'>↗ L3 · buổi 3</a>"},
+                {"k": "listenmc", "q": "<small class='muted'>[A · Hören]</small> Nghe, chọn giờ:", "say": "Es ist Viertel nach acht.", "opts": ["8:15", "8:45", "7:15", "9:15"], "a": 0, "why": "Viertel nach acht = 8:15. <a href='#/l5/2' target='_blank' rel='noopener'>↗ L5 · buổi 2</a>"},
+                {"k": "listenmc", "q": "<small class='muted'>[A · Hören]</small> Nghe, chọn giờ:", "say": "Der Kurs fängt um neunzehn Uhr dreißig an.", "opts": ["19:30", "9:30", "19:13", "17:30"], "a": 0, "why": "Giờ chính thức: neunzehn Uhr dreißig = 19:30. <a href='#/l5/5' target='_blank' rel='noopener'>↗ L5 · buổi 5</a>"},
+                {"k": "listenmc", "q": "<small class='muted'>[A · Hören]</small> Nghe, chọn tiền thuê:", "say": "Das Zimmer kostet vierhundertzwanzig Euro im Monat.", "opts": ["420 €", "240 €", "402 €", "4.200 €"], "a": 0, "why": "vierhundertzwanzig = 420. <a href='#/l4/4' target='_blank' rel='noopener'>↗ L4 · buổi 4</a>"},
+                {"k": "listenmc", "q": "<small class='muted'>[A · Hören]</small> Nghe, chọn câu đúng:", "say": "Im Süden scheint die Sonne und es sind dreiundzwanzig Grad.", "opts": ["miền Nam · nắng · 23 °C", "miền Bắc · nắng · 23 °C", "miền Nam · mưa · 23 °C", "miền Nam · nắng · 13 °C"], "a": 0, "why": "Im Süden = ở miền Nam; dreiundzwanzig = 23. <a href='#/l6/2' target='_blank' rel='noopener'>↗ L6 · buổi 2</a>"},
+                {"k": "listenmc", "q": "<small class='muted'>[A · Hören]</small> Nghe rồi chọn nghĩa:", "say": "Ich habe gestern Gitarre gespielt.", "opts": ["Hôm qua tôi đã chơi ghi-ta.", "Ngày mai tôi sẽ chơi ghi-ta.", "Tôi muốn chơi ghi-ta.", "Tôi không chơi được ghi-ta."], "a": 0, "why": "Perfekt (habe … gespielt) + gestern = chuyện đã qua. <a href='#/l7/3' target='_blank' rel='noopener'>↗ L7 · buổi 3</a>"},
+                {"k": "listenmc", "q": "<small class='muted'>[A · Hören]</small> Nghe câu hỏi, chọn câu trả lời hợp:", "say": "Woher kommen Sie?", "opts": ["Aus Polen.", "In Polen.", "Vierzig Jahre."], "a": 0, "why": "Woher? → aus + nước. <a href='#/l1/3' target='_blank' rel='noopener'>↗ L1 · buổi 3</a>"},
+                {"k": "listenmc", "q": "<small class='muted'>[A · Hören]</small> Nghe câu hỏi, chọn câu trả lời hợp:", "say": "Hast du keinen Hunger?", "opts": ["Doch, ich habe Hunger.", "Ja, ich habe keinen Hunger.", "Nein, ich habe Hunger."], "a": 0, "why": "Câu hỏi phủ định, thực ra là có → Doch. <a href='#/l6/4' target='_blank' rel='noopener'>↗ L6 · buổi 4</a>"},
+                {"k": "mc", "q": "<small class='muted'>[B · Wortschatz]</small> Mạo từ đúng: <b>___ Telefon</b>", "opts": ["das", "der", "die"], "a": 0, "why": "das Telefon. <a href='#/l1/4' target='_blank' rel='noopener'>↗ L1 · buổi 4</a>"},
+                {"k": "mc", "q": "<small class='muted'>[B · Wortschatz]</small> Số nhiều của <b>die Stadt</b>?", "opts": ["die Städte", "die Stadte", "die Städten"], "a": 0, "why": "die Stadt – die Städte. <a href='#/l3/2' target='_blank' rel='noopener'>↗ L3 · buổi 2</a>"},
+                {"k": "mc", "q": "<small class='muted'>[B · Wortschatz]</small> Từ nào <b>không cùng nhóm</b>?", "opts": ["der Stuhl", "die Banane", "der Apfel", "die Tomate"], "a": 0, "why": "Stuhl là đồ đạc; ba từ còn lại là đồ ăn. <a href='#/l4/3' target='_blank' rel='noopener'>↗ L4 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[B · Wortschatz]</small> Từ trái nghĩa của <b>billig</b>?", "opts": ["teuer", "klein", "dunkel"], "a": 0, "why": "billig ↔ teuer. <a href='#/l4/2' target='_blank' rel='noopener'>↗ L4 · buổi 2</a>"},
+                {"k": "mc", "q": "<small class='muted'>[B · Wortschatz]</small> Mein Bruder und meine Schwester sind meine …", "opts": ["Geschwister", "Eltern", "Großeltern"], "a": 0, "why": "die Geschwister = anh chị em ruột (luôn là số nhiều). <a href='#/l2/2' target='_blank' rel='noopener'>↗ L2 · buổi 2</a>"},
+                {"k": "mc", "q": "<small class='muted'>[B · Wortschatz]</small> Khoảng 9–12 giờ sáng là …", "opts": ["am Vormittag", "am Nachmittag", "am Abend", "in der Nacht"], "a": 0, "why": "am Vormittag. <a href='#/l5/4' target='_blank' rel='noopener'>↗ L5 · buổi 4</a>"},
+                {"k": "mc", "q": "<small class='muted'>[B · Wortschatz]</small> Der Tag nach Mittwoch ist …", "opts": ["Donnerstag", "Dienstag", "Freitag"], "a": 0, "why": "Mittwoch → Donnerstag. <a href='#/l5/3' target='_blank' rel='noopener'>↗ L5 · buổi 3</a>"},
+                {"k": "type", "q": "<small class='muted'>[B · Wortschatz]</small> Gõ từ tiếng Đức (không cần mạo từ): <b>tủ lạnh</b>", "a": ["Kühlschrank"], "why": "der Kühlschrank (ü: gõ ue được). <a href='#/l4/3' target='_blank' rel='noopener'>↗ L4 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[B · Wortschatz]</small> <i>Es schneit. Es ist kalt.</i> Đây là mùa nào?", "opts": ["Winter", "Sommer", "Frühling"], "a": 0, "why": "Schnee + kalt = Winter. <a href='#/l6/6' target='_blank' rel='noopener'>↗ L6 · buổi 6</a>"},
+                {"k": "mc", "q": "<small class='muted'>[B · Wortschatz]</small> Welche Farbe hat eine Banane?", "opts": ["gelb", "rot", "grau"], "a": 0, "why": "gelb = vàng. <a href='#/l4/3' target='_blank' rel='noopener'>↗ L4 · buổi 3</a>"},
+                {"k": "type", "q": "<small class='muted'>[C · Grammatik]</small> Du ___ sehr gut Deutsch. <span class='muted'>(sprechen)</span>", "a": ["sprichst"], "why": "sprechen: du sprichst (e → i). <a href='#/l1/3' target='_blank' rel='noopener'>↗ L1 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Wir ___ aus Vietnam.", "opts": ["kommen", "kommt", "kommst"], "a": 0, "why": "wir → kommen. <a href='#/l2/3' target='_blank' rel='noopener'>↗ L2 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> ___ ihr Geschwister?", "opts": ["Habt", "Haben", "Hast"], "a": 0, "why": "ihr → habt. <a href='#/l2/3' target='_blank' rel='noopener'>↗ L2 · buổi 3</a>"},
+                {"k": "type", "q": "<small class='muted'>[C · Grammatik]</small> Er ___ gern Fisch. <span class='muted'>(essen)</span>", "a": ["isst"], "why": "essen: er isst (e → i). <a href='#/l3/4' target='_blank' rel='noopener'>↗ L3 · buổi 4</a>"},
+                {"k": "type", "q": "<small class='muted'>[C · Grammatik]</small> Was ___ du? <span class='muted'>(nehmen)</span>", "a": ["nimmst"], "why": "nehmen: du nimmst (e → i). <a href='#/l6/3' target='_blank' rel='noopener'>↗ L6 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Anna ___ jeden Tag um sieben Uhr auf.", "opts": ["steht", "stehst", "stehen"], "a": 0, "why": "aufstehen: er/sie steht … auf. <a href='#/l5/1' target='_blank' rel='noopener'>↗ L5 · buổi 1</a>"},
+                {"k": "type", "q": "<small class='muted'>[C · Grammatik]</small> Ich ___ gut kochen. <span class='muted'>(können)</span>", "a": ["kann"], "why": "ich kann (không có đuôi). <a href='#/l7/1' target='_blank' rel='noopener'>↗ L7 · buổi 1</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Câu nào đúng? <span class='muted'>(câu hỏi W-)</span>", "opts": ["Woher kommst du?", "Woher du kommst?", "Du woher kommst?"], "a": 0, "why": "Câu hỏi W-: từ hỏi ở vị trí 1, động từ ở vị trí 2. <a href='#/l1/3' target='_blank' rel='noopener'>↗ L1 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Câu nào đúng? <span class='muted'>(thời gian đứng đầu câu)</span>", "opts": ["Am Montag stehe ich früh auf.", "Am Montag ich stehe früh auf.", "Am Montag stehe ich auf früh."], "a": 0, "why": "Thời gian ở vị trí 1 → động từ vẫn ở vị trí 2; tiền tố ở cuối câu. <a href='#/l5/4' target='_blank' rel='noopener'>↗ L5 · buổi 4</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Câu nào đúng? <span class='muted'>(động từ khuyết)</span>", "opts": ["Ich kann gut Gitarre spielen.", "Ich kann spielen gut Gitarre.", "Ich spielen kann gut Gitarre."], "a": 0, "why": "Động từ khuyết ở vị trí 2, nguyên mẫu ở cuối. <a href='#/l7/1' target='_blank' rel='noopener'>↗ L7 · buổi 1</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Câu nào đúng? <span class='muted'>(Perfekt)</span>", "opts": ["Gestern habe ich Pizza gegessen.", "Gestern ich habe Pizza gegessen.", "Gestern habe ich gegessen Pizza."], "a": 0, "why": "haben ở vị trí 2, Partizip II ở cuối. <a href='#/l7/3' target='_blank' rel='noopener'>↗ L7 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Das ist ___ Foto.", "opts": ["ein", "eine", "einen"], "a": 0, "why": "das Foto → ein Foto. <a href='#/l3/1' target='_blank' rel='noopener'>↗ L3 · buổi 1</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Das ist ___ Schwester. <span class='muted'>(của tôi)</span>", "opts": ["meine", "mein", "meinen"], "a": 0, "why": "die Schwester → meine. <a href='#/l2/2' target='_blank' rel='noopener'>↗ L2 · buổi 2</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Im Regal sind ___ Eier.", "opts": ["keine", "kein", "keinen"], "a": 0, "why": "Số nhiều → keine. <a href='#/l3/2' target='_blank' rel='noopener'>↗ L3 · buổi 2</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Ich nehme ___ Saft.", "opts": ["einen", "ein", "eine"], "a": 0, "why": "der Saft, Akkusativ → einen Saft. <a href='#/l6/3' target='_blank' rel='noopener'>↗ L6 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Hast du ___ Hunger?", "opts": ["keinen", "kein", "keine"], "a": 0, "why": "der Hunger, Akkusativ → keinen Hunger. <a href='#/l6/3' target='_blank' rel='noopener'>↗ L6 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Das Zimmer ist ___ groß.", "opts": ["nicht", "kein", "keine"], "a": 0, "why": "Phủ định tính từ → nicht. <a href='#/l4/2' target='_blank' rel='noopener'>↗ L4 · buổi 2</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Wir haben ___ Auto.", "opts": ["kein", "nicht", "keine"], "a": 0, "why": "das Auto, không có mạo từ ein → kein. <a href='#/l4/2' target='_blank' rel='noopener'>↗ L4 · buổi 2</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Wo ist der Schrank? – ___ ist dort.", "opts": ["Er", "Es", "Sie"], "a": 0, "why": "der Schrank → er. <a href='#/l4/2' target='_blank' rel='noopener'>↗ L4 · buổi 2</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Du hast keinen Hunger? – ___, ich habe Hunger.", "opts": ["Doch", "Ja", "Nein"], "a": 0, "why": "Câu hỏi phủ định, thực ra là có → doch. <a href='#/l6/4' target='_blank' rel='noopener'>↗ L6 · buổi 4</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Der Kurs fängt ___ Montag an.", "opts": ["am", "um", "im", "bis"], "a": 0, "why": "Ngày trong tuần → am. <a href='#/l5/3' target='_blank' rel='noopener'>↗ L5 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Der Kurs fängt ___ halb neun an.", "opts": ["um", "am", "von"], "a": 0, "why": "Giờ cụ thể → um. <a href='#/l5/3' target='_blank' rel='noopener'>↗ L5 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Das Café ist von Montag ___ Freitag geöffnet.", "opts": ["bis", "um", "am"], "a": 0, "why": "von … bis … <a href='#/l5/3' target='_blank' rel='noopener'>↗ L5 · buổi 3</a>"},
+                {"k": "type", "q": "<small class='muted'>[C · Grammatik]</small> Gõ giờ chính thức bằng chữ: <b>15:45</b>", "a": ["fünfzehn Uhr fünfundvierzig"], "why": "Giờ chính thức: số giờ + Uhr + số phút. <a href='#/l5/5' target='_blank' rel='noopener'>↗ L5 · buổi 5</a>"},
+                {"k": "type", "q": "<small class='muted'>[C · Grammatik]</small> Gestern ___ ich Fußball gespielt. <span class='muted'>(haben)</span>", "a": ["habe"], "why": "Perfekt: habe … gespielt. <a href='#/l7/3' target='_blank' rel='noopener'>↗ L7 · buổi 3</a>"},
+                {"k": "type", "q": "<small class='muted'>[C · Grammatik]</small> Wir sind nach Wien ___. <span class='muted'>(fahren)</span>", "a": ["gefahren"], "why": "fahren – gefahren (dùng sein). <a href='#/l7/5' target='_blank' rel='noopener'>↗ L7 · buổi 5</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Wir ___ ins Kino gehen. Kommst du mit? <span class='muted'>(muốn)</span>", "opts": ["wollen", "will", "wollt"], "a": 0, "why": "wir → wollen. <a href='#/l7/2' target='_blank' rel='noopener'>↗ L7 · buổi 2</a>"},
+                {"k": "mc", "q": "<small class='muted'>[C · Grammatik]</small> Câu nào đúng? <span class='muted'>(haben hay sein)</span>", "opts": ["Ich bin nach Berlin gefahren.", "Ich habe nach Berlin gefahren.", "Ich bin nach Berlin gefahrt."], "a": 0, "why": "fahren (đi) dùng sein; Partizip: gefahren. <a href='#/l7/5' target='_blank' rel='noopener'>↗ L7 · buổi 5</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> <div class='ad-grid'><div class='ad'><span class='ad-id'>Text 1</span>2-Zi.-Whg., 55 qm, Balkon, möbl., 620 € Miete, ab 1.6.<br>Tel. 0177 8899 1234</div></div>Wie viele Zimmer hat die Wohnung?", "opts": ["Zwei.", "Fünf.", "Zwölf."], "a": 0, "why": "2-Zi. = zwei Zimmer. <a href='#/l4/5' target='_blank' rel='noopener'>↗ L4 · buổi 5</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> Text 1 · Was kostet die Wohnung im Monat?", "opts": ["620 Euro.", "55 Euro.", "1.620 Euro."], "a": 0, "why": "620 € Miete. <a href='#/l4/5' target='_blank' rel='noopener'>↗ L4 · buổi 5</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> Text 1 · Ist die Wohnung möbliert?", "opts": ["Ja.", "Nein.", "Nur die Küche."], "a": 0, "why": "möbl. = möbliert. <a href='#/l4/5' target='_blank' rel='noopener'>↗ L4 · buổi 5</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> Text 1 · Wie viele Quadratmeter hat die Wohnung?", "opts": ["55", "25", "550"], "a": 0, "why": "55 qm = 55 Quadratmeter. <a href='#/l4/5' target='_blank' rel='noopener'>↗ L4 · buổi 5</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> <div class='ad-grid'><div class='ad'><span class='ad-id'>Text 2</span>Hallo Lena,<br>am Samstag machen wir ein Picknick im Park. Die Sonne scheint, es sind 22 Grad. Ich bringe Brot und Käse. Kannst du Salat machen? Das Picknick fängt um zwölf Uhr an. Kommst du?<br>Liebe Grüße<br>Mark</div></div>Wann ist das Picknick?", "opts": ["Am Samstag um zwölf Uhr.", "Am Sonntag um zwölf Uhr.", "Am Samstag um zwei Uhr."], "a": 0, "why": "am Samstag, fängt um zwölf Uhr an. <a href='#/l5/3' target='_blank' rel='noopener'>↗ L5 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> Text 2 · Was bringt Mark?", "opts": ["Brot und Käse.", "Salat.", "Wasser und Obst."], "a": 0, "why": "Ich bringe Brot und Käse. <a href='#/l6/3' target='_blank' rel='noopener'>↗ L6 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> Text 2 · Wie ist das Wetter am Samstag?", "opts": ["Die Sonne scheint, es sind 22 Grad.", "Es regnet, es sind 12 Grad.", "Es schneit."], "a": 0, "why": "Die Sonne scheint, es sind 22 Grad. <a href='#/l6/1' target='_blank' rel='noopener'>↗ L6 · buổi 1</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> Text 2 · Was fragt Mark?", "opts": ["Kannst du Salat machen?", "Kannst du Brot kaufen?", "Hast du Hunger?"], "a": 0, "why": "Kannst du Salat machen? <a href='#/l7/1' target='_blank' rel='noopener'>↗ L7 · buổi 1</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> <div class='ad-grid'><div class='ad'><span class='ad-id'>Text 3</span>Karina hat gestern viel gemacht. Sie ist um halb sieben aufgestanden und hat Kaffee getrunken. Dann hat sie bis drei Uhr im Büro gearbeitet. Am Nachmittag hat sie eingekauft und das Abendessen gekocht. Am Abend hat sie ihre Schwester angerufen.</div></div>Wann ist Karina aufgestanden?", "opts": ["Um halb sieben.", "Um sieben Uhr.", "Um halb acht."], "a": 0, "why": "halb sieben = 6:30. <a href='#/l7/4' target='_blank' rel='noopener'>↗ L7 · buổi 4</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> Text 3 · Bis wann hat Karina im Büro gearbeitet?", "opts": ["Bis drei Uhr.", "Bis neun Uhr.", "Bis sieben Uhr."], "a": 0, "why": "bis drei Uhr. <a href='#/l7/3' target='_blank' rel='noopener'>↗ L7 · buổi 3</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> Text 3 · Was hat Karina am Nachmittag gemacht?", "opts": ["Sie hat eingekauft und gekocht.", "Sie hat ferngesehen.", "Sie hat ihre Schwester angerufen."], "a": 0, "why": "Am Nachmittag hat sie eingekauft und das Abendessen gekocht. <a href='#/l7/4' target='_blank' rel='noopener'>↗ L7 · buổi 4</a>"},
+                {"k": "mc", "q": "<small class='muted'>[D · Lesen]</small> Text 3 · Wen hat Karina am Abend angerufen?", "opts": ["Ihre Schwester.", "Ihre Mutter.", "Ihre Freundin."], "a": 0, "why": "Am Abend hat sie ihre Schwester angerufen. <a href='#/l7/4' target='_blank' rel='noopener'>↗ L7 · buổi 4</a>"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lam-lai", "title": "Làm lại các câu sai", "minutes": 6,
+          "blocks": [
+            {"type": "review", "title": "Làm lại các câu sai"}
+          ]
+        },
+        {
+          "id": "sprechen", "title": "Nói: giới thiệu bản thân và trả lời câu hỏi", "minutes": 7,
+          "blocks": [
+            {"type": "profile", "ext": true, "title": "Bài giới thiệu đầy đủ của bạn", "task": "Điền thông tin của bạn. Web ghép thành bài nói tiếng Đức — nghe, nói theo, rồi ghi âm. Thông tin chỉ lưu trên máy này."},
+            { "type": "table", "title": "Mười câu hỏi để luyện nói", "head": ["Câu hỏi (bấm 🔊)", "Câu trả lời mẫu"], "say": 0, "vi": "Bấm 🔊 để nghe câu hỏi, <b>tự trả lời thành tiếng</b> (che cột bên phải), rồi so với câu mẫu. Đổi thông tin cho đúng với bạn.",
+              "rows": [
+                ["Wie heißen Sie?", "Ich heiße Linh Nguyen."],
+                ["Woher kommen Sie?", "Ich komme aus Vietnam."],
+                ["Wo wohnen Sie?", "Ich wohne in Berlin."],
+                ["Welche Sprachen sprechen Sie?", "Ich spreche Vietnamesisch, Englisch und ein bisschen Deutsch."],
+                ["Wie alt sind Sie?", "Ich bin dreißig Jahre alt."],
+                ["Was sind Ihre Hobbys?", "Mein Hobby ist Lesen. Ich koche auch gern."],
+                ["Wann stehen Sie am Montag auf?", "Am Montag stehe ich um halb sieben auf."],
+                ["Was haben Sie gestern gemacht?", "Gestern habe ich Deutsch gelernt und Musik gehört."],
+                ["Was können Sie gut?", "Ich kann gut kochen und ein bisschen Gitarre spielen."],
+                ["Was möchten Sie lernen?", "Ich möchte gut Deutsch sprechen."]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "schreiben", "title": "Viết: một tin nhắn rủ bạn", "minutes": 7,
+          "blocks": [
+            { "type": "gaps", "title": "Hoàn thành tin nhắn rủ đi xem phim", "task": "Chọn từ trong danh sách.", "bank": ["Zeit", "Kino", "fängt", "können"],
+              "items": [
+                {"q": "Hallo Tom, hast du am Samstag ___?", "a": ["Zeit"]},
+                {"q": "Wollen wir ins ___ gehen?", "a": ["Kino"]},
+                {"q": "Der Film ___ um neunzehn Uhr an.", "a": ["fängt"]},
+                {"q": "Dann ___ wir Pizza essen.", "a": ["können"]}
+              ]
+            },
+            {"type": "text", "html": "<p><b>Việc của bạn:</b> viết một tin nhắn 3–4 câu rủ một người bạn đi xem phim hoặc đi ăn vào thứ Bảy: chào, hỏi bạn có thời gian không (<i>Hast du am Samstag Zeit?</i>), rủ (<i>Wollen wir …?</i>), nói giờ, câu kết. Viết trước, rồi mới xem mẫu.</p>"},
+            {"type": "tip", "title": "Tin nhắn mẫu (do tôi soạn)", "html": "<p>Hallo Tom,<br>hast du am Samstag Zeit? Wollen wir ins Kino gehen? Der Film fängt um neunzehn Uhr an. Dann können wir Pizza essen. Kommst du?<br>Viele Grüße<br>Anna</p>"},
+            { "type": "checklist", "title": "Tự kiểm tra tin nhắn",
+              "items": [
+                "Có lời chào và lời kết (<i>Hallo …</i> / <i>Viele Grüße</i>).",
+                "Có một câu hỏi Có/Không (động từ ở vị trí 1) và một câu <i>Wollen wir …?</i>.",
+                "Có giờ: <i>um … Uhr</i> (thường ngày hoặc chính thức).",
+                "Đọc to tin nhắn của bạn rồi ghi âm."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ergebnis", "title": "Điểm số và bước tiếp theo", "minutes": 3,
+          "blocks": [
+            { "type": "table", "title": "Điểm của bạn nói gì?", "head": ["Điểm (trên 60)", "Nghĩa là", "Việc nên làm"],
+              "rows": [
+                ["54–60", "Rất vững", "Sang <i>Schritte international Neu 2</i> (A1.2). Vẫn giữ thẻ Ôn tập mỗi ngày."],
+                ["45–53", "Khá vững", "Xem lại các câu sai (link ↗), làm <b>Làm lại các câu sai</b>, rồi sang Band 2."],
+                ["36–44", "Còn lỗ hổng", "Mở lại buổi bị sai nhiều nhất, làm bài Test của sách cho Lektion đó, thử lại bài kiểm tra sau 2–3 ngày."],
+                ["dưới 36", "Cần ôn kỹ hơn", "Làm lại Buổi 1–3 của bài ôn này, mỗi ngày một buổi; ôn thẻ mỗi ngày; thử lại sau một tuần."]
+              ]
+            },
+            {"type": "tip", "title": "Đọc kết quả theo từng phần", "html": "<ul><li><b>A · Hören</b> sai nhiều → nghe lại các bài số, giá, giờ (Lektion 3–5) và luyện nghe bằng các khối „Nghe số“, „Nghe giờ“.</li><li><b>B · Wortschatz</b> sai nhiều → vào <a href='#/review'>Ôn tập</a>, làm thẻ mỗi ngày.</li><li><b>C · Grammatik</b> sai nhiều → mở buổi trong đường dẫn ↗ và làm lại bài tập của buổi đó.</li><li><b>D · Lesen</b> sai nhiều → đọc chậm, gạch chân giờ, số và tên, rồi đối chiếu từng câu hỏi.</li></ul>"}
+          ]
+        },
+        {
+          "id": "tong-ket", "title": "Tổng kết Band 1", "minutes": 4,
+          "blocks": [
+            { "type": "cando", "title": "Tự đánh giá cả Band 1",
+              "items": [
+                "Lektion 1: tôi chào hỏi, giới thiệu tên, quê quán, ngôn ngữ và đánh vần tên mình.",
+                "Lektion 2: tôi nói về gia đình, nơi ở, tuổi; đếm đến 20 và điền một biểu mẫu cá nhân.",
+                "Lektion 3: tôi đi chợ, hỏi giá, nói số lượng và món ăn thích; đếm đến 100.",
+                "Lektion 4: tôi mô tả nhà ở và đồ đạc, đọc tin cho thuê nhà, nói số lớn.",
+                "Lektion 5: tôi nói giờ, ngày, buổi trong ngày; kể một ngày; hiểu giờ mở cửa.",
+                "Lektion 6: tôi nói về thời tiết, gọi món (Akkusativ), trả lời ja – nein – doch, kể sở thích.",
+                "Lektion 7: tôi nói điều mình biết làm và muốn làm, và kể chuyện đã xảy ra (Perfekt)."
+              ]
+            },
+            {"type": "text", "html": "<p><b>Bạn đã hoàn thành Band 1</b> (<i>Schritte international Neu 1</i>, trình độ A1.1). Bước tiếp theo là <i>Schritte international Neu 2</i> (A1.2, Lektion 8 trở đi) — phần đó sẽ được thêm vào lộ trình này khi bạn học tới. Trong lúc đó, hãy giữ thói quen <a href='#/review'>Ôn tập</a> mỗi ngày: một đến hai tuần không ôn là đủ để quên nhiều từ.</p>"},
+            { "type": "checklist", "title": "Bài về nhà",
+              "items": [
+                "Làm lại bài Test của sách mà bạn thấy khó nhất (Arbeitsbuch tr. 18, 28, 39, 50, 61, 73 hoặc 84) và đối chiếu đáp án.",
+                "Làm các <i>Lektionstest</i> trong <i>Kopiervorlagen/L01 … L07</i> ra giấy; đáp án trong <i>Lösungen zu den Tests.pdf</i>.",
+                "In vài tờ <i>Wiederholung.pdf</i> (L01 … L07) và chơi hoặc tự trả lời thành tiếng.",
+                "Ghi âm lại phần giới thiệu bản thân (bài <i>Das bin ich!</i>) và so với bản ghi lần đầu — bạn sẽ nghe thấy tiến bộ.",
+                "Mỗi ngày: <a href='#/review'>Ôn tập</a> 10–15 phút."
+              ]
+            },
+            {"type": "done"}
+          ]
+        }
+      ]
+    }
+  ]
+}

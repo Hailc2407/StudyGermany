@@ -33,6 +33,11 @@ English only as a bridge (≈ cognates, ⚠ traps such as wer = who).
   (`sets[]` of words, `sessions[] → sections[] → blocks[]`). Block types and their fields are documented
   at the top of each renderer in `js/blocks.js`; `tools/check.mjs` lists them and checks the data.
 - Track references: `"KB 1/9-10"` (Kursbuch CD 1, tracks 9–10), `"AB 6-12"` (Arbeitsbuch tracks).
+- Review modules: `data/w1.json` ("Wiederholung 1–7", id `w1`, `no: "Ôn"`, `label: "Wiederholung"`, `sets: []`) is a Lektion-like
+  entry without word sets: 3 review sessions + a final session whose `test` block has `id` equal to the module id and `why` links
+  (`<a href='#/l3/2' target='_blank'>`) back to the session that teaches each topic. Routes `#/w1`, `#/w1/4` work because pages.js
+  accepts ids `^[lw]\d+$`; a module's `label` replaces "Lektion N" in titles. Do not copy words into a review (they would double in the
+  review cards); use blocks that carry their own data (gaps, choice, sort, order, fix, test, dialog…). Band 2 gets its own `w2`.
 
 ## Flow: "làm Lektion N" / "làm buổi tiếp theo"
 

@@ -1574,7 +1574,7 @@
             h("a", { class: "btn ghost", href: "#/review" }, "Ôn tập")));
         return;
       }
-      wrap.append(h("p", {}, "Học xong buổi này? Bấm hoàn thành — " + keys.length + " từ mới sẽ vào mục Ôn tập, và web sẽ nhắc bạn ôn lại vào ngày mai."),
+      wrap.append(h("p", {}, keys.length ? "Học xong buổi này? Bấm hoàn thành — " + keys.length + " từ mới sẽ vào mục Ôn tập, và web sẽ nhắc bạn ôn lại vào ngày mai." : "Học xong buổi này? Bấm hoàn thành để lưu tiến độ."),
         btn("✓ Hoàn thành buổi học", () => {
           const all = store.get("progress", {});
           all[ctx.key] = { done: today() };
