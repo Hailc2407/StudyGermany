@@ -1,0 +1,126 @@
+/* Từ vựng theo chủ đề — extends ../app.css (same tokens, bar, buttons, chips, gender colours). */
+.tu-hero { margin: 0 0 22px; }
+.tu-hero h1 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 6px; }
+.tu-hero.slim { margin-bottom: 16px; }
+.tu-hero.center { text-align: center; padding: 40px 0; }
+.tu-hero .actions { margin: 14px 0; }
+.crumb { margin: 0 0 10px; font-size: 15px; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 12px 0; }
+.actions.center { justify-content: center; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+
+.tu-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0; }
+.tu-stat { padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.tu-stat-top { display: flex; align-items: baseline; gap: 8px; font-size: 22px; }
+.tu-stat-top b { font-family: var(--display); font-size: 24px; }
+.tu-stat .bar-prog { margin: 8px 0 0; }
+
+.tu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.tu-topic { display: block; padding: 16px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); color: var(--text); text-decoration: none; transition: border-color 0.15s, transform 0.15s; }
+.tu-topic:hover { border-color: var(--accent); transform: translateY(-2px); }
+.tu-topic h3 { font-size: 18px; margin: 8px 0 4px; }
+.tu-topic p { margin: 0 0 6px; }
+.tu-topic-top { display: flex; align-items: center; justify-content: space-between; }
+.tu-topic-emo { font-size: 30px; line-height: 1; }
+.tu-topic-n { font-size: 13px; color: var(--muted); padding: 2px 9px; border-radius: 999px; background: var(--surface-2); }
+
+.tu-lessons { display: grid; gap: 12px; margin-bottom: 20px; }
+.tu-lesson { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+.tu-lesson.locked { opacity: 0.6; }
+.tu-lesson.done { border-color: var(--ok); background: var(--ok-soft); }
+.tu-lesson-n { flex: none; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: var(--accent-soft); font-weight: 700; font-family: var(--display); font-size: 18px; }
+.tu-lesson.done .tu-lesson-n { background: var(--ok); color: #fff; }
+.tu-lesson-body { flex: 1; min-width: 0; }
+.tu-lesson-body h3 { font-size: 17px; }
+.tu-lesson-body p { margin: 2px 0; }
+.tu-all { margin-top: 10px; }
+.tu-all summary { cursor: pointer; padding: 8px 0; color: var(--accent); font-weight: 600; }
+
+/* word rows */
+.tu-list { display: grid; gap: 8px; margin: 10px 0; }
+.tu-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.tu-row-main { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.tu-row-text { min-width: 0; }
+.tu-emo { flex: none; width: 34px; text-align: center; font-size: 24px; line-height: 1.2; }
+.tu-emo.ph { color: var(--muted); }
+.tu-de { font-size: 17px; }
+.tu-vi { color: var(--text-2); }
+.tu-vi.big { font-size: 22px; font-weight: 600; color: var(--text); }
+.tu-row-act { display: flex; align-items: center; gap: 6px; flex: none; }
+.tu-star.on { color: var(--warn); border-color: var(--warn); }
+.tu-lv { display: inline-flex; gap: 3px; }
+.tu-lv i { width: 7px; height: 7px; border-radius: 50%; background: var(--surface-2); border: 1px solid var(--border); }
+.tu-lv i.on { background: var(--accent); border-color: var(--accent); }
+.tu-lv i.on.l1, .tu-lv i.on.l2 { background: var(--bad); border-color: var(--bad); }
+.tu-lv i.on.l3 { background: var(--warn); border-color: var(--warn); }
+.tu-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; justify-content: center; }
+.tu-tag { display: inline-block; margin-top: 4px; padding: 1px 9px; border-radius: 999px; background: var(--surface-2); color: var(--muted); font-size: 12px; }
+.tu-tag.goethe { background: var(--warn-soft); color: var(--warn); }
+.tu-g { font-size: 13px; }
+@media (max-width: 560px) { .tu-row { flex-direction: column; align-items: stretch; } .tu-row-act { justify-content: flex-end; } }
+
+/* stage (lesson / review) */
+.tu-stage { max-width: 680px; margin: 0 auto; }
+.tu-stage-bar { display: flex; align-items: center; gap: 12px; }
+.tu-prog { flex: 1; height: 10px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }
+.tu-prog-fill { display: block; height: 100%; width: 0; background: var(--accent); border-radius: 99px; transition: width 0.3s; }
+.tu-prog-label { min-width: 44px; text-align: right; }
+.tu-stage-title { margin: 8px 0 18px; text-align: center; }
+.tu-q { min-height: 300px; }
+.tu-prompt { text-align: center; margin-bottom: 14px; }
+.tu-cap { color: var(--muted); font-size: 15px; margin-bottom: 8px; }
+.tu-big { font-family: var(--display); font-size: clamp(28px, 6vw, 40px); font-weight: 700; line-height: 1.25; margin: 4px 0; }
+.tu-big-emo { font-size: 64px; line-height: 1.1; margin: 6px 0; text-align: center; }
+.tu-sub { color: var(--text-2); font-size: 15px; margin: 2px 0; }
+.tu-listen { display: flex; justify-content: center; gap: 10px; margin: 8px 0 16px; }
+.tu-opts { display: grid; gap: 10px; margin: 14px 0; }
+.tu-opts.cols { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); }
+.tu-opt { display: flex; align-items: center; gap: 12px; width: 100%; padding: 13px 16px; border: 2px solid var(--border); border-radius: 12px; background: var(--surface); color: var(--text); font-size: 18px; text-align: left; cursor: pointer; }
+.tu-opts.cols .tu-opt { justify-content: center; text-align: center; }
+.tu-opt:hover { border-color: var(--accent); }
+.tu-opt-n { flex: none; width: 24px; height: 24px; border-radius: 6px; background: var(--surface-2); color: var(--muted); font-size: 13px; line-height: 24px; text-align: center; }
+.tu-opts.cols .tu-opt-n { display: none; }
+.tu-opt.ok { border-color: var(--ok); background: var(--ok-soft); }
+.tu-opt.bad { border-color: var(--bad); background: var(--bad-soft); }
+.tu-input { width: 100%; padding: 13px 14px; border: 2px solid var(--border); border-radius: 12px; background: var(--surface); color: var(--text); font-size: 19px; }
+.tu-input:focus { outline: none; border-color: var(--accent); }
+.tu-hint { min-height: 22px; margin-top: 4px; }
+.tu-fb { margin-top: 14px; padding: 14px 16px; border-radius: 12px; border: 1px solid var(--border); }
+.tu-fb.good { border-color: var(--ok); background: var(--ok-soft); }
+.tu-fb.miss { border-color: var(--bad); background: var(--bad-soft); }
+.tu-fb-title { font-weight: 700; margin-bottom: 6px; }
+.tu-fb .btn { margin-top: 12px; }
+.tu-reveal { padding: 8px 0; }
+.tu-reveal-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 20px; }
+.tu-ex { margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent); background: var(--surface); border-radius: 0 8px 8px 0; text-align: left; }
+.tu-ex-de { font-weight: 600; }
+.tu-ex-vi { color: var(--text-2); font-size: 15px; }
+
+.tu-card { padding: 22px 18px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface); text-align: center; }
+.tu-card .why { text-align: left; }
+.tu-pairs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.tu-pairs .col { display: grid; gap: 8px; align-content: start; }
+.tu-pair { padding: 12px 10px; min-height: 52px; border: 2px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--text); font-size: 16px; cursor: pointer; }
+.tu-pair.sel { border-color: var(--accent); background: var(--accent-soft); }
+.tu-pair.done { border-color: var(--ok); background: var(--ok-soft); opacity: 0.55; cursor: default; }
+.tu-pair.bad { border-color: var(--bad); background: var(--bad-soft); }
+
+.tu-summary { max-width: 680px; margin: 0 auto; text-align: center; }
+.tu-summary .tu-list { text-align: left; }
+.tu-summary h3 { text-align: left; margin-top: 18px; }
+
+/* notebook */
+.tu-bars { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; height: 190px; margin: 12px 0; }
+.tu-barcol { position: relative; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 4px; padding: 6px 4px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); cursor: pointer; color: var(--text); }
+.tu-barcol.on { border-color: var(--accent); background: var(--accent-soft); }
+.tu-barnum { font-family: var(--display); font-weight: 700; font-size: 18px; }
+.tu-barfill { display: block; width: 60%; max-height: 100px; border-radius: 6px 6px 0 0; background: var(--accent); min-height: 4px; }
+.tu-barfill.l1, .tu-barfill.l2 { background: var(--bad); }
+.tu-barfill.l3 { background: var(--warn); }
+.tu-barlab { font-size: 12px; color: var(--muted); text-align: center; }
+
+/* settings */
+.tu-set { display: grid; gap: 16px; max-width: 560px; }
+.tu-set label { display: grid; gap: 6px; font-weight: 600; }
+.tu-set label.inline { display: flex; gap: 10px; align-items: center; font-weight: 500; }
+.tu-set input[type="checkbox"] { width: 20px; height: 20px; }

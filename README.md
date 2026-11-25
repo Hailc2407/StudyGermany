@@ -14,6 +14,7 @@ Phòng tự học tiếng Đức theo *Schritte international Neu 1* (A1.1), ch�
   động từ kèm dạng chia; tìm kiếm bằng tiếng Đức hoặc tiếng Việt; học bằng thẻ lật.
 - **Ôn tập**: lặp lại ngắt quãng (1, 2, 4, 7, 15, 30 ngày). Mỗi lần ôn đổi dạng câu hỏi: nghĩa, nghe,
   gõ lại, chọn der/die/das.
+- **Từ vựng theo chủ đề** (`/tu/`): 1245 từ chia 20 chủ đề (ăn uống, đi lại, nhà ở, thời gian…), mỗi chủ đề chia thành bài ~9 từ mở dần từng bài. Mỗi bài: thẻ học → hỏi nghĩa, nghe chọn từ, der/die/das, ghép cặp, gõ lại. Ôn ngắt quãng 5 mức, sổ tay thống kê, tìm kiếm, mục tiêu mỗi ngày. Gồm từ của Schritte Neu 1 và khoảng 350 từ của danh sách Goethe-Zertifikat A1 (nhãn 🎯). Giọng đọc là giọng của máy, không cần file audio. Tiến độ lưu riêng (khoá `de.tu.*`).
 - **Cài đặt**: chọn giọng đọc tiếng Đức của máy, thêm audio của sách từ máy mình, sao lưu tiến độ.
 
 Nội dung trên web là bài tự soạn theo thứ tự, chủ đề, ngữ pháp và từ vựng của sách; web không chứa trang
@@ -30,7 +31,9 @@ js/pages.js                  các trang: lộ trình, buổi học, từ vựng,
 data/course.json             danh sách Lektion (ready: true = đã có bài)
 data/l1.json, l2.json …       từng Lektion: các bộ từ (sets) và các buổi (sessions → sections → blocks)
 data/w1.json                 Wiederholung 1–7: mục ôn không có bộ từ (sets rỗng), id bắt đầu bằng w
-tools/check.mjs              kiểm tra dữ liệu bài trước khi đăng
+tu/                          sub-web từ vựng theo chủ đề: index.html, app.js, tu.css, data/words.json
+tools/build_tu.py            tạo tu/data/words.json từ data/l*.json + tools/src/a1-part*.tsv (từ Goethe A1)
+tools/check.mjs              kiểm tra dữ liệu bài và dữ liệu từ vựng trước khi đăng
 .claude/skills/deutsch-room  hướng dẫn Claude Code soạn Lektion tiếp theo
 ```
 

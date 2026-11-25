@@ -93,6 +93,33 @@ for (const meta of course.lektionen.filter((l) => l.ready)) {
   }
   console.log(`${L.id}: ${L.sets.reduce((n, s) => n + s.items.length, 0)} từ, ${L.sessions.length} buổi`);
 }
+/* ---- Từ vựng theo chủ đề (tu/data/words.json, tạo bằng tools/build_tu.py) ---- */
+try {
+  const T = JSON.parse(readFileSync(new URL("../tu/data/words.json", import.meta.url), "utf8"));
+  const seenKey = new Set();
+  for (const t of T.topics) {
+    if (!t.lessons.length) bad("tu/" + t.id, "chủ đề không có bài");
+    t.lessons.forEach((l, i) => {
+      if (l.n !== i + 1 || l.id !== t.id + "-" + (i + 1)) bad("tu/" + l.id, "số thứ tự bài sai");
+      if (l.words.length < 2) bad("tu/" + l.id, "bài ít hơn 2 từ");
+      for (const k of l.words) {
+        if (!T.words[k]) bad("tu/" + l.id, "từ không tồn tại: " + k);
+        if (seenKey.has(k)) bad("tu/" + l.id, "từ xuất hiện hai lần: " + k);
+        seenKey.add(k);
+      }
+    });
+  }
+  for (const [k, w] of Object.entries(T.words)) {
+    if (!seenKey.has(k)) bad("tu/" + k, "từ không thuộc bài nào");
+    if (!w.de || !w.vi || !w.kind) bad("tu/" + k, "thiếu de, vi hoặc kind");
+    if (w.kind === "noun" && !["der", "die", "das"].includes(w.art)) bad("tu/" + k, "danh từ thiếu der/die/das");
+    if (w.kind === "verb" && !w.forms) bad("tu/" + k, "động từ thiếu forms");
+    if (w.ex && (w.ex.length !== 2 || !w.ex[0] || !w.ex[1])) bad("tu/" + k, "ex phải là [de, vi]");
+  }
+  console.log(`tu: ${Object.keys(T.words).length} từ, ${T.topics.length} chủ đề, ${T.topics.reduce((n, t) => n + t.lessons.length, 0)} bài`);
+} catch (e) {
+  bad("tu", "không đọc được tu/data/words.json: " + e.message);
+}
 if (problems.length) {
   console.log(problems.length + " lỗi:\n- " + problems.join("\n- "));
   process.exit(1);
