@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-/* Checks the lesson data before publishing:  node tools/check.mjs
-   Prints every problem found and exits with 1 if there is any. */
 import { readFileSync } from "node:fs";
 
 const KNOWN = new Set(["text", "tip", "table", "words", "listenPick", "rules", "hearPick", "book", "dialog", "conj", "gaps", "choice",
@@ -93,7 +91,6 @@ for (const meta of course.lektionen.filter((l) => l.ready)) {
   }
   console.log(`${L.id}: ${L.sets.reduce((n, s) => n + s.items.length, 0)} từ, ${L.sessions.length} buổi`);
 }
-/* ---- Từ vựng theo chủ đề (tu/data/words.json, tạo bằng tools/build_tu.py) ---- */
 try {
   const T = JSON.parse(readFileSync(new URL("../tu/data/words.json", import.meta.url), "utf8"));
   const seenKey = new Set();

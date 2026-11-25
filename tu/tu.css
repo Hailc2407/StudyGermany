@@ -1,4 +1,3 @@
-/* Từ vựng theo chủ đề — extends ../app.css (same tokens, bar, buttons, chips, gender colours). */
 .tu-hero { margin: 0 0 22px; }
 .tu-hero h1 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 6px; }
 .tu-hero.slim { margin-bottom: 16px; }
@@ -36,7 +35,6 @@
 .tu-all { margin-top: 10px; }
 .tu-all summary { cursor: pointer; padding: 8px 0; color: var(--accent); font-weight: 600; }
 
-/* word rows */
 .tu-list { display: grid; gap: 8px; margin: 10px 0; }
 .tu-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 .tu-row-main { display: flex; align-items: center; gap: 10px; min-width: 0; }
@@ -59,7 +57,6 @@
 .tu-g { font-size: 13px; }
 @media (max-width: 560px) { .tu-row { flex-direction: column; align-items: stretch; } .tu-row-act { justify-content: flex-end; } }
 
-/* stage (lesson / review) */
 .tu-stage { max-width: 680px; margin: 0 auto; }
 .tu-stage-bar { display: flex; align-items: center; gap: 12px; }
 .tu-prog { flex: 1; height: 10px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }
@@ -109,7 +106,6 @@
 .tu-summary .tu-list { text-align: left; }
 .tu-summary h3 { text-align: left; margin-top: 18px; }
 
-/* notebook */
 .tu-bars { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; height: 190px; margin: 12px 0; }
 .tu-barcol { position: relative; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 4px; padding: 6px 4px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); cursor: pointer; color: var(--text); }
 .tu-barcol.on { border-color: var(--accent); background: var(--accent-soft); }
@@ -119,7 +115,6 @@
 .tu-barfill.l3 { background: var(--warn); }
 .tu-barlab { font-size: 12px; color: var(--muted); text-align: center; }
 
-/* settings */
 .tu-set { display: grid; gap: 16px; max-width: 560px; }
 .tu-set label { display: grid; gap: 6px; font-weight: 600; }
 .tu-set label.inline { display: flex; gap: 10px; align-items: center; font-weight: 500; }

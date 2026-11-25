@@ -1,11 +1,3 @@
-/* ==========================================================================
-   Deutsch Room · Từ vựng theo chủ đề (tu/app.js)
-   Topics → lessons of ~9 words (opened one after another) → learn cards + five kinds of questions →
-   spaced review (5 levels). Progress is kept in this browser under the keys de.tu.* (separate from the
-   main site's review cards). Needs js/core.js (DOM helper, German voice, answer checking) and tu/lang.js
-   (interface text in Vietnamese and English; settings.lang picks one, meanings follow the same choice).
-   Routes: #/ · #/t/<topic> · #/l/<lesson> · #/review[/hard|/star] · #/book · #/search · #/settings
-   ========================================================================== */
 (() => {
   "use strict";
   const DR = window.DR;
@@ -15,20 +7,17 @@
   const INTERVAL = { 1: 10 * MIN, 2: DAY, 3: 3 * DAY, 4: 7 * DAY, 5: 15 * DAY };
   const MASTER = 30 * DAY;
   const REVIEW_BATCH = 15;
-  const AUTO_NEXT = 5000; // after a right answer: time to hear and read the answer before the next question
+  const AUTO_NEXT = 5000;
 
-  let D = null; // { topics, words }
-  /* Every route change bumps tok. A lesson or review started under an older tok stops at its next step
-     (throws CANCEL), its key handlers detach, and its delayed voice lines stay silent. */
+  let D = null;
   let tok = 0;
   const CANCEL = { cancelled: true };
   const alive = (my) => { if (my !== tok) throw CANCEL; };
   const sayLater = (text, ms = 250) => { const my = tok; setTimeout(() => { if (my === tok) Speech.say(text); }, ms); };
-  let ALL = []; // all word keys
+  let ALL = [];
   const TOPIC_OF = {};
   const BY_KIND = {};
 
-  /* ---------- Progress (this browser only) ---------- */
   let prog = store.get("tu.prog", {});
   let done = store.get("tu.done", {});
   let log = store.get("tu.log", {});
@@ -37,32 +26,31 @@
   const saveDone = () => store.set("tu.done", done);
   const saveSet = () => store.set("tu.set", settings);
 
-  /* ---------- Language ---------- */
   const LANGS = window.TU_LANG;
   if (!LANGS[settings.lang]) settings.lang = "vi";
   let T = LANGS[settings.lang];
   const EN = () => settings.lang === "en";
-  const mean = (w) => (EN() ? w.en || w.vi : w.vi); // meaning in the chosen language
-  const exTr = (w) => (EN() ? w.ex[2] || w.ex[1] : w.ex[1]); // translation of the example sentence
+  const mean = (w) => (EN() ? w.en || w.vi : w.vi);
+  const exTr = (w) => (EN() ? w.ex[2] || w.ex[1] : w.ex[1]);
   const noteOf = (w) => (EN() ? w.noteEn : w.note);
   const tTitle = (t) => (EN() ? t.titleEn || t.title : t.title);
   const tDesc = (t) => (EN() ? t.descEn || t.desc : t.desc);
-  const ML = () => T.htmlLang; // lang attribute for text written in the chosen language
-  function trNote(note) { // check() in core.js writes its notes in Vietnamese
+  const ML = () => T.htmlLang;
+  function trNote(note) {
     if (!note || !EN()) return note;
     let m = note.match(/^Đúng! Viết chuẩn là: (.*)$/);
     if (m) return T.noteSpelling(m[1]);
     m = note.match(/^Đúng! Nhớ viết hoa: (.*)$/);
     return m ? T.noteCapital(m[1]) : note;
   }
-  const say = (text, slowToo = true) => { // core's 🔊 🐢 buttons with titles in the chosen language
+  const say = (text, slowToo = true) => {
     const el = sayBtns(text, slowToo);
     const b = el.querySelectorAll("button");
     if (b[0]) { b[0].title = T.say; b[0].setAttribute("aria-label", T.say); }
     if (b[1]) { b[1].title = T.slow; b[1].setAttribute("aria-label", T.slow); }
     return el;
   };
-  function applyChrome() { // header, page title and <html lang>
+  function applyChrome() {
     document.documentElement.lang = T.htmlLang;
     document.title = T.pageTitle;
     document.querySelectorAll("[data-t]").forEach((el) => { el.textContent = T[el.dataset.t]; });
@@ -70,7 +58,7 @@
   }
   function setLang(lang) {
     if (!LANGS[lang] || lang === settings.lang) return;
-    if (document.querySelector(".tu-stage") && !confirm(T.exitLesson)) return; // switching restarts a running lesson
+    if (document.querySelector(".tu-stage") && !confirm(T.exitLesson)) return;
     settings.lang = lang;
     T = LANGS[lang];
     saveSet();
@@ -134,7 +122,6 @@
     return T.day(Math.round(ms / DAY));
   }
 
-  /* ---------- Small helpers ---------- */
   const topicOf = (id) => D.topics.find((t) => t.id === id);
   const lessonOf = (lid) => { const t = topicOf(String(lid).split("-")[0]); return t ? { t, l: t.lessons.find((l) => l.id === lid) } : null; };
   function unlocked(t, l) {
@@ -171,7 +158,6 @@
       plLine(w), w.forms ? h("div", { class: "tu-sub" }, w.forms) : null, h("div", { class: "tu-vi", lang: ML() }, mean(w)), exLine(w));
   }
 
-  /* Word row used in the notebook and search. */
   function row(k, opts = {}) {
     const w = D.words[k], p = prog[k];
     const star = btn(p && p.star ? "★" : "☆", () => {
@@ -192,9 +178,6 @@
       h("div", { class: "tu-row-act" }, lvDots(lvOf(k)), say(sayOf(w), false), star));
   }
 
-  /* ======================================================================
-     Home
-     ====================================================================== */
   function home() {
     const nDue = dueKeys().length;
     const todayN = (log[today()] || {}).n || 0;
@@ -202,7 +185,6 @@
     const known = ALL.filter((k) => lvOf(k)).length;
     const goethe = ALL.filter((k) => D.words[k].g);
     const goetheSeen = goethe.filter((k) => lvOf(k)).length;
-    // next lesson: the one after the lesson you finished last, otherwise the first open one
     let next = null;
     const last = Object.entries(done).sort((a, b) => b[1].at - a[1].at)[0];
     if (last) { const f = lessonOf(last[0]); const nl = f && f.l && f.t.lessons[f.l.n]; if (nl) next = { t: f.t, l: nl }; }
@@ -234,9 +216,6 @@
     }
   }
 
-  /* ======================================================================
-     Topic page: lessons in order
-     ====================================================================== */
   function topicPage(tid) {
     const t = topicOf(tid);
     if (!t) return notFound();
@@ -264,9 +243,6 @@
     }
   }
 
-  /* ======================================================================
-     Quiz engine (promise based: every question resolves true / false)
-     ====================================================================== */
   function makeStage(title, total, onExit) {
     const prog_ = h("span", { class: "tu-prog-fill" });
     const label = h("span", { class: "tu-prog-label small muted" });
@@ -294,7 +270,6 @@
   }
   const listenBox = (text) => h("div", { class: "tu-listen" }, btn(T.listen, () => Speech.say(text), "btn big"), btn("🐢", () => Speech.say(text, { slow: true }), "icon-btn", T.slow));
 
-  /* Multiple choice. o = { head, say, options: [{ val, node }], correct, w } */
   function mcQ(st, o) {
     return new Promise((res) => {
       let locked = false, off = null, timer = 0;
@@ -314,7 +289,7 @@
         fb.hidden = false;
         fb.className = "tu-fb " + (ok ? "good" : "miss");
         fb.replaceChildren(h("div", { class: "tu-fb-title" }, ok ? T.correct : T.wrong), reveal(o.w), btn(T.next, () => finish(ok), "btn"));
-        Speech.say(sayOf(o.w)); // right or wrong, read the correct word once the answer shows
+        Speech.say(sayOf(o.w));
         if (ok) { const my = tok; timer = setTimeout(() => { if (my === tok) finish(true); }, AUTO_NEXT); }
       }
       const map = { Enter: () => { if (locked) finish(fb.classList.contains("good")); } };
@@ -326,7 +301,6 @@
     });
   }
 
-  /* Typing. o = { head, say, answers, w } */
   function typeQ(st, o) {
     return new Promise((res) => {
       let off = null, hinted = false, locked = false;
@@ -370,7 +344,6 @@
     });
   }
 
-  /* Matching pairs; resolves with the set of keys that were matched wrongly at least once. */
   function pairsQ(st, keys) {
     return new Promise((res) => {
       const errors = new Set();
@@ -409,7 +382,6 @@
     });
   }
 
-  /* ---------- question builders ---------- */
   function answersOf(w) {
     const out = new Set();
     const de = w.de.replace(/^\(sich\)\s*/, "").trim();
@@ -419,7 +391,6 @@
     if (w.kind === "noun" && w.art && !w.plOnly) out.add(w.art + " " + de);
     return Array.from(out);
   }
-  /* n other words of the same kind whose get() value differs from w's, so no two options look alike */
   function distractors(w, n, get, pool) {
     const seen = new Set([norm(get(w))]);
     const out = [];
@@ -438,17 +409,17 @@
   }
   const deOf = (w) => w.de;
   const emo = (w) => (w.emoji ? h("div", { class: "tu-big-emo", "aria-hidden": "true" }, w.emoji) : null);
-  function qMeaning(st, k, pool) { // German → meaning
+  function qMeaning(st, k, pool) {
     const w = D.words[k];
     const opts = shuffle([k, ...distractors(w, 3, mean, pool)]).map((x) => ({ val: x, node: h("span", { lang: ML() }, mean(D.words[x])) }));
     return mcQ(st, { head: [h("div", { class: "tu-cap" }, T.qMeaning), emo(w), h("div", { class: "tu-big" }, wordLabel(w), " ", say(sayOf(w), false))], options: opts, correct: k, w });
   }
-  function qReverse(st, k, pool) { // meaning → German
+  function qReverse(st, k, pool) {
     const w = D.words[k];
     const opts = shuffle([k, ...distractors(w, 3, deOf, pool)]).map((x) => ({ val: x, node: wordLabel(D.words[x]) }));
     return mcQ(st, { head: [h("div", { class: "tu-cap" }, T.qReverse), emo(w), h("div", { class: "tu-big", lang: ML() }, mean(w))], options: opts, correct: k, w });
   }
-  function qListen(st, k, pool) { // audio → German
+  function qListen(st, k, pool) {
     const w = D.words[k];
     const opts = shuffle([k, ...distractors(w, 3, deOf, pool)]).map((x) => ({ val: x, node: wordLabel(D.words[x], { noArt: true }) }));
     return mcQ(st, { head: h("div", { class: "tu-cap" }, T.qListen), say: sayOf(w), options: opts, correct: k, w, cols: true });
@@ -468,7 +439,6 @@
   }
   const canSpeak = () => Speech.supported;
 
-  /* Runs a queue of tasks { key, run(stage) → Promise<boolean> } — a wrong answer is asked once more at the end. */
   async function runQueue(st, tasks, offset, total, onFirst, my) {
     const queue = tasks.slice();
     let n = offset;
@@ -483,9 +453,6 @@
     }
   }
 
-  /* ======================================================================
-     Lesson: learn cards, then rounds of questions
-     ====================================================================== */
   async function lessonPage(lid) {
     const f = lessonOf(lid);
     if (!f || !f.l) return notFound();
@@ -497,8 +464,7 @@
     const st = makeStage(t.emoji + " " + tTitle(t) + " · " + T.lesson(l.n), 1, () => { if (confirm(T.exitLesson)) location.hash = "#/t/" + t.id; });
     mount(st.el);
 
-    // 1) learn cards
-    let loopOn = false; // "repeat" button: say the word every 3 s while the card is open (stays on for the next cards)
+    let loopOn = false;
     for (let i = 0; i < keys.length; i++) {
       st.set(i, keys.length);
       await new Promise((go) => {
@@ -528,11 +494,10 @@
       alive(my);
     }
 
-    // 2) rounds
     const nouns = keys.filter((k) => D.words[k].kind === "noun" && D.words[k].art && !D.words[k].plOnly);
     const pairGroups = [];
     { const ks = shuffle(keys); while (ks.length) { let n = ks.length === 6 ? 3 : Math.min(5, ks.length); if (ks.length - n === 1) n++; pairGroups.push(ks.splice(0, n)); } }
-    const total = keys.length * (canSpeak() ? 5 : 4) + nouns.length; // meaning, listen, article, pairs, reverse, type
+    const total = keys.length * (canSpeak() ? 5 : 4) + nouns.length;
     const stat = { n: 0, ok: 0 };
     const wrongKeys = new Set();
     const onFirst = (t_, ok) => { stat.n++; if (ok) stat.ok++; else { wrongKeys.add(t_.key); } };
@@ -551,14 +516,13 @@
     await round(shuffle(keys).map(mk(qReverse)));
     await round(shuffle(keys).map(mk(qType)));
 
-    // 3) done
     const fresh = learn(keys);
     wrongKeys.forEach(noteWrong);
     const acc = pct(stat.ok, stat.n);
     done[l.id] = { at: Date.now(), acc };
     saveDone();
     if (fresh) bump("n", fresh);
-    const nextL = t.lessons[l.n]; // lessons are 1-based, so index l.n is the following one
+    const nextL = t.lessons[l.n];
     mount(h("section", { class: "tu-summary" },
       h("div", { class: "tu-big-emo" }, acc >= 85 ? "🎉" : acc >= 60 ? "👍" : "💪"),
       h("h1", {}, T.doneLesson(l.n, tTitle(t))),
@@ -570,9 +534,6 @@
         h("a", { class: "btn ghost", href: "#/t/" + t.id }, T.backTopic), h("a", { class: "btn ghost", href: "#/" }, T.allTopicsBtn))));
   }
 
-  /* ======================================================================
-     Review (spaced repetition)
-     ====================================================================== */
   function reviewTask(k, pool) {
     const w = D.words[k], lv = lvOf(k);
     let fn;
@@ -616,9 +577,6 @@
         h("a", { class: "btn ghost", href: "#/" }, T.home), h("a", { class: "btn ghost", href: "#/book" }, T.seeBook))));
   }
 
-  /* ======================================================================
-     Notebook
-     ====================================================================== */
   const bookState = { scope: "all", sel: "due" };
   function bookPage() {
     const scoped = ALL.filter((k) => bookState.scope === "all" || D.words[k].g);
@@ -656,9 +614,6 @@
     paint();
   }
 
-  /* ======================================================================
-     Search (German, Vietnamese and English all match, whatever the language setting)
-     ====================================================================== */
   const searchState = { q: "", scope: "all" };
   let searchIndex = null;
   function searchPage() {
@@ -681,9 +636,6 @@
     paint();
   }
 
-  /* ======================================================================
-     Settings
-     ====================================================================== */
   function settingsPage() {
     const langSel = h("div", { class: "chips", role: "group", "aria-label": T.language }, [["vi", "🇻🇳 " + T.langVi], ["en", "🇬🇧 " + T.langEn]].map(([id, label]) =>
       h("button", { type: "button", class: "chip" + (settings.lang === id ? " on" : ""), "aria-pressed": String(settings.lang === id), onclick: () => setLang(id) }, label)));
@@ -738,7 +690,6 @@
     mount(h("section", { class: "tu-hero slim center" }, h("h1", {}, T.notFound), h("div", { class: "actions center" }, h("a", { class: "btn", href: "#/" }, T.home))));
   }
 
-  /* ---------- routing ---------- */
   async function route() {
     const my = ++tok;
     Speech.stop();
@@ -778,7 +729,6 @@
     store.set("theme", t);
   });
   $("#t-lang").addEventListener("click", () => setLang(EN() ? "vi" : "en"));
-  // progress arrived from another device (js/sync.js): re-read it; redraw unless a lesson or review is running
   document.addEventListener("dr-sync", () => {
     prog = store.get("tu.prog", {});
     done = store.get("tu.done", {});

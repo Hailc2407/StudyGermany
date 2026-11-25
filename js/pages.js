@@ -1,7 +1,3 @@
-/* ==========================================================================
-   Deutsch Room · pages.js
-   Routes: #/ (lộ trình) · #/l1 (một Lektion) · #/l1/2 (một buổi) · #/vocab[/l1/a] · #/review · #/settings
-   ========================================================================== */
 (() => {
   "use strict";
   const DR = window.DR;
@@ -29,7 +25,6 @@
     return null;
   }
 
-  /* ---------- Home: the path through the book ---------- */
   async function home() {
     const course = await Data.getCourse();
     const leks = await Data.allLeks();
@@ -73,7 +68,6 @@
       h("p", { class: "muted small foot-note" }, "Tiến độ, thẻ ôn tập và audio của sách chỉ lưu trong trình duyệt trên máy này. Có thể sao lưu trong ", h("a", { href: "#/settings" }, "Cài đặt"), ".")));
   }
 
-  /* ---------- One Lektion ---------- */
   async function lektion(id) {
     const L = await Data.getLek(id);
     if (!L) return home();
@@ -94,7 +88,6 @@
       (L.audio || []).map((ref) => [trackPlayer(ref), h("div", { style: "height:10px" })])));
   }
 
-  /* ---------- One session ---------- */
   async function session(lid, sid) {
     const L = await Data.getLek(lid);
     const S = L && L.sessions.find((x) => x.id === sid);
@@ -128,7 +121,6 @@
     $$(".section", app).forEach((s) => io.observe(s));
   }
 
-  /* ---------- Vocabulary: every set, search, flashcards ---------- */
   async function vocab(lid, sid) {
     const leks = await Data.allLeks();
     const sets = leks.flatMap((L) => L.sets.map((s) => ({ L, s })));
@@ -178,7 +170,6 @@
     paint();
   }
 
-  /* ---------- Review: spaced repetition ---------- */
   function modeFor(w, n) {
     if (w.art && !w.plOnly) return ["art", "listen", "type", "mean"][n % 4];
     const short = w.de.replace(/…/g, "").trim().length <= 22;
@@ -318,7 +309,6 @@
     }
   }
 
-  /* ---------- Settings ---------- */
   async function settings() {
     const voiceSel = h("select", { class: "sel", "aria-label": "Giọng đọc" });
     function paintVoices() {
@@ -416,7 +406,6 @@
           importBackup))));
   }
 
-  /* ---------- Frame: nav, badge, theme, routing ---------- */
   function refreshBadge() {
     const b = $("#due-badge");
     if (!b) return;
@@ -425,7 +414,6 @@
     b.textContent = n > 99 ? "99+" : String(n);
   }
   document.addEventListener("dr-srs", refreshBadge);
-  // progress arrived from another device (js/sync.js): redraw pages that only show it, never a running exercise
   document.addEventListener("dr-sync", () => {
     refreshBadge();
     const p = location.hash.replace(/^#\/?/, "");

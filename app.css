@@ -1,8 +1,3 @@
-/* ==========================================================================
-   Deutsch Room · app.css
-   Same family as English Room (StudyToeic). Gender colours follow the book:
-   der = blue, die = red, das = green; plural = orange; the verb in position 2 = amber.
-   ========================================================================== */
 :root {
   --bg: #0b0e15;
   --surface: #131824;
@@ -87,7 +82,6 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.25; margin: 0; }
 .small { font-size: 14px; }
 .loading { text-align: center; color: var(--muted); padding: 80px 0; }
 
-/* ---------- Top bar & navigation ---------- */
 .bar { position: sticky; top: 0; z-index: 40; height: var(--bar-h); background: color-mix(in srgb, var(--bg) 88%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
 .bar-inner { max-width: 1240px; height: 100%; margin: 0 auto; padding: 0 16px; display: flex; align-items: center; gap: 12px; }
 .brand { display: inline-flex; align-items: center; gap: 9px; font-family: var(--display); font-weight: 700; font-size: 18px; color: var(--text); text-decoration: none; margin-right: auto; white-space: nowrap; }
@@ -103,7 +97,6 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.25; margin: 0; }
 
 @media (max-width: 720px) {
   :root { --nav-h: 62px; }
-  /* A backdrop-filter on the bar would trap the fixed bottom nav inside the bar. */
   .bar { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--bg); }
   .nav { position: fixed; z-index: 45; left: 0; right: 0; bottom: 0; height: calc(var(--nav-h) + env(safe-area-inset-bottom)); padding: 6px 8px env(safe-area-inset-bottom); justify-content: space-around; gap: 0; background: color-mix(in srgb, var(--bg) 94%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-top: 1px solid var(--border); }
   .nav a { flex: 1; flex-direction: column; gap: 1px; padding: 4px 2px; font-size: 12px; justify-content: center; }
@@ -112,7 +105,6 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.25; margin: 0; }
   body { padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom)); }
 }
 
-/* ---------- Buttons, chips, inputs ---------- */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 14px; border: 1px solid transparent; border-radius: 9px; background: var(--accent); color: var(--accent-ink); font-weight: 600; font-size: 15px; line-height: 1.3; cursor: pointer; text-decoration: none; text-align: center; }
 .btn:hover { filter: brightness(1.08); }
 .btn:disabled { opacity: 0.55; cursor: default; filter: none; }
@@ -154,7 +146,6 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.25; margin: 0; }
 .score.low { color: var(--bad); }
 .why { margin-top: 6px; padding: 8px 12px; border-radius: 8px; background: var(--surface); color: var(--text-2); font-size: 15px; }
 
-/* ---------- Gender colours ---------- */
 .art { display: inline-block; min-width: 2.6em; padding: 0 6px; border-radius: 6px; font-weight: 700; text-align: center; font-size: 0.82em; line-height: 1.5; vertical-align: 0.08em; }
 .g-der { color: var(--der); background: var(--der-soft); }
 .g-die { color: var(--die); background: var(--die-soft); }
@@ -169,7 +160,6 @@ span.g-der, span.g-die, span.g-das, span.g-pl { padding: 0 5px; border-radius: 5
 .pl-word { color: var(--pl); font-weight: 600; }
 .v2 { color: var(--v2); }
 
-/* ---------- Layout ---------- */
 .app { max-width: 1240px; margin: 0 auto; padding: 24px 16px 80px; }
 .kicker { margin: 0 0 6px; color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
 .kicker a { color: inherit; }
@@ -193,7 +183,6 @@ details.fold { margin: 14px 0; border: 1px solid var(--border); border-radius: 1
 details.fold > summary { cursor: pointer; padding: 12px 0; font-weight: 600; }
 details.fold[open] { padding-bottom: 14px; }
 
-/* ---------- Home ---------- */
 .hero { margin: 8px 0 20px; }
 .hero h1 { font-size: clamp(32px, 5vw, 46px); }
 .today { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 18px 0 28px; }
@@ -227,7 +216,6 @@ details.fold[open] { padding-bottom: 14px; }
 .sess-card strong { font-family: var(--display); font-size: 18px; }
 .set-links { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 16px; }
 
-/* ---------- Session page ---------- */
 .lesson { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 40px; }
 .toc { position: sticky; top: calc(var(--bar-h) + 20px); align-self: start; display: flex; flex-direction: column; gap: 2px; }
 .toc-item { display: grid; grid-template-columns: 22px 1fr auto; gap: 8px; align-items: center; padding: 7px 10px; border-radius: 8px; color: var(--text-2); text-decoration: none; font-size: 14px; }
@@ -255,7 +243,6 @@ details.fold[open] { padding-bottom: 14px; }
   .toc-m { display: none; }
 }
 
-/* ---------- Word cards ---------- */
 .wbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 12px; }
 .wgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
 .wcard { position: relative; display: flex; flex-direction: column; gap: 3px; padding: 12px 14px 12px; border: 1px solid var(--border); border-left-width: 4px; border-radius: 12px; background: var(--surface); }
@@ -291,7 +278,6 @@ details.fold[open] { padding-bottom: 14px; }
 .wrow-note { flex-basis: 100%; padding-left: 38px; }
 .vgroup h3 { margin: 22px 0 8px; font-size: 17px; }
 
-/* ---------- Flashcards ---------- */
 .overlay { position: fixed; inset: 0; z-index: 80; display: flex; align-items: center; justify-content: center; padding: 16px; background: rgba(5, 8, 14, 0.72); }
 .flash { width: min(560px, 100%); max-height: 100%; overflow: auto; padding: 16px; border: 1px solid var(--border); border-radius: 18px; background: var(--bg); box-shadow: var(--shadow); }
 .fl-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
@@ -314,7 +300,6 @@ details.fold[open] { padding-bottom: 14px; }
 .fl-end { padding: 20px 6px; text-align: center; }
 .fl-big { font-family: var(--display); font-size: 28px; font-weight: 700; margin: 4px 0; }
 
-/* ---------- Pick / listen ---------- */
 .pick { padding: 7px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); cursor: pointer; text-align: left; line-height: 1.4; }
 .pick:hover { border-color: var(--accent); }
 .pick.sel { border-color: var(--accent-2); background: var(--accent-2-soft); }
@@ -330,7 +315,6 @@ details.fold[open] { padding-bottom: 14px; }
 .tg-q { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
 .clock { font-family: var(--display); font-weight: 700; font-size: 18px; }
 
-/* ---------- Pronunciation rules ---------- */
 .rules { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
 .rule { padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 .rule-t { font-family: var(--display); font-size: 18px; font-weight: 700; color: var(--accent); }
@@ -342,7 +326,6 @@ details.fold[open] { padding-bottom: 14px; }
 .ex-de::before { content: "🔊 "; font-size: 12px; }
 .ex-vi { font-size: 12px; color: var(--muted); }
 
-/* ---------- Book box & players ---------- */
 .book { padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 .book-head { font-weight: 700; margin-bottom: 8px; }
 .book-steps { margin: 10px 0 4px; padding-left: 22px; }
@@ -367,7 +350,6 @@ details.fold[open] { padding-bottom: 14px; }
 .recorder { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .rec-audio { height: 34px; max-width: 260px; }
 
-/* ---------- Dialogues ---------- */
 .dialog { border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
 .dl-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 12px; background: var(--surface); border-bottom: 1px solid var(--border); }
 .dl-lines { padding: 6px 0; }
@@ -393,7 +375,6 @@ details.fold[open] { padding-bottom: 14px; }
   .dl-scene { padding-left: 12px; }
 }
 
-/* ---------- Verb tables & drills ---------- */
 table.conj { width: auto; min-width: 300px; }
 table.conj th, table.conj td { vertical-align: middle; }
 table.conj tbody th { color: var(--text); font-weight: 700; }
@@ -405,14 +386,12 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .drill-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .drill-fb { margin-top: 8px; min-height: 1.6em; }
 
-/* ---------- Gaps ---------- */
 .bank { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
 .gap-list { margin: 0; padding-left: 24px; }
 .gap-list li { margin: 8px 0; line-height: 2.1; }
 .ans { color: var(--ok); font-size: 14px; font-weight: 600; }
 .gap-note { color: var(--warn); font-size: 13px; }
 
-/* ---------- Sort ---------- */
 .sort-pool { display: flex; flex-wrap: wrap; gap: 8px; min-height: 44px; margin: 8px 0 12px; }
 .sort-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
 .sort-cols.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -435,7 +414,6 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
   .sort-card { padding: 5px 6px; font-size: 14px; width: 100%; }
 }
 
-/* ---------- Order (verb in position 2) ---------- */
 .ord-row { padding: 12px 0; border-bottom: 1px solid var(--border); }
 .ord-q { margin: 0 0 8px; }
 .ord-slots { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -452,7 +430,6 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .ord-bad .slot:not(.empty) { border-color: var(--bad); }
 .ord-res { margin-top: 8px; }
 
-/* ---------- Find the mistake ---------- */
 .fx-row { padding: 12px 0; border-bottom: 1px solid var(--border); }
 .fx-ctx { margin-bottom: 2px; }
 .fx-s { font-size: 17px; }
@@ -465,7 +442,6 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .fx-ok .fx-res { color: var(--ok); }
 .fx-bad .fx-res { color: var(--bad); }
 
-/* ---------- Alphabet & spelling ---------- */
 .ab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(74px, 1fr)); gap: 8px; margin-top: 10px; }
 .ab-tile { position: relative; display: flex; flex-direction: column; align-items: center; padding: 8px 4px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); cursor: pointer; }
 .ab-tile:hover, .ab-tile.now { border-color: var(--accent); background: var(--accent-soft); }
@@ -478,7 +454,6 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .sp-me { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 8px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
 .sp-letters { font-family: var(--display); font-size: 18px; letter-spacing: 0.04em; }
 
-/* ---------- Business cards & forms ---------- */
 .form-card { display: grid; grid-template-columns: minmax(0, 260px) 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
 .vcard { display: flex; flex-direction: column; gap: 2px; padding: 16px 18px; border: 1px solid var(--border); border-radius: 10px; background: linear-gradient(135deg, var(--surface), var(--surface-2)); box-shadow: var(--shadow); font-size: 15px; }
 .vcard b { font-size: 17px; margin-bottom: 4px; }
@@ -487,7 +462,6 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .form-label { min-width: 130px; font-weight: 600; font-size: 15px; }
 @media (max-width: 640px) { .form-card { grid-template-columns: 1fr; } }
 
-/* ---------- Das bin ich ---------- */
 .profile { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
 .chk-list { display: flex; flex-wrap: wrap; gap: 4px 14px; }
 .chk { font-size: 15px; cursor: pointer; }
@@ -497,7 +471,6 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .intro-line.now { background: var(--v2-soft); }
 @media (max-width: 760px) { .profile { grid-template-columns: 1fr; } }
 
-/* ---------- Test, review, can-do, homework, done ---------- */
 .t-row { padding: 12px 0; border-bottom: 1px solid var(--border); }
 .t-q { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
 .t-in { margin-top: 6px; }
@@ -516,7 +489,6 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .done-box p { margin: 0 0 10px; }
 .done-ok { font-weight: 700; color: var(--ok); }
 
-/* ---------- Review page ---------- */
 .rv-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin: 16px 0; }
 .rv-stats div { display: flex; flex-direction: column; padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 .rv-stats b { font-family: var(--display); font-size: 28px; }
@@ -542,13 +514,11 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .rv-word { display: flex; justify-content: center; align-items: center; gap: 10px; margin: 6px 0; font-size: 22px; }
 .rv-end { padding: 24px 0; text-align: center; }
 
-/* ---------- Settings ---------- */
 .set-sec { margin: 22px 0; padding: 16px 18px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
 .set-sec h2 { font-size: 20px; margin-bottom: 8px; }
 .audio-status { font-weight: 600; }
 .open-warn { border-color: var(--warn); }
 
-/* ---------- ä ö ü ß bar & toast ---------- */
 .umlaut { position: absolute; z-index: 70; display: flex; gap: 4px; padding: 4px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg); box-shadow: var(--shadow); }
 .uml { width: 34px; height: 34px; border: 1px solid var(--border); border-radius: 7px; background: var(--surface); cursor: pointer; font-size: 17px; font-weight: 600; }
 .uml:hover { border-color: var(--accent); }
@@ -564,7 +534,6 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
   .form-label { min-width: 0; width: 100%; }
 }
 
-/* ---------- Family tree & numbers ---------- */
 .ftree { display: flex; flex-direction: column; gap: 4px; }
 .ft-gen { padding: 8px 0; border-bottom: 1px dashed var(--border); }
 .ft-gen:last-child { border-bottom: 0; }
@@ -581,14 +550,12 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .nw-q { min-width: 5.5em; font-family: var(--display); font-size: 18px; font-weight: 700; }
 
 @media (max-width: 520px) {
-  /* Three verb columns plus the persons must fit a phone without sideways scrolling. */
   table.conj { min-width: 0; }
   table.conj th, table.conj td { padding: 6px 3px; }
   .conj-in { width: 5.2em; padding: 4px 5px; font-size: 15px; }
   .ft-card { min-width: 96px; padding: 6px 10px; }
 }
 
-/* ---------- Pictures (emoji) on food words ---------- */
 .wc-title { display: flex; align-items: center; gap: 8px; min-width: 0; }
 .wc-emoji { font-size: 30px; line-height: 1; }
 .wrow-emoji, .rv-emoji { font-size: 22px; line-height: 1; }
@@ -597,12 +564,10 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .lp-opts.emojis { grid-template-columns: repeat(auto-fit, minmax(84px, 1fr)); }
 
 @media (max-width: 520px) {
-  /* Long sorts: the cards to place wrap in rows instead of one long column; placed cards fill their column. */
   .sort-pool .sort-card { width: auto; padding: 6px 10px; }
   .sort-item .sort-card { width: 100%; }
 }
 
-/* ---------- Big numbers and apartment ads (Lektion 4) ---------- */
 .ab-grid.wide { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 .ab-grid.wide .ab-n { text-align: center; overflow-wrap: anywhere; }
 .ad-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin: 12px 0; }
@@ -612,7 +577,6 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .ad .ad-tel { display: block; margin-top: 4px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .ad-note { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
 
-/* ---------- Clocks and separable verbs (Lektion 5) ---------- */
 .clock-svg { display: block; flex: none; }
 .cl-face { fill: var(--surface); stroke: var(--border); stroke-width: 2; }
 .cl-tick { stroke: var(--muted); stroke-linecap: round; }
@@ -635,7 +599,6 @@ table.conj tbody th { color: var(--text); font-weight: 700; }
 .slot.p-slot .slot-n { color: var(--der); }
 .ord-ok .slot.p-slot { background: var(--der-soft); }
 
-/* ---------- Sync panel (js/sync.js, used on / and /tu/) ---------- */
 .sync-steps { margin: 8px 0 12px 20px; display: grid; gap: 4px; }
 .sync-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0; }
 .sync-input { flex: 1 1 220px; min-width: 0; padding: 10px 12px; border: 2px solid var(--border); border-radius: 10px; background: var(--bg); color: var(--text); font: inherit; }

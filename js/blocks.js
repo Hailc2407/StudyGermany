@@ -1,15 +1,9 @@
-/* ==========================================================================
-   Deutsch Room · blocks.js
-   One renderer per block type of a session (data/lN.json → sessions[].sections[].blocks[]).
-   Every renderer gets (block, ctx) with ctx = { L: Lektion, S: session, key: "l1/1" }.
-   ========================================================================== */
 (() => {
   "use strict";
   const { $$, h, btn, shuffle, sample, esc, wait, check, fold, toast, store, today, Speech, sayBtns, LETTERS, plainName,
     spellOut, trackPlayer, recorder, SRS, artOf, sayOf, wordLabel, Missed } = window.DR;
   const B = {};
 
-  /* ---------- Small shared pieces ---------- */
   function scoreLine() {
     const el = h("p", { class: "score", hidden: true });
     return {
@@ -24,7 +18,6 @@
   const textInput = (attrs = {}) => h("input", Object.assign({ type: "text", class: "gap-in", autocomplete: "off", autocapitalize: "off", autocorrect: "off", spellcheck: "false" }, attrs));
   const levelText = (b) => (b <= 0 ? "Chưa ôn" : b <= 2 ? "Đang học" : b <= 4 ? "Đã nhớ" : "Nhớ chắc");
 
-  /* ---------- Word card (also used by the vocabulary page) ---------- */
   function wordCard(w) {
     const lvl = SRS.level(w.key);
     const a = artOf(w);
@@ -42,7 +35,6 @@
       lvl ? h("span", { class: "wc-lvl lvl-" + lvl, title: levelText(lvl) }) : null);
   }
 
-  /* Read a list of words aloud, one after another. Returns { el } with a start/stop button. */
   function playList(words) {
     let token = null;
     const b = btn("▶ Nghe cả bộ", async () => {
@@ -59,7 +51,6 @@
     return b;
   }
 
-  /* ---------- Flashcards (overlay) ---------- */
   function flash(words, opts = {}) {
     if (!words.length) return;
     const total = words.length;
@@ -141,7 +132,6 @@
     render();
   }
 
-  /* ---------- Plain blocks ---------- */
   B.text = (b) => h("div", { class: "text", html: b.html });
   B.tip = (b) => h("aside", { class: "tip" }, b.title ? h("strong", {}, b.title) : null, h("div", { html: b.html }));
   B.table = (b) => h("div", { class: "table-wrap" }, h("table", {},
@@ -152,7 +142,6 @@
       return h("td", {}, h("span", { class: "say-inline", "data-say": txt, html: c }));
     }))))));
 
-  /* ---------- Vocabulary ---------- */
   B.words = (b, ctx) => {
     const set = ctx.L.setIndex[b.set];
     if (!set) return h("p", { class: "muted" }, "Không tìm thấy bộ từ " + b.set);
@@ -188,10 +177,9 @@
     return body;
   };
 
-  /* Hear a word, pick its meaning. */
   B.listenPick = (b, ctx) => {
     const set = ctx.L.setIndex[b.set];
-    const em = b.by === "emoji"; // hear a word, pick its picture (words with an emoji only)
+    const em = b.by === "emoji";
     const pool = em ? set.items.filter((w) => w.emoji) : set.items;
     const qs = sample(pool, Math.min(b.n || 8, pool.length));
     const sc = scoreLine();
@@ -221,7 +209,6 @@
     return wrap;
   };
 
-  /* ---------- Pronunciation ---------- */
   B.rules = (b) => h("div", { class: "rules" }, b.items.map((r) => h("div", { class: "rule" },
     h("div", { class: "rule-t" }, r.t),
     h("div", { class: "rule-vi", lang: "vi", html: r.vi }),
@@ -230,7 +217,6 @@
       return h("button", { type: "button", class: "ex-chip", onclick: () => Speech.say(de) }, h("span", { class: "ex-de" }, de), vi ? h("span", { class: "ex-vi", lang: "vi" }, vi) : null);
     })))));
 
-  /* Hear a word, pick how it is written. items: { say, opts, a? } (a = index of the right one, default 0) */
   B.hearPick = (b) => {
     const sc = scoreLine();
     let ok = 0, n = 0;
@@ -257,14 +243,12 @@
     return h("div", { class: "hear-pick" }, rows, sc.el);
   };
 
-  /* ---------- The book ---------- */
   B.book = (b) => h("div", { class: "book" },
     h("div", { class: "book-head" }, "📘 ", b.kb ? "Kursbuch tr. " + b.kb : "Sách", b.ab ? " · Arbeitsbuch tr. " + b.ab : ""),
     b.tracks ? trackPlayer(b.tracks) : null,
     b.steps ? h("ol", { class: "book-steps" }, b.steps.map((s) => h("li", { html: s }))) : null,
     b.key ? h("p", { class: "book-key", html: "🔑 " + b.key }) : null);
 
-  /* ---------- Dialogues read by German voices ---------- */
   B.dialog = (b) => {
     let running = null;
     const speakLine = (ln, slow) => {
@@ -351,7 +335,6 @@
     return wrap;
   };
 
-  /* ---------- Verb tables ---------- */
   function markEnding(v, form) {
     let tail = "";
     if (v.sep && form.endsWith(" " + v.sep)) { tail = " <span class='sep'>" + esc(v.sep) + "</span>"; form = form.slice(0, -(v.sep.length + 1)); }
@@ -433,8 +416,6 @@
       drillBox);
   };
 
-  /* ---------- Fill the gaps ----------
-     items: { q: "Ich ___ Linh.", a: ["heiße", "bin"], opts?: [...] } — several ___ need a = [[…], […]] */
   B.gaps = (b) => {
     const sc = scoreLine();
     const fields = [];
@@ -484,7 +465,6 @@
         sc.el));
   };
 
-  /* ---------- Multiple choice ---------- */
   B.choice = (b) => {
     const sc = scoreLine();
     let ok = 0, n = 0;
@@ -512,7 +492,6 @@
     return h("div", { class: "choice" }, rows, sc.el);
   };
 
-  /* ---------- Sort cards into columns ---------- */
   B.sort = (b) => {
     const sc = scoreLine();
     let sel = null, ok = 0, done = 0;
@@ -553,7 +532,6 @@
     return h("div", { class: "sort" }, h("p", { class: "muted small" }, "Bấm vào một thẻ, rồi bấm vào cột đúng."), pool, h("div", { class: "sort-cols" + (b.cats.length >= 3 ? " three" : "") }, cols), sc.el);
   };
 
-  /* ---------- Build sentences: tap the chunks in order; slot 2 (the verb) is highlighted ---------- */
   B.order = (b) => {
     const sc = scoreLine();
     let ok = 0, n = 0;
@@ -599,8 +577,6 @@
     return h("div", { class: "order" }, h("p", { class: "muted small" }, "Bấm các cụm theo đúng thứ tự. Bấm vào ô đã xếp để gỡ ra."), rows, sc.el);
   };
 
-  /* ---------- Find the mistake ----------
-     items: { ctx?, s, err: "word(s)" | null, fix: ["…"] (fix [""] = delete), exact?, why } */
   B.fix = (b) => {
     const sc = scoreLine();
     let ok = 0, n = 0;
@@ -653,7 +629,6 @@
     return h("div", { class: "fixit" }, h("p", { class: "muted small" }, "Bấm vào chữ sai, gõ cách sửa rồi bấm Kiểm tra. Nếu câu không sai, bấm „Câu đúng“."), rows, sc.el);
   };
 
-  /* ---------- Greetings by the clock (new questions every round) ---------- */
   const GREET = ["Guten Morgen!", "Guten Tag!", "Guten Abend!", "Gute Nacht!", "Hallo!", "Tschüs!", "Auf Wiedersehen!"];
   const SITS = [
     { s: "bạn gặp bà hàng xóm (lịch sự)", r: [[6, 0, 9, 45], [11, 30, 16, 45], [18, 30, 22, 0]], a: (m) => (m < 11 * 60 ? "Guten Morgen!" : m < 18 * 60 ? "Guten Tag!" : "Guten Abend!"), no: ["Hallo!"],
@@ -697,7 +672,6 @@
     return wrap;
   };
 
-  /* ---------- Alphabet and spelling ---------- */
   const ALPHA = [["A", "a"], ["B", "be"], ["C", "tse"], ["D", "de"], ["E", "e"], ["F", "ef"], ["G", "ge"], ["H", "ha"], ["I", "i"], ["J", "jot"], ["K", "ka"], ["L", "el"], ["M", "em"],
     ["N", "en"], ["O", "o"], ["P", "pe"], ["Q", "ku"], ["R", "er"], ["S", "es"], ["T", "te"], ["U", "u"], ["V", "fau"], ["W", "we"], ["X", "iks"], ["Y", "ypsilon"], ["Z", "tsett"],
     ["Ä", "ä"], ["Ö", "ö"], ["Ü", "ü"], ["ß", "eszett"]];
@@ -799,11 +773,9 @@
       h("p", { class: "muted small" }, "Nói to theo: ", h("i", {}, "Ich buchstabiere: …"), " rồi đọc từng chữ cái."));
   };
 
-  /* ---------- Numbers (0–100) and prices: table to hear, hear-and-pick, type the word or the digits ---------- */
   const ONES = ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn", "elf", "zwölf",
     "dreizehn", "vierzehn", "fünfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn"];
   const TENS = ["", "", "zwanzig", "dreißig", "vierzig", "fünfzig", "sechzig", "siebzig", "achtzig", "neunzig"];
-  /* German number words: 0–99, hundreds, thousands (up to 999 999) and "eine Million". */
   function numWord(n) {
     if (n < 20) return ONES[n];
     if (n < 100) {
@@ -820,7 +792,6 @@
     }
     return n === 1000000 ? "eine Million" : String(n);
   }
-  /* Spellings that are also right: einhundert…, eintausend… */
   function numVariants(n) {
     const base = numWord(n);
     const out = new Set([base]);
@@ -829,7 +800,6 @@
     [ein(base), tau(base), ein(tau(base))].forEach((t) => out.add(t));
     return [...out];
   }
-  /* 1000 → "1.000" (German and Vietnamese both put a dot between groups of three digits) */
   const fmtNum = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
   const NUMW = Array.from({ length: 21 }, (x, i) => numWord(i));
   const NUM_TRICKY = new Set([6, 7, 11, 12, 16, 17, 30, 60, 70]);
@@ -837,7 +807,6 @@
   const numRange = (b) => [b.min == null ? 0 : b.min, b.max == null ? 20 : b.max];
   const pickNum = (b) => (b.pool ? b.pool[rnd(0, b.pool.length - 1)] : rnd(...numRange(b)));
 
-  /* Table of numbers (default 0–20; b.values = a list such as [20, 30, … 100]). Click to hear. */
   B.numbers = (b = {}) => {
     let token = null;
     const values = b.values || Array.from({ length: 21 }, (x, i) => i);
@@ -860,8 +829,6 @@
     return h("div", { class: "alphabet" }, h("div", { class: "actions" }, all, h("span", { class: "muted small" }, "Chấm cam = số hay đọc hoặc viết nhầm.")), h("div", { class: "ab-grid" + (b.wide ? " wide" : "") }, tiles));
   };
 
-  /* Wrong answers worth offering: the swapped digits (45 / 54), teen and ten (14 / 40), the neighbours,
-     and for big numbers a different size (1.200 / 12.000) or two digits swapped (213 / 231). */
   function numOptions(x, lo, hi) {
     const first = [];
     const r = x % 100, base = x - r;
@@ -884,7 +851,6 @@
     while (out.length < 3) { const v = rnd(lo, hi); if (ok(v) && !out.includes(v)) out.push(v); }
     return shuffle([x, ...out.slice(0, 3)]);
   }
-  /* Phone numbers heard as single digits in groups: "701 108" = sieben null eins, eins null acht */
   const DIGITW = ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun"];
   function digitsQ(b) {
     const sizes = b.groups || (b.mobile ? [4, 3, 3] : [3, 3]);
@@ -913,7 +879,6 @@
     }
     return shuffle([...out.values()]);
   }
-  /* One round of "hear it, pick the written form". makeQ() → { say, opts: [text…], right: index, shown, rate? } */
   function hearRound(b, makeQ, again) {
     const sc = scoreLine();
     let ok = 0, n = 0;
@@ -941,9 +906,6 @@
     });
     return h("div", { class: "hear-pick" }, rows, h("div", { class: "actions" }, sc.el, btn("↻ Lượt khác", () => again(), "btn small ghost")));
   }
-  /* mode "single": hear one number, pick the digits (b.min/b.max, or b.pool = a list to draw from)
-     mode "phone": hear three numbers (like a phone number)
-     mode "digits": hear a phone number digit by digit (b.groups = [3, 3], or b.mobile = 0176 … style) */
   B.numHear = (b) => {
     const phone = b.mode === "phone";
     const digits = b.mode === "digits";
@@ -959,7 +921,6 @@
     }, () => wrap.replaceWith(B.numHear(b)));
     return wrap;
   };
-  /* Type the German word for a number (default) or, with mode "read", the digits for a German word. */
   B.numWrite = (b) => {
     const sc = scoreLine();
     let ok = 0, n = 0;
@@ -998,7 +959,6 @@
     return wrap;
   };
 
-  /* Prices: 2,45 € = zwei Euro fünfundvierzig · 0,20 € = zwanzig Cent · 1,00 € = ein Euro */
   const eu = (n) => (n === 1 ? "ein" : numWord(n));
   function priceWords(e, c) {
     if (e === 0) return (c === 1 ? "ein" : numWord(c)) + " Cent";
@@ -1063,14 +1023,12 @@
     return wrap;
   };
 
-  /* ---------- Clocks: everyday and official times, analog face, explorer, quizzes ---------- */
   const HW = ["", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn", "elf", "zwölf"];
   const pad2 = (n) => String(n).padStart(2, "0");
   const digital = (h24, m) => pad2(h24) + ":" + pad2(m);
   const wrapH = (x) => ((x % 24) + 24) % 24;
   const wrapM = (x) => ((x % 60) + 60) % 60;
   const h12 = (h24) => (h24 % 12 === 0 ? 12 : h24 % 12);
-  /* Everyday time on a 12-hour clock. Returns every phrase that is right; the first one is the one the book teaches. */
   function timePrivate(h24, m) {
     const h = h12(h24), nx = (h % 12) + 1;
     if (m === 0) return [(h === 1 ? "ein" : HW[h]) + " Uhr", HW[h]];
@@ -1084,7 +1042,6 @@
     };
     return t[m] || [];
   }
-  /* Official time (24-hour clock: radio, trains, opening hours): "neunzehn Uhr dreißig" */
   function timeOfficial(h24, m) {
     return (h24 === 1 ? "ein" : numWord(h24)) + " Uhr" + (m ? " " + numWord(m) : "");
   }
@@ -1097,7 +1054,6 @@
   }
   const timeKey = (style, t) => (style === "official" ? digital(t[0], t[1]) : digital(t[0] % 12, t[1]));
   const timeShown = (style, t) => (style === "official" ? digital(t[0], t[1]) : digital(h12(t[0]), t[1]));
-  /* Wrong times worth offering: vor ↔ nach (7:15 / 7:45), the hour next to it, five or ten minutes off, a.m. ↔ p.m. */
   function timeDistractors(style, h24, m) {
     const c = [[h24, wrapM(60 - m)], [h24 + 1, m], [h24 - 1, m], [h24, m + 5], [h24, m - 5], [h24, m + 10], [h24, m - 10]];
     if (style === "official") c.push([h24 + 12, m], [h24 - 12, m]);
@@ -1117,7 +1073,6 @@
     Object.keys(attrs).forEach((k) => e.setAttribute(k, attrs[k]));
     return e;
   }
-  /* An analog clock face showing h24:m (12-hour dial) */
   function clockSvg(h24, m, size = 110) {
     const svg = svgEl("svg", { viewBox: "0 0 100 100", width: size, height: size, class: "clock-svg", role: "img", "aria-label": digital(h12(h24), m) });
     svg.append(svgEl("circle", { cx: 50, cy: 50, r: 47, class: "cl-face" }));
@@ -1138,7 +1093,6 @@
     return svg;
   }
 
-  /* Explorer: set any time, see the clock, the digits, the everyday phrase and the official phrase (and hear them). b.h, b.m = start */
   B.clockLab = (b = {}) => {
     let h24 = b.h == null ? 7 : b.h, m = b.m == null ? 45 : b.m;
     const MINS = [0, 2, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 58];
@@ -1184,9 +1138,6 @@
     return wrap;
   };
 
-  /* Quiz: mode "read" = see the clock (or the digits for official times) and pick the phrase;
-     mode "hear" = hear the phrase and pick the clock (or the digits). style: "private" | "official" | "mixed".
-     b.minutes = allowed minutes (default every five), b.kurz = also use kurz vor / kurz nach, b.hours = [from, to] */
   B.clockPick = (b) => {
     const mode = b.mode || "read";
     const N = b.n || 6;
@@ -1234,8 +1185,6 @@
     return wrap;
   };
 
-  /* Write: mode "words" = see the digits (and the clock) and type the phrase; mode "digits" = read the phrase and type the digits (7:45).
-     Typing "Es ist …" in front is fine. */
   B.timeWrite = (b) => {
     const mode = b.mode || "words";
     const N = b.n || 6;
@@ -1289,14 +1238,12 @@
     return wrap;
   };
 
-  /* ---------- Family tree: rows of people (click a card to hear it) ---------- */
   B.tree = (b) => h("div", { class: "ftree" }, b.rows.map((r) => h("div", { class: "ft-gen" },
     h("div", { class: "ft-label muted small", lang: "vi" }, r.label),
     h("div", { class: "ft-row" }, r.people.map((p) => h("button", { type: "button", class: "ft-card " + (p.art ? "ft-" + p.art : "ft-me"), onclick: () => Speech.say(p.say || p.rel) },
       h("span", { class: "ft-rel" }, p.art ? h("span", { class: "art g-" + p.art }, p.art) : null, p.art ? " " : "", p.rel),
       h("span", { class: "ft-name" }, p.name)))))));
 
-  /* ---------- Business cards and a form ---------- */
   B.form = (b) => {
     const sc = scoreLine();
     const fields = [];
@@ -1323,13 +1270,12 @@
       sc.el));
   };
 
-  /* ---------- "Das bin ich": the learner's own introduction ---------- */
   const COUNTRIES = [["Vietnam", "aus Vietnam"], ["Deutschland", "aus Deutschland"], ["Österreich", "aus Österreich"], ["die Schweiz", "aus der Schweiz"], ["China", "aus China"],
     ["Japan", "aus Japan"], ["Südkorea", "aus Südkorea"], ["Thailand", "aus Thailand"], ["Laos", "aus Laos"], ["Kambodscha", "aus Kambodscha"], ["die USA", "aus den USA"]];
   const LANGS = [["Vietnamesisch", "tiếng Việt"], ["Englisch", "tiếng Anh"], ["Chinesisch", "tiếng Trung"], ["Japanisch", "tiếng Nhật"], ["Koreanisch", "tiếng Hàn"], ["Französisch", "tiếng Pháp"], ["Russisch", "tiếng Nga"], ["Spanisch", "tiếng Tây Ban Nha"]];
   const joinUnd = (a) => (a.length <= 1 ? a.join("") : a.slice(0, -1).join(", ") + " und " + a[a.length - 1]);
   B.profile = (b = {}) => {
-    const ext = Boolean(b.ext); // ext: also age, place of living, marital status, children (Lektion 2)
+    const ext = Boolean(b.ext);
     const me = Object.assign({ first: "", last: "", country: "Vietnam", city: "", langs: ["Vietnamesisch", "Englisch"], age: "", home: "", status: "ledig", kids: 0 }, store.get("me", {}));
     const first = textInput({ class: "gap-in wide", value: me.first, placeholder: "Thu Hà", "aria-label": "Vorname" });
     const last = textInput({ class: "gap-in wide", value: me.last, placeholder: "Nguyễn", "aria-label": "Familienname" });
@@ -1408,8 +1354,6 @@
           recorder())));
   };
 
-  /* ---------- End-of-Lektion test ----------
-     items: { k: "mc" | "type" | "listen" | "listenmc", q, opts?, a, say?, why?, keep? } */
   B.test = (b, ctx) => {
     const wrap = h("div", { class: "test" });
     function build() {
@@ -1487,7 +1431,6 @@
     return wrap;
   };
 
-  /* ---------- Redo every wrong answer of this session ---------- */
   B.review = () => {
     const box = h("div", { class: "review-box" });
     const go = btn("🔁 Làm lại các câu sai", () => {
@@ -1535,7 +1478,6 @@
     return h("div", { class: "review" }, go, box);
   };
 
-  /* ---------- Self-assessment, homework, finishing the session ---------- */
   B.cando = (b, ctx) => {
     const saved = store.get("cando", {});
     const faces = [["😕", "Chưa"], ["🙂", "Tạm được"], ["😃", "Chắc chắn"]];
@@ -1588,7 +1530,6 @@
     return wrap;
   };
 
-  /* ---------- Rendering a block with its title ---------- */
   function renderBlock(b, ctx) {
     const make = B[b.type];
     let body;

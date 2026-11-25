@@ -1,14 +1,7 @@
-/* ==========================================================================
-   Deutsch Room · core.js
-   Helpers shared by blocks.js and pages.js: DOM builder, answer checking,
-   storage (this browser only), German text-to-speech, the book's audio kept
-   in IndexedDB, spaced repetition and data loading.
-   ========================================================================== */
 (() => {
   "use strict";
   const DR = (window.DR = window.DR || {});
 
-  /* ---------- DOM ---------- */
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
   function h(tag, attrs, ...kids) {
@@ -46,8 +39,6 @@
   };
   const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
-  /* ---------- Answer checking ----------
-     Case does not matter, ä = ae, ö = oe, ü = ue, ß = ss, punctuation is ignored. */
   function fold(s) {
     return String(s).toLowerCase()
       .replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
@@ -57,7 +48,6 @@
       .replace(/\s+/g, " ").trim();
   }
   const same = (a, b) => fold(a) === fold(b);
-  /* Returns { ok, note }: note reminds about capital letters or ä/ö/ü/ß when they were left out. */
   function check(input, answers, opts = {}) {
     const val = String(input == null ? "" : input).trim().replace(/\s+/g, " ");
     for (const a of answers) {
@@ -73,7 +63,6 @@
     return { ok: false, note: "" };
   }
 
-  /* ---------- Toast ---------- */
   let toastTimer = 0;
   function toast(text, ms = 2600) {
     let t = $(".toast");
@@ -84,7 +73,6 @@
     toastTimer = setTimeout(() => t.classList.remove("on"), ms);
   }
 
-  /* ---------- Storage (this browser only) ---------- */
   const PREFIX = "de.";
   const store = {
     get(k, d) {
@@ -113,7 +101,6 @@
     clear() { Object.keys(this.dump()).forEach((k) => { try { localStorage.removeItem(k); } catch (e) {} }); },
   };
 
-  /* ---------- Dates (local time, YYYY-MM-DD) ---------- */
   const pad = (n) => String(n).padStart(2, "0");
   const dayStr = (d) => d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
   const today = () => dayStr(new Date());
@@ -124,7 +111,6 @@
     return dayStr(d);
   };
 
-  /* ---------- German speech (browser voices) ---------- */
   const FEMALE = /anna|helena|petra|katja|marlene|vicki|hedda|amala|seraphina|louisa|elke|sandy|shelley|flo\b|grandma|google deutsch|tanja|ingrid|leni|gisela|kerstin/i;
   const MALE = /markus|yannick|conrad|killian|stefan|florian|jonas|martin|hans|reed|rocko|grandpa|eddy|ralf|christoph|bernd|kasper|klaus/i;
   const ROBOTIC = /eloquence|grandma|grandpa|rocko|shelley|sandy|reed|eddy|flo\b/i;
@@ -157,9 +143,7 @@
       return s;
     },
     best(list) { return list.slice().sort((a, b) => this.score(b) - this.score(a))[0]; },
-    /* A voice for a dialogue role: f = woman, m = man, m2 = another man. */
     roleVoice(role) {
-      // Robotic "Eloquence" voices (Eddy, Grandpa…) score below zero: better one good voice at another pitch.
       const pick = (re) => this.de.filter((v) => re.test(v.name) && !ROBOTIC.test(v.name)).sort((a, b) => this.score(b) - this.score(a));
       if (role === "f") {
         const f = pick(FEMALE);
@@ -188,7 +172,6 @@
         u.onerror = () => finish(false);
         speechSynthesis.cancel();
         speechSynthesis.speak(u);
-        // Some browsers never fire "end": give up after a generous estimate.
         setTimeout(() => finish(true), 3500 + (said.length * 120) / u.rate);
       });
     },
@@ -202,13 +185,11 @@
     btn("🔊", (e) => { e.stopPropagation(); Speech.say(text); }, "icon-btn", "Nghe"),
     slowToo ? btn("🐢", (e) => { e.stopPropagation(); Speech.say(text, { slow: true }); }, "icon-btn", "Nghe chậm") : null);
 
-  /* Letter names for spelling (what the voice should say). */
   const LETTERS = {
     A: "A", B: "Beh", C: "Zeh", D: "Deh", E: "E", F: "Eff", G: "Geh", H: "Ha", I: "I", J: "Jott", K: "Ka", L: "Ell", M: "Emm",
     N: "Enn", O: "O", P: "Peh", Q: "Ku", R: "Err", S: "Ess", T: "Teh", U: "U", V: "Fau", W: "Weh", X: "Ix", Y: "Ypsilon", Z: "Zett",
     "Ä": "Ä", "Ö": "Ö", "Ü": "Ü", "ß": "Eszett",
   };
-  /* Vietnamese names are written without accents in German forms: Nguyễn → Nguyen. ä/ö/ü/ß stay. */
   function plainName(s) {
     const keep = { "ä": "\u0001", "ö": "\u0002", "ü": "\u0003", "Ä": "\u0004", "Ö": "\u0005", "Ü": "\u0006" };
     const back = Object.fromEntries(Object.entries(keep).map(([k, v]) => [v, k]));
@@ -223,7 +204,6 @@
     };
   }
 
-  /* ---------- The book's audio, kept in this browser (IndexedDB) ---------- */
   const Tracks = {
     db: null,
     have: new Set(),
@@ -253,13 +233,11 @@
     get(key) { return this.req("readonly", (s) => s.get(key)); },
     has(key) { return this.have.has(key); },
     async clear() { await this.req("readwrite", (s) => s.clear()); this.have.clear(); },
-    /* File names from the book's CDs: 301082_KB_L01_09.mp3 → KB-1-9 (CD 1, track 9); 301082_AB_L02_14.mp3 → AB-14. */
     keyOf(name) {
       const m = /(KB|AB)_L0?(\d)_0*(\d+)\.mp3$/i.exec(name || "");
       if (!m) return null;
       return m[1].toUpperCase() === "KB" ? `KB-${+m[2] <= 4 ? 1 : 2}-${+m[3]}` : `AB-${+m[3]}`;
     },
-    /* "KB 1/1-8" or "AB 6-12" → [{ key, label }] */
     parse(ref) {
       const out = [];
       for (const part of String(ref || "").split(",")) {
@@ -300,7 +278,6 @@
     },
   };
 
-  /* A player for the book's tracks (from this browser's storage). */
   const players = new Set();
   function stopAllAudio(except) { players.forEach((a) => { if (a !== except) a.pause(); }); }
   function trackPlayer(ref, opts = {}) {
@@ -364,7 +341,6 @@
     return el;
   }
 
-  /* ---------- Recorder (kept in memory only) ---------- */
   function recorder(label = "● Ghi âm") {
     let rec = null, chunks = [], url = null;
     const out = h("audio", { controls: true, class: "rec-audio", hidden: true });
@@ -397,9 +373,6 @@
     return h("span", { class: "recorder" }, go, out);
   }
 
-  /* ---------- Spaced repetition ----------
-     Boxes 1–6; a right answer moves a card up one box, a wrong one sends it back to box 1.
-     Days until the next review, by box: */
   const INTERVALS = [0, 1, 2, 4, 7, 15, 30];
   const SRS = {
     all() { return store.get("srs", {}); },
@@ -428,7 +401,6 @@
     level(k) { const c = this.all()[k]; return c ? c.b : 0; },
   };
 
-  /* ---------- Course data ---------- */
   const Data = {
     course: null,
     leks: {},
@@ -470,7 +442,6 @@
     return r.json();
   }
 
-  /* ---------- How a word is shown and said ---------- */
   const ART_CLASS = { der: "g-der", die: "g-die", das: "g-das" };
   function artOf(w) { return w.plOnly ? "pl" : w.art || ""; }
   function sayOf(w) {
@@ -484,7 +455,6 @@
     return h("span", { class: "wl" + (a ? " has-art " + (a === "pl" ? "g-pl-word" : ART_CLASS[a] + "-word") : "") }, opts.noArt ? null : art, art && !opts.noArt ? " " : null, h("span", { class: "wl-de" }, w.de));
   }
 
-  /* ---------- Wrong answers in the open session (for the "review" block) ---------- */
   const Missed = {
     map: new Map(),
     reset() { this.map = new Map(); },
@@ -492,7 +462,6 @@
     list() { return Array.from(this.map.values()); },
   };
 
-  /* ---------- ä ö ü ß buttons above the focused text box ---------- */
   function umlautBar() {
     const bar = $("#umlaut");
     if (!bar) return;
@@ -536,7 +505,6 @@
     if (window.visualViewport) window.visualViewport.addEventListener("resize", place);
   }
 
-  /* Clicking any element with data-say reads it aloud. */
   document.addEventListener("click", (e) => {
     const s = e.target.closest && e.target.closest("[data-say]");
     if (s && !s.closest("button")) Speech.say(s.dataset.say);

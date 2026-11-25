@@ -1,8 +1,3 @@
-/* ==========================================================================
-   Deutsch Room · Từ vựng theo chủ đề — interface text in Vietnamese and English (tu/lang.js)
-   window.TU_LANG[lang][key] is a string or a function (for text with numbers or names in it).
-   Word meanings, example translations and notes live in data/words.json (vi, en, ex[1]/ex[2], note/noteEn).
-   ========================================================================== */
 window.TU_LANG = {
   vi: {
     htmlLang: "vi",

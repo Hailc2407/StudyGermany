@@ -1,15 +1,3 @@
-/* ==========================================================================
-   Deutsch Room · Đồng bộ tiến độ giữa các thiết bị qua GitHub Gist (js/sync.js)
-   Loaded after core.js on both pages (/ and /tu/). The learner pastes a GitHub token that can only
-   touch gists; every device then reads and writes one secret gist named deutsch-room-sync.json.
-
-   - Synced: every localStorage key that starts with "de." except the device's own voice, speed and theme.
-   - The token and sync state live under "dr.sync" (outside "de."), so backup files never contain it.
-   - A device with no unsynced changes takes the gist as it is. A device with unsynced changes merges
-     per key (review cards: the one reviewed more often wins; finished lessons and tests: kept from both;
-     daily log: the larger count). Resetting or restoring progress overwrites the gist instead.
-   - After a pull that changed local data, "dr-sync" is fired on document so pages can re-read it.
-   ========================================================================== */
 (() => {
   "use strict";
   const DR = window.DR;
@@ -19,18 +7,15 @@
   const CFG_KEY = "dr.sync";
   const FILE = "deutsch-room-sync.json";
   const API = "https://api.github.com";
-  // device settings, plus the self-introduction (name, age, city…): a secret gist can still be opened by anyone with its link
   const SKIP = new Set(["de.voice", "de.rate", "de.theme", "de.me"]);
   const isSynced = (k) => typeof k === "string" && k.startsWith("de.") && !SKIP.has(k);
   const TOKEN_URL = "https://github.com/settings/tokens/new?scopes=gist&description=Deutsch%20Room%20sync";
 
-  /* ---------- config (this device) ---------- */
   function readCfg() { try { return JSON.parse(localStorage.getItem(CFG_KEY)) || {}; } catch (e) { return {}; } }
   let cfg = readCfg();
   const saveCfg = () => { try { localStorage.setItem(CFG_KEY, JSON.stringify(cfg)); } catch (e) {} };
   const on = () => Boolean(cfg.token);
 
-  /* ---------- local snapshot (raw strings, written without marking changes) ---------- */
   function localSnap() {
     const o = {};
     try {
@@ -52,7 +37,6 @@
     return ka.length === kb.length && ka.every((k) => a[k] === b[k]);
   };
 
-  /* ---------- merging two snapshots (a = this device, b = gist) ---------- */
   const parse = (s) => { try { return JSON.parse(s); } catch (e) { return undefined; } };
   const isObj = (x) => x && typeof x === "object" && !Array.isArray(x);
   const BAD_KEY = new Set(["__proto__", "constructor", "prototype"]);
@@ -71,8 +55,8 @@
     return o;
   };
   const RULES = {
-    "de.srs": (a, b) => perItem(a, b, moreReviews), // main site review cards
-    "de.tu.prog": (a, b) => perItem(a, b, moreReviews), // topic vocabulary levels
+    "de.srs": (a, b) => perItem(a, b, moreReviews),
+    "de.tu.prog": (a, b) => perItem(a, b, moreReviews),
     "de.tu.done": (a, b) => perItem(a, b, (x, y) => ((y && y.at) || 0) > ((x && x.at) || 0) ? y : x),
     "de.tu.log": (a, b) => perItem(a, b, maxFields),
     "de.progress": (a, b) => perItem(a, b, (x, y) => (x && x.done ? x : y)),
@@ -84,7 +68,7 @@
     "de.cando": (a, b) => perItem(a, b, (x) => x),
   };
   function merge(a, b) {
-    const out = {}; // keys on one side only are kept; this device wins otherwise
+    const out = {};
     for (const k of [...Object.keys(b), ...Object.keys(a)]) if (isSynced(k)) out[k] = k in a ? a[k] : b[k];
     for (const k of Object.keys(a)) {
       if (!(k in b) || a[k] === b[k] || !RULES[k]) continue;
@@ -94,7 +78,6 @@
     return out;
   }
 
-  /* ---------- GitHub ---------- */
   async function gh(path, opts = {}) {
     const headers = { Accept: "application/vnd.github+json", Authorization: "Bearer " + cfg.token };
     if (opts.body) headers["Content-Type"] = "application/json";
@@ -123,7 +106,7 @@
     if (f.truncated && f.raw_url) text = await (await fetch(f.raw_url, { cache: "no-store" })).text();
     const data = parse(text);
     if (!data || data.app !== "deutsch-room-sync" || !isObj(data.store)) return null;
-    const clean = {}; // only de.* keys with string values ever reach localStorage
+    const clean = {};
     for (const [k, v] of Object.entries(data.store)) if (isSynced(k) && typeof v === "string") clean[k] = v;
     return Object.assign({}, data, { store: clean });
   }
@@ -141,7 +124,6 @@
     return rev;
   }
 
-  /* ---------- the sync run ---------- */
   let edits = 0, busy = null, again = false, timer = 0, state = on() ? (cfg.err ? "err" : "ok") : "off";
   function setState(s) { state = s; document.dispatchEvent(new CustomEvent("dr-sync-state", { detail: s })); }
   function sync() {
@@ -157,7 +139,7 @@
       if (!cfg.gist) { cfg.gist = await findGist(); saveCfg(); }
       let remote = null;
       if (cfg.gist) {
-        try { remote = await readRemote(); } catch (e) { if (e.kind !== "gone") throw e; cfg.gist = ""; cfg.rev = ""; } // gist deleted: make a new one
+        try { remote = await readRemote(); } catch (e) { if (e.kind !== "gone") throw e; cfg.gist = ""; cfg.rev = ""; }
       }
       const local = localSnap();
       const remoteNew = Boolean(remote) && remote.rev !== cfg.rev;
@@ -166,7 +148,7 @@
       else if (remoteNew && !cfg.dirty) next = remote.store;
       else if (remoteNew) { next = merge(local, remote.store); push = !sameSnap(next, remote.store); }
       else push = Boolean(cfg.dirty);
-      if (edits !== e0) { again = true; setState("ok"); return; } // something changed while we were fetching: start over
+      if (edits !== e0) { again = true; setState("ok"); return; }
       const changedLocal = !sameSnap(local, next);
       if (changedLocal) writeLocal(next);
       cfg.rev = push ? await writeRemote(next) : remote.rev;
@@ -184,7 +166,6 @@
     }
   }
 
-  /* ---------- notice local changes ---------- */
   const orig = { set: store.set, del: store.del, load: store.load, clear: store.clear };
   function touched(force) {
     if (!on()) return;
@@ -208,17 +189,15 @@
   window.addEventListener("online", () => { if (on() && cfg.err) sync(); });
   if (on()) setTimeout(sync, 300);
 
-  /* ---------- connect / disconnect ---------- */
   const TOKEN_RE = /^(ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,})$/;
   async function connect(token) {
     token = token.trim();
     if (!TOKEN_RE.test(token)) throw Object.assign(new Error("format"), { kind: "format" });
-    cfg = { token, gist: "", rev: "", dirty: true, force: false }; // dirty: merge with what the gist already has
+    cfg = { token, gist: "", rev: "", dirty: true, force: false };
     try {
       const r = await fetch(API + "/gists?per_page=1", { headers: { Accept: "application/vnd.github+json", Authorization: "Bearer " + token }, cache: "no-store" });
       if (r.status === 401 || r.status === 403) throw Object.assign(new Error("auth"), { kind: "auth" });
       if (!r.ok) throw Object.assign(new Error("net"), { kind: "net" });
-      // classic tokens list their scopes; refuse one that can do more than gists (fine-grained tokens send no list)
       const scopes = r.headers.get("x-oauth-scopes");
       if (scopes != null && scopes.split(",").map((x) => x.trim()).filter(Boolean).some((x) => x !== "gist")) throw Object.assign(new Error("scope"), { kind: "scope" });
     } catch (e) {
@@ -230,7 +209,6 @@
   }
   function disconnect() { cfg = {}; try { localStorage.removeItem(CFG_KEY); } catch (e) {} setState("off"); }
 
-  /* ---------- settings panel (both pages) ---------- */
   const TEXT = {
     vi: {
       title: "☁️ Đồng bộ giữa các thiết bị",

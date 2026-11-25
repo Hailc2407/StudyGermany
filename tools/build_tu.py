@@ -48,10 +48,8 @@ SETMAP = {
     "l7/f": "lern", "l7/f2": "klein",
 }
 
-
 def ov(topic, ids):
     return {i: topic for i in ids.split()}
-
 
 OVER = {}
 for lek, groups in {
@@ -101,28 +99,23 @@ for lek, groups in {
     for topic, ids in groups.items():
         for i in ids.split():
             OVER[lek + "/" + i] = topic
-PERFEKT_EXCEPT = set()  # ids starting with p- in l7 stay in the perf topic via SETMAP
-
+PERFEKT_EXCEPT = set()
 
 def fold(s):
     return (s.lower().replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss"))
-
 
 def head(de):
     s = re.sub(r"^(?:sich\s+)?(?:(?:der|die|das)\s+)", "", de.strip())
     return fold(re.split(r"[,(/]", s)[0].strip())
 
-
 def slug(de):
     return re.sub(r"[^a-z0-9]+", "-", fold(de)).strip("-")
-
 
 goethe = set(open("tools/src/goethe-heads.txt").read().split("\n")) - {""}
 goethe_heads = {fold(h) for h in goethe}
 goethe_tokens = set()
 for h in goethe_heads:
     goethe_tokens.add(h)
-
 
 def is_goethe(w):
     d = head(w["de"])
@@ -131,10 +124,8 @@ def is_goethe(w):
     toks = [t for t in re.split(r"[\s/]+", d) if t]
     return len(toks) == 1 and toks[0] in goethe_heads
 
-
 words, order = {}, {t: [] for t in TOPIC_IDS}
 seen = {}
-
 
 def add(key, w, topic):
     k = head(w["de"]) + "|" + w["kind"] if w["kind"] != "phrase" else fold(w["de"])
@@ -147,8 +138,6 @@ def add(key, w, topic):
     order[topic].append(key)
     return True
 
-
-# 1) words from the Schritte lessons
 for f in sorted(glob.glob("data/l[0-9].json")):
     L = json.load(open(f))
     lid = L["id"]
@@ -164,7 +153,6 @@ for f in sorted(glob.glob("data/l[0-9].json")):
                 w["g"] = 1
             add(lid + "/" + it["id"], w, topic)
 
-# 2) own entries for the Goethe A1 list
 nnew = 0
 KINDS = {"noun", "verb", "word", "phrase"}
 for f in sorted(glob.glob("tools/src/a1-part*.tsv")):
@@ -200,7 +188,6 @@ for f in sorted(glob.glob("tools/src/a1-part*.tsv")):
         if add("a1/" + slug(de), w, topic):
             nnew += 1
 
-# 2b) English: tools/src/en/*.tsv  key|meaning|example translation|note  (overrides the old short "en" hints)
 for f in sorted(glob.glob("tools/src/en/*.tsv")):
     for line in open(f, encoding="utf-8"):
         line = line.rstrip("\n")
@@ -219,11 +206,9 @@ missing = [k for k, w in words.items() if not w.get("en") or (w.get("ex") and le
 if missing:
     sys.exit("en: missing English for %d words, e.g. %s" % (len(missing), missing[:5]))
 
-# keep verbs together, then words, nouns, phrases in the catch-all topic
 RANK = {"verb": 0, "word": 1, "noun": 2, "phrase": 3}
 order["klein"].sort(key=lambda k: RANK.get(words[k]["kind"], 4))
 
-# 3) lessons: chunks of ~8–10 words, nouns/verbs/phrases keep source order
 SIZE = 9
 topics = []
 for tid, emoji, title, desc in TOPICS:
