@@ -19,7 +19,8 @@
   const CFG_KEY = "dr.sync";
   const FILE = "deutsch-room-sync.json";
   const API = "https://api.github.com";
-  const SKIP = new Set(["de.voice", "de.rate", "de.theme"]);
+  // device settings, plus the self-introduction (name, age, city…): a secret gist can still be opened by anyone with its link
+  const SKIP = new Set(["de.voice", "de.rate", "de.theme", "de.me"]);
   const isSynced = (k) => typeof k === "string" && k.startsWith("de.") && !SKIP.has(k);
   const TOKEN_URL = "https://github.com/settings/tokens/new?scopes=gist&description=Deutsch%20Room%20sync";
 
@@ -54,9 +55,13 @@
   /* ---------- merging two snapshots (a = this device, b = gist) ---------- */
   const parse = (s) => { try { return JSON.parse(s); } catch (e) { return undefined; } };
   const isObj = (x) => x && typeof x === "object" && !Array.isArray(x);
+  const BAD_KEY = new Set(["__proto__", "constructor", "prototype"]);
   function perItem(a, b, pick) {
-    const out = Object.assign({}, b, a);
-    for (const k of Object.keys(a)) if (k in b) out[k] = pick(a[k], b[k]);
+    const out = {};
+    for (const k of new Set([...Object.keys(b), ...Object.keys(a)])) {
+      if (BAD_KEY.has(k)) continue;
+      out[k] = k in a && k in b ? pick(a[k], b[k]) : k in a ? a[k] : b[k];
+    }
     return out;
   }
   const moreReviews = (x, y) => (isObj(y) && (y.n || 0) > ((isObj(x) && x.n) || 0) ? y : x);
@@ -79,7 +84,8 @@
     "de.cando": (a, b) => perItem(a, b, (x) => x),
   };
   function merge(a, b) {
-    const out = Object.assign({}, b, a); // keys on one side only are kept; this device wins otherwise
+    const out = {}; // keys on one side only are kept; this device wins otherwise
+    for (const k of [...Object.keys(b), ...Object.keys(a)]) if (isSynced(k)) out[k] = k in a ? a[k] : b[k];
     for (const k of Object.keys(a)) {
       if (!(k in b) || a[k] === b[k] || !RULES[k]) continue;
       const x = parse(a[k]), y = parse(b[k]);
@@ -116,7 +122,10 @@
     let text = f.content;
     if (f.truncated && f.raw_url) text = await (await fetch(f.raw_url, { cache: "no-store" })).text();
     const data = parse(text);
-    return data && data.app === "deutsch-room-sync" && isObj(data.store) ? data : null;
+    if (!data || data.app !== "deutsch-room-sync" || !isObj(data.store)) return null;
+    const clean = {}; // only de.* keys with string values ever reach localStorage
+    for (const [k, v] of Object.entries(data.store)) if (isSynced(k) && typeof v === "string") clean[k] = v;
+    return Object.assign({}, data, { store: clean });
   }
   async function writeRemote(snap) {
     const rev = Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
@@ -200,14 +209,23 @@
   if (on()) setTimeout(sync, 300);
 
   /* ---------- connect / disconnect ---------- */
+  const TOKEN_RE = /^(ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,})$/;
   async function connect(token) {
-    cfg = { token: token.trim(), gist: "", rev: "", dirty: true, force: false }; // dirty: merge with what the gist already has
-    saveCfg();
-    try { await gh("/gists?per_page=1"); } catch (e) {
-      const kind = e.kind;
-      cfg = {}; saveCfg();
-      throw Object.assign(new Error(kind), { kind });
+    token = token.trim();
+    if (!TOKEN_RE.test(token)) throw Object.assign(new Error("format"), { kind: "format" });
+    cfg = { token, gist: "", rev: "", dirty: true, force: false }; // dirty: merge with what the gist already has
+    try {
+      const r = await fetch(API + "/gists?per_page=1", { headers: { Accept: "application/vnd.github+json", Authorization: "Bearer " + token }, cache: "no-store" });
+      if (r.status === 401 || r.status === 403) throw Object.assign(new Error("auth"), { kind: "auth" });
+      if (!r.ok) throw Object.assign(new Error("net"), { kind: "net" });
+      // classic tokens list their scopes; refuse one that can do more than gists (fine-grained tokens send no list)
+      const scopes = r.headers.get("x-oauth-scopes");
+      if (scopes != null && scopes.split(",").map((x) => x.trim()).filter(Boolean).some((x) => x !== "gist")) throw Object.assign(new Error("scope"), { kind: "scope" });
+    } catch (e) {
+      cfg = {};
+      throw e.kind ? e : Object.assign(new Error("net"), { kind: "net" });
     }
+    saveCfg();
     await sync();
   }
   function disconnect() { cfg = {}; try { localStorage.removeItem(CFG_KEY); } catch (e) {} setState("off"); }
@@ -216,29 +234,31 @@
   const TEXT = {
     vi: {
       title: "☁️ Đồng bộ giữa các thiết bị",
-      intro: "Dùng chung tiến độ trên điện thoại, máy tính… qua một gist bí mật trong tài khoản GitHub của bạn. Đồng bộ cả web chính và trang từ vựng; giọng đọc, tốc độ và giao diện sáng/tối vẫn để riêng từng máy.",
+      intro: "Dùng chung tiến độ trên điện thoại, máy tính… qua một gist bí mật trong tài khoản GitHub của bạn. Đồng bộ cả web chính và trang từ vựng; giọng đọc, tốc độ, sáng/tối và bài tự giới thiệu (tên, tuổi…) vẫn để riêng từng máy.",
       steps: ["Mở trang tạo mã của GitHub (cần đăng nhập GitHub):", "Chỉ tích quyền „gist“, chọn thời hạn (ví dụ 1 năm), bấm Generate token rồi chép mã (bắt đầu bằng ghp_).", "Dán mã vào ô dưới và bấm Kết nối. Làm giống vậy trên mỗi thiết bị (có thể dùng lại cùng một mã)."],
       link: "Tạo mã GitHub ↗", ph: "Dán mã GitHub (ghp_…)", connect: "Kết nối", connecting: "Đang kết nối…",
-      warn: "Mã chỉ lưu trong trình duyệt này và chỉ có quyền với gist. Đừng kết nối trên máy dùng chung.",
+      warn: "Mã chỉ lưu trong trình duyệt này và chỉ có quyền với gist. Đừng kết nối trên máy dùng chung. Lỡ lộ mã thì vào GitHub → Settings → Developer settings → Tokens để xoá.",
       ok: (t) => "✓ Đã đồng bộ lúc " + t + ".", busy: "Đang đồng bộ…", never: "Chưa đồng bộ lần nào.",
       errAuth: "✗ Mã không dùng được nữa (sai, bị xoá hoặc hết hạn). Hãy tạo mã mới rồi kết nối lại.",
       errNet: "✗ Chưa đồng bộ được (mất mạng?). Web sẽ tự thử lại.",
       now: "🔄 Đồng bộ ngay", gist: "Xem gist ↗", off: "Ngắt kết nối trên máy này",
       offAsk: "Ngắt đồng bộ trên máy này? Tiến độ vẫn giữ nguyên ở máy này và trong gist.", offDone: "Đã ngắt đồng bộ.",
-      badToken: "Mã không đúng hoặc thiếu quyền gist.", netFail: "Không kết nối được GitHub. Kiểm tra mạng rồi thử lại.", done: "Đã kết nối và đồng bộ.",
+      badToken: "Mã không đúng hoặc thiếu quyền gist.", badFormat: "Đây không phải mã GitHub (mã bắt đầu bằng ghp_ hoặc github_pat_).",
+      badScope: "Mã này có nhiều quyền hơn mức cần (ví dụ quyền repo). Hãy tạo mã mới chỉ tích „gist“ cho an toàn.", netFail: "Không kết nối được GitHub. Kiểm tra mạng rồi thử lại.", done: "Đã kết nối và đồng bộ.",
     },
     en: {
       title: "☁️ Sync between devices",
-      intro: "Share your progress across phone, laptop… through a secret gist in your GitHub account. Syncs both the main site and the vocabulary pages; voice, speed and light/dark mode stay per device.",
+      intro: "Share your progress across phone, laptop… through a secret gist in your GitHub account. Syncs both the main site and the vocabulary pages; voice, speed, light/dark mode and your self-introduction (name, age…) stay per device.",
       steps: ["Open GitHub's token page (you need to be signed in to GitHub):", "Tick only the “gist” scope, pick an expiry (e.g. 1 year), click Generate token and copy it (it starts with ghp_).", "Paste it below and click Connect. Do the same on each device (the same token works)."],
       link: "Create a GitHub token ↗", ph: "Paste your GitHub token (ghp_…)", connect: "Connect", connecting: "Connecting…",
-      warn: "The token is stored only in this browser and can only touch gists. Don't connect on a shared computer.",
+      warn: "The token is stored only in this browser and can only touch gists. Don't connect on a shared computer. If it leaks, delete it under GitHub → Settings → Developer settings → Tokens.",
       ok: (t) => "✓ Synced at " + t + ".", busy: "Syncing…", never: "Not synced yet.",
       errAuth: "✗ The token no longer works (wrong, revoked or expired). Create a new one and connect again.",
       errNet: "✗ Couldn't sync (offline?). It will try again by itself.",
       now: "🔄 Sync now", gist: "View gist ↗", off: "Disconnect this device",
       offAsk: "Stop syncing on this device? Your progress stays on this device and in the gist.", offDone: "Sync turned off.",
-      badToken: "That token is wrong or lacks the gist scope.", netFail: "Couldn't reach GitHub. Check your connection and try again.", done: "Connected and synced.",
+      badToken: "That token is wrong or lacks the gist scope.", badFormat: "That isn't a GitHub token (it starts with ghp_ or github_pat_).",
+      badScope: "This token can do more than needed (e.g. repo access). Create a new one with only “gist” ticked, to be safe.", netFail: "Couldn't reach GitHub. Check your connection and try again.", done: "Connected and synced.",
     },
   };
   function panel(opts = {}) {
@@ -250,12 +270,13 @@
       box.dataset.painted = "1";
       const head = h(opts.heading || "h2", {}, T.title);
       if (!on()) {
-        const input = h("input", { type: "password", class: "sync-input", placeholder: T.ph, autocomplete: "off", spellcheck: "false", "aria-label": T.ph });
+        const input = h("input", { type: "password", class: "sync-input no-uml", placeholder: T.ph, autocomplete: "off", autocapitalize: "none", spellcheck: "false", "aria-label": T.ph });
         const go = btn(T.connect, async () => {
           if (!input.value.trim()) { input.focus(); return; }
           go.disabled = true; go.textContent = T.connecting;
           try { await connect(input.value); toast(T.done); }
-          catch (e) { toast(e.kind === "auth" ? T.badToken : T.netFail); }
+          catch (e) { toast(e.kind === "auth" ? T.badToken : e.kind === "format" ? T.badFormat : e.kind === "scope" ? T.badScope : T.netFail); }
+          input.value = "";
           paint();
         }, "btn");
         box.replaceChildren(head, h("p", { class: "muted" }, T.intro),

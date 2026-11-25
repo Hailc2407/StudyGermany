@@ -74,3 +74,9 @@ English only as a bridge (≈ cognates, ⚠ traps such as wer = who).
   of items). `del`, `load` and `clear` (reset / restore) overwrite the gist.
 - After a pull that changed local data it fires `dr-sync`; `/tu/app.js` re-reads its progress and `js/pages.js` redraws pages
   that only display progress. A new page that keeps progress in memory must listen to it too.
+- Security: both pages carry a CSP meta (scripts only from this site, network only to this site, api.github.com and
+  gist.githubusercontent.com). Keep JS in files (no inline `<script>`, no `on…=` attributes); `js/boot.js` sets theme/language
+  and hides the page inside a foreign frame. A new external host needs a CSP change on both pages. Never put text typed by the
+  learner or read from the gist into `innerHTML` / `{ html: … }`. `de.me` (self-introduction) is not synced on purpose.
+  `connect()` accepts only ghp_/github_pat_ tokens and refuses classic tokens with any scope besides `gist`.
+  All of the owner's Pages sites share the origin hailc2407.github.io, so they can read the token too.
