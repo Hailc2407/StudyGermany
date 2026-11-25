@@ -62,3 +62,15 @@ English only as a bridge (≈ cognates, ⚠ traps such as wer = who).
   word lacks English, and `check.mjs` also checks it. The language choice is `settings.lang` in `de.tu.set`.
 - Progress lives under `de.tu.*` (not shared with the main site's review cards). Lessons open one after another.
 - No exam audio and no Goethe/Schritte text is stored; the Hören part of the exam sets was dropped on purpose.
+
+## Sync between devices (`js/sync.js`)
+
+- Loaded after `core.js` on `/` and `/tu/`. The learner pastes a GitHub token with only the `gist` scope; all devices read and
+  write one secret gist with the file `deutsch-room-sync.json` (`{app, v, rev, savedAt, store: {"de.*": "<json string>"}}`).
+- Synced: every `de.*` key except `de.voice`, `de.rate`, `de.theme`. The token and state are under `dr.sync` (not `de.*`, so
+  backups never contain it).
+- It wraps `store.set/del/load/clear` to notice changes (push 4 s later or when the tab is hidden). A device with no unsynced
+  changes takes the gist as is; otherwise it merges per key with `RULES` (add a rule when a new progress key holds an object
+  of items). `del`, `load` and `clear` (reset / restore) overwrite the gist.
+- After a pull that changed local data it fires `dr-sync`; `/tu/app.js` re-reads its progress and `js/pages.js` redraws pages
+  that only display progress. A new page that keeps progress in memory must listen to it too.

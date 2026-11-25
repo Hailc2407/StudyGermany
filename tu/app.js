@@ -705,6 +705,7 @@
         h("label", {}, h("span", {}, T.voice), voiceSel),
         h("label", {}, h("span", {}, T.rate), rate),
         h("p", { class: "small muted" }, T.voiceNote),
+        DR.Sync ? DR.Sync.panel({ cls: "tu-sync", heading: "h3" }) : null,
         h("div", { class: "actions" },
           btn(T.backup, () => {
             const obj = {};
@@ -765,6 +766,14 @@
     store.set("theme", t);
   });
   $("#t-lang").addEventListener("click", () => setLang(EN() ? "vi" : "en"));
+  // progress arrived from another device (js/sync.js): re-read it; redraw unless a lesson or review is running
+  document.addEventListener("dr-sync", () => {
+    prog = store.get("tu.prog", {});
+    done = store.get("tu.done", {});
+    log = store.get("tu.log", {});
+    refreshBadge();
+    if (D && !document.querySelector(".tu-stage")) route();
+  });
   applyChrome();
   DR.umlautBar();
   window.addEventListener("hashchange", route);

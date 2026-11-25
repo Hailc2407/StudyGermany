@@ -393,8 +393,9 @@
           dirInput, fileInput),
         prog,
         h("p", { class: "muted small", lang: "vi" }, "Chọn thư mục „301082_Schritte int. Neu 1 mp3s Kursbuch“ (và thư mục Arbeitsbuch nếu muốn). Trên điện thoại không chọn được thư mục thì dùng „Chọn file mp3“ và chọn nhiều file một lúc (Kursbuch Lektion 1 là các file 301082_KB_L01_01 … 26).")),
+      DR.Sync ? DR.Sync.panel({ cls: "set-sec" }) : null,
       h("section", { class: "set-sec" }, h("h2", {}, "💾 Tiến độ"),
-        h("p", { class: "muted", lang: "vi" }, "Tiến độ học, thẻ ôn tập và bài tự giới thiệu chỉ lưu trong trình duyệt này. Muốn chuyển sang máy khác thì tải bản sao lưu rồi khôi phục ở máy kia."),
+        h("p", { class: "muted", lang: "vi" }, "Tiến độ học, thẻ ôn tập và bài tự giới thiệu lưu trong trình duyệt này (và trong gist nếu bạn bật đồng bộ ở trên). Bản sao lưu là một file để bạn tự giữ."),
         h("div", { class: "actions" },
           btn("⬇ Tải bản sao lưu", () => {
             const blob = new Blob([JSON.stringify({ app: "deutsch-room", date: today(), store: store.dump() }, null, 1)], { type: "application/json" });
@@ -424,6 +425,12 @@
     b.textContent = n > 99 ? "99+" : String(n);
   }
   document.addEventListener("dr-srs", refreshBadge);
+  // progress arrived from another device (js/sync.js): redraw pages that only show it, never a running exercise
+  document.addEventListener("dr-sync", () => {
+    refreshBadge();
+    const p = location.hash.replace(/^#\/?/, "");
+    if (!p || p === "settings" || /^[lw]\d+$/.test(p)) route();
+  });
   function markNav(name) { $$("[data-nav]").forEach((a) => a.classList.toggle("on", a.dataset.nav === name)); }
 
   async function route() {
