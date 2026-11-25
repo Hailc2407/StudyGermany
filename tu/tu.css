@@ -124,3 +124,5 @@
 .tu-set label { display: grid; gap: 6px; font-weight: 600; }
 .tu-set label.inline { display: flex; gap: 10px; align-items: center; font-weight: 500; }
 .tu-set input[type="checkbox"] { width: 20px; height: 20px; }
+.tu-set-row { display: grid; gap: 6px; font-weight: 600; }
+.tu-set-row .chips { font-weight: 500; }

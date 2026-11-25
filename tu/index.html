@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Từ vựng tiếng Đức A1 theo chủ đề, học và ôn ngắt quãng">
+  <meta name="description" content="Từ vựng tiếng Đức A1 theo chủ đề, học và ôn ngắt quãng · German A1 vocabulary by topic with spaced review">
   <title>Từ vựng theo chủ đề · Deutsch Room</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <script>
     (function () {
+      try { if ((JSON.parse(localStorage.getItem("de.tu.set")) || {}).lang === "en") document.documentElement.lang = "en"; } catch (e) {}
       var t = null;
       try { t = JSON.parse(localStorage.getItem("de.theme")); } catch (e) {}
       if (t !== "light" && t !== "dark") t = window.matchMedia && matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
@@ -19,26 +20,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="../app.css?v=13">
-  <link rel="stylesheet" href="tu.css?v=1">
+  <link rel="stylesheet" href="tu.css?v=2">
 </head>
 <body>
   <header class="bar">
     <div class="bar-inner">
-      <a class="brand" href="#/"><span class="flag" aria-hidden="true"></span>Từ vựng</a>
-      <nav class="nav" aria-label="Chính">
-        <a href="#/" data-nav="home"><span class="nav-i" aria-hidden="true">🗂️</span><span class="nav-t">Chủ đề</span></a>
-        <a href="#/review" data-nav="review"><span class="nav-i" aria-hidden="true">🔁</span><span class="nav-t">Ôn tập</span><span class="badge" id="due-badge" hidden></span></a>
-        <a href="#/book" data-nav="book"><span class="nav-i" aria-hidden="true">📒</span><span class="nav-t">Sổ tay</span></a>
-        <a href="#/search" data-nav="search"><span class="nav-i" aria-hidden="true">🔎</span><span class="nav-t">Tìm</span></a>
-        <a href="#/settings" data-nav="settings"><span class="nav-i" aria-hidden="true">⚙️</span><span class="nav-t">Cài đặt</span></a>
+      <a class="brand" href="#/"><span class="flag" aria-hidden="true"></span><span data-t="brand">Từ vựng</span></a>
+      <nav class="nav" aria-label="Menu">
+        <a href="#/" data-nav="home"><span class="nav-i" aria-hidden="true">🗂️</span><span class="nav-t" data-t="navHome">Chủ đề</span></a>
+        <a href="#/review" data-nav="review"><span class="nav-i" aria-hidden="true">🔁</span><span class="nav-t" data-t="navReview">Ôn tập</span><span class="badge" id="due-badge" hidden></span></a>
+        <a href="#/book" data-nav="book"><span class="nav-i" aria-hidden="true">📒</span><span class="nav-t" data-t="navBook">Sổ tay</span></a>
+        <a href="#/search" data-nav="search"><span class="nav-i" aria-hidden="true">🔎</span><span class="nav-t" data-t="navSearch">Tìm</span></a>
+        <a href="#/settings" data-nav="settings"><span class="nav-i" aria-hidden="true">⚙️</span><span class="nav-t" data-t="navSettings">Cài đặt</span></a>
       </nav>
-      <a class="tool" href="../" title="Về lộ trình Deutsch Room" aria-label="Về lộ trình Deutsch Room" style="text-decoration:none;display:inline-flex;align-items:center">📘</a>
-      <button class="tool" id="t-theme" type="button" title="Sáng / tối" aria-label="Đổi giao diện sáng tối">🌓</button>
+      <a class="tool" href="../" data-t-title="backMain" title="Về lộ trình Deutsch Room" aria-label="Về lộ trình Deutsch Room" style="text-decoration:none;display:inline-flex;align-items:center">📘</a>
+      <button class="tool" id="t-lang" type="button" data-t="langBtn" data-t-title="langBtnTitle" title="Switch to English" aria-label="Switch to English" style="font-weight:700;font-size:.8rem">EN</button>
+      <button class="tool" id="t-theme" type="button" data-t-title="theme" title="Sáng / tối" aria-label="Sáng / tối">🌓</button>
     </div>
   </header>
   <main id="app" class="app" aria-live="polite"><p class="loading">Đang mở…</p></main>
   <div id="umlaut" class="umlaut" hidden></div>
   <script src="../js/core.js?v=13"></script>
-  <script src="app.js?v=2"></script>
+  <script src="lang.js?v=1"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>

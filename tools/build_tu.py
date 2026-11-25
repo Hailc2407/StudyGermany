@@ -34,6 +34,7 @@ TOPICS = [
     ("perf", "⏮️", "Động từ ở Perfekt", "Thể quá khứ hoàn thành với haben và sein"),
 ]
 TOPIC_IDS = [t[0] for t in TOPICS]
+TOPIC_EN = {'greet': ('Greetings & introductions', 'Hello, thanks, sorry, introducing yourself'), 'fam': ('Family & people', 'Family, relatives, marital status, personal details'), 'land': ('Countries & languages', 'Countries, cities, languages, home, directions'), 'zahl': ('Numbers, money & measures', 'Numbers, units, degrees, per cent'), 'zeit': ('Time', 'Clock times, days, months, seasons, parts of the day'), 'essen': ('Food & drink', 'Food, drinks, ordering, restaurants'), 'shop': ('Shopping & clothes', 'Market, prices, shops, clothes, paying'), 'wohn': ('Home & furniture', 'Rooms, furniture, renting, appliances'), 'tag': ('My day', 'Everyday verbs, separable verbs'), 'frei': ('Free time & hobbies', 'Free time, sport, parties, music'), 'wetter': ('Weather & nature', 'Weather, mountains, sea, plants, animals'), 'reise': ('Transport & travel', 'Trains and buses, airport, hotel, sightseeing'), 'dienst': ('Services, forms & contact', 'Post office, bank, phone, forms, documents'), 'koerper': ('Body & health', 'Parts of the body, illness, the doctor'), 'lern': ('Learning', 'Class, courses, school things, languages'), 'beruf': ('Work & jobs', 'Jobs, workplace, colleagues'), 'farbe': ('Adjectives & colours', 'Colours, sizes, qualities, feelings'), 'klein': ('Little everyday words', 'Pronouns, prepositions, adverbs, modal verbs, question words'), 'pruef': ('Exam words', 'Ankreuzen, Antwortbogen, Aufgabe… words you meet in the exam'), 'perf': ('Verbs in the Perfekt', 'The past tense with haben and sein')}
 
 SETMAP = {
     "l1/a": "greet", "l1/b": "greet", "l1/c": "land", "l1/c2": "land", "l1/d": "dienst", "l1/k": "pruef",
@@ -199,6 +200,25 @@ for f in sorted(glob.glob("tools/src/a1-part*.tsv")):
         if add("a1/" + slug(de), w, topic):
             nnew += 1
 
+# 2b) English: tools/src/en/*.tsv  key|meaning|example translation|note  (overrides the old short "en" hints)
+for f in sorted(glob.glob("tools/src/en/*.tsv")):
+    for line in open(f, encoding="utf-8"):
+        line = line.rstrip("\n")
+        if not line:
+            continue
+        k, me, exen, noteen = line.split("|")
+        if k not in words:
+            sys.exit("en: unknown key " + k)
+        w = words[k]
+        w["en"] = me
+        if w.get("ex") and exen:
+            w["ex"] = w["ex"][:2] + [exen]
+        if noteen:
+            w["noteEn"] = noteen
+missing = [k for k, w in words.items() if not w.get("en") or (w.get("ex") and len(w["ex"]) < 3)]
+if missing:
+    sys.exit("en: missing English for %d words, e.g. %s" % (len(missing), missing[:5]))
+
 # keep verbs together, then words, nouns, phrases in the catch-all topic
 RANK = {"verb": 0, "word": 1, "noun": 2, "phrase": 3}
 order["klein"].sort(key=lambda k: RANK.get(words[k]["kind"], 4))
@@ -218,7 +238,7 @@ for tid, emoji, title, desc in TOPICS:
         m = base + (1 if j < extra else 0)
         lessons.append({"id": "%s-%d" % (tid, j + 1), "n": j + 1, "words": keys[i:i + m]})
         i += m
-    topics.append({"id": tid, "emoji": emoji, "title": title, "desc": desc, "count": n, "lessons": lessons})
+    topics.append({"id": tid, "emoji": emoji, "title": title, "desc": desc, "titleEn": TOPIC_EN[tid][0], "descEn": TOPIC_EN[tid][1], "count": n, "lessons": lessons})
 
 os.makedirs("tu/data", exist_ok=True)
 with open("tu/data/words.json", "w", encoding="utf-8") as fh:
