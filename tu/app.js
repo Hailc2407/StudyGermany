@@ -498,6 +498,7 @@
     mount(st.el);
 
     // 1) learn cards
+    let loopOn = false; // "repeat" button: say the word every 3 s while the card is open (stays on for the next cards)
     for (let i = 0; i < keys.length; i++) {
       st.set(i, keys.length);
       await new Promise((go) => {
@@ -508,12 +509,21 @@
           w.syl ? h("div", { class: "tu-sub" }, T.stress, h("b", {}, w.syl)) : null, plLine(w), w.forms ? h("div", { class: "tu-sub" }, w.forms) : null,
           h("div", { class: "tu-vi big", lang: ML() }, mean(w)), !EN() && w.en ? h("div", { class: "tu-sub muted", lang: "en" }, "EN: " + w.en) : null, exLine(w),
           note ? h("div", { class: "why", lang: ML() }, note) : null, srcTags(w));
-        let off = null;
-        const next = btn(i === keys.length - 1 ? T.toExercises : T.nextWord, () => { off(); go(); }, "btn big");
-        const prev = i ? btn(T.prev, () => { off(); i -= 2; go(); }, "btn ghost") : null;
-        off = keyHandler({ Enter: () => next.click(), ArrowRight: () => next.click(), ArrowLeft: () => prev && prev.click() });
-        st.show(h("div", { class: "tu-cap" }, T.cardCap(i + 1, keys.length)), card, h("div", { class: "actions center" }, prev, next));
-        if (settings.autoplay) sayLater(sayOf(w));
+        let off = null, loopTimer = 0;
+        const stopLoop = () => clearInterval(loopTimer);
+        const startLoop = () => { stopLoop(); const me = tok; loopTimer = setInterval(() => { if (me !== tok || !loopBtn.isConnected) stopLoop(); else Speech.say(sayOf(w)); }, 3000); };
+        const paintLoop = () => { loopBtn.classList.toggle("on", loopOn); loopBtn.setAttribute("aria-pressed", String(loopOn)); loopBtn.textContent = loopOn ? T.loopOn : T.loopOff; };
+        const loopBtn = btn("", () => {
+          loopOn = !loopOn; paintLoop();
+          if (loopOn) { Speech.say(sayOf(w)); startLoop(); } else { stopLoop(); Speech.stop(); }
+        }, "btn ghost tu-loop");
+        paintLoop();
+        const next = btn(i === keys.length - 1 ? T.toExercises : T.nextWord, () => { stopLoop(); off(); go(); }, "btn big");
+        const prev = i ? btn(T.prev, () => { stopLoop(); off(); i -= 2; go(); }, "btn ghost") : null;
+        off = keyHandler({ Enter: () => next.click(), ArrowRight: () => next.click(), ArrowLeft: () => prev && prev.click(), r: () => loopBtn.click(), R: () => loopBtn.click() });
+        st.show(h("div", { class: "tu-cap" }, T.cardCap(i + 1, keys.length)), card, h("div", { class: "actions center" }, loopBtn), h("div", { class: "actions center" }, prev, next));
+        if (loopOn) { sayLater(sayOf(w)); startLoop(); }
+        else if (settings.autoplay) sayLater(sayOf(w));
       });
       alive(my);
     }

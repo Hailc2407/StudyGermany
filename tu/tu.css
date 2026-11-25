@@ -128,3 +128,4 @@
 .tu-set-row .chips { font-weight: 500; }
 .tu-sync { padding: 14px 16px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
 .tu-sync h3 { margin-bottom: 6px; }
+.tu-loop.on { border-color: var(--accent, #1f9d6e); color: var(--accent, #1f9d6e); font-weight: 700; }
