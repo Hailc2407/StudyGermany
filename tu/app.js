@@ -17,6 +17,12 @@
   const REVIEW_BATCH = 15;
 
   let D = null; // { topics, words }
+  /* Every route change bumps tok. A lesson or review started under an older tok stops at its next step
+     (throws CANCEL), its key handlers detach, and its delayed voice lines stay silent. */
+  let tok = 0;
+  const CANCEL = { cancelled: true };
+  const alive = (my) => { if (my !== tok) throw CANCEL; };
+  const sayLater = (text, ms = 250) => { const my = tok; setTimeout(() => { if (my === tok) Speech.say(text); }, ms); };
   let ALL = []; // all word keys
   const TOPIC_OF = {};
   const BY_KIND = {};
@@ -60,7 +66,7 @@
   }
   function noteWrong(k) { if (prog[k]) { prog[k].w = (prog[k].w || 0) + 1; saveProg(); } }
   const dueKeys = () => Object.keys(prog).filter((k) => D.words[k] && prog[k].due <= Date.now()).sort((a, b) => prog[a].due - prog[b].due);
-  const hardKeys = () => Object.keys(prog).filter((k) => D.words[k] && (prog[k].w || 0) >= 2).sort((a, b) => prog[b].w - prog[a].w);
+  const hardKeys = () => Object.keys(prog).filter((k) => D.words[k] && (prog[k].w || 0) >= 2 && prog[k].lv <= 3).sort((a, b) => prog[b].w - prog[a].w);
   const starKeys = () => Object.keys(prog).filter((k) => D.words[k] && prog[k].star);
   function streak() {
     let n = 0;
@@ -234,7 +240,9 @@
   }
 
   function keyHandler(map) {
+    const my = tok;
     const fn = (e) => {
+      if (my !== tok) { document.removeEventListener("keydown", fn); return; }
       if (e.target && /^(input|textarea|select)$/i.test(e.target.tagName)) { if (e.key !== "Enter") return; }
       const f = map[e.key];
       if (f) { e.preventDefault(); f(); }
@@ -263,7 +271,7 @@
         fb.hidden = false;
         fb.className = "tu-fb " + (ok ? "good" : "miss");
         fb.replaceChildren(h("div", { class: "tu-fb-title" }, ok ? "✓ Đúng rồi!" : "✗ Chưa đúng"), reveal(o.w), btn("Tiếp →", () => finish(ok), "btn"));
-        if (ok) timer = setTimeout(() => finish(true), 1500);
+        if (ok) { const my = tok; timer = setTimeout(() => { if (my === tok) finish(true); }, 1500); }
         else if (!o.silent) Speech.say(sayOf(o.w));
       }
       const map = { Enter: () => { if (locked) finish(fb.classList.contains("good")); } };
@@ -271,7 +279,7 @@
       off = keyHandler(map);
       st.show(h("div", { class: "tu-prompt" }, o.head), o.say ? h("div", { class: "tu-listen" }, btn("🔊 Nghe", () => Speech.say(o.say), "btn big"), btn("🐢", () => Speech.say(o.say, { slow: true }), "icon-btn", "Nghe chậm")) : null,
         h("div", { class: "tu-opts" + (o.cols ? " cols" : "") }, opts), fb);
-      if (o.say) setTimeout(() => Speech.say(o.say), 250);
+      if (o.say) sayLater(o.say);
     });
   }
 
@@ -302,7 +310,7 @@
           h("div", { class: "tu-fb-title" }, ok ? (hinted ? "✓ Đúng, nhưng có dùng gợi ý nên từ này sẽ ôn lại sớm" : "✓ Đúng rồi!") : why === "skip" ? "Đáp án là:" : "✗ Chưa đúng — đáp án là:"),
           note ? h("div", { class: "small" }, note) : null, reveal(o.w), btn("Tiếp →", () => finish(good), "btn")].filter(Boolean));
         if (!good) Speech.say(sayOf(o.w));
-        else setTimeout(() => { if (off) finish(true); }, 1500);
+        else { const my = tok; setTimeout(() => { if (my === tok) finish(true); }, 1500); }
       }
       function submit() {
         if (locked) return;
@@ -315,7 +323,7 @@
         o.say ? h("div", { class: "tu-listen" }, btn("🔊 Nghe", () => Speech.say(o.say), "btn big"), btn("🐢", () => Speech.say(o.say, { slow: true }), "icon-btn", "Nghe chậm")) : null,
         input, h("div", { class: "actions" }, go, hintBtn, skip), hintBox, fb);
       setTimeout(() => input.focus(), 50);
-      if (o.say) setTimeout(() => Speech.say(o.say), 250);
+      if (o.say) sayLater(o.say);
     });
   }
 
@@ -416,13 +424,14 @@
   const canSpeak = () => Speech.supported;
 
   /* Runs a queue of tasks { key, run(stage) → Promise<boolean> } — a wrong answer is asked once more at the end. */
-  async function runQueue(st, tasks, offset, total, onFirst) {
+  async function runQueue(st, tasks, offset, total, onFirst, my) {
     const queue = tasks.slice();
     let n = offset;
     while (queue.length) {
       const t = queue.shift();
       st.set(n, total);
       const ok = await t.run(st);
+      alive(my);
       if (!t.tries) { t.tries = 0; if (onFirst) onFirst(t, ok); }
       t.tries++;
       if (ok || t.tries >= 2) n++; else queue.push(t);
@@ -437,6 +446,7 @@
     if (!f || !f.l) return notFound();
     const { t, l } = f;
     if (!unlocked(t, l)) { toast("Hoàn thành bài trước để mở bài này."); location.hash = "#/t/" + t.id; return; }
+    const my = tok;
     const keys = l.words.slice();
     const pool = t.lessons.flatMap((x) => x.words);
     const st = makeStage(t.emoji + " " + t.title + " · Bài " + l.n, 1, () => { if (confirm("Thoát bài học? Tiến độ của bài này chưa được lưu.")) location.hash = "#/t/" + t.id; });
@@ -457,8 +467,9 @@
         const prev = i ? btn("← Trước", () => { off(); i -= 2; go(); }, "btn ghost") : null;
         off = keyHandler({ Enter: () => next.click(), ArrowRight: () => next.click(), ArrowLeft: () => prev && prev.click() });
         st.show(h("div", { class: "tu-cap" }, "Từ " + (i + 1) + "/" + keys.length + " — đọc to theo giọng đọc"), card, h("div", { class: "actions center" }, prev, next));
-        if (settings.autoplay) setTimeout(() => Speech.say(sayOf(w)), 250);
+        if (settings.autoplay) sayLater(sayOf(w));
       });
+      alive(my);
     }
 
     // 2) rounds
@@ -470,13 +481,14 @@
     const wrongKeys = new Set();
     const onFirst = (t_, ok) => { stat.n++; if (ok) stat.ok++; else { wrongKeys.add(t_.key); } };
     let at = 0;
-    const round = async (tasks) => { if (!tasks.length) return; await runQueue(st, tasks, at, total, onFirst); at += tasks.length; };
+    const round = async (tasks) => { if (!tasks.length) return; await runQueue(st, tasks, at, total, onFirst, my); at += tasks.length; };
     const mk = (fn) => (k) => ({ key: k, run: (s) => fn(s, k, pool) });
     await round(shuffle(keys).map(mk(qMeaning)));
     if (canSpeak()) await round(shuffle(keys).map(mk(qListen)));
     await round(shuffle(nouns).map(mk(qArticle)));
     for (const g of pairGroups) {
       const errs = await pairsQ(st, g);
+      alive(my);
       stat.n += g.length; stat.ok += g.length - errs.size; errs.forEach((k) => wrongKeys.add(k));
       at += g.length; st.set(Math.min(at, total), total);
     }
@@ -524,17 +536,18 @@
       const future = Object.keys(prog).filter((k) => D.words[k]).map((k) => prog[k].due).sort((a, b) => a - b)[0];
       mount(h("section", { class: "tu-hero slim center" }, h("div", { class: "tu-big-emo" }, "✅"),
         h("h1", {}, mode === "hard" ? "Chưa có từ hay sai" : mode === "star" ? "Chưa đánh dấu từ nào" : "Không còn từ nào cần ôn"),
-        h("p", { class: "muted", lang: "vi" }, mode ? "Từ hay sai là từ bạn đã trả lời sai từ 2 lần." : future ? "Từ tiếp theo đến hạn sau khoảng " + untilText(future - Date.now()) + "." : "Hãy học bài đầu tiên ở một chủ đề trước."),
+        h("p", { class: "muted", lang: "vi" }, mode ? "Từ hay sai là từ bạn đã trả lời sai từ 2 lần trở lên và chưa lên mức Khá nhớ." : future ? "Từ tiếp theo đến hạn sau khoảng " + untilText(future - Date.now()) + "." : "Hãy học bài đầu tiên ở một chủ đề trước."),
         h("div", { class: "actions center" }, h("a", { class: "btn big", href: "#/" }, "Chọn chủ đề học"))));
       return;
     }
+    const my = tok;
     const batch = keys.slice(0, mode ? 20 : REVIEW_BATCH);
     const pool = ALL;
-    const st = makeStage("Ôn tập", batch.length, () => { if (confirm("Thoát? Các câu đã trả lời vẫn được tính.")) location.hash = "#/review"; });
+    const st = makeStage("Ôn tập", batch.length, () => { if (confirm("Thoát? Các câu đã trả lời vẫn được tính.")) location.hash = "#/"; });
     mount(st.el);
     const stat = { n: 0, ok: 0 };
     const tasks = shuffle(batch).map((k) => reviewTask(k, pool));
-    await runQueue(st, tasks, 0, batch.length, (t, ok) => { stat.n++; if (ok) stat.ok++; grade(t.key, ok); bump("r"); });
+    await runQueue(st, tasks, 0, batch.length, (t, ok) => { stat.n++; if (ok) stat.ok++; grade(t.key, ok); bump("r"); }, my);
     const rest = mode ? 0 : dueKeys().length;
     mount(h("section", { class: "tu-summary" },
       h("div", { class: "tu-big-emo" }, "🔁"),
@@ -665,7 +678,6 @@
   }
 
   /* ---------- routing ---------- */
-  let tok = 0;
   async function route() {
     const my = ++tok;
     Speech.stop();
@@ -693,6 +705,7 @@
       else if (a === "settings") settingsPage();
       else home();
     } catch (e) {
+      if (e === CANCEL) return;
       console.error(e);
       mount(h("p", { class: "loading" }, "Không tải được dữ liệu. Hãy tải lại trang (phải mở qua http/https, không mở trực tiếp file)."));
     }
