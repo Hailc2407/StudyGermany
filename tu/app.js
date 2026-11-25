@@ -15,6 +15,7 @@
   const INTERVAL = { 1: 10 * MIN, 2: DAY, 3: 3 * DAY, 4: 7 * DAY, 5: 15 * DAY };
   const MASTER = 30 * DAY;
   const REVIEW_BATCH = 15;
+  const AUTO_NEXT = 5000; // after a right answer: time to hear and read the answer before the next question
 
   let D = null; // { topics, words }
   /* Every route change bumps tok. A lesson or review started under an older tok stops at its next step
@@ -313,8 +314,8 @@
         fb.hidden = false;
         fb.className = "tu-fb " + (ok ? "good" : "miss");
         fb.replaceChildren(h("div", { class: "tu-fb-title" }, ok ? T.correct : T.wrong), reveal(o.w), btn(T.next, () => finish(ok), "btn"));
-        if (ok) { const my = tok; timer = setTimeout(() => { if (my === tok) finish(true); }, 1500); }
-        else if (!o.silent) Speech.say(sayOf(o.w));
+        Speech.say(sayOf(o.w)); // right or wrong, read the correct word once the answer shows
+        if (ok) { const my = tok; timer = setTimeout(() => { if (my === tok) finish(true); }, AUTO_NEXT); }
       }
       const map = { Enter: () => { if (locked) finish(fb.classList.contains("good")); } };
       opts.forEach((b, i) => { map[String(i + 1)] = () => b.click(); });
@@ -340,7 +341,8 @@
         input.focus();
       }, "btn ghost small");
       const skip = btn(T.dontKnow, () => finishWith(false, "skip"), "btn ghost small");
-      function finish(ok) { if (off) off(); res(ok); }
+      let ended = false;
+      function finish(ok) { if (ended) return; ended = true; if (off) off(); res(ok); }
       function finishWith(ok, why, note) {
         if (locked) return;
         locked = true;
@@ -351,8 +353,8 @@
         fb.replaceChildren(...[
           h("div", { class: "tu-fb-title" }, ok ? (hinted ? T.okHinted : T.correct) : why === "skip" ? T.answerIs : T.wrongAnswerIs),
           note ? h("div", { class: "small" }, trNote(note)) : null, reveal(o.w), btn(T.next, () => finish(good), "btn")].filter(Boolean));
-        if (!good) Speech.say(sayOf(o.w));
-        else { const my = tok; setTimeout(() => { if (my === tok) finish(true); }, 1500); }
+        Speech.say(sayOf(o.w));
+        if (good) { const my = tok; setTimeout(() => { if (my === tok) finish(true); }, AUTO_NEXT); }
       }
       function submit() {
         if (locked) return;
@@ -439,7 +441,7 @@
   function qMeaning(st, k, pool) { // German → meaning
     const w = D.words[k];
     const opts = shuffle([k, ...distractors(w, 3, mean, pool)]).map((x) => ({ val: x, node: h("span", { lang: ML() }, mean(D.words[x])) }));
-    return mcQ(st, { head: [h("div", { class: "tu-cap" }, T.qMeaning), emo(w), h("div", { class: "tu-big" }, wordLabel(w), " ", say(sayOf(w), false))], options: opts, correct: k, w, silent: true });
+    return mcQ(st, { head: [h("div", { class: "tu-cap" }, T.qMeaning), emo(w), h("div", { class: "tu-big" }, wordLabel(w), " ", say(sayOf(w), false))], options: opts, correct: k, w });
   }
   function qReverse(st, k, pool) { // meaning → German
     const w = D.words[k];
